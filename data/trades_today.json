@@ -14,9 +14,9 @@
       "price": 110.32,
       "time": "09:32",
       "reason": "触发止损线，执行止损清仓",
-      "pnl_amount": -1840,
-      "pnl_percent": -3.23,
-      "notes": "止损执行正确，后续涨到120.72但不影响决策质量"
+      "pnl_amount": -1878,
+      "pnl_percent": -3.35,
+      "notes": "止损执行正确，后续涨到120.98但不影响决策质量"
     },
     {
       "seq": 2,
@@ -117,8 +117,8 @@
     "total_trades": 8,
     "buy_count": 5,
     "sell_count": 3,
-    "realized_pnl": -3060,
-    "violation_count": 6,
+    "realized_pnl": 1035,
+    "violation_count": 7,
     "violation_types": {
       "non_trading_window": 2,
       "day_trading": 3,
