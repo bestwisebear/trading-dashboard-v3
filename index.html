@@ -228,9 +228,9 @@ function DateSelector({ selectedDate, setSelectedDate, availableDates }) {
   return (
     <div className="relative">
       <button onClick={() => setIsOpen(!isOpen)}
-        className={\`flex items-center gap-1 px-2 py-1 rounded text-xs font-medium transition-colors cursor-pointer \${
+        className={`flex items-center gap-1 px-2 py-1 rounded text-xs font-medium transition-colors cursor-pointer ${
           selectedDate !== 'today' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
-        }\`}>
+        }`}>
         {Icons.clock("w-3.5 h-3.5")}
         <span>{currentLabel}</span>
         <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
@@ -238,12 +238,12 @@ function DateSelector({ selectedDate, setSelectedDate, availableDates }) {
       {isOpen && (
         <div className="absolute right-0 top-full mt-1 bg-slate-800 border border-slate-700 rounded-lg shadow-xl z-50 min-w-[140px] py-1">
           <button onClick={() => { setSelectedDate('today'); setIsOpen(false); }}
-            className={\`w-full text-left px-3 py-1.5 text-xs hover:bg-slate-700/50 transition-colors \${selectedDate === 'today' ? 'text-cyan-400 font-medium' : 'text-slate-300'}\`}>
+            className={`w-full text-left px-3 py-1.5 text-xs hover:bg-slate-700/50 transition-colors ${selectedDate === 'today' ? 'text-cyan-400 font-medium' : 'text-slate-300'}`}>
             📅 今天（最新）
           </button>
           {sortedDates.filter(d => d !== (new Date().toISOString().slice(0,10))).map(date => (
             <button key={date} onClick={() => { setSelectedDate(date); setIsOpen(false); }}
-              className={\`w-full text-left px-3 py-1.5 text-xs hover:bg-slate-700/50 transition-colors \${selectedDate === date ? 'text-cyan-400 font-medium' : 'text-slate-300'}\`}>
+              className={`w-full text-left px-3 py-1.5 text-xs hover:bg-slate-700/50 transition-colors ${selectedDate === date ? 'text-cyan-400 font-medium' : 'text-slate-300'}`}>
               📅 {formatDate(date)}
             </button>
           ))}
