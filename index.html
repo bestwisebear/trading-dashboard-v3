@@ -1009,23 +1009,6 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
     .filter(([code, s]) => !wlCodes.has(code) && (code.includes(searchQuery) || (s.name||'').includes(searchQuery)))
     .map(([code, s]) => ({...s, code, _fromScan: true})) : [];
 
-  // 快速检测状态
-  const [scanQuery, setScanQuery] = useState('');
-  const [scanSort, setScanSort] = useState('score');
-
-  const scanStocks = quickEval.stocks || {};
-  const scanMeta = quickEval.meta || {};
-  const scanMatches = (scanQuery ? Object.entries(scanStocks).filter(([code, s]) =>
-    code.includes(scanQuery) || (s.name||'').includes(scanQuery)
-  ) : []).sort((a, b) => {
-    if (scanSort === 'score') return (b[1].score||0) - (a[1].score||0);
-    if (scanSort === 'pass') {
-      const pa = Object.values(a[1].gates||{}).filter(g => g.pass===true).length;
-      const pb = Object.values(b[1].gates||{}).filter(g => g.pass===true).length;
-      return pb - pa;
-    }
-    return a[0].localeCompare(b[0]);
-  });
 
   const gateLabels = {
     market_breadth: '涨跌家数≥2000',
