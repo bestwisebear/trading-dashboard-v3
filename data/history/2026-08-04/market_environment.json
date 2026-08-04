@@ -38,70 +38,80 @@
   ],
   "hot_sectors_up": [
     {
-      "name": "通信设备",
-      "change_pct": 10.74,
+      "name": "通信",
+      "change_pct": 9.41,
       "lead_stock": "欣天科技(+20.04%)"
     },
     {
-      "name": "元件",
-      "change_pct": 8.47,
+      "name": "电子",
+      "change_pct": 5.73,
       "lead_stock": "南亚新材(+14.59%)"
     },
     {
+      "name": "综合",
+      "change_pct": 4.73,
+      "lead_stock": "板块普涨"
+    },
+    {
+      "name": "机械设备",
+      "change_pct": 3.37,
+      "lead_stock": "板块普涨"
+    },
+    {
+      "name": "传媒",
+      "change_pct": 3.24,
+      "lead_stock": "传智教育涨停(7连板)"
+    },
+    {
       "name": "医疗服务",
-      "change_pct": 7.44,
-      "lead_stock": "成都先导(+14.67%)"
+      "change_pct": 5.46,
+      "lead_stock": "药明康德/凯莱英涨停"
     },
     {
-      "name": "电子化学品Ⅱ",
-      "change_pct": 7.05,
-      "lead_stock": "唯特偶(+13.43%)"
+      "name": "元件",
+      "change_pct": 7.13,
+      "lead_stock": "东山精密涨停"
     },
     {
-      "name": "玻璃玻纤",
-      "change_pct": 6.19,
-      "lead_stock": "中材科技(+9.99%)"
-    },
-    {
-      "name": "非金属材料Ⅱ",
-      "change_pct": 5.67,
-      "lead_stock": "联瑞新材(+10.96%)"
+      "name": "电子化学品",
+      "change_pct": 6.55,
+      "lead_stock": "板块普涨"
     },
     {
       "name": "半导体",
-      "change_pct": 5.39,
+      "change_pct": 6.0,
       "lead_stock": "板块普涨"
     },
     {
       "name": "消费电子",
       "change_pct": 4.8,
       "lead_stock": "信维通信+5.40%"
-    },
-    {
-      "name": "AI服务器",
-      "change_pct": 4.5,
-      "lead_stock": "浪潮信息+3.46%"
-    },
-    {
-      "name": "IDC",
-      "change_pct": 4.2,
-      "lead_stock": "润泽科技+7.99%"
     }
   ],
   "hot_sectors_down": [
     {
       "name": "银行",
-      "change_pct": -2.1,
-      "lead_stock": "工商银行/中国银行跌超3%"
+      "change_pct": -2.75,
+      "lead_stock": "四大行跌超3%"
     },
     {
-      "name": "白酒",
-      "change_pct": -1.5,
-      "lead_stock": "资金流出走弱"
+      "name": "食品饮料",
+      "change_pct": -1.71,
+      "lead_stock": "白酒板块走弱"
     },
     {
-      "name": "油气",
-      "change_pct": -1.2,
+      "name": "交通运输",
+      "change_pct": -1.56,
+      "lead_stock": "板块普跌"
+    },
+    {
+      "name": "钢铁",
+      "change_pct": -1.23,
+      "lead_stock": "板块普跌"
+    },
+    {
+      "name": "石油石化",
+      "change_pct": -1.11,
       "lead_stock": "原油暴跌拖累"
     }
   ],
@@ -131,9 +141,9 @@
       "change_pct": 7.19
     }
   ],
-  "overall_assessment": "今日市场大幅反弹，创业板指大涨+5.64%领涨。科技板块全面爆发：通信设备+10.74%、元件+8.47%、半导体+5.39%。关注池几乎全线飘红，东山精密涨停+10%，协创数据+17.68%，天孚通信+17.45%，新易盛+13.68%，中际旭创+13.24%。银行白酒等权重板块走弱，风格显著切换至科技成长。",
-  "rise_count": 4200,
-  "fall_count": 1200,
-  "limit_up": 105,
-  "limit_down": 5
+  "overall_assessment": "今日A股放量修复行情，创业板指大涨+5.64%领涨。科技板块全面爆发：通信+9.41%、电子+5.73%、元件+7.13%、半导体+6.00%。上涨3642家/下跌1747家，涨停140家/跌停仅1家，成交2.23万亿放量2174亿。银行-2.75%领跌，风格显著切换至科技成长。",
+  "rise_count": 3642,
+  "fall_count": 1747,
+  "limit_up": 140,
+  "limit_down": 1
 }
