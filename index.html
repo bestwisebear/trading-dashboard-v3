@@ -76,23 +76,23 @@ const { useState, useEffect, useCallback, useMemo } = React;
 
 // ============ DATA URLS ============
 const DATA_URLS = {
-  positions: 'https://www.coze.cn/s/SCju1ieCCt4/',
-  market_signals: 'https://www.coze.cn/s/M9zRe6UmRHo/',
-  watchlist: 'https://www.coze.cn/s/SsOqFV1Dlnk/',
-  oversold_sectors: 'https://www.coze.cn/s/R-EZJNcvlAQ/',
-  bottom_signals: 'https://www.coze.cn/s/WaCIjcpvk3o/',
-  market_environment: 'https://www.coze.cn/s/6ro3Okcs7bs/',
-  plans: 'https://www.coze.cn/s/XYWgxv7CqLA/',
-  risk_assessment: 'https://www.coze.cn/s/RVO5Jgc5eJk/',
-  discipline_log: 'https://www.coze.cn/s/TQIxzzyYFvg/',
-  avoid_list: 'https://www.coze.cn/s/TNDxqy5v1L8/',
-  trades_today: 'https://www.coze.cn/s/Rr0bYKtf9To/',
-  reviews_daily: 'https://www.coze.cn/s/TtbcVXEuvPU/',
-  reviews_weekly: 'https://www.coze.cn/s/Tf2Zu2Aimac/',
-  reviews_monthly: 'https://www.coze.cn/s/S3xE1h-uof4/',
-  fundamentals: 'https://www.coze.cn/s/G8SLMllHyas/',
-  news_impact: 'https://www.coze.cn/s/NRPV7vfgip8/',
-  quick_eval: 'https://www.coze.cn/s/5-Glnv8zy5I/',
+  positions: './data/positions.json',
+  market_signals: './data/market_signals.json',
+  watchlist: './data/watchlist.json',
+  oversold_sectors: './data/oversold_sectors.json',
+  bottom_signals: './data/bottom_signals.json',
+  market_environment: './data/market_environment.json',
+  plans: './data/plans.json',
+  risk_assessment: './data/risk_assessment.json',
+  discipline_log: './data/discipline_log.json',
+  avoid_list: './data/avoid_list.json',
+  trades_today: './data/trades_today.json',
+  reviews_daily: './data/reviews_daily.json',
+  reviews_weekly: './data/reviews_weekly.json',
+  reviews_monthly: './data/reviews_monthly.json',
+  fundamentals: './data/fundamentals.json',
+  news_impact: './data/news_impact.json',
+  quick_eval: './data/quick_eval.json',
 };
 
 const DATA_LABELS = {
@@ -105,11 +105,7 @@ const DATA_LABELS = {
 };
 
 
-// ============ EMBEDDED FALLBACK DATA ============
-const EMBEDDED_FUNDAMENTALS = {"meta": {"last_updated": "2026-08-04T15:00:00+08:00", "data_source": "腾讯行情PE + 估算PB/ROE", "update_frequency": "weekly"}, "stocks": {"300136": {"name": "信维通信", "pe": 78.15, "pb": 5.8, "roe": 7.4, "revenue_growth": "-5.2%", "star": 2, "note": "PE偏高，业绩承压"}, "000977": {"name": "浪潮信息", "pe": 42.49, "pb": 4.2, "roe": 9.9, "revenue_growth": "28.5%", "star": 4, "note": "AI服务器龙头，增速强劲"}, "300857": {"name": "协创数据", "pe": 67.53, "pb": 8.5, "roe": 12.6, "revenue_growth": "45.2%", "star": 4, "note": "AI服务器高增长，PE偏高"}, "002156": {"name": "通富微电", "pe": 58.29, "pb": 3.8, "roe": 6.5, "revenue_growth": "18.3%", "star": 3, "note": "封测龙头，先进封装受益"}, "300502": {"name": "新易盛", "pe": 58.12, "pb": 12.3, "roe": 21.2, "revenue_growth": "62.8%", "star": 5, "note": "光模块龙头，ROE优秀"}, "300308": {"name": "中际旭创", "pe": 79.68, "pb": 15.6, "roe": 19.6, "revenue_growth": "55.3%", "star": 5, "note": "全球光模块龙头，高增速"}, "300394": {"name": "天孚通信", "pe": 106.1, "pb": 18.2, "roe": 17.1, "revenue_growth": "42.6%", "star": 4, "note": "光器件龙头，PE偏高"}, "300223": {"name": "北京君正", "pe": 98.24, "pb": 4.5, "roe": 4.6, "revenue_growth": "15.8%", "star": 3, "note": "存储芯片设计，估值偏高"}, "301308": {"name": "江波龙", "pe": 26.1, "pb": 5.2, "roe": 19.9, "revenue_growth": "38.5%", "star": 5, "note": "存储品牌龙头，PE合理ROE高"}, "300438": {"name": "鹏辉能源", "pe": 52.79, "pb": 3.1, "roe": 5.9, "revenue_growth": "-8.5%", "star": 2, "note": "储能电池，营收下滑中"}, "300395": {"name": "菲利华", "pe": 81.84, "pb": 6.8, "roe": 8.3, "revenue_growth": "12.1%", "star": 3, "note": "石英材料龙头，半导体受益"}, "300442": {"name": "润泽科技", "pe": 21.45, "pb": 3.6, "roe": 16.8, "revenue_growth": "35.2%", "star": 5, "note": "IDC龙头，PE合理增速快"}, "300604": {"name": "长川科技", "pe": 99.1, "pb": 9.4, "roe": 9.5, "revenue_growth": "25.6%", "star": 3, "note": "半导体设备，PE偏高"}, "000988": {"name": "华工科技", "pe": 59.48, "pb": 4.8, "roe": 8.1, "revenue_growth": "20.3%", "star": 3, "note": "激光+光模块双主线"}, "002384": {"name": "东山精密", "pe": 160.79, "pb": 6.2, "roe": 3.9, "revenue_growth": "22.4%", "star": 2, "note": "PCB龙头，PE过高"}, "603026": {"name": "石大胜华", "pe": 46.66, "pb": 2.8, "roe": 6.0, "revenue_growth": "-12.3%", "star": 2, "note": "电解液溶剂，行业景气低位"}, "300769": {"name": "德方纳米", "pe": -31.91, "pb": 2.1, "roe": -6.6, "revenue_growth": "-18.7%", "star": 2, "note": "亏损中，磷酸铁锂材料"}, "002558": {"name": "巨人网络", "pe": 22.79, "pb": 3.5, "roe": 15.4, "revenue_growth": "32.1%", "star": 4, "note": "游戏+AI，H1预增157-183%"}}};
-const EMBEDDED_NEWS_IMPACT = {"meta": {"last_updated": "2026-08-04T15:00:00+08:00", "source": "综合财经媒体"}, "date": "2026-08-04", "messages": [{"title": "十五五新型电力系统规划落地，电网投资5万亿", "type": "利好", "impact_level": 5, "sector": "电力设备/特高压", "detail": "明确未来五年电网总投资约5万亿，重点利好特高压、配网智能化、储能调节", "time": "2026-08-04 08:15"}, {"title": "《集成电路布图设计保护条例》修订发布", "type": "利好", "impact_level": 4, "sector": "半导体", "detail": "强化国产芯片知识产权保护，利好存储、设备、先进封测国产替代标的", "time": "2026-08-04 09:00"}, {"title": "药明康德上调全年业绩指引至585-605亿", "type": "利好", "impact_level": 4, "sector": "CRO/医药", "detail": "全年收入预期由513-530亿上调至585-605亿，增速35%-39%，CXO板块修复", "time": "2026-08-04 07:30"}, {"title": "中微公司上半年净利预增282%-311%", "type": "利好", "impact_level": 4, "sector": "半导体设备", "detail": "归母净利润27-29亿元，扣非净利增85%-123%，刻蚀设备增长强劲", "time": "2026-08-04 20:00"}, {"title": "美股三大指数三连阳，亚马逊市值破3万亿", "type": "利好", "impact_level": 3, "sector": "外围/科技", "detail": "Meta大涨6%，芯片指数持续走强，美债收益率回落，离岸人民币升至6.76", "time": "2026-08-04 04:00"}, {"title": "AI算力需求爆发：AWS/北美云厂商资本开支持续上修", "type": "利好", "impact_level": 5, "sector": "AI算力/光模块/IDC", "detail": "谷歌上调资本开支至1950-2050亿美元，亚马逊上修至2200亿，利好国内IDC、服务器、光模块", "time": "2026-08-04 06:30"}, {"title": "SK海力士发布HBF高带宽闪存标准，存储产能被预订一空", "type": "利好", "impact_level": 4, "sector": "存储芯片", "detail": "DRAM与HBM产能已被提前预订，2027年将成为存储行业供需最紧缺年份", "time": "2026-08-04 10:15"}, {"title": "央行大额流动性投放3630亿", "type": "利好", "impact_level": 3, "sector": "宏观/流动性", "detail": "630亿7天逆回购+3000亿隔夜逆回购，市场短期流动性维持宽松", "time": "2026-08-04 09:30"}, {"title": "证监会发布内地+香港资本市场10项深化合作举措", "type": "利好", "impact_level": 3, "sector": "券商/跨境金融", "detail": "支持港股企业回A股上市、扩容离岸人民币国债期货、ETF快速注册", "time": "2026-08-04 11:00"}, {"title": "多家上市公司大额回购/增持", "type": "利好", "impact_level": 2, "sector": "市场情绪", "detail": "五粮液回购10亿、立讯精密回购10亿、大秦铁路回购4-5亿等，传递底部信号", "time": "2026-08-04 12:00"}, {"title": "中东局势反复，原油剧烈波动", "type": "利空", "impact_level": 3, "sector": "原油/化工", "detail": "美伊谈判重启但美军维持封锁，布油盘中大跌7%，油气板块短期震荡加剧", "time": "2026-08-04 03:00"}, {"title": "北向资金净卖出32亿，大额抛售宁德时代", "type": "利空", "impact_level": 3, "sector": "资金面", "detail": "逆势重仓买入招商银行3亿，大额抛售宁德时代3.94亿、特变电工、三花智控", "time": "2026-08-04 15:30"}, {"title": "美国7月制造业PMI升至55.6，加息预期提升", "type": "利空", "impact_level": 2, "sector": "外围/宏观", "detail": "为2022年5月以来最高水平，市场对美联储加息预期升温", "time": "2026-08-04 22:00"}, {"title": "银行白酒等权重板块资金流出走弱", "type": "利空", "impact_level": 2, "sector": "银行/消费", "detail": "工商银行、中国银行跌超3%，消费板块资金流出，风格切换至科技成长", "time": "2026-08-04 14:30"}, {"title": "阿里发布千问3.8-MAX大模型，DeepSeek上线V4-Flash", "type": "利好", "impact_level": 3, "sector": "AI应用", "detail": "千问3.8-MAX 2.4万亿参数追平Anthropic旗舰，DeepSeek智能体能力跨越式提升", "time": "2026-08-04 10:00"}], "overall_sentiment": "偏多", "sentiment_summary": "利好方向：AI算力/光模块、电网设备/特高压、半导体存储、CRO医药、军工；承压方向：油气、银行消费、新能源锂电池"};
-const EMBEDDED_POSITIONS = {"meta": {"last_updated": "2026-08-04T15:20:00+08:00", "version": "3.0"}, "positions": [{"code": "300136", "name": "信维通信", "quantity": 1000, "cost_price": 61.6, "cost_source": "broker_sync", "current_price": 59.55, "price_updated_at": "2026-08-04T15:20:00+08:00", "buy_date": "2025-07-28", "holding_days": 7, "stop_loss": 55.75, "stop_profit": 62.0, "pnl_percent": -3.33, "pnl_amount": -2050.0, "realized_today": -1220, "unrealized_today": 1830.0, "sector": "消费电子", "status": "holding", "notes": "收盘59.55涨+5.40%，距止损55.75有6.4%安全垫。做T亏损-1220已实现。目标62减仓"}, {"code": "000977", "name": "浪潮信息", "quantity": 1000, "cost_price": 72.42, "cost_source": "calc", "current_price": 74.14, "price_updated_at": "2026-08-04T15:20:00+08:00", "buy_date": "2026-08-04", "holding_days": 0, "stop_loss": 67.0, "stop_profit": 82.0, "pnl_percent": 2.38, "pnl_amount": 1720.0, "sector": "AI服务器", "status": "holding", "notes": "收盘74.14涨+3.46%，浮盈1720。主力净流入7.17亿。上龙虎榜，机构买入5.48亿。目标82"}, {"code": "159599", "name": "芯片ETF东财", "quantity": 13200, "cost_price": 2.525, "cost_source": "dialog_sync", "current_price": 2.65, "price_updated_at": "2026-08-04T15:20:00+08:00", "buy_date": "2026-08-04", "holding_days": 0, "stop_loss": 2.4, "stop_profit": 2.9, "pnl_percent": 4.95, "pnl_amount": 1650.0, "sector": "半导体ETF", "status": "holding", "violation": "out_of_watchlist", "notes": "收盘2.65涨+4.74%，浮盈1650。半导体板块今日+5.39%。非关注池冲动开仓"}, {"code": "300438", "name": "鹏辉能源", "quantity": 600, "cost_price": 60.41, "cost_source": "dialog_sync", "current_price": 60.28, "price_updated_at": "2026-08-04T15:20:00+08:00", "buy_date": "2026-08-04", "holding_days": 0, "stop_loss": 57.0, "stop_profit": 65.0, "pnl_percent": -0.22, "pnl_amount": -78.0, "sector": "锂电储能", "status": "holding", "violation": "skip_candidate_pool", "notes": "收盘60.28涨+1.55%，浮亏-78。观察池票跳过candidate直接买入"}], "summary": {"total_positions": 4, "total_pnl_percent": 0.61, "total_pnl_amount": 1242.0, "total_realized_today": -3060, "net_today": -1818.0, "position_ratio": 100, "available_cash": -1058.0, "total_assets": 204838.0}};
-const EMBEDDED_TRADES_TODAY = {"meta": {"date": "2026-08-04", "last_updated": "2026-08-04T15:20:00+08:00", "session": "full_day"}, "trades": [{"seq": 1, "code": "300408", "name": "三环集团", "action": "sell", "quantity": 500, "price": 110.32, "time": "09:32", "reason": "触发止损线，执行止损清仓", "pnl_amount": -1840, "pnl_percent": -3.23, "notes": "止损执行正确，后续涨到120.72但不影响决策质量"}, {"seq": 2, "code": "000977", "name": "浪潮信息", "action": "buy", "quantity": 700, "price": 72.22, "time": "09:37", "reason": "AI服务器板块反弹建仓", "pnl_amount": 0, "pnl_percent": 0, "violation": "non_trading_window"}, {"seq": 3, "code": "000977", "name": "浪潮信息", "action": "buy", "quantity": 300, "price": 72.88, "time": "10:26", "reason": "加仓", "pnl_amount": 0, "pnl_percent": 0, "violation": "non_trading_window"}, {"seq": 4, "code": "300136", "name": "信维通信", "action": "sell", "quantity": 600, "price": 59.9, "time": "14:00", "reason": "担心60压力位冲不上去，先减仓等回踩", "pnl_amount": -480, "pnl_percent": -1.33, "violation": "day_trading", "notes": "做T第一步：卖出等回踩"}, {"seq": 5, "code": "300136", "name": "信维通信", "action": "buy", "quantity": 1000, "price": 60.21, "time": "14:10", "reason": "信维冲上60后恐慌回补，多买了400股", "pnl_amount": 0, "pnl_percent": 0, "violation": "day_trading,exceed_planned_qty", "notes": "做T第二步：追高回补，做T变加仓"}, {"seq": 6, "code": "300136", "name": "信维通信", "action": "sell", "quantity": 600, "price": 59.16, "time": "14:18", "reason": "回补后回落59.2，恐慌再减仓", "pnl_amount": -740, "pnl_percent": -2.04, "violation": "day_trading", "notes": "做T第三步：高买低卖，做反了"}, {"seq": 7, "code": "159599", "name": "芯片ETF东财", "action": "buy", "quantity": 13200, "price": 2.525, "time": "14:22", "reason": "情绪化开仓，非关注池标的", "pnl_amount": 0, "pnl_percent": 0, "violation": "out_of_watchlist"}, {"seq": 8, "code": "300438", "name": "鹏辉能源", "action": "buy", "quantity": 600, "price": 60.41, "time": "14:24", "reason": "观察池票未转candidate直接买入", "pnl_amount": 0, "pnl_percent": 0, "violation": "skip_candidate_pool"}], "summary": {"total_trades": 8, "buy_count": 5, "sell_count": 3, "realized_pnl": -3060, "violation_count": 6, "violation_types": {"non_trading_window": 2, "day_trading": 3, "out_of_watchlist": 1, "exceed_planned_qty": 1, "skip_candidate_pool": 1}}};
+// ============ DATA SOURCE: GitHub Pages local /data/ directory ============
 
 // ============ ICONS (SVG) ============
 const Icons = {
@@ -169,10 +165,6 @@ function useDataLoader() {
     }));
 
     // Apply embedded fallback for missing data
-    if (!results.positions && EMBEDDED_POSITIONS) { results.positions = EMBEDDED_POSITIONS; timestamps.positions = EMBEDDED_POSITIONS.meta?.last_updated; }
-    if (!results.trades_today && EMBEDDED_TRADES_TODAY) { results.trades_today = EMBEDDED_TRADES_TODAY; timestamps.trades_today = EMBEDDED_TRADES_TODAY.meta?.last_updated; }
-    if (!results.fundamentals && EMBEDDED_FUNDAMENTALS) results.fundamentals = EMBEDDED_FUNDAMENTALS;
-    if (!results.news_impact && EMBEDDED_NEWS_IMPACT) results.news_impact = EMBEDDED_NEWS_IMPACT;
     if (!results.fundamentals) { timestamps.fundamentals = new Date().toISOString(); }
     if (!results.news_impact) { timestamps.news_impact = new Date().toISOString(); }
     setData(results);
