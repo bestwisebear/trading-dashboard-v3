@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "date": "2026-08-04",
+    "last_updated": "2026-08-04T15:20:00+08:00",
+    "data_as_of": "2026-08-04 收盘"
+  },
+  "sectors": [
+    {
+      "sector_name": "靶材",
+      "change_1d": 9.08,
+      "change_20d": -37.64,
+      "change_5d": -6.88,
+      "top3_resistant": [
+        {
+          "code": "003003",
+          "name": "欧莱新材",
+          "change_1d": 17.04
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日暴跌-37.64%最深，今日反弹+9.08%，超跌反弹中",
+      "threshold": "跌幅<板块平均"
+    },
+    {
+      "sector_name": "玻璃玻纤",
+      "change_1d": 6.19,
+      "change_20d": -34.16,
+      "change_5d": -2.67,
+      "top3_resistant": [
+        {
+          "code": "600309",
+          "name": "中材科技",
+          "change_1d": 9.99
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌-34.16%后今日反弹+6.19%，连续反弹日，观察持续性",
+      "threshold": "跌幅<板块平均"
+    },
+    {
+      "sector_name": "电子化学品Ⅱ",
+      "change_1d": 7.05,
+      "change_20d": -32.53,
+      "change_5d": -3.97,
+      "top3_resistant": [
+        {
+          "code": "301037",
+          "name": "唯特偶",
+          "change_1d": 13.43
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌-32.53%后今日强势反弹+7.05%",
+      "threshold": "跌幅<板块平均"
+    },
+    {
+      "sector_name": "非金属材料Ⅱ",
+      "change_1d": 5.67,
+      "change_20d": -31.72,
+      "change_5d": -1.81,
+      "top3_resistant": [
+        {
+          "code": "688300",
+          "name": "联瑞新材",
+          "change_1d": 10.96
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌-31.72%后反弹+5.67%",
+      "threshold": "跌幅<板块平均"
+    },
+    {
+      "sector_name": "元件",
+      "change_1d": 8.47,
+      "change_20d": -22.31,
+      "change_5d": 2.31,
+      "top3_resistant": [
+        {
+          "code": "688519",
+          "name": "南亚新材",
+          "change_1d": 14.59
+        }
+      ],
+      "can_add_watchlist": true,
+      "note": "20日跌-22.31%后今日大涨+8.47%。关注池内通富微电+8.30%表现强势",
+      "threshold": "跌幅<板块平均"
+    },
+    {
+      "sector_name": "光芯片",
+      "change_1d": 10.26,
+      "change_20d": -19.32,
+      "change_5d": 7.04,
+      "top3_resistant": [
+        {
+          "code": "300620",
+          "name": "光库科技",
+          "change_1d": 20.0
+        }
+      ],
+      "can_add_watchlist": true,
+      "note": "概念板块20日跌-19.32%后今日暴涨+10.26%。关注池内光模块三强(新易盛/中际旭创/天孚通信)涨幅13-17%",
+      "threshold": "跌幅<板块平均"
+    },
+    {
+      "sector_name": "通信设备",
+      "change_1d": 10.74,
+      "change_20d": -15.47,
+      "change_5d": 8.05,
+      "top3_resistant": [
+        {
+          "code": "300582",
+          "name": "欣天科技",
+          "change_1d": 20.04
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌-15.47%后今日领涨全市场+10.74%，主力资金净流入223亿",
+      "threshold": "跌幅<板块平均"
+    }
+  ]
+}

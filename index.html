@@ -95,6 +95,11 @@ const DATA_URLS = {
   quick_eval: './data/quick_eval.json',
 };
 
+
+const MANIFEST_URL = './data/history/manifest.json';
+const BASE_DATA = './data';
+const HISTORY_DATA = './data/history';
+
 const DATA_LABELS = {
   positions: '持仓数据', market_signals: '道闸信号', watchlist: '关注池',
   oversold_sectors: '超跌板块', bottom_signals: '底部信号', market_environment: '市场环境',
@@ -136,16 +141,22 @@ const Icons = {
 };
 
 // ============ DATA FETCHING HOOK ============
-function useDataLoader() {
+function useDataLoader(selectedDate) {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [errors, setErrors] = useState({});
   const [lastFetch, setLastFetch] = useState({});
 
+  const getDataPrefix = useCallback(() => {
+    if (!selectedDate || selectedDate === 'today') return BASE_DATA;
+    return HISTORY_DATA + '/' + selectedDate;
+  }, [selectedDate]);
+
   const fetchAll = useCallback(async () => {
     setLoading(true);
     setErrors({});
-    const entries = Object.entries(DATA_URLS);
+    const prefix = getDataPrefix();
+    const entries = Object.entries(DATA_URLS).map(([key, url]) => [key, prefix + '/' + url.split('/').pop()]);
     const results = {};
     const errs = {};
     const timestamps = {};
@@ -171,11 +182,13 @@ function useDataLoader() {
     setErrors(errs);
     setLastFetch(timestamps);
     setLoading(false);
-  }, []);
+  }, [getDataPrefix]);
 
   const fetchOne = useCallback(async (key) => {
     try {
-      const res = await fetch(DATA_URLS[key]);
+      const prefix = getDataPrefix();
+      const url = prefix + '/' + DATA_URLS[key].split('/').pop();
+      const res = await fetch(url);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       setData(prev => ({ ...prev, [key]: json }));
@@ -186,9 +199,58 @@ function useDataLoader() {
     }
   }, []);
 
-  useEffect(() => { fetchAll(); }, [fetchAll]);
+  useEffect(() => { fetchAll(); }, [fetchAll, selectedDate]);
 
   return { data, loading, errors, lastFetch, fetchAll, fetchOne };
+}
+
+
+// ============ DATE SELECTOR ============
+function DateSelector({ selectedDate, setSelectedDate, availableDates }) {
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const formatDate = (dateStr) => {
+    const d = new Date(dateStr + 'T00:00:00+08:00');
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    const diff = Math.round((today - d) / 86400000);
+    const weekdays = ['日','一','二','三','四','五','六'];
+    const wd = '周' + weekdays[d.getDay()];
+    if (diff === 0) return '今天';
+    if (diff === 1) return '昨天';
+    if (diff === 2) return '前天';
+    return dateStr.slice(5) + ' ' + wd;
+  };
+
+  const sortedDates = [...(availableDates || [])].sort((a,b) => b.localeCompare(a));
+  const currentLabel = selectedDate === 'today' ? '今天' : formatDate(selectedDate);
+
+  return (
+    <div className="relative">
+      <button onClick={() => setIsOpen(!isOpen)}
+        className={\`flex items-center gap-1 px-2 py-1 rounded text-xs font-medium transition-colors cursor-pointer \${
+          selectedDate !== 'today' ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+        }\`}>
+        {Icons.clock("w-3.5 h-3.5")}
+        <span>{currentLabel}</span>
+        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      {isOpen && (
+        <div className="absolute right-0 top-full mt-1 bg-slate-800 border border-slate-700 rounded-lg shadow-xl z-50 min-w-[140px] py-1">
+          <button onClick={() => { setSelectedDate('today'); setIsOpen(false); }}
+            className={\`w-full text-left px-3 py-1.5 text-xs hover:bg-slate-700/50 transition-colors \${selectedDate === 'today' ? 'text-cyan-400 font-medium' : 'text-slate-300'}\`}>
+            📅 今天（最新）
+          </button>
+          {sortedDates.filter(d => d !== (new Date().toISOString().slice(0,10))).map(date => (
+            <button key={date} onClick={() => { setSelectedDate(date); setIsOpen(false); }}
+              className={\`w-full text-left px-3 py-1.5 text-xs hover:bg-slate-700/50 transition-colors \${selectedDate === date ? 'text-cyan-400 font-medium' : 'text-slate-300'}\`}>
+              📅 {formatDate(date)}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 
 // ============ UTILITY COMPONENTS ============
@@ -322,11 +384,21 @@ function App() {
   const [reviewTab, setReviewTab] = useState('daily');
   const [expandedReview, setExpandedReview] = useState(null);
   const [expandedPos, setExpandedPos] = useState(null);
+  const [selectedDate, setSelectedDate] = useState('today');
+  const [availableDates, setAvailableDates] = useState([]);
   const [localAvoid, setLocalAvoid] = useState(() => {
     try { return JSON.parse(localStorage.getItem('avoid_list_extra') || '[]'); } catch { return []; }
   });
 
-  const { data, loading, errors, lastFetch, fetchAll, fetchOne } = useDataLoader();
+  // Load available dates from manifest
+  useEffect(() => {
+    fetch(MANIFEST_URL)
+      .then(r => r.json())
+      .then(m => setAvailableDates(m.available_dates || []))
+      .catch(() => {});
+  }, []);
+
+  const { data, loading, errors, lastFetch, fetchAll, fetchOne } = useDataLoader(selectedDate);
 
   const handleRefresh = async () => {
     setRefreshing(true);
@@ -412,6 +484,10 @@ function App() {
           ))}
         </div>
         <div className="flex items-center gap-3 ml-4">
+          {selectedDate !== 'today' && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30 font-medium">历史</span>
+          )}
+          <DateSelector selectedDate={selectedDate} setSelectedDate={setSelectedDate} availableDates={availableDates} />
           <button onClick={handleRefresh} className={`p-1.5 rounded hover:bg-bg-hover transition-colors active:scale-[0.97] ${refreshing ? 'animate-spin text-info' : 'text-text-secondary'}`}>
             {Icons.refresh("w-4 h-4")}
           </button>
