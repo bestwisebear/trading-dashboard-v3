@@ -66,15 +66,16 @@
     "total_realized_today": 9973,
     "total_unrealized_today": -400.0,
     "net_today": 9573.0,
-    "position_ratio": 37,
-    "available_cash": 130080.0,
-    "total_assets": 207280,
+    "position_ratio": 37.1,
+    "available_cash": 130773,
+    "total_assets": 207973,
     "total_pnl_amount": 9573.0,
     "initial_capital": 200000,
     "monthly_realized": 9973,
     "monthly_unrealized": -400.0,
-    "monthly_pnl": 7280,
-    "monthly_return_rate": 3.64,
-    "today_return_rate": 4.99
+    "monthly_pnl": 9973,
+    "monthly_return_rate": 5.04,
+    "today_return_rate": 5.04,
+    "prev_close_assets": 198000
   }
 }
