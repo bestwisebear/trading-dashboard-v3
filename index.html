@@ -93,6 +93,7 @@ const DATA_URLS = {
   fundamentals: './data/fundamentals.json',
   news_impact: './data/news_impact.json',
   quick_eval: './data/quick_eval.json',
+  daily_review: './data/daily_review.json',
 };
 
 
@@ -445,6 +446,7 @@ function App() {
   const fundamentals = data.fundamentals || {};
   const newsImpact = data.news_impact || {};
   const quickEval = data.quick_eval || {};
+  const dailyReview = data.daily_review || {};
   // positions_history removed
 
   const hasError = Object.keys(errors).length > 0;
@@ -459,7 +461,7 @@ function App() {
     positions, marketSignals, watchlistData, oversoldSectors, bottomSignals,
     marketEnv, plans, riskAssessment, disciplineLog, avoidListData,
     tradesToday, reviewsDaily, reviewsWeekly, reviewsMonthly,
-    fundamentals, newsImpact, quickEval,
+    fundamentals, newsImpact, quickEval, dailyReview,
     lastFetch, errors, searchQuery, setSearchQuery,
     showCostModal, setShowCostModal, showAvoidModal, setShowAvoidModal,
     watchTab, setWatchTab, scanQuery, setScanQuery, reviewTab, setReviewTab,
@@ -1744,7 +1746,7 @@ function ViolationsPage({ disciplineLog }) {
 }
 
 // ============ PAGE: REVIEWS ============
-function ReviewsPage({ reviewsDaily, reviewsWeekly, reviewsMonthly, reviewTab, setReviewTab, expandedReview, setExpandedReview }) {
+function ReviewsPage({ reviewsDaily, reviewsWeekly, reviewsMonthly, dailyReview, reviewTab, setReviewTab, expandedReview, setExpandedReview }) {
   const dailyRecords = reviewsDaily.records || [];
   const weeklyRecords = reviewsWeekly.records || [];
   const monthlyRecords = reviewsMonthly.records || [];
@@ -1806,7 +1808,63 @@ function ReviewsPage({ reviewsDaily, reviewsWeekly, reviewsMonthly, reviewTab, s
                       </div>
                     </div>
                   )}
-                  <div className="grid grid-cols-2 gap-3 text-xs">
+                                    {/* 计划对比复盘 */}
+                  {(r.planned_executed || r.planned_not_executed || r.unplanned_actions) && (
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <p className="text-[11px] text-text-muted">📋 计划对比复盘</p>
+                        {r.plan_quality !== undefined && (
+                          <div className="flex items-center gap-2">
+                            <span className="text-[10px] text-text-muted">计划{r.plan_quality}分</span>
+                            <span className="text-[10px] text-text-muted">纪律{r.execution_score||r.discipline_score||0}分</span>
+                          </div>
+                        )}
+                      </div>
+                      {r.planned_executed && r.planned_executed.length > 0 && (
+                        <div className="space-y-1">
+                          <p className="text-[10px] text-fall font-medium">✅ 计划内已执行</p>
+                          {r.planned_executed.map((pe, i) => (
+                            <div key={i} className="p-2 rounded bg-slate-800/40 border border-slate-700/50 text-xs space-y-1">
+                              <div className="flex items-center justify-between">
+                                <span className="font-medium text-text-primary">{pe.stock}</span>
+                                {pe.deviation && <span className="text-[10px] text-warn">偏差</span>}
+                              </div>
+                              <p className="text-text-muted">计划: {pe.plan}</p>
+                              <p className="text-text-secondary">实际: {pe.actual}</p>
+                              {pe.result && <p className="text-text-muted text-[11px]">结果: {pe.result}</p>}
+                              {pe.deviation && <p className="text-warn text-[11px]">⚠ {pe.deviation}</p>}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      {r.planned_not_executed && r.planned_not_executed.length > 0 && (
+                        <div className="space-y-1">
+                          <p className="text-[10px] text-rise font-medium">❌ 计划内未执行</p>
+                          {r.planned_not_executed.map((pne, i) => (
+                            <div key={i} className="p-2 rounded bg-rise/5 border border-rise/20 text-xs space-y-1">
+                              <span className="font-medium text-text-primary">{pne.stock}</span>
+                              <p className="text-text-muted">计划: {pne.plan}</p>
+                              <p className="text-rise text-[11px]">原因: {pne.reason}</p>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      {r.unplanned_actions && r.unplanned_actions.length > 0 && (
+                        <div className="space-y-1">
+                          <p className="text-[10px] text-warn font-medium">⚡ 计划外操作</p>
+                          {r.unplanned_actions.map((ua, i) => (
+                            <div key={i} className="p-2 rounded bg-warn/5 border border-warn/20 text-xs space-y-1">
+                              <span className="font-medium text-text-primary">{ua.stock} — {ua.action}</span>
+                              <p className="text-text-muted">触发: {ua.trigger}</p>
+                              {ua.evaluation && <p className="text-text-secondary text-[11px]">评估: {ua.evaluation}</p>}
+                              {ua.lesson && <p className="text-warn text-[11px]">教训: {ua.lesson}</p>}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+<div className="grid grid-cols-2 gap-3 text-xs">
                     {r.market_review && <div><p className="text-[11px] text-text-muted">市场回顾</p><p className="text-text-secondary">{r.market_review}</p></div>}
                     {r.emotion_state && <div><p className="text-[11px] text-text-muted">情绪状态</p><p className="text-text-secondary">{r.emotion_state}</p></div>}
                   </div>
