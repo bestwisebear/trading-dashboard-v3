@@ -445,6 +445,7 @@ function App() {
   const fundamentals = data.fundamentals || {};
   const newsImpact = data.news_impact || {};
   const quickEval = data.quick_eval || {};
+  // positions_history removed
 
   const hasError = Object.keys(errors).length > 0;
   const globalFreshness = getFreshness(lastFetch.positions);
@@ -553,46 +554,34 @@ function OverviewPage({ positions, marketSignals, marketEnv, riskAssessment, bot
             <h3 className="text-base font-semibold text-text-primary">组合快照</h3>
             <FreshnessBadge fresh={getFreshness(lastFetch.positions)} />
           </div>
-          <div className="grid grid-cols-3 gap-4 mb-3">
+          <div className="grid grid-cols-2 gap-4 mb-3">
             <div>
               <p className="text-[11px] text-text-muted uppercase tracking-wider">总资产</p>
               <p className="text-lg font-mono font-bold text-text-primary">¥{((summary.total_assets||0)/10000).toFixed(2)}<span className="text-xs text-text-muted">万</span></p>
             </div>
             <div>
-              <p className="text-[11px] text-text-muted uppercase tracking-wider">浮动盈亏</p>
-              {(() => { const floatingPnl = (positions.positions||[]).reduce((sum, p) => sum + ((p.pnl_amount)||0), 0); return (
-              <p className={`text-lg font-mono font-bold ${floatingPnl >= 0 ? 'text-rise' : 'text-fall'}`}>
-                {floatingPnl >= 0 ? '+' : ''}¥{floatingPnl.toFixed(0)}
-              </p>
-              ); })()}
-            </div>
-            <div>
-              <p className="text-[11px] text-text-muted uppercase tracking-wider">今日已实现</p>
-              {(() => { const realized = (positions.closed_today||[]).reduce((sum, t) => sum + (t.realized_pnl||0), 0); return (
-              <p className={`text-sm font-mono font-semibold ${realized >= 0 ? 'text-rise' : 'text-fall'}`}>
-                {realized >= 0 ? '+' : ''}¥{realized.toFixed(0)}
+              <p className="text-[11px] text-text-muted uppercase tracking-wider">今日收益</p>
+              {(() => { const net = summary.net_today || 0; const base = summary.prev_close_assets || summary.initial_capital || 200000; const rate = (net / base * 100); return (
+              <p className={`text-lg font-mono font-bold ${net >= 0 ? 'text-rise' : 'text-fall'}`}>
+                {net >= 0 ? '+' : ''}¥{net.toFixed(0)} ({rate >= 0 ? '+' : ''}{rate.toFixed(2)}%)
               </p>
               ); })()}
             </div>
             <div>
               <p className="text-[11px] text-text-muted uppercase tracking-wider">本月收益</p>
-              {(() => { const mp = summary.monthly_pnl ?? ((summary.monthly_realized||0)+(summary.monthly_unrealized||0)); const mr = summary.monthly_return_rate; return (
-              <p className={`text-sm font-mono font-semibold ${mp >= 0 ? 'text-rise' : 'text-fall'}`}>
+              {(() => { const mp = summary.monthly_pnl ?? 0; const mr = summary.monthly_return_rate; return (
+              <p className={`text-lg font-mono font-bold ${mp >= 0 ? 'text-rise' : 'text-fall'}`}>
                 {mp >= 0 ? '+' : ''}¥{mp.toFixed(0)}{mr != null ? ` (${mr >= 0 ? '+' : ''}${mr.toFixed(2)}%)` : ''}
               </p>
               ); })()}
             </div>
             <div>
-              <p className="text-[11px] text-text-muted uppercase tracking-wider">当年累计</p>
-              {(() => { const initCap = summary.initial_capital; if (!initCap) return <p className="text-sm font-mono text-text-muted">待设置</p>; const cumPnl = (summary.total_assets||0) - initCap; const cumRate = (cumPnl / initCap * 100); return (
-              <p className={`text-sm font-mono font-semibold ${cumPnl >= 0 ? 'text-rise' : 'text-fall'}`}>
-                {cumPnl >= 0 ? '+' : ''}¥{cumPnl.toFixed(0)} ({cumRate >= 0 ? '+' : ''}{cumRate.toFixed(2)}%)
+              <p className="text-[11px] text-text-muted uppercase tracking-wider">仓位 / 可用资金</p>
+              <p className="text-lg font-mono font-bold">
+                <span className="text-warn">{(summary.position_ratio||0).toFixed(1)}%</span>
+                <span className="text-text-muted mx-1">/</span>
+                <span className="text-text-secondary">¥{((summary.available_cash||0)/10000).toFixed(1)}万</span>
               </p>
-              ); })()}
-            </div>
-            <div>
-              <p className="text-[11px] text-text-muted uppercase tracking-wider">仓位 / 可用</p>
-              <p className="text-sm font-mono"><span className="font-semibold text-warn">{(summary.position_ratio||0).toFixed(1)}%</span> <span className="text-text-secondary">/ ¥{((summary.available_cash||0)/10000).toFixed(1)}万</span></p>
             </div>
           </div>
           <div className="border-t border-border-main pt-2">
@@ -954,13 +943,11 @@ function PositionsPage({ positions, riskAssessment, tradesToday, disciplineLog, 
             </tbody>
           </table>
         </div>
-        <div className="mt-4 pt-3 border-t border-border-main grid grid-cols-2 md:grid-cols-3 gap-3">
-          <div><p className="text-[11px] text-text-muted">总资产</p><p className="font-mono font-semibold">¥{((summary.total_assets||0)/10000).toFixed(2)}万</p></div>
-          <div><p className="text-[11px] text-text-muted">浮动盈亏</p>{(() => { const fp = (positions.positions||[]).reduce((s,p)=>s+((p.pnl_amount)||0),0); return <p className={`font-mono font-semibold ${fp >= 0 ? 'text-rise' : 'text-fall'}`}>{fp >= 0 ? '+' : ''}¥{fp.toFixed(0)}</p>; })()}</div>
-          <div><p className="text-[11px] text-text-muted">今日已实现</p>{(() => { const r = (positions.closed_today||[]).reduce((s,t)=>s+(t.realized_pnl||0),0); return <p className={`font-mono font-semibold ${r >= 0 ? 'text-rise' : 'text-fall'}`}>{r >= 0 ? '+' : ''}¥{r.toFixed(0)}</p>; })()}</div>
-          <div><p className="text-[11px] text-text-muted">本月收益</p>{(() => { const mp = summary.monthly_pnl ?? ((summary.monthly_realized||0)+(summary.monthly_unrealized||0)); const mr = summary.monthly_return_rate; return <p className={`font-mono font-semibold ${mp >= 0 ? 'text-rise' : 'text-fall'}`}>{mp >= 0 ? '+' : ''}¥{mp.toFixed(0)}{mr != null ? ` (${mr >= 0 ? '+' : ''}${mr.toFixed(2)}%)` : ''}</p>; })()}</div>
-          <div><p className="text-[11px] text-text-muted">当年累计</p>{(() => { const ic = summary.initial_capital; if (!ic) return <p className="font-mono text-text-muted">待设置</p>; const cp = (summary.total_assets||0)-ic; const cr = cp/ic*100; return <p className={`font-mono font-semibold ${cp >= 0 ? 'text-rise' : 'text-fall'}`}>{cp >= 0 ? '+' : ''}¥{cp.toFixed(0)} ({cr >= 0 ? '+' : ''}{cr.toFixed(2)}%)</p>; })()}</div>
-          <div><p className="text-[11px] text-text-muted">仓位 / 可用</p><p className="font-mono"><span className="font-semibold text-warn">{(summary.position_ratio||0).toFixed(1)}%</span> <span className="text-text-secondary">/ ¥{((summary.available_cash||0)/10000).toFixed(1)}万</span></p></div>
+        <div className="mt-4 pt-3 border-t border-border-main grid grid-cols-2 gap-3">
+          <div><p className="text-[11px] text-text-muted">总资产</p><p className="text-base font-mono font-bold text-text-primary">¥{((summary.total_assets||0)/10000).toFixed(2)}万</p></div>
+          <div><p className="text-[11px] text-text-muted">今日收益</p>{(() => { const net = summary.net_today||0; const base = summary.prev_close_assets || summary.initial_capital || 200000; const rate = (net/base*100); return <p className={`text-base font-mono font-bold ${net >= 0 ? 'text-rise' : 'text-fall'}`}>{net >= 0 ? '+' : ''}¥{net.toFixed(0)} ({rate >= 0 ? '+' : ''}{rate.toFixed(2)}%)</p>; })()}</div>
+          <div><p className="text-[11px] text-text-muted">本月收益</p>{(() => { const mp = summary.monthly_pnl ?? 0; const mr = summary.monthly_return_rate; return <p className={`text-base font-mono font-bold ${mp >= 0 ? 'text-rise' : 'text-fall'}`}>{mp >= 0 ? '+' : ''}¥{mp.toFixed(0)}{mr != null ? ` (${mr >= 0 ? '+' : ''}${mr.toFixed(2)}%)` : ''}</p>; })()}</div>
+          <div><p className="text-[11px] text-text-muted">仓位 / 可用资金</p><p className="text-base font-mono font-bold"><span className="text-warn">{(summary.position_ratio||0).toFixed(1)}%</span><span className="text-text-muted mx-1">/</span><span className="text-text-secondary">¥{((summary.available_cash||0)/10000).toFixed(1)}万</span></p></div>
         </div>
       </Card>
 
