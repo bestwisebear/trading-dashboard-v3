@@ -74,6 +74,7 @@
     "monthly_realized": 9973,
     "monthly_unrealized": -400.0,
     "monthly_pnl": 7280,
-    "monthly_return_rate": 3.64
+    "monthly_return_rate": 3.64,
+    "today_return_rate": 4.99
   }
 }
