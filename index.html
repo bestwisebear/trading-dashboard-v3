@@ -381,6 +381,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [refreshing, setRefreshing] = useState(false);
   const [watchTab, setWatchTab] = useState('long');
+  const [scanQuery, setScanQuery] = useState('');
   const [reviewTab, setReviewTab] = useState('daily');
   const [expandedReview, setExpandedReview] = useState(null);
   const [expandedPos, setExpandedPos] = useState(null);
@@ -460,7 +461,7 @@ function App() {
     fundamentals, newsImpact, quickEval,
     lastFetch, errors, searchQuery, setSearchQuery,
     showCostModal, setShowCostModal, showAvoidModal, setShowAvoidModal,
-    watchTab, setWatchTab, reviewTab, setReviewTab,
+    watchTab, setWatchTab, scanQuery, setScanQuery, reviewTab, setReviewTab,
     expandedReview, setExpandedReview, expandedPos, setExpandedPos,
     allAvoidItems, addLocalAvoid, setShowAvoidModal,
     fetchOne, fetchAll, refreshing, setRefreshing,
@@ -1068,7 +1069,7 @@ function SignalsPage({ marketSignals, bottomSignals }) {
 }
 
 // ============ PAGE: WATCHLIST ============
-function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval, watchTab, setWatchTab, searchQuery, setSearchQuery }) {
+function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval, watchTab, setWatchTab, searchQuery, setSearchQuery, scanQuery, setScanQuery }) {
   const wl = watchlistData.watchlist || [];
   const os = oversoldSectors.sectors || [];
   const filtered = wl.filter(w =>
@@ -1076,10 +1077,18 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
   );
   // 快速检测：搜索时也匹配quick_eval中的非观察池个股
   const scanStocks = quickEval.stocks || {};
+  const scanMeta = quickEval.meta || {};
+  const [scanSort, setScanSort] = useState('score');
   const wlCodes = new Set(wl.map(w => w.code));
   const scanMatches = searchQuery ? Object.entries(scanStocks)
     .filter(([code, s]) => !wlCodes.has(code) && (code.includes(searchQuery) || (s.name||'').includes(searchQuery)))
     .map(([code, s]) => ({...s, code, _fromScan: true})) : [];
+
+  // scan tab独立过滤+排序
+  const scanFiltered = scanQuery ? Object.entries(scanStocks)
+    .filter(([code, s]) => code.includes(scanQuery) || (s.name||'').includes(scanQuery))
+    .sort((a, b) => scanSort === 'score' ? (b[1].score||0) - (a[1].score||0) : scanSort === 'pass' ? Object.values(b[1].gates||{}).filter(g=>g==='pass').length - Object.values(a[1].gates||{}).filter(g=>g==='pass').length : a[0].localeCompare(b[0]))
+    : Object.entries(scanStocks).sort((a, b) => (b[1].score||0) - (a[1].score||0));
 
 
   const gateLabels = {
@@ -1214,7 +1223,7 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
         </div>
       )}
 
-      {false && watchTab === 'scan' && (  /* scan tab disabled - merged into long tab */
+      {watchTab === 'scan' && (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <div>
@@ -1238,7 +1247,7 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
             </div>
           )}
 
-          {scanQuery && scanMatches.length === 0 && (
+          {scanQuery && scanFiltered.length === 0 && (
             <Card className="text-center py-8">
               <p className="text-3xl mb-3">🔍</p>
               <p className="text-sm text-text-primary font-medium mb-1">未找到匹配结果</p>
@@ -1246,13 +1255,14 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
             </Card>
           )}
 
-          {(scanQuery ? scanMatches : []).map(([code, s]) => {
-            const passedCount = Object.values(s.gates||{}).filter(g => g.pass === true).length;
-            const computedCount = Object.values(s.gates||{}).filter(g => g.pass !== null).length;
+          {scanFiltered.map(([code, s]) => {
+            const passedCount = Object.values(s.gates||{}).filter(g => g === 'pass').length;
+            const computedCount = Object.values(s.gates||{}).filter(g => g === 'pass' || g === 'fail' || g === 'conditional').length;
             const totalScore = s.score || 0;
-            const verdictColor = s.verdict === 'pass' ? 'text-fall' : s.verdict === 'conditional' ? 'text-warn' : 'text-rise';
-            const verdictBg = s.verdict === 'pass' ? 'bg-fall/10 border-fall/30' : s.verdict === 'conditional' ? 'bg-warn/10 border-warn/30' : 'bg-rise/10 border-rise/30';
-            const verdictText = s.verdict === 'pass' ? '✅ 建议买入' : s.verdict === 'conditional' ? '⚠️ 有条件通过' : '❌ 不建议';
+            const status = s.status || '';
+            const verdictColor = status === 'passed' ? 'text-fall' : status === 'conditional' ? 'text-warn' : 'text-rise';
+            const verdictBg = status === 'passed' ? 'bg-fall/10 border-fall/30' : status === 'conditional' ? 'bg-warn/10 border-warn/30' : 'bg-rise/10 border-rise/30';
+            const verdictText = status === 'passed' ? '✅ 建议买入' : status === 'conditional' ? '⚠️ 有条件通过' : '❌ 不建议';
             return (
               <Card key={code} className="glass-hover">
                 <div className="flex items-center justify-between mb-3">
@@ -1307,17 +1317,20 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-1.5 mb-3">
-                  {Object.entries(s.gates||{}).map(([key, gate]) => (
-                    <div key={key} className={`p-2 rounded border text-xs ${gate.pass === true ? 'border-fall/30 bg-fall/5' : gate.pass === false ? 'border-rise/30 bg-rise/5' : 'border-border-main/30 bg-bg-primary/30'}`}>
+                  {Object.entries(s.gates||{}).map(([key, gate]) => {
+                    const gateStatus = typeof gate === 'string' ? gate : (gate.pass === true ? 'pass' : gate.pass === false ? 'fail' : 'unknown');
+                    return (
+                    <div key={key} className={`p-2 rounded border text-xs ${gateStatus === 'pass' ? 'border-fall/30 bg-fall/5' : gateStatus === 'fail' ? 'border-rise/30 bg-rise/5' : gateStatus === 'conditional' ? 'border-warn/30 bg-warn/5' : 'border-border-main/30 bg-bg-primary/30'}`}>
                       <div className="flex items-center gap-1 mb-0.5">
-                        <span className={gate.pass === true ? 'text-fall' : gate.pass === false ? 'text-rise' : 'text-text-muted'}>
-                          {gate.pass === true ? '✓' : gate.pass === false ? '✗' : '?'}
+                        <span className={gateStatus === 'pass' ? 'text-fall' : gateStatus === 'fail' ? 'text-rise' : gateStatus === 'conditional' ? 'text-warn' : 'text-text-muted'}>
+                          {gateStatus === 'pass' ? '✓' : gateStatus === 'fail' ? '✗' : gateStatus === 'conditional' ? '⚠' : '?'}
                         </span>
                         <span className="text-text-muted text-[10px]">{gateLabels[key]||key}</span>
                       </div>
-                      <p className="font-mono text-[10px] text-text-secondary">{gate.value||'-'}</p>
+                      <p className="font-mono text-[10px] text-text-secondary">{typeof gate === 'object' ? (gate.value||'-') : gateStatus}</p>
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
                 {s.note && (
@@ -1333,12 +1346,12 @@ function WatchlistPage({ watchlistData, oversoldSectors, fundamentals, quickEval
             );
           })}
 
-          {!scanQuery && (
-            <Card className="text-center py-10">
-              <p className="text-4xl mb-3">🔍</p>
-              <p className="text-sm text-text-primary font-medium mb-2">输入股票代码或名称开始检测</p>
-              <p className="text-xs text-text-muted mb-4">每晚23:00自动扫描全市场，预计算7道闸评估结果</p>
-              <div className="flex justify-center gap-6 text-xs text-text-muted">
+          {scanFiltered.length === 0 && (
+            <Card className="text-center py-8">
+              <p className="text-3xl mb-3">🔍</p>
+              <p className="text-sm text-text-primary font-medium mb-1">暂无快速检测数据</p>
+              <p className="text-xs text-text-muted">每晚23:00自动扫描全市场，预计算7道闸评估结果</p>
+              <div className="flex justify-center gap-6 text-xs text-text-muted mt-2">
                 <span>🚫 排除ST</span>
                 <span>🚫 排除科创板(688)</span>
                 <span>🚫 排除北交所(8开头)</span>
