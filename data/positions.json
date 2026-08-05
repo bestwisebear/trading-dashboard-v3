@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T10:20:00+08:00",
+    "last_updated": "2026-08-05T11:50:00+08:00",
     "version": "3.0"
   },
   "positions": [
@@ -10,17 +10,17 @@
       "quantity": 600,
       "cost_price": 60.41,
       "cost_source": "dialog_sync",
-      "current_price": 61.76,
-      "price_updated_at": "2026-08-05T10:00:00+08:00",
+      "current_price": 63.46,
+      "price_updated_at": "2026-08-05T11:50:00+08:00",
       "buy_date": "2026-08-04",
       "holding_days": 1,
       "stop_loss": 59.1,
       "stop_profit": 63.6,
-      "pnl_percent": 2.23,
-      "pnl_amount": 810.0,
+      "pnl_percent": 5.05,
+      "pnl_amount": 1830.0,
       "sector": "锂电储存能",
       "status": "holding",
-      "notes": "现价61.76涨+2.5%，浮盈+810。唯一持仓。止损59.10(支撑59.70-1%)，止盈63.60(第二阻力)"
+      "notes": "现价63.46涨+5.28%，浮盈+1830。唯一持仓。距止盈63.60仅0.22元！止损59.10(支撑59.70-1%)"
     }
   ],
   "closed_today": [
@@ -55,8 +55,8 @@
   "summary": {
     "total_positions": 1,
     "total_realized_today": 8059,
-    "total_unrealized_today": 810,
-    "net_today": 8869,
+    "total_unrealized_today": 1830.0,
+    "net_today": 9889.0,
     "position_ratio": 18,
     "available_cash": 14928,
     "total_assets": 204838

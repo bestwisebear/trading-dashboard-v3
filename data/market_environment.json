@@ -1,149 +1,139 @@
 {
   "meta": {
-    "date": "2026-08-04",
-    "last_updated": "2026-08-04T15:20:00+08:00",
-    "session": "close"
+    "date": "2026-08-05",
+    "last_updated": "2026-08-05T11:50:00+08:00",
+    "session": "midday"
   },
   "indices": [
     {
       "name": "上证指数",
       "code": "sh000001",
-      "close": 3822.28,
-      "change_pct": 0.33,
-      "high": 3831.94,
-      "low": 3799.52,
-      "volume": 540324922,
-      "amount": 100838254
+      "close": 3873.56,
+      "change_pct": 1.34,
+      "high": 3876.11,
+      "low": 3815.12,
+      "volume": 360823797,
+      "amount": 76515014
     },
     {
       "name": "深证成指",
       "code": "sz399001",
-      "close": 13885.71,
-      "change_pct": 3.25,
-      "high": 13936.52,
-      "low": 13537.76,
-      "volume": 664836577,
-      "amount": 120520929
+      "close": 14101.9,
+      "change_pct": 1.56,
+      "high": 14115.34,
+      "low": 13644.83,
+      "volume": 452342699,
+      "amount": 92455425
     },
     {
       "name": "创业板指",
       "code": "sz399006",
-      "close": 3488.97,
-      "change_pct": 5.64,
-      "high": 3510.51,
-      "low": 3342.41,
-      "volume": 211106623,
-      "amount": 60161322
+      "close": 3519.86,
+      "change_pct": 0.89,
+      "high": 3526.01,
+      "low": 3372.04,
+      "volume": 137661974,
+      "amount": 45912016
     }
   ],
   "hot_sectors_up": [
     {
-      "name": "通信",
-      "change_pct": 9.41,
-      "lead_stock": "欣天科技(+20.04%)"
-    },
-    {
-      "name": "电子",
-      "change_pct": 5.73,
-      "lead_stock": "南亚新材(+14.59%)"
-    },
-    {
-      "name": "综合",
-      "change_pct": 4.73,
-      "lead_stock": "板块普涨"
-    },
-    {
-      "name": "机械设备",
-      "change_pct": 3.37,
-      "lead_stock": "板块普涨"
-    },
-    {
-      "name": "传媒",
-      "change_pct": 3.24,
-      "lead_stock": "传智教育涨停(7连板)"
-    },
-    {
-      "name": "医疗服务",
-      "change_pct": 5.46,
-      "lead_stock": "药明康德/凯莱英涨停"
-    },
-    {
-      "name": "元件",
-      "change_pct": 7.13,
-      "lead_stock": "东山精密涨停"
+      "name": "玻璃玻纤",
+      "change_pct": 7.59,
+      "lead_stock": "国际复材(+10.74%)"
     },
     {
       "name": "电子化学品",
-      "change_pct": 6.55,
-      "lead_stock": "板块普涨"
+      "change_pct": 7.52,
+      "lead_stock": "中巨芯-U(+20.01%)"
+    },
+    {
+      "name": "非金属材料",
+      "change_pct": 6.99,
+      "lead_stock": "联瑞新材(+10.72%)"
+    },
+    {
+      "name": "小金属",
+      "change_pct": 6.21,
+      "lead_stock": "浩通科技(+19.99%)"
+    },
+    {
+      "name": "贵金属",
+      "change_pct": 6.2,
+      "lead_stock": "四川黄金(+9.99%)"
     },
     {
       "name": "半导体",
-      "change_pct": 6.0,
+      "change_pct": 5.86,
+      "lead_stock": "有研硅(+16.30%)"
+    },
+    {
+      "name": "工业金属",
+      "change_pct": 4.07,
       "lead_stock": "板块普涨"
     },
     {
-      "name": "消费电子",
-      "change_pct": 4.8,
-      "lead_stock": "信维通信+5.40%"
+      "name": "电池",
+      "change_pct": 3.5,
+      "lead_stock": "鹏辉能源+5.28%"
+    },
+    {
+      "name": "存储芯片",
+      "change_pct": 7.5,
+      "lead_stock": "北京君正+7.89%/江波龙+7.44%"
+    },
+    {
+      "name": "电子元器件",
+      "change_pct": 7.0,
+      "lead_stock": "三环集团+7.45%"
     }
   ],
   "hot_sectors_down": [
     {
+      "name": "光模块",
+      "change_pct": -4.5,
+      "lead_stock": "新易盛-5.71%/中际旭创-7.64%"
+    },
+    {
       "name": "银行",
-      "change_pct": -2.75,
-      "lead_stock": "四大行跌超3%"
+      "change_pct": -1.5,
+      "lead_stock": "板块继续回调"
     },
     {
       "name": "食品饮料",
-      "change_pct": -1.71,
-      "lead_stock": "白酒板块走弱"
-    },
-    {
-      "name": "交通运输",
-      "change_pct": -1.56,
-      "lead_stock": "板块普跌"
-    },
-    {
-      "name": "钢铁",
-      "change_pct": -1.23,
-      "lead_stock": "板块普跌"
-    },
-    {
-      "name": "石油石化",
-      "change_pct": -1.11,
-      "lead_stock": "原油暴跌拖累"
+      "change_pct": -0.8,
+      "lead_stock": "白酒板块弱势"
     }
   ],
   "concept_sectors_up": [
     {
-      "name": "光芯片",
-      "change_pct": 10.26
-    },
-    {
-      "name": "博通概念",
-      "change_pct": 9.6
-    },
-    {
-      "name": "谷歌概念",
-      "change_pct": 9.42
-    },
-    {
       "name": "靶材",
-      "change_pct": 9.08
+      "change_pct": 10.0
     },
     {
-      "name": "锗镓概念",
-      "change_pct": 7.34
+      "name": "物理AI",
+      "change_pct": 7.36
     },
     {
-      "name": "AI-PIN",
-      "change_pct": 7.19
+      "name": "大硅片",
+      "change_pct": 7.05
+    },
+    {
+      "name": "电子布",
+      "change_pct": 7.01
+    },
+    {
+      "name": "电子特气",
+      "change_pct": 6.98
+    },
+    {
+      "name": "有色(铋)",
+      "change_pct": 6.84
     }
   ],
-  "overall_assessment": "今日A股放量修复行情，创业板指大涨+5.64%领涨。科技板块全面爆发：通信+9.41%、电子+5.73%、元件+7.13%、半导体+6.00%。上涨3642家/下跌1747家，涨停140家/跌停仅1家，成交2.23万亿放量2174亿。银行-2.75%领跌，风格显著切换至科技成长。",
-  "rise_count": 3642,
-  "fall_count": 1747,
-  "limit_up": 140,
-  "limit_down": 1
+  "overall_assessment": "午间收盘：三大指数继续上行，上证+1.34%至3873.56，深成指+1.56%至14101.90，创业板+0.89%至3519.86。市场风格分化：半导体/存储/玻璃玻纤领涨，光模块回调(新易盛-5.71%/中际旭创-7.64%)。半导体主力净流入88.9亿领跑。涨停股密集，赚钱效应持续。",
+  "rise_count": null,
+  "fall_count": null,
+  "limit_up": null,
+  "limit_down": null
 }
