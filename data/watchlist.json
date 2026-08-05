@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T11:50:00+08:00"
+    "last_updated": "2026-08-05T14:03:00+08:00"
   },
   "watchlist": [
     {
@@ -186,12 +186,12 @@
           62.0
         ]
       },
-      "status": "holding",
-      "sector": "电池",
+      "status": "tracking",
+      "sector": "电池/储能",
       "today_close": 63.46,
       "today_change_pct": 5.28,
       "tags": [
-        "持仓"
+        "已止盈清仓"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-05T11:50:00+08:00"
@@ -313,12 +313,12 @@
           75.0
         ]
       },
-      "status": "holding",
+      "status": "tracking",
       "sector": "AI服务器",
       "today_close": 78.22,
       "today_change_pct": 5.5,
       "tags": [
-        "持仓",
+        "已止盈清仓",
         "AI服务器"
       ],
       "added_date": "2026-08-03",
@@ -365,6 +365,29 @@
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-05T11:50:00+08:00"
+    },
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "key_price": {
+        "support": 15.0,
+        "resistance": 17.0,
+        "buy_range": [
+          15.0,
+          15.8
+        ]
+      },
+      "status": "tracking",
+      "sector": "虚拟电厂/电力",
+      "today_close": 16.12,
+      "today_change_pct": 0.12,
+      "tags": [
+        "虚拟电厂",
+        "算电协同",
+        "换电储能"
+      ],
+      "added_date": "2026-08-05",
+      "price_updated_at": "2026-08-05T14:00:00+08:00"
     }
   ],
   "summary": {
