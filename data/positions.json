@@ -1,7 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T05:31:00+08:00",
+    "last_updated": "2026-08-05T15:40:00+08:00",
     "version": "3.0",
+    "last_premarket_refresh": "2026-08-06T05:31:00+08:00",
     "data_as_of": "2026-08-05 收盘"
   },
   "positions": [
@@ -21,8 +22,7 @@
       "pnl_amount": -400.0,
       "sector": "AI算力/服务器",
       "status": "holding",
-      "notes": "14:00回补买入，成本77.6，1000股。收盘77.20，浮亏-400元。止损74.50",
-      "change_pct": 4.13
+      "notes": "14:00回补买入，成本77.6，1000股。收盘77.20，浮亏-400元。止损74.50"
     }
   ],
   "closed_today": [
@@ -67,17 +67,17 @@
     "total_positions": 1,
     "total_realized_today": 9973,
     "total_unrealized_today": -400.0,
-    "net_today": 9573,
-    "position_ratio": 37.3,
-    "available_cash": 129535,
-    "total_assets": 206735,
-    "total_pnl_amount": 9573,
+    "net_today": 9573.0,
+    "position_ratio": 37.1,
+    "available_cash": 130773,
+    "total_assets": 207973,
+    "total_pnl_amount": 9573.0,
     "initial_capital": 200000,
     "monthly_realized": 9973,
     "monthly_unrealized": -400.0,
-    "monthly_pnl": 6735,
-    "monthly_return_rate": 3.37,
+    "monthly_pnl": 9973,
+    "monthly_return_rate": 5.04,
     "today_return_rate": 5.04,
-    "prev_close_assets": 197162
+    "prev_close_assets": 198000
   }
 }

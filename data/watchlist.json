@@ -1,6 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T05:31:00+08:00",
+    "last_updated": "202608052301",
+    "last_premarket_refresh": "2026-08-06T05:31:00+08:00",
     "data_as_of": "2026-08-05 收盘"
   },
   "watchlist": [
@@ -39,7 +40,7 @@
       },
       "status": "tracking",
       "sector": "半导体封测",
-      "today_close": 58.0,
+      "today_close": 58,
       "today_change_pct": 4.32,
       "tags": [
         "封测"
@@ -252,7 +253,7 @@
       },
       "status": "tracking",
       "sector": "半导体设备",
-      "today_close": 272.0,
+      "today_close": 272,
       "today_change_pct": 10.65,
       "tags": [
         "半导体设备"
@@ -395,10 +396,37 @@
     "avg_change_pct": 3.54,
     "up_count": 15,
     "down_count": 3,
+    "top_gainer": "协创数据 +17.68%",
+    "top_loser": "鹏辉能源 +1.55%（全线飘红）",
     "flat_count": 0,
-    "top_gainer": "长川科技 +10.65%",
-    "top_loser": "中际旭创 -7.27%",
     "total": 18
   },
-  "oversold_scan": []
+  "oversold_scan": [],
+  "transit_pool": [
+    {
+      "name": "圣邦股份",
+      "code": "300661",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "capital_flow": false,
+        "trend": false,
+        "turnover": true,
+        "momentum": true,
+        "sector": true
+      },
+      "key_price": {
+        "support": 95.1,
+        "buy_range": [
+          95.1,
+          97.95
+        ],
+        "stop_loss": 94.15
+      },
+      "sector": "半导体/芯片",
+      "change_pct": 2.42,
+      "reason": "7道闸5/7；涨幅2.42%<5%；RSI6=63.3；现价接近/站上MA20(105.60)"
+    }
+  ]
 }
