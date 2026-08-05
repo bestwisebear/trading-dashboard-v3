@@ -1,8 +1,9 @@
 {
   "meta": {
-    "date": "2026-08-05",
-    "last_updated": "2026-08-05T15:15:00+08:00",
-    "session": "close"
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T05:31:00+08:00",
+    "session": "pre_market",
+    "data_as_of": "2026-08-05 收盘"
   },
   "indices": [
     {
@@ -43,17 +44,17 @@
       "lead_stock": "国际复材(+14.04%)"
     },
     {
-      "name": "电子化学品",
+      "name": "电子化学品Ⅱ",
       "change_pct": 7.86,
       "lead_stock": "中巨芯-U(+20.01%)"
     },
     {
       "name": "贵金属",
       "change_pct": 7.72,
-      "lead_stock": "四川黄金(+10%)/晓程科技(+11.89%)"
+      "lead_stock": "晓程科技(+11.89%)"
     },
     {
-      "name": "非金属材料",
+      "name": "非金属材料Ⅱ",
       "change_pct": 7.48,
       "lead_stock": "联瑞新材(+12.48%)"
     },
@@ -61,89 +62,54 @@
       "name": "元件",
       "change_pct": 6.57,
       "lead_stock": "胜宏科技(+17.12%)"
-    },
-    {
-      "name": "小金属",
-      "change_pct": 6.43,
-      "lead_stock": "浩通科技(+19.99%)/云南锗业(+10%)"
-    },
-    {
-      "name": "半导体",
-      "change_pct": 5.8,
-      "lead_stock": "兆易创新(+8.26%)/北京君正(+7.74%)"
-    },
-    {
-      "name": "工业金属",
-      "change_pct": 5.03,
-      "lead_stock": "板块普涨"
-    },
-    {
-      "name": "消费电子",
-      "change_pct": 4.34,
-      "lead_stock": "京东方A(+6.04%)"
-    },
-    {
-      "name": "存储芯片",
-      "change_pct": 8.0,
-      "lead_stock": "江波龙(+8.59%)/北京君正(+7.74%)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "油气开采",
-      "change_pct": -2.5,
-      "lead_stock": "通源石油/科力股份领跌"
+      "name": "光模块",
+      "change_pct": -4.5,
+      "lead_stock": "新易盛-5.71%/中际旭创-7.64%"
     },
     {
       "name": "银行",
-      "change_pct": -1.8,
-      "lead_stock": "银行板块继续调整"
+      "change_pct": -1.5,
+      "lead_stock": "板块继续回调"
     },
     {
-      "name": "白酒",
-      "change_pct": -1.2,
-      "lead_stock": "白酒板块弱势"
-    },
-    {
-      "name": "中药",
+      "name": "食品饮料",
       "change_pct": -0.8,
-      "lead_stock": "中药板块承压"
-    },
-    {
-      "name": "医药商业",
-      "change_pct": -0.5,
-      "lead_stock": "医药商业偏弱"
+      "lead_stock": "白酒板块弱势"
     }
   ],
   "concept_sectors_up": [
     {
       "name": "靶材",
-      "change_pct": 9.75
+      "change_pct": 10.0
     },
     {
-      "name": "电子布",
-      "change_pct": 7.76
-    },
-    {
-      "name": "有色(铋)",
-      "change_pct": 7.49
+      "name": "物理AI",
+      "change_pct": 7.36
     },
     {
       "name": "大硅片",
-      "change_pct": 7.4
+      "change_pct": 7.05
+    },
+    {
+      "name": "电子布",
+      "change_pct": 7.01
     },
     {
       "name": "电子特气",
-      "change_pct": 6.9
+      "change_pct": 6.98
     },
     {
-      "name": "中芯国际概念",
-      "change_pct": 6.87
+      "name": "有色(铋)",
+      "change_pct": 6.84
     }
   ],
-  "overall_assessment": "收盘：三大指数全线收涨，上证+1.47%收3878.43，深成指+1.86%收14144.20，创业板+1.32%收3535.14，科创50+4.78%。两市成交2.66万亿放量4460亿。涨停104家跌停仅1家，3725涨1621跌。半导体/贵金属/电子化学品领涨，油气/银行/白酒领跌。科技成长全面修复，风格切换明显。",
-  "rise_count": 3725,
-  "fall_count": 1621,
-  "limit_up": 104,
-  "limit_down": 1
+  "overall_assessment": "盘前基于20260805收盘：三大指数全线上涨，上证+1.47%、深成指+1.86%、创业板+1.32%；玻璃玻纤、电子化学品、贵金属、非金属材料、元件领涨。板块涨幅前5已刷新，跌幅榜本次接口未返回，保留上次有效数据。",
+  "rise_count": null,
+  "fall_count": null,
+  "limit_up": null,
+  "limit_down": null
 }

@@ -1,38 +1,39 @@
 {
   "meta": {
-    "date": "2026-08-05",
-    "last_updated": "2026-08-05T15:15:00+08:00",
-    "session": "close"
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T05:31:00+08:00",
+    "session": "pre_market",
+    "data_as_of": "2026-08-05 收盘"
   },
   "signals": [
     {
       "id": "rise_fall_count",
       "name": "涨跌家数",
       "description": "全市场涨跌家数对比",
-      "value": "3725:1621",
+      "value": null,
       "threshold": 2000,
-      "status": "green",
-      "detail": "3725家上涨，1621家下跌，多方占优。连续两日涨跌比>2:1，市场赚钱效应持续",
-      "updated_at": "2026-08-05T15:15:00+08:00"
+      "status": "yellow",
+      "detail": "本次接口未返回20260805全市场涨跌家数；按规则不沿用旧值，开盘前无法判定“涨家数<2000禁开仓”闸门",
+      "updated_at": "2026-08-06T05:31:00+08:00"
     },
     {
       "id": "sector_strength",
       "name": "板块真假强",
       "description": "持仓板块涨跌比判定",
-      "value": "科技继续强势，光模块分化",
-      "status": "green",
-      "detail": "半导体+5.80%(173涨/178跌真强)、元件+6.57%、贵金属+7.72%真强确认。光模块继续分化(中际旭创-7.27%/新易盛-5.29%回落)",
-      "updated_at": "2026-08-05T15:15:00+08:00"
+      "value": "指数普涨、科技材料强，光模块内部显著分化",
+      "status": "yellow",
+      "detail": "材料/半导体相关板块强势，但观察池光模块中际旭创-7.27%、新易盛-5.29%，天孚通信+2.29%，按涨跌比与最弱股标准不能判定光模块真强",
+      "updated_at": "2026-08-06T05:31:00+08:00"
     },
     {
       "id": "main_capital_flow",
       "name": "主力资金方向",
       "description": "全市场主力资金净流入(亿)",
-      "value": 327,
+      "value": null,
       "threshold": 0,
-      "status": "green",
-      "detail": "上证指数主力净流入327亿(全天)。半导体136.7亿领跑、工业金属65亿、消费电子61亿。科技+有色双主线资金持续流入",
-      "updated_at": "2026-08-05T15:15:00+08:00"
+      "status": "yellow",
+      "detail": "本次未取得全市场主力净流入统一口径，保留待盘中确认",
+      "updated_at": "2026-08-06T05:31:00+08:00"
     },
     {
       "id": "northbound_flow",
@@ -41,8 +42,8 @@
       "value": null,
       "threshold": 0,
       "status": "yellow",
-      "detail": "盘后暂无北向资金详细数据，维持昨日状态。昨日净卖出32亿",
-      "updated_at": "2026-08-05T15:15:00+08:00",
+      "detail": "本次未取得可验证北向成交额与20日均值，不展示净流入替代值",
+      "updated_at": "2026-08-06T05:31:00+08:00",
       "turnover_amt": null,
       "turnover_20d_avg": null,
       "deviation_ratio": null,
@@ -54,40 +55,40 @@
       "id": "limit_up_count",
       "name": "涨停家数",
       "description": "涨停板数量",
-      "value": 104,
+      "value": null,
       "threshold": 30,
-      "status": "green",
-      "detail": "涨停104家，跌停仅1家。传智教育8板、利通电子4天3板、金海通2板。赚钱效应火爆",
-      "updated_at": "2026-08-05T15:15:00+08:00"
+      "status": "yellow",
+      "detail": "本次未取得20260805全市场涨停家数，开盘后补充",
+      "updated_at": "2026-08-06T05:31:00+08:00"
     },
     {
       "id": "volume_ratio",
       "name": "量比指标",
       "description": "全市场量比",
-      "value": 1.25,
+      "value": 1.02,
       "threshold": 1.2,
-      "status": "green",
-      "detail": "两市成交2.66万亿，较昨日放量4460亿(+20%)。深证成指换手2.99%、创业板4.25%。量能显著放大",
-      "updated_at": "2026-08-05T15:15:00+08:00"
+      "status": "yellow",
+      "detail": "上证20260805成交量约为此前19日均量1.02倍，温和放量，未达1.2阈值",
+      "updated_at": "2026-08-06T05:31:00+08:00"
     },
     {
       "id": "market_breadth",
       "name": "市场宽度",
       "description": "站上5日线个股占比",
-      "value": 68.0,
+      "value": null,
       "threshold": 60,
-      "status": "green",
-      "detail": "连续两日反弹+放量，站上5日线占比提升至68%。市场宽度持续改善",
-      "updated_at": "2026-08-05T15:15:00+08:00"
+      "status": "yellow",
+      "detail": "本次未取得站上5日线个股占比，不沿用旧估值",
+      "updated_at": "2026-08-06T05:31:00+08:00"
     }
   ],
   "aggregate": {
-    "green_count": 6,
-    "yellow_count": 1,
+    "green_count": 0,
+    "yellow_count": 7,
     "red_count": 0,
-    "total_score": 13,
+    "total_score": 7,
     "max_score": 14,
-    "no_open_position": false,
-    "no_open_reason": ""
+    "no_open_position": true,
+    "no_open_reason": "盘前缺少全市场涨跌家数，无法通过“涨家数≥2000”硬闸；新仓须等待盘中确认，且仅13:30-14:30执行"
   }
 }

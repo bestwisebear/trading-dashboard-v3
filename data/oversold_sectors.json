@@ -1,121 +1,145 @@
 {
   "meta": {
-    "date": "2026-08-05",
-    "last_updated": "2026-08-05T15:15:00+08:00",
-    "data_as_of": "2026-08-05 收盘"
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T05:31:00+08:00",
+    "data_as_of": "2026-08-05 收盘",
+    "source": "stock-data-skill board"
   },
   "sectors": [
     {
       "sector_name": "靶材",
       "change_1d": 9.75,
       "change_20d": -30.06,
-      "change_5d": 6.4,
       "top3_resistant": [
         {
-          "code": "003003",
+          "code": null,
           "name": "欧莱新材",
           "change_1d": 14.96
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日暴跌-30.06%最深，今日继续反弹+9.75%，连续强势，关注持续性",
-      "threshold": "跌幅<板块平均"
+      "note": "20日跌幅-30.06%，当日反弹9.75%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
     },
     {
       "sector_name": "玻璃玻纤",
       "change_1d": 7.9,
       "change_20d": -24.92,
-      "change_5d": 5.43,
       "top3_resistant": [
         {
-          "code": "600309",
-          "name": "中材科技",
-          "change_1d": 9.99
+          "code": null,
+          "name": "国际复材",
+          "change_1d": 14.04
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日跌-24.92%后今日继续反弹+7.90%，连续三日上涨，观察回调机会",
-      "threshold": "跌幅<板块平均"
+      "note": "20日跌幅-24.92%，当日反弹7.90%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
     },
     {
       "sector_name": "电子化学品Ⅱ",
       "change_1d": 7.86,
       "change_20d": -24.77,
-      "change_5d": 5.29,
       "top3_resistant": [
         {
-          "code": "301037",
-          "name": "唯特偶",
-          "change_1d": 13.43
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "20日跌-24.77%后今日强势反弹+7.86%，中巨芯-U涨停+20%",
-      "threshold": "跌幅<板块平均"
-    },
-    {
-      "sector_name": "非金属材料Ⅱ",
-      "change_1d": 7.48,
-      "change_20d": -22.35,
-      "change_5d": 6.7,
-      "top3_resistant": [
-        {
-          "code": "688300",
-          "name": "联瑞新材",
-          "change_1d": 12.48
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "20日跌-22.35%后反弹+7.48%",
-      "threshold": "跌幅<板块平均"
-    },
-    {
-      "sector_name": "大硅片",
-      "change_1d": 7.4,
-      "change_20d": -20.77,
-      "change_5d": 4.24,
-      "top3_resistant": [
-        {
-          "code": "301036",
-          "name": "有研硅",
-          "change_1d": 17.62
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "20日跌-20.77%后今日反弹+7.40%，有研硅+17.62%领涨",
-      "threshold": "跌幅<板块平均"
-    },
-    {
-      "sector_name": "电子特气",
-      "change_1d": 6.9,
-      "change_20d": -19.23,
-      "change_5d": 3.72,
-      "top3_resistant": [
-        {
-          "code": "301037",
+          "code": null,
           "name": "中巨芯-U",
           "change_1d": 20.01
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日跌-19.23%后反弹+6.90%",
-      "threshold": "跌幅<板块平均"
+      "note": "20日跌幅-24.77%，当日反弹7.86%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
+    },
+    {
+      "sector_name": "中芯国际概念",
+      "change_1d": 6.87,
+      "change_20d": -23.32,
+      "top3_resistant": [
+        {
+          "code": null,
+          "name": "中巨芯-U",
+          "change_1d": 20.01
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌幅-23.32%，当日反弹6.87%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
+    },
+    {
+      "sector_name": "非金属材料Ⅱ",
+      "change_1d": 7.48,
+      "change_20d": -22.35,
+      "top3_resistant": [
+        {
+          "code": null,
+          "name": "联瑞新材",
+          "change_1d": 12.48
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌幅-22.35%，当日反弹7.48%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
+    },
+    {
+      "sector_name": "大硅片",
+      "change_1d": 7.4,
+      "change_20d": -20.77,
+      "top3_resistant": [
+        {
+          "code": null,
+          "name": "有研硅",
+          "change_1d": 17.62
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌幅-20.77%，当日反弹7.40%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
+    },
+    {
+      "sector_name": "电子布",
+      "change_1d": 7.76,
+      "change_20d": -19.82,
+      "top3_resistant": [
+        {
+          "code": null,
+          "name": "国际复材",
+          "change_1d": 14.04
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌幅-19.82%，当日反弹7.76%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
+    },
+    {
+      "sector_name": "电子特气",
+      "change_1d": 6.9,
+      "change_20d": -19.23,
+      "top3_resistant": [
+        {
+          "code": null,
+          "name": "中巨芯-U",
+          "change_1d": 20.01
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "20日跌幅-19.23%，当日反弹6.90%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
     },
     {
       "sector_name": "元件",
       "change_1d": 6.57,
       "change_20d": -14.56,
-      "change_5d": 10.33,
       "top3_resistant": [
         {
-          "code": "300476",
+          "code": null,
           "name": "胜宏科技",
           "change_1d": 17.12
         }
       ],
-      "can_add_watchlist": true,
-      "note": "20日跌-14.56%后今日大涨+6.57%，5日累计+10.33%反弹力度强。关注池内东山精密+5.44%",
-      "threshold": "跌幅<板块平均"
+      "can_add_watchlist": false,
+      "note": "20日跌幅-14.56%，当日反弹6.57%；仅完成板块级扫描，未通过4/7道闸前不推入中转池",
+      "threshold": "20日跌幅>10%"
     }
   ]
 }
