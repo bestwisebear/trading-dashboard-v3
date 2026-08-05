@@ -1,94 +1,64 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T09:10:00+08:00",
+    "last_updated": "2026-08-05T10:20:00+08:00",
     "version": "3.0"
   },
   "positions": [
-    {
-      "code": "300136",
-      "name": "信维通信",
-      "quantity": 1200,
-      "cost_price": 60.7,
-      "cost_source": "broker_sync",
-      "current_price": 59.55,
-      "price_updated_at": "2026-08-04T15:20:00+08:00",
-      "buy_date": "2025-07-28",
-      "holding_days": 7,
-      "stop_loss": 55.94,
-      "stop_profit": 62.4,
-      "pnl_percent": -1.89,
-      "pnl_amount": -2141.0,
-      "realized_today": 2913.0,
-      "unrealized_today": -2141.0,
-      "sector": "消费电子",
-      "status": "holding",
-      "notes": "收盘59.55涨+5.40%。今日做T盈利+2913(卖600股@62.40)。持仓1200股浮盈-2141。目标62减仓"
-    },
-    {
-      "code": "000977",
-      "name": "浪潮信息",
-      "quantity": 1000,
-      "cost_price": 72.42,
-      "cost_source": "calc",
-      "current_price": 74.14,
-      "price_updated_at": "2026-08-04T15:20:00+08:00",
-      "buy_date": "2026-08-04",
-      "holding_days": 0,
-      "stop_loss": 70.5,
-      "stop_profit": 78.2,
-      "pnl_percent": 2.38,
-      "pnl_amount": 1720.0,
-      "sector": "AI服务器",
-      "status": "holding",
-      "notes": "收盘74.14涨+3.46%，浮盈1720。主力净流入7.17亿。上龙虎榜，机构买入5.48亿。目标82"
-    },
-    {
-      "code": "159599",
-      "name": "芯片ETF东财",
-      "quantity": 13200,
-      "cost_price": 2.525,
-      "cost_source": "dialog_sync",
-      "current_price": 2.65,
-      "price_updated_at": "2026-08-04T15:20:00+08:00",
-      "buy_date": "2026-08-04",
-      "holding_days": 0,
-      "stop_loss": 2.57,
-      "stop_profit": 2.7,
-      "pnl_percent": 4.95,
-      "pnl_amount": 1650.0,
-      "sector": "半导体ETF",
-      "status": "holding",
-      "violation": "out_of_watchlist",
-      "notes": "收盘2.65涨+4.74%，浮盈1650。半导体板块今日+5.39%。非关注池冲动开仓"
-    },
     {
       "code": "300438",
       "name": "鹏辉能源",
       "quantity": 600,
       "cost_price": 60.41,
       "cost_source": "dialog_sync",
-      "current_price": 60.28,
-      "price_updated_at": "2026-08-04T15:20:00+08:00",
+      "current_price": 61.76,
+      "price_updated_at": "2026-08-05T10:00:00+08:00",
       "buy_date": "2026-08-04",
-      "holding_days": 0,
+      "holding_days": 1,
       "stop_loss": 59.1,
       "stop_profit": 63.6,
-      "pnl_percent": -0.22,
-      "pnl_amount": -78.0,
-      "sector": "锂电储能",
+      "pnl_percent": 2.23,
+      "pnl_amount": 810.0,
+      "sector": "锂电储存能",
       "status": "holding",
-      "violation": "skip_candidate_pool",
-      "notes": "收盘60.28涨+1.55%，浮亏-78。观察池票跳过candidate直接买入"
+      "notes": "现价61.76涨+2.5%，浮盈+810。唯一持仓。止损59.10(支撑59.70-1%)，止盈63.60(第二阻力)"
+    }
+  ],
+  "closed_today": [
+    {
+      "code": "159599",
+      "name": "芯片ETF东财",
+      "sell_price": 2.704,
+      "quantity": 13200,
+      "cost_price": 2.525,
+      "realized_pnl": 2363,
+      "notes": "计划止盈2.70触发。+7.09%。止盈偏保守，卖飞2个点"
+    },
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "sell_price": 78.2,
+      "quantity": 1000,
+      "cost_price": 72.42,
+      "realized_pnl": 5780,
+      "notes": "计划止盈78.20触发。+7.98%。执行到位"
+    },
+    {
+      "code": "300136",
+      "name": "信维通信",
+      "sell_price": 60.63,
+      "quantity": 1200,
+      "cost_price": 60.7,
+      "realized_pnl": -84,
+      "notes": "怕CPO拖累恐慌清仓。计划62减仓实际60.63出场，偏差-1.37元。情绪驱动"
     }
   ],
   "summary": {
-    "total_positions": 4,
-    "total_pnl_percent": 0.56,
-    "total_pnl_amount": 1151.0,
-    "total_realized_today": 1035.0,
-    "net_today": 2186.0,
-    "position_ratio": 100,
-    "available_cash": -1058.0,
-    "total_assets": 204838.0
+    "total_positions": 1,
+    "total_realized_today": 8059,
+    "total_unrealized_today": 810,
+    "net_today": 8869,
+    "position_ratio": 18,
+    "available_cash": 14928,
+    "total_assets": 204838
   }
 }
