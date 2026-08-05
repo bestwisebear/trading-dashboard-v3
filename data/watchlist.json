@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T15:40:00+08:00"
+    "last_updated": "202608052301"
   },
   "watchlist": [
     {
@@ -399,5 +399,32 @@
     "flat_count": 0,
     "total": 18
   },
-  "oversold_scan": []
+  "oversold_scan": [],
+  "transit_pool": [
+    {
+      "name": "圣邦股份",
+      "code": "300661",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "capital_flow": false,
+        "trend": false,
+        "turnover": true,
+        "momentum": true,
+        "sector": true
+      },
+      "key_price": {
+        "support": 95.1,
+        "buy_range": [
+          95.1,
+          97.95
+        ],
+        "stop_loss": 94.15
+      },
+      "sector": "半导体/芯片",
+      "change_pct": 2.42,
+      "reason": "7道闸5/7；涨幅2.42%<5%；RSI6=63.3；现价接近/站上MA20(105.60)"
+    }
+  ]
 }
