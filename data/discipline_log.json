@@ -1,70 +1,200 @@
 {
   "meta": {
-    "last_updated": "2026-08-05T15:15:00+08:00"
+    "last_updated": "2026-08-04T15:20:00+08:00"
   },
   "logs": [
     {
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "trade": {
-        "time": "10:15",
-        "stock": "信维通信",
-        "code": "300136",
-        "direction": "卖出",
-        "qty": 1200,
-        "price": 60.63,
-        "amount": 72756.0
+        "time": "09:37",
+        "stock": "浪潮信息",
+        "code": "000977",
+        "direction": "买入",
+        "qty": 700,
+        "price": 72.22,
+        "amount": 50554.0
       },
       "violation": {
-        "type": "emotional_sell",
-        "label": "情绪化清仓",
-        "rule": "应按计划62减仓，实际60.63恐慌清仓",
-        "actual_time": "10:15",
+        "type": "non_trading_window",
+        "label": "非交易时段开仓",
+        "rule": "新仓仅允许13:30-14:30",
+        "actual_time": "09:37",
         "severity": "中"
       },
       "assessment": {
-        "conclusion": "情绪驱动卖出，非计划执行",
-        "stop_loss": null,
-        "target": "原计划62减仓"
+        "score": "4/7 道闸通过",
+        "technical": "RSI6=23.6 极度超卖，有反弹预期",
+        "sector_sync": true,
+        "sector": "算力/IDC主线",
+        "conclusion": "推荐（时机违规但逻辑正确）",
+        "stop_loss": 67.0,
+        "target": "76+"
       },
       "daily_result": {
-        "close_price": 59.55,
-        "realized_pnl": -84,
-        "notes": "卖出后股价继续波动，收盘59.55。情绪化决策亏损-84"
+        "close_price": 73.63,
+        "unrealized_pnl_pct": 1.67,
+        "unrealized_pnl_amt": 1210.0
+      },
+      "next_day_outlook": {
+        "direction": "看涨",
+        "range": "73.0-77.0",
+        "reason": "算力主线共振+RSI极度超卖修复"
       }
     },
     {
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "trade": {
-        "time": "14:00",
+        "time": "10:26",
         "stock": "浪潮信息",
         "code": "000977",
-        "direction": "买入(回补)",
-        "qty": 1000,
-        "price": 77.6,
-        "amount": 77600.0
+        "direction": "加仓",
+        "qty": 300,
+        "price": 72.88,
+        "amount": 21864.0
       },
       "violation": {
-        "type": "sell_fly_buyback",
-        "label": "卖飞后回补",
-        "rule": "卖飞回补需4条件全满足(池内票/站稳固损+5%≥2日/缩量回踩不破前低/7道闸通过)",
-        "actual_time": "14:00",
+        "type": "non_trading_window",
+        "label": "非交易时段加仓",
+        "rule": "加仓仅允许13:30-14:30",
+        "actual_time": "10:26",
+        "severity": "中"
+      },
+      "assessment": {
+        "conclusion": "与首笔共享评估，仓位加至1000股"
+      }
+    },
+    {
+      "date": "2026-08-04",
+      "trade": {
+        "time": "14:00~14:18",
+        "stock": "信维通信",
+        "code": "300136",
+        "direction": "做T(卖600→买1000→卖600)",
+        "qty": "600/1000/600",
+        "price": "59.90/60.21/59.16",
+        "amount": 155616.0
+      },
+      "violation": {
+        "type": "day_trading",
+        "label": "做T变加仓+高买低卖",
+        "rule": "禁止做T",
+        "actual_behavior": "先卖600等回踩→冲上60追高买1000(加仓)→回落又卖600，净亏-1220",
         "severity": "高"
       },
       "assessment": {
-        "conclusion": "违反卖飞回补规则。78.20止盈后股价涨至79.37，心态失衡回补",
-        "stop_loss": 74.5,
-        "target": "78+"
+        "score": "情绪驱动，非理性操作",
+        "trigger": "三环卖飞懊悔→信维犹豫→做T做反→情绪失控",
+        "conclusion": "典型做T变加仓且做反，-1220元纯损耗",
+        "realized_loss": -1220
       },
       "daily_result": {
-        "close_price": 77.2,
-        "unrealized_pnl_pct": -0.52,
-        "unrealized_pnl_amt": -400
+        "realized_pnl": -1220,
+        "remaining_position": 1000,
+        "remaining_cost": 60.39,
+        "current_price": 59.25,
+        "unrealized_pnl_pct": -1.89,
+        "unrealized_pnl_amt": -1140
       },
       "next_day_outlook": {
-        "direction": "中性偏多",
-        "range": "75.5-80.0",
-        "reason": "AI服务器板块延续强势，但短期RSI偏高。关注74.50止损和79-80阻力"
+        "direction": "震荡偏多",
+        "range": "57.5-61.0",
+        "reason": "RSI6=25.7极度超卖，支撑56.5，压力62。做T后持仓减至1000，可继续持有等62减仓"
+      }
+    },
+    {
+      "date": "2026-08-04",
+      "trade": {
+        "time": "14:22",
+        "stock": "芯片ETF东财",
+        "code": "159599",
+        "direction": "买入",
+        "qty": 13200,
+        "price": 2.525,
+        "amount": 33330.0
+      },
+      "violation": {
+        "type": "out_of_watchlist",
+        "label": "非关注池标的冲动开仓",
+        "rule": "只允许买入观察池candidate状态的标的",
+        "severity": "高"
+      },
+      "assessment": {
+        "score": "情绪化操作",
+        "trigger": "做T亏损后情绪失控，寻找补偿性机会",
+        "conclusion": "芯片板块RSI超卖有反弹预期，但非计划内操作",
+        "stop_loss": 2.4,
+        "target": "2.70-2.90"
+      },
+      "daily_result": {
+        "current_price": 2.655,
+        "unrealized_pnl_pct": 5.15,
+        "unrealized_pnl_amt": 1716.0
+      },
+      "next_day_outlook": {
+        "direction": "偏多",
+        "range": "2.60-2.75",
+        "reason": "RSI6=25.7极度超卖+半导体板块今日强势+5.0%"
+      }
+    },
+    {
+      "date": "2026-08-04",
+      "trade": {
+        "time": "14:24",
+        "stock": "鹏辉能源",
+        "code": "300438",
+        "direction": "买入",
+        "qty": 600,
+        "price": 60.41,
+        "amount": 36246.0
+      },
+      "violation": {
+        "type": "skip_candidate_pool",
+        "label": "观察池未转candidate直接买入",
+        "rule": "观察池票需先进入candidate才能开仓",
+        "severity": "中"
+      },
+      "assessment": {
+        "score": "筑底绿档票，有一定逻辑但流程违规",
+        "trigger": "情绪化连续开仓",
+        "conclusion": "鹏辉筑底信号在（绿档），但未走完整评估流程",
+        "stop_loss": 57.0,
+        "target": "62-65"
+      },
+      "daily_result": {
+        "current_price": 60.44,
+        "unrealized_pnl_pct": 0.05,
+        "unrealized_pnl_amt": 18.0
+      },
+      "next_day_outlook": {
+        "direction": "震荡",
+        "range": "59.5-62.0",
+        "reason": "RSI6=27.6超卖+筑底中段，需确认MA5/MA10支撑"
       }
     }
-  ]
+  ],
+  "stats": {
+    "total_violations": 7,
+    "by_type": {
+      "non_trading_window": 2,
+      "day_trading": 1,
+      "out_of_watchlist": 1,
+      "skip_candidate_pool": 1,
+      "exceed_planned_qty": 1,
+      "emotional_trading": 1
+    },
+    "this_week": 7,
+    "this_month": 7
+  },
+  "statistics": {
+    "this_week_count": 7,
+    "this_month_count": 7,
+    "most_common_label": "非交易时段开仓/做T",
+    "by_type": {
+      "non_trading_window": 2,
+      "day_trading": 1,
+      "out_of_watchlist": 1,
+      "skip_candidate_pool": 1,
+      "emotional_trading": 1
+    }
+  }
 }

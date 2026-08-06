@@ -1,150 +1,117 @@
 {
   "meta": {
     "date": "2026-08-06",
-    "last_updated": "2026-08-06T05:31:00+08:00",
-    "session": "pre_market",
-    "data_as_of": "2026-08-05 收盘"
+    "last_updated": "2026-08-06T11:50:00+08:00",
+    "session": "midday",
+    "data_as_of": "2026-08-06 午间"
   },
   "indices": [
     {
       "name": "上证指数",
       "code": "sh000001",
-      "close": 3878.43,
-      "change_pct": 1.47,
-      "high": 3884.4,
-      "low": 3815.12,
-      "volume": 592155124,
-      "amount": 120872302
+      "close": 3878.92,
+      "change_pct": 0.01,
+      "high": 3896.46,
+      "low": 3864.27,
+      "volume": 387742401,
+      "amount": 80452124
     },
     {
       "name": "深证成指",
       "code": "sz399001",
-      "close": 14144.2,
-      "change_pct": 1.86,
-      "high": 14246.38,
-      "low": 13644.83,
-      "volume": 732409197,
-      "amount": 145091148
+      "close": 14070.78,
+      "change_pct": -0.52,
+      "high": 14252.14,
+      "low": 13922.41,
+      "volume": 478906010,
+      "amount": 94737090
     },
     {
       "name": "创业板指",
       "code": "sz399006",
-      "close": 3535.14,
-      "change_pct": 1.32,
-      "high": 3584.06,
-      "low": 3372.04,
-      "volume": 226495353,
-      "amount": 72054620
+      "close": 3511.47,
+      "change_pct": -0.67,
+      "high": 3574.41,
+      "low": 3444.36,
+      "volume": 145369449,
+      "amount": 45993852
     }
   ],
   "hot_sectors_up": [
     {
       "name": "玻璃玻纤",
-      "change_pct": 7.9,
-      "lead_stock": "国际复材(+14.04%)"
+      "change_pct": 2.97,
+      "lead_stock": "再升科技(+6.77%)"
     },
     {
-      "name": "电子化学品",
-      "change_pct": 7.86,
-      "lead_stock": "中巨芯-U(+20.01%)"
+      "name": "煤炭开采",
+      "change_pct": 2.94,
+      "lead_stock": "昊华能源(+10.03%)"
     },
     {
       "name": "贵金属",
-      "change_pct": 7.72,
-      "lead_stock": "四川黄金(+10%)/晓程科技(+11.89%)"
+      "change_pct": 2.84,
+      "lead_stock": "招金黄金(+4.99%)"
     },
     {
-      "name": "非金属材料",
-      "change_pct": 7.48,
-      "lead_stock": "联瑞新材(+12.48%)"
-    },
-    {
-      "name": "元件",
-      "change_pct": 6.57,
-      "lead_stock": "胜宏科技(+17.12%)"
+      "name": "电子化学品",
+      "change_pct": 2.66,
+      "lead_stock": "中巨芯-U(+17.62%)"
     },
     {
       "name": "小金属",
-      "change_pct": 6.43,
-      "lead_stock": "浩通科技(+19.99%)/云南锗业(+10%)"
+      "change_pct": 2.33,
+      "lead_stock": "云南锗业(+10%)"
     },
     {
-      "name": "半导体",
-      "change_pct": 5.8,
-      "lead_stock": "兆易创新(+8.26%)/北京君正(+7.74%)"
-    },
-    {
-      "name": "工业金属",
-      "change_pct": 5.03,
-      "lead_stock": "板块普涨"
-    },
-    {
-      "name": "消费电子",
-      "change_pct": 4.34,
-      "lead_stock": "京东方A(+6.04%)"
-    },
-    {
-      "name": "存储芯片",
-      "change_pct": 8.0,
-      "lead_stock": "江波龙(+8.59%)/北京君正(+7.74%)"
+      "name": "非金属材料",
+      "change_pct": 2.18,
+      "lead_stock": "联瑞新材(+7.75%)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "油气开采",
+      "name": "电池",
       "change_pct": -2.5,
-      "lead_stock": "通源石油/科力股份领跌"
+      "lead_stock": "宁德时代(-4.32%)领跌"
     },
     {
-      "name": "银行",
-      "change_pct": -1.8,
-      "lead_stock": "银行板块继续调整"
+      "name": "医药",
+      "change_pct": -1.5,
+      "lead_stock": "药明康德(-1.99%)"
     },
     {
-      "name": "白酒",
+      "name": "软件服务",
       "change_pct": -1.2,
-      "lead_stock": "白酒板块弱势"
-    },
-    {
-      "name": "中药",
-      "change_pct": -0.8,
-      "lead_stock": "中药板块承压"
-    },
-    {
-      "name": "医药商业",
-      "change_pct": -0.5,
-      "lead_stock": "医药商业偏弱"
+      "lead_stock": "传智教育(-6.65%)"
     }
   ],
   "concept_sectors_up": [
     {
       "name": "靶材",
-      "change_pct": 9.75
+      "change_pct": 6.07
     },
     {
-      "name": "电子布",
-      "change_pct": 7.76
-    },
-    {
-      "name": "有色(铋)",
-      "change_pct": 7.49
-    },
-    {
-      "name": "大硅片",
-      "change_pct": 7.4
+      "name": "昨日连板",
+      "change_pct": 5.14
     },
     {
       "name": "电子特气",
-      "change_pct": 6.9
+      "change_pct": 3.96
     },
     {
-      "name": "中芯国际概念",
-      "change_pct": 6.87
+      "name": "氦气",
+      "change_pct": 3.83
+    },
+    {
+      "name": "锗镓概念",
+      "change_pct": 3.56
     }
   ],
-  "overall_assessment": "收盘：三大指数全线收涨，上证+1.47%收3878.43，深成指+1.86%收14144.20，创业板+1.32%收3535.14，科创50+4.78%。两市成交2.66万亿放量4460亿。涨停104家跌停仅1家，3725涨1621跌。半导体/贵金属/电子化学品领涨，油气/银行/白酒领跌。科技成长全面修复，风格切换明显。",
-  "rise_count": 3725,
-  "fall_count": 1621,
-  "limit_up": 104,
-  "limit_down": 1
+  "overall_assessment": "午间：上证微涨+0.01%报3878.92，深成指-0.52%报14070.78，创业板-0.67%报3511.47。市场明显分化，昨日暴涨后今日上午进入震荡整理。半导体封测(通富微电+4.57%)、小金属继续走强，但存储/电池/软件回调。半日成交约1.75万亿，节奏与昨日相当。",
+  "rise_count": null,
+  "fall_count": null,
+  "limit_up": null,
+  "limit_down": null,
+  "note": "涨跌家数/涨停数据需盘后更新"
 }

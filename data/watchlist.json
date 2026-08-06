@@ -1,8 +1,9 @@
 {
   "meta": {
-    "last_updated": "202608052301",
+    "last_updated": "202608061150",
     "last_premarket_refresh": "2026-08-06T05:31:00+08:00",
-    "data_as_of": "2026-08-05 收盘"
+    "last_midday_refresh": "2026-08-06T11:50:00+08:00",
+    "data_as_of": "2026-08-06 午间"
   },
   "watchlist": [
     {
@@ -18,14 +19,14 @@
       },
       "status": "tracking",
       "sector": "AI服务器",
-      "today_close": 251.86,
-      "today_change_pct": 4.51,
+      "today_close": 249.39,
+      "today_change_pct": -0.98,
       "tags": [
         "AI服务器",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "002156",
@@ -40,13 +41,13 @@
       },
       "status": "tracking",
       "sector": "半导体封测",
-      "today_close": 58,
-      "today_change_pct": 4.32,
+      "today_close": 60.65,
+      "today_change_pct": 4.57,
       "tags": [
         "封测"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300502",
@@ -61,14 +62,14 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 424.3,
-      "today_change_pct": -5.29,
+      "today_close": 425.3,
+      "today_change_pct": 0.24,
       "tags": [
         "光模块",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300308",
@@ -83,13 +84,13 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 947.74,
-      "today_change_pct": -7.27,
+      "today_close": 961.04,
+      "today_change_pct": 1.4,
       "tags": [
         "光模块龙头"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300394",
@@ -104,14 +105,14 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 216.85,
-      "today_change_pct": 2.29,
+      "today_close": 221.36,
+      "today_change_pct": 2.08,
       "tags": [
         "光模块",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300223",
@@ -126,13 +127,13 @@
       },
       "status": "tracking",
       "sector": "存储芯片",
-      "today_close": 136.03,
-      "today_change_pct": 7.74,
+      "today_close": 135.6,
+      "today_change_pct": -0.32,
       "tags": [
         "存储"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "301308",
@@ -147,13 +148,13 @@
       },
       "status": "tracking",
       "sector": "存储芯片",
-      "today_close": 364.92,
-      "today_change_pct": 8.59,
+      "today_close": 361.81,
+      "today_change_pct": -0.85,
       "tags": [
         "存储"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300408",
@@ -166,16 +167,16 @@
           122.0
         ]
       },
-      "status": "tracking",
+      "status": "history",
       "sector": "电子元器件",
-      "today_close": 128.19,
-      "today_change_pct": 5.96,
+      "today_close": 124.15,
+      "today_change_pct": -3.15,
       "tags": [
         "已止损",
         "卖飞"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300438",
@@ -188,15 +189,15 @@
           62.0
         ]
       },
-      "status": "tracking",
+      "status": "history",
       "sector": "电池/储能",
-      "today_close": 63.81,
-      "today_change_pct": 5.86,
+      "today_close": 62.08,
+      "today_change_pct": -2.71,
       "tags": [
         "已止盈清仓"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300395",
@@ -211,13 +212,13 @@
       },
       "status": "tracking",
       "sector": "半导体材料",
-      "today_close": 79.94,
-      "today_change_pct": 6.52,
+      "today_close": 80.88,
+      "today_change_pct": 1.18,
       "tags": [
         "半导体材料"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300442",
@@ -232,13 +233,13 @@
       },
       "status": "tracking",
       "sector": "IDC",
-      "today_close": 69.92,
-      "today_change_pct": 2.82,
+      "today_close": 68.96,
+      "today_change_pct": -1.37,
       "tags": [
         "IDC"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300604",
@@ -253,13 +254,13 @@
       },
       "status": "tracking",
       "sector": "半导体设备",
-      "today_close": 272,
-      "today_change_pct": 10.65,
+      "today_close": 279.5,
+      "today_change_pct": 2.76,
       "tags": [
         "半导体设备"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "000988",
@@ -274,13 +275,13 @@
       },
       "status": "tracking",
       "sector": "激光设备",
-      "today_close": 100.43,
-      "today_change_pct": -0.22,
+      "today_close": 102.63,
+      "today_change_pct": 2.19,
       "tags": [
         "激光"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "002384",
@@ -295,14 +296,13 @@
       },
       "status": "tracking",
       "sector": "PCB/FPC",
-      "today_close": 188.83,
-      "today_change_pct": 5.44,
+      "today_close": 188.06,
+      "today_change_pct": -0.41,
       "tags": [
-        "PCB",
-        "涨停"
+        "PCB"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "000977",
@@ -315,16 +315,15 @@
           75.0
         ]
       },
-      "status": "tracking",
+      "status": "holding",
       "sector": "AI服务器",
-      "today_close": 77.2,
-      "today_change_pct": 4.13,
+      "today_close": 75.95,
+      "today_change_pct": -1.62,
       "tags": [
-        "已止盈清仓",
-        "AI服务器"
+        "持仓"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "603026",
@@ -339,13 +338,13 @@
       },
       "status": "observing",
       "sector": "锂电材料",
-      "today_close": 66.9,
-      "today_change_pct": 2.4,
+      "today_close": 66.61,
+      "today_change_pct": -0.43,
       "tags": [
         "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "300769",
@@ -360,13 +359,13 @@
       },
       "status": "observing",
       "sector": "锂电材料",
-      "today_close": 46.65,
-      "today_change_pct": 5.21,
+      "today_close": 45.92,
+      "today_change_pct": -1.56,
       "tags": [
         "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     },
     {
       "code": "002015",
@@ -381,23 +380,23 @@
       },
       "status": "tracking",
       "sector": "虚拟电厂/电力",
-      "today_close": 16.12,
-      "today_change_pct": 0.12,
+      "today_close": 15.7,
+      "today_change_pct": -2.61,
       "tags": [
         "虚拟电厂",
         "算电协同",
         "换电储能"
       ],
       "added_date": "2026-08-05",
-      "price_updated_at": "2026-08-05T15:00:00+08:00"
+      "price_updated_at": "2026-08-06T11:50:00+08:00"
     }
   ],
   "summary": {
-    "avg_change_pct": 3.54,
-    "up_count": 15,
-    "down_count": 3,
-    "top_gainer": "协创数据 +17.68%",
-    "top_loser": "鹏辉能源 +1.55%（全线飘红）",
+    "avg_change_pct": -0.09,
+    "up_count": 8,
+    "down_count": 10,
+    "top_gainer": "通富微电 +4.57%",
+    "top_loser": "三环集团 -3.15%",
     "flat_count": 0,
     "total": 18
   },
@@ -425,8 +424,9 @@
         "stop_loss": 94.15
       },
       "sector": "半导体/芯片",
-      "change_pct": 2.42,
-      "reason": "7道闸5/7；涨幅2.42%<5%；RSI6=63.3；现价接近/站上MA20(105.60)"
+      "today_close": 104.5,
+      "change_pct": 0.46,
+      "reason": "7道闸5/7；午间+0.46%窄幅震荡；现价104.50接近支撑95.1上方"
     }
   ]
 }
