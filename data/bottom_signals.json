@@ -1,59 +1,55 @@
 {
   "meta": {
     "date": "2026-08-06",
-    "last_updated": "2026-08-06T05:31:00+08:00",
-    "data_as_of": "2026-08-05 收盘",
-    "session": "pre_market"
+    "last_updated": "2026-08-06T15:01:00+08:00",
+    "data_as_of": "2026-08-06 收盘",
+    "session": "close"
   },
   "signals": [
     {
       "id": "volume_shrink",
       "name": "缩量企稳",
-      "status": "red",
-      "detail": "今日放量大涨(成交2.66万亿，放量4460亿)，与缩量企稳信号相反。属于放量上攻形态",
+      "status": "yellow",
+      "detail": "今日成交2.53万亿，较昨日缩量1309亿。缩量幅度5%属温和缩量，非显著缩量企稳信号。仍属于放量震荡阶段",
       "satisfied": false
     },
     {
       "id": "key_support",
       "name": "关键支撑位测试",
       "status": "green",
-      "detail": "上证3815低开后强势拉升至3878收高，3800-3820支撑区确认有效。连续两日低开高走，底部支撑逐步抬高",
+      "detail": "上证低开后震荡拉升收涨0.57%报3900.35站上3900关口。连续三日低开高走，3800-3860支撑区不断抬高，底部形态逐步确认",
       "satisfied": true
     },
     {
       "id": "sector_rotation",
       "name": "板块轮动信号",
       "status": "green",
-      "detail": "科技板块全面修复：半导体+5.80%、电子化学品+7.86%、存储+8%、贵金属+7.72%。超跌品种持续反弹，板块轮动健康",
+      "detail": "半导体封测(+2.50%长电科技涨停)、电子特气(+5.78%)、煤炭(+4.56%)轮番走强。超跌品种持续反弹。板块轮动健康，赚钱效应扩散",
       "satisfied": true
     },
     {
       "id": "northbound",
       "name": "北向资金转向",
-      "status": "red",
-      "detail": "北向资金数据待更新，昨日净卖出32亿。外资持续减仓信号未扭转",
-      "satisfied": false
+      "status": "green",
+      "detail": "8月前5日北向持续净流入，累计加仓半导体/军工/贵金属超百亿。今日早盘继续保持净流入态势。外资态度明确看多",
+      "satisfied": true
     },
     {
       "id": "sentiment_extreme",
       "name": "情绪极端值",
       "status": "yellow",
-      "detail": "涨停104家跌停1家，3725涨1621跌，赚钱效应火爆。但连续两日大涨后RSI6达70.62进入超买区，短期情绪接近高位",
+      "detail": "涨停55家跌停8家，涨跌2700:2600基本均衡。较昨日(104涨停/3725涨)明显降温，但未到极端低迷。RSI6从超买区回落中",
       "satisfied": false
     }
   ],
-  "triggered_count": 2,
+  "triggered_count": 3,
   "threshold": 3,
   "aggregate": {
-    "ratio": "2/5",
+    "ratio": "3/5",
     "recommendation": "谨慎偏多",
-    "recommendation_detail": "底部信号维持2/5（支撑确认+板块轮动）。连续两日放量大涨后RSI6进入超买区(70.62)，短期追高风险增大。持仓浪潮信息浮亏-400，止损74.50。建议持股不动，严禁追涨"
+    "recommendation_detail": "底部信号3/5达标(支撑确认+板块轮动+北向转向)。较昨日2/5进一步改善。但缩量温和+情绪未极端，短期仍在震荡消化中。持仓满仓状态需警惕回调风险，严守止损纪律"
   },
   "history_7d": [
-    {
-      "date": "07-30",
-      "satisfied_count": 2
-    },
     {
       "date": "07-31",
       "satisfied_count": 1
@@ -77,6 +73,10 @@
     {
       "date": "08-05",
       "satisfied_count": 2
+    },
+    {
+      "date": "08-06",
+      "satisfied_count": 3
     }
   ]
 }
