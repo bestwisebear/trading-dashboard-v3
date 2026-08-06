@@ -1,589 +1,2350 @@
 {
   "meta": {
-    "update_time": "2026-08-06 15:30",
-    "total_scanned": 25,
-    "passed": 24,
-    "conditional": 1,
-    "failed": 0,
-    "filters": "排除ST/科创板(688)/北交所(8/4开头)",
+    "update_time": "2026-08-06 23:00",
+    "total_scanned": 92,
+    "passed": 61,
+    "conditional": 12,
+    "failed": 19,
+    "filters": "排除ST/科创板(688)/北交所(8开头)",
     "min_gates_required": 3,
-    "market_context": "8/4三大指数集体上涨，3642家上涨，通信设备+10.74%领涨，半导体+5.39%"
+    "market_context": "8/6沪指+0.57%报3900.35,深成指-0.24%,创业板-0.55%.成交25475亿缩量1309亿.涨跌2789/2590.煤炭+4.56%领涨,电力/教育领跌.半导体/CPO/PCB资金净流入居前."
   },
   "stocks": {
+    "sh603228": {
+      "name": "景旺电子",
+      "code": "sh603228",
+      "price": 86.32,
+      "change_pct": 10,
+      "pe": 75.9,
+      "turnover_rate": 4.7,
+      "sector": "PCB",
+      "score": 7,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 68.9,
+      "ma5": 78.45,
+      "ma20": 73.72,
+      "main_flow_5d": 1.11,
+      "key_price": {
+        "support": 80.0,
+        "buy_range": [
+          80.0,
+          82.4
+        ],
+        "stop_loss": 79.2
+      }
+    },
+    "sh600206": {
+      "name": "有研新材",
+      "code": "sh600206",
+      "price": 43.79,
+      "change_pct": 10,
+      "pe": 116.6,
+      "turnover_rate": 12.2,
+      "sector": "小金属",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 61.3,
+      "ma5": 37.67,
+      "ma20": 42.7,
+      "main_flow_5d": 3.4,
+      "key_price": {
+        "support": 39.9,
+        "buy_range": [
+          39.9,
+          41.1
+        ],
+        "stop_loss": 39.5
+      }
+    },
+    "sh600546": {
+      "name": "山煤国际",
+      "code": "sh600546",
+      "price": 13.22,
+      "change_pct": 8.01,
+      "pe": 19.6,
+      "turnover_rate": 3.1,
+      "sector": "煤炭开采",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 73.5,
+      "ma5": 12.55,
+      "ma20": 12.34,
+      "main_flow_5d": 0.37,
+      "key_price": {
+        "support": 12.4,
+        "buy_range": [
+          12.4,
+          12.77
+        ],
+        "stop_loss": 12.28
+      }
+    },
+    "sz002446": {
+      "name": "盛路通信",
+      "code": "sz002446",
+      "price": 8.87,
+      "change_pct": 7.26,
+      "pe": 116.7,
+      "turnover_rate": 7.7,
+      "sector": "6G概念",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 82.3,
+      "ma5": 8.09,
+      "ma20": 8.06,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 8.5,
+        "buy_range": [
+          8.5,
+          8.76
+        ],
+        "stop_loss": 8.41
+      }
+    },
+    "sh601898": {
+      "name": "中煤能源",
+      "code": "sh601898",
+      "price": 14.2,
+      "change_pct": 6.45,
+      "pe": 10.6,
+      "turnover_rate": 1,
+      "sector": "煤炭开采",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 59.7,
+      "ma5": 13.67,
+      "ma20": 13.53,
+      "main_flow_5d": 0.39,
+      "key_price": {
+        "support": 13.8,
+        "buy_range": [
+          13.8,
+          14.21
+        ],
+        "stop_loss": 13.66
+      }
+    },
+    "sz300346": {
+      "name": "南大光电",
+      "code": "sz300346",
+      "price": 55.9,
+      "change_pct": 5.17,
+      "pe": 110.9,
+      "turnover_rate": 11.5,
+      "sector": "电子特气",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 64.8,
+      "ma5": 50.7,
+      "ma20": 56.66,
+      "main_flow_5d": 0.89,
+      "key_price": {
+        "support": 49.5,
+        "buy_range": [
+          49.5,
+          50.98
+        ],
+        "stop_loss": 49.01
+      }
+    },
+    "sz000975": {
+      "name": "山金国际",
+      "code": "sz000975",
+      "price": 25.46,
+      "change_pct": 5.12,
+      "pe": 19.2,
+      "turnover_rate": 3.7,
+      "sector": "贵金属",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 82.4,
+      "ma5": 23.69,
+      "ma20": 21.58,
+      "main_flow_5d": -0.12,
+      "key_price": {
+        "support": 22.3,
+        "buy_range": [
+          22.3,
+          22.97
+        ],
+        "stop_loss": 22.08
+      }
+    },
+    "sh600667": {
+      "name": "太极实业",
+      "code": "sh600667",
+      "price": 19.17,
+      "change_pct": 3.9,
+      "pe": 87.3,
+      "turnover_rate": 21.7,
+      "sector": "太极实业/半导体",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 62.4,
+      "ma5": 17.66,
+      "ma20": 18.29,
+      "main_flow_5d": 13.42,
+      "key_price": {
+        "support": 17.9,
+        "buy_range": [
+          17.9,
+          18.44
+        ],
+        "stop_loss": 17.72
+      }
+    },
+    "sh600489": {
+      "name": "中金黄金",
+      "code": "sh600489",
+      "price": 25.11,
+      "change_pct": 3.55,
+      "pe": 19.4,
+      "turnover_rate": 3.3,
+      "sector": "贵金属",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 84.6,
+      "ma5": 23.43,
+      "ma20": 21.48,
+      "main_flow_5d": 5.33,
+      "key_price": {
+        "support": 22.1,
+        "buy_range": [
+          22.1,
+          22.76
+        ],
+        "stop_loss": 21.88
+      }
+    },
+    "sh600547": {
+      "name": "山东黄金",
+      "code": "sh600547",
+      "price": 29.96,
+      "change_pct": 3.49,
+      "pe": 26.8,
+      "turnover_rate": 3.4,
+      "sector": "贵金属",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 77,
+      "ma5": 28.37,
+      "ma20": 26.42,
+      "main_flow_5d": 3.32,
+      "key_price": {
+        "support": 27.7,
+        "buy_range": [
+          27.7,
+          28.53
+        ],
+        "stop_loss": 27.42
+      }
+    },
+    "sz000938": {
+      "name": "紫光股份",
+      "code": "sz000938",
+      "price": 37.94,
+      "change_pct": 2.71,
+      "pe": 51.1,
+      "turnover_rate": 13.8,
+      "sector": "AI算力",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 52.6,
+      "ma5": 35.44,
+      "ma20": 38.1,
+      "main_flow_5d": 11.49,
+      "key_price": {
+        "support": 37.3,
+        "buy_range": [
+          37.3,
+          38.42
+        ],
+        "stop_loss": 36.93
+      }
+    },
+    "sh600498": {
+      "name": "烽火通信",
+      "code": "sh600498",
+      "price": 37.79,
+      "change_pct": 2.41,
+      "pe": 122.5,
+      "turnover_rate": 7.0,
+      "sector": "6G概念",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 68.7,
+      "ma5": 35.03,
+      "ma20": 39.66,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 36.2,
+        "buy_range": [
+          36.2,
+          37.29
+        ],
+        "stop_loss": 35.84
+      }
+    },
+    "sz300395": {
+      "name": "菲利华",
+      "code": "sz300395",
+      "price": 81.83,
+      "change_pct": 2.36,
+      "pe": 89.3,
+      "turnover_rate": 4.6,
+      "sector": "半导体材料",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 67.3,
+      "ma5": 76.1,
+      "ma20": 83.19,
+      "main_flow_5d": -0.77,
+      "key_price": {
+        "support": 78.3,
+        "buy_range": [
+          78.3,
+          80.65
+        ],
+        "stop_loss": 77.52
+      }
+    },
+    "sz002155": {
+      "name": "湖南黄金",
+      "code": "sz002155",
+      "price": 25.15,
+      "change_pct": 1.9,
+      "pe": 22.4,
+      "turnover_rate": 6.3,
+      "sector": "贵金属",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 82.9,
+      "ma5": 23.75,
+      "ma20": 22.71,
+      "main_flow_5d": 1.66,
+      "key_price": {
+        "support": 23.1,
+        "buy_range": [
+          23.1,
+          23.79
+        ],
+        "stop_loss": 22.87
+      }
+    },
+    "sh600348": {
+      "name": "华阳股份",
+      "code": "sh600348",
+      "price": 8.55,
+      "change_pct": 1.18,
+      "pe": 19.4,
+      "turnover_rate": 1.5,
+      "sector": "煤炭开采",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 37.8,
+      "ma5": 8.52,
+      "ma20": 8.49,
+      "main_flow_5d": -0.56,
+      "key_price": {
+        "support": 8.5,
+        "buy_range": [
+          8.5,
+          8.76
+        ],
+        "stop_loss": 8.41
+      }
+    },
+    "sh600988": {
+      "name": "赤峰黄金",
+      "code": "sh600988",
+      "price": 41.3,
+      "change_pct": 1.13,
+      "pe": 21.9,
+      "turnover_rate": 5.3,
+      "sector": "贵金属",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 70.4,
+      "ma5": 39.66,
+      "ma20": 36.5,
+      "main_flow_5d": 3.65,
+      "key_price": {
+        "support": 40.8,
+        "buy_range": [
+          40.8,
+          42.02
+        ],
+        "stop_loss": 40.39
+      }
+    },
     "sz300308": {
       "name": "中际旭创",
       "code": "sz300308",
-      "price": 1021.99,
-      "change_pct": 13.24,
-      "pe": 73.55,
-      "turnover_rate": 10.5,
-      "main_flow_3d": -37.4,
-      "gain_5d": 13.3,
+      "price": 955,
+      "change_pct": 0.77,
+      "pe": 74.7,
+      "turnover_rate": 3.8,
+      "sector": "光模块",
       "score": 6,
       "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
+        "market_breadth": "pass",
+        "pe_check": "pass",
         "turnover": "pass",
-        "breadth": "pass"
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
       },
-      "status": "passed",
-      "sector": "AI算力/光模块",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
+      "status": "pass",
+      "rsi6": 50.6,
+      "ma5": 945.85,
+      "ma20": 1024.87,
+      "main_flow_5d": 10.04,
+      "key_price": {
+        "support": 994.12,
+        "buy_range": [
+          994.12,
+          1023.94
+        ],
+        "stop_loss": 984.18
+      }
     },
-    "sz300502": {
-      "name": "新易盛",
-      "code": "sz300502",
-      "price": 448.0,
-      "change_pct": 13.68,
-      "pe": 46.8,
-      "turnover_rate": 12.5,
-      "main_flow_3d": -32.4,
-      "gain_5d": 13.13,
+    "sz300602": {
+      "name": "飞荣达",
+      "code": "sz300602",
+      "price": 36.57,
+      "change_pct": 0.77,
+      "pe": 55.8,
+      "turnover_rate": 4.1,
+      "sector": "数字货币",
       "score": 6,
       "gates": {
-        "pe": "pass",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
+        "market_breadth": "pass",
+        "pe_check": "pass",
         "turnover": "pass",
-        "breadth": "pass"
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
       },
-      "status": "passed",
-      "sector": "AI算力/光模块",
-      "note": "估值合理、主力3日大幅流出、错杀特征明显"
+      "status": "pass",
+      "rsi6": 64.6,
+      "ma5": 33.99,
+      "ma20": 36.69,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 34.2,
+        "buy_range": [
+          34.2,
+          35.23
+        ],
+        "stop_loss": 33.86
+      }
     },
-    "sz300394": {
-      "name": "天孚通信",
-      "code": "sz300394",
-      "price": 212.0,
-      "change_pct": 17.45,
-      "pe": 81.9,
-      "turnover_rate": 15.0,
-      "main_flow_3d": -9.0,
-      "gain_5d": 17.78,
-      "score": 5,
-      "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "fail",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "AI算力/光模块",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显、短期涨幅过快"
-    },
-    "sz300442": {
-      "name": "润泽科技",
-      "code": "sz300442",
-      "price": 68.0,
-      "change_pct": null,
-      "pe": 45.0,
-      "turnover_rate": 4.0,
-      "main_flow_3d": -2.1,
-      "gain_5d": 13.33,
-      "score": 7,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "AI算力",
-      "note": "估值合理、资金面稳健、错杀特征明显"
-    },
-    "sz002156": {
-      "name": "通富微电",
-      "code": "sz002156",
-      "price": 55.6,
-      "change_pct": 8.3,
-      "pe": 69.5,
-      "turnover_rate": 6.5,
-      "main_flow_3d": -41.8,
-      "gain_5d": 7.96,
-      "score": 6,
-      "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "半导体",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
-    },
-    "sz300223": {
-      "name": "北京君正",
-      "code": "sz300223",
-      "price": 126.26,
-      "change_pct": null,
-      "pe": 85.0,
-      "turnover_rate": 4.5,
-      "main_flow_3d": -2.6,
-      "gain_5d": 5.22,
-      "score": 7,
-      "gates": {
-        "pe": "conditional",
-        "fund": "pass",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "半导体",
-      "note": "估值偏高但高成长可接受、资金面稳健、错杀特征明显"
-    },
-    "sz300604": {
-      "name": "长川科技",
-      "code": "sz300604",
-      "price": 245.82,
-      "change_pct": null,
-      "pe": 120.0,
-      "turnover_rate": 5.5,
-      "main_flow_3d": -14.7,
-      "gain_5d": 2.43,
-      "score": 6,
-      "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "半导体设备",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
-    },
-    "sz301308": {
-      "name": "江波龙",
-      "code": "sz301308",
-      "price": 336.05,
-      "change_pct": null,
-      "pe": null,
-      "turnover_rate": 7.0,
-      "main_flow_3d": -0.15,
-      "gain_5d": 5.02,
-      "score": 7,
-      "gates": {
-        "pe": "conditional",
-        "fund": "pass",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
+    "sz001309": {
+      "name": "德明利",
+      "code": "sz001309",
+      "price": 388.25,
+      "change_pct": 0.52,
+      "pe": 21.5,
+      "turnover_rate": 13.8,
       "sector": "存储芯片",
-      "note": "估值偏高但高成长可接受、资金面稳健、错杀特征明显"
-    },
-    "sz300136": {
-      "name": "信维通信",
-      "code": "sz300136",
-      "price": 59.55,
-      "change_pct": null,
-      "pe": 42.0,
-      "turnover_rate": 6.0,
-      "main_flow_3d": -6.7,
-      "gain_5d": 8.27,
       "score": 6,
       "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
+        "market_breadth": "pass",
+        "pe_check": "pass",
         "turnover": "pass",
-        "breadth": "pass"
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
       },
-      "status": "passed",
-      "sector": "消费电子",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
-    },
-    "sz002475": {
-      "name": "立讯精密",
-      "code": "sz002475",
-      "price": 55.48,
-      "change_pct": null,
-      "pe": 25.0,
-      "turnover_rate": 2.0,
-      "main_flow_3d": null,
-      "gain_5d": -2.67,
-      "score": 5,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "fail",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "消费电子",
-      "note": "估值合理、资金面稳健、部分错杀特征、换手活跃度不足"
-    },
-    "sz002241": {
-      "name": "歌尔股份",
-      "code": "sz002241",
-      "price": 23.11,
-      "change_pct": null,
-      "pe": 28.0,
-      "turnover_rate": 3.5,
-      "main_flow_3d": null,
-      "gain_5d": 2.71,
-      "score": 6,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "消费电子",
-      "note": "估值合理、资金面稳健、部分错杀特征"
-    },
-    "sh600089": {
-      "name": "特变电工",
-      "code": "sh600089",
-      "price": 21.38,
-      "change_pct": null,
-      "pe": 12.0,
-      "turnover_rate": 2.5,
-      "main_flow_3d": null,
-      "gain_5d": 7.98,
-      "score": 5,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "fail",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "电力设备",
-      "note": "估值合理、资金面稳健、部分错杀特征、换手活跃度不足"
-    },
-    "sz000400": {
-      "name": "许继电气",
-      "code": "sz000400",
-      "price": 23.83,
-      "change_pct": null,
-      "pe": 22.0,
-      "turnover_rate": 3.0,
-      "main_flow_3d": null,
-      "gain_5d": 8.32,
-      "score": 6,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "电力设备",
-      "note": "估值合理、资金面稳健、部分错杀特征"
-    },
-    "sh603986": {
-      "name": "兆易创新",
-      "code": "sh603986",
-      "price": 356.02,
-      "change_pct": 4.48,
-      "pe": 95.0,
-      "turnover_rate": 4.5,
-      "main_flow_3d": null,
-      "gain_5d": 4.71,
-      "score": 7,
-      "gates": {
-        "pe": "conditional",
-        "fund": "pass",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "存储芯片",
-      "note": "估值偏高但高成长可接受、资金面稳健、错杀特征明显"
-    },
-    "sz002558": {
-      "name": "巨人网络",
-      "code": "sz002558",
-      "price": 29.94,
-      "change_pct": null,
-      "pe": 30.0,
-      "turnover_rate": 4.0,
-      "main_flow_3d": null,
-      "gain_5d": 10.89,
-      "score": 6,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "游戏",
-      "note": "估值合理、资金面稳健、部分错杀特征"
-    },
-    "sz002555": {
-      "name": "三七互娱",
-      "code": "sz002555",
-      "price": 20.18,
-      "change_pct": null,
-      "pe": 16.0,
-      "turnover_rate": 3.5,
-      "main_flow_3d": null,
-      "gain_5d": 6.21,
-      "score": 6,
-      "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "游戏",
-      "note": "估值合理、资金面稳健、部分错杀特征"
-    },
-    "sh603728": {
-      "name": "鸣志电器",
-      "code": "sh603728",
-      "price": 51.82,
-      "change_pct": null,
-      "pe": 55.0,
-      "turnover_rate": 2.0,
-      "main_flow_3d": -0.7,
-      "gain_5d": 5.0,
-      "score": 5,
-      "gates": {
-        "pe": "conditional",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "fail",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "机器人",
-      "note": "估值偏高但高成长可接受、资金面稳健、部分错杀特征、换手活跃度不足"
-    },
-    "sz300857": {
-      "name": "协创数据",
-      "code": "sz300857",
-      "price": 241.0,
-      "change_pct": null,
-      "pe": null,
-      "turnover_rate": 8.0,
-      "main_flow_3d": -5.9,
-      "gain_5d": 8.0,
-      "score": 6,
-      "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "消费电子/存储",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
-    },
-    "sz000988": {
-      "name": "华工科技",
-      "code": "sz000988",
-      "price": 100.65,
-      "change_pct": null,
-      "pe": 55.0,
-      "turnover_rate": 7.0,
-      "main_flow_3d": -15.5,
-      "gain_5d": 5.95,
-      "score": 6,
-      "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "激光/光通信",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
-    },
-    "sz002384": {
-      "name": "东山精密",
-      "code": "sz002384",
-      "price": 179.09,
-      "change_pct": 10.0,
-      "pe": 67.0,
-      "turnover_rate": 9.5,
-      "main_flow_3d": -25.1,
-      "gain_5d": 9.87,
-      "score": 6,
-      "gates": {
-        "pe": "conditional",
-        "fund": "fail",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "消费电子/PCB/光模块",
-      "note": "估值偏高但高成长可接受、主力3日大幅流出、错杀特征明显"
+      "status": "pass",
+      "rsi6": 64.5,
+      "ma5": 374.71,
+      "ma20": 485.76,
+      "main_flow_5d": 10.42,
+      "key_price": {
+        "support": 361.4,
+        "buy_range": [
+          361.4,
+          372.24
+        ],
+        "stop_loss": 357.79
+      }
     },
     "sh603026": {
       "name": "石大胜华",
       "code": "sh603026",
-      "price": 65.33,
-      "change_pct": null,
-      "pe": null,
-      "turnover_rate": 2.5,
-      "main_flow_3d": -3.8,
-      "gain_5d": 3.7,
-      "score": 3,
+      "price": 67.01,
+      "change_pct": 0.16,
+      "pe": 47.8,
+      "turnover_rate": 4.0,
+      "sector": "锂电材料",
+      "score": 6,
       "gates": {
-        "pe": "fail",
-        "fund": "fail",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "fail",
-        "breadth": "pass"
-      },
-      "status": "conditional",
-      "sector": "锂电池",
-      "note": "估值过高/亏损、主力3日大幅流出、部分错杀特征、换手活跃度不足"
-    },
-    "sz300769": {
-      "name": "德方纳米",
-      "code": "sz300769",
-      "price": 44.34,
-      "change_pct": null,
-      "pe": null,
-      "turnover_rate": 3.0,
-      "main_flow_3d": null,
-      "gain_5d": 4.33,
-      "score": 5,
-      "gates": {
-        "pe": "fail",
-        "fund": "pass",
-        "oversold": "partial",
-        "trend": "pass",
-        "chase": "pass",
+        "market_breadth": "pass",
+        "pe_check": "pass",
         "turnover": "pass",
-        "breadth": "pass"
-      },
-      "status": "passed",
-      "sector": "锂电池",
-      "note": "估值过高/亏损、资金面稳健、部分错杀特征"
-    },
-    "sz300666": {
-      "name": "江丰电子",
-      "code": "sz300666",
-      "price": 200.08,
-      "change_pct": null,
-      "pe": 100.0,
-      "turnover_rate": 4.5,
-      "main_flow_3d": null,
-      "gain_5d": 2.61,
-      "score": 7,
-      "gates": {
-        "pe": "conditional",
-        "fund": "pass",
-        "oversold": "pass",
+        "sector": "fail",
         "trend": "pass",
-        "chase": "pass",
-        "turnover": "pass",
-        "breadth": "pass"
+        "momentum": "pass",
+        "capital_flow": "pass"
       },
-      "status": "passed",
-      "sector": "半导体材料",
-      "note": "估值偏高但高成长可接受、资金面稳健、错杀特征明显"
+      "status": "pass",
+      "rsi6": 55.0,
+      "ma5": 65.4,
+      "ma20": 63.53,
+      "main_flow_5d": -1.53,
+      "key_price": {
+        "support": 64.1,
+        "buy_range": [
+          64.1,
+          66.02
+        ],
+        "stop_loss": 63.46
+      }
     },
     "sh603290": {
       "name": "斯达半导",
       "code": "sh603290",
-      "price": 82.8,
-      "change_pct": null,
-      "pe": 48.0,
-      "turnover_rate": 3.5,
-      "main_flow_3d": null,
-      "gain_5d": 4.81,
-      "score": 7,
+      "price": 86.35,
+      "change_pct": 0.02,
+      "pe": 63.0,
+      "turnover_rate": 3.2,
+      "sector": "半导体设备",
+      "score": 6,
       "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
+        "market_breadth": "pass",
+        "pe_check": "pass",
         "turnover": "pass",
-        "breadth": "pass"
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
       },
-      "status": "passed",
-      "sector": "半导体/功率器件",
-      "note": "估值合理、资金面稳健、错杀特征明显"
+      "status": "pass",
+      "rsi6": 67.2,
+      "ma5": 83.22,
+      "ma20": 90.88,
+      "main_flow_5d": 0.71,
+      "key_price": {
+        "support": 84.8,
+        "buy_range": [
+          84.8,
+          87.34
+        ],
+        "stop_loss": 83.95
+      }
+    },
+    "sh603986": {
+      "name": "兆易创新",
+      "code": "sh603986",
+      "price": 385,
+      "change_pct": -0.11,
+      "pe": 94.0,
+      "turnover_rate": 9.2,
+      "sector": "存储芯片",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 60.8,
+      "ma5": 369.16,
+      "ma20": 449.44,
+      "main_flow_5d": -0.98,
+      "key_price": {
+        "support": 378.0,
+        "buy_range": [
+          378.0,
+          389.34
+        ],
+        "stop_loss": 374.22
+      }
+    },
+    "sz000063": {
+      "name": "中兴通讯",
+      "code": "sz000063",
+      "price": 34.7,
+      "change_pct": -0.12,
+      "pe": 37.1,
+      "turnover_rate": 3.7,
+      "sector": "通信设备",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 63.7,
+      "ma5": 34.33,
+      "ma20": 35.8,
+      "main_flow_5d": -4.69,
+      "key_price": {
+        "support": 34.5,
+        "buy_range": [
+          34.5,
+          35.54
+        ],
+        "stop_loss": 34.16
+      }
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "code": "sz300502",
+      "price": 421.87,
+      "change_pct": -0.57,
+      "pe": 54.8,
+      "turnover_rate": 4.1,
+      "sector": "光模块",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 50.2,
+      "ma5": 416.85,
+      "ma20": 475.21,
+      "main_flow_5d": 11.64,
+      "key_price": {
+        "support": 460.95,
+        "buy_range": [
+          460.95,
+          474.78
+        ],
+        "stop_loss": 456.34
+      }
+    },
+    "sz002384": {
+      "name": "东山精密",
+      "code": "sz002384",
+      "price": 187.68,
+      "change_pct": -0.61,
+      "pe": 168.5,
+      "turnover_rate": 6.2,
+      "sector": "PCB",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 56.2,
+      "ma5": 177.98,
+      "ma20": 210.94,
+      "main_flow_5d": 30.76,
+      "key_price": {
+        "support": 179.1,
+        "buy_range": [
+          179.1,
+          184.47
+        ],
+        "stop_loss": 177.31
+      }
+    },
+    "sh603799": {
+      "name": "华友钴业",
+      "code": "sh603799",
+      "price": 41.4,
+      "change_pct": -1.48,
+      "pe": 10.7,
+      "turnover_rate": 4.4,
+      "sector": "有色",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 64.4,
+      "ma5": 40.73,
+      "ma20": 39.89,
+      "main_flow_5d": 3.93,
+      "key_price": {
+        "support": 40.9,
+        "buy_range": [
+          40.9,
+          42.13
+        ],
+        "stop_loss": 40.49
+      }
+    },
+    "sh600078": {
+      "name": "澄星股份",
+      "code": "sh600078",
+      "price": 10.82,
+      "change_pct": -1.9,
+      "pe": 101.7,
+      "turnover_rate": 5.0,
+      "sector": "半导体",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 78.9,
+      "ma5": 10.23,
+      "ma20": 9.81,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 9.7,
+        "buy_range": [
+          9.7,
+          9.99
+        ],
+        "stop_loss": 9.6
+      }
+    },
+    "sh600756": {
+      "name": "浪潮软件",
+      "code": "sh600756",
+      "price": 15.85,
+      "change_pct": -4.92,
+      "pe": -20.9,
+      "turnover_rate": 10.1,
+      "sector": "AI算力",
+      "score": 6,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 49.5,
+      "ma5": 16.32,
+      "ma20": 14.96,
+      "main_flow_5d": 0.34,
+      "key_price": {
+        "support": 15.7,
+        "buy_range": [
+          15.7,
+          16.17
+        ],
+        "stop_loss": 15.54
+      }
+    },
+    "sz300903": {
+      "name": "科翔股份",
+      "code": "sz300903",
+      "price": 64.32,
+      "change_pct": 20,
+      "pe": -105.7,
+      "turnover_rate": 12.2,
+      "sector": "PCB",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 65.7,
+      "ma5": 51.1,
+      "ma20": 63.35,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 64.3,
+        "buy_range": [
+          64.3,
+          66.23
+        ],
+        "stop_loss": 63.66
+      }
+    },
+    "sz300386": {
+      "name": "飞天诚信",
+      "code": "sz300386",
+      "price": 12.56,
+      "change_pct": 19.96,
+      "pe": -127.3,
+      "turnover_rate": 8.5,
+      "sector": "数字货币",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 96.8,
+      "ma5": 10.76,
+      "ma20": 9.89,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 10.2,
+        "buy_range": [
+          10.2,
+          10.51
+        ],
+        "stop_loss": 10.1
+      }
+    },
+    "sh600584": {
+      "name": "长电科技",
+      "code": "sh600584",
+      "price": 75.87,
+      "change_pct": 10,
+      "pe": 82.2,
+      "turnover_rate": 13.2,
+      "sector": "半导体封测",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "fail"
+      },
+      "status": "pass",
+      "rsi6": 57.5,
+      "ma5": 67.39,
+      "ma20": 80.38,
+      "main_flow_5d": -9.2,
+      "key_price": {
+        "support": 65.7,
+        "buy_range": [
+          65.7,
+          67.67
+        ],
+        "stop_loss": 65.04
+      }
+    },
+    "sh603773": {
+      "name": "沃格光电",
+      "code": "sh603773",
+      "price": 86.43,
+      "change_pct": 10,
+      "pe": -104.8,
+      "turnover_rate": 6.0,
+      "sector": "光电",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 67.4,
+      "ma5": 74.03,
+      "ma20": 85,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 86.4,
+        "buy_range": [
+          86.4,
+          88.99
+        ],
+        "stop_loss": 85.54
+      }
+    },
+    "sz002975": {
+      "name": "博杰股份",
+      "code": "sz002975",
+      "price": 93.07,
+      "change_pct": 10,
+      "pe": 83.2,
+      "turnover_rate": 11.5,
+      "sector": "博杰股份/电子",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 70.9,
+      "ma5": 79.59,
+      "ma20": 90.01,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 84.7,
+        "buy_range": [
+          84.7,
+          87.24
+        ],
+        "stop_loss": 83.85
+      }
+    },
+    "sh601666": {
+      "name": "平煤股份",
+      "code": "sh601666",
+      "price": 8.92,
+      "change_pct": 9.99,
+      "pe": 110.3,
+      "turnover_rate": 2.5,
+      "sector": "煤炭开采",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 78.7,
+      "ma5": 8.18,
+      "ma20": 7.91,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 8.1,
+        "buy_range": [
+          8.1,
+          8.34
+        ],
+        "stop_loss": 8.02
+      }
+    },
+    "sz002792": {
+      "name": "通宇通讯",
+      "code": "sz002792",
+      "price": 33.81,
+      "change_pct": 9.99,
+      "pe": 1040.7,
+      "turnover_rate": 6.9,
+      "sector": "通信设备",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 88.8,
+      "ma5": 28.64,
+      "ma20": 27.02,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 28.0,
+        "buy_range": [
+          28.0,
+          28.84
+        ],
+        "stop_loss": 27.72
+      }
+    },
+    "sh600188": {
+      "name": "兖矿能源",
+      "code": "sh600188",
+      "price": 21.27,
+      "change_pct": 9.98,
+      "pe": 21.0,
+      "turnover_rate": 1.6,
+      "sector": "煤炭开采",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 66.2,
+      "ma5": 19.74,
+      "ma20": 19.77,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 20.2,
+        "buy_range": [
+          20.2,
+          20.81
+        ],
+        "stop_loss": 20.0
+      }
+    },
+    "sh603221": {
+      "name": "爱丽家居",
+      "code": "sh603221",
+      "price": 24.79,
+      "change_pct": 9.98,
+      "pe": -303,
+      "turnover_rate": 6.6,
+      "sector": "家居",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 100,
+      "ma5": 20.68,
+      "ma20": 14.04,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 15.4,
+        "buy_range": [
+          15.4,
+          15.86
+        ],
+        "stop_loss": 15.25
+      }
+    },
+    "sh601700": {
+      "name": "风范股份",
+      "code": "sh601700",
+      "price": 7.16,
+      "change_pct": 9.98,
+      "pe": -25.8,
+      "turnover_rate": 15.8,
+      "sector": "钢铁",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 97.5,
+      "ma5": 5.97,
+      "ma20": 4.99,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 4.9,
+        "buy_range": [
+          4.9,
+          5.05
+        ],
+        "stop_loss": 4.85
+      }
+    },
+    "sh601001": {
+      "name": "晋控煤业",
+      "code": "sh601001",
+      "price": 17.78,
+      "change_pct": 9.48,
+      "pe": 17.9,
+      "turnover_rate": 3.6,
+      "sector": "煤炭开采",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 73.6,
+      "ma5": 16.52,
+      "ma20": 16.93,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 16.5,
+        "buy_range": [
+          16.5,
+          17.0
+        ],
+        "stop_loss": 16.34
+      }
+    },
+    "sz000657": {
+      "name": "中钨高新",
+      "code": "sz000657",
+      "price": 62.5,
+      "change_pct": 8.83,
+      "pe": 73.1,
+      "turnover_rate": 11.8,
+      "sector": "小金属",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 73.4,
+      "ma5": 53.93,
+      "ma20": 59.4,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 59.0,
+        "buy_range": [
+          59.0,
+          60.77
+        ],
+        "stop_loss": 58.41
+      }
+    },
+    "sz002156": {
+      "name": "通富微电",
+      "code": "sz002156",
+      "price": 60.96,
+      "change_pct": 5.1,
+      "pe": 64.0,
+      "turnover_rate": 10.5,
+      "sector": "半导体封测",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "fail"
+      },
+      "status": "pass",
+      "rsi6": 47.4,
+      "ma5": 56.53,
+      "ma20": 67.27,
+      "main_flow_5d": -14.85,
+      "key_price": {
+        "support": 56.7,
+        "buy_range": [
+          56.7,
+          58.4
+        ],
+        "stop_loss": 56.13
+      }
+    },
+    "sz002185": {
+      "name": "华天科技",
+      "code": "sz002185",
+      "price": 17.26,
+      "change_pct": 4.04,
+      "pe": 70.3,
+      "turnover_rate": 14.2,
+      "sector": "半导体封测",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "fail"
+      },
+      "status": "pass",
+      "rsi6": 56.4,
+      "ma5": 15.92,
+      "ma20": 18.74,
+      "main_flow_5d": -5.01,
+      "key_price": {
+        "support": 16.9,
+        "buy_range": [
+          16.9,
+          17.41
+        ],
+        "stop_loss": 16.73
+      }
+    },
+    "sz300394": {
+      "name": "天孚通信",
+      "code": "sz300394",
+      "price": 225.28,
+      "change_pct": 3.89,
+      "pe": 113.2,
+      "turnover_rate": 6.2,
+      "sector": "光模块",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 74.8,
+      "ma5": 201.13,
+      "ma20": 216.75,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 210.25,
+        "buy_range": [
+          210.25,
+          216.56
+        ],
+        "stop_loss": 208.15
+      }
+    },
+    "sh600183": {
+      "name": "生益科技",
+      "code": "sh600183",
+      "price": 127.25,
+      "change_pct": 3.63,
+      "pe": 78.7,
+      "turnover_rate": 3.1,
+      "sector": "激光设备",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 72.4,
+      "ma5": 113.99,
+      "ma20": 125.49,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 126.0,
+        "buy_range": [
+          126.0,
+          129.78
+        ],
+        "stop_loss": 124.74
+      }
+    },
+    "sz000983": {
+      "name": "山西焦煤",
+      "code": "sz000983",
+      "price": 6.67,
+      "change_pct": 3.25,
+      "pe": 28.5,
+      "turnover_rate": 1.9,
+      "sector": "煤炭开采",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 71.8,
+      "ma5": 6.53,
+      "ma20": 6.34,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 6.5,
+        "buy_range": [
+          6.5,
+          6.7
+        ],
+        "stop_loss": 6.43
+      }
+    },
+    "sh600487": {
+      "name": "亨通光电",
+      "code": "sh600487",
+      "price": 56.15,
+      "change_pct": 3.2,
+      "pe": 42.9,
+      "turnover_rate": 11.8,
+      "sector": "光通信",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 76.7,
+      "ma5": 51.16,
+      "ma20": 57.73,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 51.3,
+        "buy_range": [
+          51.3,
+          52.84
+        ],
+        "stop_loss": 50.79
+      }
+    },
+    "sz000988": {
+      "name": "华工科技",
+      "code": "sz000988",
+      "price": 103.01,
+      "change_pct": 2.57,
+      "pe": 61.0,
+      "turnover_rate": 8,
+      "sector": "激光设备",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "fail"
+      },
+      "status": "pass",
+      "rsi6": 55.3,
+      "ma5": 98.53,
+      "ma20": 115.73,
+      "main_flow_5d": -6.53,
+      "key_price": {
+        "support": 100.6,
+        "buy_range": [
+          100.6,
+          103.62
+        ],
+        "stop_loss": 99.59
+      }
+    },
+    "sz300604": {
+      "name": "长川科技",
+      "code": "sz300604",
+      "price": 278.53,
+      "change_pct": 2.4,
+      "pe": 112.3,
+      "turnover_rate": 5.4,
+      "sector": "半导体设备",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "fail"
+      },
+      "status": "pass",
+      "rsi6": 53.1,
+      "ma5": 256.68,
+      "ma20": 287.86,
+      "main_flow_5d": -6.29,
+      "key_price": {
+        "support": 279.22,
+        "buy_range": [
+          279.22,
+          287.6
+        ],
+        "stop_loss": 276.43
+      }
+    },
+    "sh601088": {
+      "name": "中国神华",
+      "code": "sh601088",
+      "price": 43.97,
+      "change_pct": 2.26,
+      "pe": 18.5,
+      "turnover_rate": 0.2,
+      "sector": "煤炭开采",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 37.8,
+      "ma5": 43.91,
+      "ma20": 44.31,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 43.7,
+        "buy_range": [
+          43.7,
+          45.01
+        ],
+        "stop_loss": 43.26
+      }
+    },
+    "sz300661": {
+      "name": "圣邦股份",
+      "code": "sz300661",
+      "price": 106.24,
+      "change_pct": 2.13,
+      "pe": 119.2,
+      "turnover_rate": 2.2,
+      "sector": "半导体/芯片",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 59.0,
+      "ma5": 100.39,
+      "ma20": 104.17,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 98.9,
+        "buy_range": [
+          98.9,
+          101.87
+        ],
+        "stop_loss": 97.91
+      }
+    },
+    "sz301008": {
+      "name": "宏昌科技",
+      "code": "sz301008",
+      "price": 34.51,
+      "change_pct": 2.1,
+      "pe": 202.3,
+      "turnover_rate": 5.4,
+      "sector": "宏昌科技",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 73.3,
+      "ma5": 33.31,
+      "ma20": 30.92,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 30.9,
+        "buy_range": [
+          30.9,
+          31.83
+        ],
+        "stop_loss": 30.59
+      }
+    },
+    "sz002371": {
+      "name": "北方华创",
+      "code": "sz002371",
+      "price": 742.5,
+      "change_pct": 1.13,
+      "pe": 96.6,
+      "turnover_rate": 1.5,
+      "sector": "半导体设备",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 58.8,
+      "ma5": 698.4,
+      "ma20": 724.79,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 728.0,
+        "buy_range": [
+          728.0,
+          749.84
+        ],
+        "stop_loss": 720.72
+      }
+    },
+    "sz300223": {
+      "name": "北京君正",
+      "code": "sz300223",
+      "price": 137,
+      "change_pct": 0.71,
+      "pe": 106.7,
+      "turnover_rate": 9.9,
+      "sector": "存储芯片",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 70.8,
+      "ma5": 129.02,
+      "ma20": 153.37,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 116.9,
+        "buy_range": [
+          116.9,
+          120.41
+        ],
+        "stop_loss": 115.73
+      }
+    },
+    "sh600886": {
+      "name": "国投电力",
+      "code": "sh600886",
+      "price": 14.88,
+      "change_pct": 0.61,
+      "pe": 16.0,
+      "turnover_rate": 0.4,
+      "sector": "其他",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 32.6,
+      "ma5": 15.03,
+      "ma20": 14.83,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 14.8,
+        "buy_range": [
+          14.8,
+          15.24
+        ],
+        "stop_loss": 14.65
+      }
+    },
+    "sz301308": {
+      "name": "江波龙",
+      "code": "sz301308",
+      "price": 366.33,
+      "change_pct": 0.39,
+      "pe": 28.5,
+      "turnover_rate": 7.1,
+      "sector": "存储芯片",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 70.2,
+      "ma5": 346.82,
+      "ma20": 401.74,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 364.9,
+        "buy_range": [
+          364.9,
+          375.85
+        ],
+        "stop_loss": 361.25
+      }
+    },
+    "sz002152": {
+      "name": "广电运通",
+      "code": "sz002152",
+      "price": 10.38,
+      "change_pct": 0.19,
+      "pe": 30.4,
+      "turnover_rate": 1.5,
+      "sector": "数字货币",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 100,
+      "ma5": 10.32,
+      "ma20": 10.08,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 10.3,
+        "buy_range": [
+          10.3,
+          10.61
+        ],
+        "stop_loss": 10.2
+      }
+    },
+    "sz000725": {
+      "name": "京东方Ａ",
+      "code": "sz000725",
+      "price": 5.96,
+      "change_pct": -0.17,
+      "pe": 37.1,
+      "turnover_rate": 5.3,
+      "sector": "面板",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 60.9,
+      "ma5": 5.7,
+      "ma20": 6.05,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 5.8,
+        "buy_range": [
+          5.8,
+          5.97
+        ],
+        "stop_loss": 5.74
+      }
+    },
+    "sh600362": {
+      "name": "江西铜业",
+      "code": "sh600362",
+      "price": 46.25,
+      "change_pct": -0.81,
+      "pe": 20.0,
+      "turnover_rate": 3.8,
+      "sector": "有色",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 77.6,
+      "ma5": 44.63,
+      "ma20": 42.55,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 43.3,
+        "buy_range": [
+          43.3,
+          44.6
+        ],
+        "stop_loss": 42.87
+      }
+    },
+    "sz300408": {
+      "name": "三环集团",
+      "code": "sz300408",
+      "price": 127,
+      "change_pct": -0.93,
+      "pe": 87.8,
+      "turnover_rate": 4.1,
+      "sector": "电子元器件",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 82.7,
+      "ma5": 120.37,
+      "ma20": 110.88,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 114.0,
+        "buy_range": [
+          114.0,
+          117.42
+        ],
+        "stop_loss": 112.86
+      }
+    },
+    "sh603019": {
+      "name": "中科曙光",
+      "code": "sh603019",
+      "price": 87.8,
+      "change_pct": -0.96,
+      "pe": 57.9,
+      "turnover_rate": 3.1,
+      "sector": "通信设备",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "fail"
+      },
+      "status": "pass",
+      "rsi6": 54.1,
+      "ma5": 85.83,
+      "ma20": 93.49,
+      "main_flow_5d": -5.04,
+      "key_price": {
+        "support": 85.6,
+        "buy_range": [
+          85.6,
+          88.17
+        ],
+        "stop_loss": 84.74
+      }
+    },
+    "sz002015": {
+      "name": "协鑫能科",
+      "code": "sz002015",
+      "price": 15.75,
+      "change_pct": -2.3,
+      "pe": 58.3,
+      "turnover_rate": 4.5,
+      "sector": "虚拟电厂",
+      "score": 5,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "pass",
+      "rsi6": 74.4,
+      "ma5": 15.74,
+      "ma20": 14.68,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 14.5,
+        "buy_range": [
+          14.5,
+          14.94
+        ],
+        "stop_loss": 14.36
+      }
+    },
+    "sz002428": {
+      "name": "云南锗业",
+      "code": "sz002428",
+      "price": 90.98,
+      "change_pct": 10,
+      "pe": 3118.6,
+      "turnover_rate": 12.0,
+      "sector": "小金属",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 84.9,
+      "ma5": 76.84,
+      "ma20": 78.3,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 82.7,
+        "buy_range": [
+          82.7,
+          85.18
+        ],
+        "stop_loss": 81.87
+      }
+    },
+    "sh601869": {
+      "name": "长飞光纤",
+      "code": "sh601869",
+      "price": 328.25,
+      "change_pct": 5.07,
+      "pe": 234.8,
+      "turnover_rate": 4.7,
+      "sector": "光通信",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 72.6,
+      "ma5": 291.69,
+      "ma20": 343.45,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 312.4,
+        "buy_range": [
+          312.4,
+          321.77
+        ],
+        "stop_loss": 309.28
+      }
+    },
+    "sh603602": {
+      "name": "纵横通信",
+      "code": "sh603602",
+      "price": 11.49,
+      "change_pct": 3.98,
+      "pe": -16.4,
+      "turnover_rate": 5.5,
+      "sector": "其他",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 93.2,
+      "ma5": 10.92,
+      "ma20": 10.31,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 10.4,
+        "buy_range": [
+          10.4,
+          10.71
+        ],
+        "stop_loss": 10.3
+      }
     },
     "sh600703": {
       "name": "三安光电",
       "code": "sh600703",
-      "price": 12.7,
-      "change_pct": null,
-      "pe": 55.0,
-      "turnover_rate": 2.5,
-      "main_flow_3d": null,
-      "gain_5d": 5.83,
-      "score": 6,
+      "price": 13.71,
+      "change_pct": 2.7,
+      "pe": -137.4,
+      "turnover_rate": 5.1,
+      "sector": "光电",
+      "score": 4,
       "gates": {
-        "pe": "pass",
-        "fund": "pass",
-        "oversold": "pass",
-        "trend": "pass",
-        "chase": "pass",
-        "turnover": "fail",
-        "breadth": "pass"
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
       },
-      "status": "passed",
-      "sector": "半导体/LED",
-      "note": "估值合理、资金面稳健、错杀特征明显、换手活跃度不足"
+      "status": "conditional",
+      "rsi6": 80.7,
+      "ma5": 12.84,
+      "ma20": 13.05,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 12.3,
+        "buy_range": [
+          12.3,
+          12.67
+        ],
+        "stop_loss": 12.18
+      }
+    },
+    "sh601899": {
+      "name": "紫金矿业",
+      "code": "sh601899",
+      "price": 34.5,
+      "change_pct": 1.17,
+      "pe": 14.9,
+      "turnover_rate": 1.9,
+      "sector": "有色",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 79.3,
+      "ma5": 33.24,
+      "ma20": 31.07,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 32.1,
+        "buy_range": [
+          32.1,
+          33.06
+        ],
+        "stop_loss": 31.78
+      }
+    },
+    "sz000636": {
+      "name": "风华高科",
+      "code": "sz000636",
+      "price": 58.28,
+      "change_pct": 0.83,
+      "pe": 219.4,
+      "turnover_rate": 18.6,
+      "sector": "电子元器件",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 91.2,
+      "ma5": 54.34,
+      "ma20": 49.71,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 54.0,
+        "buy_range": [
+          54.0,
+          55.62
+        ],
+        "stop_loss": 53.46
+      }
+    },
+    "sz002475": {
+      "name": "立讯精密",
+      "code": "sz002475",
+      "price": 55.9,
+      "change_pct": 0.05,
+      "pe": 25.1,
+      "turnover_rate": 2.4,
+      "sector": "精密制造",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "pass",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 20.2,
+      "ma5": 55.69,
+      "ma20": 59.12,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 53.7,
+        "buy_range": [
+          53.7,
+          55.31
+        ],
+        "stop_loss": 53.16
+      }
+    },
+    "sz300769": {
+      "name": "德方纳米",
+      "code": "sz300769",
+      "price": 46.55,
+      "change_pct": -0.21,
+      "pe": -33.5,
+      "turnover_rate": 6.2,
+      "sector": "锂电材料",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "fail",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 77.8,
+      "ma5": 44.65,
+      "ma20": 44.62,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 44.3,
+        "buy_range": [
+          44.3,
+          45.63
+        ],
+        "stop_loss": 43.86
+      }
+    },
+    "sh603993": {
+      "name": "洛阳钼业",
+      "code": "sh603993",
+      "price": 20.37,
+      "change_pct": -0.49,
+      "pe": 18.0,
+      "turnover_rate": 1.9,
+      "sector": "有色",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 76.8,
+      "ma5": 19.75,
+      "ma20": 18.83,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 19.3,
+        "buy_range": [
+          19.3,
+          19.88
+        ],
+        "stop_loss": 19.11
+      }
+    },
+    "sz300857": {
+      "name": "协创数据",
+      "code": "sz300857",
+      "price": 250.11,
+      "change_pct": -0.69,
+      "pe": 70.1,
+      "turnover_rate": 5.8,
+      "sector": "AI服务器",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "pass",
+        "sector": "fail",
+        "trend": "fail",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 71.3,
+      "ma5": 232.72,
+      "ma20": 235.49,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 243.0,
+        "buy_range": [
+          243.0,
+          250.29
+        ],
+        "stop_loss": 240.57
+      }
+    },
+    "sz003816": {
+      "name": "中国广核",
+      "code": "sz003816",
+      "price": 3.96,
+      "change_pct": -0.75,
+      "pe": 21.1,
+      "turnover_rate": 0.3,
+      "sector": "其他",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "fail",
+        "trend": "fail",
+        "momentum": "pass",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 32.4,
+      "ma5": 4.06,
+      "ma20": 4.02,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 3.9,
+        "buy_range": [
+          3.9,
+          4.02
+        ],
+        "stop_loss": 3.86
+      }
+    },
+    "sz002230": {
+      "name": "科大讯飞",
+      "code": "sz002230",
+      "price": 43.68,
+      "change_pct": -1.11,
+      "pe": 121.6,
+      "turnover_rate": 2.7,
+      "sector": "AI应用",
+      "score": 4,
+      "gates": {
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "turnover": "fail",
+        "sector": "fail",
+        "trend": "pass",
+        "momentum": "fail",
+        "capital_flow": "pass"
+      },
+      "status": "conditional",
+      "rsi6": 86.2,
+      "ma5": 43.27,
+      "ma20": 41.47,
+      "main_flow_5d": 0,
+      "key_price": {
+        "support": 41.4,
+        "buy_range": [
+          41.4,
+          42.64
+        ],
+        "stop_loss": 40.99
+      }
     }
   }
 }

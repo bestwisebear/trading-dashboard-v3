@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T20:18:00+08:00",
+    "last_updated": "2026-08-06T23:00:00+08:00",
     "data_as_of": "2026-08-06 收盘"
   },
   "watchlist": [
@@ -368,24 +368,160 @@
       "gates": {
         "market_breadth": true,
         "pe_check": true,
-        "capital_flow": false,
+        "turnover": false,
+        "sector": true,
         "trend": false,
-        "turnover": true,
         "momentum": true,
-        "sector": true
+        "capital_flow": true
       },
       "key_price": {
-        "support": 95.1,
+        "support": 98.9,
         "buy_range": [
-          95.1,
-          97.95
+          98.9,
+          101.87
         ],
-        "stop_loss": 94.15
+        "stop_loss": 97.91
       },
       "sector": "半导体/芯片",
-      "today_close": 104.5,
-      "change_pct": 0.46,
-      "reason": "7道闸5/7；午间+0.46%窄幅震荡；现价104.50接近支撑95.1上方"
+      "today_close": 106.24,
+      "change_pct": 2.13,
+      "rsi6": 59.0,
+      "reason": "7道闸5/7通过；当日涨幅2.1%<5%；RSI6=59.0<70；价格接近MA20上方"
+    },
+    {
+      "name": "菲利华",
+      "code": "300395",
+      "score": 6,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 78.3,
+        "buy_range": [
+          78.3,
+          80.65
+        ],
+        "stop_loss": 77.52
+      },
+      "sector": "半导体材料",
+      "today_close": 81.83,
+      "change_pct": 2.36,
+      "rsi6": 67.3,
+      "reason": "7道闸6/7通过；当日涨幅2.4%<5%；RSI6=67.3<70；价格接近MA20附近"
+    },
+    {
+      "name": "长川科技",
+      "code": "300604",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": false
+      },
+      "key_price": {
+        "support": 279.22,
+        "buy_range": [
+          279.22,
+          287.6
+        ],
+        "stop_loss": 276.43
+      },
+      "sector": "半导体设备",
+      "today_close": 278.53,
+      "change_pct": 2.4,
+      "rsi6": 53.1,
+      "reason": "7道闸5/7通过；当日涨幅2.4%<5%；RSI6=53.1<70；价格接近MA20附近"
+    },
+    {
+      "name": "斯达半导",
+      "code": "603290",
+      "score": 6,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 84.8,
+        "buy_range": [
+          84.8,
+          87.34
+        ],
+        "stop_loss": 83.95
+      },
+      "sector": "半导体设备",
+      "today_close": 86.35,
+      "change_pct": 0.02,
+      "rsi6": 67.2,
+      "reason": "7道闸6/7通过；当日涨幅0.0%<5%；RSI6=67.2<70；价格接近MA20附近"
+    },
+    {
+      "name": "北方华创",
+      "code": "002371",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": false,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 728.0,
+        "buy_range": [
+          728.0,
+          749.84
+        ],
+        "stop_loss": 720.72
+      },
+      "sector": "半导体设备",
+      "today_close": 742.5,
+      "change_pct": 1.13,
+      "rsi6": 58.8,
+      "reason": "7道闸5/7通过；当日涨幅1.1%<5%；RSI6=58.8<70；价格接近MA20上方"
+    },
+    {
+      "name": "太极实业",
+      "code": "600667",
+      "score": 6,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 17.9,
+        "buy_range": [
+          17.9,
+          18.44
+        ],
+        "stop_loss": 17.72
+      },
+      "sector": "太极实业/半导体",
+      "today_close": 19.17,
+      "change_pct": 3.9,
+      "rsi6": 62.4,
+      "reason": "7道闸6/7通过；当日涨幅3.9%<5%；RSI6=62.4<70；价格接近MA20上方"
     }
   ]
 }
