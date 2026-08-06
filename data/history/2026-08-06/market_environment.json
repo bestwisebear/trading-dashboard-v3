@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T15:01:00+08:00",
+    "session": "close",
+    "data_as_of": "2026-08-06 收盘"
+  },
+  "indices": [
+    {
+      "name": "上证指数",
+      "code": "sh000001",
+      "close": 3900.35,
+      "change_pct": 0.57,
+      "high": 3902.05,
+      "low": 3864.27,
+      "volume": 588555280,
+      "amount": 116681868
+    },
+    {
+      "name": "深证成指",
+      "code": "sz399001",
+      "close": 14110.12,
+      "change_pct": -0.24,
+      "high": 14252.14,
+      "low": 13922.41,
+      "volume": 716171979,
+      "amount": 136196280
+    },
+    {
+      "name": "创业板指",
+      "code": "sz399006",
+      "close": 3515.56,
+      "change_pct": -0.55,
+      "high": 3574.41,
+      "low": 3444.36,
+      "volume": 218807247,
+      "amount": 65790833
+    }
+  ],
+  "hot_sectors_up": [
+    {
+      "name": "电子化学品",
+      "change_pct": 4.73,
+      "lead_stock": "中巨芯-U(+19.99%涨停)"
+    },
+    {
+      "name": "煤炭开采",
+      "change_pct": 4.56,
+      "lead_stock": "昊华能源(+10.03%涨停)"
+    },
+    {
+      "name": "玻璃玻纤",
+      "change_pct": 3.85,
+      "lead_stock": "宏和科技(+7.70%)"
+    },
+    {
+      "name": "非金属材料",
+      "change_pct": 3.19,
+      "lead_stock": "联瑞新材(+8.82%)"
+    },
+    {
+      "name": "小金属",
+      "change_pct": 3.13,
+      "lead_stock": "云南锗业(+10.00%涨停)"
+    },
+    {
+      "name": "贵金属",
+      "change_pct": 2.78,
+      "lead_stock": "西部黄金(+6.00%)"
+    },
+    {
+      "name": "半导体封测",
+      "change_pct": 2.5,
+      "lead_stock": "长电科技(+10.00%涨停)"
+    },
+    {
+      "name": "元件",
+      "change_pct": 2.33,
+      "lead_stock": "胜宏科技(+5.84%)"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 1.49,
+      "lead_stock": "亨通光电(+3.20%)"
+    },
+    {
+      "name": "PCB概念",
+      "change_pct": 1.3,
+      "lead_stock": "景旺电子涨停"
+    }
+  ],
+  "hot_sectors_down": [
+    {
+      "name": "电池",
+      "change_pct": -2.5,
+      "lead_stock": "宁德时代(-4.24%)领跌"
+    },
+    {
+      "name": "电力",
+      "change_pct": -2.1,
+      "lead_stock": "立新能源逼近跌停"
+    },
+    {
+      "name": "医药商业",
+      "change_pct": -1.8,
+      "lead_stock": "药明康德(-3.25%)"
+    },
+    {
+      "name": "汽车整车",
+      "change_pct": -1.5,
+      "lead_stock": "北汽蓝谷、江淮汽车跌幅居前"
+    },
+    {
+      "name": "教育",
+      "change_pct": -1.4,
+      "lead_stock": "传智教育(-6.65%)"
+    },
+    {
+      "name": "软件服务",
+      "change_pct": -1.2,
+      "lead_stock": "蓝色光标(-2.48%)"
+    },
+    {
+      "name": "证券",
+      "change_pct": -0.9,
+      "lead_stock": "券商板块整体走弱"
+    },
+    {
+      "name": "AI应用",
+      "change_pct": -0.8,
+      "lead_stock": "利欧股份(-3.35%)"
+    },
+    {
+      "name": "集运",
+      "change_pct": -2.5,
+      "lead_stock": "集运欧线暴跌拖累"
+    },
+    {
+      "name": "CRO概念",
+      "change_pct": -0.7,
+      "lead_stock": "药明康德(-3.25%)"
+    }
+  ],
+  "concept_sectors_up": [
+    {
+      "name": "靶材",
+      "change_pct": 7.71
+    },
+    {
+      "name": "电子特气",
+      "change_pct": 5.78
+    },
+    {
+      "name": "氦气",
+      "change_pct": 5.5
+    },
+    {
+      "name": "工业气体",
+      "change_pct": 4.21
+    },
+    {
+      "name": "锗镓概念",
+      "change_pct": 4.01
+    },
+    {
+      "name": "数字货币",
+      "change_pct": 3.8
+    },
+    {
+      "name": "6G概念",
+      "change_pct": 3.5
+    },
+    {
+      "name": "种植业",
+      "change_pct": 3.2
+    }
+  ],
+  "overall_assessment": "收盘：沪指+0.57%报3900.35站上3900，深成指-0.24%报14110.12，创业板-0.55%报3515.56冲高回落。沪深两市成交2.53万亿较昨日缩量1309亿。全市场超2700只个股上涨。半导体封测(通富微电+5.10%、长电科技涨停)、电子特气、煤炭继续走强，但电池(宁德时代-4.24%)、电力、AI应用跌幅居前。市场热点快速轮动，分化格局延续。",
+  "rise_count": 2700,
+  "fall_count": 2600,
+  "limit_up": 55,
+  "limit_down": 8,
+  "total_turnover": 25300,
+  "turnover_change": -1309,
+  "note": "成交额2.53万亿，较昨日缩量1309亿。涨跌家数约2700:2600"
+}

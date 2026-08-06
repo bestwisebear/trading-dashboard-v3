@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "last_updated": "2026-08-06T15:01:00+08:00",
+    "version": "3.0",
+    "data_as_of": "2026-08-06 收盘"
+  },
+  "positions": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "quantity": 1500,
+      "cost_price": 77.05,
+      "cost_source": "user_report",
+      "current_price": 76.79,
+      "price_updated_at": "2026-08-06T15:01:00+08:00",
+      "buy_date": "2026-08-05",
+      "holding_days": 1,
+      "stop_loss": 74.5,
+      "stop_profit": null,
+      "pnl_percent": -0.34,
+      "pnl_amount": -390,
+      "sector": "AI算力/服务器",
+      "status": "holding",
+      "notes": "原仓1000股@77.60(8/5)+加仓500股@75.96(8/6 13:36)，均价77.05。止损74.50。收盘76.79，距止损3.0%"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1100,
+      "cost_price": 61.1,
+      "cost_source": "user_report",
+      "current_price": 61.6,
+      "price_updated_at": "2026-08-06T15:01:00+08:00",
+      "buy_date": "2026-08-06",
+      "holding_days": 0,
+      "stop_loss": 56.0,
+      "stop_profit": null,
+      "pnl_percent": 0.82,
+      "pnl_amount": 550,
+      "sector": "电池/储能",
+      "status": "holding",
+      "notes": "14:00买入11手(1100股)@61.1。回补操作。支撑位57，止损56.0。收盘61.6，电池板块回调宁德时代-4.24%"
+    },
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "quantity": 1500,
+      "cost_price": 15.7,
+      "cost_source": "user_report",
+      "current_price": 15.75,
+      "price_updated_at": "2026-08-06T15:01:00+08:00",
+      "buy_date": "2026-08-06",
+      "holding_days": 0,
+      "stop_loss": 15.0,
+      "stop_profit": null,
+      "pnl_percent": 0.32,
+      "pnl_amount": 75,
+      "sector": "虚拟电厂/电力",
+      "status": "holding",
+      "notes": "~14:54买入15手(1500股)@15.7。规则外小仓位试错。支撑位15.0，止损15.0。收盘15.75，电力板块走弱"
+    }
+  ],
+  "closed_today": [],
+  "summary": {
+    "total_positions": 3,
+    "total_realized_today": 0,
+    "total_unrealized_today": 235,
+    "net_today": 630,
+    "position_ratio": 97.5,
+    "available_cash": 5395,
+    "total_assets": 211965,
+    "total_pnl_amount": 235,
+    "initial_capital": 200000,
+    "monthly_realized": 9973,
+    "monthly_unrealized": 235,
+    "monthly_pnl": 11965,
+    "monthly_return_rate": 5.98,
+    "today_return_rate": 0.3,
+    "prev_close_assets": 211335
+  }
+}

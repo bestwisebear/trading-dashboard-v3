@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T15:01:00+08:00",
+    "session": "close"
+  },
+  "trades": [
+    {
+      "time": "2026-08-06T13:36:00+08:00",
+      "action": "buy",
+      "code": "000977",
+      "name": "浪潮信息",
+      "quantity": 500,
+      "price": 75.96,
+      "amount": 37980,
+      "reason": "加仓。原仓1000股，回踩支撑位加仓摊低成本",
+      "discipline_check": "violation",
+      "discipline_note": "当日止损盈后当日回补，违反纪律"
+    },
+    {
+      "time": "2026-08-06T14:00:00+08:00",
+      "action": "buy",
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1100,
+      "price": 61.1,
+      "amount": 67210,
+      "reason": "回补操作。电池板块回调至买入区间57-62",
+      "discipline_check": "ok",
+      "discipline_note": "在关注池买入区间内操作"
+    },
+    {
+      "time": "2026-08-06T14:54:00+08:00",
+      "action": "buy",
+      "code": "002015",
+      "name": "协鑫能科",
+      "quantity": 1500,
+      "price": 15.7,
+      "amount": 23550,
+      "reason": "规则外小仓位试错。虚拟电厂/算电协同概念",
+      "discipline_check": "violation",
+      "discipline_note": "超时段(14:30后)+接近满仓买入，违反操作时段+仓位管理纪律。用户明确：明天不及预期立马走"
+    }
+  ],
+  "summary": {
+    "total_trades": 3,
+    "buy_count": 3,
+    "sell_count": 0,
+    "realized_pnl": 0,
+    "violation_count": 2,
+    "violation_types": {
+      "止损盈后当日回补": 1,
+      "超时段操作": 1
+    }
+  }
+}
