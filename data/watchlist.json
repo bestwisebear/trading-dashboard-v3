@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T15:30:00+08:00",
+    "last_updated": "2026-08-06T20:18:00+08:00",
     "data_as_of": "2026-08-06 收盘"
   },
   "watchlist": [
@@ -30,11 +30,11 @@
       "code": "002156",
       "name": "通富微电",
       "key_price": {
-        "support": 50.0,
-        "resistance": 60.0,
+        "support": 55.0,
+        "resistance": 65.0,
         "buy_range": [
-          50.0,
-          55.0
+          55.0,
+          60.0
         ]
       },
       "status": "tracking",
@@ -42,7 +42,9 @@
       "today_close": 60.96,
       "today_change_pct": 5.1,
       "tags": [
-        "封测"
+        "封测",
+        "先进封装",
+        "强势"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-06T15:30:00+08:00"
@@ -170,8 +172,9 @@
       "today_close": 127.0,
       "today_change_pct": -0.93,
       "tags": [
-        "已止损",
-        "卖飞"
+        "电子元器件",
+        "公司回购中",
+        "支撑验证中"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-06T15:30:00+08:00"
