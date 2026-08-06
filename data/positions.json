@@ -1,47 +1,63 @@
 {
   "meta": {
-    "last_updated": "2026-08-06T11:50:00+08:00",
+    "last_updated": "2026-08-06T14:31:00+08:00",
     "version": "3.0",
-    "last_premarket_refresh": "2026-08-06T05:31:00+08:00",
-    "last_midday_refresh": "2026-08-06T11:50:00+08:00",
-    "data_as_of": "2026-08-06 午间"
+    "data_as_of": "2026-08-06 14:31"
   },
   "positions": [
     {
       "code": "000977",
       "name": "浪潮信息",
-      "quantity": 1000,
-      "cost_price": 77.6,
+      "quantity": 1500,
+      "cost_price": 77.05,
       "cost_source": "user_report",
-      "current_price": 75.95,
-      "price_updated_at": "2026-08-06T11:50:00+08:00",
+      "current_price": 75.96,
+      "price_updated_at": "2026-08-06T13:36:00+08:00",
       "buy_date": "2026-08-05",
       "holding_days": 1,
       "stop_loss": 74.5,
       "stop_profit": null,
-      "pnl_percent": -2.13,
-      "pnl_amount": -1650.0,
+      "pnl_percent": -1.41,
+      "pnl_amount": -1637.5,
       "sector": "AI算力/服务器",
       "status": "holding",
-      "notes": "14:00回补买入，成本77.6，1000股。午间75.95，浮亏-1650元。止损74.50，距止损约1.9%"
+      "notes": "原仓1000股@77.60(8/5)+加仓500股@75.96(8/6 13:36)，均价77.05。止损74.50"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1100,
+      "cost_price": 61.1,
+      "cost_source": "user_report",
+      "current_price": 61.1,
+      "price_updated_at": "2026-08-06T14:00:00+08:00",
+      "buy_date": "2026-08-06",
+      "holding_days": 0,
+      "stop_loss": 56.0,
+      "stop_profit": null,
+      "pnl_percent": 0,
+      "pnl_amount": 0,
+      "sector": "电池/储能",
+      "status": "holding",
+      "notes": "14:00买入11手(1100股)@61.1。回补操作。支撑位57，止损56.0"
     }
   ],
   "closed_today": [],
   "summary": {
-    "total_positions": 1,
+    "total_positions": 2,
     "total_realized_today": 0,
-    "total_unrealized_today": -1650.0,
-    "net_today": -1650.0,
-    "position_ratio": 36.9,
-    "available_cash": 129535,
-    "total_assets": 205485,
-    "total_pnl_amount": -1650.0,
+    "total_unrealized_today": -1637.5,
+    "net_today": -1637.5,
+    "position_ratio": 67.0,
+    "available_cash": 33130,
+    "total_assets": 176340,
+    "total_pnl_amount": -1637.5,
     "initial_capital": 200000,
     "monthly_realized": 9973,
-    "monthly_unrealized": -1650.0,
-    "monthly_pnl": 8323,
-    "monthly_return_rate": 4.16,
-    "today_return_rate": -0.83,
-    "prev_close_assets": 207973
+    "monthly_unrealized": -1637.5,
+    "monthly_pnl": 8335.5,
+    "monthly_return_rate": 4.17,
+    "today_return_rate": -1.57,
+    "prev_close_assets": 179145
   }
 }
