@@ -1,10 +1,7 @@
 {
   "meta": {
-    "last_updated": "202608061501",
-    "last_premarket_refresh": "2026-08-06T05:31:00+08:00",
-    "last_midday_refresh": "2026-08-06T11:50:00+08:00",
-    "data_as_of": "2026-08-06 收盘",
-    "last_close_refresh": "2026-08-06T15:01:00+08:00"
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "data_as_of": "2026-08-06 收盘"
   },
   "watchlist": [
     {
@@ -27,7 +24,7 @@
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "002156",
@@ -48,7 +45,7 @@
         "封测"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300502",
@@ -70,7 +67,7 @@
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300308",
@@ -91,7 +88,7 @@
         "光模块龙头"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300394",
@@ -113,7 +110,7 @@
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300223",
@@ -134,7 +131,7 @@
         "存储"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "301308",
@@ -155,7 +152,7 @@
         "存储"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300408",
@@ -177,28 +174,7 @@
         "卖飞"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
-    },
-    {
-      "code": "300438",
-      "name": "鹏辉能源",
-      "key_price": {
-        "support": 57.0,
-        "resistance": 65.0,
-        "buy_range": [
-          57.0,
-          62.0
-        ]
-      },
-      "status": "history",
-      "sector": "电池/储能",
-      "today_close": 61.6,
-      "today_change_pct": -3.46,
-      "tags": [
-        "已止盈清仓"
-      ],
-      "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300395",
@@ -219,7 +195,7 @@
         "半导体材料"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300442",
@@ -240,7 +216,7 @@
         "IDC"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300604",
@@ -261,7 +237,7 @@
         "半导体设备"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "000988",
@@ -282,7 +258,7 @@
         "激光"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "002384",
@@ -303,28 +279,7 @@
         "PCB"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
-    },
-    {
-      "code": "000977",
-      "name": "浪潮信息",
-      "key_price": {
-        "support": 68.0,
-        "resistance": 78.0,
-        "buy_range": [
-          68.0,
-          75.0
-        ]
-      },
-      "status": "holding",
-      "sector": "AI服务器",
-      "today_close": 76.79,
-      "today_change_pct": -0.53,
-      "tags": [
-        "持仓"
-      ],
-      "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "603026",
@@ -345,7 +300,7 @@
         "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "300769",
@@ -366,7 +321,7 @@
         "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "code": "002015",
@@ -379,7 +334,7 @@
           15.8
         ]
       },
-      "status": "tracking",
+      "status": "holding",
       "sector": "虚拟电厂/电力",
       "today_close": 15.75,
       "today_change_pct": -2.3,
@@ -389,17 +344,17 @@
         "换电储能"
       ],
       "added_date": "2026-08-05",
-      "price_updated_at": "2026-08-06T15:01:00+08:00"
+      "price_updated_at": "2026-08-06T15:30:00+08:00"
     }
   ],
   "summary": {
-    "avg_change_pct": 0.41,
+    "avg_change_pct": 0.71,
     "up_count": 9,
-    "down_count": 9,
-    "top_gainer": "通富微电 +5.10%",
-    "top_loser": "鹏辉能源 -3.46%",
+    "down_count": 7,
     "flat_count": 0,
-    "total": 18
+    "top_gainer": "通富微电 +5.10%",
+    "top_loser": "协鑫能科 -2.30%",
+    "total": 16
   },
   "oversold_scan": [],
   "transit_pool": [

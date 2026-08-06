@@ -1,94 +1,87 @@
 {
   "meta": {
     "date": "2026-08-06",
-    "last_updated": "2026-08-06T15:01:00+08:00",
-    "session": "close",
-    "data_as_of": "2026-08-06 收盘"
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "session": "close"
   },
   "signals": [
     {
       "id": "rise_fall_count",
       "name": "涨跌家数",
       "description": "全市场涨跌家数对比",
-      "value": "2700:2600",
+      "value": 2785,
       "threshold": 2000,
-      "status": "yellow",
-      "detail": "收盘2700涨2600跌，涨跌基本均衡。涨停55家跌停8家，赚钱效应尚可但不如昨日火爆(3725:1621)。分化加剧",
-      "updated_at": "2026-08-06T15:01:00+08:00"
+      "status": "green",
+      "detail": "上涨2785家，下跌2585家，平盘159家。涨跌比1.08:1，略偏多",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "id": "sector_strength",
       "name": "板块真假强",
       "description": "持仓板块涨跌比判定",
-      "value": "半导体封测真强，电池板块走弱",
+      "value": null,
       "status": "yellow",
-      "detail": "通富微电+5.10%领涨封测(长电科技涨停)；天孚通信+3.89%、华工科技+2.57%延续强势；浪潮信息-0.53%偏弱；鹏辉能源-3.46%随电池板块(宁德时代-4.24%)回调。协鑫能科-2.30%电力板块走弱",
-      "updated_at": "2026-08-06T15:01:00+08:00"
+      "detail": "煤炭/电子化学品领涨，电力设备/教育/汽车领跌。持仓板块AI服务器弱(-0.53%)、电池弱(-3.46%)、电力弱(-2.30%)，均非当日主线",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "id": "main_capital_flow",
       "name": "主力资金方向",
-      "description": "行业板块主力资金流入",
-      "value": "通信设备+25.9亿、元件+19.1亿领涨",
+      "description": "全市场主力资金净流入(亿)",
+      "value": -84.48,
       "threshold": 0,
-      "status": "green",
-      "detail": "行业资金流入前三：通信设备+25.93亿、元件+19.11亿、电子化学品+16.14亿。科技主线资金持续流入，但力度较昨日有所收敛。浪潮信息主力净流出-4965万，鹏辉能源主力净流出-3846万，协鑫能科主力净流出-7546万",
-      "updated_at": "2026-08-06T15:01:00+08:00"
+      "status": "red",
+      "detail": "主力资金净流出84.48亿，连续流出态势",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "id": "northbound_flow",
-      "name": "北向资金活跃度",
-      "description": "北向成交额vs20日均值推算活跃度",
-      "value": "持续净流入，重点加仓半导体军工",
+      "name": "北向资金流入",
+      "description": "北向资金净流入(亿)",
+      "value": null,
       "threshold": 0,
-      "status": "green",
-      "detail": "8月前5个交易日北向持续净流入，累计加仓半导体、军工、贵金属超百亿。8/5北向成交3517亿占两市13.23%。今日早盘北向保持净流入，重点加仓国产算力、军工制造",
-      "updated_at": "2026-08-06T15:01:00+08:00",
-      "turnover_amt": 3517,
-      "turnover_20d_avg": 3200,
-      "deviation_ratio": 1.1,
-      "strength": "小幅放量",
-      "trend_3d": "递增",
-      "method": "成交额vs20日均值加权判定（非真实净流入）"
+      "status": "yellow",
+      "detail": "北向资金数据待晚间更新",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "id": "limit_up_count",
       "name": "涨停家数",
       "description": "涨停板数量",
-      "value": "55家涨停",
+      "value": 127,
       "threshold": 30,
       "status": "green",
-      "detail": "涨停55家：长电科技、通宇通讯、云南锗业、有研新材、昊华能源、中巨芯(20cm)、多氟多、天通股份、辽宁能源、郑州煤电等。封板集中在半导体封测+煤炭+小金属",
-      "updated_at": "2026-08-06T15:01:00+08:00"
+      "detail": "涨幅>9%有127只，跌幅>9%仅6只，局部热度较高，煤炭板块掀涨停潮",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "id": "volume_ratio",
       "name": "量比指标",
-      "description": "全市场量比",
-      "value": 0.95,
-      "threshold": 1.2,
-      "status": "yellow",
-      "detail": "全天成交2.53万亿，较昨日2.66万亿缩量1309亿。量比约0.95，属于温和缩量，资金交投仍活跃但较昨日放量有所收敛",
-      "updated_at": "2026-08-06T15:01:00+08:00"
+      "description": "全市场成交额(万亿)",
+      "value": 2.53,
+      "threshold": 2.0,
+      "status": "green",
+      "detail": "成交额2.53万亿，较昨日缩量1309亿，但仍高于2万亿活跃线",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     },
     {
       "id": "market_breadth",
       "name": "市场宽度",
-      "description": "站上5日线个股占比",
-      "value": "分化明显",
+      "description": "涨跌家数比与赚钱效应",
+      "value": 51.9,
       "threshold": 60,
       "status": "yellow",
-      "detail": "涨跌约2700:2600基本均衡，市场宽度一般。半导体/煤炭/贵金属强势但电池/AI应用/电力回调，板块轮动加速",
-      "updated_at": "2026-08-06T15:01:00+08:00"
+      "detail": "上涨占比51.9%，超2700只个股上涨但赚钱效应一般，热点集中在煤炭/贵金属/化工",
+      "updated_at": "2026-08-06T15:30:00+08:00"
     }
   ],
   "aggregate": {
     "green_count": 3,
-    "yellow_count": 4,
-    "red_count": 0,
-    "total_score": 10,
+    "yellow_count": 3,
+    "red_count": 1,
+    "total_score": 9,
     "max_score": 14,
     "no_open_position": false,
-    "no_open_reason": ""
+    "market_comment": "沪指低开高走+0.57%，深创指小幅收跌。煤炭/贵金属/化工领涨，电力/教育/汽车领跌。涨跌家数略偏多(2785:2585)但主力资金仍在流出。市场热点快速轮动，成交缩量至2.53万亿。"
   }
 }

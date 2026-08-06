@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-04T15:20:00+08:00"
+    "last_updated": "2026-08-06T15:30:00+08:00"
   },
   "logs": [
     {
@@ -170,31 +170,36 @@
         "range": "59.5-62.0",
         "reason": "RSI6=27.6超卖+筑底中段，需确认MA5/MA10支撑"
       }
+    },
+    {
+      "date": "2026-08-06",
+      "type": "超时段操作",
+      "detail": "14:00买入鹏辉能源、14:54买入协鑫能科，均超过规定的13:30-14:30建仓时段",
+      "severity": "medium",
+      "stocks": [
+        "鹏辉能源",
+        "协鑫能科"
+      ]
+    },
+    {
+      "date": "2026-08-06",
+      "type": "超持仓限制",
+      "detail": "同时持有3只标的满仓96.9%，接近满仓操作风险极高",
+      "severity": "high",
+      "stocks": [
+        "浪潮信息",
+        "鹏辉能源",
+        "协鑫能科"
+      ]
     }
   ],
   "stats": {
     "total_violations": 7,
     "by_type": {
-      "non_trading_window": 2,
-      "day_trading": 1,
-      "out_of_watchlist": 1,
-      "skip_candidate_pool": 1,
-      "exceed_planned_qty": 1,
-      "emotional_trading": 1
+      "超时段操作": 1,
+      "超持仓限制": 1
     },
-    "this_week": 7,
-    "this_month": 7
-  },
-  "statistics": {
-    "this_week_count": 7,
-    "this_month_count": 7,
-    "most_common_label": "非交易时段开仓/做T",
-    "by_type": {
-      "non_trading_window": 2,
-      "day_trading": 1,
-      "out_of_watchlist": 1,
-      "skip_candidate_pool": 1,
-      "emotional_trading": 1
-    }
+    "this_week": 2,
+    "this_month": 5
   }
 }

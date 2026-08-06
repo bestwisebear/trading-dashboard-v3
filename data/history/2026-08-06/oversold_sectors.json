@@ -1,127 +1,70 @@
 {
   "meta": {
     "date": "2026-08-06",
-    "last_updated": "2026-08-06T15:01:00+08:00",
-    "data_as_of": "2026-08-06 收盘",
-    "session": "close"
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "data_as_of": "2026-08-06 收盘"
   },
   "sectors": [
     {
-      "sector_name": "靶材",
-      "change_1d": 7.71,
-      "change_20d": -30.52,
-      "change_5d": 25.86,
-      "top3_resistant": [
-        {
-          "code": "003003",
-          "name": "欧莱新材",
-          "change_1d": 14.15
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "20日暴跌-30.52%最深，今日继续强势反弹+7.71%。5日累计+25.86%反弹力度极强，关注回调机会",
-      "threshold": "跌幅<板块平均"
-    },
-    {
       "sector_name": "电子化学品Ⅱ",
-      "change_1d": 4.73,
       "change_20d": -26.09,
-      "change_5d": 17.91,
+      "today_change": 4.73,
       "top3_resistant": [
         {
-          "code": "301037",
-          "name": "唯特偶",
-          "change_1d": 13.43
+          "code": "300502",
+          "name": "新易盛",
+          "change_pct": -0.57
         },
         {
-          "code": "301037",
-          "name": "中巨芯-U",
-          "change_1d": 19.99
+          "code": "300394",
+          "name": "天孚通信",
+          "change_pct": 3.89
         }
       ],
-      "can_add_watchlist": false,
-      "note": "20日跌-26.09%后今日强势+4.73%，中巨芯20cm涨停。连续反弹势头良好",
-      "threshold": "跌幅<板块平均"
+      "can_add_watchlist": true,
+      "note": "20日跌幅-26.09%但今日大涨+4.73%，超跌反弹信号明显"
     },
     {
       "sector_name": "玻璃玻纤",
-      "change_1d": 3.85,
       "change_20d": -24.89,
-      "change_5d": 12.71,
+      "today_change": 3.85,
       "top3_resistant": [
         {
-          "code": "600309",
-          "name": "中材科技",
-          "change_1d": 9.99
+          "code": "603256",
+          "name": "宏和科技",
+          "change_pct": 6.0
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日跌-24.89%后继续反弹+3.85%，连续三日上涨。5日+12.71%",
-      "threshold": "跌幅<板块平均"
+      "note": "20日跌幅-24.89%今日反弹+3.85%，关注持续性"
     },
     {
       "sector_name": "非金属材料Ⅱ",
-      "change_1d": 3.19,
       "change_20d": -24.41,
-      "change_5d": 16.81,
+      "today_change": 3.19,
       "top3_resistant": [
         {
           "code": "688300",
           "name": "联瑞新材",
-          "change_1d": 8.82
+          "change_pct": 8.82
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日跌-24.41%后反弹+3.19%，5日累计+16.81%",
-      "threshold": "跌幅<板块平均"
+      "note": "20日跌幅-24.41%今日反弹+3.19%"
     },
     {
-      "sector_name": "电子特气",
-      "change_1d": 5.78,
-      "change_20d": -18.18,
-      "change_5d": 17.03,
+      "sector_name": "靶材(概念)",
+      "change_20d": -30.52,
+      "today_change": 7.71,
       "top3_resistant": [
         {
-          "code": "301037",
-          "name": "蜀道装备",
-          "change_1d": 19.99
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "20日跌-18.18%后今日强势反弹+5.78%，和远气体2连板，蜀道装备20cm涨停",
-      "threshold": "跌幅<板块平均"
-    },
-    {
-      "sector_name": "大硅片",
-      "change_1d": 5.5,
-      "change_20d": -17.5,
-      "change_5d": 14.2,
-      "top3_resistant": [
-        {
-          "code": "301036",
-          "name": "有研硅",
-          "change_1d": 17.62
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "20日跌-17.50%后今日反弹+5.50%。有研硅继续强势",
-      "threshold": "跌幅<板块平均"
-    },
-    {
-      "sector_name": "元件",
-      "change_1d": 2.33,
-      "change_20d": -14.56,
-      "change_5d": 10.33,
-      "top3_resistant": [
-        {
-          "code": "300476",
-          "name": "胜宏科技",
-          "change_1d": 5.84
+          "code": "688456",
+          "name": "有研粉材",
+          "change_pct": 5.0
         }
       ],
       "can_add_watchlist": true,
-      "note": "20日跌-14.56%后反弹+2.33%，5日累计+10.33%。关注池内东山精密-0.61%表现偏弱",
-      "threshold": "跌幅<板块平均"
+      "note": "概念板块20日跌-30.52%今日暴涨+7.71%，超跌反弹强"
     }
   ]
 }
