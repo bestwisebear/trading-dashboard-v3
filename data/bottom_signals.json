@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "date": "2026-08-06",
+    "last_updated": "2026-08-07T05:35:00+08:00",
+    "data_as_of": "2026-08-06 收盘"
+  },
+  "signals": [
+    {
+      "id": "volume_shrink",
+      "name": "缩量企稳",
+      "status": "yellow",
+      "detail": "成交额2.53万亿缩量1308亿，但仍高于2万亿活跃线，未形成缩量止跌形态"
+    },
+    {
+      "id": "key_support",
+      "name": "关键支撑位测试",
+      "status": "green",
+      "detail": "浪潮信息盘中最低75.11距止损74.5仅0.8%，鹏辉能源盘中最低60.22距止损56有7.5%空间，协鑫能科盘中最低15.54距止损15有3.6%"
+    },
+    {
+      "id": "sector_rotation",
+      "name": "板块轮动信号",
+      "status": "green",
+      "detail": "煤炭/贵金属/化工超跌反弹强，资金从电力/教育/汽车流出切换至低位资源品，高低切换进行中"
+    },
+    {
+      "id": "northbound",
+      "name": "北向资金转向",
+      "status": "yellow",
+      "detail": "待晚间数据更新"
+    },
+    {
+      "id": "sentiment_extreme",
+      "name": "情绪极端值",
+      "status": "yellow",
+      "detail": "涨跌比2785:2585略偏多，127只涨幅>9%显示局部热度尚可，未到极端"
+    }
+  ],
+  "triggered_count": 1,
+  "threshold": 3,
+  "comment": "底部信号1/3触发。板块轮动和超跌反弹信号已出现，但缩量企稳和北向转向尚待确认。"
+}
