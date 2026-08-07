@@ -1,6 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T15:30:00+08:00"
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "data_source": "腾讯行情PE + 估算PB/ROE",
+    "update_frequency": "weekly"
   },
   "stocks": {
     "300136": {

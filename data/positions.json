@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T15:17:00+08:00",
+    "last_updated": "2026-08-07T11:51:00+08:00",
     "version": "3.0",
-    "data_as_of": "2026-08-07 收盘"
+    "data_as_of": "2026-08-07 午间"
   },
   "positions": [
     {
       "code": "000977",
       "name": "浪潮信息",
-      "quantity": 1000,
-      "cost_price": 70.68,
-      "cost_source": "broker_after_sell",
-      "current_price": 77.99,
-      "price_updated_at": "2026-08-07T15:00:00+08:00",
+      "quantity": 1500,
+      "cost_price": 73.24,
+      "cost_source": "user_report",
+      "current_price": 77.28,
+      "price_updated_at": "2026-08-07T11:51:00+08:00",
       "buy_date": "2026-08-05",
-      "holding_days": 3,
+      "holding_days": 2,
       "stop_loss": 74.91,
       "stop_profit": null,
-      "pnl_percent": 10.34,
-      "pnl_amount": 7310.0,
+      "pnl_percent": 5.52,
+      "pnl_amount": 6060.0,
       "sector": "AI算力/服务器",
       "status": "holding",
-      "notes": "14:45减仓500股@78.1后成本降至70.68 | 剩1000股持有 | 止损74.91"
+      "notes": "做T拉低成本(原77.05→73.24) | 止损74.91（距现价+3.2%缓冲）| 上午+0.64%跟涨大盘"
     },
     {
       "code": "300438",
@@ -29,57 +29,53 @@
       "quantity": 1100,
       "cost_price": 61.1,
       "cost_source": "user_report",
-      "current_price": 62.69,
-      "price_updated_at": "2026-08-07T15:00:00+08:00",
+      "current_price": 61.72,
+      "price_updated_at": "2026-08-07T11:51:00+08:00",
       "buy_date": "2026-08-06",
-      "holding_days": 2,
+      "holding_days": 1,
       "stop_loss": 56.0,
       "stop_profit": null,
-      "pnl_percent": 2.6,
-      "pnl_amount": 1749.0,
+      "pnl_percent": 1.01,
+      "pnl_amount": 682.0,
       "sector": "电池/储能",
       "status": "holding",
-      "notes": "支撑57/止损56.0 | 收盘+1.77%跟涨"
-    }
-  ],
-  "closed_today": [
+      "notes": "14:00买入11手(1100股)@61.1。回补操作。支撑位57止损56.0。午间+0.19%窄幅震荡"
+    },
     {
       "code": "002015",
       "name": "协鑫能科",
       "quantity": 1500,
       "cost_price": 15.7,
-      "sell_price": 15.71,
-      "sell_time": "2026-08-07T14:36:00+08:00",
-      "realized_pnl": 15.0,
-      "realized_pnl_percent": 0.06,
-      "reason": "风控止损: 15.50验证线盘中跌破至15.40+RSI超买+相对强弱极差"
-    },
-    {
-      "code": "000977",
-      "name": "浪潮信息",
-      "quantity": 500,
-      "cost_price": 73.24,
-      "sell_price": 78.1,
-      "sell_time": "2026-08-07T14:45:00+08:00",
-      "realized_pnl": 2430.0,
-      "realized_pnl_percent": 6.64,
-      "reason": "80压力位未突破+冲高回落+周五锁利减仓"
+      "cost_source": "user_report",
+      "current_price": 15.75,
+      "price_updated_at": "2026-08-07T11:51:00+08:00",
+      "buy_date": "2026-08-06",
+      "holding_days": 1,
+      "stop_loss": 15.0,
+      "stop_profit": null,
+      "pnl_percent": 0.32,
+      "pnl_amount": 75.0,
+      "sector": "虚拟电厂/电力",
+      "status": "holding",
+      "notes": "~14:54买入15手(1500股)@15.7。规则外小仓位试错。止损15.0。午间平盘，低15.40后回平"
     }
   ],
+  "closed_today": [],
   "summary": {
-    "total_positions": 2,
-    "total_realized_today": 2445.0,
-    "total_unrealized": 9059.0,
-    "today_return": 2994.0,
-    "today_return_rate": 1.44,
-    "position_ratio": 70.1,
-    "available_cash": 62615,
-    "total_assets": 209564,
-    "total_pnl_amount": 9564.0,
+    "total_positions": 3,
+    "total_realized_today": 0,
+    "total_unrealized_today": 6817.0,
+    "net_today": 6817.0,
+    "position_ratio": 100.0,
+    "available_cash": 0,
+    "total_assets": 207390,
+    "total_pnl_amount": 6817.0,
     "initial_capital": 200000,
-    "monthly_return_rate": 4.78,
-    "prev_close_assets": 206570,
-    "net_today": 2994.0,
-    "monthly_pnl": 9564.0
+    "monthly_realized": 620,
+    "monthly_unrealized": 6817.0,
+    "monthly_pnl": 7437.0,
+    "monthly_return_rate": 3.7,
+    "today_return_rate": 3.3,
+    "prev_close_assets": 206570
   }
 }

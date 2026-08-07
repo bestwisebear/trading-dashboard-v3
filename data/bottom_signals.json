@@ -1,84 +1,42 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T15:30:00+08:00",
-    "data_as_of": "2026-08-07 收盘"
+    "date": "2026-08-06",
+    "last_updated": "2026-08-07T05:35:00+08:00",
+    "data_as_of": "2026-08-06 收盘"
   },
   "signals": [
     {
       "id": "volume_shrink",
       "name": "缩量企稳",
-      "status": "green",
-      "detail": "全天成交2.66万亿，较前日缩量1300亿，但仍高于2万亿活跃线。缩量上涨属健康形态"
+      "status": "yellow",
+      "detail": "成交额2.53万亿缩量1308亿，但仍高于2万亿活跃线，未形成缩量止跌形态"
     },
     {
       "id": "key_support",
       "name": "关键支撑位测试",
       "status": "green",
-      "detail": "浪潮信息盘中最低75.05距止损74.91仅0.2%但最终收77.99强势反转；鹏辉最低60.84距止损56有8.6%空间；协鑫最低15.40距止损15.0有2.7%"
+      "detail": "浪潮信息盘中最低75.11距止损74.5仅0.8%，鹏辉能源盘中最低60.22距止损56有7.5%空间，协鑫能科盘中最低15.54距止损15有3.6%"
     },
     {
       "id": "sector_rotation",
       "name": "板块轮动信号",
       "status": "green",
-      "detail": "CRO/医药/元件/玻璃玻纤超跌板块全面反弹。资金从软件/银行流出转向硬件/医药/材料，高低切换加速"
+      "detail": "煤炭/贵金属/化工超跌反弹强，资金从电力/教育/汽车流出切换至低位资源品，高低切换进行中"
     },
     {
       "id": "northbound",
       "name": "北向资金转向",
       "status": "yellow",
-      "detail": "深股通在浪潮信息上活跃(买入15.52亿)，协鑫能科机构也在买入。整体北向数据待晚间确认"
+      "detail": "待晚间数据更新"
     },
     {
       "id": "sentiment_extreme",
       "name": "情绪极端值",
-      "status": "green",
-      "detail": "涨停74家/跌停4家=18.5:1极偏多。市场赚钱效应良好，局部热度极高。情绪偏热但未到极端恐惧/贪婪"
+      "status": "yellow",
+      "detail": "涨跌比2785:2585略偏多，127只涨幅>9%显示局部热度尚可，未到极端"
     }
   ],
-  "triggered_count": 3,
+  "triggered_count": 1,
   "threshold": 3,
-  "comment": "底部信号3/3触发！缩量企稳+关键支撑测试通过+板块轮动加速+情绪改善。多个超跌板块连续反弹，CRO/医药/元件等板块批量涨停。市场底部特征逐步确认，但需关注周末消息面变化。",
-  "aggregate": {
-    "ratio": "3/3",
-    "recommendation": "底部信号全部触发，市场处于阶段性底部区域",
-    "recommendation_detail": "缩量企稳+关键支撑测试通过+板块轮动加速+情绪改善。可逐步建仓观察池candidate标的。"
-  },
-  "history_7d": [
-    {
-      "date": "2026-08-01",
-      "satisfied_count": 1,
-      "count": 3
-    },
-    {
-      "date": "2026-08-02",
-      "satisfied_count": 1,
-      "count": 3
-    },
-    {
-      "date": "2026-08-03",
-      "satisfied_count": 2,
-      "count": 3
-    },
-    {
-      "date": "2026-08-04",
-      "satisfied_count": 2,
-      "count": 3
-    },
-    {
-      "date": "2026-08-05",
-      "satisfied_count": 2,
-      "count": 3
-    },
-    {
-      "date": "2026-08-06",
-      "satisfied_count": 2,
-      "count": 3
-    },
-    {
-      "date": "2026-08-07",
-      "satisfied_count": 3,
-      "count": 3
-    }
-  ]
+  "comment": "底部信号1/3触发。板块轮动和超跌反弹信号已出现，但缩量企稳和北向转向尚待确认。"
 }
