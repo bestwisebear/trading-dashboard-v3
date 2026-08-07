@@ -68,6 +68,10 @@
     "net_today": 9573,
     "position_ratio": 38,
     "available_cash": 127400,
-    "total_assets": 204600
+    "total_assets": 204600,
+    "monthly_pnl": 9573,
+    "monthly_return_rate": 4.79,
+    "prev_close_assets": 195027,
+    "initial_capital": 200000
   }
 }
