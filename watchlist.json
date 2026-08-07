@@ -1,0 +1,527 @@
+{
+  "meta": {
+    "last_updated": "2026-08-07T11:51:00+08:00",
+    "data_as_of": "2026-08-07 午间"
+  },
+  "watchlist": [
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "key_price": {
+        "support": 220.0,
+        "resistance": 260.0,
+        "buy_range": [
+          220.0,
+          244.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "AI服务器",
+      "today_close": 250.0,
+      "today_change_pct": -0.04,
+      "tags": [
+        "AI服务器",
+        "强势"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "key_price": {
+        "support": 55.0,
+        "resistance": 65.0,
+        "buy_range": [
+          55.0,
+          61.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "半导体封测",
+      "today_close": 61.8,
+      "today_change_pct": 1.38,
+      "tags": [
+        "封测",
+        "先进封装",
+        "强势"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "key_price": {
+        "support": 400.0,
+        "resistance": 470.0,
+        "buy_range": [
+          400.0,
+          442.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "光模块",
+      "today_close": 440.23,
+      "today_change_pct": 4.35,
+      "tags": [
+        "光模块",
+        "强势"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "key_price": {
+        "support": 900.0,
+        "resistance": 1050.0,
+        "buy_range": [
+          900.0,
+          990.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "光模块",
+      "today_close": 977.45,
+      "today_change_pct": 2.35,
+      "tags": [
+        "光模块龙头"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "key_price": {
+        "support": 190.0,
+        "resistance": 230.0,
+        "buy_range": [
+          190.0,
+          214.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "光模块",
+      "today_close": 233.87,
+      "today_change_pct": 3.81,
+      "tags": [
+        "光模块",
+        "强势"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300223",
+      "name": "北京君正",
+      "key_price": {
+        "support": 118.0,
+        "resistance": 135.0,
+        "buy_range": [
+          118.0,
+          128.2
+        ]
+      },
+      "status": "tracking",
+      "sector": "存储芯片",
+      "today_close": 142.09,
+      "today_change_pct": 3.72,
+      "tags": [
+        "存储"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "key_price": {
+        "support": 310.0,
+        "resistance": 350.0,
+        "buy_range": [
+          310.0,
+          334.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "存储芯片",
+      "today_close": 379.72,
+      "today_change_pct": 3.66,
+      "tags": [
+        "存储"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "key_price": {
+        "support": 110.0,
+        "resistance": 130.0,
+        "buy_range": [
+          110.0,
+          122.0
+        ]
+      },
+      "status": "history",
+      "sector": "电子元器件",
+      "today_close": 123.94,
+      "today_change_pct": -2.41,
+      "tags": [
+        "电子元器件",
+        "公司回购中",
+        "支撑验证中"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300395",
+      "name": "菲利华",
+      "key_price": {
+        "support": 70.0,
+        "resistance": 80.0,
+        "buy_range": [
+          70.0,
+          76.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "半导体材料",
+      "today_close": 85.92,
+      "today_change_pct": 5.0,
+      "tags": [
+        "半导体材料"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "key_price": {
+        "support": 60.0,
+        "resistance": 72.0,
+        "buy_range": [
+          60.0,
+          67.2
+        ]
+      },
+      "status": "tracking",
+      "sector": "IDC",
+      "today_close": 69.03,
+      "today_change_pct": 0.33,
+      "tags": [
+        "IDC"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "key_price": {
+        "support": 225.0,
+        "resistance": 260.0,
+        "buy_range": [
+          225.0,
+          246.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "半导体设备",
+      "today_close": 280.17,
+      "today_change_pct": 0.59,
+      "tags": [
+        "半导体设备"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "key_price": {
+        "support": 92.0,
+        "resistance": 108.0,
+        "buy_range": [
+          92.0,
+          101.6
+        ]
+      },
+      "status": "tracking",
+      "sector": "激光设备",
+      "today_close": 107.11,
+      "today_change_pct": 3.98,
+      "tags": [
+        "激光"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "key_price": {
+        "support": 160.0,
+        "resistance": 190.0,
+        "buy_range": [
+          160.0,
+          178.0
+        ]
+      },
+      "status": "tracking",
+      "sector": "PCB/FPC",
+      "today_close": 196.96,
+      "today_change_pct": 4.94,
+      "tags": [
+        "PCB"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "603026",
+      "name": "石大胜华",
+      "key_price": {
+        "support": 60.0,
+        "resistance": 70.0,
+        "buy_range": [
+          60.0,
+          66.0
+        ]
+      },
+      "status": "observing",
+      "sector": "锂电材料",
+      "today_close": 67.0,
+      "today_change_pct": -0.01,
+      "tags": [
+        "观察"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "300769",
+      "name": "德方纳米",
+      "key_price": {
+        "support": 40.0,
+        "resistance": 48.0,
+        "buy_range": [
+          40.0,
+          44.8
+        ]
+      },
+      "status": "observing",
+      "sector": "锂电材料",
+      "today_close": 46.66,
+      "today_change_pct": 0.24,
+      "tags": [
+        "观察"
+      ],
+      "added_date": "2026-08-03",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    },
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "key_price": {
+        "support": 15.0,
+        "resistance": 17.0,
+        "buy_range": [
+          15.0,
+          16.2
+        ]
+      },
+      "status": "holding",
+      "sector": "虚拟电厂/电力",
+      "today_close": 15.75,
+      "today_change_pct": 0.0,
+      "tags": [
+        "虚拟电厂",
+        "算电协同",
+        "换电储能"
+      ],
+      "added_date": "2026-08-05",
+      "price_updated_at": "2026-08-07T11:51:00+08:00"
+    }
+  ],
+  "summary": {
+    "avg_change_pct": 1.99,
+    "up_count": 12,
+    "down_count": 3,
+    "flat_count": 1,
+    "top_gainer": "菲利华 +5.00%",
+    "top_loser": "三环集团 -2.41%",
+    "total": 16
+  },
+  "oversold_scan": [],
+  "transit_pool": [
+    {
+      "name": "圣邦股份",
+      "code": "300661",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": false,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 98.9,
+        "buy_range": [
+          98.9,
+          101.87
+        ],
+        "stop_loss": 97.91
+      },
+      "sector": "半导体/芯片",
+      "today_close": 106.24,
+      "change_pct": 2.13,
+      "rsi6": 59.0,
+      "reason": "7道闸5/7通过；当日涨幅2.1%<5%；RSI6=59.0<70；价格接近MA20上方"
+    },
+    {
+      "name": "菲利华",
+      "code": "300395",
+      "score": 6,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 78.3,
+        "buy_range": [
+          78.3,
+          80.65
+        ],
+        "stop_loss": 77.52
+      },
+      "sector": "半导体材料",
+      "today_close": 85.92,
+      "change_pct": 5.0,
+      "rsi6": 67.3,
+      "reason": "7道闸6/7通过；上午涨5%>5%注意追高风险；RSI6接近70"
+    },
+    {
+      "name": "长川科技",
+      "code": "300604",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": false
+      },
+      "key_price": {
+        "support": 279.22,
+        "buy_range": [
+          279.22,
+          287.6
+        ],
+        "stop_loss": 276.43
+      },
+      "sector": "半导体设备",
+      "today_close": 280.17,
+      "change_pct": 0.59,
+      "rsi6": 53.1,
+      "reason": "7道闸5/7通过；当日涨幅0.59%<5%；RSI6=53.1<70"
+    },
+    {
+      "name": "斯达半导",
+      "code": "603290",
+      "score": 6,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 84.8,
+        "buy_range": [
+          84.8,
+          87.34
+        ],
+        "stop_loss": 83.95
+      },
+      "sector": "半导体设备",
+      "today_close": 86.35,
+      "change_pct": 0.02,
+      "rsi6": 67.2,
+      "reason": "7道闸6/7通过；当日涨幅0.0%<5%；RSI6=67.2<70"
+    },
+    {
+      "name": "北方华创",
+      "code": "002371",
+      "score": 5,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": false,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 728.0,
+        "buy_range": [
+          728.0,
+          749.84
+        ],
+        "stop_loss": 720.72
+      },
+      "sector": "半导体设备",
+      "today_close": 742.5,
+      "change_pct": 1.13,
+      "rsi6": 58.8,
+      "reason": "7道闸5/7通过；当日涨幅1.1%<5%；RSI6=58.8<70"
+    },
+    {
+      "name": "太极实业",
+      "code": "600667",
+      "score": 6,
+      "gates": {
+        "market_breadth": true,
+        "pe_check": true,
+        "turnover": true,
+        "sector": true,
+        "trend": false,
+        "momentum": true,
+        "capital_flow": true
+      },
+      "key_price": {
+        "support": 17.9,
+        "buy_range": [
+          17.9,
+          18.44
+        ],
+        "stop_loss": 17.72
+      },
+      "sector": "太极实业/半导体",
+      "today_close": 19.17,
+      "change_pct": 3.9,
+      "rsi6": 62.4,
+      "reason": "7道闸6/7通过；当日涨幅3.9%<5%；RSI6=62.4<70"
+    }
+  ]
+}

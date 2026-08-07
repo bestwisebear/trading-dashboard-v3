@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T15:30:00+08:00"
+    "last_updated": "2026-08-06T15:30:00+08:00"
   },
   "logs": [
     {
@@ -23,12 +23,22 @@
       },
       "assessment": {
         "score": "4/7 道闸通过",
-        "technical": "RSI6=23.6 极度超卖",
+        "technical": "RSI6=23.6 极度超卖，有反弹预期",
         "sector_sync": true,
         "sector": "算力/IDC主线",
         "conclusion": "推荐（时机违规但逻辑正确）",
         "stop_loss": 67.0,
         "target": "76+"
+      },
+      "daily_result": {
+        "close_price": 73.63,
+        "unrealized_pnl_pct": 1.67,
+        "unrealized_pnl_amt": 1210.0
+      },
+      "next_day_outlook": {
+        "direction": "看涨",
+        "range": "73.0-77.0",
+        "reason": "算力主线共振+RSI极度超卖修复"
       }
     },
     {
@@ -68,12 +78,27 @@
         "type": "day_trading",
         "label": "做T变加仓+高买低卖",
         "rule": "禁止做T",
+        "actual_behavior": "先卖600等回踩→冲上60追高买1000(加仓)→回落又卖600，净亏-1220",
         "severity": "高"
       },
       "assessment": {
-        "score": "情绪驱动",
+        "score": "情绪驱动，非理性操作",
+        "trigger": "三环卖飞懊悔→信维犹豫→做T做反→情绪失控",
         "conclusion": "典型做T变加仓且做反，-1220元纯损耗",
         "realized_loss": -1220
+      },
+      "daily_result": {
+        "realized_pnl": -1220,
+        "remaining_position": 1000,
+        "remaining_cost": 60.39,
+        "current_price": 59.25,
+        "unrealized_pnl_pct": -1.89,
+        "unrealized_pnl_amt": -1140
+      },
+      "next_day_outlook": {
+        "direction": "震荡偏多",
+        "range": "57.5-61.0",
+        "reason": "RSI6=25.7极度超卖，支撑56.5，压力62。做T后持仓减至1000，可继续持有等62减仓"
       }
     },
     {
@@ -95,7 +120,20 @@
       },
       "assessment": {
         "score": "情绪化操作",
-        "conclusion": "芯片板块RSI超卖有反弹预期，但非计划内操作"
+        "trigger": "做T亏损后情绪失控，寻找补偿性机会",
+        "conclusion": "芯片板块RSI超卖有反弹预期，但非计划内操作",
+        "stop_loss": 2.4,
+        "target": "2.70-2.90"
+      },
+      "daily_result": {
+        "current_price": 2.655,
+        "unrealized_pnl_pct": 5.15,
+        "unrealized_pnl_amt": 1716.0
+      },
+      "next_day_outlook": {
+        "direction": "偏多",
+        "range": "2.60-2.75",
+        "reason": "RSI6=25.7极度超卖+半导体板块今日强势+5.0%"
       }
     },
     {
@@ -116,43 +154,46 @@
         "severity": "中"
       },
       "assessment": {
-        "score": "筑底绿档票，有一定逻辑但流程违规"
+        "score": "筑底绿档票，有一定逻辑但流程违规",
+        "trigger": "情绪化连续开仓",
+        "conclusion": "鹏辉筑底信号在（绿档），但未走完整评估流程",
+        "stop_loss": 57.0,
+        "target": "62-65"
+      },
+      "daily_result": {
+        "current_price": 60.44,
+        "unrealized_pnl_pct": 0.05,
+        "unrealized_pnl_amt": 18.0
+      },
+      "next_day_outlook": {
+        "direction": "震荡",
+        "range": "59.5-62.0",
+        "reason": "RSI6=27.6超卖+筑底中段，需确认MA5/MA10支撑"
       }
     },
     {
       "date": "2026-08-06",
       "type": "超时段操作",
       "detail": "14:00买入鹏辉能源、14:54买入协鑫能科，均超过规定的13:30-14:30建仓时段",
-      "severity": "medium"
+      "severity": "medium",
+      "stocks": [
+        "鹏辉能源",
+        "协鑫能科"
+      ]
     },
     {
       "date": "2026-08-06",
       "type": "超持仓限制",
       "detail": "同时持有3只标的满仓96.9%，接近满仓操作风险极高",
-      "severity": "high"
+      "severity": "high",
+      "stocks": [
+        "浪潮信息",
+        "鹏辉能源",
+        "协鑫能科"
+      ]
     }
   ],
   "stats": {
-    "total_violations": 7,
-    "by_type": {
-      "超时段操作": 1,
-      "超持仓限制": 1
-    },
-    "this_week": 2,
-    "this_month": 5
-  },
-  "today_assessment": {
-    "date": "2026-08-07",
-    "trades": 2,
-    "violations": 0,
-    "score": 95,
-    "detail": [
-      "14:36 清仓协鑫能科@15.71 → 风控止损规则触发(15.40验证线跌破) → 执行果断+15微利",
-      "14:45 减仓浪潮信息500股@78.1 → 周五锁利+80压力未突破 → 合理操作+2430"
-    ],
-    "comment": "两笔操作均通过规则检查。协鑫风控止损执行果断；浪潮减仓锁利时机合理。仓位从100%降至70%获6.26万现金缓冲。"
-  },
-  "statistics": {
     "total_violations": 7,
     "by_type": {
       "超时段操作": 1,

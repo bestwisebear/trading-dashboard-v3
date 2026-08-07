@@ -1,6 +1,39 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T15:30:00+08:00"
+    "last_updated": "2026-08-07T15:55:00+08:00"
   },
-  "records": []
+  "records": [
+    {
+      "month": "2026年8月",
+      "pnl_amount": 9564,
+      "pnl_percent": 4.78,
+      "trade_count": 15,
+      "win_rate": 63.6,
+      "max_drawdown_percent": 2.1,
+      "sharpe_ratio": "1.8",
+      "strategy_review": {
+        "趋势跟踪": {
+          "usage": 3,
+          "win_rate": 67,
+          "note": "浪潮信息为主要贡献"
+        },
+        "超跌反弹": {
+          "usage": 5,
+          "win_rate": 60,
+          "note": "协鑫/鹏辉等，需提高观察池转化率"
+        },
+        "板块轮动": {
+          "usage": 4,
+          "win_rate": 50,
+          "note": "芯片ETF操作拉低胜率"
+        }
+      },
+      "monthly_reflection": "8月开局波动较大，前半周纪律执行差，后半周明显改善。当前+4.78%月收益，节奏良好。",
+      "next_month_goals": [
+        "月收益目标8%",
+        "违规次数降至每周≤2次",
+        "严格执行观察池流程"
+      ]
+    }
+  ]
 }

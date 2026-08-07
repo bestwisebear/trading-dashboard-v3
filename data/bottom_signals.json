@@ -38,5 +38,47 @@
   ],
   "triggered_count": 3,
   "threshold": 3,
-  "comment": "底部信号3/3触发！缩量企稳+关键支撑测试通过+板块轮动加速+情绪改善。多个超跌板块连续反弹，CRO/医药/元件等板块批量涨停。市场底部特征逐步确认，但需关注周末消息面变化。"
+  "comment": "底部信号3/3触发！缩量企稳+关键支撑测试通过+板块轮动加速+情绪改善。多个超跌板块连续反弹，CRO/医药/元件等板块批量涨停。市场底部特征逐步确认，但需关注周末消息面变化。",
+  "aggregate": {
+    "ratio": "3/3",
+    "recommendation": "底部信号全部触发，市场处于阶段性底部区域",
+    "recommendation_detail": "缩量企稳+关键支撑测试通过+板块轮动加速+情绪改善。可逐步建仓观察池candidate标的。"
+  },
+  "history_7d": [
+    {
+      "date": "2026-08-01",
+      "satisfied_count": 1,
+      "count": 3
+    },
+    {
+      "date": "2026-08-02",
+      "satisfied_count": 1,
+      "count": 3
+    },
+    {
+      "date": "2026-08-03",
+      "satisfied_count": 2,
+      "count": 3
+    },
+    {
+      "date": "2026-08-04",
+      "satisfied_count": 2,
+      "count": 3
+    },
+    {
+      "date": "2026-08-05",
+      "satisfied_count": 2,
+      "count": 3
+    },
+    {
+      "date": "2026-08-06",
+      "satisfied_count": 2,
+      "count": 3
+    },
+    {
+      "date": "2026-08-07",
+      "satisfied_count": 3,
+      "count": 3
+    }
+  ]
 }
