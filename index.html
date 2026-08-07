@@ -1507,7 +1507,7 @@ function PositionsPage({
   }, r.rule)), /*#__PURE__*/React.createElement("p", {
     className: "text-xs font-mono text-text-primary"
   }, r.current_value || '-')))), (() => {
-    const todayLogs = (disciplineLog.logs || []).filter(l => l.violation && l.violation.type);
+    const _today = new Date().toISOString().slice(0, 10); const todayLogs = (disciplineLog.logs || []).filter(l => l.date === _today && l.violation && l.violation.type);
     const typeLabels = {
       non_trading_window: '非交易时段',
       day_trading: '做T违规',

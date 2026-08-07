@@ -133,13 +133,16 @@
     }
   ],
   "stats": {
-    "total_violations": 7,
+    "total_violations": 5,
     "by_type": {
-      "超时段操作": 1,
-      "超持仓限制": 1
+      "non_trading_window": 2,
+      "day_trading": 1,
+      "out_of_watchlist": 1,
+      "skip_candidate_pool": 1
     },
-    "this_week": 2,
-    "this_month": 5
+    "today": 0,
+    "this_week": 0,
+    "this_month": 0
   },
   "today_assessment": {
     "date": "2026-08-07",
@@ -153,12 +156,15 @@
     "comment": "两笔操作均通过规则检查。协鑫风控止损执行果断；浪潮减仓锁利时机合理。仓位从100%降至70%获6.26万现金缓冲。"
   },
   "statistics": {
-    "total_violations": 7,
+    "total_violations": 5,
     "by_type": {
-      "超时段操作": 1,
-      "超持仓限制": 1
+      "non_trading_window": 2,
+      "day_trading": 1,
+      "out_of_watchlist": 1,
+      "skip_candidate_pool": 1
     },
-    "this_week": 2,
-    "this_month": 5
+    "today": 0,
+    "this_week": 0,
+    "this_month": 0
   }
 }
