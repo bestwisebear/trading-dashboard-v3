@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "date": "2026-08-07",
+    "last_updated": "2026-08-07T15:01:00+08:00",
+    "session": "close"
+  },
+  "trades": [
+    {
+      "time": "2026-08-07T14:36:00+08:00",
+      "code": "002015",
+      "name": "协鑫能科",
+      "action": "sell",
+      "quantity": 1500,
+      "price": 15.71,
+      "amount": 23565.0,
+      "realized_pnl": 15.0,
+      "reason": "风控止损: 15.50验证线盘中跌破+RSI超买+相对强弱极差",
+      "rule_check": "pass"
+    },
+    {
+      "time": "2026-08-07T14:45:00+08:00",
+      "code": "000977",
+      "name": "浪潮信息",
+      "action": "sell",
+      "quantity": 500,
+      "price": 78.1,
+      "amount": 39050.0,
+      "realized_pnl": 2430.0,
+      "reason": "80压力位未突破+冲高回落+周五锁利减仓",
+      "rule_check": "pass"
+    }
+  ],
+  "summary": {
+    "total_trades": 2,
+    "buy_count": 0,
+    "sell_count": 2,
+    "realized_pnl": 2445.0,
+    "violation_count": 0,
+    "violation_types": {},
+    "cash_released": 62615.0,
+    "position_after": "2只/70%仓位"
+  }
+}
