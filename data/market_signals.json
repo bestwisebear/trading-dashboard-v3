@@ -1,87 +1,87 @@
 {
   "meta": {
-    "date": "2026-08-06",
-    "last_updated": "2026-08-07T05:35:00+08:00",
-    "session": "close"
+    "date": "2026-08-07",
+    "last_updated": "2026-08-07T11:51:00+08:00",
+    "session": "noon"
   },
   "signals": [
     {
       "id": "rise_fall_count",
       "name": "涨跌家数",
       "description": "全市场涨跌家数对比",
-      "value": 2785,
+      "value": "待盘后更新",
       "threshold": 2000,
       "status": "green",
-      "detail": "上涨2785家，下跌2585家，平盘159家。涨跌比1.08:1，略偏多",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "detail": "上午普涨格局，板块涨跌比极偏多。板块层面仅极少数下跌，市场宽度大幅改善",
+      "updated_at": "2026-08-07T11:51:00+08:00"
     },
     {
       "id": "sector_strength",
       "name": "板块真假强",
       "description": "持仓板块涨跌比判定",
       "value": null,
-      "status": "yellow",
-      "detail": "煤炭/电子化学品领涨，电力设备/教育/汽车领跌。持仓板块AI服务器弱(-0.53%)、电池弱(-3.46%)、电力弱(-2.30%)，均非当日主线",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "status": "green",
+      "detail": "元件+6.21%/半导体+1.66%/通信设备+2.98%领涨。持仓方向：AI服务器跟涨(+0.64%)，电池平(+0.19%)，电力平(0.00%)。光模块板块极强(新易盛+4.35%/天孚+3.81%)，半导体/存储整体偏强",
+      "updated_at": "2026-08-07T11:51:00+08:00"
     },
     {
       "id": "main_capital_flow",
       "name": "主力资金方向",
-      "description": "全市场主力资金净流入(亿)",
-      "value": -84.48,
+      "description": "持仓个股主力资金流向",
+      "value": "mixed",
       "threshold": 0,
-      "status": "red",
-      "detail": "主力资金净流出84.48亿，连续流出态势",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "status": "yellow",
+      "detail": "浪潮信息主力净流入+4096万(流入); 鹏辉能源净流出-1264万; 协鑫能科净流出-2918万。全市场：元件/通信设备/半导体资金大幅流入",
+      "updated_at": "2026-08-07T11:51:00+08:00"
     },
     {
       "id": "northbound_flow",
       "name": "北向资金流入",
-      "description": "北向资金净流入(亿)",
+      "description": "北向资金成交额(亿)",
       "value": null,
       "threshold": 0,
       "status": "yellow",
       "detail": "北向资金数据待晚间更新",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "updated_at": "2026-08-07T11:51:00+08:00"
     },
     {
       "id": "limit_up_count",
       "name": "涨停家数",
       "description": "涨停板数量",
-      "value": 127,
+      "value": "待盘后更新",
       "threshold": 30,
       "status": "green",
-      "detail": "涨幅>9%有127只，跌幅>9%仅6只，局部热度较高，煤炭板块掀涨停潮",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "detail": "上午多只20cm涨停：一博科技/毕得医药/国际复材/近岸蛋白等，局部热度极高",
+      "updated_at": "2026-08-07T11:51:00+08:00"
     },
     {
       "id": "volume_ratio",
       "name": "量比指标",
       "description": "全市场成交额(万亿)",
-      "value": 2.53,
+      "value": 2.12,
       "threshold": 2.0,
       "status": "green",
-      "detail": "成交额2.53万亿，较昨日缩量1309亿，但仍高于2万亿活跃线",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "detail": "上午半天成交约2.12万亿，全天预计超2.5万亿，维持活跃水平",
+      "updated_at": "2026-08-07T11:51:00+08:00"
     },
     {
       "id": "market_breadth",
       "name": "市场宽度",
       "description": "涨跌家数比与赚钱效应",
-      "value": 51.9,
+      "value": "待盘后更新",
       "threshold": 60,
-      "status": "yellow",
-      "detail": "上涨占比51.9%，超2700只个股上涨但赚钱效应一般，热点集中在煤炭/贵金属/化工",
-      "updated_at": "2026-08-06T15:30:00+08:00"
+      "status": "green",
+      "detail": "板块普涨，元件/医疗/材料/制药/生物均涨超3%。市场赚钱效应明显好于昨日。CRO/锗镓/博通概念爆发",
+      "updated_at": "2026-08-07T11:51:00+08:00"
     }
   ],
   "aggregate": {
-    "green_count": 3,
-    "yellow_count": 3,
-    "red_count": 1,
-    "total_score": 9,
+    "green_count": 5,
+    "yellow_count": 2,
+    "red_count": 0,
+    "total_score": 12,
     "max_score": 14,
     "no_open_position": false,
-    "market_comment": "沪指低开高走+0.57%，深创指小幅收跌。煤炭/贵金属/化工领涨，电力/教育/汽车领跌。涨跌家数略偏多(2785:2585)但主力资金仍在流出。市场热点快速轮动，成交缩量至2.53万亿。"
+    "market_comment": "上午三大指数全线上涨，创业板+1.75%领涨。元件/医疗服务/CRO板块爆发，半导体/通信设备资金大幅流入。市场普涨格局远超昨日，涨跌家数极偏多。持仓方向科技板块整体跟涨，光模块/存储/半导体表现强势。主力在浪潮信息转为净流入。"
   }
 }
