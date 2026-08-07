@@ -107,6 +107,8 @@ if pl:
     if 'core_plan' in pl:
         for field in ['action', 'detail', 'conditions']:
             check(field in pl['core_plan'], f"plans.json: core_plan 缺少 '{field}'")
+        if 'conditions' in pl['core_plan']:
+            check(isinstance(pl['core_plan']['conditions'], list), "plans.json: core_plan.conditions 必须是数组")
     check('key_stats' in pl, "plans.json: 缺少 'key_stats'")
     if 'key_stats' in pl:
         for field in ['win_rate_30d', 'monthly_pnl_percent', 'execution_score']:
