@@ -1,34 +1,70 @@
 {
   "meta": {
     "date": "2026-08-07",
-    "last_updated": "2026-08-07T15:30:00+08:00",
-    "target_date": "2026-08-10"
+    "last_updated": "2026-08-07T16:15:00+08:00"
   },
-  "plans": [
+  "core_plan": {
+    "action": "持有观望",
+    "detail": "浪潮信息持有，反弹至80+考虑再减仓；鹏辉能源持有，守56止损。当前仓位70%合理，不急于加仓。",
+    "conditions": [
+      {
+        "if": "浪潮信息突破80",
+        "then": "继续持有，反弹至80+考虑再减仓锁利"
+      },
+      {
+        "if": "浪潮信息跌破74.91",
+        "then": "止损清仓"
+      },
+      {
+        "if": "鹏辉能源跌破56",
+        "then": "止损清仓"
+      },
+      {
+        "if": "新仓建仓",
+        "then": "需观察池candidate+七道闸5/7通过+13:30-14:30建仓"
+      }
+    ]
+  },
+  "key_stats": {
+    "win_rate_30d": 63.6,
+    "monthly_pnl_percent": 4.78,
+    "execution_score": 95
+  },
+  "positions_plans": [
     {
-      "id": 1,
       "stock": "浪潮信息",
       "code": "000977",
       "action": "持有",
-      "condition": "减仓后成本70.68，浮盈+10.34%。跌破76支撑减半仓(500股)，跌破74.91止损清仓",
-      "target": "反弹至80+可考虑再减仓锁定利润",
-      "priority": "high",
-      "notes": "龙虎榜验证强势。作手新一买入10.11亿/深股通买入15.52亿。80为重要压力位，今日盘中高79.30未突破。下周一关注能否放量突破80"
+      "stop_loss": 74.91,
+      "target": 80,
+      "priority": "high"
     },
     {
-      "id": 2,
       "stock": "鹏辉能源",
       "code": "300438",
-      "action": "持有/观察",
-      "condition": "跌破60支撑减半仓，跌破56止损清仓",
-      "target": "反弹至65-67可考虑止盈",
-      "priority": "high",
-      "notes": "电池板块+0.93%温和反弹。鹏辉跟涨+1.77%。主力小幅流出-700万但股价走强"
+      "action": "持有",
+      "stop_loss": 56.0,
+      "target": 68,
+      "priority": "medium"
     }
   ],
-  "cash_plan": {
-    "available": 62615,
-    "usage_rule": "仅允许买入观察池candidate状态标的，需13:30-14:30时段内操作",
-    "candidates": "关注菲利华/通富微电/存储板块回调机会"
-  }
+  "new_entry_plans": [],
+  "plans": [
+    {
+      "stock": "浪潮信息",
+      "code": "000977",
+      "action": "持有",
+      "stop_loss": 74.91,
+      "target": 80,
+      "priority": "high"
+    },
+    {
+      "stock": "鹏辉能源",
+      "code": "300438",
+      "action": "持有",
+      "stop_loss": 56.0,
+      "target": 68,
+      "priority": "medium"
+    }
+  ]
 }

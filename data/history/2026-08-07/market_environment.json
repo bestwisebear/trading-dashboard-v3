@@ -1,150 +1,95 @@
 {
   "meta": {
     "date": "2026-08-07",
-    "last_updated": "2026-08-07T15:30:00+08:00",
-    "session": "close"
+    "last_updated": "2026-08-07T11:51:00+08:00",
+    "session": "noon"
   },
   "indices": [
     {
       "name": "上证指数",
       "code": "sh000001",
-      "close": 3940.04,
-      "change_pct": 1.02,
-      "high": 3940.93,
-      "low": 3885.6,
-      "volume": 12095
+      "close": 3919.51,
+      "change_pct": 0.49,
+      "high": 3921.53,
+      "low": 3885.62,
+      "volume": 7707
     },
     {
       "name": "深证成指",
       "code": "sz399001",
-      "close": 14311.01,
-      "change_pct": 1.42,
-      "high": 14396.07,
+      "close": 14295.08,
+      "change_pct": 1.31,
+      "high": 14323.29,
       "low": 14049.34,
-      "volume": 14549
+      "volume": 9060
     },
     {
       "name": "创业板指",
       "code": "sz399006",
-      "close": 3563.12,
-      "change_pct": 1.35,
-      "high": 3613.87,
+      "close": 3577.2,
+      "change_pct": 1.75,
+      "high": 3595.74,
       "low": 3507.62,
-      "volume": 7301
+      "volume": 4437
     }
   ],
   "market_stats": {
-    "total_volume_full": 26644,
-    "full_day_comment": "全天成交约2.66万亿，较昨日缩量约1300亿但仍处活跃水平",
-    "rise_count": 2800,
-    "fall_count": 2400,
-    "limit_up_9pct": 74,
-    "limit_down_9pct": 4,
-    "turnover_comment": "成交2.66万亿维持活跃，涨跌停比74:4，市场局部热度高"
+    "total_volume_half": 21204,
+    "full_day_est": "预计全天超2.5万亿",
+    "rise_count": "待盘后更新",
+    "fall_count": "待盘后更新",
+    "limit_up_9pct": "待盘后更新",
+    "limit_down_9pct": "待盘后更新",
+    "turnover_comment": "上午成交约2.12万亿，延续活跃态势"
   },
   "hot_sectors_up": [
     {
+      "name": "元件",
+      "change_pct": 6.21,
+      "note": "一博科技20cm涨停领涨"
+    },
+    {
       "name": "医疗服务",
-      "change_pct": 8.4,
-      "note": "博腾股份20.02%涨停，CRO板块全面爆发"
+      "change_pct": 6.14,
+      "note": "毕得医药20.01%涨停，CRO板块爆发"
     },
     {
       "name": "玻璃玻纤",
-      "change_pct": 7.11,
-      "note": "中材科技+9.78%领涨，超跌反弹"
-    },
-    {
-      "name": "元件",
-      "change_pct": 6.74,
-      "note": "一博科技20%涨停，资金净流入11.85亿"
-    },
-    {
-      "name": "生物制品",
-      "change_pct": 6.06,
-      "note": "近岸蛋白20.01%涨停"
+      "change_pct": 5.02,
+      "note": "国际复材+7.24%"
     },
     {
       "name": "非金属材料Ⅱ",
-      "change_pct": 5.59,
-      "note": "联瑞新材+11.48%"
+      "change_pct": 4.11,
+      "note": "长江材料+9.98%"
     },
     {
       "name": "化学制药",
-      "change_pct": 5.21,
-      "note": "贝达药业+14.37%"
+      "change_pct": 3.62,
+      "note": "贝达药业+13.54%"
+    },
+    {
+      "name": "生物制品",
+      "change_pct": 3.44,
+      "note": "近岸蛋白+20.01%"
     },
     {
       "name": "半导体",
-      "change_pct": 3.29,
-      "note": "资金净流入10.66亿居第二"
+      "change_pct": 1.66,
+      "note": "板块普涨，资金净流入42.2亿"
     },
     {
-      "name": "小金属",
-      "change_pct": 4.3,
-      "note": "锗镓概念延续强势"
-    },
-    {
-      "name": "贵金属",
-      "change_pct": 3.21,
-      "note": "避险情绪支撑"
-    },
-    {
-      "name": "光伏设备",
-      "change_pct": 2.97,
-      "note": "减产倡议消息刺激反弹"
+      "name": "通信设备",
+      "change_pct": 2.98,
+      "note": "资金净流入49.3亿居首"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "电力",
-      "change_pct": -0.11,
-      "note": "电力板块逆势下跌，协鑫能科所在板块弱势"
-    },
-    {
-      "name": "证券Ⅱ",
-      "change_pct": -0.16,
-      "note": "券商板块小幅回调"
-    },
-    {
-      "name": "软件开发",
-      "change_pct": -0.96,
-      "note": "AI应用端走弱，资金转向硬件"
-    },
-    {
-      "name": "银行",
-      "change_pct": -0.65,
-      "note": "银行板块持续调整"
-    },
-    {
-      "name": "IT服务Ⅱ",
-      "change_pct": -0.61,
-      "note": "软件服务类整体偏弱"
-    },
-    {
-      "name": "种植业",
-      "change_pct": -0.71,
-      "note": "农业板块资金流出"
-    },
-    {
-      "name": "一般零售",
-      "change_pct": -0.63,
-      "note": "消费类表现平淡"
-    },
-    {
-      "name": "煤炭开采",
-      "change_pct": -0.22,
-      "note": "前日超跌反弹后回落"
-    },
-    {
-      "name": "游戏Ⅱ",
-      "change_pct": -0.11,
-      "note": "大晟文化跌停领跌"
-    },
-    {
-      "name": "乘用车",
-      "change_pct": -0.05,
-      "note": "汽车板块整体平淡"
+      "name": "待盘后完整更新",
+      "change_pct": 0,
+      "note": "上午普涨格局，下跌板块极少"
     }
   ],
-  "overall_assessment": "三大指数收盘全线上涨，沪指+1.02%站稳3940，创业板+1.35%。成交额2.66万亿维持活跃。CRO/医疗服务/元件/生物制品/化学制药板块爆发，半导体资金大幅流入10.66亿。涨停74家跌停仅4家，市场赚钱效应良好。持仓方向：浪潮信息+1.56%龙虎榜强势，鹏辉+1.77%跟涨，协鑫+0.32%微涨。电力板块是今日少数下跌板块之一。"
+  "overall_assessment": "三大指数上午全线上涨，创业板+1.75%领涨。元件/医疗服务/CRO板块爆发式上涨，半导体/通信设备资金大幅流入。市场普涨格局明显强于昨日，持仓方向科技股跟涨。浪潮信息+0.64%偏保守，光模块(新易盛+4.35%/天孚+3.81%)大幅走强。"
 }

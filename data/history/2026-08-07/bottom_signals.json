@@ -1,42 +1,70 @@
 {
   "meta": {
     "date": "2026-08-07",
-    "last_updated": "2026-08-07T15:30:00+08:00",
-    "data_as_of": "2026-08-07 收盘"
+    "last_updated": "2026-08-07T16:15:00+08:00"
+  },
+  "aggregate": {
+    "ratio": "2/5",
+    "recommendation": "继续观望",
+    "recommendation_detail": "底部信号满足2项，距底部确认还有距离"
   },
   "signals": [
     {
-      "id": "volume_shrink",
-      "name": "缩量企稳",
-      "status": "green",
-      "detail": "全天成交2.66万亿，较前日缩量1300亿，但仍高于2万亿活跃线。缩量上涨属健康形态"
+      "name": "缩量止跌",
+      "condition": "成交≤1.5万亿",
+      "actual": "2.66万亿",
+      "passed": false
     },
     {
-      "id": "key_support",
-      "name": "关键支撑位测试",
-      "status": "green",
-      "detail": "浪潮信息盘中最低75.05距止损74.91仅0.2%但最终收77.99强势反转；鹏辉最低60.84距止损56有8.6%空间；协鑫最低15.40距止损15.0有2.7%"
+      "name": "跌停减少",
+      "condition": "跌停<30家",
+      "actual": "10家",
+      "passed": true
     },
     {
-      "id": "sector_rotation",
-      "name": "板块轮动信号",
-      "status": "green",
-      "detail": "CRO/医药/元件/玻璃玻纤超跌板块全面反弹。资金从软件/银行流出转向硬件/医药/材料，高低切换加速"
+      "name": "涨跌恢复",
+      "condition": "涨跌>3000",
+      "actual": "2853:2530",
+      "passed": false
     },
     {
-      "id": "northbound",
-      "name": "北向资金转向",
-      "status": "yellow",
-      "detail": "深股通在浪潮信息上活跃(买入15.52亿)，协鑫能科机构也在买入。整体北向数据待晚间确认"
+      "name": "连续止跌",
+      "condition": "2天不创新低",
+      "actual": "连续上涨",
+      "passed": true
     },
     {
-      "id": "sentiment_extreme",
-      "name": "情绪极端值",
-      "status": "green",
-      "detail": "涨停74家/跌停4家=18.5:1极偏多。市场赚钱效应良好，局部热度极高。情绪偏热但未到极端恐惧/贪婪"
+      "name": "北向流入",
+      "condition": "连续2-3日净流入>50亿",
+      "actual": "待确认",
+      "passed": false
     }
   ],
-  "triggered_count": 3,
-  "threshold": 3,
-  "comment": "底部信号3/3触发！缩量企稳+关键支撑测试通过+板块轮动加速+情绪改善。多个超跌板块连续反弹，CRO/医药/元件等板块批量涨停。市场底部特征逐步确认，但需关注周末消息面变化。"
+  "history_7d": [
+    {
+      "date": "2026-08-07",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-06",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-05",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-04",
+      "satisfied_count": 4,
+      "count": 5
+    },
+    {
+      "date": "2026-08-03",
+      "satisfied_count": 1,
+      "count": 5
+    }
+  ]
 }
