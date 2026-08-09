@@ -2330,21 +2330,16 @@ function ViolationsPage({
   const stats = disciplineLog.stats || disciplineLog.statistics || {};
   const byType = stats.by_type || {};
   const violationTypeLabels = {
-    non_trading_window: '非交易时段交易',
-    day_trading: '做T违规',
-    out_of_watchlist: '非关注池开仓',
-    skip_candidate_pool: '跳过候选池买入',
-    exceed_planned_qty: '超出计划数量',
-    emotional_trading: '情绪化交易',
-    hold_over_limit: '持仓超限',
-    loss_buyback: '割肉后回补'
+    non_trading_window: '\u975E\u4EA4\u6613\u65F6\u6BB5\u4EA4\u6613',
+    day_trading: '\u505AT\u8FDD\u89C4',
+    out_of_watchlist: '\u975E\u5173\u6CE8\u6C60\u5F00\u4ED3',
+    skip_candidate_pool: '\u8DF3\u8FC7\u5019\u9009\u6C60\u4E70\u5165',
+    exceed_planned_qty: '\u8D85\u51FA\u8BA1\u5212\u6570\u91CF',
+    emotional_trading: '\u60C5\u7EEA\u5316\u4EA4\u6613',
+    hold_over_limit: '\u6301\u4ED3\u8D85\u9650',
+    loss_buyback: '\u5272\u8089\u540E\u56DE\u8865'
   };
-  const severityLabels = {
-    '高': 'high',
-    '中': 'medium',
-    '低': 'low'
-  };
-  const violationLogs = logs.filter(l => l.violation && l.violation.type);
+  const violationLogs = logs.filter(l => l.type === 'violation');
   const totalViolations = stats.total_violations || violationLogs.length;
   return /*#__PURE__*/React.createElement("div", {
     className: "space-y-5"
@@ -2360,14 +2355,11 @@ function ViolationsPage({
     className: "text-2xl font-mono font-bold text-rise"
   }, stats.this_month_count || stats.this_month || 0)), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("p", {
     className: "text-[11px] text-text-muted mb-1"
-  }, "\u6700\u5E38\u89C1\u7C7B\u578B"), /*#__PURE__*/React.createElement("p", {
-    className: "text-2xl font-mono font-bold text-rise",
-    style: {
-      fontSize: '14px'
-    }
-  }, stats.most_common_label || '做T违规'))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
+  }, "\u5386\u53F2\u603B\u8FDD\u89C4"), /*#__PURE__*/React.createElement("p", {
+    className: "text-2xl font-mono font-bold text-rise"
+  }, totalViolations))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
     className: "text-sm font-semibold mb-3"
-  }, "\u8FDD\u89C4\u7C7B\u578B\u7EDF\u8BA1"), /*#__PURE__*/React.createElement("div", {
+  }, "\u8FDD\u89C4\u7C7B\u578B\u7EDF\u8BA1"), Object.keys(byType).length > 0 ? /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-2 md:grid-cols-3 gap-2"
   }, Object.entries(byType).map(([type, count]) => /*#__PURE__*/React.createElement("div", {
     key: type,
@@ -2376,77 +2368,36 @@ function ViolationsPage({
     className: "text-xs text-text-secondary"
   }, violationTypeLabels[type] || type), /*#__PURE__*/React.createElement("span", {
     className: "text-xs font-mono font-bold text-warn"
-  }, typeof count === 'number' ? count : 0, "\u6B21"))), Object.keys(byType).length === 0 && /*#__PURE__*/React.createElement("p", {
-    className: "text-xs text-text-muted col-span-3 text-center py-2"
-  }, "\u6682\u65E0\u7EDF\u8BA1\u6570\u636E"))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
+  }, typeof count === 'number' ? count : 0, "\u6B21")))) : /*#__PURE__*/React.createElement("p", {
+    className: "text-xs text-text-muted text-center py-2"
+  }, "\u6682\u65E0\u7EDF\u8BA1\u6570\u636E")), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
     className: "text-sm font-semibold mb-3"
-  }, "\u8FDD\u89C4\u660E\u7EC6"), /*#__PURE__*/React.createElement("div", {
-    className: "space-y-2"
+  }, "\u8FDD\u89C4\u660E\u7EC6"), violationLogs.length > 0 ? /*#__PURE__*/React.createElement("div", {
+    className: "space-y-3"
   }, violationLogs.map((l, i) => {
-    const v = l.violation;
-    const sev = v.severity || '中';
-    const sevColor = sev === '高' ? 'rise' : sev === '中' ? 'warn' : 'text-muted';
+    const sev = l.result === 'fail' ? '高' : l.result === 'warn' ? '中' : '低';
     const sevBg = sev === '高' ? 'border-rise/30 bg-rise/5' : sev === '中' ? 'border-warn/30 bg-warn/5' : 'border-border-main';
     return /*#__PURE__*/React.createElement("div", {
       key: i,
-      className: `p-3 rounded-lg border ${sevBg}`
+      className: "p-3 rounded-lg border " + sevBg
     }, /*#__PURE__*/React.createElement("div", {
       className: "flex items-center justify-between mb-2"
     }, /*#__PURE__*/React.createElement("div", {
       className: "flex items-center gap-2"
     }, /*#__PURE__*/React.createElement("span", {
       className: "text-xs font-semibold text-text-primary"
-    }, l.trade.stock || l.trade.name || '-'), /*#__PURE__*/React.createElement("span", {
-      className: "font-mono text-[11px] text-text-muted"
-    }, l.trade.code || ''), /*#__PURE__*/React.createElement("span", {
-      className: `badge ${sev === '高' ? 'bg-rise/20 text-rise' : sev === '中' ? 'bg-warn/20 text-warn' : 'bg-text-muted/20 text-text-muted'}`
-    }, sev === '高' ? '严重' : sev === '中' ? '中等' : '轻微')), /*#__PURE__*/React.createElement("span", {
+    }, l.label || '\u8FDD\u89C4\u8BB0\u5F55'), /*#__PURE__*/React.createElement("span", {
+      className: "badge " + (sev === '高' ? 'bg-rise/20 text-rise' : sev === '中' ? 'bg-warn/20 text-warn' : 'bg-text-muted/20 text-text-muted')
+    }, sev === '高' ? '\u4E25\u91CD' : sev === '中' ? '\u4E2D\u7B49' : '\u8F7B\u5FAE')), /*#__PURE__*/React.createElement("span", {
       className: "text-[11px] text-text-muted font-mono"
-    }, l.date, " ", l.trade.time || '')), /*#__PURE__*/React.createElement("div", {
-      className: "space-y-1.5"
-    }, /*#__PURE__*/React.createElement("div", {
-      className: "flex items-start gap-2"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-[11px] text-text-muted shrink-0"
-    }, "\u8FDD\u89C4\u7C7B\u578B"), /*#__PURE__*/React.createElement("span", {
-      className: `text-xs font-medium text-${sevColor}`
-    }, v.label || violationTypeLabels[v.type] || v.type)), /*#__PURE__*/React.createElement("div", {
-      className: "flex items-start gap-2"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-[11px] text-text-muted shrink-0"
-    }, "\u4EA4\u6613\u89C4\u5219"), /*#__PURE__*/React.createElement("span", {
+    }, l.date)), /*#__PURE__*/React.createElement("p", {
       className: "text-xs text-text-secondary"
-    }, v.rule || '-')), /*#__PURE__*/React.createElement("div", {
-      className: "flex items-start gap-2"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-[11px] text-text-muted shrink-0"
-    }, "\u5B9E\u9645\u60C5\u51B5"), /*#__PURE__*/React.createElement("span", {
-      className: "text-xs text-text-secondary"
-    }, v.actual_behavior || `${l.trade.direction} ${l.trade.qty || ''}股 @ ¥${l.trade.price}`)), v.actual_time && /*#__PURE__*/React.createElement("div", {
-      className: "flex items-start gap-2"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-[11px] text-text-muted shrink-0"
-    }, "\u5B9E\u9645\u65F6\u95F4"), /*#__PURE__*/React.createElement("span", {
-      className: "text-xs text-warn font-mono"
-    }, v.actual_time)), l.assessment && l.assessment.conclusion && /*#__PURE__*/React.createElement("div", {
-      className: "flex items-start gap-2"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-[11px] text-text-muted shrink-0"
-    }, "\u8BC4\u4F30"), /*#__PURE__*/React.createElement("span", {
-      className: "text-xs text-text-secondary"
-    }, l.assessment.conclusion)), l.assessment && l.assessment.realized_loss != null && /*#__PURE__*/React.createElement("div", {
-      className: "flex items-start gap-2"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-[11px] text-text-muted shrink-0"
-    }, "\u4E8F\u635F"), /*#__PURE__*/React.createElement("span", {
-      className: "text-xs font-mono text-rise"
-    }, "\xA5", l.assessment.realized_loss))));
-  }), violationLogs.length === 0 && /*#__PURE__*/React.createElement("p", {
+    }, l.detail || '\u65E0\u8BE6\u60C5'));
+  })) : /*#__PURE__*/React.createElement("p", {
     className: "text-xs text-text-muted text-center py-4"
-  }, "\u6682\u65E0\u8FDD\u89C4\u8BB0\u5F55"))));
+  }, "\u6682\u65E0\u8FDD\u89C4\u8BB0\u5F55")));
 }
 
-// ============ PAGE: REVIEWS ============
 function ReviewsPage({
   reviewsDaily,
   reviewsWeekly,
