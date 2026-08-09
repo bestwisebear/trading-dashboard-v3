@@ -254,3 +254,48 @@ if errors:
 else:
     print("✅ Schema 校验全部通过！所有 17 个 JSON 文件字段完整匹配 HTML。")
     sys.exit(0)
+
+# ============================================================
+# 19. state.json（状态连续性）
+# ============================================================
+st = load_json(os.path.join(DATA_DIR, 'state.json'))
+if st:
+    for field in ['meta', 'cumulative', 'current', 'today_so_far', 'positions', 'validation']:
+        check(field in st, f"state.json: 缺少 '{field}'")
+    if 'cumulative' in st:
+        check('total_pnl_amount' in st['cumulative'], "state.json: cumulative 缺少 total_pnl_amount")
+    if 'current' in st:
+        for field in ['total_assets', 'prev_close_assets', 'initial_capital']:
+            check(field in st['current'], f"state.json: current 缺少 '{field}'")
+    # 交叉验证
+    if 'current' in st and 'validation' in st:
+        c = st['current']
+        if 'total_assets' in c and 'initial_capital' in c:
+            expected_pnl = c['total_assets'] - c['initial_capital']
+            if 'cumulative' in st:
+                actual_pnl = st['cumulative'].get('total_pnl_amount')
+                if actual_pnl is not None:
+                    check(abs(expected_pnl - actual_pnl) < 10,
+                          f"state.json: total_pnl({actual_pnl}) != total_assets({c['total_assets']}) - initial({c['initial_capital']}) = {expected_pnl}")
+
+# ============================================================
+# 20. trades_all.json（交易总账）
+# ============================================================
+ta = load_json(os.path.join(DATA_DIR, 'trades_all.json'))
+if ta:
+    check('meta' in ta, "trades_all.json: 缺少 'meta'")
+    check('trades' in ta, "trades_all.json: 缺少 'trades'")
+    check('daily_summary' in ta, "trades_all.json: 缺少 'daily_summary'")
+    if 'trades' in ta:
+        for i, t in enumerate(ta['trades']):
+            for field in ['seq', 'date', 'time', 'code', 'name', 'action', 'quantity', 'price', 'realized_pnl']:
+                check(field in t, f"trades_all.json: trades[{i}] 缺少 '{field}'")
+    if 'daily_summary' in ta:
+        for i, ds in enumerate(ta['daily_summary']):
+            for field in ['date', 'trade_count', 'realized_pnl']:
+                check(field in ds, f"trades_all.json: daily_summary[{i}] 缺少 '{field}'")
+        # 验证 trade_count 总和 == trades 数组长度
+        summary_total = sum(ds['trade_count'] for ds in ta['daily_summary'])
+        trades_count = len(ta['trades'])
+        check(summary_total == trades_count,
+              f"trades_all.json: daily_summary trade_count总和({summary_total}) != trades数组长度({trades_count})")
