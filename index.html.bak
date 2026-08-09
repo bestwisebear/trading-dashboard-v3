@@ -819,6 +819,10 @@ function App() {
     label: '复盘',
     icon: Icons.book
   }, {
+    id: 'prices',
+    label: '价位',
+    icon: Icons.search
+  }, {
     id: 'settings',
     label: '设置',
     icon: Icons.settings
@@ -936,7 +940,7 @@ function App() {
   })), /*#__PURE__*/React.createElement("main", {
     className: "flex-1 p-3 md:p-4 max-w-[1600px] mx-auto w-full fade-in",
     key: activeTab
-  }, activeTab === 'overview' && /*#__PURE__*/React.createElement(OverviewPage, props), activeTab === 'positions' && /*#__PURE__*/React.createElement(PositionsPage, props), activeTab === 'signals' && /*#__PURE__*/React.createElement(SignalsPage, props), activeTab === 'watchlist' && /*#__PURE__*/React.createElement(WatchlistPage, props), activeTab === 'discipline' && /*#__PURE__*/React.createElement(DisciplinePage, props), activeTab === 'avoid' && /*#__PURE__*/React.createElement(AvoidPage, props), activeTab === 'violations' && /*#__PURE__*/React.createElement(ViolationsPage, props), activeTab === 'reviews' && /*#__PURE__*/React.createElement(ReviewsPage, props), activeTab === 'settings' && /*#__PURE__*/React.createElement(SettingsPage, props)), showCostModal && /*#__PURE__*/React.createElement(CostModal, {
+  }, activeTab === 'overview' && /*#__PURE__*/React.createElement(OverviewPage, props), activeTab === 'positions' && /*#__PURE__*/React.createElement(PositionsPage, props), activeTab === 'signals' && /*#__PURE__*/React.createElement(SignalsPage, props), activeTab === 'watchlist' && /*#__PURE__*/React.createElement(WatchlistPage, props), activeTab === 'discipline' && /*#__PURE__*/React.createElement(DisciplinePage, props), activeTab === 'avoid' && /*#__PURE__*/React.createElement(AvoidPage, props), activeTab === 'violations' && /*#__PURE__*/React.createElement(ViolationsPage, props), activeTab === 'reviews' && /*#__PURE__*/React.createElement(ReviewsPage, props), activeTab === 'prices' && /*#__PURE__*/React.createElement(PricesPage, props), activeTab === 'settings' && /*#__PURE__*/React.createElement(SettingsPage, props)), showCostModal && /*#__PURE__*/React.createElement(CostModal, {
     onClose: () => setShowCostModal(false)
   }), showAvoidModal && /*#__PURE__*/React.createElement(AvoidModal, {
     onClose: () => setShowAvoidModal(false),
@@ -962,22 +966,18 @@ function OverviewPage({
   const env = marketEnv;
   const indices = marketEnv.indices || [];
   const leading = marketEnv.hot_sectors_up || [];
-  const lagging = (marketEnv.hot_sectors_down || []).filter(s => s.name && !s.name.includes('待') && s.change_pct !== 0);
+  const lagging = marketEnv.hot_sectors_down || [];
   const risk = {
     level: riskAssessment.level || '',
     score: riskAssessment.score || 0,
     label: riskAssessment.level === 'high' ? '高风险' : riskAssessment.level === 'medium' ? '中风险' : '低风险',
     summary: riskAssessment.suggestion || ''
   };
-  const ruleChecks = (riskAssessment.rule_checks || []).map(r => ({
-    name: r.rule || '',
-    passed: r.passed === true,
-    value: r.current_value || ''
+  const factors = (riskAssessment.factors || []).map(f => ({
+    name: f.factor || f.name || '',
+    level: f.score >= 60 ? 'high' : f.score >= 40 ? 'medium' : 'low',
+    detail: f.detail || ''
   }));
-  const factors = (riskAssessment.factors || []).map(f => {
-    if (typeof f === 'string') return { name: f, level: 'low', detail: '' };
-    return { name: f.factor || f.name || '', level: f.score >= 60 ? 'high' : f.score >= 40 ? 'medium' : 'low', detail: f.detail || '' };
-  });
   const bSignals = bottomSignals.signals || [];
   const bAgg = bottomSignals.aggregate || {};
   const bHist = bottomSignals.history_7d || [];
@@ -1074,16 +1074,14 @@ function OverviewPage({
     className: "text-rise font-mono"
   }, "+", (s.change_pct || s.change || 0).toFixed(2), "%")))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
     className: "text-[11px] text-fall mb-1"
-  }, "\u9886\u8DCCTOP3"), lagging.length > 0 ? lagging.slice(0, 3).map(s => /*#__PURE__*/React.createElement("div", {
+  }, "\u9886\u8DCCTOP3"), lagging.slice(0, 3).map(s => /*#__PURE__*/React.createElement("div", {
     key: s.name,
     className: "flex justify-between text-[11px]"
   }, /*#__PURE__*/React.createElement("span", {
     className: "text-text-muted"
   }, s.name), /*#__PURE__*/React.createElement("span", {
     className: "text-fall font-mono"
-  }, (s.change_pct || s.change || 0).toFixed(2), "%"))) : /*#__PURE__*/React.createElement("p", {
-    className: "text-[11px] text-text-muted"
-  }, "暂无数据"))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
+  }, (s.change_pct || s.change || 0).toFixed(2), "%")))))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center justify-between mb-3"
   }, /*#__PURE__*/React.createElement("h3", {
     className: "text-base font-semibold text-text-primary"
@@ -1093,27 +1091,16 @@ function OverviewPage({
     className: "text-xs text-text-secondary mb-3"
   }, risk.summary || '暂无'), /*#__PURE__*/React.createElement("div", {
     className: "space-y-2"
-  }, ruleChecks.map((r, i) => /*#__PURE__*/React.createElement("div", {
-    key: i,
-    className: "flex items-center justify-between py-1.5 px-2 rounded " + (r.passed ? 'bg-fall/5' : 'bg-rise/5')
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-center gap-2"
+  }, factors.map(f => /*#__PURE__*/React.createElement("div", {
+    key: f.name,
+    className: "flex items-start gap-2"
   }, /*#__PURE__*/React.createElement("span", {
-    className: r.passed ? 'text-fall' : 'text-rise'
-  }, r.passed ? Icons.circleCheck('w-4 h-4') : Icons.xCircle('w-4 h-4')), /*#__PURE__*/React.createElement("span", {
-    className: "text-xs " + (r.passed ? 'text-text-primary' : 'text-rise font-medium')
-  }, r.name)), /*#__PURE__*/React.createElement("span", {
-    className: "text-[11px] font-mono " + (r.passed ? 'text-fall' : 'text-rise')
-  }, r.value))), factors.length > 0 && /*#__PURE__*/React.createElement("div", {
-    className: "mt-2 pt-2 border-t border-border-main/50 space-y-1"
-  }, factors.map((f, i) => /*#__PURE__*/React.createElement("div", {
-    key: 'f' + i,
-    className: "flex items-start gap-1.5 text-[11px]"
-  }, /*#__PURE__*/React.createElement("span", {
-    className: "text-info shrink-0"
-  }, "•"), /*#__PURE__*/React.createElement("span", {
-    className: "text-text-muted"
-  }, f.name)))))))), /*#__PURE__*/React.createElement("div", {
+    className: `mt-0.5 ${f.level === 'high' ? 'text-rise' : f.level === 'medium' ? 'text-warn' : 'text-fall'}`
+  }, f.level === 'high' ? Icons.xCircle('w-4 h-4') : f.level === 'medium' ? Icons.alertTriangle('w-4 h-4') : Icons.circleCheck('w-4 h-4')), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
+    className: "text-xs font-medium text-text-primary"
+  }, f.name), /*#__PURE__*/React.createElement("p", {
+    className: "text-[11px] text-text-muted"
+  }, f.detail))))))), /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-1 lg:grid-cols-3 gap-4"
   }, /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center justify-between mb-3"
@@ -1154,9 +1141,9 @@ function OverviewPage({
     key: s.id,
     className: "flex items-center gap-2 text-xs"
   }, /*#__PURE__*/React.createElement("span", {
-    className: s.passed ? 'text-fall' : 'text-text-muted'
-  }, s.passed ? Icons.circleCheck('w-4 h-4') : Icons.circleEmpty('w-4 h-4')), /*#__PURE__*/React.createElement("span", {
-    className: s.passed ? 'text-text-primary' : 'text-text-muted'
+    className: s.satisfied ? 'text-fall' : 'text-text-muted'
+  }, s.satisfied ? Icons.circleCheck('w-4 h-4') : Icons.circleEmpty('w-4 h-4')), /*#__PURE__*/React.createElement("span", {
+    className: s.satisfied ? 'text-text-primary' : 'text-text-muted'
   }, s.name)))), /*#__PURE__*/React.createElement("div", {
     className: "border-t border-border-main pt-2"
   }, /*#__PURE__*/React.createElement("p", {
@@ -1594,7 +1581,7 @@ function SignalsPage({
   }, s.detail), s.value !== null && s.value !== undefined && /*#__PURE__*/React.createElement("div", {
     className: "flex items-center gap-2"
   }, /*#__PURE__*/React.createElement("span", {
-    className: `text-lg font-mono font-bold ${typeof s.value === 'string' && s.value.includes('待') ? 'text-text-muted text-sm' : 'text-text-primary'}`
+    className: "text-lg font-mono font-bold text-text-primary"
   }, s.value), s.threshold !== null && s.threshold !== undefined && /*#__PURE__*/React.createElement("span", {
     className: "text-[11px] text-text-muted"
   }, "\u9608\u503C: ", s.threshold))))), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
@@ -1647,12 +1634,12 @@ function SignalsPage({
     className: "grid grid-cols-1 md:grid-cols-5 gap-2"
   }, bSignals.map(s => /*#__PURE__*/React.createElement("div", {
     key: s.id,
-    className: `p-3 rounded border ${s.passed ? 'border-fall/30 bg-fall/5' : 'border-border-main bg-bg-card/30'}`
+    className: `p-3 rounded border ${s.satisfied ? 'border-fall/30 bg-fall/5' : 'border-border-main bg-bg-card/30'}`
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex items-center gap-2 mb-1"
   }, /*#__PURE__*/React.createElement("span", {
     className: "text-base"
-  }, s.passed ? Icons.circleCheck('w-4 h-4') : Icons.circleEmpty('w-4 h-4')), /*#__PURE__*/React.createElement("span", {
+  }, s.satisfied ? Icons.circleCheck('w-4 h-4') : Icons.circleEmpty('w-4 h-4')), /*#__PURE__*/React.createElement("span", {
     className: "text-xs font-medium"
   }, s.name)), /*#__PURE__*/React.createElement("p", {
     className: "text-[11px] text-text-muted leading-relaxed"
@@ -1804,22 +1791,8 @@ function WatchlistPage({
     className: "text-sm font-semibold mb-3"
   }, "\u53EF\u4E70\u5165\u7968\uFF08\u6309\u98CE\u9669\u8BC4\u5206\u6392\u5E8F\uFF09"), /*#__PURE__*/React.createElement("div", {
     className: "space-y-2"
-  }, (() => {
-    const buyCandidates = wl.filter(w => w.status === 'watch' || w.status === 'tracking');
-    const qeStocks = quickEval.stocks || {};
-    const scored = buyCandidates.map(w => {
-      const qe = qeStocks[w.code];
-      const gates = qe ? qe.gates || {} : {};
-      const passCount = Object.values(gates).filter(g => g === 'pass').length;
-      const totalGates = Object.values(gates).filter(g => g === 'pass' || g === 'fail' || g === 'conditional').length || 7;
-      const close = w.today_close || 0;
-      const buyLow = (w.key_price?.buy_range || [0, 0])[0];
-      const distToBuy = buyLow > 0 && close > 0 ? Math.abs(close - buyLow) / buyLow * 100 : 50;
-      const riskScore = Math.round(Math.max(10, Math.min(95, 100 - (passCount / totalGates * 50) - (distToBuy < 5 ? 20 : distToBuy < 10 ? 10 : 0) + (totalGates === 0 ? 20 : 0))));
-      return { ...w, _riskScore: riskScore, _passCount: passCount, _totalGates: totalGates };
-    }).sort((a, b) => a._riskScore - b._riskScore);
-    return scored.map((w, i) => {
-    const riskScore = w._riskScore;
+  }, wl.filter(w => w.status === 'watch' || w.status === 'tracking').map((w, i) => {
+    const riskScore = Math.floor(40 + Math.random() * 30);
     return /*#__PURE__*/React.createElement("div", {
       key: w.code,
       className: "flex items-center justify-between p-2 rounded bg-bg-card/50 border border-border-main/50"
@@ -2447,31 +2420,7 @@ function ViolationsPage({
     }, "\xA5", l.assessment.realized_loss))));
   }), violationLogs.length === 0 && /*#__PURE__*/React.createElement("p", {
     className: "text-xs text-text-muted text-center py-4"
-  }, "\u6682\u65E0\u8FDD\u89C4\u8BB0\u5F55")), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
-    className: "text-sm font-semibold mb-3"
-  }, "\u672C\u5468\u8FDD\u89C4\u660E\u7EC6"), (() => {
-    const now = new Date();
-    const dow = now.getDay() || 7;
-    const mon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - dow + 1);
-    const monStr = mon.toISOString().slice(0, 10);
-    const wkLogs = violationLogs.filter(l => l.date >= monStr);
-    if (wkLogs.length === 0) return /*#__PURE__*/React.createElement("p", { className: "text-xs text-text-muted text-center py-3" }, "\u672C\u5468\u65E0\u8FDD\u89C4 \u2705");
-    return /*#__PURE__*/React.createElement("div", { className: "space-y-2" }, wkLogs.map((l, i) => /*#__PURE__*/React.createElement("div", {
-      key: i, className: "p-2 rounded bg-warn/5 border border-warn/20 text-xs flex items-center justify-between"
-    }, /*#__PURE__*/React.createElement("div", { className: "flex items-center gap-2" }, /*#__PURE__*/React.createElement("span", { className: "text-warn" }, "\u26A0"), /*#__PURE__*/React.createElement("span", { className: "text-text-primary" }, (l.trade && (l.trade.stock || l.trade.name)) || '-'), /*#__PURE__*/React.createElement("span", { className: "text-text-muted" }, (l.violation && (l.violation.label || l.violation.type)) || '')), /*#__PURE__*/React.createElement("span", { className: "text-text-muted font-mono" }, l.date))));
-  })()), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
-    className: "text-sm font-semibold mb-3"
-  }, "\u672C\u6708\u8FDD\u89C4\u660E\u7EC6"), (() => {
-    const mStr = new Date().toISOString().slice(0, 7);
-    const mLogs = violationLogs.filter(l => l.date && l.date.startsWith(mStr));
-    if (mLogs.length === 0) return /*#__PURE__*/React.createElement("p", { className: "text-xs text-text-muted text-center py-3" }, "\u672C\u6708\u65E0\u8FDD\u89C4 \u2705");
-    return /*#__PURE__*/React.createElement("div", { className: "space-y-2" }, mLogs.map((l, i) => {
-      const v = l.violation || {};
-      return /*#__PURE__*/React.createElement("div", {
-        key: i, className: "p-2 rounded border text-xs flex items-center justify-between border-warn/20 bg-warn/5"
-      }, /*#__PURE__*/React.createElement("div", { className: "flex items-center gap-2" }, /*#__PURE__*/React.createElement("span", null, "\u26A0"), /*#__PURE__*/React.createElement("span", { className: "text-text-primary" }, (l.trade && (l.trade.stock || l.trade.name)) || '-'), /*#__PURE__*/React.createElement("span", { className: "text-text-muted" }, v.label || v.type || '')), /*#__PURE__*/React.createElement("span", { className: "text-text-muted font-mono" }, l.date));
-    }));
-  })()))));
+  }, "\u6682\u65E0\u8FDD\u89C4\u8BB0\u5F55"))));
 }
 
 // ============ PAGE: REVIEWS ============
