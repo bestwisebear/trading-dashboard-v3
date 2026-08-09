@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-08-07T23:01:00+08:00",
-    "data_as_of": "2026-08-07 收盘"
+    "last_updated": "2026-08-09T23:01:00+08:00",
+    "data_as_of": "2026-08-07 收盘（周末休市）"
   },
   "watchlist": [
     {
@@ -342,58 +342,30 @@
     {
       "name": "长川科技",
       "code": "300604",
-      "score": 5.5,
+      "score": 6.5,
       "gates": {
-        "market_breadth": true,
-        "pe_check": "conditional",
-        "capital_flow": true,
-        "turnover": true,
-        "sector": true,
-        "trend": false,
-        "momentum": true
+        "market_breadth": "pass",
+        "pe_check": "pass",
+        "capital_flow": "pass",
+        "trend": "conditional",
+        "turnover": "pass",
+        "momentum": "pass",
+        "sector": "pass"
       },
       "key_price": {
-        "support": 279.0,
+        "support": 269.0,
         "buy_range": [
-          279.0,
-          287.4
+          269.0,
+          277.1
         ],
-        "stop_loss": 276.2
+        "stop_loss": 266.3
       },
       "sector": "半导体设备",
       "today_close": 283.21,
       "change_pct": 1.68,
       "rsi6": 68.46,
-      "reason": "7道闸5.5/7通过；RSI6=68未超买；涨幅1.68%尚未启动；主力5日净流入3.63亿；价格接近MA20(284.41)",
-      "added_date": "2026-08-07"
-    },
-    {
-      "name": "豪威集团",
-      "code": "603501",
-      "score": 4.5,
-      "gates": {
-        "market_breadth": true,
-        "pe_check": true,
-        "capital_flow": "conditional",
-        "turnover": false,
-        "sector": true,
-        "trend": false,
-        "momentum": true
-      },
-      "key_price": {
-        "support": 88.7,
-        "buy_range": [
-          87.0,
-          89.6
-        ],
-        "stop_loss": 87.8
-      },
-      "sector": "半导体/芯片",
-      "today_close": 89.76,
-      "change_pct": 0.12,
-      "rsi6": 62.3,
-      "reason": "7道闸4.5/7通过；PE合理30x；RSI6=62中性；涨幅仅0.12%底部区域；CIS芯片龙头",
-      "added_date": "2026-08-07"
+      "reason": "7道闸6.5/7通过；RSI6=68未超买；涨幅1.68%尚未启动；主力5日净流入3.63亿；价格接近MA20(284.4)附近",
+      "added_date": "2026-08-09"
     }
   ]
 }
