@@ -1804,21 +1804,17 @@ function WatchlistPage({
     className: "text-sm font-semibold mb-3"
   }, "\u53EF\u4E70\u5165\u7968\uFF08\u6309\u98CE\u9669\u8BC4\u5206\u6392\u5E8F\uFF09"), /*#__PURE__*/React.createElement("div", {
     className: "space-y-2"
-  }, (() => {
-    const buyCandidates = wl.filter(w => w.status === 'watch' || w.status === 'tracking');
-    const qeStocks = quickEval.stocks || {};
-    const scored = buyCandidates.map(w => {
-      const qe = qeStocks[w.code];
-      const gates = qe ? qe.gates || {} : {};
-      const passCount = Object.values(gates).filter(g => g === 'pass').length;
-      const totalGates = Object.values(gates).filter(g => g === 'pass' || g === 'fail' || g === 'conditional').length || 7;
-      const close = w.today_close || 0;
-      const buyLow = (w.key_price?.buy_range || [0, 0])[0];
-      const distToBuy = buyLow > 0 && close > 0 ? Math.abs(close - buyLow) / buyLow * 100 : 50;
-      const riskScore = Math.round(Math.max(10, Math.min(95, 100 - (passCount / totalGates * 50) - (distToBuy < 5 ? 20 : distToBuy < 10 ? 10 : 0) + (totalGates === 0 ? 20 : 0))));
-      return { ...w, _riskScore: riskScore, _passCount: passCount, _totalGates: totalGates };
-    }).sort((a, b) => a._riskScore - b._riskScore);
-    return scored.map((w, i) => {
+  }, wl.filter(w => w.status === 'watch' || w.status === 'tracking').map(w => {
+    const qe = (quickEval.stocks || {})[w.code] || {};
+    const gates = qe ? qe.gates || {} : {};
+    const passCount = Object.values(gates).filter(g => g === 'pass').length;
+    const totalGates = Object.values(gates).filter(g => g === 'pass' || g === 'fail' || g === 'conditional').length || 7;
+    const close = w.today_close || 0;
+    const buyLow = (w.key_price?.buy_range || [0, 0])[0];
+    const distToBuy = buyLow > 0 && close > 0 ? Math.abs(close - buyLow) / buyLow * 100 : 50;
+    const riskScore = Math.round(Math.max(10, Math.min(95, 100 - (passCount / totalGates * 50) - (distToBuy < 5 ? 20 : distToBuy < 10 ? 10 : 0) + (totalGates === 0 ? 20 : 0))));
+    return { ...w, _riskScore: riskScore };
+  }).sort((a, b) => a._riskScore - b._riskScore).map((w, i) => {
     const riskScore = w._riskScore;
     return /*#__PURE__*/React.createElement("div", {
       key: w.code,
@@ -2447,31 +2443,7 @@ function ViolationsPage({
     }, "\xA5", l.assessment.realized_loss))));
   }), violationLogs.length === 0 && /*#__PURE__*/React.createElement("p", {
     className: "text-xs text-text-muted text-center py-4"
-  }, "\u6682\u65E0\u8FDD\u89C4\u8BB0\u5F55")), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
-    className: "text-sm font-semibold mb-3"
-  }, "\u672C\u5468\u8FDD\u89C4\u660E\u7EC6"), (() => {
-    const now = new Date();
-    const dow = now.getDay() || 7;
-    const mon = new Date(now.getFullYear(), now.getMonth(), now.getDate() - dow + 1);
-    const monStr = mon.toISOString().slice(0, 10);
-    const wkLogs = violationLogs.filter(l => l.date >= monStr);
-    if (wkLogs.length === 0) return /*#__PURE__*/React.createElement("p", { className: "text-xs text-text-muted text-center py-3" }, "\u672C\u5468\u65E0\u8FDD\u89C4 \u2705");
-    return /*#__PURE__*/React.createElement("div", { className: "space-y-2" }, wkLogs.map((l, i) => /*#__PURE__*/React.createElement("div", {
-      key: i, className: "p-2 rounded bg-warn/5 border border-warn/20 text-xs flex items-center justify-between"
-    }, /*#__PURE__*/React.createElement("div", { className: "flex items-center gap-2" }, /*#__PURE__*/React.createElement("span", { className: "text-warn" }, "\u26A0"), /*#__PURE__*/React.createElement("span", { className: "text-text-primary" }, (l.trade && (l.trade.stock || l.trade.name)) || '-'), /*#__PURE__*/React.createElement("span", { className: "text-text-muted" }, (l.violation && (l.violation.label || l.violation.type)) || '')), /*#__PURE__*/React.createElement("span", { className: "text-text-muted font-mono" }, l.date))));
-  })()), /*#__PURE__*/React.createElement(Card, null, /*#__PURE__*/React.createElement("h3", {
-    className: "text-sm font-semibold mb-3"
-  }, "\u672C\u6708\u8FDD\u89C4\u660E\u7EC6"), (() => {
-    const mStr = new Date().toISOString().slice(0, 7);
-    const mLogs = violationLogs.filter(l => l.date && l.date.startsWith(mStr));
-    if (mLogs.length === 0) return /*#__PURE__*/React.createElement("p", { className: "text-xs text-text-muted text-center py-3" }, "\u672C\u6708\u65E0\u8FDD\u89C4 \u2705");
-    return /*#__PURE__*/React.createElement("div", { className: "space-y-2" }, mLogs.map((l, i) => {
-      const v = l.violation || {};
-      return /*#__PURE__*/React.createElement("div", {
-        key: i, className: "p-2 rounded border text-xs flex items-center justify-between border-warn/20 bg-warn/5"
-      }, /*#__PURE__*/React.createElement("div", { className: "flex items-center gap-2" }, /*#__PURE__*/React.createElement("span", null, "\u26A0"), /*#__PURE__*/React.createElement("span", { className: "text-text-primary" }, (l.trade && (l.trade.stock || l.trade.name)) || '-'), /*#__PURE__*/React.createElement("span", { className: "text-text-muted" }, v.label || v.type || '')), /*#__PURE__*/React.createElement("span", { className: "text-text-muted font-mono" }, l.date));
-    }));
-  })()))));
+  }, "\u6682\u65E0\u8FDD\u89C4\u8BB0\u5F55"))));
 }
 
 // ============ PAGE: REVIEWS ============
