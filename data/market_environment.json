@@ -1,67 +1,120 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-09T12:45:00+08:00",
-    "session": "close"
+    "date": "2026-08-10",
+    "last_updated": "2026-08-10T08:25:00+08:00",
+    "session": "pre_market",
+    "data_basis": "2026-08-07收盘 + 8/7-8/10隔夜外盘"
   },
   "indices": [
     {
       "name": "上证指数",
       "code": "sh000001",
-      "close": 3940,
+      "close": 3940.04,
       "change_pct": 1.02,
-      "high": 3942,
-      "low": 3885,
-      "volume": 0
+      "high": 3944.68,
+      "low": 3893.42,
+      "volume": 6643,
+      "price_source": "2026-08-07 收盘"
     },
     {
       "name": "深证成指",
       "code": "sz399001",
-      "close": 14311,
+      "close": 14311.01,
       "change_pct": 1.42,
-      "high": 14320,
-      "low": 14100,
-      "volume": 0
+      "high": 14323.29,
+      "low": 14049.34,
+      "volume": 9060,
+      "price_source": "2026-08-07 收盘"
     },
     {
       "name": "创业板指",
       "code": "sz399006",
-      "close": 3563,
+      "close": 3563.12,
       "change_pct": 1.35,
-      "high": 3580,
-      "low": 3500,
-      "volume": 0
+      "high": 3595.74,
+      "low": 3507.62,
+      "volume": 4437,
+      "price_source": "2026-08-07 收盘"
     }
   ],
+  "overnight_global": {
+    "us_close_0807": {
+      "dow": 54036.93,
+      "dow_chg": 0.28,
+      "sp500": 7757.64,
+      "sp500_chg": 0.62,
+      "nasdaq": 26690.62,
+      "nasdaq_chg": 1.30,
+      "phlx_semi": "+2.56%",
+      "comment": "三大股指齐涨，纳指+1.30%/标普创收盘新高/费半+2.56%。光通信暴涨 Coherent+13%；存储普跌 SK海力士-3%+"
+    },
+    "us_week_0804_0808": {
+      "dow": 2.96,
+      "sp500": 3.57,
+      "nasdaq": 5.19,
+      "comment": "4月中旬以来最大单周涨幅"
+    },
+    "asia_0808": {
+      "nikkei225": 65606.7,
+      "nikkei225_chg": -0.12,
+      "kospi": 6258.77,
+      "kospi_chg": -0.60,
+      "hsi": 25668.03,
+      "hsi_chg": 0.54,
+      "sensex": 78499.17,
+      "sensex_chg": -0.58
+    },
+    "commodities_0807_close": {
+      "comex_gold_dec": 4399.7,
+      "comex_gold_chg": 2.32,
+      "comex_silver_sep": 63.499,
+      "comex_silver_chg": 3.07,
+      "wti_oct": 78.18,
+      "wti_chg": 1.15,
+      "wti_week_chg": -7.67,
+      "brent_nov": 83.55,
+      "brent_chg": 1.29,
+      "brent_week_chg": -4.98
+    },
+    "rates_fx": {
+      "us10y_yield": 4.679,
+      "us10y_chg": -0.06,
+      "dxy": 99.68,
+      "dxy_chg": -0.18,
+      "usd_cny_onshore": 6.7517,
+      "usd_cny_chg": -0.18
+    },
+    "key_macro_event": "美国7月非农-2.3万(预期+8万)，9月加息概率从67%降至42%；黄金单周+7%创反弹；原油本周累跌-7.67%反映霍尔木兹海峡通航缓解"
+  },
   "market_stats": {
-    "total_volume_half": 26600,
-    "full_day_est": 26600,
+    "total_volume_0807": 26644,
+    "total_volume_chg": "+1356亿 vs 0806",
     "rise_count": 2853,
     "fall_count": 2530,
-    "limit_up_9pct": 174,
-    "limit_down_9pct": 10,
-    "turnover_comment": "成交2.66万亿放量1359亿"
+    "rise_count_0807": 2853,
+    "fall_count_0807": 2530,
+    "rise_fall_ratio": "1.13:1",
+    "limit_up_0807": 74,
+    "limit_down_0807": 4,
+    "main_capital_flow_0807": "+364.4亿",
+    "main_capital_flow_0806": "-435亿",
+    "turnover_comment": "8/7成交2.66万亿放量1356亿，连续9日>2万亿，市场活跃。主力资金从-435亿逆转至+364亿（+799亿）"
   },
   "hot_sectors_up": [
     {
       "name": "元件",
       "change_pct": 6.21,
-      "note": "一博科技20cm涨停领涨"
+      "note": "一博科技20cm涨停领涨，PCB材料涨价"
     },
     {
       "name": "医疗服务",
       "change_pct": 6.14,
-      "note": "毕得医药20.01%涨停，CRO板块爆发"
+      "note": "毕得医药20.01%涨停，CRO板块爆发（药明康德胜诉催化）"
     },
     {
       "name": "玻璃玻纤",
       "change_pct": 5.02,
       "note": "国际复材+7.24%"
-    },
-    {
-      "name": "非金属材料Ⅱ",
-      "change_pct": 4.11,
-      "note": "长江材料+9.98%"
     },
     {
       "name": "化学制药",
@@ -74,16 +127,37 @@
       "note": "近岸蛋白+20.01%"
     },
     {
-      "name": "半导体",
-      "change_pct": 1.66,
-      "note": "板块普涨，资金净流入42.2亿"
-    },
-    {
       "name": "通信设备",
       "change_pct": 2.98,
-      "note": "资金净流入49.3亿居首"
+      "note": "光通信暴涨，资金净流入49.3亿居首"
+    },
+    {
+      "name": "半导体",
+      "change_pct": 1.66,
+      "note": "板块普涨，资金净流入42.2亿，兆易+8%/江波龙+5.5%"
+    },
+    {
+      "name": "稀土/有色",
+      "change_pct": 5.0,
+      "note": "中国稀土涨停，刚果(金)禁铜钴出口+特朗普关键矿产30亿投资"
     }
   ],
-  "hot_sectors_down": [],
-  "overall_assessment": "三大指数全天收涨，沪指+1.02%报3940创新高，创业板+1.35%。科技+医药双主线，元件/CRO/半导体爆发。成交2.66万亿放量1359亿，涨跌2853:2530，涨停174家跌停10家。主力资金由-435亿逆转至+364亿，融资余额连续3日增加。持仓方向科技股跟涨，浪潮信息减仓锁利执行到位。"
+  "hot_sectors_down": [
+    {
+      "name": "数字货币/跨境支付",
+      "change_pct": -1.5,
+      "note": "概念股一日游后回调"
+    },
+    {
+      "name": "房地产",
+      "change_pct": -1.2,
+      "note": "深物业A/电子城/华侨城跌超3%（盘后北京楼市利好可能反弹）"
+    },
+    {
+      "name": "银行",
+      "change_pct": -0.8,
+      "note": "青农商行/瑞丰银行跌超1%，持续走弱"
+    }
+  ],
+  "overall_assessment": "8/10 盘前偏多。外围：8/7美股三大指数齐涨、纳指+5.19%周线领涨、费半+2.56%；非农-2.3万带来全球降息预期；长鑫纳入MSCI+苹果测试国产存储+创业板算力ETF+英伟达30亿入股电力商，AI算力/存储/电力三条主线集中催化。风险：美股存储普跌可能传导A股存储低开；中际旭创8/7已-3.68%反映AAOI利空；今日关键验证'深成/创业板不创新低+涨跌>3000'决定底部信号升级。持仓方向（AI服务器+储能）受益板块真实强（半导体+1.66%/通信+2.98%），但鹏辉能源所在储能板块8/7仅+0.19%相对偏弱，今日需观察是否补涨。"
 }

@@ -1,53 +1,11 @@
 {
-  "meta": {
-    "version": "3.0",
-    "last_updated": "2026-08-07T15:55:00+08:00"
-  },
-  "date": "2026-08-07",
-  "review_of_plan": "2026-08-07",
-  "plan_quality": 85,
-  "planned_executed": [
-    {
-      "stock": "协鑫能科",
-      "code": "002015",
-      "plan": "跌破15.50验证线则清仓",
-      "actual": "14:36以15.71清仓1500股",
-      "result": "+15元",
-      "deviation": "无"
-    },
-    {
-      "stock": "浪潮信息",
-      "code": "000977",
-      "plan": "冲高回落则减仓",
-      "actual": "14:45以78.1减仓500股",
-      "result": "+2430元",
-      "deviation": "无"
-    }
-  ],
-  "planned_not_executed": [],
-  "unplanned_actions": [],
-  "improvements": [
-    "继续严格执行13:30-14:30建仓窗口",
-    "观察池标的需先转candidate再建仓"
-  ],
-  "strategy_adjustments": [
-    {
-      "module": "仓位管理",
-      "current": "100%满仓",
-      "proposed": "70%仓位+30%现金缓冲",
-      "reason": "降低风险，保留灵活性"
-    }
-  ],
+  "date": "2026-08-10",
+  "score": 0,
   "daily_metrics": {
-    "realized_pnl": 2445,
-    "unrealized_pnl": 9059,
-    "total_pnl_today": 2994,
-    "discipline_score": 95,
-    "plan_quality": 85,
-    "trade_count": 2,
-    "violations": 0,
-    "violation_details": [],
-    "position_ratio": 70.1
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": 0
   },
-  "score": 92
+  "note": "盘前占位 - 8/10 尚未开盘，待收盘后由日复盘任务更新"
 }
