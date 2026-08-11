@@ -1,39 +1,26 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00",
-    "session": "close"
+    "date": "2026-08-10",
+    "last_updated": "2026-08-10T22:35:00+08:00"
   },
   "trades": [
     {
-      "time": "13:36",
-      "code": "000977",
-      "name": "浪潮信息",
-      "action": "sell",
-      "quantity": 500,
-      "price": 78.1,
-      "realized_pnl": 700,
-      "plan": "减仓锁利",
-      "notes": "计划内操作，反弹至78+减仓"
-    },
-    {
-      "time": "14:54",
-      "code": "002015",
-      "name": "协鑫能科",
-      "action": "sell",
-      "quantity": 1500,
-      "price": 16.18,
-      "realized_pnl": 1745,
-      "plan": "清仓试错仓",
-      "notes": "尾盘规避周末风险，保本出"
+      "seq": 18,
+      "time": "14:00",
+      "code": "300604",
+      "name": "长川科技",
+      "action": "buy",
+      "quantity": 100,
+      "price": 283.0,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "买入100股@283，半导体设备"
     }
   ],
   "summary": {
-    "total_trades": 2,
-    "buy_count": 0,
-    "sell_count": 2,
-    "realized_pnl": 2445,
-    "violation_count": 0,
-    "violation_types": {}
+    "total_trades": 1,
+    "buy_count": 1,
+    "sell_count": 0,
+    "realized_pnl": 0
   }
 }
