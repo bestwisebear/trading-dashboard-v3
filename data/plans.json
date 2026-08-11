@@ -1,70 +1,49 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00"
+    "date": "2026-08-11",
+    "last_updated": "2026-08-11T09:05:00+08:00",
+    "source": "盘前计划"
   },
-  "core_plan": {
-    "action": "持有观望",
-    "detail": "浪潮信息持有，反弹至80+考虑再减仓；鹏辉能源持有，守56止损。当前仓位70%合理，不急于加仓。",
-    "conditions": [
-      {
-        "if": "浪潮信息突破80",
-        "then": "继续持有，反弹至80+考虑再减仓锁利"
-      },
-      {
-        "if": "浪潮信息跌破74.91",
-        "then": "止损清仓"
-      },
-      {
-        "if": "鹏辉能源跌破56",
-        "then": "止损清仓"
-      },
-      {
-        "if": "新仓建仓",
-        "then": "需观察池candidate+七道闸5/7通过+13:30-14:30建仓"
-      }
-    ]
-  },
-  "key_stats": {
-    "win_rate_30d": 63.6,
-    "monthly_pnl_percent": 4.78,
-    "execution_score": 95
-  },
-  "positions_plans": [
+  "market_view": "美股半导体暴跌2.94%+油价大涨5%，A股预计低开。科技板块分化加剧，光通信/CPO承压最大，半导体设备相对抗跌。储能/贵金属受利好支撑。中概逆势走强提供情绪缓冲。关键看3930支撑和成交额能否稳2.5万亿。",
+  "position_plans": [
     {
-      "stock": "浪潮信息",
       "code": "000977",
-      "action": "持有",
-      "stop_loss": 74.91,
-      "target": 80,
-      "priority": "high"
+      "name": "浪潮信息",
+      "plan": "持有/防守",
+      "trigger": "跌破74.91减半仓(500股)；跌破73.5清仓",
+      "notes": "最高风险标的，浮盈+8.5%距止损仅2.4%，5日主力净流出10亿"
     },
     {
-      "stock": "鹏辉能源",
       "code": "300438",
-      "action": "持有",
-      "stop_loss": 56.0,
-      "target": 68,
-      "priority": "medium"
+      "name": "鹏辉能源",
+      "plan": "持有",
+      "trigger": "跌破57减半(550股)；跌破56清仓",
+      "notes": "储能政策利好+油价大涨强化替代逻辑"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "plan": "持有",
+      "trigger": "跌破266止损",
+      "notes": "半导体设备昨日逆势+1.72%，但费半暴跌仍有情绪压力"
     }
   ],
-  "new_entry_plans": [],
-  "plans": [
+  "new_stock_plans": [
     {
-      "stock": "浪潮信息",
-      "code": "000977",
-      "action": "持有",
-      "stop_loss": 74.91,
-      "target": 80,
-      "priority": "high"
-    },
-    {
-      "stock": "鹏辉能源",
-      "code": "300438",
-      "action": "持有",
-      "stop_loss": 56.0,
-      "target": 68,
-      "priority": "medium"
+      "code": "002156",
+      "name": "通富微电",
+      "condition": "回调至60-62区间+封测板块止跌→买入200股",
+      "priority": "备选",
+      "notes": "封测龙头，隔夜半导体暴跌需等企稳信号"
     }
-  ]
+  ],
+  "risk_warning": "1.费半暴跌2.94%+瑞银警示科技波动创新高 2.油价大涨5%加剧通胀 3.今晚美国CPI前资金谨慎 4.浪潮距止损仅2.4% 5.仓位94.3%过高",
+  "rules": {
+    "max_positions": 4,
+    "max_daily_trades": 6,
+    "new_stock_window": "13:30-14:30",
+    "no_day_trade": true,
+    "no_buyback_after_sell": true,
+    "breadth_gate": "涨跌家数<2000禁开新仓"
+  }
 }
