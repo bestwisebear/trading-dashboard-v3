@@ -13,7 +13,8 @@
       "impact": "positive",
       "detail": "4128涨/1280跌/135平（红盘74.3%），涨停97只，跌停0只。成交21524亿（缩量1686亿），科技+消费双轮驱动，缩量反弹。",
       "affected_stocks": [],
-      "source": "东方财富Choice数据"
+      "source": "东方财富Choice数据",
+      "impact_level": 3
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
       "impact": "positive",
       "detail": "上海'十五五'智算集群规划（松江/临港/青浦各建10万卡集群），叠加英伟达5000亿AI基建融资。通信设备主力净流入+131.5亿。",
       "affected_stocks": [],
-      "source": "36氪/东方财富"
+      "source": "36氪/东方财富",
+      "impact_level": 5
     },
     {
       "id": 3,
@@ -35,7 +37,8 @@
       "affected_stocks": [
         "半导体设备ETF"
       ],
-      "source": "东方财富"
+      "source": "东方财富",
+      "impact_level": 4
     },
     {
       "id": 4,
@@ -45,7 +48,8 @@
       "impact": "neutral",
       "detail": "房地产开发/房地产服务板块午后拉升，与科技形成双轮驱动。持续性待观察，可能为短期政策博弈。",
       "affected_stocks": [],
-      "source": "AASTOCKS"
+      "source": "AASTOCKS",
+      "impact_level": 3
     },
     {
       "id": 5,
@@ -57,7 +61,8 @@
       "affected_stocks": [
         "协鑫能科"
       ],
-      "source": "今日头条"
+      "source": "今日头条",
+      "impact_level": 4
     },
     {
       "id": 6,
@@ -69,7 +74,8 @@
       "affected_stocks": [
         "协鑫能科"
       ],
-      "source": "企查查"
+      "source": "企查查",
+      "impact_level": 4
     },
     {
       "id": 7,
@@ -79,7 +85,8 @@
       "impact": "watch",
       "detail": "CPI直接影响美联储9月货币政策路径。若低于预期→挑战3968压力位；若超预期→可能回踩3920。",
       "affected_stocks": [],
-      "source": "东方财富"
+      "source": "东方财富",
+      "impact_level": 3
     },
     {
       "id": 8,
@@ -89,7 +96,8 @@
       "impact": "positive",
       "detail": "工业富联半年报净利润同比翻倍；宇树科技递交IPO申请。通宇通讯8天5板（CPO+机器人双概念）。",
       "affected_stocks": [],
-      "source": "东方财富"
+      "source": "东方财富",
+      "impact_level": 3
     },
     {
       "id": 9,
@@ -99,7 +107,8 @@
       "impact": "neutral",
       "detail": "美伊僵局引发油价波动，油气煤炭板块资金利好兑现离场。仅核力发电、煤炭、石油石化逆市下跌。",
       "affected_stocks": [],
-      "source": "36氪"
+      "source": "36氪",
+      "impact_level": 2
     },
     {
       "id": 10,
@@ -109,7 +118,8 @@
       "impact": "negative",
       "detail": "8月第一周乘用车零售同比下滑20.9%，消费复苏仍弱。7月CPI/PPI走弱，经济基本面压力仍在。但市场更多由政策预期和产业催化驱动。",
       "affected_stocks": [],
-      "source": "东方财富"
+      "source": "东方财富",
+      "impact_level": 3
     },
     {
       "id": 11,
@@ -121,7 +131,10 @@
       "affected_stocks": [
         "鹏辉能源"
       ],
-      "source": "腾讯行情"
+      "source": "腾讯行情",
+      "impact_level": 2
     }
-  ]
+  ],
+  "overall_sentiment": "中性偏多",
+  "sentiment_summary": "消息面多空交织，5条利好 vs 2条利空，结构性机会为主。"
 }
