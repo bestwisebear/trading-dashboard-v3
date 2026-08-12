@@ -4,21 +4,35 @@
     "last_updated": "2026-08-12T16:00:00+08:00"
   },
   "cumulative": {
-    "total_pnl_amount": 15346.25,
-    "total_pnl_percent": 7.67,
+    "total_pnl_amount": 12846.77,
+    "total_pnl_percent": 6.64,
     "total_trades_count": 36,
     "total_violations": 16,
-    "start_date": "2026-08-03"
+    "start_date": "2026-08-03",
+    "deposits": [
+      {
+        "date": "2026-08-11",
+        "amount": 18500,
+        "notes": "银行转入"
+      }
+    ],
+    "withdrawals": [
+      {
+        "date": "2026-08-05",
+        "amount": 25000,
+        "notes": "转出"
+      }
+    ]
   },
   "current": {
     "total_assets": 206346.77,
-    "prev_close_assets": 176379,
+    "prev_close_assets": 204084.52,
     "available_cash": 219.87,
-    "initial_capital": 200000,
+    "initial_capital": 193500,
     "position_count": 3,
     "position_ratio": 99.9,
-    "monthly_pnl": 15346.25,
-    "monthly_return_rate": 7.67
+    "monthly_pnl": 12846.77,
+    "monthly_return_rate": 6.64
   },
   "today_so_far": {
     "date": "2026-08-12",
@@ -26,7 +40,9 @@
     "trade_count": 9,
     "violation_count": 1,
     "session": "close",
-    "net_today_ref": "8/12收盘实盘(截图)"
+    "net_today_ref": "8/12收盘实盘(截图)",
+    "today_return": 2262.25,
+    "today_return_rate": 1.11
   },
   "positions": [
     {
