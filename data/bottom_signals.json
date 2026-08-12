@@ -1,46 +1,66 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00"
+    "date": "2026-08-12",
+    "last_updated": "2026-08-12T08:25:00+08:00"
   },
   "aggregate": {
     "ratio": "2/5",
     "recommendation": "继续观望",
-    "recommendation_detail": "底部信号满足2项，距底部确认还有距离"
+    "recommendation_detail": "底部信号满足2项（跌停减少+连续止跌），距底部确认还有距离。8/11沪指-0.82%终结5连阳，缩量回调属正常技术性休整，指数并未跌破5日线关键支撑。但隔夜美股科技股+中概齐跌、存储芯片韩国券商下调目标价、亚太早盘恒指-1.10%等外部利空集中，8/12 9:15集合竞价大概率低开。建议继续观望，耐心等待底部信号升级至3/5以上"
   },
   "signals": [
     {
       "name": "缩量止跌",
-      "condition": "成交≤1.5万亿",
-      "actual": "2.66万亿",
+      "condition": "成交≤1.5万亿 或 较20日均量萎缩>30%",
+      "actual": "2.33万亿（较8/10缩量-8%）",
       "passed": false
     },
     {
       "name": "跌停减少",
       "condition": "跌停<30家",
-      "actual": "10家",
+      "actual": "8/11收2只跌停",
       "passed": true
     },
     {
       "name": "涨跌恢复",
-      "condition": "涨跌>3000",
-      "actual": "2853:2530",
+      "condition": "涨跌>3000家 且 涨家>跌家",
+      "actual": "8/11收1615:3777（0.43:1弱势）",
       "passed": false
     },
     {
       "name": "连续止跌",
       "condition": "2天不创新低",
-      "actual": "连续上涨",
+      "actual": "8/11沪指-0.82%但仍站稳5日线（3930点附近），未创新低",
       "passed": true
     },
     {
       "name": "北向流入",
       "condition": "连续2-3日净流入>50亿",
-      "actual": "待确认",
+      "actual": "数据自2024/8/19起停止披露日度净买卖",
       "passed": false
     }
   ],
   "history_7d": [
+    {
+      "date": "2026-08-11",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-10",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-09",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-08",
+      "satisfied_count": 3,
+      "count": 5
+    },
     {
       "date": "2026-08-07",
       "satisfied_count": 2,
@@ -54,16 +74,6 @@
     {
       "date": "2026-08-05",
       "satisfied_count": 3,
-      "count": 5
-    },
-    {
-      "date": "2026-08-04",
-      "satisfied_count": 4,
-      "count": 5
-    },
-    {
-      "date": "2026-08-03",
-      "satisfied_count": 1,
       "count": 5
     }
   ]

@@ -1,70 +1,95 @@
 {
   "meta": {
-    "date": "2026-08-06",
-    "last_updated": "2026-08-07T05:35:00+08:00",
-    "data_as_of": "2026-08-06 收盘"
+    "date": "2026-08-12",
+    "last_updated": "2026-08-12T08:25:00+08:00",
+    "data_as_of": "2026-08-11 收盘"
   },
   "sectors": [
     {
-      "sector_name": "电子化学品Ⅱ",
-      "change_20d": -26.09,
-      "today_change": 4.73,
+      "sector_name": "光通信/CPO",
+      "change_20d": -15.32,
+      "today_change": -3.5,
       "top3_resistant": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "change_pct": -1.2
+        },
         {
           "code": "300502",
           "name": "新易盛",
-          "change_pct": -0.57
+          "change_pct": -0.85
         },
         {
           "code": "300394",
           "name": "天孚通信",
-          "change_pct": 3.89
-        }
-      ],
-      "can_add_watchlist": true,
-      "note": "20日跌幅-26.09%但今日大涨+4.73%，超跌反弹信号明显"
-    },
-    {
-      "sector_name": "玻璃玻纤",
-      "change_20d": -24.89,
-      "today_change": 3.85,
-      "top3_resistant": [
-        {
-          "code": "603256",
-          "name": "宏和科技",
-          "change_pct": 6.0
+          "change_pct": -0.45
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日跌幅-24.89%今日反弹+3.85%，关注持续性"
+      "note": "20日跌幅-15.32%但今日再跌-3.50%，存储芯片韩国券商下调目标价+美股光通信隔夜走弱双重利空，未见明确企稳信号，暂不加入关注池"
     },
     {
-      "sector_name": "非金属材料Ⅱ",
-      "change_20d": -24.41,
-      "today_change": 3.19,
+      "sector_name": "贵金属",
+      "change_20d": 8.2,
+      "today_change": -2.5,
       "top3_resistant": [
         {
-          "code": "688300",
-          "name": "联瑞新材",
-          "change_pct": 8.82
+          "code": "600547",
+          "name": "山东黄金",
+          "change_pct": -2.8
+        },
+        {
+          "code": "601899",
+          "name": "紫金矿业",
+          "change_pct": -2.15
         }
       ],
       "can_add_watchlist": false,
-      "note": "20日跌幅-24.41%今日反弹+3.19%"
+      "note": "前日领涨+13.89%后今日深调-2.50%，资金高切低明显。20日仍+8.20%属于高位回调，暂不加入关注池"
     },
     {
-      "sector_name": "靶材(概念)",
-      "change_20d": -30.52,
-      "today_change": 7.71,
+      "sector_name": "稀土/小金属",
+      "change_20d": 5.5,
+      "today_change": -2.0,
       "top3_resistant": [
         {
-          "code": "688456",
-          "name": "有研粉材",
-          "change_pct": 5.0
+          "code": "000831",
+          "name": "中国稀土",
+          "change_pct": -3.2
+        },
+        {
+          "code": "600111",
+          "name": "北方稀土",
+          "change_pct": -2.45
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "前期强势板块今日深调-2.00%，前期涨幅透支+资金高切低，暂不加入"
+    },
+    {
+      "sector_name": "半导体设备",
+      "change_20d": 3.2,
+      "today_change": 1.5,
+      "top3_resistant": [
+        {
+          "code": "300604",
+          "name": "长川科技",
+          "change_pct": 1.72
+        },
+        {
+          "code": "688082",
+          "name": "盛美上海",
+          "change_pct": 8.6
+        },
+        {
+          "code": "002371",
+          "name": "北方华创",
+          "change_pct": 1.85
         }
       ],
       "can_add_watchlist": true,
-      "note": "概念板块20日跌-30.52%今日暴涨+7.71%，超跌反弹强"
+      "note": "8/11板块逆势+1.5%（半导体设备ETF+1.78%），长川科技、盛美上海、北方华创等领涨。AI算力基础设施持续投入+国产替代逻辑未变，可加关注池（已持有长川科技）"
     }
   ]
 }
