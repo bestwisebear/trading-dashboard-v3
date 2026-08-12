@@ -1,40 +1,50 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00"
-  },
-  "stats": {
-    "today": 0,
-    "this_week": 0,
-    "this_month": 2,
-    "total_violations": 15,
-    "last_violation_date": "2026-08-06"
+    "date": "2026-08-12",
+    "last_updated": "2026-08-12T16:18:00+08:00"
   },
   "statistics": {
-    "today": 0,
-    "this_week": 0,
-    "this_month": 2,
-    "total_violations": 15,
-    "last_violation_date": "2026-08-06"
+    "total_trades": 36,
+    "total_violations": 16,
+    "violation_rate": 44.4,
+    "today_trades": 9,
+    "today_violations": 1,
+    "violation_types": {
+      "日内做T": 8,
+      "单日超限": 4,
+      "非关注池开仓": 2,
+      "盘外操作": 1,
+      "早盘追高": 1
+    }
+  },
+  "stats": {
+    "total_trades": 36,
+    "total_violations": 16,
+    "violation_rate": 44.4,
+    "today_trades": 9,
+    "today_violations": 1,
+    "violation_types": {
+      "日内做T": 8,
+      "单日超限": 4,
+      "非关注池开仓": 2,
+      "盘外操作": 1,
+      "早盘追高": 1
+    }
   },
   "today_assessment": {
-    "date": "2026-08-07",
-    "score": 95,
-    "summary": "纪律明显改善，无违规操作。减仓和清仓均按计划执行。",
-    "violations": []
+    "score": 55,
+    "grade": "C",
+    "good": [
+      "止盈鹏辉卖出400@64.53/68.10 两笔盈利",
+      "清仓破位标的果断（浪潮/埃斯顿/长川）",
+      "半导体ETF和协鑫能科新仓开在13:30后"
+    ],
+    "bad": [
+      "9笔交易超单日≤6笔限制",
+      "鹏辉日内做T（买1000后卖400）违规",
+      "单日交易笔数过多，缺乏耐心"
+    ],
+    "improvement": "严格控制单日交易≤6笔，不被盘中波动诱惑频繁操作。减少做T冲动，持仓时间延长"
   },
-  "logs": [
-    {
-      "date": "2026-08-07",
-      "type": "check",
-      "result": "pass",
-      "detail": "全天无违规"
-    },
-    {
-      "date": "2026-08-06",
-      "type": "violation",
-      "result": "fail",
-      "detail": "14:00买入鹏辉能源超出时段；14:54买入协鑫能科超出时段"
-    }
-  ]
+  "logs": []
 }

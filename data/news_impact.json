@@ -4,7 +4,7 @@
     "last_updated": "2026-08-12T16:15:00+08:00",
     "source": "web_search_close"
   },
-  "items": [
+  "messages": [
     {
       "id": 1,
       "time": "2026-08-12 15:00",
@@ -13,7 +13,9 @@
       "impact": "positive",
       "detail": "4128涨/1280跌/135平（红盘74.3%），涨停97只，跌停0只。成交21524亿（较昨缩量1686亿），缩量反弹。科技+消费双轮驱动。",
       "affected_stocks": [],
-      "source": "东方财富Choice数据"
+      "source": "东方财富Choice数据",
+      "type": "利好",
+      "impact_level": 3
     },
     {
       "id": 2,
@@ -27,7 +29,9 @@
         "天孚通信",
         "新易盛"
       ],
-      "source": "36氪/东方财富"
+      "source": "36氪/东方财富",
+      "type": "利好",
+      "impact_level": 3
     },
     {
       "id": 3,
@@ -39,7 +43,9 @@
       "affected_stocks": [
         "半导体设备ETF"
       ],
-      "source": "东方财富"
+      "source": "东方财富",
+      "type": "利好",
+      "impact_level": 3
     },
     {
       "id": 4,
@@ -49,7 +55,9 @@
       "impact": "neutral",
       "detail": "地产股午后集体拉升，与科技形成双轮轮动。但持续性存疑，可能为短期政策博弈。",
       "affected_stocks": [],
-      "source": "AASTOCKS"
+      "source": "AASTOCKS",
+      "type": "中性",
+      "impact_level": 2
     },
     {
       "id": 5,
@@ -61,7 +69,9 @@
       "affected_stocks": [
         "协鑫能科"
       ],
-      "source": "今日头条"
+      "source": "今日头条",
+      "type": "利好",
+      "impact_level": 3
     },
     {
       "id": 6,
@@ -73,7 +83,9 @@
       "affected_stocks": [
         "协鑫能科"
       ],
-      "source": "企查查/证券之星"
+      "source": "企查查/证券之星",
+      "type": "利空",
+      "impact_level": 3
     },
     {
       "id": 7,
@@ -83,7 +95,9 @@
       "impact": "neutral",
       "detail": "美伊僵局引发油价波动，前期强势的油气煤炭板块出现资金利好兑现离场。仅核力发电、煤炭、石油石化逆市下跌。",
       "affected_stocks": [],
-      "source": "36氪"
+      "source": "36氪",
+      "type": "中性",
+      "impact_level": 2
     },
     {
       "id": 8,
@@ -93,7 +107,9 @@
       "impact": "watch",
       "detail": "CPI数据直接影响美联储9月货币政策路径。若低于预期→外围风险偏好提升→A股有望挑战3968压力位；若超预期→可能回踩3920。当前市场预期偏乐观。",
       "affected_stocks": [],
-      "source": "东方财富"
+      "source": "东方财富",
+      "type": "中性",
+      "impact_level": 2
     },
     {
       "id": 9,
@@ -105,7 +121,9 @@
       "affected_stocks": [
         "鹏辉能源"
       ],
-      "source": "腾讯行情"
+      "source": "腾讯行情",
+      "type": "中性",
+      "impact_level": 2
     },
     {
       "id": 10,
@@ -115,7 +133,9 @@
       "impact": "positive",
       "detail": "工业富联半年报净利润同比翻倍；宇树科技递交IPO申请。机器人（减速器/丝杠）板块获资金关注。通宇通讯8天5板（CPO+机器人双概念）。",
       "affected_stocks": [],
-      "source": "东方财富"
+      "source": "东方财富",
+      "type": "利好",
+      "impact_level": 3
     },
     {
       "id": 11,
@@ -125,7 +145,14 @@
       "impact": "negative",
       "detail": "8月第一周乘用车零售同比下滑20.9%，消费复苏仍弱。7月CPI/PPI数据走弱，经济基本面压力仍在。但市场更多由政策预期和产业催化驱动。",
       "affected_stocks": [],
-      "source": "东方财富"
+      "source": "东方财富",
+      "type": "利空",
+      "impact_level": 3
     }
-  ]
+  ],
+  "overall_sentiment": {
+    "score": 65,
+    "bias": "偏多",
+    "summary": "8/12收盘消息面偏多：CPO/AI算力基建催化（上海智算集群）、半导体设备国产化突破、英伟达5000亿融资平台利好。但CPI变量+协鑫质押风险+缩量反弹需关注"
+  }
 }
