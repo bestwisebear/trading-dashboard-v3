@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "date": "2026-08-07",
+    "last_updated": "2026-08-07T11:51:00+08:00",
+    "session": "noon"
+  },
+  "indices": [
+    {
+      "name": "上证指数",
+      "code": "sh000001",
+      "close": 3919.51,
+      "change_pct": 0.49,
+      "high": 3921.53,
+      "low": 3885.62,
+      "volume": 7707
+    },
+    {
+      "name": "深证成指",
+      "code": "sz399001",
+      "close": 14295.08,
+      "change_pct": 1.31,
+      "high": 14323.29,
+      "low": 14049.34,
+      "volume": 9060
+    },
+    {
+      "name": "创业板指",
+      "code": "sz399006",
+      "close": 3577.2,
+      "change_pct": 1.75,
+      "high": 3595.74,
+      "low": 3507.62,
+      "volume": 4437
+    }
+  ],
+  "market_stats": {
+    "total_volume_half": 21204,
+    "full_day_est": "预计全天超2.5万亿",
+    "rise_count": "待盘后更新",
+    "fall_count": "待盘后更新",
+    "limit_up_9pct": "待盘后更新",
+    "limit_down_9pct": "待盘后更新",
+    "turnover_comment": "上午成交约2.12万亿，延续活跃态势"
+  },
+  "hot_sectors_up": [
+    {
+      "name": "元件",
+      "change_pct": 6.21,
+      "note": "一博科技20cm涨停领涨"
+    },
+    {
+      "name": "医疗服务",
+      "change_pct": 6.14,
+      "note": "毕得医药20.01%涨停，CRO板块爆发"
+    },
+    {
+      "name": "玻璃玻纤",
+      "change_pct": 5.02,
+      "note": "国际复材+7.24%"
+    },
+    {
+      "name": "非金属材料Ⅱ",
+      "change_pct": 4.11,
+      "note": "长江材料+9.98%"
+    },
+    {
+      "name": "化学制药",
+      "change_pct": 3.62,
+      "note": "贝达药业+13.54%"
+    },
+    {
+      "name": "生物制品",
+      "change_pct": 3.44,
+      "note": "近岸蛋白+20.01%"
+    },
+    {
+      "name": "半导体",
+      "change_pct": 1.66,
+      "note": "板块普涨，资金净流入42.2亿"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 2.98,
+      "note": "资金净流入49.3亿居首"
+    }
+  ],
+  "hot_sectors_down": [
+    {
+      "name": "待盘后完整更新",
+      "change_pct": 0,
+      "note": "上午普涨格局，下跌板块极少"
+    }
+  ],
+  "overall_assessment": "三大指数上午全线上涨，创业板+1.75%领涨。元件/医疗服务/CRO板块爆发式上涨，半导体/通信设备资金大幅流入。市场普涨格局明显强于昨日，持仓方向科技股跟涨。浪潮信息+0.64%偏保守，光模块(新易盛+4.35%/天孚+3.81%)大幅走强。"
+}

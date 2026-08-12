@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>交易看板 V3 - 高保真原型</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'bg-primary': '#020617',
+        'bg-secondary': '#0F172A',
+        'bg-card': '#1E293B',
+        'bg-hover': '#334155',
+        'border-main': '#334155',
+        'rise': '#EF4444',
+        'fall': '#22C55E',
+        'warn': '#F59E0B',
+        'info': '#3B82F6',
+        'text-primary': '#F8FAFC',
+        'text-secondary': '#94A3B8',
+        'text-muted': '#64748B',
+      },
+      fontFamily: {
+        'mono': ['"Fira Code"', 'monospace'],
+        'sans': ['"Fira Sans"', 'system-ui', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Fira Sans', sans-serif; background: #020617; color: #F8FAFC; }
+  .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(51, 65, 85, 0.5); }
+  .glass-hover:hover { background: rgba(51, 65, 85, 0.5); border-color: rgba(100, 116, 139, 0.5); }
+  .glow-rise { box-shadow: 0 0 8px rgba(239, 68, 68, 0.3); }
+  .glow-fall { box-shadow: 0 0 8px rgba(34, 197, 94, 0.3); }
+  .glow-warn { box-shadow: 0 0 8px rgba(245, 158, 11, 0.3); }
+  .glow-info { box-shadow: 0 0 8px rgba(59, 130, 246, 0.3); }
+  .tab-active { border-bottom: 2px solid #3B82F6; color: #F8FAFC; }
+  .tab-inactive { border-bottom: 2px solid transparent; color: #94A3B8; }
+  .tab-inactive:hover { color: #CBD5E1; }
+  .pulse-red { animation: pulse-red 2s infinite; }
+  @keyframes pulse-red { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  .signal-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .signal-green { background: #22C55E; box-shadow: 0 0 6px #22C55E; }
+  .signal-yellow { background: #F59E0B; box-shadow: 0 0 6px #F59E0B; }
+  .signal-red { background: #EF4444; box-shadow: 0 0 6px #EF4444; }
+  .scrollbar-thin::-webkit-scrollbar { width: 4px; }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+  .modal-overlay { background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); }
+  .badge { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+  .fresh-green { color: #22C55E; }
+  .fresh-yellow { color: #F59E0B; }
+  .fresh-dark { color: #64748B; }
+  .chart-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 2s ease forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .fade-in { animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body class="min-h-screen bg-bg-primary">
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+const { useState, useEffect, useCallback } = React;
+
+// ============ MOCK DATA ============
+const mockPositions = {
+  summary: {
+    total_assets: 243800.00,
+    total_pnl_amount: 3800.00,
+    total_pnl_percent: 4.36,
+    position_ratio: 37.2,
+    available_cash: 153100.00,
+    total_positions: 2,
+  },
+  positions: [
+    {
+      code: "002446", name: "信维通信", quantity: 1200, cost_price: 60.70,
+      current_price: 63.85, pnl_percent: 5.19, pnl_amount: 3780.00,
+      stop_loss: 56.00, stop_profit: 72.00, holding_days: 5,
+      buy_date: "2026-07-29", sector: "消费电子", status: "holding",
+      distance_stop_loss: -12.3, distance_stop_profit: 12.8
+    },
+    {
+      code: "300408", name: "三环集团", quantity: 500, cost_price: 114.00,
+      current_price: 112.30, pnl_percent: -1.49, pnl_amount: -850.00,
+      stop_loss: 105.00, stop_profit: 130.00, holding_days: 3,
+      buy_date: "2026-07-31", sector: "电子元器件", status: "holding",
+      distance_stop_loss: -6.5, distance_stop_profit: 15.8
+    }
+  ]
+};
+
+const mockMarketSignals = {
+  signals: [
+    { id: "rise_fall", name: "涨跌家数", status: "red", value: 1650, threshold: 2000, detail: "上涨1650家 / 下跌3200家 / 平盘150家" },
+    { id: "sector", name: "板块真假强", status: "yellow", value: null, threshold: null, detail: "持仓板块'消费电子'：涨4/跌5，判定为假强" },
+    { id: "capital", name: "主力资金", status: "red", value: -68.5, threshold: 0, detail: "主力净流出68.5亿，方向偏空" },
+    { id: "north", name: "北向资金", status: "green", value: 15.2, threshold: 0, detail: "北向净流入15.2亿，近5日趋势：↗ 持续流入" },
+    { id: "limit", name: "涨停家数", status: "green", value: 38, threshold: 30, detail: "涨停38家，跌停12家，情绪偏暖" },
+    { id: "volume", name: "量比指标", status: "green", value: 1.28, threshold: 1.2, detail: "量比1.28，温和放量" },
+    { id: "breadth", name: "市场宽度", status: "yellow", value: 52.3, threshold: 60, detail: "站上5日线占比52.3%，略低于健康线" },
+  ],
+  aggregate: { green_count: 4, yellow_count: 2, red_count: 1, total_score: 10, max_score: 14, no_open_position: false }
+};
+
+const mockWatchlist = [
+  { code: "002446", name: "信维通信", support: 58.0, resistance: 68.0, buy_range: [57.5, 60.0], status: "tracking", sector: "消费电子", tags: ["持仓"] },
+  { code: "300408", name: "三环集团", support: 105.0, resistance: 125.0, buy_range: [105.0, 110.0], status: "tracking", sector: "电子元器件", tags: ["持仓"] },
+  { code: "300750", name: "宁德时代", support: 185.0, resistance: 210.0, buy_range: [185.0, 195.0], status: "watch", sector: "锂电材料", tags: ["观察"] },
+  { code: "002371", name: "北方华创", support: 280.0, resistance: 320.0, buy_range: [280.0, 295.0], status: "watch", sector: "半导体设备", tags: ["观察"] },
+  { code: "688981", name: "中芯国际", support: 52.0, resistance: 62.0, buy_range: [52.0, 55.0], status: "watch", sector: "晶圆代工", tags: ["观察"] },
+  { code: "601012", name: "隆基绿能", support: 22.0, resistance: 28.0, buy_range: [22.0, 24.0], status: "watch", sector: "光伏设备", tags: ["观察"] },
+  { code: "002475", name: "立讯精密", support: 32.0, resistance: 40.0, buy_range: [32.0, 35.0], status: "watch", sector: "消费电子", tags: ["观察"] },
+  { code: "300474", name: "景嘉微", support: 52.0, resistance: 65.0, buy_range: [52.0, 56.0], status: "watch", sector: "国产GPU", tags: ["观察"] },
+  { code: "688012", name: "中微公司", support: 120.0, resistance: 150.0, buy_range: [120.0, 130.0], status: "watch", sector: "半导体设备", tags: ["观察"] },
+  { code: "002049", name: "紫光国微", support: 95.0, resistance: 115.0, buy_range: [95.0, 102.0], status: "watch", sector: "芯片设计", tags: ["观察"] },
+  { code: "300661", name: "圣邦股份", support: 68.0, resistance: 82.0, buy_range: [68.0, 72.0], status: "watch", sector: "模拟芯片", tags: ["观察"] },
+  { code: "688036", name: "传音控股", support: 55.0, resistance: 68.0, buy_range: [55.0, 60.0], status: "watch", sector: "手机品牌", tags: ["观察"] },
+  { code: "002230", name: "科大讯飞", support: 42.0, resistance: 52.0, buy_range: [42.0, 45.0], status: "watch", sector: "AI应用", tags: ["观察"] },
+  { code: "688111", name: "金山办公", support: 250.0, resistance: 300.0, buy_range: [250.0, 270.0], status: "watch", sector: "办公软件", tags: ["观察"] },
+  { code: "603501", name: "韦尔股份", support: 78.0, resistance: 95.0, buy_range: [78.0, 85.0], status: "watch", sector: "CIS芯片", tags: ["观察"] },
+  { code: "688561", name: "奇安信", support: 38.0, resistance: 48.0, buy_range: [38.0, 42.0], status: "watch", sector: "网络安全", tags: ["观察"] },
+  { code: "002241", name: "歌尔股份", support: 15.0, resistance: 20.0, buy_range: [15.0, 17.0], status: "watch", sector: "VR/AR", tags: ["观察"] },
+];
+
+const mockBottomSignals = {
+  signals: [
+    { id: "extreme_oversold", name: "极端超卖", satisfied: false, detail: "RSI(6)=28.5, KDJ-J=12.3，未到极端超卖区" },
+    { id: "volume_shrink", name: "地量缩量", satisfied: true, detail: "成交量为20日均量的42%，满足地量条件" },
+    { id: "support_level", name: "触及关键支撑", satisfied: false, detail: "上证3350附近未触及前低3320" },
+    { id: "bearish_div", name: "底背离信号", satisfied: false, detail: "MACD暂未形成明显底背离" },
+    { id: "sentiment", name: "情绪极悲观", satisfied: false, detail: "涨跌家数1650，不满足极端悲观" },
+  ],
+  aggregate: { satisfied_count: 1, total_count: 5, ratio: "1/5", recommendation: "轻仓试错", recommendation_detail: "仅1/5信号满足，市场尚未完全见底，可极轻仓观望" },
+  history_7d: [
+    { date: "07-27", count: 0 }, { date: "07-28", count: 1 }, { date: "07-29", count: 1 },
+    { date: "07-30", count: 2 }, { date: "07-31", count: 1 }, { date: "08-01", count: 2 },
+    { date: "08-02", count: 1 }
+  ]
+};
+
+const mockMarketEnv = {
+  overview: {
+    verdict: "震荡偏弱，结构性机会为主",
+    style: "小盘成长 > 大盘价值",
+    sentiment: "中性偏冷",
+    detail: "市场在3350-3400区间震荡，成交量略有萎缩。AI主线分化，低位超跌板块开始补涨。北向资金持续流入提供底部支撑。"
+  },
+  indices: [
+    { name: "上证指数", close: 3358.5, change: -0.35, structure: "5日线下，偏弱" },
+    { name: "深证成指", close: 10580.2, change: -0.42, structure: "5日线下，偏弱" },
+    { name: "创业板指", close: 2125.8, change: 0.15, structure: "站上5日线，企稳" },
+    { name: "科创50", close: 985.3, change: -0.55, structure: "5日线下，弱势" },
+    { name: "北证50", close: 1120.5, change: 0.85, structure: "5日线上方，偏强" },
+  ],
+  leading: [
+    { name: "北交所概念", change: 2.35 }, { name: "低空经济", change: 1.82 },
+    { name: "机器人概念", change: 1.55 }, { name: "国产GPU", change: 1.20 },
+    { name: "数据要素", change: 0.95 }
+  ],
+  lagging: [
+    { name: "房地产", change: -2.15 }, { name: "白酒", change: -1.80 },
+    { name: "光伏设备", change: -1.55 }, { name: "证券", change: -1.30 },
+    { name: "银行", change: -0.95 }
+  ]
+};
+
+const mockPlans = {
+  core_plan: {
+    action: "观望为主",
+    detail: "持仓信维通信继续持有，止损56.0不变。三环集团持有观察，跌破105止损。明日不开新仓，等待大盘企稳信号。",
+    conditions: [
+      { if: "信维通信放量突破68", then: "加仓300股" },
+      { if: "信维通信跌破56", then: "止损清仓" },
+      { if: "三环集团跌破105", then: "止损清仓" },
+      { if: "大盘涨跌家数<1000", then: "所有持仓减半" }
+    ]
+  },
+  position_plan: { current_ratio: 37.2, target_ratio: 35.0, max_ratio: 50.0, available_cash: 153100.0, reserved_cash: 50000.0 },
+  key_stats: { win_rate_30d: 62.5, monthly_pnl: 3.8, execution_score: 85, consecutive_losses: 0 },
+  emotion: { current_mood: "平稳", risk_mood: "FOMO冲动", countermeasure: "若产生追涨冲动，强制等待15分钟再决策" }
+};
+
+const mockRisk = {
+  overall: { level: "medium", label: "中风险", score: 55, summary: "持仓集中度偏高，板块假强势，注意止损纪律" },
+  factors: [
+    { name: "持仓集中度", level: "high", detail: "信维通信占比29.4%，超20%预警线" },
+    { name: "板块假强", level: "medium", detail: "消费电子板块判定为假强" },
+    { name: "主力净流出", level: "medium", detail: "主力净流出68.5亿" },
+  ],
+  rules: [
+    { rule: "单票仓位≤30%", passed: true, value: "29.4%" },
+    { rule: "总仓位≤60%", passed: true, value: "37.2%" },
+    { rule: "止损线未被触及", passed: true, value: "最近距-6.5%" },
+    { rule: "当日交易笔数≤6", passed: true, value: "1/6" },
+    { rule: "无割肉回补", passed: true, value: "无" },
+    { rule: "无追涨操作", passed: true, value: "无" },
+  ]
+};
+
+const mockDiscipline = {
+  violations: [
+    { id: "V20260801-001", date: "2026-08-01", time: "10:15", type_label: "追涨", description: "追涨低空经济某股，浮亏2.5%", source: "self_report", severity: "medium" },
+    { id: "V20260729-001", date: "2026-07-29", time: "14:30", type_label: "频繁交易", description: "当日交易5笔，接近上限", source: "auto_detect", severity: "low" },
+    { id: "V20260725-001", date: "2026-07-25", time: "09:45", type_label: "追涨", description: "追涨机器人概念，当日亏损1.8%", source: "self_report", severity: "medium" },
+    { id: "V20260722-001", date: "2026-07-22", time: "14:50", type_label: "情绪化交易", description: "亏损后报复性买入，无信号支持", source: "self_report", severity: "high" },
+  ],
+  stats: { this_week: 1, this_month: 4, most_common: "追涨", by_type: { "追涨": 5, "频繁交易": 3, "止损违规": 2, "无信号交易": 4, "情绪化": 3, "割肉回补": 1 },
+    by_time: { "09:30-10:00": 4, "10:00-11:00": 3, "11:00-11:30": 1, "13:00-14:00": 2, "14:00-14:30": 3, "14:30-15:00": 5 }
+  }
+};
+
+const mockAvoidList = [
+  { code: "000001", name: "平安银行", reason: "多次止损违规，纪律差，累计亏损3次", date: "2026-06-15", tags: ["止损违规","纪律差"] },
+  { code: "600XXX", name: "某ST股", reason: "ST风险股，基本面存在重大不确定性", date: "2026-07-01", tags: ["ST风险"] },
+  { code: "002456", name: "欧菲光", reason: "3次追涨均亏损，操作纪律极差", date: "2026-06-20", tags: ["追涨亏损"] },
+];
+
+const mockReviews = [
+  { date: "2026-08-02", pnl: 280, pnl_pct: 0.29, violations: 0, trades: 1, score: 90, decisions: ["信维通信持有不动","拒绝追涨机器人板块"] },
+  { date: "2026-08-01", pnl: -520, pnl_pct: -0.54, violations: 1, trades: 2, score: 65, decisions: ["追涨低空经济浮亏","三环集团止损观察"] },
+  { date: "2026-07-31", pnl: 1200, pnl_pct: 1.25, violations: 0, trades: 2, score: 88, decisions: ["三环集团买入500股","信维通信加仓300股"] },
+  { date: "2026-07-30", pnl: -180, pnl_pct: -0.19, violations: 0, trades: 1, score: 82, decisions: ["等待信号未追涨","信维通信持有"] },
+  { date: "2026-07-29", pnl: 2500, pnl_pct: 2.63, violations: 1, trades: 5, score: 72, decisions: ["信维通信首次买入","频繁交易接近上限"] },
+];
+
+const mockOversoldSectors = [
+  { name: "光伏设备", change_20d: -12.5, change_5d: -2.1, top3: [{name:"隆基绿能",ch:-5.2},{name:"晶澳科技",ch:-6.8},{name:"通威股份",ch:-7.1}] },
+  { name: "锂电材料", change_20d: -11.3, change_5d: -1.8, top3: [{name:"宁德时代",ch:-4.5},{name:"赣锋锂业",ch:-8.2},{name:"亿纬锂能",ch:-7.8}] },
+  { name: "消费电子", change_20d: -9.8, change_5d: -1.2, top3: [{name:"信维通信",ch:-3.2},{name:"立讯精密",ch:-5.1},{name:"歌尔股份",ch:-6.8}] },
+];
+
+// ============ ICONS (SVG) ============
+const Icons = {
+  refresh: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>,
+  search: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>,
+  plus: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>,
+  trash: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>,
+  x: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>,
+  check: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>,
+  alert: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" /></svg>,
+  trend: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+  shield: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
+  clock: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+  eye: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>,
+  book: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>,
+  ban: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" /></svg>,
+  list: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>,
+  grid: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>,
+  settings: (cls="w-4 h-4") => <svg className={cls} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
+};
+
+// ============ COMPONENTS ============
+
+function FreshnessBadge({ fresh }) {
+  const cls = fresh === 'green' ? 'fresh-green' : fresh === 'yellow' ? 'fresh-yellow' : 'fresh-dark';
+  const dot = fresh === 'green' ? '🟢' : fresh === 'yellow' ? '🟡' : '⚫';
+  return <span className={`text-xs ${cls} font-mono`}>{dot} {fresh === 'green' ? '<15min' : fresh === 'yellow' ? '15-30min' : '>30min'}</span>;
+}
+
+function StatusDot({ status }) {
+  return <span className={`signal-dot signal-${status}`}></span>;
+}
+
+function Card({ children, className = "", onClick }) {
+  return (
+    <div className={`glass rounded-lg p-4 transition-all duration-200 ${onClick ? 'cursor-pointer glass-hover' : ''} ${className}`} onClick={onClick}>
+      {children}
+    </div>
+  );
+}
+
+function StatValue({ value, color }) {
+  const colorMap = { rise: 'text-rise', fall: 'text-fall', warn: 'text-warn', info: 'text-info', muted: 'text-text-secondary' };
+  return <span className={`font-mono font-semibold ${colorMap[color] || 'text-text-primary'}`}>{value}</span>;
+}
+
+function MiniChart({ data, maxVal = 5 }) {
+  const w = 200, h = 50, pad = 4;
+  const pts = data.map((d, i) => {
+    const x = pad + (i / (data.length - 1)) * (w - pad * 2);
+    const y = h - pad - (d.count / maxVal) * (h - pad * 2);
+    return `${x},${y}`;
+  });
+  return (
+    <svg width={w} height={h} className="w-full">
+      <polyline points={pts.join(' ')} fill="none" stroke="#3B82F6" strokeWidth="2" className="chart-line" />
+      {data.map((d, i) => {
+        const x = pad + (i / (data.length - 1)) * (w - pad * 2);
+        const y = h - pad - (d.count / maxVal) * (h - pad * 2);
+        return <circle key={i} cx={x} cy={y} r="3" fill="#3B82F6" />;
+      })}
+      {data.map((d, i) => {
+        const x = pad + (i / (data.length - 1)) * (w - pad * 2);
+        return <text key={i} x={x} y={h - 2} textAnchor="middle" fill="#64748B" fontSize="8" fontFamily="Fira Code">{d.date}</text>;
+      })}
+    </svg>
+  );
+}
+
+function BarChart({ data }) {
+  const maxVal = Math.max(...Object.values(data));
+  return (
+    <div className="flex items-end gap-1 h-20">
+      {Object.entries(data).map(([k, v]) => (
+        <div key={k} className="flex flex-col items-center flex-1">
+          <span className="text-[9px] text-text-muted font-mono mb-1">{v}</span>
+          <div className="w-full bg-rise/70 rounded-t" style={{ height: `${(v / maxVal) * 100}%`, minHeight: '4px' }}></div>
+          <span className="text-[8px] text-text-muted mt-1 truncate w-full text-center">{k.split('-')[0]}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ============ MAIN APP ============
+function App() {
+  const [activeTab, setActiveTab] = useState('overview');
+  const [showCostModal, setShowCostModal] = useState(false);
+  const [showAvoidModal, setShowAvoidModal] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [refreshing, setRefreshing] = useState(false);
+  const [watchTab, setWatchTab] = useState('long');
+  const [reviewTab, setReviewTab] = useState('daily');
+  const [expandedReview, setExpandedReview] = useState(null);
+
+  const handleRefresh = () => {
+    setRefreshing(true);
+    setTimeout(() => setRefreshing(false), 1500);
+  };
+
+  const tabs = [
+    { id: 'overview', label: '大屏总览', icon: Icons.grid },
+    { id: 'positions', label: '持仓', icon: Icons.trend },
+    { id: 'signals', label: '7道闸', icon: Icons.shield },
+    { id: 'watchlist', label: '关注池', icon: Icons.eye },
+    { id: 'discipline', label: '纪律', icon: Icons.list },
+    { id: 'avoid', label: '回避', icon: Icons.ban },
+    { id: 'violations', label: '违规', icon: Icons.alert },
+    { id: 'reviews', label: '复盘', icon: Icons.book },
+    { id: 'prices', label: '价位', icon: Icons.search },
+    { id: 'settings', label: '设置', icon: Icons.settings },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      {/* TOP NAV */}
+      <nav className="glass sticky top-0 z-50 px-4 py-0 flex items-center border-b border-border-main">
+        <div className="flex items-center gap-2 mr-6">
+          <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-cyan-400 rounded flex items-center justify-center font-bold text-xs text-white">V3</div>
+          <span className="font-semibold text-sm text-text-primary hidden sm:inline">交易看板</span>
+        </div>
+        <div className="flex gap-0 overflow-x-auto scrollbar-thin flex-1">
+          {tabs.map(t => (
+            <button key={t.id} onClick={() => setActiveTab(t.id)}
+              className={`flex items-center gap-1.5 px-3 py-3 text-xs font-medium whitespace-nowrap transition-colors tab-${activeTab === t.id ? 'active' : 'inactive'}`}>
+              {t.icon("w-3.5 h-3.5")}
+              <span className="hidden md:inline">{t.label}</span>
+            </button>
+          ))}
+        </div>
+        <div className="flex items-center gap-3 ml-4">
+          <button onClick={handleRefresh} className={`p-1.5 rounded hover:bg-bg-hover transition-colors ${refreshing ? 'animate-spin text-info' : 'text-text-secondary'}`}>
+            {Icons.refresh("w-4 h-4")}
+          </button>
+          <FreshnessBadge fresh="yellow" />
+          <div className="w-7 h-7 rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center text-[10px] font-bold">K</div>
+        </div>
+      </nav>
+
+      {/* CONTENT */}
+      <main className="flex-1 p-3 md:p-4 max-w-[1600px] mx-auto w-full fade-in" key={activeTab}>
+        {activeTab === 'overview' && <OverviewPage />}
+        {activeTab === 'positions' && <PositionsPage showCostModal={showCostModal} setShowCostModal={setShowCostModal} />}
+        {activeTab === 'signals' && <SignalsPage />}
+        {activeTab === 'watchlist' && <WatchlistPage watchTab={watchTab} setWatchTab={setWatchTab} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
+        {activeTab === 'discipline' && <DisciplinePage />}
+        {activeTab === 'avoid' && <AvoidPage showAvoidModal={showAvoidModal} setShowAvoidModal={setShowAvoidModal} />}
+        {activeTab === 'violations' && <ViolationsPage />}
+        {activeTab === 'reviews' && <ReviewsPage reviewTab={reviewTab} setReviewTab={setReviewTab} expandedReview={expandedReview} setExpandedReview={setExpandedReview} />}
+        {activeTab === 'prices' && <PricesPage searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
+        {activeTab === 'settings' && <SettingsPage />}
+      </main>
+
+      {/* MODALS */}
+      {showCostModal && <CostModal onClose={() => setShowCostModal(false)} />}
+      {showAvoidModal && <AvoidModal onClose={() => setShowAvoidModal(false)} />}
+    </div>
+  );
+}
+
+// ============ PAGE: OVERVIEW ============
+function OverviewPage() {
+  return (
+    <div className="space-y-3">
+      {/* Row 1: Snapshot + Market + Risk */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        {/* Portfolio Snapshot */}
+        <Card>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-text-primary">组合快照</h3>
+            <FreshnessBadge fresh="green" />
+          </div>
+          <div className="grid grid-cols-2 gap-3 mb-3">
+            <div>
+              <p className="text-[10px] text-text-muted uppercase tracking-wider">总资产</p>
+              <p className="text-lg font-mono font-bold text-text-primary">¥{(mockPositions.summary.total_assets/10000).toFixed(2)}<span className="text-xs text-text-muted">万</span></p>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted uppercase tracking-wider">今日盈亏</p>
+              <p className="text-lg font-mono font-bold text-fall">+¥{mockPositions.summary.total_pnl_amount.toFixed(0)}</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted uppercase tracking-wider">仓位</p>
+              <p className="text-sm font-mono font-semibold text-warn">{mockPositions.summary.position_ratio}%</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted uppercase tracking-wider">可用资金</p>
+              <p className="text-sm font-mono text-text-secondary">¥{(mockPositions.summary.available_cash/10000).toFixed(1)}万</p>
+            </div>
+          </div>
+          <div className="border-t border-border-main pt-2">
+            <p className="text-[10px] text-text-muted mb-1.5">当前持仓</p>
+            {mockPositions.positions.map(p => (
+              <div key={p.code} className="flex justify-between items-center text-xs py-0.5">
+                <span className="text-text-primary">{p.name}</span>
+                <span className={`font-mono ${p.pnl_percent >= 0 ? 'text-rise' : 'text-fall'}`}>
+                  {p.pnl_percent >= 0 ? '+' : ''}{p.pnl_percent.toFixed(2)}%
+                </span>
+              </div>
+            ))}
+          </div>
+        </Card>
+
+        {/* Market Environment */}
+        <Card>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-text-primary">市场环境</h3>
+            <span className="badge bg-warn/20 text-warn">{mockMarketEnv.overview.sentiment}</span>
+          </div>
+          <p className="text-xs text-text-secondary mb-3 leading-relaxed">{mockMarketEnv.overview.verdict}</p>
+          <div className="space-y-1.5 mb-3">
+            {mockMarketEnv.indices.slice(0, 3).map(idx => (
+              <div key={idx.name} className="flex justify-between items-center text-xs">
+                <span className="text-text-muted">{idx.name}</span>
+                <div className="flex items-center gap-2">
+                  <span className="font-mono text-text-primary">{idx.close}</span>
+                  <span className={`font-mono ${idx.change >= 0 ? 'text-rise' : 'text-fall'}`}>
+                    {idx.change >= 0 ? '+' : ''}{idx.change}%
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="border-t border-border-main pt-2 grid grid-cols-2 gap-2">
+            <div>
+              <p className="text-[10px] text-rise mb-1">领涨TOP3</p>
+              {mockMarketEnv.leading.slice(0, 3).map(s => (
+                <div key={s.name} className="flex justify-between text-[11px]"><span className="text-text-muted">{s.name}</span><span className="text-rise font-mono">+{s.change}%</span></div>
+              ))}
+            </div>
+            <div>
+              <p className="text-[10px] text-fall mb-1">领跌TOP3</p>
+              {mockMarketEnv.lagging.slice(0, 3).map(s => (
+                <div key={s.name} className="flex justify-between text-[11px]"><span className="text-text-muted">{s.name}</span><span className="text-fall font-mono">{s.change}%</span></div>
+              ))}
+            </div>
+          </div>
+        </Card>
+
+        {/* Risk Assessment */}
+        <Card>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-text-primary">风险评估</h3>
+            <span className={`badge ${mockRisk.overall.level === 'high' ? 'bg-rise/20 text-rise' : mockRisk.overall.level === 'medium' ? 'bg-warn/20 text-warn' : 'bg-fall/20 text-fall'}`}>
+              {mockRisk.overall.label} · {mockRisk.overall.score}分
+            </span>
+          </div>
+          <p className="text-xs text-text-secondary mb-3">{mockRisk.overall.summary}</p>
+          <div className="space-y-2">
+            {mockRisk.factors.map(f => (
+              <div key={f.name} className="flex items-start gap-2">
+                <span className={`mt-0.5 ${f.level === 'high' ? 'text-rise' : f.level === 'medium' ? 'text-warn' : 'text-fall'}`}>
+                  {f.level === 'high' ? '🔴' : f.level === 'medium' ? '🟡' : '🟢'}
+                </span>
+                <div>
+                  <p className="text-xs font-medium text-text-primary">{f.name}</p>
+                  <p className="text-[10px] text-text-muted">{f.detail}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+      </div>
+
+      {/* Row 2: Signals + Bottom + Plan */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        {/* 7-Gate Summary */}
+        <Card>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-text-primary">7道闸信号</h3>
+            <span className="text-xs text-text-muted font-mono">{mockMarketSignals.aggregate.total_score}/{mockMarketSignals.aggregate.max_score}</span>
+          </div>
+          <div className="flex gap-1 mb-3">
+            {mockMarketSignals.signals.map(s => (
+              <div key={s.id} className="flex-1 text-center">
+                <StatusDot status={s.status} />
+                <p className="text-[9px] text-text-muted mt-1 truncate">{s.name}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-between text-xs">
+            <span className="text-fall">🟢 {mockMarketSignals.aggregate.green_count}</span>
+            <span className="text-warn">🟡 {mockMarketSignals.aggregate.yellow_count}</span>
+            <span className="text-rise">🔴 {mockMarketSignals.aggregate.red_count}</span>
+          </div>
+          {mockMarketSignals.aggregate.no_open_position && (
+            <div className="mt-2 p-2 bg-rise/10 border border-rise/30 rounded text-xs text-rise text-center font-medium">
+              ⚠️ 禁止开新仓
+            </div>
+          )}
+        </Card>
+
+        {/* Bottom Signals */}
+        <Card>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-text-primary">底部5信号</h3>
+            <span className="badge bg-info/20 text-info">{mockBottomSignals.aggregate.ratio}</span>
+          </div>
+          <div className="space-y-1.5 mb-3">
+            {mockBottomSignals.signals.map(s => (
+              <div key={s.id} className="flex items-center gap-2 text-xs">
+                <span className={s.satisfied ? 'text-fall' : 'text-text-muted'}>{s.satisfied ? '✅' : '⬜'}</span>
+                <span className={s.satisfied ? 'text-text-primary' : 'text-text-muted'}>{s.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className="border-t border-border-main pt-2">
+            <p className="text-xs font-medium text-info mb-1">建议: {mockBottomSignals.aggregate.recommendation}</p>
+            <p className="text-[10px] text-text-muted">{mockBottomSignals.aggregate.recommendation_detail}</p>
+          </div>
+        </Card>
+
+        {/* Tomorrow Plan */}
+        <Card>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-text-primary">明日计划</h3>
+            <span className="badge bg-blue-500/20 text-blue-400">{mockPlans.core_plan.action}</span>
+          </div>
+          <p className="text-xs text-text-secondary mb-3 leading-relaxed">{mockPlans.core_plan.detail}</p>
+          <div className="border-t border-border-main pt-2 space-y-1.5">
+            <p className="text-[10px] text-text-muted">条件触发</p>
+            {mockPlans.core_plan.conditions.map((c, i) => (
+              <div key={i} className="text-[11px] flex items-start gap-1">
+                <span className="text-info">→</span>
+                <span className="text-text-muted">IF <span className="text-text-primary">{c.if}</span> → <span className="text-warn">{c.then}</span></span>
+              </div>
+            ))}
+          </div>
+          <div className="border-t border-border-main pt-2 mt-2 grid grid-cols-3 gap-2">
+            <div className="text-center">
+              <p className="text-[10px] text-text-muted">胜率</p>
+              <p className="text-sm font-mono font-bold text-fall">{mockPlans.key_stats.win_rate_30d}%</p>
+            </div>
+            <div className="text-center">
+              <p className="text-[10px] text-text-muted">月收益</p>
+              <p className="text-sm font-mono font-bold text-fall">+{mockPlans.key_stats.monthly_pnl}%</p>
+            </div>
+            <div className="text-center">
+              <p className="text-[10px] text-text-muted">执行力</p>
+              <p className="text-sm font-mono font-bold text-info">{mockPlans.key_stats.execution_score}</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* Row 3: Trend Chart */}
+      <Card>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-sm font-semibold text-text-primary">复盘评分趋势（近7日）</h3>
+          <FreshnessBadge fresh="green" />
+        </div>
+        <MiniChart data={mockBottomSignals.history_7d} maxVal={5} />
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: POSITIONS ============
+function PositionsPage({ showCostModal, setShowCostModal }) {
+  return (
+    <div className="space-y-3">
+      <Card>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold">持仓监控</h3>
+          <button onClick={() => setShowCostModal(true)} className="flex items-center gap-1 px-3 py-1.5 bg-info/20 text-info rounded text-xs font-medium hover:bg-info/30 transition-colors cursor-pointer">
+            {Icons.plus("w-3 h-3")} 录入成本价
+          </button>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-text-muted border-b border-border-main">
+                <th className="text-left py-2 px-2">股票</th>
+                <th className="text-right py-2 px-2">数量</th>
+                <th className="text-right py-2 px-2">成本</th>
+                <th className="text-right py-2 px-2">现价</th>
+                <th className="text-right py-2 px-2">盈亏%</th>
+                <th className="text-right py-2 px-2">止损</th>
+                <th className="text-right py-2 px-2">止盈</th>
+                <th className="text-center py-2 px-2">持仓天数</th>
+                <th className="text-center py-2 px-2">状态</th>
+              </tr>
+            </thead>
+            <tbody>
+              {mockPositions.positions.map(p => {
+                const nearStopLoss = Math.abs(p.distance_stop_loss) < 3;
+                const nearStopProfit = Math.abs(p.distance_stop_profit) < 3;
+                return (
+                  <tr key={p.code} className="border-b border-border-main/50 hover:bg-bg-hover/50 transition-colors">
+                    <td className="py-3 px-2">
+                      <div className="font-medium text-text-primary">{p.name}</div>
+                      <div className="text-[10px] text-text-muted">{p.code} · {p.sector}</div>
+                    </td>
+                    <td className="text-right py-3 px-2 font-mono">{p.quantity}</td>
+                    <td className="text-right py-3 px-2 font-mono">{p.cost_price.toFixed(2)}</td>
+                    <td className="text-right py-3 px-2 font-mono text-text-primary">{p.current_price.toFixed(2)}</td>
+                    <td className={`text-right py-3 px-2 font-mono font-semibold ${p.pnl_percent >= 0 ? 'text-rise' : 'text-fall'}`}>
+                      {p.pnl_percent >= 0 ? '+' : ''}{p.pnl_percent.toFixed(2)}%
+                    </td>
+                    <td className={`text-right py-3 px-2 font-mono ${nearStopLoss ? 'text-rise pulse-red font-bold' : 'text-text-muted'}`}>
+                      {p.stop_loss.toFixed(2)}
+                      {nearStopLoss && <span className="ml-1">⚠️</span>}
+                    </td>
+                    <td className={`text-right py-3 px-2 font-mono ${nearStopProfit ? 'text-fall font-bold' : 'text-text-muted'}`}>
+                      {p.stop_profit.toFixed(2)}
+                    </td>
+                    <td className="text-center py-3 px-2 font-mono text-text-secondary">{p.holding_days}天</td>
+                    <td className="text-center py-3 px-2">
+                      <span className={`badge ${p.status === 'holding' ? 'bg-info/20 text-info' : 'bg-text-muted/20 text-text-muted'}`}>
+                        {p.status === 'holding' ? '持有' : '已卖'}
+                      </span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        {/* Summary Bar */}
+        <div className="mt-4 pt-3 border-t border-border-main grid grid-cols-2 md:grid-cols-5 gap-3">
+          <div><p className="text-[10px] text-text-muted">总资产</p><p className="font-mono font-semibold">¥{(mockPositions.summary.total_assets/10000).toFixed(2)}万</p></div>
+          <div><p className="text-[10px] text-text-muted">组合盈亏</p><p className={`font-mono font-semibold ${mockPositions.summary.total_pnl_amount >= 0 ? 'text-rise' : 'text-fall'}`}>{mockPositions.summary.total_pnl_amount >= 0 ? '+' : ''}¥{mockPositions.summary.total_pnl_amount}</p></div>
+          <div><p className="text-[10px] text-text-muted">仓位占比</p><p className="font-mono font-semibold text-warn">{mockPositions.summary.position_ratio}%</p></div>
+          <div><p className="text-[10px] text-text-muted">持仓数</p><p className="font-mono font-semibold">{mockPositions.summary.total_positions}只</p></div>
+          <div><p className="text-[10px] text-text-muted">可用资金</p><p className="font-mono font-semibold">¥{(mockPositions.summary.available_cash/10000).toFixed(1)}万</p></div>
+        </div>
+      </Card>
+
+      {/* Discipline Quick Check */}
+      <Card>
+        <h3 className="text-sm font-semibold mb-3">操作纪律快检</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+          {mockRisk.rules.map((r, i) => (
+            <div key={i} className={`p-2 rounded border ${r.passed ? 'border-fall/30 bg-fall/5' : 'border-rise/30 bg-rise/5'}`}>
+              <div className="flex items-center gap-1 mb-1">
+                <span className={r.passed ? 'text-fall' : 'text-rise'}>{r.passed ? '✅' : '🔴'}</span>
+                <span className="text-[10px] text-text-muted">{r.rule}</span>
+              </div>
+              <p className="text-xs font-mono text-text-primary">{r.value}</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: SIGNALS ============
+function SignalsPage() {
+  return (
+    <div className="space-y-3">
+      {/* No-open banner if triggered */}
+      {!mockMarketSignals.aggregate.no_open_position && (
+        <div className="p-3 bg-fall/10 border border-fall/30 rounded-lg flex items-center gap-2">
+          <span className="text-fall text-lg">✅</span>
+          <div>
+            <p className="text-sm font-medium text-fall">今日可开仓</p>
+            <p className="text-xs text-text-muted">道闸信号 {mockMarketSignals.aggregate.green_count}绿 {mockMarketSignals.aggregate.yellow_count}黄 {mockMarketSignals.aggregate.red_count}红，得分 {mockMarketSignals.aggregate.total_score}/{mockMarketSignals.aggregate.max_score}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Signal Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {mockMarketSignals.signals.map(s => (
+          <Card key={s.id} className={`${s.status === 'red' ? 'glow-rise' : s.status === 'yellow' ? 'glow-warn' : 'glow-fall'}`}>
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="text-xs font-semibold text-text-primary">{s.name}</h4>
+              <StatusDot status={s.status} />
+            </div>
+            <p className="text-xs text-text-secondary mb-2">{s.detail}</p>
+            {s.value !== null && (
+              <div className="flex items-center gap-2">
+                <span className="text-lg font-mono font-bold text-text-primary">{s.value}</span>
+                {s.threshold !== null && <span className="text-[10px] text-text-muted">阈值: {s.threshold}</span>}
+              </div>
+            )}
+          </Card>
+        ))}
+      </div>
+
+      {/* Aggregate */}
+      <Card>
+        <h3 className="text-sm font-semibold mb-3">信号汇总</h3>
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+          <div className="text-center">
+            <p className="text-2xl font-mono font-bold text-fall">{mockMarketSignals.aggregate.green_count}</p>
+            <p className="text-[10px] text-text-muted">绿灯</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-mono font-bold text-warn">{mockMarketSignals.aggregate.yellow_count}</p>
+            <p className="text-[10px] text-text-muted">黄灯</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-mono font-bold text-rise">{mockMarketSignals.aggregate.red_count}</p>
+            <p className="text-[10px] text-text-muted">红灯</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-mono font-bold text-info">{mockMarketSignals.aggregate.total_score}</p>
+            <p className="text-[10px] text-text-muted">总得分</p>
+          </div>
+          <div className="text-center">
+            <p className="text-2xl font-mono font-bold text-text-muted">{mockMarketSignals.aggregate.max_score}</p>
+            <p className="text-[10px] text-text-muted">满分</p>
+          </div>
+          <div className="text-center">
+            <p className={`text-lg font-bold ${mockMarketSignals.aggregate.no_open_position ? 'text-rise' : 'text-fall'}`}>
+              {mockMarketSignals.aggregate.no_open_position ? '禁开仓' : '可开仓'}
+            </p>
+            <p className="text-[10px] text-text-muted">状态</p>
+          </div>
+        </div>
+      </Card>
+
+      {/* Bottom Signals */}
+      <Card>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-sm font-semibold">底部5信号</h3>
+          <span className="badge bg-info/20 text-info">{mockBottomSignals.aggregate.ratio} → {mockBottomSignals.aggregate.recommendation}</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
+          {mockBottomSignals.signals.map(s => (
+            <div key={s.id} className={`p-3 rounded border ${s.satisfied ? 'border-fall/30 bg-fall/5' : 'border-border-main bg-bg-card/30'}`}>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-base">{s.satisfied ? '✅' : '⬜'}</span>
+                <span className="text-xs font-medium">{s.name}</span>
+              </div>
+              <p className="text-[10px] text-text-muted leading-relaxed">{s.detail}</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: WATCHLIST ============
+function WatchlistPage({ watchTab, setWatchTab, searchQuery, setSearchQuery }) {
+  const filtered = mockWatchlist.filter(w =>
+    w.name.includes(searchQuery) || w.code.includes(searchQuery) || w.sector.includes(searchQuery)
+  );
+
+  return (
+    <div className="space-y-3">
+      {/* Tabs */}
+      <div className="flex gap-0 border-b border-border-main">
+        {[['long','长期关注池'],['buy','可买入票'],['oversold','超跌板块']].map(([id,label]) => (
+          <button key={id} onClick={() => setWatchTab(id)}
+            className={`px-4 py-2 text-xs font-medium transition-colors tab-${watchTab === id ? 'active' : 'inactive'}`}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {watchTab === 'long' && (
+        <>
+          {/* Search */}
+          <div className="relative">
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted">{Icons.search("w-4 h-4")}</span>
+            <input type="text" placeholder="搜索股票代码/名称/板块..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-2 bg-bg-card border border-border-main rounded-lg text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-info transition-colors" />
+          </div>
+          <p className="text-[10px] text-text-muted">共 {filtered.length} 只 · 更新: 2026-08-02 20:00</p>
+          {/* Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+            {filtered.map(w => (
+              <Card key={w.code} className="cursor-pointer glass-hover">
+                <div className="flex items-center justify-between mb-2">
+                  <div>
+                    <span className="text-xs font-semibold text-text-primary">{w.name}</span>
+                    <span className="text-[10px] text-text-muted ml-1">{w.code}</span>
+                  </div>
+                  {w.tags.map(t => (
+                    <span key={t} className={`badge ${t === '持仓' ? 'bg-info/20 text-info' : 'bg-text-muted/20 text-text-muted'}`}>{t}</span>
+                  ))}
+                </div>
+                <div className="grid grid-cols-3 gap-1 text-[10px]">
+                  <div><span className="text-text-muted">支撑</span><p className="font-mono text-text-primary">{w.support}</p></div>
+                  <div><span className="text-text-muted">买入</span><p className="font-mono text-fall">{w.buy_range[0]}-{w.buy_range[1]}</p></div>
+                  <div><span className="text-text-muted">阻力</span><p className="font-mono text-rise">{w.resistance}</p></div>
+                </div>
+                <p className="text-[10px] text-text-muted mt-1">{w.sector}</p>
+              </Card>
+            ))}
+          </div>
+        </>
+      )}
+
+      {watchTab === 'buy' && (
+        <Card>
+          <h3 className="text-sm font-semibold mb-3">可买入票（距离买入价 &lt; 5%）</h3>
+          <div className="space-y-2">
+            {mockWatchlist.filter(w => w.buy_range[0] > 0).slice(0, 5).map(w => (
+              <div key={w.code} className="flex items-center justify-between p-2 rounded bg-bg-card/50 border border-border-main/50">
+                <div className="flex items-center gap-3">
+                  <div>
+                    <span className="text-xs font-medium text-text-primary">{w.name}</span>
+                    <span className="text-[10px] text-text-muted ml-1">{w.code}</span>
+                  </div>
+                  <span className="badge bg-fall/20 text-fall">距买入价 2.3%</span>
+                </div>
+                <div className="flex items-center gap-3 text-xs">
+                  <span className="font-mono text-text-muted">风险评分 <span className="text-warn font-bold">62</span>/100</span>
+                  <span className="text-text-muted">买入区间: <span className="text-fall font-mono">{w.buy_range[0]}-{w.buy_range[1]}</span></span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
+
+      {watchTab === 'oversold' && (
+        <div className="space-y-2">
+          {mockOversoldSectors.map(s => (
+            <Card key={s.name}>
+              <div className="flex items-center justify-between mb-2">
+                <div>
+                  <span className="text-xs font-semibold text-text-primary">{s.name}</span>
+                  <span className="ml-2 badge bg-fall/20 text-fall">20日 {s.change_20d}%</span>
+                  <span className="ml-1 badge bg-warn/20 text-warn">5日 {s.change_5d}%</span>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {s.top3.map(t => (
+                  <div key={t.name} className="text-xs p-2 rounded bg-bg-primary/50">
+                    <span className="text-text-primary">{t.name}</span>
+                    <span className="ml-1 font-mono text-fall">{t.ch}%</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ============ PAGE: DISCIPLINE ============
+function DisciplinePage() {
+  const checks = [
+    { label: "持仓上限", desc: "当前2只/上限5只", passed: true },
+    { label: "当日笔数", desc: "1笔/上限6笔", passed: true },
+    { label: "时间窗口", desc: "当前在交易时段内", passed: true },
+    { label: "做T检测", desc: "未检测到做T操作", passed: true },
+    { label: "割肉回补", desc: "无割肉回补操作", passed: true },
+    { label: "违规拦截", desc: "今日无违规操作", passed: true },
+  ];
+
+  return (
+    <div className="space-y-3">
+      <Card>
+        <h3 className="text-sm font-semibold mb-4">操作纪律检查</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {checks.map((c, i) => (
+            <div key={i} className={`p-3 rounded-lg border ${c.passed ? 'border-fall/30 bg-fall/5' : 'border-rise/30 bg-rise/5'}`}>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-lg">{c.passed ? '✅' : '🔴'}</span>
+                <span className="text-xs font-semibold text-text-primary">{c.label}</span>
+              </div>
+              <p className="text-[10px] text-text-muted">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      <Card>
+        <h3 className="text-sm font-semibold mb-3">风控规则状态</h3>
+        <div className="space-y-2">
+          {mockRisk.rules.map((r, i) => (
+            <div key={i} className={`flex items-center justify-between p-2 rounded ${r.passed ? 'bg-fall/5' : 'bg-rise/5'}`}>
+              <div className="flex items-center gap-2">
+                <span>{r.passed ? '✅' : '🔴'}</span>
+                <span className="text-xs text-text-primary">{r.rule}</span>
+              </div>
+              <span className="text-xs font-mono text-text-muted">{r.value}</span>
+            </div>
+          ))}
+        </div>
+        <div className="mt-3 p-2 bg-info/10 border border-info/20 rounded text-xs text-info text-center">
+          全部规则通过 {mockRisk.rules.filter(r => r.passed).length}/{mockRisk.rules.length}
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: AVOID ============
+function AvoidPage({ showAvoidModal, setShowAvoidModal }) {
+  return (
+    <div className="space-y-3">
+      <Card>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold">永久回避名单</h3>
+          <button onClick={() => setShowAvoidModal(true)} className="flex items-center gap-1 px-3 py-1.5 bg-rise/20 text-rise rounded text-xs font-medium hover:bg-rise/30 transition-colors cursor-pointer">
+            {Icons.plus("w-3 h-3")} 添加
+          </button>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-text-muted border-b border-border-main">
+                <th className="text-left py-2 px-2">代码</th>
+                <th className="text-left py-2 px-2">名称</th>
+                <th className="text-left py-2 px-2">回避理由</th>
+                <th className="text-left py-2 px-2">日期</th>
+                <th className="text-left py-2 px-2">标签</th>
+                <th className="text-center py-2 px-2">操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              {mockAvoidList.map(item => (
+                <tr key={item.code} className="border-b border-border-main/50 hover:bg-bg-hover/50 transition-colors">
+                  <td className="py-3 px-2 font-mono text-text-muted">{item.code}</td>
+                  <td className="py-3 px-2 font-medium text-text-primary">{item.name}</td>
+                  <td className="py-3 px-2 text-text-secondary max-w-xs truncate">{item.reason}</td>
+                  <td className="py-3 px-2 font-mono text-text-muted">{item.date}</td>
+                  <td className="py-3 px-2">
+                    <div className="flex gap-1">
+                      {item.tags.map(t => <span key={t} className="badge bg-rise/10 text-rise">{t}</span>)}
+                    </div>
+                  </td>
+                  <td className="py-3 px-2 text-center">
+                    <button className="text-text-muted hover:text-rise transition-colors cursor-pointer">{Icons.trash("w-3.5 h-3.5")}</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: VIOLATIONS ============
+function ViolationsPage() {
+  return (
+    <div className="space-y-3">
+      {/* Stats */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <Card>
+          <p className="text-[10px] text-text-muted mb-1">本周违规</p>
+          <p className="text-2xl font-mono font-bold text-warn">{mockDiscipline.stats.this_week}</p>
+        </Card>
+        <Card>
+          <p className="text-[10px] text-text-muted mb-1">本月违规</p>
+          <p className="text-2xl font-mono font-bold text-rise">{mockDiscipline.stats.this_month}</p>
+        </Card>
+        <Card>
+          <p className="text-[10px] text-text-muted mb-1">最常见类型</p>
+          <p className="text-2xl font-mono font-bold text-rise">{mockDiscipline.stats.most_common}</p>
+        </Card>
+      </div>
+
+      {/* Time Distribution */}
+      <Card>
+        <h3 className="text-sm font-semibold mb-3">违规时间分布</h3>
+        <BarChart data={mockDiscipline.stats.by_time} />
+      </Card>
+
+      {/* Violation Types */}
+      <Card>
+        <h3 className="text-sm font-semibold mb-3">违规类型统计</h3>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+          {Object.entries(mockDiscipline.stats.by_type).map(([type, count]) => (
+            <div key={type} className="flex items-center justify-between p-2 rounded bg-bg-card/50">
+              <span className="text-xs text-text-secondary">{type}</span>
+              <span className="text-xs font-mono font-bold text-rise">{count}次</span>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* Violation Log */}
+      <Card>
+        <h3 className="text-sm font-semibold mb-3">违规记录</h3>
+        <div className="space-y-2">
+          {mockDiscipline.violations.map(v => (
+            <div key={v.id} className={`p-3 rounded border ${v.severity === 'high' ? 'border-rise/30 bg-rise/5' : v.severity === 'medium' ? 'border-warn/30 bg-warn/5' : 'border-border-main'}`}>
+              <div className="flex items-center justify-between mb-1">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-text-primary">{v.type_label}</span>
+                  <span className={`badge ${v.severity === 'high' ? 'bg-rise/20 text-rise' : v.severity === 'medium' ? 'bg-warn/20 text-warn' : 'bg-text-muted/20 text-text-muted'}`}>
+                    {v.severity === 'high' ? '严重' : v.severity === 'medium' ? '中等' : '轻微'}
+                  </span>
+                </div>
+                <span className="text-[10px] text-text-muted font-mono">{v.date} {v.time}</span>
+              </div>
+              <p className="text-xs text-text-secondary">{v.description}</p>
+              <p className="text-[10px] text-text-muted mt-1">来源: {v.source === 'self_report' ? '自报' : v.source === 'auto_detect' ? '自动检测' : '对话同步'}</p>
+            </div>
+          ))}
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: REVIEWS ============
+function ReviewsPage({ reviewTab, setReviewTab, expandedReview, setExpandedReview }) {
+  return (
+    <div className="space-y-3">
+      <div className="flex gap-0 border-b border-border-main">
+        {[['daily','日复盘'],['weekly','周复盘'],['monthly','月复盘']].map(([id,label]) => (
+          <button key={id} onClick={() => setReviewTab(id)}
+            className={`px-4 py-2 text-xs font-medium transition-colors tab-${reviewTab === id ? 'active' : 'inactive'}`}>
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {reviewTab === 'daily' && (
+        <div className="space-y-2">
+          {mockReviews.map(r => (
+            <Card key={r.date} className="cursor-pointer glass-hover" onClick={() => setExpandedReview(expandedReview === r.date ? null : r.date)}>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono text-text-muted">{r.date}</span>
+                  <span className={`text-xs font-mono font-semibold ${r.pnl >= 0 ? 'text-rise' : 'text-fall'}`}>
+                    {r.pnl >= 0 ? '+' : ''}{r.pnl}元 ({r.pnl_pct >= 0 ? '+' : ''}{r.pnl_pct}%)
+                  </span>
+                  <span className="text-[10px] text-text-muted">违规:{r.violations} 交易:{r.trades}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="badge bg-info/20 text-info">执行 {r.score}</span>
+                  <span className="text-text-muted text-xs">{expandedReview === r.date ? '▲' : '▼'}</span>
+                </div>
+              </div>
+              {expandedReview === r.date && (
+                <div className="mt-3 pt-3 border-t border-border-main space-y-2 fade-in">
+                  <div>
+                    <p className="text-[10px] text-text-muted mb-1">关键决策</p>
+                    {r.decisions.map((d, i) => (
+                      <p key={i} className="text-xs text-text-secondary flex items-start gap-1">
+                        <span className="text-info">•</span> {d}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </Card>
+          ))}
+        </div>
+      )}
+
+      {reviewTab === 'weekly' && (
+        <Card>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm font-semibold">2026-W28 (07/06 ~ 07/12)</h3>
+              <span className="text-xs font-mono text-rise">+¥2,850 (+2.85%)</span>
+            </div>
+            <div className="grid grid-cols-4 gap-3">
+              <div><p className="text-[10px] text-text-muted">交易</p><p className="font-mono font-semibold">8笔</p></div>
+              <div><p className="text-[10px] text-text-muted">胜率</p><p className="font-mono font-semibold text-fall">62.5%</p></div>
+              <div><p className="text-[10px] text-text-muted">违规</p><p className="font-mono font-semibold text-warn">2次</p></div>
+              <div><p className="text-[10px] text-text-muted">执行分</p><p className="font-mono font-semibold text-info">82</p></div>
+            </div>
+            <div className="border-t border-border-main pt-2">
+              <p className="text-[10px] text-text-muted mb-1">最佳操作</p>
+              <p className="text-xs text-text-primary">浪潮信息 +7.01% — 支撑位买入，持有至周五</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted mb-1">最差操作</p>
+              <p className="text-xs text-text-primary">某低空经济股 -2.5% — 追涨买入，次日止损</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted mb-1">周度反思</p>
+              <p className="text-xs text-text-secondary leading-relaxed">本周整体执行良好，唯一问题是追涨低空经济板块。下周需要继续控制仓位，等待更明确的右侧信号。</p>
+            </div>
+          </div>
+        </Card>
+      )}
+
+      {reviewTab === 'monthly' && (
+        <Card>
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm font-semibold">2026年7月</h3>
+              <span className="text-xs font-mono text-rise">+¥5,200 (+5.2%)</span>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div><p className="text-[10px] text-text-muted">交易</p><p className="font-mono font-semibold">35笔</p></div>
+              <div><p className="text-[10px] text-text-muted">胜率</p><p className="font-mono font-semibold text-fall">62.9%</p></div>
+              <div><p className="text-[10px] text-text-muted">最大回撤</p><p className="font-mono font-semibold text-fall">-3.2%</p></div>
+              <div><p className="text-[10px] text-text-muted">夏普比率</p><p className="font-mono font-semibold text-info">1.85</p></div>
+            </div>
+            <div className="border-t border-border-main pt-2">
+              <p className="text-[10px] text-text-muted mb-1">策略复盘</p>
+              <div className="grid grid-cols-3 gap-2 text-xs">
+                <div className="p-2 rounded bg-fall/5 border border-fall/20">
+                  <p className="font-medium text-fall">支撑位买入</p>
+                  <p className="text-text-muted">12次 · 胜率75%</p>
+                </div>
+                <div className="p-2 rounded bg-warn/5 border border-warn/20">
+                  <p className="font-medium text-warn">板块轮动</p>
+                  <p className="text-text-muted">8次 · 胜率50%</p>
+                </div>
+                <div className="p-2 rounded bg-rise/5 border border-rise/20">
+                  <p className="font-medium text-rise">追涨</p>
+                  <p className="text-text-muted">5次 · 胜率20%</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted mb-1">月度反思</p>
+              <p className="text-xs text-text-secondary leading-relaxed">7月整体表现良好，收益率5.2%跑赢大盘。核心问题是追涨纪律仍需加强。下月目标：将追涨次数控制在2次以内。</p>
+            </div>
+            <div>
+              <p className="text-[10px] text-text-muted mb-1">下月目标</p>
+              <div className="flex gap-2 flex-wrap">
+                {["月收益率3%+","追涨≤2次","执行评分≥80"].map(g => (
+                  <span key={g} className="badge bg-info/20 text-info">{g}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Card>
+      )}
+    </div>
+  );
+}
+
+// ============ PAGE: PRICES ============
+function PricesPage({ searchQuery, setSearchQuery }) {
+  const filtered = mockWatchlist.filter(w =>
+    w.name.includes(searchQuery) || w.code.includes(searchQuery)
+  );
+  return (
+    <div className="space-y-3">
+      <Card>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold">关键价位快查</h3>
+          <span className="text-[10px] text-text-muted">更新: 盘后 20:00</span>
+        </div>
+        <div className="relative mb-4">
+          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted">{Icons.search("w-4 h-4")}</span>
+          <input type="text" placeholder="搜索股票代码或名称..." value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
+            className="w-full pl-10 pr-4 py-2 bg-bg-card border border-border-main rounded-lg text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-info transition-colors" />
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-text-muted border-b border-border-main">
+                <th className="text-left py-2 px-2">股票</th>
+                <th className="text-right py-2 px-2">支撑位</th>
+                <th className="text-right py-2 px-2">买入区间</th>
+                <th className="text-right py-2 px-2">止损</th>
+                <th className="text-right py-2 px-2">止盈</th>
+                <th className="text-left py-2 px-2">板块</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filtered.map(w => (
+                <tr key={w.code} className="border-b border-border-main/50 hover:bg-bg-hover/50 transition-colors">
+                  <td className="py-3 px-2">
+                    <span className="font-medium text-text-primary">{w.name}</span>
+                    <span className="text-text-muted ml-1">{w.code}</span>
+                  </td>
+                  <td className="text-right py-3 px-2 font-mono text-fall">{w.support}</td>
+                  <td className="text-right py-3 px-2 font-mono text-info">{w.buy_range[0]} - {w.buy_range[1]}</td>
+                  <td className="text-right py-3 px-2 font-mono text-rise">{(w.support * 0.93).toFixed(1)}</td>
+                  <td className="text-right py-3 px-2 font-mono text-fall">{w.resistance}</td>
+                  <td className="py-3 px-2 text-text-muted">{w.sector}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[10px] text-text-muted mt-2">共 {filtered.length} 只 · 关键价位每日盘后更新</p>
+      </Card>
+    </div>
+  );
+}
+
+// ============ PAGE: SETTINGS ============
+function SettingsPage() {
+  return (
+    <div className="space-y-3">
+      <Card>
+        <h3 className="text-sm font-semibold mb-4">数据新鲜度 & 刷新</h3>
+        <div className="space-y-3">
+          <div className="flex items-center justify-between p-3 rounded bg-bg-card/50 border border-border-main/50">
+            <div className="flex items-center gap-3">
+              <span className="signal-dot signal-yellow"></span>
+              <div>
+                <p className="text-xs font-medium text-text-primary">全局刷新</p>
+                <p className="text-[10px] text-text-muted">上次刷新: 2026-08-02 17:25</p>
+              </div>
+            </div>
+            <button className="px-3 py-1.5 bg-info/20 text-info rounded text-xs font-medium hover:bg-info/30 transition-colors cursor-pointer flex items-center gap-1">
+              {Icons.refresh("w-3 h-3")} 立即刷新
+            </button>
+          </div>
+          {['持仓数据','道闸信号','关注池','市场环境','风险评估'].map(name => (
+            <div key={name} className="flex items-center justify-between p-3 rounded bg-bg-card/50 border border-border-main/50">
+              <div className="flex items-center gap-3">
+                <span className={`signal-dot ${name === '道闸信号' ? 'signal-green' : name === '持仓数据' ? 'signal-yellow' : 'signal-green'}`}></span>
+                <div>
+                  <p className="text-xs text-text-primary">{name}</p>
+                  <p className="text-[10px] text-text-muted">
+                    {name === '持仓数据' ? '盘中实时' : name === '道闸信号' ? '10:00/11:30/14:00' : '盘后 20:00'}
+                  </p>
+                </div>
+              </div>
+              <button className="p-1 text-text-muted hover:text-info transition-colors cursor-pointer">
+                {Icons.refresh("w-3.5 h-3.5")}
+              </button>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      <Card>
+        <h3 className="text-sm font-semibold mb-4">系统信息</h3>
+        <div className="space-y-2 text-xs">
+          <div className="flex justify-between"><span className="text-text-muted">版本</span><span className="font-mono text-text-primary">V3.0</span></div>
+          <div className="flex justify-between"><span className="text-text-muted">数据文件数</span><span className="font-mono text-text-primary">14</span></div>
+          <div className="flex justify-between"><span className="text-text-muted">原型模式</span><span className="badge bg-warn/20 text-warn">静态演示</span></div>
+          <div className="flex justify-between"><span className="text-text-muted">账户</span><span className="text-text-primary">交易员K</span></div>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+// ============ MODALS ============
+function CostModal({ onClose }) {
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center modal-overlay" onClick={onClose}>
+      <div className="glass rounded-xl p-6 w-full max-w-md mx-4" onClick={e => e.stopPropagation()}>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold">录入成本价</h3>
+          <button onClick={onClose} className="text-text-muted hover:text-text-primary cursor-pointer">{Icons.x("w-5 h-5")}</button>
+        </div>
+        <div className="space-y-3">
+          <div>
+            <label className="text-[10px] text-text-muted block mb-1">股票代码</label>
+            <input type="text" placeholder="如: 002446" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary focus:outline-none focus:border-info" />
+          </div>
+          <div>
+            <label className="text-[10px] text-text-muted block mb-1">股票名称</label>
+            <input type="text" placeholder="如: 信维通信" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary focus:outline-none focus:border-info" />
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="text-[10px] text-text-muted block mb-1">成本价 (元)</label>
+              <input type="number" placeholder="60.70" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary font-mono focus:outline-none focus:border-info" />
+            </div>
+            <div>
+              <label className="text-[10px] text-text-muted block mb-1">数量 (股)</label>
+              <input type="number" placeholder="1200" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary font-mono focus:outline-none focus:border-info" />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="text-[10px] text-text-muted block mb-1">止损价</label>
+              <input type="number" placeholder="56.00" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary font-mono focus:outline-none focus:border-info" />
+            </div>
+            <div>
+              <label className="text-[10px] text-text-muted block mb-1">止盈价</label>
+              <input type="number" placeholder="72.00" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary font-mono focus:outline-none focus:border-info" />
+            </div>
+          </div>
+          <div>
+            <label className="text-[10px] text-text-muted block mb-1">买入日期</label>
+            <input type="date" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary font-mono focus:outline-none focus:border-info" />
+          </div>
+          <button className="w-full py-2 bg-info text-white rounded text-xs font-medium hover:bg-info/80 transition-colors cursor-pointer">
+            确认录入
+          </button>
+          <p className="text-[10px] text-text-muted text-center">※ 静态原型，录入不会实际保存</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AvoidModal({ onClose }) {
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center modal-overlay" onClick={onClose}>
+      <div className="glass rounded-xl p-6 w-full max-w-md mx-4" onClick={e => e.stopPropagation()}>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-sm font-semibold">添加回避名单</h3>
+          <button onClick={onClose} className="text-text-muted hover:text-text-primary cursor-pointer">{Icons.x("w-5 h-5")}</button>
+        </div>
+        <div className="space-y-3">
+          <div>
+            <label className="text-[10px] text-text-muted block mb-1">股票代码</label>
+            <input type="text" placeholder="如: 000001" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary focus:outline-none focus:border-info" />
+          </div>
+          <div>
+            <label className="text-[10px] text-text-muted block mb-1">股票名称</label>
+            <input type="text" placeholder="如: 平安银行" className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary focus:outline-none focus:border-info" />
+          </div>
+          <div>
+            <label className="text-[10px] text-text-muted block mb-1">回避理由</label>
+            <textarea rows={3} placeholder="详细说明回避理由..." className="w-full px-3 py-2 bg-bg-primary border border-border-main rounded text-xs text-text-primary focus:outline-none focus:border-info resize-none" />
+          </div>
+          <button className="w-full py-2 bg-rise text-white rounded text-xs font-medium hover:bg-rise/80 transition-colors cursor-pointer">
+            确认添加
+          </button>
+          <p className="text-[10px] text-text-muted text-center">※ 静态原型，添加不会实际保存</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ============ RENDER ============
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
