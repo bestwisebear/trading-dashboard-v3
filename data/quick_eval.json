@@ -10,7 +10,17 @@
     },
     "market_comment": "沪指3934.09-0.82%终结五连阳，成交2.32万亿缩量2021亿。涨跌1615:3777涨停60跌停2。沪弱创强分化：有色金属暴跌(贵金属-5%)，医药CRO接棒(百花6连板)，MLCC/机器人逆势走强。主力净流出400亿，北向净流出81亿。"
   },
-  "holdings": {
+  "market_signal": {
+    "overall": "偏空",
+    "new_position_allowed": false,
+    "reason": "涨跌家数1615<2000，硬性触发禁开新仓",
+    "key_watch": [
+      "浪潮信息止损线",
+      "鹏辉能源66阻力",
+      "今晚美国CPI数据"
+    ]
+  },
+  "stocks": {
     "sz000977": {
       "name": "浪潮信息",
       "price": 75.11,
@@ -50,7 +60,7 @@
       "sector": "电池/储能",
       "support": 57.0,
       "resistance": 66.0,
-      "stop_loss": 56.00,
+      "stop_loss": 56.0,
       "alert": "🟢冲66阻力，回落减1/3锁利润"
     },
     "sz300604": {
@@ -71,14 +81,8 @@
       "sector": "半导体设备",
       "support": 278.0,
       "resistance": 286.0,
-      "stop_loss": 266.00,
+      "stop_loss": 266.0,
       "alert": "🟡科创50跌1.63%拖累，守278支撑"
     }
-  },
-  "market_signal": {
-    "overall": "偏空",
-    "new_position_allowed": false,
-    "reason": "涨跌家数1615<2000，硬性触发禁开新仓",
-    "key_watch": ["浪潮信息止损线", "鹏辉能源66阻力", "今晚美国CPI数据"]
   }
 }
