@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "last_updated": "2026-08-05T15:15:00+08:00"
+  },
+  "logs": [
+    {
+      "date": "2026-08-05",
+      "trade": {
+        "time": "10:15",
+        "stock": "信维通信",
+        "code": "300136",
+        "direction": "卖出",
+        "qty": 1200,
+        "price": 60.63,
+        "amount": 72756.0
+      },
+      "violation": {
+        "type": "emotional_sell",
+        "label": "情绪化清仓",
+        "rule": "应按计划62减仓，实际60.63恐慌清仓",
+        "actual_time": "10:15",
+        "severity": "中"
+      },
+      "assessment": {
+        "conclusion": "情绪驱动卖出，非计划执行",
+        "stop_loss": null,
+        "target": "原计划62减仓"
+      },
+      "daily_result": {
+        "close_price": 59.55,
+        "realized_pnl": -84,
+        "notes": "卖出后股价继续波动，收盘59.55。情绪化决策亏损-84"
+      }
+    },
+    {
+      "date": "2026-08-05",
+      "trade": {
+        "time": "14:00",
+        "stock": "浪潮信息",
+        "code": "000977",
+        "direction": "买入(回补)",
+        "qty": 1000,
+        "price": 77.6,
+        "amount": 77600.0
+      },
+      "violation": {
+        "type": "sell_fly_buyback",
+        "label": "卖飞后回补",
+        "rule": "卖飞回补需4条件全满足(池内票/站稳固损+5%≥2日/缩量回踩不破前低/7道闸通过)",
+        "actual_time": "14:00",
+        "severity": "高"
+      },
+      "assessment": {
+        "conclusion": "违反卖飞回补规则。78.20止盈后股价涨至79.37，心态失衡回补",
+        "stop_loss": 74.5,
+        "target": "78+"
+      },
+      "daily_result": {
+        "close_price": 77.2,
+        "unrealized_pnl_pct": -0.52,
+        "unrealized_pnl_amt": -400
+      },
+      "next_day_outlook": {
+        "direction": "中性偏多",
+        "range": "75.5-80.0",
+        "reason": "AI服务器板块延续强势，但短期RSI偏高。关注74.50止损和79-80阻力"
+      }
+    }
+  ]
+}

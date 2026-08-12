@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "date": "2026-08-05",
+    "last_updated": "2026-08-05T15:15:00+08:00",
+    "data_as_of": "2026-08-05 收盘"
+  },
+  "signals": [
+    {
+      "id": "volume_shrink",
+      "name": "缩量企稳",
+      "status": "red",
+      "detail": "今日放量大涨(成交2.66万亿，放量4460亿)，与缩量企稳信号相反。属于放量上攻形态",
+      "satisfied": false
+    },
+    {
+      "id": "key_support",
+      "name": "关键支撑位测试",
+      "status": "green",
+      "detail": "上证3815低开后强势拉升至3878收高，3800-3820支撑区确认有效。连续两日低开高走，底部支撑逐步抬高",
+      "satisfied": true
+    },
+    {
+      "id": "sector_rotation",
+      "name": "板块轮动信号",
+      "status": "green",
+      "detail": "科技板块全面修复：半导体+5.80%、电子化学品+7.86%、存储+8%、贵金属+7.72%。超跌品种持续反弹，板块轮动健康",
+      "satisfied": true
+    },
+    {
+      "id": "northbound",
+      "name": "北向资金转向",
+      "status": "red",
+      "detail": "北向资金数据待更新，昨日净卖出32亿。外资持续减仓信号未扭转",
+      "satisfied": false
+    },
+    {
+      "id": "sentiment_extreme",
+      "name": "情绪极端值",
+      "status": "yellow",
+      "detail": "涨停104家跌停1家，3725涨1621跌，赚钱效应火爆。但连续两日大涨后RSI6达70.62进入超买区，短期情绪接近高位",
+      "satisfied": false
+    }
+  ],
+  "triggered_count": 2,
+  "threshold": 3,
+  "aggregate": {
+    "ratio": "2/5",
+    "recommendation": "谨慎偏多",
+    "recommendation_detail": "底部信号维持2/5（支撑确认+板块轮动）。连续两日放量大涨后RSI6进入超买区(70.62)，短期追高风险增大。持仓浪潮信息浮亏-400，止损74.50。建议持股不动，严禁追涨"
+  },
+  "history_7d": [
+    {
+      "date": "07-30",
+      "satisfied_count": 2
+    },
+    {
+      "date": "07-31",
+      "satisfied_count": 1
+    },
+    {
+      "date": "08-01",
+      "satisfied_count": 0
+    },
+    {
+      "date": "08-02",
+      "satisfied_count": 1
+    },
+    {
+      "date": "08-03",
+      "satisfied_count": 1
+    },
+    {
+      "date": "08-04",
+      "satisfied_count": 2
+    },
+    {
+      "date": "08-05",
+      "satisfied_count": 2
+    }
+  ]
+}

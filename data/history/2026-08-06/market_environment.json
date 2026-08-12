@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "session": "close"
+  },
+  "indices": [
+    {
+      "name": "上证指数",
+      "code": "sh000001",
+      "close": 3900.35,
+      "change_pct": 0.57,
+      "high": 3902.05,
+      "low": 3864.27,
+      "volume": 11668
+    },
+    {
+      "name": "深证成指",
+      "code": "sz399001",
+      "close": 14110.12,
+      "change_pct": -0.24,
+      "high": 14252.14,
+      "low": 13922.41,
+      "volume": 13620
+    },
+    {
+      "name": "创业板指",
+      "code": "sz399006",
+      "close": 3515.56,
+      "change_pct": -0.55,
+      "high": 3574.41,
+      "low": 3444.36,
+      "volume": 6579
+    }
+  ],
+  "market_stats": {
+    "total_volume": 25288,
+    "volume_change": -1308,
+    "rise_count": 2785,
+    "fall_count": 2585,
+    "flat_count": 159,
+    "limit_up_9pct": 127,
+    "limit_down_9pct": 6,
+    "turnover_comment": "缩量1309亿至2.53万亿"
+  },
+  "hot_sectors_up": [
+    {
+      "name": "煤炭开采",
+      "change_pct": 4.56,
+      "note": "昊华能源/淮北矿业/平煤股份等近10股涨停"
+    },
+    {
+      "name": "电子化学品Ⅱ",
+      "change_pct": 4.73,
+      "note": "中巨芯20cm涨停，江化微涨停"
+    },
+    {
+      "name": "玻璃玻纤",
+      "change_pct": 3.85,
+      "note": "宏和科技涨超6%"
+    },
+    {
+      "name": "非金属材料Ⅱ",
+      "change_pct": 3.19,
+      "note": "联瑞新材涨超8%"
+    },
+    {
+      "name": "小金属",
+      "change_pct": 3.13,
+      "note": "云南锗业涨停"
+    },
+    {
+      "name": "贵金属",
+      "change_pct": 2.78,
+      "note": "西部黄金涨超6%，黄金突破4300美元"
+    },
+    {
+      "name": "种植业",
+      "change_pct": 1.98,
+      "note": "秋乐种业一度涨超20%"
+    },
+    {
+      "name": "化学制品",
+      "change_pct": 1.63,
+      "note": "化工板块跟涨"
+    },
+    {
+      "name": "半导体",
+      "change_pct": 1.42,
+      "note": "板块分化，通富微电+5.1%"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 1.49,
+      "note": "资金净流入25.9亿居首"
+    }
+  ],
+  "hot_sectors_down": [
+    {
+      "name": "电池",
+      "change_pct": -2.74,
+      "note": "鹏辉能源-3.46%"
+    },
+    {
+      "name": "证券Ⅱ",
+      "change_pct": -1.2,
+      "note": "大金融继续走弱"
+    },
+    {
+      "name": "电网设备",
+      "change_pct": -1.09,
+      "note": "电力设备板块领跌"
+    },
+    {
+      "name": "教育",
+      "change_pct": -3.5,
+      "note": "传智教育/中公教育/凯文教育领跌"
+    },
+    {
+      "name": "汽车整车",
+      "change_pct": -2.8,
+      "note": "北汽蓝谷/江淮汽车跌幅居前"
+    },
+    {
+      "name": "电力",
+      "change_pct": -0.68,
+      "note": "防御板块资金流出，立新能源逼近跌停"
+    },
+    {
+      "name": "化学制药",
+      "change_pct": -0.61,
+      "note": "医药板块分化"
+    },
+    {
+      "name": "传媒",
+      "change_pct": -1.8,
+      "note": "世纪天鸿跌超10%"
+    },
+    {
+      "name": "软件开发",
+      "change_pct": -0.52,
+      "note": "AI应用概念调整"
+    },
+    {
+      "name": "银行",
+      "change_pct": 0.35,
+      "note": "逆势微涨但热度低"
+    }
+  ],
+  "overall_assessment": "沪指低开高走+0.57%表现最强，深创指小幅收跌。煤炭/贵金属/化工/半导体领涨，电力/教育/汽车/电池领跌。市场热点快速轮动，涨跌家数2785:2585略偏多，但主力资金持续流出84亿。成交额2.53万亿缩量1308亿。市场或进入筑底反弹阶段，但反弹更多具超跌修复特征。"
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "date": "2026-08-04",
+    "last_updated": "2026-08-04T15:20:00+08:00",
+    "data_as_of": "2026-08-04 收盘"
+  },
+  "signals": [
+    {
+      "id": "volume_shrink",
+      "name": "缩量企稳",
+      "status": "red",
+      "detail": "今日市场放量大涨，与缩量企稳信号相反。成交额大幅放大，属于放量上攻形态",
+      "satisfied": false
+    },
+    {
+      "id": "key_support",
+      "name": "关键支撑位测试",
+      "status": "green",
+      "detail": "上周信维通信触及55.75止损后企稳反弹，今日收59.55已远离止损线。市场整体支撑有效，今日强势确认",
+      "satisfied": true
+    },
+    {
+      "id": "sector_rotation",
+      "name": "板块轮动信号",
+      "status": "green",
+      "detail": "低位超跌板块全面反弹：通信设备+10.74%、元件+8.47%、光芯片+10.26%、半导体+5.39%。板块轮动已从低位防御品种切换至科技成长进攻品种",
+      "satisfied": true
+    },
+    {
+      "id": "northbound",
+      "name": "北向资金转向",
+      "status": "red",
+      "detail": "北向资金今日净卖出32亿，大额抛售宁德时代3.94亿。虽市场大涨但外资在减仓，方向不一致",
+      "satisfied": false
+    },
+    {
+      "id": "sentiment_extreme",
+      "name": "情绪极端值",
+      "status": "yellow",
+      "detail": "涨跌家数3642:1747多方占优，涨停140家跌停仅1家。情绪显著修复但未到恐慌极端值。创业板+5.64%单日大涨已接近短期情绪高位",
+      "satisfied": false
+    }
+  ],
+  "triggered_count": 2,
+  "threshold": 3,
+  "aggregate": {
+    "ratio": "2/5",
+    "recommendation": "谨慎偏多",
+    "recommendation_detail": "底部信号增至2/5（关键支撑确认+板块轮动），但今日大涨后短期追高风险增大。建议持仓不动，追涨需谨慎。明日关注涨幅能否维持、量能是否持续"
+  },
+  "history_7d": [
+    {
+      "date": "07-29",
+      "satisfied_count": 1
+    },
+    {
+      "date": "07-30",
+      "satisfied_count": 2
+    },
+    {
+      "date": "07-31",
+      "satisfied_count": 1
+    },
+    {
+      "date": "08-01",
+      "satisfied_count": 0
+    },
+    {
+      "date": "08-02",
+      "satisfied_count": 1
+    },
+    {
+      "date": "08-03",
+      "satisfied_count": 1
+    },
+    {
+      "date": "08-04",
+      "satisfied_count": 2
+    }
+  ]
+}

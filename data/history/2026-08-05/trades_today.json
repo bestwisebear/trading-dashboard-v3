@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "date": "2026-08-05",
+    "last_updated": "2026-08-05T15:15:00+08:00",
+    "session": "full_day"
+  },
+  "trades": [
+    {
+      "seq": 1,
+      "code": "159599",
+      "name": "芯片ETF东财",
+      "action": "sell",
+      "quantity": 13200,
+      "price": 2.704,
+      "time": "09:35",
+      "reason": "计划止盈2.70触发",
+      "pnl_amount": 2363,
+      "pnl_percent": 7.09,
+      "notes": "止盈偏保守，卖飞2个点"
+    },
+    {
+      "seq": 2,
+      "code": "000977",
+      "name": "浪潮信息",
+      "action": "sell",
+      "quantity": 1000,
+      "price": 78.2,
+      "time": "09:40",
+      "reason": "计划止盈78.20触发",
+      "pnl_amount": 5780,
+      "pnl_percent": 7.98,
+      "notes": "执行到位，但后续卖飞回补"
+    },
+    {
+      "seq": 3,
+      "code": "300136",
+      "name": "信维通信",
+      "action": "sell",
+      "quantity": 1200,
+      "price": 60.63,
+      "time": "10:15",
+      "reason": "怕CPO拖累恐慌清仓",
+      "pnl_amount": -84,
+      "pnl_percent": -0.12,
+      "violation": "emotional_sell",
+      "notes": "计划62减仓实际60.63出场。情绪驱动"
+    },
+    {
+      "seq": 4,
+      "code": "300438",
+      "name": "鹏辉能源",
+      "action": "sell",
+      "quantity": 600,
+      "price": 63.6,
+      "time": "13:15",
+      "reason": "触及止盈线63.60执行清仓",
+      "pnl_amount": 1914,
+      "pnl_percent": 5.28,
+      "notes": "止盈执行到位。收盘63.81微幅卖飞"
+    },
+    {
+      "seq": 5,
+      "code": "000977",
+      "name": "浪潮信息",
+      "action": "buy",
+      "quantity": 1000,
+      "price": 77.6,
+      "time": "14:00",
+      "reason": "卖飞回补",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "violation": "sell_fly_buyback",
+      "notes": "78.20止盈后涨至79.37，回补1000股@77.60。违反卖飞回补规则(非池内票/未满足4条件)"
+    }
+  ],
+  "summary": {
+    "total_trades": 5,
+    "buy_count": 1,
+    "sell_count": 4,
+    "realized_pnl": 9973,
+    "violation_count": 2,
+    "violation_types": {
+      "emotional_sell": 1,
+      "sell_fly_buyback": 1
+    }
+  }
+}

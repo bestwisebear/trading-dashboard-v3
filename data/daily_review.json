@@ -1,0 +1,11 @@
+{
+  "date": "2026-08-10",
+  "score": 0,
+  "daily_metrics": {
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": 0
+  },
+  "note": "盘前占位 - 8/10 尚未开盘，待收盘后由日复盘任务更新"
+}

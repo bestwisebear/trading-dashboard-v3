@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "update_time": "2026-08-06T15:30:00+08:00",
+    "period": "盘后",
+    "source": "综合财经媒体"
+  },
+  "key_news": [
+    {
+      "title": "煤炭板块掀涨停潮",
+      "impact": "neutral",
+      "detail": "近10股涨停，但属于超跌反弹，持续性待观察"
+    },
+    {
+      "title": "黄金突破4300美元",
+      "impact": "positive",
+      "detail": "贵金属板块受益，但持仓无直接关联"
+    },
+    {
+      "title": "兴业证券：科技龙头远期估值已与消费齐平",
+      "impact": "positive",
+      "detail": "科技拥挤度回落至历史底部，AI产业景气逻辑未被破坏"
+    },
+    {
+      "title": "中信证券：短期反弹具超跌修复特征",
+      "impact": "neutral",
+      "detail": "反弹效应集中在5-10个交易日内，后续卖压来自过早抄底资金和机构调仓"
+    },
+    {
+      "title": "东吴证券：市场或进入筑底反弹阶段",
+      "impact": "positive",
+      "detail": "AI产业景气未被破坏，科技硬件将出现分化式修复"
+    },
+    {
+      "title": "华泰证券：趋势性反弹关键窗口在8月下旬",
+      "impact": "neutral",
+      "detail": "中报+英伟达财报或决定科技能否形成新一轮主升"
+    }
+  ],
+  "impact_on_portfolio": [
+    {
+      "stock": "浪潮信息",
+      "impact": "positive",
+      "detail": "AI算力逻辑未被破坏，机构看好国产算力方向，但短期反弹更多是超跌修复"
+    },
+    {
+      "stock": "鹏辉能源",
+      "impact": "negative",
+      "detail": "电池板块今日-2.74%领跌，板块情绪偏弱"
+    },
+    {
+      "stock": "协鑫能科",
+      "impact": "negative",
+      "detail": "电力板块今日继续下跌-0.68%，防御资金流出"
+    }
+  ]
+}

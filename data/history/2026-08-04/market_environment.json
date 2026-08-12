@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "date": "2026-08-04",
+    "last_updated": "2026-08-04T15:20:00+08:00",
+    "session": "close"
+  },
+  "indices": [
+    {
+      "name": "上证指数",
+      "code": "sh000001",
+      "close": 3822.28,
+      "change_pct": 0.33,
+      "high": 3831.94,
+      "low": 3799.52,
+      "volume": 540324922,
+      "amount": 100838254
+    },
+    {
+      "name": "深证成指",
+      "code": "sz399001",
+      "close": 13885.71,
+      "change_pct": 3.25,
+      "high": 13936.52,
+      "low": 13537.76,
+      "volume": 664836577,
+      "amount": 120520929
+    },
+    {
+      "name": "创业板指",
+      "code": "sz399006",
+      "close": 3488.97,
+      "change_pct": 5.64,
+      "high": 3510.51,
+      "low": 3342.41,
+      "volume": 211106623,
+      "amount": 60161322
+    }
+  ],
+  "hot_sectors_up": [
+    {
+      "name": "通信",
+      "change_pct": 9.41,
+      "lead_stock": "欣天科技(+20.04%)"
+    },
+    {
+      "name": "电子",
+      "change_pct": 5.73,
+      "lead_stock": "南亚新材(+14.59%)"
+    },
+    {
+      "name": "综合",
+      "change_pct": 4.73,
+      "lead_stock": "板块普涨"
+    },
+    {
+      "name": "机械设备",
+      "change_pct": 3.37,
+      "lead_stock": "板块普涨"
+    },
+    {
+      "name": "传媒",
+      "change_pct": 3.24,
+      "lead_stock": "传智教育涨停(7连板)"
+    },
+    {
+      "name": "医疗服务",
+      "change_pct": 5.46,
+      "lead_stock": "药明康德/凯莱英涨停"
+    },
+    {
+      "name": "元件",
+      "change_pct": 7.13,
+      "lead_stock": "东山精密涨停"
+    },
+    {
+      "name": "电子化学品",
+      "change_pct": 6.55,
+      "lead_stock": "板块普涨"
+    },
+    {
+      "name": "半导体",
+      "change_pct": 6.0,
+      "lead_stock": "板块普涨"
+    },
+    {
+      "name": "消费电子",
+      "change_pct": 4.8,
+      "lead_stock": "信维通信+5.40%"
+    }
+  ],
+  "hot_sectors_down": [
+    {
+      "name": "银行",
+      "change_pct": -2.75,
+      "lead_stock": "四大行跌超3%"
+    },
+    {
+      "name": "食品饮料",
+      "change_pct": -1.71,
+      "lead_stock": "白酒板块走弱"
+    },
+    {
+      "name": "交通运输",
+      "change_pct": -1.56,
+      "lead_stock": "板块普跌"
+    },
+    {
+      "name": "钢铁",
+      "change_pct": -1.23,
+      "lead_stock": "板块普跌"
+    },
+    {
+      "name": "石油石化",
+      "change_pct": -1.11,
+      "lead_stock": "原油暴跌拖累"
+    }
+  ],
+  "concept_sectors_up": [
+    {
+      "name": "光芯片",
+      "change_pct": 10.26
+    },
+    {
+      "name": "博通概念",
+      "change_pct": 9.6
+    },
+    {
+      "name": "谷歌概念",
+      "change_pct": 9.42
+    },
+    {
+      "name": "靶材",
+      "change_pct": 9.08
+    },
+    {
+      "name": "锗镓概念",
+      "change_pct": 7.34
+    },
+    {
+      "name": "AI-PIN",
+      "change_pct": 7.19
+    }
+  ],
+  "overall_assessment": "今日A股放量修复行情，创业板指大涨+5.64%领涨。科技板块全面爆发：通信+9.41%、电子+5.73%、元件+7.13%、半导体+6.00%。上涨3642家/下跌1747家，涨停140家/跌停仅1家，成交2.23万亿放量2174亿。银行-2.75%领跌，风格显著切换至科技成长。",
+  "rise_count": 3642,
+  "fall_count": 1747,
+  "limit_up": 140,
+  "limit_down": 1
+}
