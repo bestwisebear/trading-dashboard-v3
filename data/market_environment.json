@@ -1,46 +1,46 @@
 {
   "meta": {
     "date": "2026-08-12",
-    "last_updated": "2026-08-12T11:45:00+08:00",
-    "session": "intraday",
-    "data_basis": "2026-08-12 午间（上午收盘）"
+    "last_updated": "2026-08-12T16:15:00+08:00",
+    "session": "close",
+    "data_basis": "2026-08-12 收盘"
   },
   "indices": [
     {
       "name": "上证指数",
       "code": "sh000001",
-      "close": 3946.51,
+      "close": 3946.68,
       "change_pct": 0.32,
-      "change_amount": 12.42,
-      "high": 3946.84,
+      "change_amount": 12.59,
+      "high": 3950.62,
       "low": 3927.55,
       "pre_close": 3934.09,
-      "volume": 311360614,
-      "price_source": "2026-08-12 午间"
+      "volume": 503257011,
+      "price_source": "2026-08-12 收盘"
     },
     {
       "name": "深证成指",
       "code": "sz399001",
-      "close": 14438.07,
-      "change_pct": 1.25,
-      "change_amount": 178.63,
-      "high": 14451.59,
+      "close": 14414.43,
+      "change_pct": 1.09,
+      "change_amount": 154.99,
+      "high": 14467.0,
       "low": 14237.2,
       "pre_close": 14259.44,
-      "volume": 390298898,
-      "price_source": "2026-08-12 午间"
+      "volume": 625395865,
+      "price_source": "2026-08-12 收盘"
     },
     {
       "name": "创业板指",
       "code": "sz399006",
-      "close": 3610.65,
-      "change_pct": 1.73,
-      "change_amount": 61.49,
-      "high": 3618.22,
+      "close": 3602.08,
+      "change_pct": 1.49,
+      "change_amount": 52.92,
+      "high": 3625.27,
       "low": 3540.95,
       "pre_close": 3549.16,
-      "volume": 114957136,
-      "price_source": "2026-08-12 午间"
+      "volume": 183438948,
+      "price_source": "2026-08-12 收盘"
     }
   ],
   "overnight_global": {
@@ -68,15 +68,17 @@
   "market_stats": {
     "total_volume_0811": 23357,
     "intraday_comment": "8/12上午盘三大指数全线反弹：沪指+0.32%报3946、深成+1.25%报14438、创业板+1.73%报3611。光通信/半导体/通信设备领涨（光芯片+6.36%、光通信+4.30%），天孚通信+10.97%、菲利华+11.02%涨停。持仓三股全线上涨：浪潮+0.92%、鹏辉+2.40%、长川+2.49%。市场情绪较8/11明显回暖",
-    "rise_fall_intraday": "待收盘确认（8/11收盘1615:3777）",
+    "rise_fall_intraday": "4128涨/1280跌/135平（红盘74.3%）",
     "sector_flow": "通信设备主力净流入111亿、半导体净流入59亿；资金从防御板块回流科技",
-    "rise_count": null,
-    "fall_count": null,
-    "turnover_comment": "8/11成交2.33万亿缩量-8%，8/12上午放量反弹，预计全天可达2.5万亿+",
-    "rise_fall_ratio": "待收盘确认（8/11为0.43:1）",
+    "rise_count": 4128,
+    "fall_count": 1280,
+    "turnover_comment": "8/12成交21524亿（沪9861+深11663+北148），较昨23210亿缩量1686亿，缩量反弹",
+    "rise_fall_ratio": "3.2:1",
     "limit_up_0811": 60,
     "limit_down_0811": 2,
-    "main_capital_flow_0811": "-超300亿（电子板块净流出87.12亿居首）"
+    "main_capital_flow_0811": "-超300亿（电子板块净流出87.12亿居首）",
+    "limit_up_0812": 97,
+    "limit_down_0812": 0
   },
   "hot_sectors_up": [
     {
