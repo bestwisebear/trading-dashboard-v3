@@ -1,11 +1,96 @@
 {
-  "date": "2026-08-10",
-  "score": 0,
+  "date": "2026-08-11",
+  "score": 3,
+  "market_summary": {
+    "shanghai_index": 3934.09,
+    "shanghai_change_pct": -0.82,
+    "shenzhen_index": 14259.44,
+    "shenzhen_change_pct": -0.40,
+    "chinext_index": 3549.16,
+    "chinext_change_pct": 0.34,
+    "star50_change_pct": -1.63,
+    "total_volume_billion": 2.32,
+    "volume_change_billion": -0.20,
+    "rise_count": 1615,
+    "fall_count": 3777,
+    "flat_count": 150,
+    "limit_up": 60,
+    "limit_down": 2,
+    "breadth_pct": 29.95,
+    "main_capital_net_flow_billion": -4.0,
+    "northbound_net_flow_billion": -0.81
+  },
+  "market_comment": "沪指终结五连阳跌0.82%报3934，深成指-0.40%，创业板指逆势+0.34%。成交2.32万亿缩量2021亿。涨跌1615:3777，涨停60跌停2。典型'沪弱创强'分化格局：有色金属板块暴跌(贵金属-5%/工业金属-2.7%)，紫金矿业单股净卖14.6亿；医药CRO接棒主线(百花医药6连板)，MLCC概念6连阳，人形机器人午后爆发(宇树IPO催化)。主力资金净流出约400亿，北向净流出81亿。",
+  "sector_highlights": {
+    "leading": ["创新药/CRO", "MLCC/被动元件", "人形机器人", "影视院线", "算力租赁", "医药商业"],
+    "lagging": ["贵金属(-5%)", "有色金属(-4.4%)", "军工(-2.4%)", "基础化工(-1.6%)", "钢铁(-1.5%)", "白酒"],
+    "capital_flow_in": ["医药生物+102亿", "芯片+99亿", "通信+57亿", "电子+65亿"],
+    "capital_flow_out": ["有色金属-115亿", "小金属-58亿", "存储芯片-41亿", "中字头-54亿"]
+  },
+  "consecutive_limit_up": {
+    "6板": "百花医药(创新药)",
+    "4板": "开开实业(医药商业/SPD)",
+    "3板": "哈药股份(医药), 秦安股份(汽车零部件)",
+    "2板": "北京文化(影视), 国风新材(MLCC), 一鸣食品, 蓝盾光电等约8只"
+  },
   "daily_metrics": {
     "trade_count": 0,
     "violation_count": 0,
     "realized_pnl": 0,
-    "net_today": 0
+    "net_today": 247,
+    "net_today_note": "纯持仓浮盈变动：浪潮-1590 + 鹏辉+1936 + 长川-98 ≈ +248"
   },
-  "note": "盘前占位 - 8/10 尚未开盘，待收盘后由日复盘任务更新"
+  "holding_review": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "prev_close": 76.70,
+      "close": 75.11,
+      "change_pct": -2.07,
+      "pnl_change": -1590,
+      "cumulative_pnl_pct": 6.80,
+      "stop_loss": 74.91,
+      "distance_to_stop_pct": 0.27,
+      "comment": "⚠️极度危险！收盘75.11距止损74.91仅0.20元。主力连续净流出(3日累计-2亿)，缩量阴跌形态。明日若低开破74.9立即止损。"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "prev_close": 62.81,
+      "close": 65.12,
+      "change_pct": 3.68,
+      "pnl_change": 1936,
+      "cumulative_pnl_pct": 6.63,
+      "stop_loss": 56.00,
+      "distance_to_stop_pct": 14.0,
+      "comment": "🟢强势！储能板块受光伏逆变器带动反弹，冲66阻力位。建议回落可减1/3锁利润。"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "prev_close": 281.04,
+      "close": 281.04,
+      "change_pct": -2.44,
+      "pnl_change": -98,
+      "cumulative_pnl_pct": -0.71,
+      "stop_loss": 266.00,
+      "distance_to_stop_pct": 5.4,
+      "comment": "🟡科创50大跌-1.63%拖累半导体设备，守278支撑。100股小仓位，暂持。"
+    }
+  ],
+  "seven_gates_snapshot": {
+    "rise_fall": {"value": 1615, "threshold": 2000, "status": "FAIL", "signal": "禁开新仓"},
+    "volume": {"value": 2.32, "threshold": 2.0, "status": "PASS"},
+    "consecutive_limit_down": {"value": 2, "threshold_max": 5, "status": "PASS"},
+    "northbound": {"value": -0.81, "threshold": -1.0, "status": "CONDITIONAL"},
+    "main_capital": {"value": -4.0, "threshold": -3.0, "status": "FAIL"},
+    "chinext": {"value": 0.34, "threshold": -1.0, "status": "PASS"},
+    "sentiment": {"value": "分化偏弱", "status": "CONDITIONAL"},
+    "overall": "偏空(1绿3黄4红→实际2PASS+3CONDITIONAL+2FAIL)",
+    "hard_trigger": "涨跌家数1615<2000 → 硬性禁止开新仓",
+    "note": "8/12盘前七道闸已触发禁开新仓"
+  },
+  "next_day_plan": "8/12关键变量：①浪潮信息止损监控(开盘若破74.9立即走)②鹏辉能源冲66阻力回落减仓③今晚20:30美国7月CPI数据公布，直接决定8/13方向④大盘涨跌家数1615<2000，禁止开新仓",
+  "data_source": "主Agent手动补生成(因8/11晚23:00任务首次执行被推至8/12)",
+  "generated_at": "2026-08-12T10:10:00+08:00"
 }
