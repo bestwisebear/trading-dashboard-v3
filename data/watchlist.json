@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-12T08:05:00+08:00",
+    "last_updated": "2026-08-12T08:25:00+08:00",
     "data_as_of": "2026-08-11 收盘"
   },
   "watchlist": [
@@ -85,7 +85,7 @@
       "status": "tracking",
       "sector": "光模块",
       "today_close": 886.96,
-      "today_change_pct": 2.59,
+      "today_change_pct": -1.2,
       "tags": [
         "光模块龙头"
       ],
@@ -167,13 +167,14 @@
           122.0
         ]
       },
-      "status": "history",
-      "sector": "电子元器件",
+      "status": "tracking",
+      "sector": "电子元器件/MLCC",
       "today_close": 130.05,
       "today_change_pct": 2.48,
       "tags": [
-        "电子元器件",
-        "公司回购中"
+        "MLCC",
+        "公司回购中",
+        "8/11+2.48% MLCC板块+4%领涨"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-11T15:00:00+08:00"
@@ -216,7 +217,8 @@
       "today_close": 67.85,
       "today_change_pct": 0.25,
       "tags": [
-        "IDC"
+        "IDC",
+        "阿里云AIDC利好"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-11T15:00:00+08:00"
@@ -237,7 +239,9 @@
       "today_close": 281.04,
       "today_change_pct": -2.44,
       "tags": [
-        "半导体设备"
+        "半导体设备",
+        "已持仓",
+        "板块逆势+1.5%"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-11T15:00:00+08:00"
@@ -258,7 +262,8 @@
       "today_close": 103.8,
       "today_change_pct": 0.12,
       "tags": [
-        "激光"
+        "激光",
+        "AI算力+激光设备"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-11T15:00:00+08:00"
@@ -280,7 +285,8 @@
       "today_change_pct": 4.26,
       "tags": [
         "PCB",
-        "强势"
+        "强势",
+        "8/11+4.26%领涨"
       ],
       "added_date": "2026-08-03",
       "price_updated_at": "2026-08-11T15:00:00+08:00"
@@ -329,15 +335,31 @@
     }
   ],
   "summary": {
-    "avg_change_pct": 0.48,
-    "up_count": 9,
-    "down_count": 6,
+    "avg_change_pct": 0.32,
+    "up_count": 8,
+    "down_count": 7,
     "flat_count": 0,
     "top_gainer": "东山精密 +4.26%",
     "top_loser": "协创数据 -2.73%",
-    "total": 15
+    "total": 15,
+    "note": "8/11关注池15只中8只涨7只跌（板块分化），MLCC+PCB板块强势（东山精密+4.26%领涨），光通信/存储板块拖累（中际旭创-1.20%/协创数据-2.73%）。8/12 MLCC/PCB/半导体设备板块可能延续，存储/光通信板块仍承压"
   },
-  "oversold_scan": [],
+  "oversold_scan": [
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "change_20d": -18.5,
+      "today_change": -1.2,
+      "note": "光通信龙头20日跌-18.50%但未企稳，暂不进入关注池"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "change_20d": -12.3,
+      "today_change": 3.93,
+      "note": "光模块20日跌-12.30%但8/11+3.93%反弹，可关注企稳"
+    }
+  ],
   "transit_pool": [
     {
       "name": "长川科技",
@@ -350,50 +372,78 @@
         "trend": "conditional",
         "turnover": "pass",
         "momentum": "pass",
-        "sector": "conditional"
+        "sector": "pass"
       },
       "key_price": {
-        "support": 286,
+        "support": 278,
         "buy_range": [
-          286,
-          294.58
+          278,
+          286
         ],
-        "stop_loss": 277.42
+        "stop_loss": 266
       },
       "sector": "半导体设备",
-      "change_pct": 1.72,
-      "reason": "7道闸5.5/7通过；回踩MA20(+2.0%)",
-      "rsi6": 65.3,
+      "change_pct": -2.44,
+      "reason": "已持仓。8/11板块逆势+1.5%（半导体设备ETF），公司基本面H1净利+110-134%催化，止损266坚守",
+      "rsi6": 60.5,
       "ma20": 282.55,
-      "price": 288.08
+      "price": 281.04
     },
     {
-      "name": "通富微电",
-      "code": "002156",
-      "score": 5.0,
+      "name": "东山精密",
+      "code": "002384",
+      "score": 5.5,
       "gates": {
-        "market_breadth": "pass",
+        "market_breadth": "fail",
         "pe_check": "pass",
-        "capital_flow": "conditional",
-        "trend": "fail",
+        "capital_flow": "pass",
+        "trend": "pass",
         "turnover": "pass",
         "momentum": "pass",
-        "sector": "conditional"
+        "sector": "pass"
       },
       "key_price": {
-        "support": 62.1,
+        "support": 184,
         "buy_range": [
-          62.1,
-          63.96
+          184,
+          190
         ],
-        "stop_loss": 60.24
+        "stop_loss": 178
       },
-      "sector": "半导体封测",
-      "change_pct": -2.35,
-      "reason": "7道闸5.0/7通过；今日回调-2.35%",
-      "rsi6": 65.9,
-      "ma20": 66.44,
-      "price": 63.2
+      "sector": "PCB/FPC",
+      "change_pct": 4.26,
+      "reason": "PCB板块8/11+6.21%大涨，AI服务器PCB升级催化，结构性强。但涨跌家数<2000闸触发，新仓暂停评估",
+      "rsi6": 72.3,
+      "ma20": 187.2,
+      "price": 193.87
+    },
+    {
+      "name": "三环集团",
+      "code": "300408",
+      "score": 5.0,
+      "gates": {
+        "market_breadth": "fail",
+        "pe_check": "pass",
+        "capital_flow": "pass",
+        "trend": "pass",
+        "turnover": "pass",
+        "momentum": "pass",
+        "sector": "pass"
+      },
+      "key_price": {
+        "support": 120,
+        "buy_range": [
+          120,
+          128
+        ],
+        "stop_loss": 116.4
+      },
+      "sector": "MLCC/电子元器件",
+      "change_pct": 2.48,
+      "reason": "MLCC板块8/11+4%领涨，三环集团+2.48%。AI服务器MLCC供需紧张+大厂涨价30%催化。但涨跌家数<2000闸触发，新仓暂停评估",
+      "rsi6": 68.5,
+      "ma20": 126.8,
+      "price": 130.05
     }
   ]
 }
