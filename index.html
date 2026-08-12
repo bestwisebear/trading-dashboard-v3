@@ -1231,7 +1231,7 @@ function OverviewPage({
     data: bHist,
     maxVal: maxBHist
   })), (() => {
-    const msgs = newsImpact.messages || [];
+    const msgs = (newsImpact.items || []).map(m => ({...m, type: m.type || (m.impact === "positive" ? "利好" : m.impact === "negative" ? "利空" : "中性")}));
     if (msgs.length === 0) return null;
     const goodNews = msgs.filter(m => m.type === '利好');
     const badNews = msgs.filter(m => m.type === '利空');
