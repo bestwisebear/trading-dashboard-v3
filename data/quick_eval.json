@@ -1,54 +1,76 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T08:25:00+08:00",
-    "data_as_of": "2026-08-11 收盘",
-    "note": "主Agent手动补生成(8/11晚23:00任务首次执行被推至8/12)",
+    "last_updated": "2026-08-13T20:45:00+08:00",
+    "data_as_of": "2026-08-13 收盘",
+    "note": "晚间复盘七道闸预计算",
     "market_breadth": {
-      "rise": 1615,
-      "fall": 3777,
+      "rise": 1143,
+      "fall": 4317,
       "pass": false
     },
-    "market_comment": "沪指3934.09-0.82%终结五连阳，成交2.32万亿缩量2021亿。涨跌1615:3777涨停60跌停2。沪弱创强分化：有色金属暴跌(贵金属-5%)，医药CRO接棒(百花6连板)，MLCC/机器人逆势走强。主力净流出400亿，北向净流出81亿。",
-    "session": "premarket"
+    "market_comment": "沪指3926.96-0.50%，成交2.55万亿放量3985亿。涨跌1143:4317赚钱效应极差。医药/创新药全天最强，算力租赁延续。科技板块午后集体杀跌（存储/先进封装），贵金属/有色重挫。放量大跌分歧出清。",
+    "session": "evening"
   },
   "market_signal": {
     "overall": "偏空",
     "new_position_allowed": false,
-    "reason": "涨跌家数1615<2000，硬性触发禁开新仓",
+    "reason": "涨跌家数1143<2000，硬性触发禁开新仓",
     "key_watch": [
-      "浪潮信息止损线",
-      "鹏辉能源66阻力",
-      "今晚美国CPI数据"
+      "中芯国际Q2超预期→半导体次日修复力度",
+      "美股AI飙升→光通信/算力反弹",
+      "鹏辉能源64支撑/67阻力",
+      "长川科技278支撑"
     ]
   },
   "stocks": {
-    "sz000977": {
-      "name": "浪潮信息",
-      "price": 75.11,
-      "change_pct": -2.07,
-      "score": 3.5,
+    "sz300438": {
+      "name": "鹏辉能源",
+      "price": 64.92,
+      "change_pct": -2.14,
+      "score": 5.5,
       "status": "conditional",
       "gates": {
         "market_breadth": "fail",
         "pe_check": "pass",
+        "capital_flow": "fail",
+        "trend": "pass",
+        "turnover": "pass",
+        "momentum": "conditional",
+        "sector": "conditional"
+      },
+      "sector": "电池/储能",
+      "support": 64.0,
+      "resistance": 67.2,
+      "stop_loss": 57.0,
+      "alert": "🟡冲高回落-2.14%，守64支撑。碳酸锂供需偏紧张值修复。触发分批锁利条件需涨>5%或接近67.2阻力"
+    },
+    "sz300604": {
+      "name": "长川科技",
+      "price": 281.69,
+      "change_pct": -1.89,
+      "score": 4.0,
+      "status": "conditional",
+      "gates": {
+        "market_breadth": "fail",
+        "pe_check": "conditional",
         "capital_flow": "fail",
         "trend": "conditional",
         "turnover": "pass",
         "momentum": "fail",
         "sector": "fail"
       },
-      "sector": "AI服务器/算力",
-      "support": 75.0,
-      "resistance": 80.0,
-      "stop_loss": 74.91,
-      "alert": "⚠️距止损仅0.27%，3日主力净流出2亿，明日破74.9止损"
+      "sector": "半导体设备/测试",
+      "support": 278.0,
+      "resistance": 301.0,
+      "stop_loss": 266.0,
+      "alert": "🟡高开低走-1.89%，半导体午后杀跌。中芯Q2超预期利好次日，关注278支撑能否守住"
     },
-    "sz300438": {
-      "name": "鹏辉能源",
-      "price": 65.12,
-      "change_pct": 3.68,
-      "score": 7.0,
-      "status": "pass",
+    "sz300394": {
+      "name": "天孚通信",
+      "price": 257.16,
+      "change_pct": 7.13,
+      "score": 6.0,
+      "status": "conditional",
       "gates": {
         "market_breadth": "fail",
         "pe_check": "pass",
@@ -58,32 +80,116 @@
         "momentum": "pass",
         "sector": "pass"
       },
-      "sector": "电池/储能",
-      "support": 57.0,
-      "resistance": 66.0,
-      "stop_loss": 56.0,
-      "alert": "🟢冲66阻力，回落减1/3锁利润"
+      "sector": "光模块",
+      "support": 217.0,
+      "resistance": 260.0,
+      "stop_loss": 210.0,
+      "alert": "🔴涨停+7.13%！美股光通信飙升→次日可能高开。距阻力260仅1%需警惕冲高回落"
     },
-    "sz300604": {
-      "name": "长川科技",
-      "price": 281.04,
-      "change_pct": -2.44,
+    "sz300857": {
+      "name": "协创数据",
+      "price": 256.0,
+      "change_pct": 2.48,
       "score": 5.0,
       "status": "conditional",
       "gates": {
         "market_breadth": "fail",
-        "pe_check": "conditional",
+        "pe_check": "pass",
+        "capital_flow": "pass",
+        "trend": "pass",
+        "turnover": "pass",
+        "momentum": "conditional",
+        "sector": "pass"
+      },
+      "sector": "AI服务器",
+      "support": 243.0,
+      "resistance": 260.0,
+      "stop_loss": 236.0,
+      "alert": "🟢AI服务器强势+2.48%。支撑243，美股算力飙升利好次日"
+    },
+    "sz002156": {
+      "name": "通富微电",
+      "price": 62.22,
+      "change_pct": -1.02,
+      "score": 4.5,
+      "status": "conditional",
+      "gates": {
+        "market_breadth": "fail",
+        "pe_check": "pass",
+        "capital_flow": "fail",
+        "trend": "pass",
+        "turnover": "pass",
+        "momentum": "conditional",
+        "sector": "fail"
+      },
+      "sector": "半导体封测",
+      "support": 56.7,
+      "resistance": 62.1,
+      "stop_loss": 55.0,
+      "alert": "🟡微跌-1.02%收62.22突破阻力位。中芯利好或传导封测链"
+    },
+    "sz300308": {
+      "name": "中际旭创",
+      "price": 921.04,
+      "change_pct": 0.0,
+      "score": 5.5,
+      "status": "conditional",
+      "gates": {
+        "market_breadth": "fail",
+        "pe_check": "pass",
         "capital_flow": "conditional",
+        "trend": "pass",
+        "turnover": "pass",
+        "momentum": "conditional",
+        "sector": "pass"
+      },
+      "sector": "光模块龙头",
+      "support": 850.0,
+      "resistance": 950.0,
+      "stop_loss": 825.0,
+      "alert": "🟡平收921，成交277亿居首。美股光通信飙升利好次日"
+    },
+    "sz300502": {
+      "name": "新易盛",
+      "price": 429.9,
+      "change_pct": 0.4,
+      "score": 5.0,
+      "status": "conditional",
+      "gates": {
+        "market_breadth": "fail",
+        "pe_check": "pass",
+        "capital_flow": "conditional",
+        "trend": "pass",
+        "turnover": "pass",
+        "momentum": "conditional",
+        "sector": "pass"
+      },
+      "sector": "光模块",
+      "support": 398.0,
+      "resistance": 450.0,
+      "stop_loss": 386.0,
+      "alert": "🟡微涨0.4%收429.9。美股光通信利好次日"
+    },
+    "sz300223": {
+      "name": "北京君正",
+      "price": 137.48,
+      "change_pct": -2.2,
+      "score": 3.5,
+      "status": "conditional",
+      "gates": {
+        "market_breadth": "fail",
+        "pe_check": "conditional",
+        "capital_flow": "fail",
         "trend": "conditional",
         "turnover": "pass",
         "momentum": "fail",
         "sector": "fail"
       },
-      "sector": "半导体设备",
-      "support": 278.0,
-      "resistance": 286.0,
-      "stop_loss": 266.0,
-      "alert": "🟡科创50跌1.63%拖累，守278支撑"
+      "sector": "存储芯片",
+      "support": 131.0,
+      "resistance": 145.0,
+      "stop_loss": 127.0,
+      "alert": "🔴存储链午后杀跌-2.2%，SK海力士美股+9%次日或修复"
     }
   }
 }
