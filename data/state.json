@@ -1,7 +1,8 @@
 {
   "meta": {
-    "date": "2026-08-12",
-    "last_updated": "2026-08-12T16:18:00+08:00"
+    "date": "2026-08-13",
+    "last_updated": "2026-08-13T08:09:00+08:00",
+    "session": "premarket"
   },
   "cumulative": {
     "total_pnl_amount": 12846.67,
@@ -26,7 +27,7 @@
   },
   "current": {
     "total_assets": 206346.67,
-    "prev_close_assets": 204084.52,
+    "prev_close_assets": 206346.67,
     "available_cash": 219.87,
     "initial_capital": 193500,
     "position_count": 3,
@@ -35,14 +36,14 @@
     "monthly_return_rate": 6.64
   },
   "today_so_far": {
-    "date": "2026-08-12",
-    "net_today": 2262.15,
-    "trade_count": 9,
-    "violation_count": 1,
-    "session": "close",
-    "net_today_ref": "8/12收盘实盘",
-    "today_return": 2262.15,
-    "today_return_rate": 1.11
+    "date": "2026-08-13",
+    "net_today": 0,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "premarket",
+    "net_today_ref": "盘前尚未开盘",
+    "today_return": 0,
+    "today_return_rate": 0
   },
   "positions": [
     {
