@@ -1,13 +1,66 @@
 {
   "meta": {
-    "date": "2026-08-12",
-    "last_updated": "2026-08-12T11:45:00+08:00"
+    "date": "2026-08-13",
+    "last_updated": "2026-08-13T15:20:00+08:00"
   },
-  "trades": [],
+  "trades": [
+    {
+      "seq": 18,
+      "date": "2026-08-13",
+      "time": "10:00",
+      "code": "159599",
+      "name": "半导体设备ETF",
+      "action": "sell",
+      "quantity": 47100,
+      "price": 1.194,
+      "realized_pnl": 141,
+      "violation": "none",
+      "notes": "清仓ETF，收回56237"
+    },
+    {
+      "seq": 19,
+      "date": "2026-08-13",
+      "time": "13:30",
+      "code": "002015",
+      "name": "协鑫能科",
+      "action": "sell",
+      "quantity": 2000,
+      "price": 16.15,
+      "realized_pnl": 1586,
+      "violation": "none",
+      "notes": "清仓算力纸面股，收回32300，净利+5.19%"
+    },
+    {
+      "seq": 20,
+      "date": "2026-08-13",
+      "time": "14:10",
+      "code": "300604",
+      "name": "长川科技",
+      "action": "buy",
+      "quantity": 200,
+      "price": 289.65,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "半导体设备测试龙头，关注池内，支出57930"
+    },
+    {
+      "seq": 21,
+      "date": "2026-08-13",
+      "time": "14:56",
+      "code": "300604",
+      "name": "长川科技",
+      "action": "buy",
+      "quantity": 100,
+      "price": 283.0,
+      "realized_pnl": 0,
+      "violation": "after_window",
+      "notes": "午后加仓，超出14:30操作窗口，支出28300"
+    }
+  ],
   "summary": {
-    "total_trades": 0,
-    "buy_count": 0,
-    "sell_count": 0,
-    "realized_pnl": 0
+    "total_trades": 4,
+    "buy_count": 2,
+    "sell_count": 2,
+    "realized_pnl": 1727
   }
 }
