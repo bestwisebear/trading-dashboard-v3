@@ -1,8 +1,9 @@
 {
   "meta": {
-    "date": "2026-08-12",
-    "last_updated": "2026-08-12T16:33:00+08:00",
-    "source": "web_search_close"
+    "date": "2026-08-13",
+    "last_updated": "2026-08-13T08:25:00+08:00",
+    "session": "premarket",
+    "source": "web_search_premarket_0813"
   },
   "items": [
     {
@@ -133,8 +134,54 @@
       ],
       "source": "腾讯行情",
       "impact_level": 2
+    },
+    {
+      "id": 12,
+      "time": "2026-08-13 07:30",
+      "title": "小米REDMI K100 Pro搭载pTSF显示技术，国产OLED材料加速替代日韩",
+      "category": "sector",
+      "impact": "positive",
+      "detail": "8/12小米正式发布REDMI K100 Pro，搭载中国团队首创的pTSF底层显示技术量产，绿色子像素发光效率+20%/整机功耗-10%。维信诺(002387)/万润股份(002643)等相关概念受益",
+      "affected_stocks": [],
+      "source": "上证报/证券时报",
+      "impact_level": 2
+    },
+    {
+      "id": 13,
+      "time": "2026-08-13 07:00",
+      "title": "阿里云灵骏真武M890超节点正式上线，国产算力规模化加速",
+      "category": "sector",
+      "impact": "positive",
+      "detail": "8/12阿里云灵骏真武M890超节点实例正式上线，乌兰察布开售，国内首个运行超2万亿参数大模型的超节点，Kimi K3和Qwen3.8 Max已通过该实例对外服务。相关概念股：华工科技(000988)/烽火通信(600498)",
+      "affected_stocks": [
+        "华工科技"
+      ],
+      "source": "上证报",
+      "impact_level": 3
+    },
+    {
+      "id": 14,
+      "time": "2026-08-13 07:00",
+      "title": "微软Maia 300加速扩产，CSP自研ASIC进入放量周期",
+      "category": "sector",
+      "impact": "positive",
+      "detail": "据媒体报道，Microsoft计划明年大幅增加下一代自研AI芯片产量，今年秋季公开发布Maia 300。AI算力由\"NVIDIA单线扩张\"迈向\"GPU+自研ASIC多点开花\"，光互联+PCB价值量持续提升",
+      "affected_stocks": [],
+      "source": "中泰证券",
+      "impact_level": 3
+    },
+    {
+      "id": 15,
+      "time": "2026-08-13 08:00",
+      "title": "PCB微钻专家交流：Rubin逐步放量，量价齐升加速",
+      "category": "sector",
+      "impact": "positive",
+      "detail": "PCB微钻专家反馈，Rubin逐步开始放量，行业有望看到量价齐升加速。映射到中微公司/北方华创/沪电股份等",
+      "affected_stocks": [],
+      "source": "产业调研",
+      "impact_level": 2
     }
   ],
-  "overall_sentiment": "中性偏多",
-  "sentiment_summary": "消息面多空交织，5条利好 vs 2条利空，结构性机会为主。"
+  "overall_sentiment": "偏多",
+  "sentiment_summary": "8/13盘前消息面整体偏多：4条新增利好（小米pTSF国产化/阿里云超节点/微软Maia 300/PCB微钻专家反馈）。叠加8/12美股AI基建股暴涨（CoreWeave+20%/SMCI+15%/Lumentum+14%），光通信/CPO/PCB/存储/AI算力方向情绪溢价仍有空间。但需警惕高开兑现压力（昨日缩量-7.3%），关注开盘量能是否回到2.3万亿上方"
 }
