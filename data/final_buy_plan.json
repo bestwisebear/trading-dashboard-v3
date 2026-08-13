@@ -1,153 +1,104 @@
 {
   "meta": {
-    "generated_at": "2026-08-12T13:17:00+08:00",
-    "session": "midday_final",
-    "data_as_of": "午后开盘13:06-13:17区间",
-    "conclusion": "今日取消新仓"
+    "date": "2026-08-13",
+    "last_updated": "2026-08-13T13:16:00+08:00",
+    "session": "noon_confirm",
+    "data_basis": "8/13 ~13:10实时行情"
   },
-  "gate_check": {
-    "gate_1_rise_fall_ge_2000": {
-      "status": "PASS",
-      "value": "上涨3500-3694只（13:06数据近3500，午间3694）",
-      "threshold": 2000,
-      "comment": "涨跌家数大幅改善，较午间进一步走强"
+  "market_snapshot": {
+    "sh_index": {
+      "price": 3966,
+      "change_pct": 0.49
     },
-    "gate_2_sector_ratio": {
-      "status": "PASS",
-      "value": "科技方向全面回暖：光模块CPO爆发/半导体设备走强/储能反弹",
-      "comment": "板块涨跌比明显>1:1，电子+65亿/通信+57亿主力净流入，科技为今日主线"
+    "sz_index": {
+      "price": 14543,
+      "change_pct": 0.89
     },
-    "gate_3_candidate_support": {
-      "status": "N/A",
-      "comment": "无候选通过价格闸门和资金约束，此项不执行"
+    "cyb_index": {
+      "price": 3665,
+      "change_pct": 1.76
     },
-    "gate_4_cash_constraint": {
-      "status": "FAIL",
-      "available_cash": 10566,
-      "cheapest_one_lot": {
-        "name": "三环集团300408",
-        "price": 127.85,
-        "one_lot_cost": 12785
-      },
-      "shortfall": 2219,
-      "comment": "可用现金10566元，最便宜候选一手需12785元，资金缺口2219元。且三环集团遭主力净流出6.77亿，基本面不支撑"
-    },
-    "overall": "FAIL - 资金闸门未通过"
+    "half_day_turnover_comment": "截至午盘两市合计约1.01万亿，预估全天2.4-2.6万亿",
+    "rise_count_est": "~2287（主板）",
+    "market_env": "指数偏多但个股分化，涨跌比偏弱",
+    "gates_check": {
+      "rise_count": "borderline（主板2287>2000，但含创业板/科创板约3000+）",
+      "turnover": "pass（预估2.4-2.6万亿>2万亿）",
+      "sector_breadth": "pass（CPO/半导体/算力硬件全线真实强）"
+    }
   },
-  "candidates_evaluation": [
+  "account_constraint": {
+    "available_cash": 219.87,
+    "position_ratio": 99.9,
+    "current_positions": 3,
+    "max_positions": 4,
+    "verdict": "⛔ 可用现金仅219.87元，无法开任何新仓。即使市场条件和个股信号全部通过，也无资金执行"
+  },
+  "candidates": [],
+  "rejected_candidates": [
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "source": "关注池/午间强势",
+      "realtime_price": 247.0,
+      "prev_close": 222.0,
+      "change_pct": 11.3,
+      "buy_range": [
+        190,
+        214
+      ],
+      "absolute_max_buy": 214,
+      "support": 216.9,
+      "stop_loss": 210,
+      "sector_strength": "真实强（CPO龙头+主力净买入超15亿+联想AI收入催化）",
+      "reject_reason": "实时价247>>绝对最高买入价214，当日涨幅11.3%+涨停级别，严禁追高"
+    },
     {
       "code": "002384",
       "name": "东山精密",
-      "source": "11:00备选名单",
-      "realtime_price": 200.0,
-      "price_time": "2026-08-12T12:29",
-      "prev_close": 185.94,
-      "change_pct": 7.56,
+      "source": "关注池/中转池",
+      "realtime_price": 210.3,
+      "prev_close": 200.0,
+      "change_pct": 5.15,
       "buy_range": [
         184,
-        190
+        205
       ],
-      "absolute_max_buy": 190,
-      "support": 184,
-      "stop_loss": 178,
-      "resistance": 200,
-      "one_lot_cost": 20000,
-      "verdict": "❌ 剔除：实时价200.0远超绝对最高买入价190（+5.3%），当日涨幅7.56%属过大，防追高规则剔除。即使资金够也不允许",
-      "elimination_rules": [
-        "防追高：实时价超过绝对最高买入价即剔除",
-        "当日涨幅过大"
-      ]
-    },
-    {
-      "code": "300502",
-      "name": "新易盛",
-      "source": "11:00备选名单",
-      "realtime_price": 435.9,
-      "price_time": "2026-08-12T12:29",
-      "prev_close": 415.3,
-      "change_pct": 4.96,
-      "buy_range": [
-        400,
-        442
-      ],
-      "absolute_max_buy": 442,
-      "support": 398,
-      "stop_loss": 388,
-      "resistance": 476,
-      "one_lot_cost": 43590,
-      "verdict": "❌ 剔除：① 一手需43590元远超可用现金10566元 ② 涨幅4.96%盘中高位，非回踩买点",
-      "elimination_rules": [
-        "资金不足：一手43590元 >> 可用10566元",
-        "高位追涨风险"
-      ]
-    },
-    {
-      "code": "300408",
-      "name": "三环集团",
-      "source": "11:00备选名单",
-      "realtime_price": 127.85,
-      "price_time": "2026-08-12T12:29",
-      "prev_close": 130.05,
-      "change_pct": -1.69,
-      "buy_range": [
-        110,
-        122
-      ],
-      "absolute_max_buy": 128,
-      "support": 120,
-      "stop_loss": 116.4,
-      "resistance": 137,
-      "one_lot_cost": 12785,
-      "sector_strength": "MLCC板块回调，主力资金净流出6.77亿（全市场前列），洁美科技-3~5%、火炬电子-2.77%",
-      "verdict": "❌ 剔除：① 可用现金10566元不足以买入一手12785元（缺口2219元）② MLCC板块回调+主力净流出6.77亿，不满足板块延续强势条件",
-      "elimination_rules": [
-        "资金不足：一手12785元 > 可用10566元",
-        "板块回调+主力出逃"
-      ]
+      "absolute_max_buy": 205,
+      "support": 195,
+      "stop_loss": 190,
+      "sector_strength": "真实强（PCB板块延续+算力硬件午后拉升）",
+      "reject_reason": "实时价210.3>绝对最高买入价205，涨幅5.15%过大，追高剔除"
     }
   ],
-  "holding_alerts": {
-    "000977_浪潮信息": {
-      "alert_level": "🟡 关注",
-      "realtime_price": 75.76,
-      "price_time": "2026-08-12T13:03",
-      "stop_loss": 74.91,
-      "above_stop_loss": true,
-      "buffer_pct": 1.13,
-      "intraday_range": "74.06-75.98",
-      "comment": "午后回升至75.76站稳止损上方，盘中最低74.06曾跌破止损后收回。上海十五五+英伟达5000亿+H1业绩预增226%-288%利好支撑。注意：止损价74.91，距当前仅1.13%缓冲。今晚CPI数据前保持警惕"
-    },
+  "holding_management": {
     "300438_鹏辉能源": {
-      "alert_level": "🟢 偏强→触及阻力",
-      "realtime_price": 66.73,
-      "price_time": "2026-08-12T12:29",
-      "stop_loss": 56.0,
-      "resistance": 66.0,
-      "above_resistance": true,
-      "comment": "午间已突破66阻力位至66.73，招商证券研报给予目标价108.15元。户储电芯全球第一+H1利润增超1000%+满产满销。适用逆势持仓管理规则：涨>3%+放量+板块涨+距阻力已突破→如继续强势可持仓观察；但冲66后振幅6.65%大，注意冲高回落减仓信号"
+      "current_price": 66.38,
+      "cost": 62.332,
+      "pnl_pct": 6.49,
+      "signal": "窄幅震荡+0.06%，主力小幅流出1579万但特大单流入499万。支撑57→止损56。新产线年内投产+碳酸锂涨价利好。建议：持有不动，关注65支撑（前阻力变支撑）",
+      "action": "持有"
     },
-    "300604_长川科技": {
-      "alert_level": "🟢 正常",
-      "realtime_price": 288.04,
-      "price_time": "2026-08-12T12:29",
-      "stop_loss": 266.0,
-      "comment": "半导体设备板块走强+SK海力士扩产利好。已进入SK海力士验证供货阶段。+2.49%表现稳健，主力净流入1.49亿"
+    "002015_协鑫能科": {
+      "current_price": 15.93,
+      "cost": 15.353,
+      "pnl_pct": 3.76,
+      "signal": "强势+3.58%，AI算力布局催化+电力板块走强。支撑15→止损14.50。今日振幅5.01%波动较大。建议：持有观察，若冲高回落缩量可考虑减仓1/3锁利",
+      "action": "持有（关注冲高回落信号）"
+    },
+    "159558_半导体ETF": {
+      "current_price": 1.2,
+      "cost": 1.191,
+      "pnl_pct": 0.76,
+      "signal": "涨+1%，连续5日资金净流入14.4亿元。存储涨价逻辑+长江存储份额突破。支撑1.15→止损。建议：持有，半导体板块整体偏强",
+      "action": "持有"
     }
   },
-  "final_decision": {
-    "action": "今日取消新仓",
-    "reasons": [
-      "资金闸门FAIL：可用现金10566元，不足以买入任何候选一手（最便宜三环集团需12785元）",
-      "东山精密200.0远超绝对最高买入价190，新易盛435.9一手需43590元",
-      "三环集团虽价格在区间内，但MLCC板块回调+主力净流出6.77亿，且资金不足",
-      "规则约束：仅从11:00备选名单中筛选，禁止临时增加新股票"
-    ],
-    "execution_plan": "无新仓操作指令。13:30-14:30无需挂单",
-    "risk_reminder": [
-      "今晚20:30美国CPI数据为本周最大变量，持仓注意控制风险",
-      "浪潮信息止损74.91为铁律，跌破必执行",
-      "鹏辉能源已突破66阻力位，适用逆势持仓管理判断强弱",
-      "仓位94.4%偏高，无新仓空间"
-    ]
-  }
+  "conclusion": "今日取消新仓。原因：①可用现金仅219.87元/仓位99.9%，完全无资金开新仓；②关注池/中转池候选标的上午均已大涨5-11%，全部超过绝对最高买入价，防追高规则剔除。下午重点放在持仓管理：鹏辉关注65支撑、协鑫能科关注冲高回落减仓信号、半导体ETF持有。",
+  "afternoon_focus": [
+    "鹏辉能源：65支撑是否有效，跌破则减半仓",
+    "协鑫能科：冲高回落+缩量→考虑13:30后减1/3锁利",
+    "半导体ETF：持有，关注1.15止损位",
+    "大盘：午后算力硬件延续强势，但注意高开低走风险"
+  ]
 }
