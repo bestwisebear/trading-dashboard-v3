@@ -38,7 +38,8 @@
       "quantity": 1800,
       "cost_price": 62.332,
       "stop_loss": 57.0,
-      "buy_date": "2026-08-06"
+      "buy_date": "2026-08-06",
+      "market_value": 116856.0
     },
     {
       "code": "300604",
@@ -46,7 +47,8 @@
       "quantity": 300,
       "cost_price": 287.86,
       "stop_loss": 266.0,
-      "buy_date": "2026-08-13"
+      "buy_date": "2026-08-13",
+      "market_value": 84507.0
     }
   ],
   "validation": {
