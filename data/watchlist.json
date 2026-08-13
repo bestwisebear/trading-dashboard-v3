@@ -1,9 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T08:25:00+08:00",
-    "data_as_of": "2026-08-12 收盘 + 8/12美股隔夜",
-    "version": "3.0",
-    "session": "premarket"
+    "last_updated": "2026-08-12T11:45:00+08:00",
+    "data_as_of": "2026-08-12 午间"
   },
   "watchlist": [
     {
@@ -19,16 +17,14 @@
       },
       "status": "tracking",
       "sector": "AI服务器",
-      "today_close": 249.8,
-      "today_change_pct": -1.66,
+      "today_close": 254.01,
+      "today_change_pct": 3.58,
       "tags": [
         "AI服务器",
-        "强势",
-        "美股AI催化"
+        "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收249.8在压力位251.9附近。隔夜美股CoreWeave+20%催化AI服务器方向，关注高开后能否突破251.9；如高开1%+，等回踩243-245确认再考虑介入（不追高）"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "002156",
@@ -43,16 +39,15 @@
       },
       "status": "tracking",
       "sector": "半导体封测",
-      "today_close": 62.86,
-      "today_change_pct": -1.21,
+      "today_close": 63.63,
+      "today_change_pct": 2.53,
       "tags": [
         "封测",
         "先进封装",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收62.86已突破阻力62.1。封测方向受AI芯片需求催化，8/13关注站稳62.1后能否冲击65；如回调守60不破可继续持有/加仓"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300502",
@@ -67,16 +62,14 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 428.2,
-      "today_change_pct": -1.77,
+      "today_close": 435.9,
+      "today_change_pct": 4.96,
       "tags": [
         "光模块",
-        "强势",
-        "美股AI催化"
+        "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收428.2冲高回落。隔夜美股Lumentum+14%催化光模块，8/13关注能否站上430冲击440；如高开+3%以上警惕兑现压力（昨日缩量+午后涨幅收窄）"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300308",
@@ -91,15 +84,13 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 921.0,
-      "today_change_pct": -0.58,
+      "today_close": 926.41,
+      "today_change_pct": 4.45,
       "tags": [
-        "光模块龙头",
-        "8/12主力净流入26亿全场首位"
+        "光模块龙头"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收921.0突破阻力902，主力净流入26亿全场首位。隔夜CoreWeave+20%+Lumentum+14%双重催化，8/13关注能否突破921冲击940-950区间。**关注池优先级第1**"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300394",
@@ -114,17 +105,15 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 240.05,
-      "today_change_pct": -2.77,
+      "today_close": 246.9,
+      "today_change_pct": 10.97,
       "tags": [
         "光模块",
         "涨停",
-        "强势",
-        "美股AI催化"
+        "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收240.05（涨停+10.97%后回落到+7.89%）。已突破阻力228进入超买区，**严禁追高**。8/13等回踩216.9-228区间再评估介入机会"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300223",
@@ -139,15 +128,13 @@
       },
       "status": "tracking",
       "sector": "存储芯片",
-      "today_close": 140.57,
-      "today_change_pct": -1.55,
+      "today_close": 142.79,
+      "today_change_pct": 3.58,
       "tags": [
-        "存储",
-        "强势"
+        "存储"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收140.57接近阻力141。存储链8/12主力净流入54.89亿，8/13关注突破141后冲击145；如守住135不破可继续持有"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "301308",
@@ -162,15 +149,13 @@
       },
       "status": "tracking",
       "sector": "存储芯片",
-      "today_close": 414.3,
-      "today_change_pct": -1.12,
+      "today_close": 419.0,
+      "today_change_pct": 0.36,
       "tags": [
-        "存储",
-        "强势"
+        "存储"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收414.3在阻力442下方。长江存储Q2份额首次进入前三（14%），存储链8/13有望延续强势。关注突破420后冲击440阻力"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300408",
@@ -185,39 +170,14 @@
       },
       "status": "tracking",
       "sector": "电子元器件/MLCC",
-      "today_close": 127.97,
-      "today_change_pct": 0.09,
+      "today_close": 127.85,
+      "today_change_pct": -1.69,
       "tags": [
         "MLCC",
         "回调"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收127.97微涨0.09%，MLCC板块连续两日承压。8/13关注能否守住120支撑；如破位118观望，等回踩110-115区间再评估"
-    },
-    {
-      "code": "300438",
-      "name": "鹏辉能源",
-      "key_price": {
-        "support": 57.0,
-        "resistance": 66.0,
-        "buy_range": [
-          48.0,
-          53.0
-        ]
-      },
-      "status": "holding",
-      "sector": "电池/储能",
-      "today_close": 66.34,
-      "today_change_pct": 1.87,
-      "tags": [
-        "电池/储能",
-        "已持仓",
-        "突破阻力66"
-      ],
-      "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收66.34**已突破阻力66**（盘中最高68.73）。当前持仓1800股@62.332，浮盈+6.43%。8/13关注：守66不破继续持有；如冲高至70+且缩量可减1/3锁利润（仅13:30后+距阻力<1%时）"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300395",
@@ -232,15 +192,14 @@
       },
       "status": "tracking",
       "sector": "半导体材料",
-      "today_close": 94.99,
-      "today_change_pct": -2.7,
+      "today_close": 97.63,
+      "today_change_pct": 11.02,
       "tags": [
         "半导体材料",
         "涨停"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收94.99（涨停+11.02%后回落到+8%）。已突破阻力89.9进入超买区，**严禁追高**。8/13等回踩88-90区间再评估"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300442",
@@ -255,15 +214,13 @@
       },
       "status": "tracking",
       "sector": "IDC",
-      "today_close": 67.7,
-      "today_change_pct": -0.99,
+      "today_close": 68.38,
+      "today_change_pct": 0.78,
       "tags": [
-        "IDC",
-        "AI算力+数据中心"
+        "IDC"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收67.7在买入区间上沿附近。IDC方向受AI算力需求催化（与隔夜CoreWeave+20%同步），8/13关注突破67.2后冲击70-72"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300604",
@@ -276,17 +233,16 @@
           246.0
         ]
       },
-      "status": "tracking",
+      "status": "holding",
       "sector": "半导体设备",
-      "today_close": 287.11,
-      "today_change_pct": -0.32,
+      "today_close": 288.04,
+      "today_change_pct": 2.49,
       "tags": [
         "半导体设备",
-        "已清仓"
+        "已持仓"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收287.11，8/12已在287.60清仓。**已清仓离场**，8/13关注能否回踩278附近（与买回触发条件：站稳止损+5%且≥2日+缩量回踩不破前低）。当前不符合回补条件，继续观望"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "000988",
@@ -301,16 +257,14 @@
       },
       "status": "tracking",
       "sector": "激光设备",
-      "today_close": 106.32,
-      "today_change_pct": -0.77,
+      "today_close": 107.14,
+      "today_change_pct": 3.22,
       "tags": [
         "激光",
-        "AI算力+激光设备",
-        "阿里云超节点催化"
+        "AI算力+激光设备"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收106.32**已突破阻力105.8**。8/12新闻：阿里云灵骏真武M890超节点实例正式上线，华工科技为相关概念股。8/13关注站稳105.8后冲击110"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "002384",
@@ -325,16 +279,14 @@
       },
       "status": "tracking",
       "sector": "PCB/FPC",
-      "today_close": 200.19,
-      "today_change_pct": 0.09,
+      "today_close": 200.0,
+      "today_change_pct": 3.16,
       "tags": [
         "PCB",
-        "强势",
-        "突破200关口"
+        "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收200.19**已突破阻力200关口**。8/13关注站稳200后冲击210-215；如回调守195不破继续持有。**关注池优先级第2**"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "603026",
@@ -349,15 +301,13 @@
       },
       "status": "observing",
       "sector": "锂电材料",
-      "today_close": 66.94,
-      "today_change_pct": -1.28,
+      "today_close": 67.81,
+      "today_change_pct": 0.98,
       "tags": [
-        "观察",
-        "接近支撑66"
+        "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收66.94在支撑66附近。8/13关注能否守66企稳；如破位65观望"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     },
     {
       "code": "300769",
@@ -372,37 +322,24 @@
       },
       "status": "observing",
       "sector": "锂电材料",
-      "today_close": 47.27,
-      "today_change_pct": -0.94,
+      "today_close": 47.72,
+      "today_change_pct": 2.73,
       "tags": [
-        "观察",
-        "接近阻力48"
+        "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-12T16:18:00+08:00",
-      "premarket_note": "8/13盘前：8/12收47.27接近阻力48。8/13关注能否突破48；如冲高回落缩量，暂不追高"
+      "price_updated_at": "2026-08-12T11:45:00+08:00"
     }
   ],
   "summary": {
-    "total": 17,
-    "core_focus": 15,
-    "observing": 2,
-    "today_change_pct_avg": -1.17,
-    "up_count": 2,
-    "down_count": 13,
+    "avg_change_pct": 3.54,
+    "up_count": 14,
+    "down_count": 1,
     "flat_count": 0,
-    "premarket_advantage_stocks": [
-      "中际旭创300308（主力净流入26亿+美股CoreWeave催化）",
-      "东山精密002384（已突破200关口+PCB强势）",
-      "华工科技000988（已突破阻力105.8+阿里云超节点催化）",
-      "协创数据300857（AI服务器+美股AI催化）"
-    ],
-    "premarket_caution_stocks": [
-      "天孚通信300394（涨停后超买+严禁追高）",
-      "菲利华300395（涨停后超买+严禁追高）",
-      "长川科技300604（已清仓+不符合回补条件）"
-    ],
-    "note": "8/13盘前关注池17只：8/12收盘2涨13跌0平（无长川数据）。隔夜美股AI基建股暴涨（CoreWeave+20%/SMCI+15%/Lumentum+14%）+9月加息概率从50%降至42%形成正向催化，重点关注：①中际旭创②东山精密③华工科技④协创数据。注意：当前99.9%满仓3只持仓，关注池仅作观察，无新仓空间"
+    "top_gainer": "菲利华 +11.02%",
+    "top_loser": "三环集团 -1.69%",
+    "total": 15,
+    "note": "8/12午间关注池15只中14涨1跌，平均涨幅3.54%。光通信爆发（天孚通信+10.97%涨停、中际旭创+4.45%、新易盛+4.96%），半导体全线走强（通富微电+2.53%、菲利华+11.02%涨停），MLCC回调（三环集团-1.69%）。科技方向全面回暖，与8/11分化格局形成鲜明对比"
   },
   "oversold_scan": [
     {
@@ -410,16 +347,16 @@
       "name": "中际旭创",
       "change_20d": -8.0,
       "today_change": 4.45,
-      "note": "光通信龙头8/12强力反弹+4.45%，20日跌幅收窄。8/13受美股CoreWeave+20%催化，主力净流入26亿全场首位"
+      "note": "光通信龙头8/12强力反弹+4.45%，20日跌幅收窄"
     }
   ],
   "transit_pool": [
     {
-      "name": "中际旭创",
-      "code": "300308",
-      "score": 6.5,
+      "name": "天孚通信",
+      "code": "300394",
+      "score": 6.0,
       "gates": {
-        "market_breadth": "pass",
+        "market_breadth": "pending",
         "pe_check": "pass",
         "capital_flow": "pass",
         "trend": "pass",
@@ -428,25 +365,24 @@
         "sector": "pass"
       },
       "key_price": {
-        "support": 900,
+        "support": 216.9,
         "buy_range": [
-          900,
-          940
+          216.9,
+          228
         ],
-        "stop_loss": 870
+        "stop_loss": 210
       },
       "sector": "光模块",
-      "change_pct": 4.45,
-      "reason": "8/12收921.0突破阻力902，主力净流入26亿全场首位。隔夜美股CoreWeave+20%+Lumentum+14%催化光模块方向，8/13关注突破921冲击940-950",
-      "price": 921.0,
-      "price_updated_at": "2026-08-12T16:18:00+08:00"
+      "change_pct": 10.97,
+      "reason": "8/12涨停+10.97%突破前高，光通信板块龙头级表现。但涨停后追高风险大，等回调至支撑位216.9附近再评估",
+      "price": 246.9
     },
     {
       "name": "东山精密",
       "code": "002384",
-      "score": 6.0,
+      "score": 5.5,
       "gates": {
-        "market_breadth": "pass",
+        "market_breadth": "pending",
         "pe_check": "pass",
         "capital_flow": "pass",
         "trend": "pass",
@@ -455,25 +391,24 @@
         "sector": "pass"
       },
       "key_price": {
-        "support": 195,
+        "support": 184,
         "buy_range": [
-          195,
-          205
+          184,
+          190
         ],
-        "stop_loss": 190
+        "stop_loss": 178
       },
       "sector": "PCB/FPC",
       "change_pct": 3.16,
-      "reason": "8/12收200.19突破阻力200关口，PCB方向延续强势。8/13关注站稳200冲击210-215",
-      "price": 200.19,
-      "price_updated_at": "2026-08-12T16:18:00+08:00"
+      "reason": "PCB板块延续强势，东山精密+3.16%突破200关口。涨跌家数待收盘确认",
+      "price": 200.0
     },
     {
-      "name": "华工科技",
-      "code": "000988",
+      "name": "菲利华",
+      "code": "300395",
       "score": 5.5,
       "gates": {
-        "market_breadth": "pass",
+        "market_breadth": "pending",
         "pe_check": "pass",
         "capital_flow": "pass",
         "trend": "pass",
@@ -482,18 +417,17 @@
         "sector": "pass"
       },
       "key_price": {
-        "support": 105,
+        "support": 80,
         "buy_range": [
-          105,
-          110
+          80,
+          88
         ],
-        "stop_loss": 101
+        "stop_loss": 76
       },
-      "sector": "激光设备",
-      "change_pct": -0.77,
-      "reason": "8/12收106.32突破阻力105.8。8/12新闻催化：阿里云灵骏真武M890超节点实例正式上线，华工科技为相关概念股",
-      "price": 106.32,
-      "price_updated_at": "2026-08-12T16:18:00+08:00"
+      "sector": "半导体材料",
+      "change_pct": 11.02,
+      "reason": "8/12涨停+11.02%，半导体材料龙头。涨停后不宜追高，等回调至88-90区间再评估",
+      "price": 97.63
     }
   ]
 }
