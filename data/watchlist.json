@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-13T20:45:00+08:00",
+    "last_updated": "2026-08-13T23:00:00+08:00",
     "data_as_of": "2026-08-13 收盘"
   },
   "watchlist": [
@@ -17,14 +17,14 @@
       },
       "status": "tracking",
       "sector": "AI服务器",
-      "today_close": 256,
+      "today_close": 256.0,
       "today_change_pct": 2.48,
       "tags": [
         "AI服务器",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "002156",
@@ -47,7 +47,7 @@
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "300502",
@@ -69,7 +69,7 @@
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "300308",
@@ -90,7 +90,7 @@
         "光模块龙头"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "300394",
@@ -113,7 +113,7 @@
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "300223",
@@ -242,7 +242,7 @@
         "已持仓"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "000988",
@@ -279,14 +279,14 @@
       },
       "status": "tracking",
       "sector": "PCB/FPC",
-      "today_close": 202.11,
-      "today_change_pct": 0.96,
+      "today_close": 97.88,
+      "today_change_pct": 3.57,
       "tags": [
         "PCB",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-13T23:00:00+08:00"
     },
     {
       "code": "603026",
@@ -350,84 +350,7 @@
       "note": "光通信龙头8/12强力反弹+4.45%，20日跌幅收窄"
     }
   ],
-  "transit_pool": [
-    {
-      "name": "天孚通信",
-      "code": "300394",
-      "score": 6.0,
-      "gates": {
-        "market_breadth": "pending",
-        "pe_check": "pass",
-        "capital_flow": "pass",
-        "trend": "pass",
-        "turnover": "pass",
-        "momentum": "pass",
-        "sector": "pass"
-      },
-      "key_price": {
-        "support": 216.9,
-        "buy_range": [
-          216.9,
-          228
-        ],
-        "stop_loss": 210
-      },
-      "sector": "光模块",
-      "change_pct": 10.97,
-      "reason": "8/12涨停+10.97%突破前高，光通信板块龙头级表现。但涨停后追高风险大，等回调至支撑位216.9附近再评估",
-      "price": 246.9
-    },
-    {
-      "name": "东山精密",
-      "code": "002384",
-      "score": 5.5,
-      "gates": {
-        "market_breadth": "pending",
-        "pe_check": "pass",
-        "capital_flow": "pass",
-        "trend": "pass",
-        "turnover": "pass",
-        "momentum": "pass",
-        "sector": "pass"
-      },
-      "key_price": {
-        "support": 184,
-        "buy_range": [
-          184,
-          190
-        ],
-        "stop_loss": 178
-      },
-      "sector": "PCB/FPC",
-      "change_pct": 3.16,
-      "reason": "PCB板块延续强势，东山精密+3.16%突破200关口。涨跌家数待收盘确认",
-      "price": 200.0
-    },
-    {
-      "name": "菲利华",
-      "code": "300395",
-      "score": 5.5,
-      "gates": {
-        "market_breadth": "pending",
-        "pe_check": "pass",
-        "capital_flow": "pass",
-        "trend": "pass",
-        "turnover": "pass",
-        "momentum": "pass",
-        "sector": "pass"
-      },
-      "key_price": {
-        "support": 80,
-        "buy_range": [
-          80,
-          88
-        ],
-        "stop_loss": 76
-      },
-      "sector": "半导体材料",
-      "change_pct": 11.02,
-      "reason": "8/12涨停+11.02%，半导体材料龙头。涨停后不宜追高，等回调至88-90区间再评估",
-      "price": 97.63
-    }
-  ]
+  "transit_pool": [],
+  "transit_pool_note": "8/13半导体板块-1.96%主力-98亿，午后集体杀跌。所有半导体/封测/设备票均在MA20下方（距MA20约-5%至-12%），不满足\"价格在MA20上方\"条件。隔夜美股费半+1.49%→次日修复力度待观察。",
+  "transit_pool_updated": "2026-08-13T23:00:00+08:00"
 }
