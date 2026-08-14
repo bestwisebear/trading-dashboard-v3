@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T08:09:00+08:00",
-    "data_as_of": "8/13收盘+8/14盘前"
+    "last_updated": "2026-08-14T11:32:00+08:00",
+    "data_as_of": "8/14午间"
   },
   "watchlist": [
     {
@@ -17,8 +17,8 @@
       },
       "status": "tracking",
       "sector": "AI服务器",
-      "today_close": 256.0,
-      "today_change_pct": 2.48,
+      "today_close": 261.22,
+      "today_change_pct": 2.04,
       "tags": [
         "AI服务器",
         "强势",
@@ -26,7 +26,7 @@
         "美股映射"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 2,
       "date_20260814_note": {
         "8/14_priority": 2,
@@ -49,15 +49,15 @@
       },
       "status": "tracking",
       "sector": "半导体封测",
-      "today_close": 62.22,
-      "today_change_pct": -1.02,
+      "today_close": 62.16,
+      "today_change_pct": -0.1,
       "tags": [
         "封测",
         "先进封装",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T23:00:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "300502",
@@ -72,14 +72,14 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 429.9,
-      "today_change_pct": 0.4,
+      "today_close": 444.49,
+      "today_change_pct": 3.39,
       "tags": [
         "光模块",
         "强势"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T23:00:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "300308",
@@ -94,15 +94,15 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 921.04,
-      "today_change_pct": 0.0,
+      "today_close": 937.22,
+      "today_change_pct": 1.76,
       "tags": [
         "光模块龙头",
         "美股承压",
         "关注900支撑"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 1,
       "date_20260814_note": {
         "8/14_priority": 1,
@@ -125,8 +125,8 @@
       },
       "status": "tracking",
       "sector": "光模块",
-      "today_close": 257.16,
-      "today_change_pct": 7.13,
+      "today_close": 264.14,
+      "today_change_pct": 2.71,
       "tags": [
         "光模块",
         "涨停",
@@ -135,7 +135,7 @@
         "美股光通信承压"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 3,
       "date_20260814_note": {
         "8/14_priority": 3,
@@ -158,14 +158,14 @@
       },
       "status": "tracking",
       "sector": "存储芯片",
-      "today_close": 137.48,
-      "today_change_pct": -2.2,
+      "today_close": 142.08,
+      "today_change_pct": 3.35,
       "tags": [
         "存储",
         "存储催化"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 2,
       "date_20260814_note": {
         "8/14_priority": 2,
@@ -187,15 +187,15 @@
       },
       "status": "tracking",
       "sector": "存储芯片",
-      "today_close": 397,
-      "today_change_pct": -4.18,
+      "today_close": 403.65,
+      "today_change_pct": 1.68,
       "tags": [
         "存储",
         "存储核心标的",
         "美股映射"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 1,
       "date_20260814_note": {
         "8/14_priority": 1,
@@ -218,14 +218,14 @@
       },
       "status": "tracking",
       "sector": "电子元器件/MLCC",
-      "today_close": 128.4,
-      "today_change_pct": 0.34,
+      "today_close": 127.98,
+      "today_change_pct": -0.33,
       "tags": [
         "MLCC",
         "回调"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "300395",
@@ -240,14 +240,14 @@
       },
       "status": "tracking",
       "sector": "半导体材料",
-      "today_close": 92.49,
-      "today_change_pct": -2.63,
+      "today_close": 92.77,
+      "today_change_pct": 0.3,
       "tags": [
         "半导体材料",
         "涨停"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "300442",
@@ -262,13 +262,13 @@
       },
       "status": "tracking",
       "sector": "IDC",
-      "today_close": 68.55,
-      "today_change_pct": 1.26,
+      "today_close": 68.68,
+      "today_change_pct": 0.19,
       "tags": [
         "IDC"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "300604",
@@ -281,18 +281,17 @@
           246.0
         ]
       },
-      "status": "holding",
+      "status": "sold_today",
       "sector": "半导体设备",
-      "today_close": 281.69,
-      "today_change_pct": -1.89,
+      "today_close": 282.21,
+      "today_change_pct": 0.18,
       "tags": [
         "半导体设备",
-        "已持仓",
-        "已持仓300股",
-        "中芯/华虹催化"
+        "8/14已清仓",
+        "亏损-2058"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 0,
       "date_20260814_note": {
         "8/14_priority": 0,
@@ -315,14 +314,14 @@
       },
       "status": "tracking",
       "sector": "激光设备",
-      "today_close": 107.04,
-      "today_change_pct": 0.68,
+      "today_close": 108.44,
+      "today_change_pct": 1.31,
       "tags": [
         "激光",
         "AI算力+激光设备"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "002384",
@@ -337,8 +336,8 @@
       },
       "status": "tracking",
       "sector": "PCB/FPC",
-      "today_close": 97.88,
-      "today_change_pct": 3.57,
+      "today_close": 204.17,
+      "today_change_pct": 1.02,
       "tags": [
         "PCB",
         "强势",
@@ -346,7 +345,7 @@
         "东山精密重点"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-14T08:09:00+08:00",
+      "price_updated_at": "2026-08-14T11:32:00+08:00",
       "priority_20260814": 1,
       "date_20260814_note": {
         "8/14_priority": 1,
@@ -369,13 +368,13 @@
       },
       "status": "observing",
       "sector": "锂电材料",
-      "today_close": 66.26,
-      "today_change_pct": -1.02,
+      "today_close": 68.15,
+      "today_change_pct": 2.85,
       "tags": [
         "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     },
     {
       "code": "300769",
@@ -390,24 +389,24 @@
       },
       "status": "observing",
       "sector": "锂电材料",
-      "today_close": 46.66,
-      "today_change_pct": -1.29,
+      "today_close": 47.37,
+      "today_change_pct": 1.52,
       "tags": [
         "观察"
       ],
       "added_date": "2026-08-03",
-      "price_updated_at": "2026-08-13T20:45:00+08:00"
+      "price_updated_at": "2026-08-14T11:32:00+08:00"
     }
   ],
   "summary": {
-    "avg_change_pct": 3.54,
-    "up_count": 14,
-    "down_count": 1,
+    "avg_change_pct": 1.46,
+    "up_count": 13,
+    "down_count": 2,
     "flat_count": 0,
-    "top_gainer": "菲利华 +11.02%",
-    "top_loser": "三环集团 -1.69%",
+    "top_gainer": "新易盛 +3.39%",
+    "top_loser": "三环集团 -0.33%",
     "total": 15,
-    "note": "8/12午间关注池15只中14涨1跌，平均涨幅3.54%。光通信爆发（天孚通信+10.97%涨停、中际旭创+4.45%、新易盛+4.96%），半导体全线走强（通富微电+2.53%、菲利华+11.02%涨停），MLCC回调（三环集团-1.69%）。科技方向全面回暖，与8/11分化格局形成鲜明对比"
+    "note": "8/14午间关注池15只中13涨2跌，平均涨幅3.54%。通信/CPO反弹（新易盛+3.39%/北京君正+3.35%/天孚+2.71%），存储映射生效（江波龙+1.68%），MLCC继续弱势（三环集团-0.33%）。持仓鹏辉+2.23%反弹。长川科技已清仓"
   },
   "oversold_scan": [
     {

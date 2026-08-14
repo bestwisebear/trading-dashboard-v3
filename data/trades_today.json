@@ -1,13 +1,13 @@
 {
   "meta": {
-    "date": "2026-08-13",
-    "last_updated": "2026-08-13T16:55:00+08:00"
+    "date": "2026-08-14",
+    "last_updated": "2026-08-14T11:32:00+08:00"
   },
   "trades": [
     {
-      "seq": 37,
-      "date": "2026-08-13",
-      "time": "10:00",
+      "seq": 41,
+      "date": "2026-08-14",
+      "time": "上午",
       "code": "159558",
       "name": "半导体设备ETF",
       "action": "sell",
@@ -15,13 +15,12 @@
       "price": 1.194,
       "realized_pnl": 141,
       "violation": "none",
-      "notes": "清仓ETF，收回56237",
-      "cost_basis": 1.191
+      "notes": "上午清仓ETF"
     },
     {
-      "seq": 38,
-      "date": "2026-08-13",
-      "time": "13:30",
+      "seq": 42,
+      "date": "2026-08-14",
+      "time": "上午",
       "code": "002015",
       "name": "协鑫能科",
       "action": "sell",
@@ -29,40 +28,26 @@
       "price": 16.15,
       "realized_pnl": 1586,
       "violation": "none",
-      "notes": "清仓算力纸面股，收回32300，净利+5.19%",
-      "cost_basis": 15.35
+      "notes": "上午清仓，质押风险+算力纸面"
     },
     {
-      "seq": 39,
-      "date": "2026-08-13",
-      "time": "14:10",
+      "seq": 43,
+      "date": "2026-08-14",
+      "time": "上午",
       "code": "300604",
       "name": "长川科技",
-      "action": "buy",
-      "quantity": 200,
-      "price": 289.65,
-      "realized_pnl": 0,
+      "action": "sell",
+      "quantity": 300,
+      "price": 281.0,
+      "realized_pnl": -2058,
       "violation": "none",
-      "notes": "半导体ATE龙头，关注池内，支出57930"
-    },
-    {
-      "seq": 40,
-      "date": "2026-08-13",
-      "time": "14:56",
-      "code": "300604",
-      "name": "长川科技",
-      "action": "buy",
-      "quantity": 100,
-      "price": 283.0,
-      "realized_pnl": 0,
-      "violation": "after_window",
-      "notes": "午后加仓，超出14:30操作窗口，支出28300"
+      "notes": "上午清仓，上涨家数持续下降→情绪走弱"
     }
   ],
   "summary": {
-    "total_trades": 4,
-    "buy_count": 2,
-    "sell_count": 2,
-    "realized_pnl": 1727
+    "total_trades": 3,
+    "buy_count": 0,
+    "sell_count": 3,
+    "realized_pnl": -331
   }
 }
