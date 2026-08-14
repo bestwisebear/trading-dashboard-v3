@@ -2,11 +2,11 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-14T09:50:00+08:00",
+    "last_updated": "2026-08-14T15:25:00+08:00",
     "total_realized_pnl": 19631,
-    "total_trades": 41,
+    "total_trades": 43,
     "notes": "8/3交易记录因历史数据缺失未录入，当日pnl=-5040来自历史复盘快照 | 8/10鹏辉减仓200股@62.6委托未成交，已移除seq19",
-    "data_as_of": "2026-08-13 收盘",
+    "data_as_of": "2026-08-14 收盘",
     "session": "close"
   },
   "trades": [
@@ -561,6 +561,21 @@
       "violation": "none",
       "notes": "分批锁利，冲前高67.2阻力位减仓1/3，收入40272",
       "cost_basis": 62.332
+    },
+    {
+      "seq": 43,
+      "date": "2026-08-14",
+      "time": "unknown",
+      "code": "300857",
+      "name": "协创数据",
+      "action": "buy",
+      "quantity": 200,
+      "price": 259.13,
+      "amount": 51826.0,
+      "cost_basis": 259.13,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线"
     }
   ],
   "daily_summary": [
