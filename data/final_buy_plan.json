@@ -1,104 +1,134 @@
 {
   "meta": {
-    "date": "2026-08-13",
-    "last_updated": "2026-08-13T13:16:00+08:00",
-    "session": "noon_confirm",
-    "data_basis": "8/13 ~13:10实时行情"
+    "generated_at": "2026-08-14T13:16:00+08:00",
+    "session": "midday_final_confirm",
+    "version": "1.0",
+    "note": "13:15午间最终确认。基于11:00候选+午间消息扫描+午间行情综合判断"
   },
-  "market_snapshot": {
-    "sh_index": {
-      "price": 3966,
-      "change_pct": 0.49
-    },
-    "sz_index": {
-      "price": 14543,
-      "change_pct": 0.89
-    },
-    "cyb_index": {
-      "price": 3665,
-      "change_pct": 1.76
-    },
-    "half_day_turnover_comment": "截至午盘两市合计约1.01万亿，预估全天2.4-2.6万亿",
-    "rise_count_est": "~2287（主板）",
-    "market_env": "指数偏多但个股分化，涨跌比偏弱",
-    "gates_check": {
-      "rise_count": "borderline（主板2287>2000，但含创业板/科创板约3000+）",
-      "turnover": "pass（预估2.4-2.6万亿>2万亿）",
-      "sector_breadth": "pass（CPO/半导体/算力硬件全线真实强）"
-    }
+  "decision": "有条件确认1只新仓标的",
+  "decision_reason": "七道闸5/6通过，仅动量闸门条件通过(午后刚开盘16分钟待验证)。CPO为今日最强主线，中际旭创17亿入股中石科技引爆板块情绪，通信板块53亿主力净流入。美PPI低于预期+标普创新高+央行流动性充裕构成良好外部环境。但需关注：①存量博弈超3400只下跌 ②周五效应 ③仓位将升至84%",
+  "market_context": {
+    "sh_index_midday": 3918,
+    "sh_change_pct": -0.21,
+    "sz_index_midday": 14300,
+    "sz_change_pct": 0.08,
+    "chinext_midday": 3609,
+    "chinext_change_pct": 0.65,
+    "half_day_volume_trillion": 1.39,
+    "rise_fall_midday": "约2200:3400",
+    "strongest_sector": "CPO/光通信散热",
+    "weakest_sector": "电力/传媒/白酒",
+    "main_flow_leader": "通信板块+53亿",
+    "sentiment": "偏多分化，存量博弈"
   },
-  "account_constraint": {
-    "available_cash": 219.87,
-    "position_ratio": 99.9,
-    "current_positions": 3,
-    "max_positions": 4,
-    "verdict": "⛔ 可用现金仅219.87元，无法开任何新仓。即使市场条件和个股信号全部通过，也无资金执行"
+  "gate_check": {
+    "gate1_rise_count": {
+      "result": "pass",
+      "value": "~2200>2000",
+      "detail": "午间涨跌家数约2200:3400，满足>2000硬性门槛"
+    },
+    "gate2_volume": {
+      "result": "conditional_pass",
+      "value": "半日1.39万亿",
+      "detail": "较前日同期缩量2021亿，预计全天2.4-2.6万亿。量能偏弱但非极端缩量"
+    },
+    "gate3_sector": {
+      "result": "pass",
+      "value": "CPO/光通信最强",
+      "detail": "通信板块53亿主力净流入居首。CPO/光模块散热为今日绝对主线，阿莱德/中石科技/富信科技20cm涨停"
+    },
+    "gate4_capital_flow": {
+      "result": "pass",
+      "value": "通信+53亿/长鑫+14亿",
+      "detail": "主力资金明确流入通信方向。鹏辉能源主力净流入1979万"
+    },
+    "gate5_trend": {
+      "result": "pass",
+      "value": "深成指/创业板正",
+      "detail": "深成指+0.08%/创业板+0.65%为正，无新低。沪指微跌但3918远高于3900关键位"
+    },
+    "gate6_momentum": {
+      "result": "conditional_pass",
+      "value": "午间正动量",
+      "detail": "中际旭创+1.76%/鹏辉+2.23%均为正。但午后刚开盘16分钟，需13:30验证午后不回落"
+    },
+    "gate7_valuation": {
+      "result": "pass",
+      "value": "中际旭创PE73/TTM69",
+      "detail": "光模块龙头PE合理区间，2026E PE约30倍(预期EPS30.74元)，成长性支撑估值"
+    },
+    "overall": "5/6通过 + 1条件通过",
+    "verdict": "有条件确认"
   },
-  "candidates": [],
-  "rejected_candidates": [
+  "confirmed_candidates": [
     {
-      "code": "300394",
-      "name": "天孚通信",
-      "source": "关注池/午间强势",
-      "realtime_price": 247.0,
-      "prev_close": 222.0,
-      "change_pct": 11.3,
-      "buy_range": [
-        190,
-        214
+      "code": "300308",
+      "name": "中际旭创",
+      "source": "关注池A级(priority=1) → 11:00候选 → 13:15确认",
+      "sector": "光模块/CPO龙头",
+      "confirm_price": 937.22,
+      "confirm_price_time": "2026-08-14T11:32:00+08:00",
+      "today_range": [
+        916.0,
+        948.77
       ],
-      "absolute_max_buy": 214,
-      "support": 216.9,
-      "stop_loss": 210,
-      "sector_strength": "真实强（CPO龙头+主力净买入超15亿+联想AI收入催化）",
-      "reject_reason": "实时价247>>绝对最高买入价214，当日涨幅11.3%+涨停级别，严禁追高"
-    },
-    {
-      "code": "002384",
-      "name": "东山精密",
-      "source": "关注池/中转池",
-      "realtime_price": 210.3,
-      "prev_close": 200.0,
-      "change_pct": 5.15,
+      "today_change_pct": 1.76,
       "buy_range": [
-        184,
-        205
+        900,
+        960
       ],
-      "absolute_max_buy": 205,
-      "support": 195,
-      "stop_loss": 190,
-      "sector_strength": "真实强（PCB板块延续+算力硬件午后拉升）",
-      "reject_reason": "实时价210.3>绝对最高买入价205，涨幅5.15%过大，追高剔除"
+      "max_buy_price": 960,
+      "stop_loss": 891,
+      "stop_loss_note": "900支撑下方1%缓冲",
+      "support": 900,
+      "resistance": 960,
+      "target_price": 1000,
+      "quantity": 100,
+      "cost_estimate": 93700,
+      "position_after_buy": {
+        "total_positions": 2,
+        "total_market_value": 173344,
+        "available_cash_after": 33150,
+        "position_ratio_after": "83.4%"
+      },
+      "catalysts": [
+        "中际旭创8/13晚公告17.47亿入股中石科技(散热产业链)，引爆CPO板块",
+        "CPO为今日绝对最强主线，阿莱德/中石科技/富信科技均20cm涨停",
+        "通信板块53亿主力净流入居首，长鑫科技14亿净流入居个股首位",
+        "美股Lumentum隔夜+13%利好光通信情绪",
+        "美PPI低于预期→Fed加息预期降温→科技成长估值支撑",
+        "AI算力需求持续，2025年净利润107.97亿(+262% YoY)，2026E EPS 30.74元"
+      ],
+      "confirm_conditions_1330": [
+        "午后开盘30分钟价格守住916(今日低点/午间支撑)",
+        "涨跌家数维持>2000",
+        "上证不跌破3900",
+        "CPO板块不转弱(阿莱德不打开涨停/天孚/新易盛不跌>2%)"
+      ],
+      "invalid_conditions": [
+        "午后跌破916(今日低点)",
+        "涨跌家数<2000",
+        "上证跌破3900",
+        "CPO板块午后集体杀跌(中际旭创跌>3%)"
+      ],
+      "risk_notes": [
+        "周五效应：部分资金午后减仓避险",
+        "存量博弈：超3400只个股下跌，赚钱效应集中在少数板块",
+        "开仓后仓位将升至83.4%，现金仅剩3.3万",
+        "CPO前日午后有集体杀跌历史(8/13)，需警惕重演",
+        "半日成交较前日缩量2021亿，量能偏弱",
+        "100股即9.37万，单笔金额大，止损空间6.8%≈6370元"
+      ]
     }
   ],
-  "holding_management": {
-    "300438_鹏辉能源": {
-      "current_price": 66.38,
-      "cost": 62.332,
-      "pnl_pct": 6.49,
-      "signal": "窄幅震荡+0.06%，主力小幅流出1579万但特大单流入499万。支撑57→止损56。新产线年内投产+碳酸锂涨价利好。建议：持有不动，关注65支撑（前阻力变支撑）",
-      "action": "持有"
-    },
-    "002015_协鑫能科": {
-      "current_price": 15.93,
-      "cost": 15.353,
-      "pnl_pct": 3.76,
-      "signal": "强势+3.58%，AI算力布局催化+电力板块走强。支撑15→止损14.50。今日振幅5.01%波动较大。建议：持有观察，若冲高回落缩量可考虑减仓1/3锁利",
-      "action": "持有（关注冲高回落信号）"
-    },
-    "159558_半导体ETF": {
-      "current_price": 1.2,
-      "cost": 1.191,
-      "pnl_pct": 0.76,
-      "signal": "涨+1%，连续5日资金净流入14.4亿元。存储涨价逻辑+长江存储份额突破。支撑1.15→止损。建议：持有，半导体板块整体偏强",
-      "action": "持有"
-    }
+  "eliminated_at_1315": [],
+  "operational_rules": {
+    "buy_window": "13:30-14:30唯一操作窗口",
+    "deadline": "14:30前必须完成所有操作",
+    "friday_rule": "周五14:00后禁止开新仓 → 必须在13:30-14:00间完成买入",
+    "max_trades_today": "已5笔(上午清仓3只+鹏辉分批锁利)，剩1笔额度",
+    "execution": "限价单≤960，建议挂940-950区间。若午后回踩920-930区间可分批接"
   },
-  "conclusion": "今日取消新仓。原因：①可用现金仅219.87元/仓位99.9%，完全无资金开新仓；②关注池/中转池候选标的上午均已大涨5-11%，全部超过绝对最高买入价，防追高规则剔除。下午重点放在持仓管理：鹏辉关注65支撑、协鑫能科关注冲高回落减仓信号、半导体ETF持有。",
-  "afternoon_focus": [
-    "鹏辉能源：65支撑是否有效，跌破则减半仓",
-    "协鑫能科：冲高回落+缩量→考虑13:30后减1/3锁利",
-    "半导体ETF：持有，关注1.15止损位",
-    "大盘：午后算力硬件延续强势，但注意高开低走风险"
-  ]
+  "final_conclusion": "有条件确认中际旭创(300308)100股。操作窗口极窄：周五+已5笔交易+仅剩1笔额度 → 必须在13:30-14:00间果断执行限价单≤960。午后开盘后先观察15分钟(13:15-13:30)，确认CPO板块不转弱+价格守916后，13:30-13:45挂单执行。若任一条件失效，立即取消。",
+  "contingency": "若午后CPO板块集体跳水或中际旭创跌破916 → 今日取消新仓，仅管理鹏辉持仓"
 }
