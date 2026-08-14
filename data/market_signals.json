@@ -1,28 +1,28 @@
 {
   "meta": {
-    "date": "2026-08-13",
-    "last_updated": "2026-08-13T16:55:00+08:00",
-    "session": "close",
-    "data_basis": "2026-08-13 收盘"
+    "date": "2026-08-14",
+    "last_updated": "2026-08-14T08:09:00+08:00",
+    "session": "premarket",
+    "data_basis": "8/13收盘+8/13美股隔夜+8/14早间新闻"
   },
   "signals": [
     {
       "id": "rise_fall_count",
       "name": "涨跌家数",
       "description": "全市场涨跌家数对比",
-      "value": "1143涨:4317跌，红盘率20.93%",
+      "value": "8/13收盘1143:4317，8/14需观察开盘后能否突破2000",
       "threshold": 2000,
       "status": "red",
-      "detail": "8/13收盘1143<2000触发禁开新仓。冲高回落超4300只个股下跌，赚钱效应极差",
+      "detail": "8/13收盘1143<2000禁开新仓硬性触发。8/14开盘后9:30观察涨跌家数是否恢复至2000+",
       "updated_at": "2026-08-13T16:55:00+08:00"
     },
     {
       "id": "sector_strength",
       "name": "板块真假强",
       "description": "持仓板块涨跌比与最弱股判定",
-      "value": "医药/CRO全线强势，科技板块分化严重",
+      "value": "美股存储强+光通信弱，A股存储或接力CPO",
       "status": "yellow",
-      "detail": "8/13科技板块冲高回落：① 鹏辉能源（储能）-2.14%电池链整体调整 ② 长川科技（半导体设备）-1.89%存储/先进封装午后杀跌。持仓板块均为假强（开盘高开后回落）",
+      "detail": "8/14关键转换：① 存储方向（江波龙/北京君正）接棒CPO？② 中芯/华虹Q2超预期利好半导体设备？③ 持仓股(鹏辉/长川)板块催化？",
       "updated_at": "2026-08-13T16:55:00+08:00"
     },
     {
@@ -66,19 +66,49 @@
       "updated_at": "2026-08-13T16:55:00+08:00"
     }
   ],
-  "overall_signal": "red",
+  "overall_signal": "yellow_red",
   "gate_status": {
-    "gates_pass": 3,
+    "gates_pass": 4,
     "gates_total": 7,
-    "verdict": "偏空，涨跌家数<2000禁开新仓硬性触发"
+    "verdict": "偏空但有改善迹象。涨跌<2000禁开新仓硬性触发，需开盘后重评"
   },
   "aggregate": {
-    "green_count": 1,
-    "yellow_count": 4,
+    "green_count": 2,
+    "yellow_count": 3,
     "red_count": 1,
-    "total_score": 6,
+    "total_score": 7,
     "max_score": 12,
     "no_open_position": true,
-    "market_comment": "冲高回落放量大跌，涨跌1143:4317红盘21%。科技板块午后杀跌，医药/消费防御强势。底部信号1/5继续观望，涨跌<2000禁开新仓"
-  }
+    "market_comment": "美股分化（存储强+CPO弱），国内政策面强（央行万亿流动性+中芯/华虹Q2超预期），8/14需观察存储方向是否接力CPO。涨跌<2000禁开新仓硬性触发"
+  },
+  "signals_20260814": [
+    {
+      "id": "us_storage_catalyst",
+      "name": "美股存储映射",
+      "value": "闪迪+13%/西部数据+7%/SK海力士+7%",
+      "status": "green",
+      "detail": "美股存储芯片大涨，A股存储方向(江波龙301308/北京君正300223/协创数据300857)可能接力CPO"
+    },
+    {
+      "id": "us_optical_pressure",
+      "name": "美股光通信承压",
+      "value": "Coherent-8%/Lumentum/Corning/AAOI下跌",
+      "status": "red",
+      "detail": "美股光通信承压，A股CPO方向(中际旭创300308/新易盛300502/天孚通信300394)警惕高开低走"
+    },
+    {
+      "id": "central_bank_liquidity",
+      "name": "央行流动性",
+      "value": "Q2报告+8/14起6000亿隔夜逆回购",
+      "status": "green",
+      "detail": "央行双重利好：Q2货币政策报告强调流动性充裕+逆周期调节+8/14起连续3日6000亿隔夜逆回购"
+    },
+    {
+      "id": "smic_hua_hong_beat",
+      "name": "中芯/华虹Q2超预期",
+      "value": "中芯Q3收入+2-4%/华虹Q2+26.8%",
+      "status": "green",
+      "detail": "中芯国际Q3收入指引环比+2-4%、毛利率26-28%；华虹宏力Q2销售收入创历史新高，半导体设备链(长川300604/北方华创002371)利好"
+    }
+  ]
 }

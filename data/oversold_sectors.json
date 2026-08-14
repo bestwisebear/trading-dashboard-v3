@@ -1,7 +1,7 @@
 {
   "meta": {
-    "date": "2026-08-13",
-    "last_updated": "2026-08-13T16:55:00+08:00",
+    "date": "2026-08-14",
+    "last_updated": "2026-08-14T08:09:00+08:00",
     "data_as_of": "2026-08-13 收盘",
     "session": "premarket"
   },
@@ -122,6 +122,84 @@
       ],
       "can_add_watchlist": true,
       "note": "8/12锂电池板块+1.57%，鹏辉能源+1.87%延续强势（已持仓）。8月排产环比+8.7%基本面支撑。8/13已突破阻力66后看68-70，需观察板块能否持续"
+    }
+  ],
+  "new_opportunities_20260814": [
+    {
+      "sector_name": "存储芯片",
+      "catalyst": "美股闪迪+13%/海力士+7%映射+长江存储Q2份额前三",
+      "today_change_us": "闪迪+13%/西部数据+7%/海力士+7%",
+      "top_picks": [
+        {
+          "code": "301308",
+          "name": "江波龙",
+          "yesterday_close": 397.0,
+          "logic": "存储直接受益"
+        },
+        {
+          "code": "300223",
+          "name": "北京君正",
+          "yesterday_close": 137.48,
+          "logic": "存储+芯片双概念"
+        },
+        {
+          "code": "300857",
+          "name": "协创数据",
+          "yesterday_close": 256.0,
+          "logic": "存储+AI服务器双概念"
+        }
+      ],
+      "can_add_watchlist": true,
+      "note": "8/14重点关注方向，验证是否接力CPO。开盘后看集合竞价强度"
+    },
+    {
+      "sector_name": "半导体设备",
+      "catalyst": "中芯Q2超预期+华虹Q2新高",
+      "today_change_us": "N/A",
+      "top_picks": [
+        {
+          "code": "300604",
+          "name": "长川科技",
+          "yesterday_close": 281.69,
+          "logic": "已持仓300股@287.86，关注修复"
+        },
+        {
+          "code": "002371",
+          "name": "北方华创",
+          "yesterday_close": 687.0,
+          "logic": "半导体设备龙头"
+        }
+      ],
+      "can_add_watchlist": true,
+      "note": "中芯/华虹双重利好，板块修复概率大。但因持仓已较重不建议加仓"
+    }
+  ],
+  "risk_sectors_20260814": [
+    {
+      "sector_name": "CPO/光通信",
+      "risk": "美股Coherent-8%/Lumentum下跌",
+      "top_picks_watching": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "yesterday_close": 921.04,
+          "logic": "CPO风向标"
+        },
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "yesterday_close": 429.9,
+          "logic": "光模块"
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "yesterday_close": 257.16,
+          "logic": "昨日+7.13%已透支"
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "8/14警惕高开低走。中际旭创不破900且缩量才算止跌"
     }
   ]
 }
