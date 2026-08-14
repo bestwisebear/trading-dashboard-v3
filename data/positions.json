@@ -1,28 +1,28 @@
 {
   "meta": {
-    "last_updated": "2026-08-14T11:32:00+08:00",
+    "last_updated": "2026-08-14T15:25:00+08:00",
     "version": "3.0",
-    "data_as_of": "2026-08-14 午间",
-    "session": "intraday"
+    "data_as_of": "2026-08-14 收盘",
+    "session": "close"
   },
   "positions": [
     {
       "code": "300438",
       "name": "鹏辉能源",
       "quantity": 1200,
-      "cost_price": 62.332,
-      "cost_source": "broker_screenshot",
-      "current_price": 66.37,
-      "price_updated_at": "2026-08-14T11:32:00+08:00",
+      "cost_price": 60.227,
+      "cost_source": "broker",
+      "current_price": 65.945,
+      "price_updated_at": "2026-08-14T15:00:00+08:00",
       "buy_date": "2026-08-06",
-      "holding_days": 8,
+      "holding_days": 9,
       "stop_loss": 57.0,
       "stop_profit": null,
-      "pnl_percent": 6.48,
-      "pnl_amount": 4845.6,
+      "pnl_percent": 9.49,
+      "pnl_amount": 6861.6,
       "sector": "电池/储能",
       "status": "holding",
-      "notes": "储能龙头，Q1净利+815% | 8/14已分批锁利600股@67.12 | 剩余1200股，支撑64阻力67 | 止损57 | 午间+2.23%反弹",
+      "notes": "储能龙头，Q1净利+815% | 8/14分批锁利600股@67.12 | 剩余1200股 | 今日盈利+2006.66 | 支撑64止损57",
       "key_price": {
         "support": 64.0,
         "resistance": 67.2,
@@ -30,17 +30,46 @@
           57.0,
           60.0
         ]
-      },
-      "intraday": {
-        "high": 67.95,
-        "low": 65.31,
-        "change_pct": 2.23,
-        "volume": 124196,
-        "amount": 82752,
-        "turnover_rate": 3.07,
-        "pe_ratio": 58.15,
-        "main_net_flow_wan": 1979,
-        "main_flow_comment": "午间主力净流入约1979万，午后资金回流，电池链企稳反弹"
+      }
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "quantity": 100,
+      "cost_price": 300.998,
+      "cost_source": "broker",
+      "current_price": 282.265,
+      "price_updated_at": "2026-08-14T15:00:00+08:00",
+      "buy_date": "2026-08-13",
+      "holding_days": 2,
+      "stop_loss": 275.0,
+      "stop_profit": null,
+      "pnl_percent": -6.22,
+      "pnl_amount": -1873.3,
+      "sector": "半导体设备",
+      "status": "holding",
+      "notes": "半导体ATE龙头 | 8/14减仓200股@281 | 剩余100股 | 今日盈利+57.47"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "quantity": 200,
+      "cost_price": 259.13,
+      "cost_source": "broker",
+      "current_price": 265.99,
+      "price_updated_at": "2026-08-14T15:00:00+08:00",
+      "buy_date": "2026-08-14",
+      "holding_days": 1,
+      "stop_loss": 250.0,
+      "stop_profit": null,
+      "pnl_percent": 2.65,
+      "pnl_amount": 1372.0,
+      "sector": "算力租赁/CPO",
+      "status": "holding",
+      "notes": "算力租赁主线 | H1营收+155.69%，净利+331.11% | 今日盈利+1371.64 | 注意负债率~83%可能触发硬门禁",
+      "key_price": {
+        "support": 250.0,
+        "resistance": 270.0
       }
     }
   ],
@@ -50,41 +79,49 @@
       "name": "半导体设备ETF",
       "quantity": 47100,
       "sell_price": 1.194,
-      "realized_pnl": 141,
-      "notes": "上午清仓"
+      "realized_pnl": 141.0,
+      "notes": "8/13清仓"
     },
     {
       "code": "002015",
       "name": "协鑫能科",
       "quantity": 2000,
       "sell_price": 16.15,
-      "realized_pnl": 1586,
-      "notes": "上午清仓，质押风险+算力纸面"
+      "realized_pnl": 1586.0,
+      "notes": "8/13清仓"
     },
     {
       "code": "300604",
-      "name": "长川科技",
-      "quantity": 300,
+      "name": "长川科技(减仓)",
+      "quantity": 200,
       "sell_price": 281.0,
-      "realized_pnl": -2058.0,
-      "notes": "上午清仓，上涨家数持续下降→情绪走弱"
+      "realized_pnl": -1396.0,
+      "notes": "8/14上午减仓200股，剩100股"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源(减仓)",
+      "quantity": 600,
+      "sell_price": 67.12,
+      "realized_pnl": 2872.8,
+      "notes": "8/14上午分批锁利600股"
     }
   ],
   "summary": {
-    "total_assets": 206494.0,
+    "total_assets": 207076.77,
     "prev_close_assets": 203641.0,
-    "net_today": 2853.0,
-    "net_today_pct": 1.4,
-    "total_pnl_amount": 6494.0,
-    "total_pnl_percent": 3.25,
-    "monthly_pnl": 6494.0,
-    "today_return": 2853.0,
-    "available_cash": 126850.0,
-    "position_ratio": 38.6,
-    "position_count": 1,
-    "realized_pnl_today": -331,
-    "today_return_rate": 1.4,
-    "monthly_return_rate": 3.25,
+    "net_today": 3435.77,
+    "net_today_pct": 1.69,
+    "total_pnl_amount": 7076.77,
+    "total_pnl_percent": 3.54,
+    "monthly_pnl": 7076.77,
+    "today_return": 3435.77,
+    "available_cash": 46518.27,
+    "position_ratio": 77.5,
+    "position_count": 3,
+    "realized_pnl_today": 3203.8,
+    "today_return_rate": 1.69,
+    "monthly_return_rate": 3.54,
     "initial_capital": 200000
   }
 }
