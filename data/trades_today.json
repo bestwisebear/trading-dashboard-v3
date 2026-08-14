@@ -1,43 +1,57 @@
 {
-    "meta": {
-        "date": "2026-08-14",
-        "last_updated": "2026-08-14T16:55:00+08:00"
+  "meta": {
+    "date": "2026-08-14",
+    "last_updated": "2026-08-14T16:55:00+08:00"
+  },
+  "trades": [
+    {
+      "seq": 41,
+      "date": "2026-08-14",
+      "time": "09:50",
+      "code": "300438",
+      "name": "鹏辉能源",
+      "action": "sell",
+      "quantity": 600,
+      "price": 67.12,
+      "realized_pnl": 2872.8,
+      "violation": "none",
+      "notes": "分批锁利，冲前高67.2阻力位减仓1/3，收入40272",
+      "cost_basis": 62.332
     },
-    "trades": [
-        {
-            "seq": 41,
-            "date": "2026-08-14",
-            "time": "09:50",
-            "code": "300438",
-            "name": "鹏辉能源",
-            "action": "sell",
-            "quantity": 600,
-            "price": 67.12,
-            "realized_pnl": 2872.8,
-            "violation": "none",
-            "notes": "分批锁利，冲前高67.2阻力位减仓1/3，收入40272",
-            "cost_basis": 62.332
-        },
-        {
-            "seq": 43,
-            "date": "2026-08-14",
-            "time": "unknown",
-            "code": "300857",
-            "name": "协创数据",
-            "action": "buy",
-            "quantity": 200,
-            "price": 259.13,
-            "amount": 51826.0,
-            "cost_basis": 259.13,
-            "realized_pnl": 0,
-            "violation": "none",
-            "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线"
-        }
-    ],
-    "summary": {
-        "total_trades": 2,
-        "buy_count": 1,
-        "sell_count": 1,
-        "realized_pnl": 2872.8
+    {
+      "seq": 42,
+      "date": "2026-08-14",
+      "time": "10:30",
+      "code": "300604",
+      "name": "长川科技",
+      "action": "sell",
+      "quantity": 200,
+      "price": 281.0,
+      "realized_pnl": -1396.0,
+      "violation": "none",
+      "notes": "减仓200股，剩100股。半导体板块弱势，减仓控制风险",
+      "cost_basis": 300.998
+    },
+    {
+      "seq": 43,
+      "date": "2026-08-14",
+      "time": "unknown",
+      "code": "300857",
+      "name": "协创数据",
+      "action": "buy",
+      "quantity": 200,
+      "price": 259.13,
+      "amount": 51826.0,
+      "cost_basis": 259.13,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线"
     }
+  ],
+  "summary": {
+    "total_trades": 3,
+    "buy_count": 1,
+    "sell_count": 2,
+    "realized_pnl": 1476.8000000000002
+  }
 }

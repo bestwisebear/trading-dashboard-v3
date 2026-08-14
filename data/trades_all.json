@@ -563,6 +563,20 @@
       "cost_basis": 62.332
     },
     {
+      "seq": 42,
+      "date": "2026-08-14",
+      "time": "10:30",
+      "code": "300604",
+      "name": "长川科技",
+      "action": "sell",
+      "quantity": 200,
+      "price": 281.0,
+      "realized_pnl": -1396.0,
+      "violation": "none",
+      "notes": "减仓200股，剩100股。半导体板块弱势，减仓控制风险",
+      "cost_basis": 300.998
+    },
+    {
       "seq": 43,
       "date": "2026-08-14",
       "time": "unknown",
