@@ -1,79 +1,79 @@
 {
-    "date": "2026-08-14",
-    "score": 4,
-    "market_summary": {
-        "shanghai_index": 3927.18,
-        "shanghai_change_pct": 0.01,
-        "shenzhen_index": 14354.31,
-        "shenzhen_change_pct": 0.45,
-        "chinext_index": 3626.3,
-        "chinext_change_pct": 1.12,
-        "star50_change_pct": null,
-        "total_volume_billion": 2.14,
-        "volume_change_billion": -0.41,
-        "rise_count": 2800,
-        "fall_count": 2400,
-        "flat_count": 60,
-        "limit_up": 63,
-        "limit_down": 12,
-        "breadth_pct": 53.0,
-        "main_capital_net_flow_billion": -36.97,
-        "northbound_net_flow_billion": null
-    },
-    "market_comment": "三大指数集体收涨，沪指+0.01%勉强翻红，深成指+0.45%，创业板+1.12%领涨。成交2.14万亿较昨日2.55万亿缩量4080亿。算力/光模块/通信全天最强（剑桥科技涨停，天孚+4.1%，新易盛+4.23%，亨通光电涨停），存储跟涨（君正+4.47%，江波龙+2.38%），医药反复活跃（开开实业7天5板，澳洋3连板）。高位连板股退潮（秦安/德龙跌停）。涨跌2800:2400红盘率53%较昨日21%大幅改善。涨停63家跌停约12家。央行1万亿买断式逆回购托底。",
-    "sector_highlights": {
-        "leading": [
-            "通信设备(+3.63%，阿莱德/共进股份/亨通光电涨停)",
-            "光模块(剑桥科技涨停，天孚+4.1%，新易盛+4.23%)",
-            "玻璃玻纤(+4.31%)",
-            "小金属/稀土(+3.04%，中国稀土涨停)",
-            "算力硬件(天洋新材/华西股份3连板)"
-        ],
-        "lagging": [
-            "电力股下挫(立新能源跌停，华银电力-9%+)",
-            "高位连板股退潮(秦安/京投发展/德龙跌停)",
-            "食品饮料(一鸣-4.55%)"
-        ],
-        "capital_flow_in": [
-            "通信设备+12.22亿",
-            "通信服务+2.06亿",
-            "小金属+1.57亿"
-        ],
-        "capital_flow_out": [
-            "深市主力-73.24亿",
-            "沪市主力-24.11亿"
-        ]
-    },
-    "daily_metrics": {
-        "trade_count": 2,
-        "violation_count": 0,
-        "realized_pnl": 2872.8,
-        "violations_detail": []
-    },
-    "holding_performance": [
-        {
-            "code": "300438",
-            "name": "鹏辉能源",
-            "close": 65.78,
-            "change_pct": 1.32,
-            "pnl_amount": 6663.6,
-            "comment": "冲高回落，盘中触67.95后回落收65.78。分批锁利600股@67.12执行到位。剩余1200股浮盈+6663.6"
-        },
-        {
-            "code": "300604",
-            "name": "长川科技",
-            "close": 283.05,
-            "change_pct": 0.48,
-            "pnl_amount": -1794.8,
-            "comment": "上午减仓200股@281(亏-1396)，剩余100股今日微盈+57.47。半导体板块反弹带动"
-        },
-        {
-            "code": "300857",
-            "name": "协创数据",
-            "close": 265.99,
-            "change_pct": 3.9,
-            "pnl_amount": 1372.0,
-            "comment": "首日建仓即涨+3.9%，算力租赁主线受益。盘中高269.96。注意负债率83%硬门禁风险"
-        }
+  "date": "2026-08-14",
+  "score": 4,
+  "market_summary": {
+    "shanghai_index": 3927.18,
+    "shanghai_change_pct": 0.01,
+    "shenzhen_index": 14354.31,
+    "shenzhen_change_pct": 0.45,
+    "chinext_index": 3626.3,
+    "chinext_change_pct": 1.12,
+    "star50_change_pct": null,
+    "total_volume_billion": 2.14,
+    "volume_change_billion": -0.41,
+    "rise_count": 2800,
+    "fall_count": 2400,
+    "flat_count": 60,
+    "limit_up": 63,
+    "limit_down": 12,
+    "breadth_pct": 53.0,
+    "main_capital_net_flow_billion": -36.97,
+    "northbound_net_flow_billion": null
+  },
+  "market_comment": "三大指数集体收涨，沪指+0.01%勉强翻红，深成指+0.45%，创业板+1.12%领涨。成交2.14万亿较昨日2.55万亿缩量4080亿。算力/光模块/通信全天最强（剑桥科技涨停，天孚+4.1%，新易盛+4.23%，亨通光电涨停），存储跟涨（君正+4.47%，江波龙+2.38%），医药反复活跃（开开实业7天5板，澳洋3连板）。高位连板股退潮（秦安/德龙跌停）。涨跌2800:2400红盘率53%较昨日21%大幅改善。涨停63家跌停约12家。央行1万亿买断式逆回购托底。",
+  "sector_highlights": {
+    "leading": [
+      "通信设备(+3.63%，阿莱德/共进股份/亨通光电涨停)",
+      "光模块(剑桥科技涨停，天孚+4.1%，新易盛+4.23%)",
+      "玻璃玻纤(+4.31%)",
+      "小金属/稀土(+3.04%，中国稀土涨停)",
+      "算力硬件(天洋新材/华西股份3连板)"
+    ],
+    "lagging": [
+      "电力股下挫(立新能源跌停，华银电力-9%+)",
+      "高位连板股退潮(秦安/京投发展/德龙跌停)",
+      "食品饮料(一鸣-4.55%)"
+    ],
+    "capital_flow_in": [
+      "通信设备+12.22亿",
+      "通信服务+2.06亿",
+      "小金属+1.57亿"
+    ],
+    "capital_flow_out": [
+      "深市主力-73.24亿",
+      "沪市主力-24.11亿"
     ]
+  },
+  "daily_metrics": {
+    "trade_count": 3,
+    "violation_count": 0,
+    "realized_pnl": 1476.8,
+    "violations_detail": []
+  },
+  "holding_performance": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "close": 65.78,
+      "change_pct": 1.32,
+      "pnl_amount": 6663.6,
+      "comment": "冲高回落，盘中触67.95后回落收65.78。分批锁利600股@67.12执行到位。剩余1200股浮盈+6663.6"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "close": 283.05,
+      "change_pct": 0.48,
+      "pnl_amount": -1794.8,
+      "comment": "上午减仓200股@281(亏损-1396)，剩余100股。半导体板块弱势中减仓控制风险。剩余100股今日微盈"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "close": 265.99,
+      "change_pct": 3.9,
+      "pnl_amount": 1372.0,
+      "comment": "首日建仓即涨+3.9%，算力租赁主线受益。盘中高269.96。注意负债率83%硬门禁风险"
+    }
+  ]
 }
