@@ -1,53 +1,43 @@
 {
-  "meta": {
-    "date": "2026-08-14",
-    "last_updated": "2026-08-14T11:32:00+08:00"
-  },
-  "trades": [
-    {
-      "seq": 41,
-      "date": "2026-08-14",
-      "time": "上午",
-      "code": "159558",
-      "name": "半导体设备ETF",
-      "action": "sell",
-      "quantity": 47100,
-      "price": 1.194,
-      "realized_pnl": 141,
-      "violation": "none",
-      "notes": "上午清仓ETF"
+    "meta": {
+        "date": "2026-08-14",
+        "last_updated": "2026-08-14T16:55:00+08:00"
     },
-    {
-      "seq": 42,
-      "date": "2026-08-14",
-      "time": "上午",
-      "code": "002015",
-      "name": "协鑫能科",
-      "action": "sell",
-      "quantity": 2000,
-      "price": 16.15,
-      "realized_pnl": 1586,
-      "violation": "none",
-      "notes": "上午清仓，质押风险+算力纸面"
-    },
-    {
-      "seq": 43,
-      "date": "2026-08-14",
-      "time": "上午",
-      "code": "300604",
-      "name": "长川科技",
-      "action": "sell",
-      "quantity": 300,
-      "price": 281.0,
-      "realized_pnl": -2058,
-      "violation": "none",
-      "notes": "上午清仓，上涨家数持续下降→情绪走弱"
+    "trades": [
+        {
+            "seq": 41,
+            "date": "2026-08-14",
+            "time": "09:50",
+            "code": "300438",
+            "name": "鹏辉能源",
+            "action": "sell",
+            "quantity": 600,
+            "price": 67.12,
+            "realized_pnl": 2872.8,
+            "violation": "none",
+            "notes": "分批锁利，冲前高67.2阻力位减仓1/3，收入40272",
+            "cost_basis": 62.332
+        },
+        {
+            "seq": 43,
+            "date": "2026-08-14",
+            "time": "unknown",
+            "code": "300857",
+            "name": "协创数据",
+            "action": "buy",
+            "quantity": 200,
+            "price": 259.13,
+            "amount": 51826.0,
+            "cost_basis": 259.13,
+            "realized_pnl": 0,
+            "violation": "none",
+            "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线"
+        }
+    ],
+    "summary": {
+        "total_trades": 2,
+        "buy_count": 1,
+        "sell_count": 1,
+        "realized_pnl": 2872.8
     }
-  ],
-  "summary": {
-    "total_trades": 3,
-    "buy_count": 0,
-    "sell_count": 3,
-    "realized_pnl": -331
-  }
 }
