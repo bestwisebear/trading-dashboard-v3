@@ -1,61 +1,61 @@
 {
-    "meta": {
-        "last_updated": "2026-08-14T16:55:00+08:00",
-        "data_date": "2026-08-14",
-        "source": "收盘行情",
-        "session": "close",
-        "data_as_of": "2026-08-14 收盘"
+  "meta": {
+    "last_updated": "2026-08-14T20:45:00+08:00",
+    "data_date": "2026-08-14",
+    "source": "收盘行情",
+    "session": "evening_review",
+    "data_as_of": "2026-08-14 晚间复盘"
+  },
+  "current": {
+    "total_assets": 207076.77,
+    "prev_close_assets": 203641.0,
+    "available_cash": 46637.77,
+    "initial_capital": 200000,
+    "position_count": 3,
+    "position_ratio": 77.4,
+    "monthly_pnl": 5680.77,
+    "monthly_return_rate": 3.54
+  },
+  "today_so_far": {
+    "date": "2026-08-14",
+    "net_today": 3435.77,
+    "trade_count": 3,
+    "violation_count": 0,
+    "session": "evening_review",
+    "net_today_ref": null
+  },
+  "positions": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1200,
+      "cost_price": 60.227,
+      "stop_loss": 57.0,
+      "buy_date": "2026-08-06",
+      "market_value": 78936.0
     },
-    "current": {
-        "total_assets": 207076.77,
-        "prev_close_assets": 203641.0,
-        "available_cash": 46637.77,
-        "initial_capital": 200000,
-        "position_count": 3,
-        "position_ratio": 77.4,
-        "monthly_pnl": 7076.77,
-        "monthly_return_rate": 3.54
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "quantity": 100,
+      "cost_price": 300.998,
+      "stop_loss": 275.0,
+      "buy_date": "2026-08-13",
+      "market_value": 28305.0
     },
-    "today_so_far": {
-        "date": "2026-08-14",
-        "net_today": 3435.77,
-        "trade_count": 2,
-        "violation_count": 0,
-        "session": "close",
-        "net_today_ref": null
-    },
-    "positions": [
-        {
-            "code": "300438",
-            "name": "鹏辉能源",
-            "quantity": 1200,
-            "cost_price": 60.227,
-            "stop_loss": 57.0,
-            "buy_date": "2026-08-06",
-            "market_value": 78936.0
-        },
-        {
-            "code": "300604",
-            "name": "长川科技",
-            "quantity": 100,
-            "cost_price": 300.998,
-            "stop_loss": 275.0,
-            "buy_date": "2026-08-13",
-            "market_value": 28305.0
-        },
-        {
-            "code": "300857",
-            "name": "协创数据",
-            "quantity": 200,
-            "cost_price": 259.13,
-            "stop_loss": 250.0,
-            "buy_date": "2026-08-14",
-            "market_value": 53198.0
-        }
-    ],
-    "validation": {
-        "total_assets_check": true,
-        "position_count_match": true,
-        "cash_positive": true
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "quantity": 200,
+      "cost_price": 259.13,
+      "stop_loss": 250.0,
+      "buy_date": "2026-08-14",
+      "market_value": 53198.0
     }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true
+  }
 }
