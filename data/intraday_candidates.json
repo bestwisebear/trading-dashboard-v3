@@ -1,84 +1,127 @@
 {
   "meta": {
-    "date": "2026-08-13",
-    "last_updated": "2026-08-13T11:06:00+08:00",
-    "session": "midday_confirm_1",
-    "data_basis": "8/13 ~10:55实时行情"
+    "generated_at": "2026-08-14T11:06:00+08:00",
+    "session": "midday_check_1",
+    "data_as_of": "8/14 11:00盘中",
+    "market_snapshot": {
+      "sh_index": 3909,
+      "sh_change_pct": -0.45,
+      "sz_index": 14262,
+      "sz_change_pct": -0.19,
+      "rise_count_est": 2200,
+      "fall_count_est": 3000,
+      "volume_half_day_trillion": 1.3,
+      "comment": "高开冲高回落，11:00上证跌至3909。开盘涨跌2558:2015满足>2000，午间回落至约2285:3088。半日成交~1.3万亿偏缩量"
+    },
+    "gate_check": {
+      "gate1_rise_count": "pass_est(~2200>2000)",
+      "gate2_volume": "conditional(半日1.3万亿偏缩，全天预计2.2-2.4万亿)",
+      "gate3_sector": "pass(存储+1.5-3%偏强，半导体分化，光通信反弹)",
+      "overall": "conditional_pass"
+    },
+    "screening_scope": "关注池A级(priority_20260814) + 前晚计划方向 + 合格中转池(空)",
+    "screening_note": "daily_plan明确：仓位79.6%+周五+前日涨跌<2000→绝对不开新仓。但今日早盘涨跌恢复>2000，按规则执行筛选"
   },
-  "market_snapshot": {
-    "sh_index": {"price": 3964, "change_pct": 0.43},
-    "sz_index": {"price": 14537, "change_pct": 0.85},
-    "cyb_index": {"price": 3665, "change_pct": 1.76},
-    "half_day_turnover_comment": "截至10:17两市合计10140亿，预估全天2.4-2.6万亿",
-    "rise_count_est": "~3000",
-    "market_env": "偏多强势",
-    "gates_check": {
-      "rise_count": "pass (~3000>2000)",
-      "turnover": "pass (预估2.4-2.6万亿>2万亿)",
-      "sector_breadth": "pass (科技板块全面走强)"
-    }
-  },
-  "account_constraint": {
-    "available_cash": 219.87,
-    "position_ratio": 99.9,
-    "current_positions": 3,
-    "max_positions": 4,
-    "verdict": "可用现金仅219.87元，无法开任何新仓。即使市场条件和个股信号全部通过，也无资金执行"
-  },
-  "candidates": [],
-  "rejected_candidates": [
+  "candidates": [
     {
       "code": "300308",
       "name": "中际旭创",
-      "source": "合格中转池/前日计划",
-      "realtime_price": 958.81,
-      "prev_close": 921.0,
-      "change_pct": 4.1,
-      "buy_range": [900, 940],
-      "absolute_max_buy": 940,
+      "source": "关注池A级(priority=1)",
+      "sector": "光模块/CPO龙头",
+      "realtime_price": 925,
+      "today_change_pct": 0.4,
+      "today_high": 938.87,
+      "today_low": 916,
       "support": 900,
-      "stop_loss": 870,
+      "buy_range": [
+        900,
+        960
+      ],
+      "max_buy_price": 990,
+      "stop_loss": 891,
       "resistance": 960,
-      "sector_strength": "真实强（光模块全线上涨+美股CoreWeave/Lumentum催化）",
-      "reject_reason": "实时价958.81>绝对最高买入价940，追高剔除",
-      "13:15_confirm_condition": "不适用",
-      "invalid_condition": "不适用"
+      "sector_strength": {
+        "sector_change_pct": "+0.7%估算",
+        "sector_breadth": "光通信反弹，中际旭创拟17亿入股中石科技利好",
+        "sector_verdict": "偏强但有分歧"
+      },
+      "catalyst": [
+        "美股Lumentum+13%/Coherent+8%隔夜反转利好",
+        "中际旭创8/13晚公告17.47亿入股中石科技(散热产业链整合)",
+        "AI算力需求持续，光模块龙头估值修复"
+      ],
+      "confirm_1315": [
+        "价格守住916(今日低点)",
+        "涨跌家数维持>2000",
+        "光通信板块不转弱(中际旭创不跌破916)",
+        "上证不跌破3900"
+      ],
+      "invalid_conditions": [
+        "跌破916(今日低点)",
+        "涨跌家数<2000",
+        "上证跌破3900",
+        "光通信板块转弱(天孚/新易盛跌>2%)"
+      ],
+      "risk_notes": [
+        "周五效应：资金避险减仓",
+        "上午冲高回落，大盘走弱趋势",
+        "CPO前日午后集体杀跌，今日需警惕重演",
+        "仓位79.6%+可用现金4.3万，开仓空间有限",
+        "成交额半日较前日缩量1474亿"
+      ]
+    }
+  ],
+  "eliminated": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "reason": "实时价403远超绝对最高买入价334(+20.7%)，防追高剔除",
+      "realtime_price": 403,
+      "max_buy_price": 334
     },
     {
-      "code": "002384",
-      "name": "东山精密",
-      "source": "合格中转池/前日计划",
-      "realtime_price": 211.68,
-      "prev_close": 200.19,
-      "change_pct": 5.74,
-      "buy_range": [195, 205],
-      "absolute_max_buy": 205,
-      "support": 195,
-      "stop_loss": 190,
-      "resistance": 215,
-      "sector_strength": "真实强（PCB板块延续强势+Rubin放量预期）",
-      "reject_reason": "实时价211.68>绝对最高买入价205，当日涨幅5.74%过大，追高剔除",
-      "13:15_confirm_condition": "不适用",
-      "invalid_condition": "不适用"
+      "code": "300223",
+      "name": "北京君正",
+      "reason": "实时价142远超绝对最高买入价128.2(+10.8%)，防追高剔除",
+      "realtime_price": 142,
+      "max_buy_price": 128.2
     },
     {
       "code": "300857",
       "name": "协创数据",
-      "source": "固定关注池",
-      "realtime_price": 266.99,
-      "prev_close": 249.8,
-      "change_pct": 6.88,
-      "buy_range": [220, 244],
-      "absolute_max_buy": 244,
-      "support": 243,
-      "stop_loss": 235,
-      "resistance": 251.9,
-      "sector_strength": "真实强（AI服务器+美股CoreWeave催化）",
-      "reject_reason": "实时价266.99>绝对最高买入价244，当日涨幅6.88%过大，追高剔除",
-      "13:15_confirm_condition": "不适用",
-      "invalid_condition": "不适用"
+      "reason": "实时价256-264超绝对最高买入价244(+4.9-8.2%)，防追高剔除",
+      "realtime_price": 260,
+      "max_buy_price": 244
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "reason": "实时价444-447超绝对最高买入价442(+0.5-1.1%)，防追高剔除",
+      "realtime_price": 445,
+      "max_buy_price": 442
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "reason": "实时价263远超绝对最高买入价214(+22.9%)，防追高剔除",
+      "realtime_price": 263,
+      "max_buy_price": 214
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "reason": "实时价62.25在买入区间[55,61]上方，高开追涨剔除(距买入区间顶+2%)",
+      "realtime_price": 62.25,
+      "max_buy_price": 61
+    },
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "reason": "实时价203远超绝对最高买入价178(+14%)，防追高剔除",
+      "realtime_price": 203,
+      "max_buy_price": 178
     }
   ],
-  "conclusion": "下午无新仓备选。原因：①可用现金仅219.87元/仓位99.9%，完全无资金开新仓；②中转池和关注池候选标的上午均已大涨4-7%，全部超过绝对最高买入价，防追高规则剔除；③市场条件本身通过（涨跌~3000、成交预估2.4-2.6万亿、板块真实强），但资金面和价格面双重约束导致无法提供备选。建议：继续持有现有3只（鹏辉/协鑫/半导体ETF），下午关注持仓管理而非新开仓。",
-  "note_for_13:15_confirm": "13:15第二轮确认重点应放在持仓管理：鹏辉能源浮盈+6.43%关注66支撑（前阻力变支撑）、协鑫能科微盈+0.18%关注15支撑、半导体ETF微亏-0.25%关注1.15止损。如持仓高开后缩量回落，可考虑13:30后减仓锁利润。"
+  "conclusion": "下午仅中际旭创1只进入候选评估，但需13:15进一步确认。整体下午新仓备选不充分，建议观望为主",
+  "recommendation": "周五+上午冲高回落+仓位79.6%，下午以持仓管理为主，不建议开新仓。中际旭创仅作为观察标的纳入13:15确认"
 }
