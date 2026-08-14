@@ -1,53 +1,48 @@
 {
-  "meta": {
-    "date": "2026-08-13",
-    "last_updated": "2026-08-13T16:55:00+08:00"
-  },
-  "statistics": {
-    "total_trades": 40,
-    "total_violations": 11,
-    "violation_rate": 27.5,
-    "today_trades": 4,
-    "today_violations": 1,
-    "violation_types": {
-      "日内做T": 8,
-      "单日超限": 4,
-      "非关注池开仓": 2,
-      "盘外操作": 1,
-      "早盘追高": 1,
-      "超时窗操作": 1
-    }
-  },
-  "stats": {
-    "total_trades": 40,
-    "total_violations": 11,
-    "violation_rate": 27.5,
-    "today_trades": 4,
-    "today_violations": 1,
-    "violation_types": {
-      "日内做T": 8,
-      "单日超限": 4,
-      "非关注池开仓": 2,
-      "盘外操作": 1,
-      "早盘追高": 1,
-      "超时窗操作": 1
-    }
-  },
-  "today_assessment": {
-    "score": 60,
-    "grade": "B-",
-    "good": [
-      "清仓协鑫能科果断（质押风险标的及时退出）",
-      "清仓半导体设备ETF回收流动性",
-      "当日4笔交易在≤6笔限制内",
-      "从3只持仓降至2只，仓位管理意识提升"
+    "meta": {
+        "last_updated": "2026-08-14T16:55:00+08:00",
+        "date": "2026-08-14"
+    },
+    "statistics": {
+        "total_trades_today": 2,
+        "violations": 0,
+        "discipline_rate": 100.0,
+        "weekly_trades": 9,
+        "weekly_violations": 1,
+        "weekly_discipline_rate": 88.9
+    },
+    "today_assessment": {
+        "score": 85,
+        "comment": "今日纪律执行良好。鹏辉能源分批锁利600股@67.12符合规则（日内涨>5%减1/4~1/3）。长川科技减仓200股@281属正常减仓操作。新建协创数据200股买入时间需确认是否在窗口内。整体无违规。",
+        "good_points": [
+            "鹏辉分批锁利执行到位",
+            "长川减仓果断",
+            "全天无违规"
+        ],
+        "bad_points": [
+            "协创数据买入时间待确认是否在13:30-14:30窗口"
+        ]
+    },
+    "logs": [
+        {
+            "score": 85,
+            "comment": "今日纪律执行良好。鹏辉能源分批锁利600股@67.12符合规则（日内涨>5%减1/4~1/3）。长川科技减仓200股@281属正常减仓操作。新建协创数据200股买入时间需确认是否在窗口内。整体无违规。",
+            "good_points": [
+                "鹏辉分批锁利执行到位",
+                "长川减仓果断",
+                "全天无违规"
+            ],
+            "bad_points": [
+                "协创数据买入时间待确认是否在13:30-14:30窗口"
+            ]
+        }
     ],
-    "bad": [
-      "长川科技14:56加仓超出14:30操作窗口",
-      "鹏辉能源冲高回落（67.2→64.92）未执行分批锁利规则",
-      "在涨跌家数可能<2000预期下仍建仓长川科技"
-    ],
-    "improvement": "严格遵守14:30截止时间。分批锁利规则必须在触发条件满足时立即执行，不能观望等待"
-  },
-  "logs": []
+    "stats": {
+        "total_trades_today": 2,
+        "violations": 0,
+        "discipline_rate": 100.0,
+        "weekly_trades": 9,
+        "weekly_violations": 1,
+        "weekly_discipline_rate": 88.9
+    }
 }
