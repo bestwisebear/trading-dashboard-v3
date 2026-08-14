@@ -438,6 +438,28 @@
         "8/14新增"
       ],
       "added_date": "2026-08-14"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "key_price": {
+        "support": null,
+        "resistance": null,
+        "buy_range": [
+          null,
+          null
+        ]
+      },
+      "status": "tracking",
+      "sector": "消费电子",
+      "today_close": null,
+      "today_change_pct": null,
+      "tags": [
+        "消费电子",
+        "8/14新增",
+        "历史成功票"
+      ],
+      "added_date": "2026-08-14"
     }
   ],
   "summary": {
@@ -447,7 +469,7 @@
     "flat_count": 0,
     "top_gainer": "新易盛 +3.39%",
     "top_loser": "三环集团 -0.33%",
-    "total": 17,
+    "total": 18,
     "note": "8/14午间关注池15只中13涨2跌，平均涨幅3.54%。通信/CPO反弹（新易盛+3.39%/北京君正+3.35%/天孚+2.71%），存储映射生效（江波龙+1.68%），MLCC继续弱势（三环集团-0.33%）。持仓鹏辉+2.23%反弹。长川科技已清仓"
   },
   "oversold_scan": [
