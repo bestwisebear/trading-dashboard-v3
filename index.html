@@ -1276,7 +1276,7 @@ function OverviewPage({
         className: "text-[10px] text-info"
       }, m.sector), /*#__PURE__*/React.createElement("span", {
         className: "text-[10px] text-text-muted font-mono"
-      }, "\u23F0 ", m.time || '-')));
+      }, "\u23F0 ", (m.date ? m.date.slice(5) + " " : "") + (m.time || '-'))));
     })));
   })());
 }
