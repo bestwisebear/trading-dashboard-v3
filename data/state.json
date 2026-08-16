@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T20:50:00+08:00",
+    "last_updated": "2026-08-16T20:50:00+08:00",
     "data_date": "2026-08-14",
     "source": "收盘行情",
-    "session": "weekend_review",
-    "data_as_of": "2026-08-15 晚间复盘(周末)"
+    "session": "weekend_evening_update",
+    "data_as_of": "2026-08-16 晚间复盘(周末)"
   },
   "current": {
     "total_assets": 207076.77,

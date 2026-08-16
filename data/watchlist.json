@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-15T23:00:00+08:00",
-    "date": "2026-08-14",
-    "session": "night_scan"
+    "last_updated": "2026-08-16T20:50:00+08:00",
+    "date": "2026-08-16",
+    "session": "weekend_evening_update"
   },
   "watchlist": {
     "sz002281": {
@@ -23,8 +23,8 @@
       "name": "风华高科",
       "score": 7,
       "status": "buy",
-      "sector": "MLCC",
-      "notes": "★Buy信号，MLCC龙头+多头+MACD金叉"
+      "sector": "MLCC/被动元件",
+      "notes": "🔥周末新增：三环MLCC涨价30%启动涨价链，风华高科为MLCC龙头+多头+MACD金叉"
     },
     "sh603501": {
       "name": "韦尔股份",
@@ -66,8 +66,8 @@
     "total_scanned": 20,
     "pass_count": 13,
     "conditional_count": 6,
-    "main_line": "通信/光通信/CPO为绝对主线，半导体分化但低位票有补涨机会",
-    "risk_warning": "多只龙头RSI超买(亨通73/天孚86/中恒91)，追高风险大；缩量4000亿级别，需精选低RSI+多头+低PE标的"
+    "main_line": "CPO/光通信为绝对主线+MLCC涨价链为新催化+存储超级周期持续",
+    "risk_warning": "光通信8月已反弹超30%追高风险大；8/17经济数据+美联储纪要增加不确定性；协创数据负债率83%硬门禁"
   },
   "transit_pool": [
     {
