@@ -1,181 +1,185 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T08:23:00+08:00",
-    "session": "monday_pre_open_8_25",
-    "data_as_of": "8/14收盘+8/15美股+周末催化+8/17早盘6条新催化",
-    "market_snapshot": {
-      "sh_index": 3927.18,
-      "sh_change_pct": 0.01,
-      "sz_index": 14354.31,
-      "sz_change_pct": 0.45,
-      "cyb_index": 3626.3,
-      "cyb_change_pct": 1.12,
-      "ftn_a50_change_pct": 0.13,
-      "comment": "8/17集合竞价预计偏暖（A50+0.13%），周末6大催化共振下硬科技溢价仍高。底部信号3/5但未达3000线"
-    },
-    "gate_check": {
-      "gate1_rise_count": "8/14收盘2800:2400>2000, 8/17需观察",
-      "gate2_volume": "8/14缩量至2.14万亿, 8/17需放量>1.5万亿",
-      "gate3_sector": "8/14光通信/通信设备/算力硬件领涨, 8/17MLCC/存储/CPO接力",
-      "overall": "conditional_pass"
-    },
-    "screening_scope": "关注池A级 + MLCC涨价链(风华/三环/利和兴) + 存储(北京君正/江波龙)",
-    "screening_note": "8/17周末6大催化下硬科技溢价高。新仓仅13:30-14:30窗口，优先MLCC涨价链+存储方向"
+    "date": "2026-08-17",
+    "generated_at": "2026-08-17T11:06:00+08:00",
+    "session": "afternoon_check_round1",
+    "data_basis": "8/17盘中实时(~10:30-11:00)"
   },
-  "candidates": [
+  "market_snapshot": {
+    "sh_index": 3943.17,
+    "sh_pct": 0.41,
+    "sz_index": 14407.18,
+    "sz_pct": 0.37,
+    "cyb_index": 3627.54,
+    "cyb_pct": 0.03,
+    "cyb_weakness": "创业板10:02转负(-0.61%)，10:09回升(+0.06%)，科技方向明显分化",
+    "rise_count": "4400+",
+    "volume_half_day": "2.18万亿(半日)",
+    "volume_est_full_day": "~2.2-2.3万亿",
+    "market_comment": "上证+0.41%偏强，但创业板科技方向分化严重。医药/白酒/地产走强，CPO大涨(天孚+6.5%)但MLCC回调(三环-3.5%/风华-0.64%)。资金从科技高位股向低位传统板块轮动明显",
+    "gate_check": {
+      "g1_rise_count": "✅ >4400>2000",
+      "g2_volume": "✅ 预估全日>2万亿",
+      "g3_sector": "⚠️ 板块分化严重：医药白酒地产强/MLCC回调/半导体分化",
+      "g4_capital_flow": "⚠️ 风华高科遭净卖出15.5亿居首，资金从科技高位流出",
+      "verdict": "涨跌家数和成交额达标，但板块分化+科技内部高低切明显，新仓需极度谨慎"
+    }
+  },
+  "positions_realtime": [
     {
-      "code": "000636",
-      "name": "风华高科",
-      "source": "MLCC涨价链(周末新增)",
-      "sector": "MLCC/被动元件",
-      "realtime_price": null,
-      "prev_close": 14.85,
-      "today_change_pct": null,
-      "support": 14.0,
-      "buy_range": [
-        14.0,
-        14.8
-      ],
-      "max_buy_price": 15.2,
-      "stop_loss": 13.6,
-      "resistance": 16.5,
-      "catalyst": [
-        "🔥三环MLCC涨价30%+陶瓷基板涨价30%（9/1执行）",
-        "MLCC全品类布局+汽车电子优势",
-        "给予2027年PE 30倍目标价",
-        "8/17涨价链最直接受益标的"
-      ],
-      "confirm_1315": [
-        "价格守住14.0支撑",
-        "集合竞价成交>2亿",
-        "MLCC板块未转弱",
-        "底部信号维持3/5+"
-      ],
-      "invalid_conditions": [
-        "集合竞价高开>+5%且缩量",
-        "MLCC板块整体回调-2%",
-        "上证跌破3900",
-        "底部信号降至2/5"
-      ]
+      "code": "300438",
+      "name": "鹏辉能源",
+      "realtime_price": 64.12,
+      "prev_close": 65.78,
+      "change_pct": -2.52,
+      "low": 63.65,
+      "high": 65.9,
+      "alert": "⚠️ 接近64支撑！持续下行趋势(开盘65.46→10:47跌至64.12)，关注64能否守住"
     },
     {
-      "code": "300408",
-      "name": "三环集团",
-      "source": "MLCC涨价链(直接涨价方)",
-      "sector": "MLCC/陶瓷基板",
-      "realtime_price": null,
-      "prev_close": 129.09,
-      "today_change_pct": null,
-      "support": 125.0,
-      "buy_range": [
-        125.0,
-        132.0
-      ],
-      "max_buy_price": 135.0,
-      "stop_loss": 122.0,
-      "resistance": 137.0,
-      "catalyst": [
-        "🔥直接涨价方：MLCC+陶瓷基板双涨30%（9/1执行）",
-        "技术与规模双领先，AI服务器客户突破",
-        "给予2027年PE 35倍目标价",
-        "8/14收盘+0.54%未涨透，溢价空间大"
-      ],
-      "confirm_1315": [
-        "价格守住125支撑",
-        "集合竞价成交>5亿",
-        "陶瓷基板板块跟涨",
-        "MLCC板块涨幅>3%"
-      ]
+      "code": "300604",
+      "name": "长川科技",
+      "realtime_price": 293.27,
+      "prev_close": 283.05,
+      "change_pct": 3.61,
+      "alert": "✅ 反弹走强+3.61%，半导体设备板块走强(中科飞测+10%/亚翔集成涨停)"
     },
     {
-      "code": "300442",
-      "name": "润泽科技",
-      "source": "算力IDC主线(已入关注池)",
-      "sector": "算力IDC",
-      "realtime_price": null,
-      "prev_close": 70.9,
-      "today_change_pct": null,
-      "support": 67.0,
-      "buy_range": [
-        67.0,
-        71.0
-      ],
-      "max_buy_price": 72.0,
-      "stop_loss": 65.0,
-      "resistance": 75.0,
-      "catalyst": [
-        "PE22低估+MACD金叉",
-        "Anthropic Q2营收暴增催化算力租赁",
-        "四川万卡集群政策支持"
-      ]
-    },
-    {
-      "code": "300285",
-      "name": "国瓷材料",
-      "source": "MLCC上游粉体涨价(8/17早盘新增)",
-      "sector": "MLCC上游粉体/电子材料",
-      "realtime_price": null,
-      "prev_close": null,
-      "today_change_pct": null,
-      "support": 24.0,
-      "buy_range": [
-        24.0,
-        25.5
-      ],
-      "max_buy_price": 26.0,
-      "stop_loss": 23.0,
-      "resistance": 28.0,
-      "catalyst": [
-        "🔥MLCC上游粉体涨价(钛酸钡+10%-40%)直接受益",
-        "MLCC介质粉体+电子浆料销量快速增长",
-        "国内MLCC介质粉体市占率>80%",
-        "涨价链从成品(三环/风华)→上游粉体扩散第一受益"
-      ],
-      "confirm_1315": [
-        "价格守住24.0支撑",
-        "MLCC板块未转弱",
-        "集合竞价高开>1%但<+3%",
-        "底部信号维持3/5+"
-      ],
-      "invalid_conditions": [
-        "MLCC板块整体回调-2%",
-        "上证跌破3900",
-        "底部信号降至2/5"
-      ]
+      "code": "300857",
+      "name": "协创数据",
+      "realtime_price": 258.01,
+      "prev_close": 265.99,
+      "change_pct": -3.0,
+      "alert": "⚠️ 大跌-3%！接近250止损线！算力租赁板块今日分化"
     }
   ],
-  "eliminated": [
+  "candidates_evaluated": [
     {
-      "code": "300394",
-      "name": "天孚通信",
-      "reason": "8/14+4.10%已透支+8/17高开>+3%警惕兑现",
-      "max_buy_price": 250.0
-    },
-    {
-      "code": "300308",
-      "name": "中际旭创",
-      "reason": "8/14+2.38%相对克制，但需观察8/17集合竞价能否站稳940",
-      "max_buy_price": 940.0
-    },
-    {
-      "code": "300502",
-      "name": "新易盛",
-      "reason": "8/14+4.23%已透支+1.6T预期+英伟达CPO量产",
-      "max_buy_price": 430.0
+      "code": "301308",
+      "name": "江波龙",
+      "source": "daily_plan_buy_candidate(高优先)",
+      "realtime_price": 416.96,
+      "prev_close": 406.45,
+      "change_pct": 2.59,
+      "buy_range_planned": "380-400",
+      "absolute_max_buy": 400,
+      "support": 400,
+      "stop_loss": 392,
+      "resistance": 440,
+      "verdict": "❌ 剔除",
+      "reason": "实时价416.96 > 绝对最高买入价400，超过买入区间上限4%，触发防追高规则"
     },
     {
       "code": "300223",
       "name": "北京君正",
-      "reason": "8/14+4.47%已透支，需观察8/17集合竞价能否站稳145",
-      "max_buy_price": 140.0
+      "source": "daily_plan_buy_candidate(中优先)",
+      "realtime_price": 151.51,
+      "prev_close": 143.62,
+      "change_pct": 5.49,
+      "buy_range_planned": "131-140",
+      "absolute_max_buy": 140,
+      "support": 137,
+      "stop_loss": 134,
+      "resistance": 160,
+      "verdict": "❌ 剔除",
+      "reason": "实时价151.51 > 绝对最高买入价140，超过买入区间上限8.2%+当日涨5.49%，严重追高"
     },
     {
-      "code": "301308",
-      "name": "江波龙",
-      "reason": "8/14+2.38%相对克制但需观察8/17集合竞价能否突破420",
-      "max_buy_price": 400.0
+      "code": "300394",
+      "name": "天孚通信",
+      "source": "daily_plan_buy_candidate(高优先/严禁追高)",
+      "realtime_price": 285.0,
+      "prev_close": 267.71,
+      "change_pct": 6.46,
+      "high": 291.8,
+      "low": 274.59,
+      "buy_range_planned": "216-230",
+      "absolute_max_buy": 230,
+      "support": 250,
+      "stop_loss": 245,
+      "resistance": 300,
+      "verdict": "❌ 剔除",
+      "reason": "实时价285 >> 绝对最高买入价230(超过24%)，8月已涨>50%，daily_plan明确严禁追高，当日+6.46%振幅6.43%"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "source": "daily_plan_buy_candidate(高优先)/transit_pool",
+      "realtime_price": 62.33,
+      "prev_close": 62.73,
+      "change_pct": -0.64,
+      "low": 60.92,
+      "high": 62.8,
+      "buy_range_planned": "关注开盘价附近",
+      "support": 60.0,
+      "stop_loss": 57.0,
+      "resistance": 65.0,
+      "verdict": "❌ 剔除",
+      "reason": "①MLCC板块最强催化下反而下跌-0.64%(板块内部分化)；②遭主力净卖出15.5亿居全市场首位；③PE 234倍极度高估；④盘中最低60.92接近60支撑，量价背离；⑤尚未官宣涨价(仅经销商渠道涨价)，与三环已官宣涨30%形成对比"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "source": "watchlist(A级)/transit_pool",
+      "realtime_price": 124.59,
+      "prev_close": 128.4,
+      "change_pct": -3.49,
+      "open": 132.52,
+      "high": 133.18,
+      "low": 124.44,
+      "support": 125.0,
+      "stop_loss": 122.0,
+      "resistance": 137.0,
+      "verdict": "❌ 剔除(观察)",
+      "reason": "高开低走-3.49%！开盘132.52→盘中跌至124.44，已跌破支撑125。虽MLCC涨价30%官宣利好，但市场不买账反砸盘，典型利好出货形态。需等122止损位附近企稳确认后才考虑"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "source": "watchlist/tansit_pool",
+      "realtime_price": 69.92,
+      "prev_close": 70.9,
+      "change_pct": -1.38,
+      "open": 70.88,
+      "high": 73.11,
+      "low": 67.7,
+      "support": 67.0,
+      "stop_loss": 65.0,
+      "resistance": 75.0,
+      "verdict": "❌ 剔除",
+      "reason": "高开73.11后回落至69.92(-1.38%)，振幅4.56%，典型高开低走。算力IDC方向虽长期逻辑好但短期资金分歧大"
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "source": "watchlist(Buy信号)",
+      "realtime_price": 71.65,
+      "prev_close": 70.96,
+      "change_pct": 0.97,
+      "open": 70.28,
+      "high": 71.9,
+      "low": 69.8,
+      "support": 67.0,
+      "stop_loss": 65.0,
+      "resistance": 75.0,
+      "verdict": "❌ 剔除",
+      "reason": "粉体涨价催化下仅微涨0.97%，低于板块平均。换手率6.25%+成交额37.83亿显示分歧巨大，量价不匹配催化强度"
     }
   ],
-  "conclusion": "8/17盘前备选：风华高科(MLCC涨价)+三环集团(直接涨价)+国瓷材料(上游粉体涨价 新增)+润泽科技(算力Token贷+IDC)。新仓仅13:30-14:30窗口",
-  "recommendation": "8/17策略：①持仓3只维持（鹏辉/协创/长川）②集合竞价观察9:15-9:30量能+涨跌家数③8:20重评7道闸：12条催化共振，板块扩散到MLCC上游粉体+算力Token贷+机器人大会+AI Agent ④若集合竞价后涨跌>3000+硬科技继续走强，13:30后考虑加仓MLCC涨价链(风华高科/三环集团/国瓷材料)或存储方向(北京君正/江波龙)。严格执行单日≤6笔+禁做T+减仓后禁当日接回"
+  "decision": {
+    "candidates_count": 0,
+    "conclusion": "下午无新仓备选",
+    "reasons": [
+      "1. 前日计划4只买入候选全部触发剔除条件：江波龙/北京君正/天孚通信均远超绝对最高买入价(防追高)，风华高科利好不涨反跌+主力巨量出逃",
+      "2. watchlist/transit_pool的三环集团/润泽科技/国瓷材料均呈现高开低走形态，短期资金分歧大",
+      "3. 创业板10:00前后转负，科技方向内部高低切明显：CPO(天孚+6.5%)独秀但8月已涨>50%，MLCC(三环-3.5%/风华-0.64%)集体回调，存储(君正+5.5%但已远超买入区间)",
+      "4. 持仓鹏辉-2.52%接近64支撑+协创-3%接近250止损，风险管理优先级高于开新仓",
+      "5. 持仓3只(98.9%仓位)已达上限，现金仅2278元(实际可用~46637)，新增仓位空间极为有限",
+      "6. 15:00将公布7月经济数据，数据窗口期波动风险大，不适合开新仓"
+    ],
+    "risk_priority": "①鹏辉64支撑监控(跌破减半仓) ②协创250止损线监控(跌破果断止损) ③长川293反弹后关注278支撑",
+    "next_action": "13:15二次确认时重点看：①鹏辉能否企稳64上方 ②协创能否止跌250上方 ③7月经济数据公布(15:00)前市场情绪变化",
+    "allowed_window": "13:30-14:30",
+    "position_limit_reminder": "当前持仓3只≤4只上限，但仓位98.9%+现金有限，强行开新仓将导致单只仓位过小或总仓位超限"
+  }
 }
