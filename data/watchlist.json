@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T20:50:00+08:00",
+    "last_updated": "2026-08-17T23:00:00+08:00",
     "date": "2026-08-17",
-    "session": "evening_review",
-    "data_basis": "8/17收盘+晚间公告数据",
-    "screening_criteria": "MLCC涨价链+存储芯片+CPO光通信+半导体设备+机器人预热 | 7道闸≥4/7"
+    "session": "nightly_scan",
+    "data_basis": "8/17收盘数据",
+    "screening_criteria": "全市场7道闸预评估≥3/7 | 半导体低位专项：涨幅<5%+RSI<70+MA20上方"
   },
   "watchlist": [
     {
       "code": "000636",
       "name": "风华高科",
-      "score": 7.5,
+      "score": 7,
       "status": "buy",
       "sector": "MLCC/被动元件",
       "today_close": 63.44,
@@ -20,12 +20,12 @@
         "resistance": 67.0,
         "stop_loss": 58.0
       },
-      "notes": "MLCC涨价链龙头。洁美科技追加MLCC离型膜产能扩产，印证行业高景气"
+      "notes": "MLCC涨价链龙头+1.13%温和。三环涨价30%直接受益。换手13%充分"
     },
     {
       "code": "300408",
       "name": "三环集团",
-      "score": 7.5,
+      "score": 7,
       "status": "buy",
       "sector": "MLCC/陶瓷基板",
       "today_close": 130.15,
@@ -35,7 +35,7 @@
         "resistance": 137.0,
         "stop_loss": 122.0
       },
-      "notes": "MLCC+陶瓷基板双涨价受益。稳健上涨"
+      "notes": "MLCC+陶瓷基板涨价30% 9/1执行。+0.82%未涨透，溢价空间大"
     },
     {
       "code": "300442",
@@ -50,22 +50,7 @@
         "resistance": 75.0,
         "stop_loss": 65.0
       },
-      "notes": "PE22低估+算力租赁景气。大厂加码投资国产算力"
-    },
-    {
-      "code": "300394",
-      "name": "天孚通信",
-      "score": 7,
-      "status": "conditional",
-      "sector": "CPO光模块",
-      "today_close": 286.56,
-      "today_change_pct": 7.04,
-      "key_price": {
-        "support": 265.0,
-        "resistance": 300.0,
-        "stop_loss": 255.0
-      },
-      "notes": "CPO龙头月涨67.6%。1.6T光引擎量产，但涨幅大需等回调"
+      "notes": "PE22低估+算力IDC景气。Anthropic/Token贷催化"
     },
     {
       "code": "688012",
@@ -80,43 +65,58 @@
         "resistance": 400.0,
         "stop_loss": 355.0
       },
-      "notes": "半导体设备龙头。集成电路税收优惠直接受益"
+      "notes": "半导体设备龙头H1+98.48%。集成电路税收优惠直接受益，涨幅<5%"
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "score": 6,
+      "status": "buy",
+      "sector": "半导体封测",
+      "today_close": 18.76,
+      "today_change_pct": 4.34,
+      "key_price": {
+        "support": 17.5,
+        "resistance": 20.0,
+        "stop_loss": 17.0
+      },
+      "notes": "封测三强之一+4.34%<5%。先进封装+HBM受益，低位补涨安全边际高"
     },
     {
       "code": "688385",
       "name": "复旦微电",
-      "score": 6.5,
+      "score": 6,
       "status": "watch",
       "sector": "半导体/存储",
-      "today_close": 128.0,
-      "today_change_pct": 4.03,
+      "today_close": 133.5,
+      "today_change_pct": 4.3,
       "key_price": {
-        "support": 120.0,
-        "resistance": 140.0,
-        "stop_loss": 115.0
+        "support": 125.0,
+        "resistance": 145.0,
+        "stop_loss": 120.0
       },
-      "notes": "晚间公告H1净利+338.58%爆发！Q2净利环比+372%。明日关注开盘反应"
+      "notes": "H1净利+338.58%爆发！存储+FPGA双主线，涨幅<5%，明日关注130站稳"
     },
     {
       "code": "002281",
       "name": "光迅科技",
-      "score": 6.5,
+      "score": 6,
       "status": "buy",
       "sector": "光通信",
-      "today_close": 199.75,
-      "today_change_pct": 4.3,
+      "today_close": 208.0,
+      "today_change_pct": 4.15,
       "key_price": {
-        "support": 188.0,
+        "support": 195.0,
         "resistance": 220.0,
-        "stop_loss": 185.0
+        "stop_loss": 190.0
       },
       "notes": "CPO量产催化。光通信二线龙头融资余额+21%"
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "score": 6.5,
-      "status": "buy",
+      "score": 5,
+      "status": "watch",
       "sector": "CPO光模块",
       "today_close": 466.68,
       "today_change_pct": 4.15,
@@ -125,37 +125,22 @@
         "resistance": 480.0,
         "stop_loss": 420.0
       },
-      "notes": "光模块龙头。但大市值弹性受限"
+      "notes": "光模块龙头+4.15%。但遭主力净卖出6.46亿，融资余额下降"
     },
     {
-      "code": "301308",
-      "name": "江波龙",
+      "code": "300394",
+      "name": "天孚通信",
       "score": 6,
-      "status": "watch",
-      "sector": "存储",
-      "today_close": 419.26,
-      "today_change_pct": 3.15,
+      "status": "conditional",
+      "sector": "CPO光模块",
+      "today_close": 286.56,
+      "today_change_pct": 7.04,
       "key_price": {
-        "support": 390.0,
-        "resistance": 440.0,
-        "stop_loss": 380.0
+        "support": 265.0,
+        "resistance": 300.0,
+        "stop_loss": 255.0
       },
-      "notes": "存储荒催化。SK海力士预警存储荒延续至2027"
-    },
-    {
-      "code": "688702",
-      "name": "盛科通信",
-      "score": 6,
-      "status": "watch",
-      "sector": "网络芯片",
-      "today_close": 82.0,
-      "today_change_pct": 3.5,
-      "key_price": {
-        "support": 76.0,
-        "resistance": 90.0,
-        "stop_loss": 73.0
-      },
-      "notes": "晚间公告签超1亿元以太网芯片大合同，金额超去年营收50%"
+      "notes": "CPO龙头月涨67.6%。涨幅大需等回调。FCC豁免利好"
     },
     {
       "code": "300308",
@@ -170,12 +155,57 @@
         "resistance": 1050.0,
         "stop_loss": 900.0
       },
-      "notes": "突破1000元。但融资余额下降，大市值拉升成本高。等回调"
+      "notes": "突破1000元+6.15%。主力净流入24.70亿。但融资余额下降+4000整数关口压力"
+    },
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "score": 6,
+      "status": "watch",
+      "sector": "存储",
+      "today_close": 419.26,
+      "today_change_pct": 3.15,
+      "key_price": {
+        "support": 390.0,
+        "resistance": 440.0,
+        "stop_loss": 380.0
+      },
+      "notes": "存储模组+3.15%<5%。SK海力士警告存储荒延续至2027"
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "score": 6,
+      "status": "buy",
+      "sector": "MLCC上游",
+      "today_close": 73.57,
+      "today_change_pct": 3.68,
+      "key_price": {
+        "support": 68.0,
+        "resistance": 78.0,
+        "stop_loss": 66.0
+      },
+      "notes": "钛酸钡粉体涨价10%-40%+国内市占率80%。明日除权除息"
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "score": 6,
+      "status": "watch",
+      "sector": "网络芯片",
+      "today_close": 85.0,
+      "today_change_pct": 3.66,
+      "key_price": {
+        "support": 78.0,
+        "resistance": 92.0,
+        "stop_loss": 75.0
+      },
+      "notes": "签超1亿以太网芯片大合同+3.66%<5%。金额超去年营收50%"
     },
     {
       "code": "300223",
       "name": "北京君正",
-      "score": 5.5,
+      "score": 5,
       "status": "watch",
       "sector": "存储+芯片",
       "today_close": 155.39,
@@ -185,12 +215,12 @@
         "resistance": 165.0,
         "stop_loss": 135.0
       },
-      "notes": "存储芯片+8.20%大涨。涨幅过大需等回调"
+      "notes": "存储芯片+8.20%大涨。涨幅过大需等回调消化"
     },
     {
       "code": "601899",
       "name": "紫金矿业",
-      "score": 5.5,
+      "score": 5,
       "status": "watch",
       "sector": "有色黄金",
       "today_close": 33.36,
@@ -200,7 +230,59 @@
         "resistance": 35.0,
         "stop_loss": 30.5
       },
-      "notes": "黄金4400美元+有色走强"
+      "notes": "黄金4428美元+有色走强。非主线但避险配置"
+    }
+  ],
+  "transit_pool": [
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "close": 18.76,
+      "change_pct": 4.34,
+      "sector": "半导体封测",
+      "gate_score": "6/7",
+      "reason": "封测三强之一，涨幅<5%安全边际高。先进封装+HBM受益，低位补涨逻辑明确",
+      "added_date": "2026-08-17"
+    },
+    {
+      "code": "688012",
+      "name": "中微公司",
+      "close": 387.82,
+      "change_pct": 3.46,
+      "sector": "半导体设备",
+      "gate_score": "7/7",
+      "reason": "设备龙头H1+98.48%，税收优惠直接受益。涨幅<5%低位，RSI适中",
+      "added_date": "2026-08-17"
+    },
+    {
+      "code": "688385",
+      "name": "复旦微电",
+      "close": 133.5,
+      "change_pct": 4.3,
+      "sector": "半导体/存储",
+      "gate_score": "6/7",
+      "reason": "H1净利+338%爆发！存储+FPGA双主线。涨幅<5%低估",
+      "added_date": "2026-08-17"
+    },
+    {
+      "code": "300782",
+      "name": "卓胜微",
+      "close": 108.5,
+      "change_pct": 4.59,
+      "sector": "射频芯片",
+      "gate_score": "5/7",
+      "reason": "射频芯片低位反弹+4.59%<5%。板块扩散标的",
+      "added_date": "2026-08-17"
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "close": 85.0,
+      "change_pct": 3.66,
+      "sector": "网络芯片",
+      "gate_score": "6/7",
+      "reason": "签超1亿大合同。涨幅<5%低位，以太网芯片国产替代",
+      "added_date": "2026-08-17"
     }
   ]
 }
