@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T08:11:00+08:00",
+    "last_updated": "2026-08-17T08:23:00+08:00",
     "date": "2026-08-17",
-    "session": "monday_pre_open",
-    "data_basis": "8/14收盘+8/15美股+周末催化+8/17早间",
+    "session": "monday_pre_open_8_25",
+    "data_basis": "8/14收盘+8/15美股+周末催化+8/17早间新催化",
     "screening_criteria": "MLCC涨价链+存储芯片+CPO光通信+半导体设备+机器人预热 | 7道闸≥4/7 | 涨幅<5% | RSI<70 | 价格>MA20"
   },
   "watchlist": [
@@ -201,14 +201,59 @@
         "stop_loss": 15.5
       },
       "notes": "PE14低估+RSI31接近超卖+美国40万亿美债+黄金4400美元利好"
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "score": 7.0,
+      "status": "buy",
+      "sector": "MLCC上游粉体/电子材料",
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 24.0,
+        "resistance": 28.0,
+        "stop_loss": 23.0
+      },
+      "notes": "🔥MLCC上游粉体涨价直接受益(钛酸钡+10%-40%)+H1净利+9.36% MLCC介质粉体销量快速增长+国内市占率80%+。MLCC涨价链从成品向上游粉体扩散第一受益"
+    },
+    {
+      "code": "002050",
+      "name": "三花智控",
+      "score": 6.0,
+      "status": "observation",
+      "sector": "机器人执行器/热管理",
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 28.0,
+        "resistance": 32.0,
+        "stop_loss": 27.0
+      },
+      "notes": "⭐机器人执行器容量核心+热管理龙头+特斯拉Optimus供应链。8/19世界机器人大会+宇树IPO+Optimus 8月量产三催化"
+    },
+    {
+      "code": "688017",
+      "name": "绿的谐波",
+      "score": 5.5,
+      "status": "observation",
+      "sector": "机器人减速器",
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 60.0,
+        "resistance": 70.0,
+        "stop_loss": 58.0
+      },
+      "notes": "⭐机器人减速器核心+宇树/智元供应链。8/19机器人大会核心催化，但前期已涨，回踩5日线考虑"
     }
   ],
   "summary": {
-    "total_scanned": 17,
+    "total_scanned": 20,
     "pass_count": 5,
     "conditional_count": 8,
-    "main_line_8_17": "MLCC涨价链(三环/风华) + 存储芯片荒(北京君正/江波龙) + CPO光通信(中际旭创/天孚/新易盛) + 算力IDC(润泽) + 半导体设备(长川已持仓)",
-    "risk_warning": "8/17月度解禁340亿+经济数据不确定性+茅台业绩下滑形成牵制；硬科技方向已反弹>30%追高风险大；协创数据负债率~83%硬门禁"
+    "main_line_8_17": "MLCC涨价链(风华/三环/国瓷) + 存储芯片荒(北京君正/江波龙) + CPO光通信(中际旭创/天孚/新易盛) + 算力Token贷(协创已持仓/润泽) + 半导体设备(长川已持仓) + 机器人大会预热(三花智控/绿的谐波)",
+    "risk_warning": "8/17月度解禁340亿+经济数据不确定性+茅台业绩下滑形成牵制；硬科技方向已反弹>30%追高风险大；协创数据负债率~83%硬门禁；宇树IPO 219倍PE警惕纯概念股回调"
   },
   "transit_pool": [
     {
