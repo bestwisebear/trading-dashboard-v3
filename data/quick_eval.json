@@ -1,810 +1,191 @@
 {
   "meta": {
-    "last_updated": "2026-08-16T23:00:00+08:00",
-    "date": "2026-08-16",
-    "session": "nightly_scan_2300",
-    "data_basis": "8/14收盘行情(周末无交易)",
-    "scan_note": "周末扫描-数据同8/14收盘,更新消息面评估"
+    "last_updated": "2026-08-17T08:11:00+08:00",
+    "date": "2026-08-17",
+    "session": "pre_open_monday",
+    "data_basis": "8/14收盘+8/15美股+周末催化"
   },
-  "market_signal": {
-    "overall": "偏多震荡(第一闸通过:涨跌2800:2400>2000)",
-    "new_position_allowed": true,
-    "first_gate": {
-      "rise_count": 2800,
-      "fall_count": 2400,
-      "status": "通过(2800>2000)",
-      "data_date": "2026-08-14"
+  "market_state": {
+    "indices_8_14": {
+      "sh": 3927.18,
+      "sh_pct": 0.01,
+      "sz": 14354.31,
+      "sz_pct": 0.45,
+      "cyb": 3626.3,
+      "cyb_pct": 1.12,
+      "kc50": 1717.68,
+      "kc50_pct": 0.0
     },
-    "reason": "8/14涨跌家数2800:2400通过第一闸;周末消息面利好利空参半:CPO量产+MLCC涨价+存储荒为利好,8/15半导体板块大跌+鹏辉能源跌超10%为利空;下周关注8/17经济数据+美联储纪要",
-    "weekend_key_news": [
-      "利好:英伟达CPO交换机Spectrum-X全面量产,CPO从概念到商用拐点",
-      "利好:三环集团MLCC+陶瓷基板涨价30%,被动元件涨价链启动",
-      "利好:存储超级周期加剧,SK海力士+闪迪周涨35%,DDR5现货月涨18.4%",
-      "利好:四部门集成电路税收松绑,鼓励头部整合",
-      "利好:人民币升值至6.79创三年半新高,利好外资流入",
-      "利空:8/15半导体/存储/PCB板块大跌,科创50跌4.25%",
-      "利空:鹏辉能源跌超10%(电池产业链回调)",
-      "利空:博通大跌5.7%、应用材料跌5.1%,美股芯片分化",
-      "利空:印尼7.7级强震,亚太供应链扰动",
-      "关注:8/17经济数据+8/20 LPR窗口期",
-      "关注:半导体PE123.96倍/百分位94.65%处历史极高区域"
-    ],
-    "risk_warning": "半导体估值处历史极高位(PE百分位94.65%),板块8/15大跌后短期承压;鹏辉能源8/15跌超10%需关注周一走势;持仓协创数据负债率83%触发APEX硬门禁"
+    "breadth_8_14": "2800涨:2400跌（红盘率53%）",
+    "volume_8_14": "2.14万亿（较前日缩量0.41万亿）",
+    "us_overnight_8_15": "道指-0.20%/纳指-0.28%/标普-0.17%；存储/光通信逆势爆发（闪迪+7.39%/希捷+5.65%）",
+    "ftn_a50_pre_open": "+0.13%（开盘偏暖）"
   },
-  "stocks": {
-    "sh600487": {
-      "name": "亨通光电",
-      "price": 62.98,
-      "change_pct": 10.01,
-      "sector": "通信设备/光通信",
-      "pe": 48.11,
-      "market_cap": 1545.31,
-      "turnover": 12.97,
-      "ma5": 59.35,
-      "ma10": 56.45,
-      "ma20": 54.72,
-      "ma_arrange": "bullish",
-      "rsi6": 72.87,
-      "macd_dif": -4.195,
-      "macd_dea": -6.684,
-      "support": [
-        57.2,
-        55.8,
-        47.6
-      ],
-      "resistance": [
-        63
-      ],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 0.5,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 0.5,
-        "sector": 1
-      },
-      "notes": "涨停！光通信龙头。但8月反弹超30%+RSI72.87超买→追高风险极大，等回踩5日线",
-      "score": 3.5,
-      "status": "conditional"
+  "gate_check_7": {
+    "g1_rise_count": {
+      "passed": true,
+      "value": "8/14涨跌2800:2400>2000",
+      "score": 1
     },
-    "sh600522": {
-      "name": "中天科技",
-      "price": 56.1,
-      "change_pct": 8.05,
-      "sector": "通信设备/光通信",
-      "pe": 25.0,
-      "market_cap": 1213.3,
-      "turnover": 11.31,
-      "ma5": 33.45,
-      "ma10": 32.36,
-      "ma20": 31.77,
-      "ma_arrange": "bullish",
-      "rsi6": 72.58,
-      "macd_dif": -2.233,
-      "macd_dea": -3.363,
-      "support": [
-        32.9,
-        32.7,
-        32.3
-      ],
-      "resistance": [],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 0.5,
-        "sector": 1
-      },
-      "notes": "光纤光缆双龙头之一，涨停后涨幅大，RSI超买，等回踩MA5",
-      "score": 5.5,
-      "status": "pass"
+    "g2_volume": {
+      "passed": true,
+      "value": "8/14成交2.14万亿(合理)",
+      "score": 1
     },
-    "sh601869": {
-      "name": "长飞光纤",
-      "price": 355.18,
-      "change_pct": 5.24,
-      "sector": "光纤光缆龙头",
-      "pe": 35.0,
-      "market_cap": 1443.23,
-      "turnover": 3.6,
-      "ma5": 343.5,
-      "ma10": 324.31,
-      "ma20": 326.97,
-      "ma_arrange": "mixed",
-      "rsi6": 73.28,
-      "macd_dif": -17.064,
-      "macd_dea": -27.274,
-      "support": [
-        335.9,
-        312.4,
-        302.3
-      ],
-      "resistance": [],
-      "signal": "hold_sell",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 0.5,
-        "rsi": 0,
-        "macd": 0.5,
-        "sector": 1
-      },
-      "notes": "光纤龙头，价格突破前高区间，但RSI偏高，MACD仍水下",
-      "score": 5.0,
-      "status": "conditional"
+    "g3_sector": {
+      "passed": true,
+      "value": "光通信+3.63%/通信设备+3.63%/算力硬件+3.44%领涨",
+      "score": 1
     },
-    "sz300394": {
-      "name": "天孚通信",
-      "price": 267.71,
-      "change_pct": 4.1,
-      "sector": "CPO/光器件",
-      "pe": 55.0,
-      "market_cap": 2913.72,
-      "turnover": 4.82,
-      "ma5": 242.09,
-      "ma10": 227.58,
-      "ma20": 212.87,
-      "ma_arrange": "bullish",
-      "rsi6": 86.07,
-      "macd_dif": -0.633,
-      "macd_dea": -11.006,
-      "support": [
-        267.7,
-        216.9
-      ],
-      "resistance": [],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 0.5,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 0.5,
-        "sector": 1
-      },
-      "notes": "CPO龙头，RSI86严重超买！仅适合已持仓者持有，新建仓等回调",
-      "score": 5.0,
-      "status": "conditional"
+    "g4_capital_flow": {
+      "passed": false,
+      "value": "8/14主力净流出~37亿，通信设备净流入+12.22亿",
+      "score": 0
     },
-    "sz300308": {
-      "name": "中际旭创",
-      "price": 943.0,
-      "change_pct": 2.38,
-      "sector": "CPO/光模块",
-      "pe": 42.0,
-      "market_cap": 10466.73,
-      "turnover": 1.8,
-      "ma5": 907.32,
-      "ma10": 928.37,
-      "ma20": 965.3,
-      "ma_arrange": "bearish",
-      "rsi6": 46.45,
-      "macd_dif": -51.368,
-      "macd_dea": -55.348,
-      "support": [
-        921,
-        902
-      ],
-      "resistance": [],
-      "signal": "hold_sell",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 0,
-        "rsi": 1,
-        "macd": 0.5,
-        "sector": 1
-      },
-      "notes": "空头排列但RSI低位(46)不超买，支撑921/902，产业资本看好，回调企稳可关注",
-      "score": 5.5,
-      "status": "pass"
+    "g5_technical": {
+      "passed": true,
+      "value": "三大指数站上5日均线，MACD弱势金叉",
+      "score": 1
     },
-    "sz002281": {
-      "name": "光迅科技",
-      "price": 191.52,
-      "change_pct": 3.61,
-      "sector": "光通信/光器件",
-      "pe": 65.0,
-      "market_cap": 1505.98,
-      "turnover": 5.0,
-      "ma5": 184.75,
-      "ma10": 179.28,
-      "ma20": 178.46,
-      "ma_arrange": "bullish",
-      "rsi6": 67.47,
-      "macd_dif": -5.922,
-      "macd_dea": -9.468,
-      "support": [
-        188,
-        182,
-        170.5
-      ],
-      "resistance": [
-        193
-      ],
-      "signal": "buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 1,
-        "macd": 0.5,
-        "sector": 1
-      },
-      "notes": "★Buy信号，多头+RSI67适中+支撑188 | 周末:CPO量产利好光通信链,但光通信8月反弹超30%追高风险大",
-      "score": 6.5,
-      "status": "pass"
+    "g6_news_catalyst": {
+      "passed": true,
+      "value": "周末6大催化共振（MLCC涨价/存储芯片荒/Anthropic Q2营收/人民币新高/中微+98%/英伟达CPO量产）",
+      "score": 1
     },
-    "sh600183": {
-      "name": "生益科技",
-      "price": 143.21,
-      "change_pct": 1.04,
-      "sector": "覆铜板/PCB材料",
-      "pe": 28.0,
-      "market_cap": 3453.87,
-      "turnover": 2.79,
-      "ma5": 140.41,
-      "ma10": 130.63,
-      "ma20": 124.42,
-      "ma_arrange": "bullish",
-      "rsi6": 78.2,
-      "macd_dif": 0.259,
-      "macd_dea": -3.902,
-      "support": [
-        143.2,
-        135.7,
-        126
-      ],
-      "resistance": [],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 0.5,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 1,
-        "sector": 1
-      },
-      "notes": "PCB上游覆铜板龙头，MACD金叉DIF>0，RSI78偏高",
-      "score": 5.5,
-      "status": "pass"
+    "g7_bottom_signal": {
+      "passed": false,
+      "value": "3/5未达3000线确认",
+      "score": 0
     },
-    "sz300442": {
-      "name": "润泽科技",
-      "price": 70.9,
-      "change_pct": 3.43,
-      "sector": "算力/IDC",
-      "pe": 22.37,
-      "market_cap": 1160.09,
-      "turnover": 5.2,
-      "ma5": 68.5,
-      "ma10": 66.8,
-      "ma20": 66.5,
-      "ma_arrange": "bullish",
-      "rsi6": 66.06,
-      "macd_dif": 1.2,
-      "macd_dea": 0.5,
-      "support": [
-        68.7,
-        65,
-        60
-      ],
-      "resistance": [
-        72
-      ],
-      "signal": "buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 1
-      },
-      "notes": "★Buy信号，PE22低估+多头+RSI66健康+MACD金叉 | 周末:算力IDC持续受益+CPO量产利好,但8/15半导体硬件回调需关注周一",
-      "score": 7,
-      "status": "pass"
+    "total": "5/7"
+  },
+  "positions_assessment": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1200,
+      "pnl_pct": 9.22,
+      "support": 64.0,
+      "resistance": 67.95,
+      "stop_loss": 57.0,
+      "verdict": "持有观察",
+      "action_8_17": "8/14已分批锁利600股。8/17观察：若高开>1%且冲67.95附近，再减1/4-1/3锁利；破64减仓一半；破57止损"
     },
-    "sh603881": {
-      "name": "数据港",
-      "price": 29.04,
-      "change_pct": 10.0,
-      "sector": "算力/IDC",
-      "pe": 120.0,
-      "market_cap": 250.34,
-      "turnover": 11.83,
-      "ma5": 27.5,
-      "ma10": 26.0,
-      "ma20": 25.2,
-      "ma_arrange": "bullish",
-      "rsi6": 82.0,
-      "macd_dif": 1.5,
-      "macd_dea": 0.8,
-      "support": [
-        27,
-        25
-      ],
-      "resistance": [],
-      "signal": "hold_sell",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 0.5,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 1,
-        "sector": 1
-      },
-      "notes": "涨停，RSI82超买+PE120高估值，纯情绪炒作，追高风险大",
-      "score": 5.5,
-      "status": "pass"
-    },
-    "sz000636": {
-      "name": "风华高科",
-      "price": 62.73,
-      "change_pct": 1.14,
-      "sector": "MLCC/被动元件",
-      "pe": 35.0,
-      "market_cap": 725.79,
-      "turnover": 12.69,
-      "ma5": 63.76,
-      "ma10": 59.95,
-      "ma20": 52.26,
-      "ma_arrange": "bullish",
-      "rsi6": 66.57,
-      "macd_dif": 2.369,
-      "macd_dea": 0.504,
-      "support": [
-        47.5,
-        44.2
-      ],
-      "resistance": [],
-      "signal": "buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 1
-      },
-      "notes": "★Buy信号，MLCC龙头多头+MACD金叉水上+RSI适中 | 周末:三环MLCC涨价30%启动涨价链→核心受益标的",
-      "score": 7,
-      "status": "pass"
-    },
-    "sh688012": {
-      "name": "中芯国际",
-      "price": 374.85,
-      "change_pct": 1.2,
-      "sector": "半导体/晶圆代工",
-      "pe": 131.57,
-      "market_cap": 3531.83,
-      "turnover": 1.58,
-      "ma5": 370,
-      "ma10": 360,
-      "ma20": 366.72,
-      "ma_arrange": "mixed",
-      "rsi6": 57.53,
-      "macd_dif": 2.5,
-      "macd_dea": -1.0,
-      "support": [
-        367.5,
-        350,
-        330
-      ],
-      "resistance": [],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 0.5,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "Q3超预期+RSI57低位健康 | 周末:中芯国际周涨超10%创新高后,8/15半导体回调属正常获利了结",
-      "score": 6.0,
-      "status": "pass"
-    },
-    "sh603501": {
-      "name": "韦尔股份",
-      "price": 91.08,
-      "change_pct": 1.18,
-      "sector": "半导体/CIS",
-      "pe": 31.11,
-      "market_cap": 1099.3,
-      "turnover": 1.04,
-      "ma5": 90,
-      "ma10": 88,
-      "ma20": 92.83,
-      "ma_arrange": "mixed",
-      "rsi6": 57.81,
-      "macd_dif": 0.8,
-      "macd_dea": -0.5,
-      "support": [
-        89.7,
-        85,
-        80
-      ],
-      "resistance": [],
-      "signal": "buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 0.5,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "★Buy信号，PE31半导体低估值，RSI57+价格MA20附近 | 周末:半导体8/15大跌后或现低位机会,但需等企稳信号",
-      "score": 6.0,
-      "status": "pass"
-    },
-    "sz300604": {
+    {
+      "code": "300604",
       "name": "长川科技",
-      "price": 283.05,
-      "change_pct": 0.48,
-      "sector": "半导体/ATE设备",
-      "pe": 116.17,
-      "market_cap": 1385.47,
-      "turnover": 3.1,
-      "ma5": 280,
-      "ma10": 275,
-      "ma20": 278.6,
-      "ma_arrange": "mixed",
-      "rsi6": 57.68,
-      "macd_dif": 1.2,
-      "macd_dea": -0.8,
-      "support": [
-        281,
-        270,
-        260
-      ],
-      "resistance": [
-        291
-      ],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 0.5,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "已持仓100股@300.998，浮亏-5.96% | ATE龙头RSI低位 | 周末:半导体板块8/15大跌,短期承压但龙头韧性足,支撑281止损275",
-      "score": 6.0,
-      "status": "pass"
+      "quantity": 100,
+      "pnl_pct": -5.96,
+      "support": 278.0,
+      "resistance": 291.0,
+      "stop_loss": 275.0,
+      "verdict": "观察持有",
+      "action_8_17": "半导体设备受中微+98%+中芯Q2+20%催化。8/17观察：若高开>1%且缩量企稳→暂持；破278减半仓；破275清仓"
     },
-    "sz300782": {
-      "name": "卓胜微",
-      "price": 78.87,
-      "change_pct": -0.1,
-      "sector": "半导体/射频",
-      "pe": -116.11,
-      "market_cap": 353.53,
-      "turnover": 2.25,
-      "ma5": 78,
-      "ma10": 76,
-      "ma20": 73.29,
-      "ma_arrange": "bullish",
-      "rsi6": 68.95,
-      "macd_dif": 1.5,
-      "macd_dea": 0.8,
-      "support": [
-        77.6,
-        73,
-        70
-      ],
-      "resistance": [],
-      "signal": "buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "★Buy信号，多头+MACD金叉，但PE为负(亏损) | 周末:半导体板块回调,射频芯片短期承压",
-      "score": 6.5,
-      "status": "pass"
-    },
-    "sz002185": {
-      "name": "华天科技",
-      "price": 17.98,
-      "change_pct": 0.56,
-      "sector": "半导体/封测",
-      "pe": 73.25,
-      "market_cap": 597.41,
-      "turnover": 7.38,
-      "ma5": 17.8,
-      "ma10": 17.3,
-      "ma20": 17.26,
-      "ma_arrange": "mixed",
-      "rsi6": 69.78,
-      "macd_dif": 0.3,
-      "macd_dea": -0.2,
-      "support": [
-        17.9,
-        17,
-        16
-      ],
-      "resistance": [
-        18.5
-      ],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 0.5,
-        "ma": 0.5,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "封测龙头，价格在MA20上方但距支撑仅0.4%，空间不足",
-      "score": 5.5,
-      "status": "pass"
-    },
-    "sh688825": {
-      "name": "长鑫科技",
-      "price": 55.18,
-      "change_pct": 4.35,
-      "sector": "半导体/存储",
-      "pe": 130.89,
-      "market_cap": 2484.78,
-      "turnover": 8.04,
-      "ma5": 53,
-      "ma10": 50,
-      "ma20": 48,
-      "ma_arrange": "bullish",
-      "rsi6": 68.59,
-      "macd_dif": 2.0,
-      "macd_dea": 0.5,
-      "support": [
-        55,
-        50,
-        46
-      ],
-      "resistance": [],
-      "signal": "hold_buy",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 1,
-        "rsi": 1,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "存储DRAM龙头,PE130偏高但赛道稀缺 | 周末:存储超级周期持续,DDR5月涨18.4%利好,但8/15存储板块大跌短期承压",
-      "score": 6.5,
-      "status": "pass"
-    },
-    "sh603629": {
-      "name": "利通电子",
-      "price": 137.5,
-      "change_pct": 10.0,
-      "sector": "连接器/算力",
-      "pe": 35.0,
-      "market_cap": 495.99,
-      "turnover": 18.83,
-      "ma5": 125.18,
-      "ma10": 118.4,
-      "ma20": 111.79,
-      "ma_arrange": "bullish",
-      "rsi6": 72.47,
-      "macd_dif": 3.337,
-      "macd_dea": -0.279,
-      "support": [
-        108.6,
-        107.6
-      ],
-      "resistance": [],
-      "signal": "hold_sell",
-      "gates": {
-        "market": 1,
-        "support": 0.5,
-        "stop_space": 0.5,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 1,
-        "sector": 1
-      },
-      "notes": "涨停，距支撑108.6已远(27%)，RSI72偏高，追高空间不足",
-      "score": 5.0,
-      "status": "conditional"
-    },
-    "sz002364": {
-      "name": "中恒电气",
-      "price": 45.0,
-      "change_pct": 4.65,
-      "sector": "电力设备/充电桩",
-      "pe": 193.56,
-      "market_cap": 251.15,
-      "turnover": 8.5,
-      "ma5": 43,
-      "ma10": 40,
-      "ma20": 38.66,
-      "ma_arrange": "bullish",
-      "rsi6": 90.99,
-      "macd_dif": 3.0,
-      "macd_dea": 1.0,
-      "support": [
-        40,
-        38
-      ],
-      "resistance": [],
-      "signal": "hold_sell",
-      "gates": {
-        "market": 1,
-        "support": 0.5,
-        "stop_space": 0.5,
-        "ma": 1,
-        "rsi": 0,
-        "macd": 1,
-        "sector": 0.5
-      },
-      "notes": "RSI91严重超买+PE193极高，纯短线博弈",
-      "score": 4.5,
-      "status": "conditional"
-    },
-    "sh600900": {
-      "name": "长江电力",
-      "price": 28.1,
-      "change_pct": -0.5,
-      "sector": "电力/防御",
-      "pe": 19.05,
-      "market_cap": 6875.57,
-      "turnover": 0.5,
-      "ma5": 28.2,
-      "ma10": 28.3,
-      "ma20": 28.55,
-      "ma_arrange": "mixed",
-      "rsi6": 64.46,
-      "macd_dif": -0.1,
-      "macd_dea": 0.1,
-      "support": [
-        28,
-        27.5
-      ],
-      "resistance": [
-        28.5
-      ],
-      "signal": "hold",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 0.5,
-        "ma": 0,
-        "rsi": 1,
-        "macd": 0,
-        "sector": 0
-      },
-      "notes": "防御品种，板块当日最弱(-1.82%)，不适合进攻型操作",
-      "score": 3.5,
-      "status": "fail"
-    },
-    "sh601899": {
-      "name": "紫金矿业",
-      "price": 32.53,
-      "change_pct": 0.99,
-      "sector": "有色金属/黄金铜",
-      "pe": 14.02,
-      "market_cap": 6701.76,
-      "turnover": 1.2,
-      "ma5": 32.3,
-      "ma10": 32.0,
-      "ma20": 32.65,
-      "ma_arrange": "mixed",
-      "rsi6": 31.45,
-      "macd_dif": -0.3,
-      "macd_dea": 0.1,
-      "support": [
-        32.2,
-        31,
-        30
-      ],
-      "resistance": [],
-      "signal": "hold",
-      "gates": {
-        "market": 1,
-        "support": 1,
-        "stop_space": 1,
-        "ma": 0,
-        "rsi": 1,
-        "macd": 0,
-        "sector": 0.5
-      },
-      "notes": "PE14低估+RSI31接近超卖，但MACD弱势，等企稳信号",
-      "score": 4.5,
-      "status": "conditional"
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "quantity": 200,
+      "pnl_pct": 2.65,
+      "support": 250.0,
+      "resistance": 270.0,
+      "stop_loss": 250.0,
+      "verdict": "持有",
+      "action_8_17": "算力租赁+Anthropic Q2+四川万卡集群政策利好。8/17观察：注意负债率~83%触发硬门禁风险，破250果断止损"
     }
-  },
-  "summary": {
-    "total_scanned": 20,
-    "pass_count": 13,
-    "conditional_count": 6,
-    "fail_count": 1,
-    "top_scores": [
+  ],
+  "focus_pool_8_17": {
+    "tier1_priority": [
       {
-        "code": "sz300442",
-        "name": "润泽科技",
-        "score": 7,
-        "status": "pass"
-      },
-      {
-        "code": "sz000636",
+        "code": "000636",
         "name": "风华高科",
-        "score": 7,
-        "status": "pass"
+        "reason": "MLCC涨价链最直接受益（涨幅30%已落地）"
       },
       {
-        "code": "sz002281",
-        "name": "光迅科技",
-        "score": 6.5,
-        "status": "pass"
+        "code": "300408",
+        "name": "三环集团",
+        "reason": "MLCC+陶瓷基板双涨价直接方"
       },
       {
-        "code": "sz300782",
-        "name": "卓胜微",
-        "score": 6.5,
-        "status": "pass"
-      },
-      {
-        "code": "sh688825",
-        "name": "长鑫科技",
-        "score": 6.5,
-        "status": "pass"
-      },
-      {
-        "code": "sh688012",
-        "name": "中芯国际",
-        "score": 6.0,
-        "status": "pass"
-      },
-      {
-        "code": "sh603501",
-        "name": "韦尔股份",
-        "score": 6.0,
-        "status": "pass"
-      },
-      {
-        "code": "sz300604",
-        "name": "长川科技",
-        "score": 6.0,
-        "status": "pass"
-      },
-      {
-        "code": "sh600522",
-        "name": "中天科技",
-        "score": 5.5,
-        "status": "pass"
-      },
-      {
-        "code": "sz300308",
-        "name": "中际旭创",
-        "score": 5.5,
-        "status": "pass"
+        "code": "300442",
+        "name": "润泽科技",
+        "reason": "算力IDC低估+MACD金叉"
       }
     ],
-    "weekend_scan_note": "数据基准8/14收盘,周末消息面已纳入评估。8/15半导体/存储大跌,周一关注企稳信号。"
-  }
+    "tier2_priority": [
+      {
+        "code": "300308",
+        "name": "中际旭创",
+        "reason": "CPO+英伟达CPO量产协同"
+      },
+      {
+        "code": "300223",
+        "name": "北京君正",
+        "reason": "存储芯片荒直接受益"
+      },
+      {
+        "code": "301308",
+        "name": "江波龙",
+        "reason": "存储+长江存储Q2份额前三"
+      }
+    ],
+    "tier3_observation": [
+      {
+        "code": "002281",
+        "name": "光迅科技",
+        "reason": "CPO光通信"
+      },
+      {
+        "code": "603501",
+        "name": "韦尔股份",
+        "reason": "半导体CIS低估"
+      }
+    ]
+  },
+  "key_risks_8_17": [
+    "月度解禁340亿+广钢气体245亿领衔",
+    "贵州茅台H1净利-1.95% 大消费承压",
+    "8/17国家统计局7月经济数据不确定性",
+    "8/20 LPR公布 美联储纪要鹰派风险",
+    "协创数据负债率~83%基本面硬门禁"
+  ],
+  "decision": {
+    "open_new_position": "持仓3只(77.4%)+MLCC/存储溢价高+周末催化下新仓可考虑",
+    "priority": "MLCC涨价链(风华/三环) + 存储(北京君正/江波龙) + 算力IDC(润泽)",
+    "window": "13:30-14:30",
+    "size_limit": "单只≤2万，保持仓位<85%",
+    "stop_loss_rule": "支撑-1%缓冲，跌破确认/分批执行"
+  },
+  "stocks": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "price": 65.78,
+      "support": 64.0,
+      "resistance": 67.95,
+      "stop_loss": 57.0,
+      "verdict": "持有",
+      "action_8_17": "高开>1%且冲67.95再减1/4-1/3；破64减半仓"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "price": 283.05,
+      "support": 278.0,
+      "resistance": 291.0,
+      "stop_loss": 275.0,
+      "verdict": "观察持有",
+      "action_8_17": "高开>1%且缩量企稳→暂持；破278减半仓"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "price": 265.99,
+      "support": 250.0,
+      "resistance": 270.0,
+      "stop_loss": 250.0,
+      "verdict": "持有",
+      "action_8_17": "算力租赁催化强，注意负债率~83%硬门禁；破250止损"
+    }
+  ]
 }

@@ -1,58 +1,71 @@
 {
-    "meta": {
-        "last_updated": "2026-08-14T16:55:00+08:00",
-        "date": "2026-08-14"
+  "meta": {
+    "date": "2026-08-17",
+    "last_updated": "2026-08-17T08:11:00+08:00",
+    "session": "pre_open_monday"
+  },
+  "level": "medium",
+  "score": 62,
+  "rule_checks": [
+    {
+      "rule": "持仓≤4只",
+      "passed": true,
+      "current_value": "3只"
     },
-    "level": "medium",
-    "score": 65,
-    "rule_checks": [
-        {
-            "rule": "持仓≤4只",
-            "passed": true,
-            "current_value": "3只"
-        },
-        {
-            "rule": "单日≤6笔",
-            "passed": true,
-            "current_value": "2笔"
-        },
-        {
-            "rule": "新仓仅13:30-14:30",
-            "passed": true,
-            "current_value": "协创数据买入时间待确认"
-        },
-        {
-            "rule": "禁做T",
-            "passed": true,
-            "current_value": "无做T"
-        },
-        {
-            "rule": "减仓后禁当日接回",
-            "passed": true,
-            "current_value": "鹏辉减仓后未接回"
-        },
-        {
-            "rule": "涨跌<2000禁开新仓",
-            "passed": true,
-            "current_value": "涨跌2800:2400>2000"
-        },
-        {
-            "rule": "仓位控制",
-            "passed": true,
-            "current_value": "77.4%"
-        },
-        {
-            "rule": "月回撤<20%",
-            "passed": true,
-            "current_value": "月收益+3.54%"
-        }
-    ],
-    "factors": [
-        "持仓3只，仓位77.4%合理",
-        "今日2笔交易无违规",
-        "底部信号3/5接近底部，可适当持有",
-        "协创数据负债率~83%需注意基本面硬门禁",
-        "市场分化，涨跌2800:2400未达3000线"
-    ],
-    "suggestion": "当前风险中等偏低。持仓全面飘红，底部信号改善。建议继续持有观察，明日关注涨跌家数能否破3000。协创数据注意负债率风险，若跌破250止损需果断出局"
+    {
+      "rule": "单日≤6笔",
+      "passed": true,
+      "current_value": "8/17新操作≤6笔"
+    },
+    {
+      "rule": "新仓仅13:30-14:30",
+      "passed": true,
+      "current_value": "8/17新仓仅此窗口"
+    },
+    {
+      "rule": "禁做T",
+      "passed": true,
+      "current_value": "无做T"
+    },
+    {
+      "rule": "减仓后禁当日接回",
+      "passed": true,
+      "current_value": "8/14减仓未接回"
+    },
+    {
+      "rule": "涨跌<2000禁开新仓",
+      "passed": true,
+      "current_value": "8/14涨跌2800:2400>2000"
+    },
+    {
+      "rule": "仓位控制",
+      "passed": true,
+      "current_value": "77.4%"
+    },
+    {
+      "rule": "月回撤<20%",
+      "passed": true,
+      "current_value": "月收益+3.54%"
+    },
+    {
+      "rule": "基本面硬门禁（负债>80%禁买）",
+      "passed": true,
+      "current_value": "协创数据负债率~83%需注意"
+    },
+    {
+      "rule": "ROE<3%禁买",
+      "passed": true,
+      "current_value": "新仓标的需确认ROE"
+    }
+  ],
+  "factors": [
+    "持仓3只，仓位77.4%合理",
+    "周末6大催化下硬科技方向溢价仍高（MLCC/存储/AI算力）",
+    "底部信号3/5接近底部但未达3000线确认",
+    "协创数据负债率~83%需注意基本面硬门禁",
+    "8/17月度解禁340亿+经济数据不确定性+茅台业绩下滑形成牵制",
+    "8/19世界机器人大会预热，机器人板块8/17-8/18或发酵",
+    "8/17经济数据公布日，盘前预期偏中性（消费-1.95%/工业待发布）"
+  ],
+  "suggestion": "当前风险中等。持仓3只全面浮盈（鹏辉+9.22%/协创+2.65%/长川-5.96%），周末催化下整体偏正向。新仓需先观察集合竞价9:15-9:30量能及涨跌家数变化，若>3000且硬科技继续走强，可考虑13:30-14:30加仓MLCC涨价链(风华高科/利和兴)或存储方向。协创数据若跌破250需果断止损；长川若跌破278减半仓"
 }
