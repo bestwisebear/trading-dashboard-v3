@@ -1,66 +1,52 @@
 {
   "meta": {
     "date": "2026-08-17",
-    "last_updated": "2026-08-17T08:11:00+08:00",
-    "session": "pre_open_monday",
-    "data_basis": "8/14收盘+8/15美股+周末消息+8/17早间"
+    "last_updated": "2026-08-17T11:34:00+08:00",
+    "session": "intraday_11_30",
+    "data_basis": "8/17午间盘中数据"
   },
   "indices": [
     {
       "name": "上证指数",
       "code": "sh000001",
-      "close": 3927.18,
-      "change_pct": 0.01,
-      "change_amount": 0.22,
-      "high": 3932.64,
-      "low": 3903.7,
-      "pre_close": 3926.96,
-      "volume": 499525613,
-      "amount": 99037192,
-      "pe_ratio": 18.06,
-      "price_source": "2026-08-14 收盘"
+      "close": 3960.19,
+      "change_pct": 0.84,
+      "change_amount": 33.01,
+      "high": 3961.82,
+      "low": 3924.47,
+      "pre_close": 3927.18,
+      "volume": 310788423,
+      "amount": 71047783,
+      "pe_ratio": 18.28,
+      "price_source": "2026-08-17 午间"
     },
     {
       "name": "深证成指",
       "code": "sz399001",
-      "close": 14354.31,
-      "change_pct": 0.45,
-      "change_amount": 64.87,
-      "high": 14384.18,
-      "low": 14203.99,
-      "pre_close": 14289.44,
-      "volume": 642557319,
-      "amount": 115247130,
-      "pe_ratio": 46.35,
-      "price_source": "2026-08-14 收盘"
+      "close": 14534.46,
+      "change_pct": 1.26,
+      "change_amount": 180.15,
+      "high": 14541.01,
+      "low": 14348.47,
+      "pre_close": 14354.31,
+      "volume": 410894729,
+      "amount": 78662344,
+      "pe_ratio": 46.72,
+      "price_source": "2026-08-17 午间"
     },
     {
       "name": "创业板指",
       "code": "sz399006",
-      "close": 3626.3,
-      "change_pct": 1.12,
-      "change_amount": 40.26,
-      "high": 3633.03,
-      "low": 3578.61,
-      "pre_close": 3586.04,
-      "volume": 193507809,
-      "amount": 55338851,
-      "pe_ratio": 62.08,
-      "price_source": "2026-08-14 收盘"
-    },
-    {
-      "name": "科创50",
-      "code": "sh000688",
-      "close": 1717.68,
-      "change_pct": 0.0,
-      "change_amount": -0.07,
-      "high": 1741.35,
-      "low": 1690.68,
-      "pre_close": 1717.75,
-      "volume": 8685139,
-      "amount": 9889105,
-      "pe_ratio": 186.37,
-      "price_source": "2026-08-14 收盘"
+      "close": 3674.68,
+      "change_pct": 1.33,
+      "change_amount": 48.38,
+      "high": 3678.84,
+      "low": 3604.17,
+      "pre_close": 3626.3,
+      "volume": 121184661,
+      "amount": 38421030,
+      "pe_ratio": 62.9,
+      "price_source": "2026-08-17 午间"
     }
   ],
   "us_overnight": {
@@ -193,5 +179,98 @@
       "name": "地产",
       "change_pct": -1.2
     }
-  ]
+  ],
+  "sectors": {
+    "top_gainers": [
+      {
+        "name": "电子化学品Ⅱ",
+        "change_pct": 4.5,
+        "lead_stock": "中石科技(20.00)"
+      },
+      {
+        "name": "种植业",
+        "change_pct": 4.2,
+        "lead_stock": "神农种业(13.92)"
+      },
+      {
+        "name": "半导体",
+        "change_pct": 4.18,
+        "lead_stock": "中微半导(14.92)"
+      },
+      {
+        "name": "其他电子Ⅱ",
+        "change_pct": 2.89,
+        "lead_stock": "盈方微(10.07)"
+      },
+      {
+        "name": "贵金属",
+        "change_pct": 2.84,
+        "lead_stock": "湖南白银(5.28)"
+      },
+      {
+        "name": "专业服务",
+        "change_pct": 2.79,
+        "lead_stock": "钢研纳克(12.46)"
+      }
+    ],
+    "concept_top_gainers": [
+      {
+        "name": "靶材",
+        "change_pct": 6.41,
+        "lead_stock": "有研新材(10.00)"
+      },
+      {
+        "name": "昨日连板",
+        "change_pct": 5.35,
+        "lead_stock": "蓝盾光电(15.46)"
+      },
+      {
+        "name": "玉米",
+        "change_pct": 4.71,
+        "lead_stock": "神农种业(13.92)"
+      },
+      {
+        "name": "长鑫存储",
+        "change_pct": 4.68,
+        "lead_stock": "博敏电子(10.00)"
+      },
+      {
+        "name": "博通概念",
+        "change_pct": 4.56,
+        "lead_stock": "太辰光(20.00)"
+      },
+      {
+        "name": "转基因",
+        "change_pct": 4.54,
+        "lead_stock": "神农种业(13.92)"
+      }
+    ],
+    "fund_flow_top": [
+      {
+        "name": "半导体",
+        "change_pct": 4.18,
+        "main_net_inflow": 1367984.85,
+        "up_down_ratio": "168/178"
+      },
+      {
+        "name": "工业金属",
+        "change_pct": 2.49,
+        "main_net_inflow": 192569.88,
+        "up_down_ratio": "53/59"
+      },
+      {
+        "name": "电子化学品Ⅱ",
+        "change_pct": 4.5,
+        "main_net_inflow": 179454.19,
+        "up_down_ratio": "31/35"
+      }
+    ]
+  },
+  "sentiment": {
+    "overall": "强势上涨",
+    "breadth": "涨跌比约2:1",
+    "leading_sectors": "半导体+存储+CPO光通信",
+    "risk_level": "中等",
+    "notes": "三大指数全线上涨，半导体板块领涨，资金大幅流入科技股"
+  }
 }
