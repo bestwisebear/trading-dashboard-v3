@@ -1,11 +1,11 @@
 {
   "meta": {
     "date": "2026-08-17",
-    "last_updated": "2026-08-17T16:53:00+08:00",
-    "source": "web_search_close"
+    "last_updated": "2026-08-17T20:50:00+08:00",
+    "source": "web_search_evening"
   },
   "overall_sentiment": "偏多",
-  "sentiment_summary": "科技全面爆发日，半导体/CPO/存储三重催化共振，量价齐升。白酒领跌反映风格大切换。",
+  "sentiment_summary": "科技全面爆发+晚间美股科技继续强势，存储/CPO/MLCC三重催化共振。美联储加息预期降温+AI盈利兑现，多头格局强化。明日关注分化节奏。",
   "items": [
     {
       "id": 1,
@@ -162,6 +162,88 @@
         "300442"
       ],
       "source": "Anthropic/天风证券"
+    },
+    {
+      "id": 13,
+      "time": "20:00",
+      "title": "美股盘前芯片/光通信股普涨，纳指期货+0.52%",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "闪迪涨超5%，SK海力士涨超4%，美光涨超3%。光通信Astera Labs涨超5%，Coherent/Lumentum涨超2%。科技股延续强势对A股明日开盘有正面传导",
+      "affected_stocks": [
+        "301308",
+        "300223",
+        "300394",
+        "300308",
+        "002281"
+      ],
+      "source": "新浪财经/21世纪经济报道"
+    },
+    {
+      "id": 14,
+      "time": "20:10",
+      "title": "高盛：美联储9月加息可能性'非常小'，市场鹰派预期过度",
+      "category": "macro",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "高盛首席经济学家称零售销售疲软+就业失望+通胀放缓，加息可能性很小。CME FedWatch显示9月加息概率降至约33%。全球流动性压力缓解利好科技成长",
+      "affected_stocks": [],
+      "source": "高盛报告/华尔街见闻"
+    },
+    {
+      "id": 15,
+      "time": "20:20",
+      "title": "复旦微电H1净利+338.58%爆发，Q2净利环比+372%",
+      "category": "stock",
+      "impact": "positive",
+      "impact_level": 5,
+      "detail": "营收22.25亿同比+21%，归母净利8.49亿同比+339%。Q2净利7.01亿远超Q1的1.48亿。拟出资3亿参与集成电路产业基金。存储+FPGA双主线驱动",
+      "affected_stocks": [
+        "688385"
+      ],
+      "source": "复旦微电晚间公告"
+    },
+    {
+      "id": 16,
+      "time": "20:30",
+      "title": "大摩、小摩齐看标普8000点，AI牛市进入'盈利兑现'阶段",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "摩根大通将2026年末目标上调至8000点，摩根士丹利12个月目标8300点。至少7家华尔街机构预计标普500年底8000点。推动力从估值扩张切换为盈利上修+AI商业化兑现",
+      "affected_stocks": [
+        "300308",
+        "300857",
+        "300442"
+      ],
+      "source": "Reuters/摩根大通/摩根士丹利"
+    },
+    {
+      "id": 17,
+      "time": "20:40",
+      "title": "世界机器人大会8月19日开幕，机器人概念预热",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "2026世界机器人大会8月19-23日在北京举办。开创电气签署机器人产业基金合作框架协议。机器人板块短期有事件催化",
+      "affected_stocks": [],
+      "source": "世界机器人大会组委会"
+    },
+    {
+      "id": 18,
+      "time": "20:50",
+      "title": "洁美科技追加4.28亿投资MLCC离型膜产能扩产",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "洁美科技拟追加4.28亿元投资华北产研总部基地项目，扩大MLCC离型膜产能。MLCC涨价链上游持续扩产印证行业高景气",
+      "affected_stocks": [
+        "000636",
+        "300408",
+        "300285"
+      ],
+      "source": "洁美科技公告"
     }
   ]
 }

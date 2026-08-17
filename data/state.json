@@ -1,10 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
+    "last_updated": "2026-08-17T20:50:00+08:00",
     "data_date": "2026-08-17",
-    "source": "盘后收盘数据",
-    "session": "close",
-    "data_as_of": "8/17收盘价(15:00)"
+    "source": "晚间复盘数据",
+    "session": "evening_review"
   },
   "current": {
     "total_assets": 209336.77,
@@ -21,7 +20,7 @@
     "net_today": 2260.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "close",
+    "session": "evening_review",
     "net_today_ref": "total_assets - prev_close_assets"
   },
   "positions": [
