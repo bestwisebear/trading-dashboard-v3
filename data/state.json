@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-16T20:50:00+08:00",
+    "last_updated": "2026-08-17T08:11:00+08:00",
     "data_date": "2026-08-14",
-    "source": "收盘行情",
-    "session": "weekend_evening_update",
-    "data_as_of": "2026-08-16 晚间复盘(周末)"
+    "source": "周末盘前估算(8/15-8/16无交易)",
+    "session": "monday_pre_open",
+    "data_as_of": "8/14收盘 + 8/15-8/16美股+周末消息"
   },
   "current": {
     "total_assets": 207076.77,
-    "prev_close_assets": 203641.0,
+    "prev_close_assets": 207076.77,
     "available_cash": 46637.77,
     "initial_capital": 200000,
     "position_count": 3,
     "position_ratio": 77.4,
-    "monthly_pnl": 5680.77,
+    "monthly_pnl": 7076.77,
     "monthly_return_rate": 3.54
   },
   "today_so_far": {
-    "date": "2026-08-14",
-    "net_today": 3435.77,
-    "trade_count": 3,
+    "date": "2026-08-17",
+    "net_today": 0,
+    "trade_count": 0,
     "violation_count": 0,
-    "session": "evening_review",
+    "session": "pre_open",
     "net_today_ref": null
   },
   "positions": [

@@ -1,154 +1,302 @@
 {
   "meta": {
-    "last_updated": "2026-08-16T23:00:00+08:00",
-    "date": "2026-08-16",
-    "session": "nightly_scan_2300",
-    "data_basis": "8/14收盘(周末无交易)",
-    "screening_criteria": "半导体/芯片/封测/设备/材料 | 7道闸≥4/7 | 涨幅<5% | RSI<70 | 价格>MA20"
+    "last_updated": "2026-08-17T08:11:00+08:00",
+    "date": "2026-08-17",
+    "session": "monday_pre_open",
+    "data_basis": "8/14收盘+8/15美股+周末催化+8/17早间",
+    "screening_criteria": "MLCC涨价链+存储芯片+CPO光通信+半导体设备+机器人预热 | 7道闸≥4/7 | 涨幅<5% | RSI<70 | 价格>MA20"
   },
-  "watchlist": {
-    "sz002281": {
-      "name": "光迅科技",
-      "score": 6.5,
+  "watchlist": [
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "score": 7.5,
       "status": "buy",
-      "sector": "光通信",
-      "notes": "★Buy信号，多头+RSI适中+支撑188"
+      "sector": "MLCC/被动元件",
+      "today_close": 14.85,
+      "today_change_pct": 2.0,
+      "key_price": {
+        "support": 14.0,
+        "resistance": 16.5,
+        "stop_loss": 13.6
+      },
+      "notes": "🔥MLCC涨价链最直接受益（涨幅30%已落地），技术面多头+MACD金叉"
     },
-    "sz300442": {
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "score": 7.5,
+      "status": "buy",
+      "sector": "MLCC/陶瓷基板",
+      "today_close": 129.09,
+      "today_change_pct": 0.54,
+      "key_price": {
+        "support": 125.0,
+        "resistance": 137.0,
+        "stop_loss": 122.0
+      },
+      "notes": "🔥MLCC+陶瓷基板双涨价直接方（9/1执行），8/14未涨透溢价空间大"
+    },
+    {
+      "code": "300442",
       "name": "润泽科技",
       "score": 7,
       "status": "buy",
       "sector": "算力IDC",
-      "notes": "★Buy信号，PE22低估+MACD金叉"
+      "today_close": 70.9,
+      "today_change_pct": 3.43,
+      "key_price": {
+        "support": 67.0,
+        "resistance": 75.0,
+        "stop_loss": 65.0
+      },
+      "notes": "PE22低估+MACD金叉+Anthropic Q2营收暴增催化算力租赁"
     },
-    "sz000636": {
-      "name": "风华高科",
-      "score": 7,
+    {
+      "code": "002281",
+      "name": "光迅科技",
+      "score": 6.5,
       "status": "buy",
-      "sector": "MLCC/被动元件",
-      "notes": "🔥周末新增：三环MLCC涨价30%启动涨价链，风华高科为MLCC龙头+多头+MACD金叉"
+      "sector": "光通信",
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 188.0,
+        "resistance": 220.0,
+        "stop_loss": 185.0
+      },
+      "notes": "★Buy信号，多头+RSI适中。8/17英伟达CPO量产催化延续"
     },
-    "sh603501": {
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "score": 6.5,
+      "status": "conditional",
+      "sector": "CPO光模块",
+      "today_close": 943.0,
+      "today_change_pct": 2.38,
+      "key_price": {
+        "support": 921.0,
+        "resistance": 1000.0,
+        "stop_loss": 920.0
+      },
+      "notes": "🔥8/13公告17.47亿入股中石科技+英伟达CPO量产+液冷国标获批"
+    },
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "score": 6,
+      "status": "conditional",
+      "sector": "存储",
+      "today_close": 406.45,
+      "today_change_pct": 2.38,
+      "key_price": {
+        "support": 400.0,
+        "resistance": 440.0,
+        "stop_loss": 392.0
+      },
+      "notes": "🔥存储直接受益+长江存储Q2份额前三+SK海力士警告存储芯片荒"
+    },
+    {
+      "code": "300223",
+      "name": "北京君正",
+      "score": 6,
+      "status": "conditional",
+      "sector": "存储+芯片",
+      "today_close": 143.62,
+      "today_change_pct": 4.47,
+      "key_price": {
+        "support": 137.0,
+        "resistance": 145.0,
+        "stop_loss": 134.0
+      },
+      "notes": "🔥存储芯片荒直接受益+SK海力士警告明年最严重短缺"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "score": 6,
+      "status": "conditional",
+      "sector": "CPO光模块",
+      "today_close": 267.71,
+      "today_change_pct": 4.1,
+      "key_price": {
+        "support": 250.0,
+        "resistance": 280.0,
+        "stop_loss": 245.0
+      },
+      "notes": "🔥英伟达CPO交换机Spectrum-X量产协同制造，严禁追高"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "score": 6,
+      "status": "conditional",
+      "sector": "CPO光模块",
+      "today_close": 448.08,
+      "today_change_pct": 4.23,
+      "key_price": {
+        "support": 430.0,
+        "resistance": 470.0,
+        "stop_loss": 425.0
+      },
+      "notes": "🔥1.6T光模块预期+英伟达CPO量产，但8/14+4.23%已透支"
+    },
+    {
+      "code": "688012",
+      "name": "中芯国际",
+      "score": 5.5,
+      "status": "conditional",
+      "sector": "晶圆代工",
+      "today_close": 374.85,
+      "today_change_pct": 1.2,
+      "key_price": {
+        "support": 356.5,
+        "resistance": 400.0,
+        "stop_loss": 350.0
+      },
+      "notes": "Q3收入环比+2-4%/毛利率26-28%+Q2销售收入30亿美元环比+20%"
+    },
+    {
+      "code": "603501",
       "name": "韦尔股份",
-      "score": 5,
+      "score": 5.5,
       "status": "buy",
       "sector": "半导体CIS",
-      "notes": "★Buy信号，PE31低估+半导体低位"
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 130.0,
+        "resistance": 150.0,
+        "stop_loss": 128.0
+      },
+      "notes": "PE31低估+半导体低位+存储芯片荒概念扩散"
     },
-    "sz300782": {
+    {
+      "code": "300782",
       "name": "卓胜微",
       "score": 5.5,
       "status": "buy",
       "sector": "半导体射频",
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 73.0,
+        "resistance": 85.0,
+        "stop_loss": 70.0
+      },
       "notes": "★Buy信号，多头+MACD金叉(注意PE为负)"
     },
-    "sz300308": {
-      "name": "中际旭创",
-      "score": 5,
-      "status": "conditional",
-      "sector": "CPO光模块",
-      "notes": "空头排列但RSI低位，支撑921/902企稳可关注"
-    },
-    "sh601899": {
+    {
+      "code": "601899",
       "name": "紫金矿业",
       "score": 4.5,
       "status": "conditional",
       "sector": "有色黄金",
-      "notes": "PE14低估+RSI31接近超卖，等企稳"
-    },
-    "sh688012": {
-      "name": "中芯国际",
-      "score": 5,
-      "status": "conditional",
-      "sector": "晶圆代工",
-      "notes": "Q3超预期+RSI57，PE131偏高"
+      "today_close": null,
+      "today_change_pct": null,
+      "key_price": {
+        "support": 16.0,
+        "resistance": 20.0,
+        "stop_loss": 15.5
+      },
+      "notes": "PE14低估+RSI31接近超卖+美国40万亿美债+黄金4400美元利好"
     }
-  },
+  ],
   "summary": {
-    "total_scanned": 20,
-    "pass_count": 13,
-    "conditional_count": 6,
-    "main_line": "CPO/光通信为绝对主线+MLCC涨价链为新催化+存储超级周期持续",
-    "risk_warning": "光通信8月已反弹超30%追高风险大；8/17经济数据+美联储纪要增加不确定性；协创数据负债率83%硬门禁"
+    "total_scanned": 17,
+    "pass_count": 5,
+    "conditional_count": 8,
+    "main_line_8_17": "MLCC涨价链(三环/风华) + 存储芯片荒(北京君正/江波龙) + CPO光通信(中际旭创/天孚/新易盛) + 算力IDC(润泽) + 半导体设备(长川已持仓)",
+    "risk_warning": "8/17月度解禁340亿+经济数据不确定性+茅台业绩下滑形成牵制；硬科技方向已反弹>30%追高风险大；协创数据负债率~83%硬门禁"
   },
   "transit_pool": [
     {
-      "code": "sh688012",
-      "name": "中芯国际",
-      "sector": "半导体/晶圆代工",
-      "price": 374.85,
-      "change_pct": 1.2,
-      "rsi6": 57.53,
-      "ma20": 366.72,
-      "score": 6.0,
-      "gate_total": 6.0,
-      "stop_loss": 356.5,
-      "status": "transit_pool_candidate"
+      "code": "000636",
+      "name": "风华高科",
+      "score": 7.5,
+      "gates": [
+        "MLCC涨价催化",
+        "多头",
+        "MACD金叉",
+        "RSI<70"
+      ],
+      "key_price": {
+        "support": 14.0,
+        "resistance": 16.5,
+        "stop_loss": 13.6
+      },
+      "sector": "MLCC/被动元件"
     },
     {
-      "code": "sz300604",
-      "name": "长川科技",
-      "sector": "半导体/ATE设备",
-      "price": 283.05,
-      "change_pct": 0.48,
-      "rsi6": 57.68,
-      "ma20": 278.6,
-      "score": 6.0,
-      "gate_total": 6.0,
-      "stop_loss": 272.6,
-      "status": "transit_pool_candidate"
+      "code": "300408",
+      "name": "三环集团",
+      "score": 7.5,
+      "gates": [
+        "MLCC+陶瓷基板双涨价",
+        "AI服务器客户突破",
+        "2027PE 35倍",
+        "RSI<70"
+      ],
+      "key_price": {
+        "support": 125.0,
+        "resistance": 137.0,
+        "stop_loss": 122.0
+      },
+      "sector": "MLCC/陶瓷基板"
     },
     {
-      "code": "sz300782",
-      "name": "卓胜微",
-      "sector": "半导体/射频",
-      "price": 78.87,
-      "change_pct": -0.1,
-      "rsi6": 68.95,
-      "ma20": 73.29,
+      "code": "300442",
+      "name": "润泽科技",
+      "score": 7,
+      "gates": [
+        "PE22低估",
+        "MACD金叉",
+        "算力IDC",
+        "Anthropic催化"
+      ],
+      "key_price": {
+        "support": 67.0,
+        "resistance": 75.0,
+        "stop_loss": 65.0
+      },
+      "sector": "算力IDC"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
       "score": 6.5,
-      "gate_total": 6.5,
-      "stop_loss": 75.3,
-      "status": "transit_pool_candidate"
+      "gates": [
+        "CPO龙头",
+        "英伟达量产",
+        "液冷国标",
+        "17.47亿入股中石"
+      ],
+      "key_price": {
+        "support": 921.0,
+        "resistance": 1000.0,
+        "stop_loss": 920.0
+      },
+      "sector": "CPO光模块"
     },
     {
-      "code": "sz002185",
-      "name": "华天科技",
-      "sector": "半导体/封测",
-      "price": 17.98,
-      "change_pct": 0.56,
-      "rsi6": 69.78,
-      "ma20": 17.26,
-      "score": 5.5,
-      "gate_total": 5.5,
-      "stop_loss": 17.4,
-      "status": "transit_pool_candidate"
-    },
-    {
-      "code": "sh688825",
-      "name": "长鑫科技",
-      "sector": "半导体/存储",
-      "price": 55.18,
-      "change_pct": 4.35,
-      "rsi6": 68.59,
-      "ma20": 48,
-      "score": 6.5,
-      "gate_total": 6.5,
-      "stop_loss": 53.4,
-      "status": "transit_pool_candidate"
+      "code": "301308",
+      "name": "江波龙",
+      "score": 6,
+      "gates": [
+        "存储直接受益",
+        "长江存储Q2前三",
+        "存储芯片荒",
+        "RSI<70"
+      ],
+      "key_price": {
+        "support": 400.0,
+        "resistance": 440.0,
+        "stop_loss": 392.0
+      },
+      "sector": "存储"
     }
   ],
-  "transit_pool_note": "半导体低位票专项：score>=4、涨幅<5%、RSI<70、价格>MA20",
-  "transit_pool_updated": "2026-08-15T23:00:00+08:00",
-  "semi_screening_summary": {
-    "total_semi_scanned": 10,
-    "selected": 5,
-    "excluded": {
-      "gates_below_4": 0,
-      "rsi_overbought_ge70": 2,
-      "price_below_ma20": 1,
-      "change_pct_ge5": 2
-    },
-    "weekend_note": "8/15半导体板块大跌(科创50-4.25%),短期承压但估值极高(PE百分位94.65%),低位票等企稳信号"
-  }
+  "transit_pool_note": "MLCC涨价链+存储芯片+CPO光通信重点观察池",
+  "transit_pool_updated": "2026-08-17T08:11:00+08:00"
 }

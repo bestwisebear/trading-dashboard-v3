@@ -1,33 +1,35 @@
 {
-    "meta": {
-        "date": "2026-08-14",
-        "last_updated": "2026-08-14T16:55:00+08:00",
-        "session": "close"
+  "meta": {
+    "date": "2026-08-17",
+    "last_updated": "2026-08-17T08:11:00+08:00",
+    "session": "pre_open_monday",
+    "data_basis": "8/14收盘+8/15-8/16周末"
+  },
+  "sectors": [
+    {
+      "name": "电力",
+      "change_pct": -3.5,
+      "comment": "立新能源跌停，华银电力-9%+，前期涨幅较大回调",
+      "days_declining": 2
     },
-    "sectors": [
-        {
-            "name": "电力",
-            "change_pct": -3.5,
-            "comment": "立新能源跌停，华银电力-9%+，前期涨幅较大回调",
-            "days_declining": 2
-        },
-        {
-            "name": "食品饮料",
-            "change_pct": -1.8,
-            "comment": "一鸣食品-4.55%，消费板块回调",
-            "days_declining": 1
-        },
-        {
-            "name": "地产",
-            "change_pct": -1.2,
-            "comment": "继续弱势",
-            "days_declining": 3
-        },
-        {
-            "name": "石油天然气",
-            "change_pct": -1.5,
-            "comment": "油价下调利空",
-            "days_declining": 2
-        }
-    ]
+    {
+      "name": "食品饮料",
+      "change_pct": -1.8,
+      "comment": "一鸣食品-4.55%，消费板块回调+茅台H1业绩-1.95%双重承压",
+      "days_declining": 1
+    },
+    {
+      "name": "地产",
+      "change_pct": -1.2,
+      "comment": "继续弱势",
+      "days_declining": 3
+    },
+    {
+      "name": "石油天然气",
+      "change_pct": -1.5,
+      "comment": "油价下调利空",
+      "days_declining": 2
+    }
+  ],
+  "scan_note": "8/17扫描：超跌板块20日跌幅>10%的前5板块中，重点关注MLCC涨价链启动下的电子元件（三环/风华/利和兴），及机器人大会8/19预热下的零部件板块"
 }
