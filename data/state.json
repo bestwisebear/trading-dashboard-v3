@@ -1,19 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T09:53:00+08:00",
+    "last_updated": "2026-08-18T09:55:00+08:00",
     "data_date": "2026-08-17",
-    "source": "8/18盘中:国瓷清仓600股@75.66",
+    "source": "8/18盘中:国瓷清仓2笔(300@74.86+300@75.66,实盈1946.64)",
     "session": "close_corrected"
   },
   "current": {
-    "total_assets": 211346.77,
+    "total_assets": 211073.41,
     "prev_close_assets": 207076.77,
-    "available_cash": 100303.77,
+    "available_cash": 100030.41,
     "initial_capital": 200000,
     "position_count": 3,
-    "position_ratio": 52.5,
-    "monthly_pnl": 11346.77,
-    "monthly_return_rate": 5.67,
+    "position_ratio": 52.6,
+    "monthly_pnl": 11073.41,
+    "monthly_return_rate": 5.54,
     "market_value": 111043.0
   },
   "today_so_far": {
