@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T16:55:00+08:00",
+    "last_updated": "2026-08-18T20:45:00+08:00",
     "data_date": "2026-08-18",
-    "source": "8/18盘后收盘:收盘全量刷新",
+    "source": "8/18晚间复盘+次日计划",
     "session": "close"
   },
   "current": {
@@ -21,7 +21,7 @@
     "net_today": 4488.92,
     "trade_count": 6,
     "violation_count": 1,
-    "session": "close",
+    "session": "night_review",
     "net_today_ref": "total_assets - prev_close_assets",
     "realized_pnl_today": 3599.1800000000003
   },
