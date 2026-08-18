@@ -1,257 +1,203 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T08:25:00+08:00",
+    "last_updated": "2026-08-18T11:35:00+08:00",
     "date": "2026-08-18",
-    "session": "pre_market"
+    "session": "intraday"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3982.65,
-      "change_pct": 1.41,
-      "pre_close": 3927.18,
-      "note": "8/17收盘,距4000点17点"
+      "close": 3966.99,
+      "change_pct": -0.39,
+      "pre_close": 3982.65,
+      "high": 3992.09,
+      "low": 3955.6,
+      "note": "午间回调,距4000点33点"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 14704.27,
-      "change_pct": 2.44,
-      "pre_close": 14354.31,
-      "note": "放量跟随"
+      "close": 14543.45,
+      "change_pct": -1.09,
+      "pre_close": 14704.27,
+      "high": 14733.9,
+      "low": 14459.72,
+      "note": "分化回调"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3740.16,
-      "change_pct": 3.14,
-      "pre_close": 3626.3,
-      "note": "领涨"
+      "close": 3691.69,
+      "change_pct": -1.3,
+      "pre_close": 3740.16,
+      "high": 3747.53,
+      "low": 3662.45,
+      "note": "领跌,获利回吐明显"
     },
     "sh000688": {
       "name": "科创50",
-      "close": 1788.85,
-      "change_pct": 4.14,
-      "pre_close": 1717.68,
-      "note": "长鑫+12%驱动"
+      "close": 1776.1,
+      "change_pct": -0.71,
+      "pre_close": 1788.85,
+      "high": 1798.78,
+      "low": 1753.97,
+      "note": "高位回调"
     },
     "sh000300": {
       "name": "沪深300",
-      "close": 4741.1,
-      "change_pct": 1.61,
-      "pre_close": 4665.88,
-      "note": "跟随"
+      "close": 4703.55,
+      "change_pct": -0.79,
+      "pre_close": 4741.1,
+      "high": 4744.01,
+      "low": 4687.53,
+      "note": "跟随回调"
     }
   },
   "market_breadth": {
-    "up_count": 4335,
-    "down_count": 1064,
-    "flat_count": 0,
-    "limit_up": 110,
-    "limit_down": 1,
-    "profit_rate": 80.0
+    "note": "午间数据待13:00后更新,上午分化格局明显"
   },
   "turnover": {
-    "total_amount_wan": 238740000,
-    "total_amount_yi": 23874,
-    "vs_prev_change": 2446,
-    "vs_prev_pct": "放量2446亿"
+    "note": "午间待更新,上午半日约7763亿(沪)"
   },
-  "market_style": "深强沪弱，科技全面爆发，成长>价值",
+  "market_style": "分化日:农业种植+科技高低切换,科技内部涨跌互现",
   "hot_sectors_top10": [
     {
-      "name": "电子化学品Ⅱ",
-      "change_pct": 5.61,
-      "lead_stock": "中石科技(20.00)"
-    },
-    {
-      "name": "半导体",
-      "change_pct": 5.46,
-      "lead_stock": "中微半导(16.81)"
-    },
-    {
-      "name": "通信设备",
-      "change_pct": 4.77,
-      "lead_stock": "太辰光(20.00)"
-    },
-    {
-      "name": "其他电子Ⅱ",
-      "change_pct": 4.22,
-      "lead_stock": "盈方微(10.07)"
-    },
-    {
       "name": "种植业",
-      "change_pct": 4.16,
-      "lead_stock": "神农种业(11.13)"
+      "change_pct": 7.21,
+      "lead_stock": "华绿生物(20.00)"
     },
     {
-      "name": "橡胶",
-      "change_pct": 4.06,
-      "lead_stock": "震安科技(11.61)"
+      "name": "转基因",
+      "change_pct": 6.88,
+      "lead_stock": "神农种业(17.34)"
     },
     {
-      "name": "元件",
-      "change_pct": 3.22,
-      "lead_stock": ""
+      "name": "玉米",
+      "change_pct": 6.11,
+      "lead_stock": "神农种业(17.34)"
     },
     {
-      "name": "消费电子",
-      "change_pct": 3.27,
-      "lead_stock": ""
+      "name": "粮食概念",
+      "change_pct": 5.08,
+      "lead_stock": "神农种业(17.34)"
     },
     {
-      "name": "通用设备",
-      "change_pct": 3.73,
-      "lead_stock": ""
+      "name": "大豆",
+      "change_pct": 4.8,
+      "lead_stock": "ST荃银(10.11)"
     },
     {
-      "name": "玻璃玻纤",
-      "change_pct": 3.6,
-      "lead_stock": ""
+      "name": "大硅片",
+      "change_pct": 3.36,
+      "lead_stock": "有研硅(12.61)"
+    },
+    {
+      "name": "猪肉",
+      "change_pct": 3.07,
+      "lead_stock": "天邦食品(10.13)"
+    },
+    {
+      "name": "油服工程",
+      "change_pct": 2.68,
+      "lead_stock": "海油工程(7.31)"
+    },
+    {
+      "name": "农产品加工",
+      "change_pct": 2.56,
+      "lead_stock": "金健米业(10.06)"
+    },
+    {
+      "name": "养殖业",
+      "change_pct": 2.39,
+      "lead_stock": "天山生物(20.04)"
     }
   ],
   "cold_sectors_top10": [
     {
-      "name": "白酒Ⅱ",
-      "change_pct": -3.18,
-      "lead_stock": ""
-    },
-    {
-      "name": "游戏Ⅱ",
-      "change_pct": -1.89,
-      "lead_stock": ""
-    },
-    {
-      "name": "影视院线",
-      "change_pct": -1.66,
-      "lead_stock": "北京文化跌停"
-    },
-    {
-      "name": "电力",
-      "change_pct": -0.13,
-      "lead_stock": ""
+      "note": "科技股高位回调,具体跌幅排名待午后更新"
     }
   ],
   "fund_flow_top5": [
     {
-      "name": "半导体",
-      "change_pct": 5.46,
-      "main_net_inflow": 2004926.23,
-      "up_down_ratio": "171/178"
+      "name": "种植业",
+      "change_pct": 7.21,
+      "main_net_inflow": 84996.09,
+      "up_down_ratio": "19/20"
     },
     {
-      "name": "通信设备",
-      "change_pct": 4.77,
-      "main_net_inflow": 597365.94,
-      "up_down_ratio": "74/85"
+      "name": "化学原料",
+      "change_pct": 0.45,
+      "main_net_inflow": 70722.54,
+      "up_down_ratio": "19/57"
     },
     {
-      "name": "电子化学品Ⅱ",
-      "change_pct": 5.61,
-      "main_net_inflow": 318112.18,
-      "up_down_ratio": "33/35"
+      "name": "光学光电子",
+      "change_pct": 1.02,
+      "main_net_inflow": 70195.57,
+      "up_down_ratio": "35/93"
     }
   ],
-  "narrative": "科技全面爆发，半导体+5.46%领涨，CPO/算力硬件持续走强。SK海力士警告存储荒+英伟达CPO量产双催化。白酒领跌-3.18%，茅台中报下滑+国家队退出。农业种植受摩根大通粮食危机预警刺激涨4.16%。全天成交2.39万亿放量2446亿，量价齐升。",
-  "market_stats": {
-    "rise_count": 4335,
-    "fall_count": 1064,
-    "limit_up": 110,
-    "limit_down": 1,
-    "turnover_comment": "2.39万亿放量2446亿，量价齐升"
-  },
+  "narrative": "8/18午间:8/17普涨后首个分化日,资金从科技高低切换至农业种植(粮食危机催化)。沪指-0.39%相对抗跌,创业板-1.30%领跌。科技内部剧烈分化:复旦微电+1.85%(中报+338%支撑)、国瓷材料+3.21%(除权后反涨)、天孚通信+1.85%;但润泽科技-4.11%、新易盛-2.82%、三环集团-2.19%高位回落。农业板块转基因+6.88%、种植业+7.21%成午间最强主线。",
   "hot_sectors_up": [
     {
-      "name": "电子化学品Ⅱ",
-      "change_pct": 5.61,
-      "lead_stock": "中石科技(20.00)"
-    },
-    {
-      "name": "半导体",
-      "change_pct": 5.46,
-      "lead_stock": "中微半导(16.81)"
-    },
-    {
-      "name": "通信设备",
-      "change_pct": 4.77,
-      "lead_stock": "太辰光(20.00)"
-    },
-    {
-      "name": "其他电子Ⅱ",
-      "change_pct": 4.22,
-      "lead_stock": "盈方微(10.07)"
-    },
-    {
       "name": "种植业",
-      "change_pct": 4.16,
-      "lead_stock": "神农种业(11.13)"
+      "change_pct": 7.21,
+      "lead_stock": "华绿生物(20.00)"
     },
     {
-      "name": "橡胶",
-      "change_pct": 4.06,
-      "lead_stock": "震安科技(11.61)"
+      "name": "转基因",
+      "change_pct": 6.88,
+      "lead_stock": "神农种业(17.34)"
     },
     {
-      "name": "元件",
-      "change_pct": 3.22,
-      "lead_stock": ""
+      "name": "玉米",
+      "change_pct": 6.11,
+      "lead_stock": "神农种业(17.34)"
     },
     {
-      "name": "消费电子",
-      "change_pct": 3.27,
-      "lead_stock": ""
+      "name": "粮食概念",
+      "change_pct": 5.08,
+      "lead_stock": "神农种业(17.34)"
     },
     {
-      "name": "通用设备",
-      "change_pct": 3.73,
-      "lead_stock": ""
+      "name": "大硅片",
+      "change_pct": 3.36,
+      "lead_stock": "有研硅(12.61)"
     },
     {
-      "name": "玻璃玻纤",
-      "change_pct": 3.6,
-      "lead_stock": ""
+      "name": "猪肉",
+      "change_pct": 3.07,
+      "lead_stock": "天邦食品(10.13)"
+    },
+    {
+      "name": "油服工程",
+      "change_pct": 2.68,
+      "lead_stock": "海油工程(7.31)"
+    },
+    {
+      "name": "农产品加工",
+      "change_pct": 2.56,
+      "lead_stock": "金健米业(10.06)"
+    },
+    {
+      "name": "养殖业",
+      "change_pct": 2.39,
+      "lead_stock": "天山生物(20.04)"
+    },
+    {
+      "name": "饲料",
+      "change_pct": 1.95,
+      "lead_stock": "播恩集团(10.03)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "白酒Ⅱ",
-      "change_pct": -3.18,
-      "lead_stock": ""
-    },
-    {
-      "name": "游戏Ⅱ",
-      "change_pct": -1.89,
-      "lead_stock": ""
-    },
-    {
-      "name": "影视院线",
-      "change_pct": -1.66,
-      "lead_stock": "北京文化跌停"
-    },
-    {
-      "name": "电力",
-      "change_pct": -0.13,
-      "lead_stock": ""
+      "note": "午后更新完整跌幅排名"
     }
   ],
-  "pre_market_signals": {
-    "ftse_a50_futures": {
-      "value": 2793.9,
-      "change_pct": -0.2,
-      "note": "MSCI A50微跌,开盘略承压"
-    },
-    "us_futures": {
-      "nasdaq": -0.3,
-      "sp500": -0.2,
-      "note": "美股期货偏弱"
-    },
-    "cny_usd": 6.74,
-    "brent_oil_usd": 90.0,
-    "brent_change_pct": 2.8,
-    "gold_usd": 4472.9,
-    "gold_change_pct": 0.8,
-    "dxy": 99.667,
-    "margin_balance_yi": 26414,
-    "margin_5d_change_yi": 341,
-    "market_score": 55,
-    "market_score_note": "中性偏多,需观察开盘30分钟资金方向"
+  "market_stats": {
+    "rise_count": 0,
+    "fall_count": 0,
+    "limit_up": 0,
+    "limit_down": 0,
+    "turnover_comment": "午间待更新,上午分化格局(8/17全天2.39万亿)"
   }
 }

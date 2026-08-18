@@ -1,88 +1,88 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T08:25:00+08:00",
+    "last_updated": "2026-08-18T11:35:00+08:00",
     "date": "2026-08-18",
-    "session": "pre_market"
+    "session": "intraday"
   },
   "level": "medium",
-  "score": 60,
+  "score": 55,
   "factors": [
     {
       "factor": "仓位",
-      "value": "77.7%",
-      "status": "normal",
-      "detail": "接近80%警戒线但未超,8/18仍可小幅加仓"
+      "value": "37.1%",
+      "status": "pass",
+      "detail": "低仓位,远低于80%警戒线,空间充裕"
     },
     {
       "factor": "持仓数",
-      "value": "3只",
+      "value": "2只",
       "status": "pass",
-      "detail": "符合≤4只规则"
+      "detail": "符合≤4只规则,可加仓2只"
     },
     {
       "factor": "今日交易次数",
-      "value": "0次",
+      "value": "3笔",
       "status": "pass",
-      "detail": "无交易无违规(待开盘)"
+      "detail": "3笔卖出,未超6笔限制"
     },
     {
       "factor": "市场情绪",
-      "value": "偏热(80%赚钱效应)",
+      "value": "分化(科技回调)",
       "status": "warning",
-      "detail": "8/17普涨后或分化,严控追涨"
+      "detail": "8/17普涨后分化,科技获利回吐,农业接力"
     },
     {
-      "factor": "美股催化",
-      "value": "🔴连2日小幅收跌",
+      "factor": "持仓表现",
+      "value": "鹏辉-0.82%/协创-2.95%",
       "status": "warning",
-      "detail": "标普-0.5%/纳指-0.3%,8/18开盘或承压"
+      "detail": "两只持仓均绿,协创-2.95%接近止损250"
     },
     {
       "factor": "板块强度",
-      "value": "🟢半导体/通信/存储真强",
-      "status": "pass",
-      "detail": "5大科技主线真强(板块涨跌比>1:1+最弱股跟涨)"
+      "value": "🟡科技分化/农业接力",
+      "status": "warning",
+      "detail": "科技主线分化,有业绩的抗跌(复旦+1.85%),纯概念回调"
     },
     {
       "factor": "催化共振",
-      "value": "🟢5大催化",
+      "value": "🟢机器人大会8/19+集成电路税收",
       "status": "pass",
-      "detail": "集成电路税收优惠+CPO量产+宇树IPO+OpenAI合作+复旦微电+338%"
+      "detail": "宇树8/19上市催化机器人,长盛轴承已响应+5.81%"
     },
     {
       "factor": "技术面压力",
-      "value": "4000点+科创50+4%",
+      "value": "4000点未破+创业板领跌",
       "status": "warning",
-      "detail": "沪指距4000仅17点+科创50已涨4%获利回吐"
+      "detail": "上午冲3992未破4000,创业板-1.30%领跌"
     },
     {
-      "factor": "8/18特殊事件",
-      "value": "复旦微电中报+国瓷材料除权",
-      "status": "pass",
-      "detail": "复旦微电+338%巨幅预增;国瓷材料8/18除权除息(10派0.5)"
+      "factor": "协创止损距离",
+      "value": "距止损250→4.3%",
+      "status": "warning",
+      "detail": "协创261.21距止损250仅4.3%,需密切关注"
     },
     {
       "factor": "月度回撤",
-      "value": "+4.67%(+9336元)",
+      "value": "+5.14%(+10283元)",
       "status": "pass",
-      "detail": "8月盈利未触发5%周回撤/10%月回撤熔断"
+      "detail": "月度盈利正向,未触发回撤熔断"
     }
   ],
   "rule_checks": [
     {
       "rule": "持仓≤4只",
       "passed": true,
-      "current_value": "3只"
+      "current_value": "2只"
     },
     {
       "rule": "单日≤6笔",
       "passed": true,
-      "current_value": "0笔"
+      "current_value": "3笔"
     },
     {
       "rule": "新仓仅13:30-14:30",
       "passed": true,
-      "current_value": "无新仓"
+      "current_value": "下午待执行"
     },
     {
       "rule": "禁做T",
@@ -92,13 +92,13 @@
     {
       "rule": "减仓后禁当日接回",
       "passed": true,
-      "current_value": "无减仓"
+      "current_value": "无违规接回"
     },
     {
       "rule": "涨跌家数>2000才开仓",
       "passed": true,
-      "current_value": "4335家上涨"
+      "current_value": "上午分化待下午确认"
     }
   ],
-  "suggestion": "市场极度亢奋日，持仓享受收益。明日关注分化：若缩量则科技内部分化概率大，鹏辉弱势需警惕。长川涨6.9%后关注300元支撑。"
+  "suggestion": "午间分化日,持仓享受但不追涨。重点关注:①协创261.21距止损250仅4.3%,若下午跌破255考虑减半仓;②长盛轴承+5.81%计划13:30买400股@70,若午后回落至70以下可执行;③鹏辉-0.82%受锂电池利空压制,守住57止损即可。下午新仓窗口严控13:30-14:30。"
 }
