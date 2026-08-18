@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T20:45:00+08:00",
+    "last_updated": "2026-08-18T23:00:00+08:00",
     "date": "2026-08-18",
     "session": "nightly_scan",
     "screening_scope": "全市场(排除ST/北交所) | 重点：半导体+存储+CPO+MLCC+算力+机器人+锂电",
@@ -11,15 +11,15 @@
       "chinext": "3705(-0.93%)",
       "star50": "1790(+0.11%)",
       "up_down": "2121:3292",
-      "volume": "2.42万亿(平量)",
+      "volume": "2.42万亿(平量高位)",
       "limit_up": 81,
       "limit_down": 6,
-      "verdict": "分化日：农业爆发+科技休整。涨跌2121:3292赚钱效应差。美股盘前存储/光通信暴跌,30年美债5.32%创新高。明日A股科技开盘承压"
+      "verdict": "分化日V型反弹。沪指+0.19%探底回升,创业板-0.93%。农业爆发(种植业+9.54%),科技高低切换。涨跌2121:3292赚钱效应仅38%。主力净流出574亿,电子-202亿/通信-117亿。宇树科技明日上市+机器人大会8/19开幕"
     },
     "overnight_risk": {
       "us_futures": "纳指-1.26%,标普-0.50%,道指-0.16%",
-      "storage_us": "美光-6%,SK海力士-5%,闪迪-5%,西部数据-5%",
-      "optical_us": "康宁/迈威尔/Lumentum跌超5%",
+      "storage_us": "美股存储盘前暴跌:美光-6%,SK海力士-5%,闪迪-5%",
+      "optical_us": "美股光通信暴跌:康宁/迈威尔/Lumentum跌超5%",
       "bonds": "30年美债5.32%创2007新高,10年4.75%创2025新高",
       "oil": "WTI 84.22(+0.57%),布伦特91.03(+0.18%),中东局势升级",
       "fed_signal": "克利夫兰联储主席称可能需要加息,美银预计年底加息75bp"
@@ -33,7 +33,7 @@
       "change_pct": 0.06,
       "score": 5,
       "signal": "hold",
-      "note": "持仓。横盘+0.06%。宁德时代锂矿复产进展→锂价下行利好电池成本。5日主力净流入3.1亿。止损57",
+      "note": "持仓800股。横盘+0.06%。锂价下行利好电池成本。5日主力净流入3.1亿。止损57",
       "gates": {
         "trend": 1,
         "volume": 0,
@@ -51,7 +51,7 @@
       "change_pct": -0.74,
       "score": 5,
       "signal": "hold",
-      "note": "持仓。减仓至100股轻仓。美股科技盘前走弱,算力租赁明日承压。止损250",
+      "note": "持仓100股轻仓。美股科技盘前走弱,算力租赁明日承压。止损250",
       "gates": {
         "trend": 1,
         "volume": 0,
@@ -69,7 +69,7 @@
       "change_pct": 6.8,
       "score": 5,
       "signal": "reduce",
-      "note": "持仓。首日+6.80%。明日宇树科技上市+机器人大会催化,但利好兑现风险大。高开>3%考虑止盈。止损73",
+      "note": "持仓500股首日+6.80%。明日宇树科技上市+机器人大会催化,但利好兑现风险大。高开>3%考虑止盈。止损73",
       "gates": {
         "trend": 1,
         "volume": 1,
@@ -87,7 +87,7 @@
       "change_pct": -4.73,
       "score": 4,
       "signal": "stop_loss_alert",
-      "note": "持仓。首日-4.73%!距止损122仅1.6%!MLCC概念分化严重,元件板块-2.03%。明日低开极可能触发止损",
+      "note": "持仓300股首日-4.73%!距止损122仅1.6%!MLCC概念分化严重,元件板块-2.03%。明日低开极可能触发止损",
       "gates": {
         "trend": 0,
         "volume": 1,
@@ -105,7 +105,7 @@
       "change_pct": -3.66,
       "score": 7,
       "signal": "buy",
-      "note": "PE22低估+算力IDC景气。-3.66%大幅回调接近支撑67。美股算力需求不减,但短期受美债利率压制",
+      "note": "PE22低估+算力IDC景气。-3.66%大幅回调接近支撑67。美股算力需求不减,但短期受美债利率压制。等企稳确认",
       "gates": {
         "trend": 1,
         "volume": 0,
@@ -123,13 +123,49 @@
       "change_pct": 2.71,
       "score": 7,
       "signal": "buy",
-      "note": "半导体设备龙头逆势+2.71%。税收优惠直接受益,分化日表现抗跌。磷化铟基板Q4涨超10%利好设备端",
+      "note": "半导体设备龙头逆势+2.71%。税收优惠直接受益,分化日表现抗跌。磷化铟基板Q4涨超10%利好设备端。主力净流入居前",
       "gates": {
         "trend": 1,
         "volume": 1,
         "sector": 1,
         "news": 1,
         "support": 1,
+        "valuation": 0,
+        "risk": 1
+      }
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "close": 765.97,
+      "change_pct": 3.70,
+      "score": 6,
+      "signal": "buy",
+      "note": "半导体设备总龙头+3.70%抗跌。国产化率持续提升,晶圆厂扩产拉动设备需求。PE85x偏高但成长性确定",
+      "gates": {
+        "trend": 1,
+        "volume": 1,
+        "sector": 1,
+        "news": 1,
+        "support": 1,
+        "valuation": 0,
+        "risk": 1
+      }
+    },
+    {
+      "code": "688072",
+      "name": "拓荆科技",
+      "close": 755.46,
+      "change_pct": 5.07,
+      "score": 6,
+      "signal": "watch",
+      "note": "半导体设备(CVD/ALD)+5.07%。主力净流入4.21亿居前十。涨幅较大,明日可能分歧。等回踩确认",
+      "gates": {
+        "trend": 1,
+        "volume": 1,
+        "sector": 1,
+        "news": 1,
+        "support": 0,
         "valuation": 0,
         "risk": 1
       }
@@ -159,7 +195,7 @@
       "change_pct": -1.58,
       "score": 6,
       "signal": "buy",
-      "note": "封测三强之一-1.58%分化回调。先进封装+HBM受益。美股存储暴跌但封测影响较小",
+      "note": "封测三强之一-1.58%分化回调。先进封装+HBM受益。尾盘主力净流入超1亿。美股存储暴跌但封测影响较小",
       "gates": {
         "trend": 1,
         "volume": 1,
@@ -177,7 +213,7 @@
       "change_pct": -1.06,
       "score": 5,
       "signal": "watch",
-      "note": "CPO量产催化。美股光通信盘前暴跌5%+,明日A股光通信板块大概率低开。需等企稳再考虑",
+      "note": "CPO量产催化。尾盘主力净流入超3亿居前!美股光通信盘前暴跌5%+,明日A股光通信板块大概率低开。需等企稳",
       "gates": {
         "trend": 1,
         "volume": 0,
@@ -209,11 +245,11 @@
     {
       "code": "300308",
       "name": "中际旭创",
-      "close": 985.01,
-      "change_pct": -1.6,
+      "close": 988.1,
+      "change_pct": -1.29,
       "score": 5,
       "signal": "watch",
-      "note": "千元关口回落985。美股光通信暴跌,Credo/Astera Labs跌4%+,明日压力明显",
+      "note": "千元关口回落988。主力净流出27.24亿居首!美股光通信暴跌,Credo/Astera Labs跌4%+,明日压力明显",
       "gates": {
         "trend": 1,
         "volume": 0,
@@ -222,24 +258,6 @@
         "support": 1,
         "valuation": 0,
         "risk": 1
-      }
-    },
-    {
-      "code": "301308",
-      "name": "江波龙",
-      "close": 412.18,
-      "change_pct": -1.69,
-      "score": 4,
-      "signal": "watch",
-      "note": "存储模组龙头。美股存储盘前暴跌(美光-6%/闪迪-5%),A股存储有国产替代逻辑但开盘情绪冲击难免",
-      "gates": {
-        "trend": 1,
-        "volume": 0,
-        "sector": 1,
-        "news": 0,
-        "support": 1,
-        "valuation": 0,
-        "risk": 0
       }
     },
     {
@@ -261,13 +279,31 @@
       }
     },
     {
-      "code": "300604",
-      "name": "长川科技",
-      "close": 306.0,
-      "change_pct": 1.13,
+      "code": "300718",
+      "name": "长盛轴承",
+      "close": 72.15,
+      "change_pct": 8.01,
+      "score": 5,
+      "signal": "reduce",
+      "note": "机器人大会8/19开幕+8.01%强势!利好兑现风险大,明日冲高考虑止盈。止损65",
+      "gates": {
+        "trend": 1,
+        "volume": 1,
+        "sector": 1,
+        "news": 1,
+        "support": 0,
+        "valuation": 0,
+        "risk": 1
+      }
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "close": 435.87,
+      "change_pct": 3.36,
       "score": 6,
-      "signal": "hold",
-      "note": "已清仓。半导体设备测试龙头。8/17清仓后+1.13%。已实现盈利可观",
+      "signal": "watch",
+      "note": "以太网芯片大合同。+3.36%逆势走强,8/27中报+9/14解禁需警惕",
       "gates": {
         "trend": 1,
         "volume": 1,
@@ -275,7 +311,97 @@
         "news": 1,
         "support": 1,
         "valuation": 0,
+        "risk": 0
+      }
+    },
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "close": 412.18,
+      "change_pct": -1.69,
+      "score": 4,
+      "signal": "watch",
+      "note": "存储模组龙头。美股存储盘前暴跌(美光-6%/闪迪-5%),A股存储有国产替代逻辑但开盘情绪冲击难免",
+      "gates": {
+        "trend": 1,
+        "volume": 0,
+        "sector": 1,
+        "news": 0,
+        "support": 1,
+        "valuation": 0,
+        "risk": 0
+      }
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "close": 452.21,
+      "change_pct": -3.10,
+      "score": 4,
+      "signal": "watch",
+      "note": "光模块龙头-3.10%回调。主力净流出16.85亿。美股光通信暴跌,明日继续承压",
+      "gates": {
+        "trend": 1,
+        "volume": 0,
+        "sector": 0,
+        "news": 0,
+        "support": 1,
+        "valuation": 0,
         "risk": 1
+      }
+    },
+    {
+      "code": "688825",
+      "name": "长鑫科技",
+      "close": 59.19,
+      "change_pct": -4.22,
+      "score": 4,
+      "signal": "watch",
+      "note": "存储龙头昨日+12%后今日-4.22%获利回吐。主力净流出16.29亿。存储荒逻辑未变但短线拥挤度高",
+      "gates": {
+        "trend": 1,
+        "volume": 0,
+        "sector": 0,
+        "news": 1,
+        "support": 1,
+        "valuation": 0,
+        "risk": 0
+      }
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "close": 33.56,
+      "change_pct": 0.60,
+      "score": 5,
+      "signal": "watch",
+      "note": "黄金避险配置。+0.60%稳健。中东局势升级+美债利率高位,黄金避险属性凸显。特大单净流入4.62亿",
+      "gates": {
+        "trend": 1,
+        "volume": 1,
+        "sector": 0,
+        "news": 1,
+        "support": 1,
+        "valuation": 0,
+        "risk": 1
+      }
+    },
+    {
+      "code": "601288",
+      "name": "农业银行",
+      "close": 6.60,
+      "change_pct": 2.17,
+      "score": 5,
+      "signal": "watch",
+      "note": "银行高股息+2.17%。沪指V型反弹靠银行护盘。特大单净流入5.17亿。防御属性强",
+      "gates": {
+        "trend": 1,
+        "volume": 1,
+        "sector": 1,
+        "news": 0,
+        "support": 1,
+        "valuation": 1,
+        "risk": 0
       }
     }
   ]
