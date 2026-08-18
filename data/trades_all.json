@@ -2,9 +2,9 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-18T09:10:00+08:00",
-    "total_realized_pnl": 22953.4,
-    "total_trades": 47,
+    "last_updated": "2026-08-18T09:32:00+08:00",
+    "total_realized_pnl": 23680.4,
+    "total_trades": 48,
     "notes": "8/17下午补录4笔交易：鹏辉卖400+长川清仓+风华高科买500+国瓷材料买600",
     "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close"
@@ -648,6 +648,20 @@
       "realized_pnl": 0,
       "violation": "none",
       "notes": "MLCC上游粉体涨价10-40%+国内市占率80%。600股，支出43176"
+    },
+    {
+      "seq": 48,
+      "date": "2026-08-18",
+      "time": "09:30",
+      "code": "300857",
+      "name": "协创数据",
+      "action": "sell",
+      "quantity": 100,
+      "price": 266.4,
+      "amount": 26640.0,
+      "realized_pnl": 727.0,
+      "violation": "none",
+      "notes": "减仓1手(200→100股)，剩余止损250不破清仓"
     }
   ],
   "daily_summary": [

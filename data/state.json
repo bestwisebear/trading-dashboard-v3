@@ -1,19 +1,20 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T09:10:00+08:00",
+    "last_updated": "2026-08-18T09:32:00+08:00",
     "data_date": "2026-08-17",
-    "source": "8/17收盘修正(补录4笔交易)",
+    "source": "8/18盘中:协创减仓100股@266.40",
     "session": "close_corrected"
   },
   "current": {
-    "total_assets": 210367.77,
+    "total_assets": 210092.77,
     "prev_close_assets": 207076.77,
-    "available_cash": 28267.77,
+    "available_cash": 54907.77,
     "initial_capital": 200000,
     "position_count": 4,
-    "position_ratio": 86.6,
-    "monthly_pnl": 10367.77,
-    "monthly_return_rate": 5.18
+    "position_ratio": 73.9,
+    "monthly_pnl": 10092.77,
+    "monthly_return_rate": 5.05,
+    "market_value": 155185.0
   },
   "today_so_far": {
     "date": "2026-08-17",
@@ -37,11 +38,11 @@
     {
       "code": "300857",
       "name": "协创数据",
-      "quantity": 200,
+      "quantity": 100,
       "cost_price": 259.13,
       "stop_loss": 250.0,
       "buy_date": "2026-08-14",
-      "market_value": 53830.0
+      "market_value": 26915.0
     },
     {
       "code": "000636",

@@ -2,7 +2,8 @@
   "meta": {
     "last_updated": "2026-08-18T09:10:00+08:00",
     "date": "2026-08-17",
-    "session": "close_corrected"
+    "session": "close_corrected",
+    "total_market_value": 155185.0
   },
   "summary": {
     "total_market_value": 182100.0,
@@ -41,12 +42,12 @@
     {
       "code": "300857",
       "name": "协创数据",
-      "quantity": 200,
+      "quantity": 100,
       "cost_price": 259.13,
       "close": 269.15,
       "pre_close": 269.15,
       "change_pct": 0,
-      "market_value": 53830.0,
+      "market_value": 26915.0,
       "unrealized_pnl": 2004.0,
       "unrealized_return": 3.87,
       "stop_loss": 250.0,
