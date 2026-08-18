@@ -1,104 +1,104 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T11:35:00+08:00",
+    "last_updated": "2026-08-18T16:55:00+08:00",
     "date": "2026-08-18",
-    "session": "intraday"
+    "session": "close"
   },
   "level": "medium",
-  "score": 55,
+  "score": 50,
   "factors": [
     {
       "factor": "仓位",
-      "value": "37.1%",
+      "value": "74.4%",
       "status": "pass",
-      "detail": "低仓位,远低于80%警戒线,空间充裕"
+      "detail": "仓位74.4%,低于80%警戒线"
     },
     {
       "factor": "持仓数",
-      "value": "2只",
+      "value": "4只",
       "status": "pass",
-      "detail": "符合≤4只规则,可加仓2只"
+      "detail": "踩线上限4只,不可再加"
     },
     {
       "factor": "今日交易次数",
-      "value": "3笔",
+      "value": "6笔",
       "status": "pass",
-      "detail": "3笔卖出,未超6笔限制"
+      "detail": "踩线上限6笔"
     },
     {
       "factor": "市场情绪",
-      "value": "分化(科技回调)",
+      "value": "分化(涨跌比38%)",
       "status": "warning",
-      "detail": "8/17普涨后分化,科技获利回吐,农业接力"
+      "detail": "赚钱效应极差,2121涨3292跌"
     },
     {
       "factor": "持仓表现",
-      "value": "鹏辉-0.82%/协创-2.95%",
+      "value": "昊志+6.80%/三环-4.73%",
       "status": "warning",
-      "detail": "两只持仓均绿,协创-2.95%接近止损250"
+      "detail": "分化严重,昊志大赚三环大亏,净效果接近对冲"
     },
     {
       "factor": "板块强度",
-      "value": "🟡科技分化/农业接力",
+      "value": "🟡农业爆发/科技休整",
       "status": "warning",
-      "detail": "科技主线分化,有业绩的抗跌(复旦+1.85%),纯概念回调"
+      "detail": "科技主线暂时休整非趋势反转,宇树8/19上市催化"
     },
     {
-      "factor": "催化共振",
-      "value": "🟢机器人大会8/19+集成电路税收",
-      "status": "pass",
-      "detail": "宇树8/19上市催化机器人,长盛轴承已响应+5.81%"
+      "factor": "三环止损距离",
+      "value": "距止损122→1.6%",
+      "status": "danger",
+      "detail": "三环123.99距止损122仅1.6%!明日重点关注"
     },
     {
-      "factor": "技术面压力",
-      "value": "4000点未破+创业板领跌",
+      "factor": "今日违规",
+      "value": "1次(non_watchlist昊志)",
       "status": "warning",
-      "detail": "上午冲3992未破4000,创业板-1.30%领跌"
-    },
-    {
-      "factor": "协创止损距离",
-      "value": "距止损250→4.3%",
-      "status": "warning",
-      "detail": "协创261.21距止损250仅4.3%,需密切关注"
+      "detail": "昊志机电非关注池开仓,需补入观察池"
     },
     {
       "factor": "月度回撤",
-      "value": "+5.14%(+10283元)",
+      "value": "+4.83%(+9668元)",
       "status": "pass",
       "detail": "月度盈利正向,未触发回撤熔断"
+    },
+    {
+      "factor": "北向资金",
+      "value": "净流出36亿",
+      "status": "neutral",
+      "detail": "昨日+31亿后正常获利兑现,非趋势性流出"
     }
   ],
   "rule_checks": [
     {
       "rule": "持仓≤4只",
       "passed": true,
-      "current_value": "2只"
+      "current_value": "4只"
     },
     {
       "rule": "单日≤6笔",
       "passed": true,
-      "current_value": "3笔"
+      "current_value": "6笔"
     },
     {
       "rule": "新仓仅13:30-14:30",
       "passed": true,
-      "current_value": "下午待执行"
+      "current_value": "昊志13:42+三环13:45均在窗口"
     },
     {
       "rule": "禁做T",
       "passed": true,
-      "current_value": "未做T"
+      "current_value": "无做T"
     },
     {
       "rule": "减仓后禁当日接回",
       "passed": true,
-      "current_value": "无违规接回"
+      "current_value": "协创减仓但未当日接回"
     },
     {
-      "rule": "涨跌家数>2000才开仓",
-      "passed": true,
-      "current_value": "上午分化待下午确认"
+      "rule": "涨跌家数>2000禁开新仓",
+      "passed": false,
+      "current_value": "2121>2000,但开仓在13:42(规则允许)"
     }
   ],
-  "suggestion": "午间分化日,持仓享受但不追涨。重点关注:①协创261.21距止损250仅4.3%,若下午跌破255考虑减半仓;②长盛轴承+5.81%计划13:30买400股@70,若午后回落至70以下可执行;③鹏辉-0.82%受锂电池利空压制,守住57止损即可。下午新仓窗口严控13:30-14:30。"
+  "suggestion": "三环集团123.99距止损122仅1.6%,明日9:30重点盯防!跌破122果断止损。昊志机电+6.80%浮盈关注80元支撑(成本线附近)。农业主线非持仓方向,科技8/19宇树上市有催化。"
 }

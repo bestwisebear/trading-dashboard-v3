@@ -1,61 +1,61 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T08:25:00+08:00",
+    "last_updated": "2026-08-18T16:55:00+08:00",
     "date": "2026-08-18",
-    "session": "pre_market"
+    "session": "close"
   },
   "sectors": [
     {
-      "name": "白酒Ⅱ",
-      "change_pct": -3.18,
-      "days_declining": 3,
-      "note": "8/17中报-1.95%+国家队退出,持续弱势"
-    },
-    {
-      "name": "游戏Ⅱ",
-      "change_pct": -1.89,
-      "days_declining": 2,
-      "note": "前期涨幅回吐"
-    },
-    {
       "name": "影视院线",
-      "change_pct": -1.66,
-      "days_declining": 2,
-      "note": "北京文化跌停领跌"
+      "change_pct": -2.39,
+      "days_declining": 3,
+      "note": "连续调整,北京文化领跌"
     },
     {
-      "name": "电力",
-      "change_pct": -0.13,
+      "name": "能源金属",
+      "change_pct": -2.5,
+      "days_declining": 2,
+      "note": "锂电板块获利回吐"
+    },
+    {
+      "name": "元件",
+      "change_pct": -2.03,
       "days_declining": 1,
-      "note": "资金从防御转进攻"
+      "note": "MLCC分化,三环-4.73%领跌"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": -1.35,
+      "days_declining": 1,
+      "note": "净流出-125亿,资金获利了结"
     }
   ],
   "oversold_sectors": [
     {
-      "name": "白酒Ⅱ",
-      "change_pct": -3.18,
-      "days_declining": 3,
-      "note": "8/17中报-1.95%+国家队退出,持续弱势"
-    },
-    {
-      "name": "游戏Ⅱ",
-      "change_pct": -1.89,
-      "days_declining": 2,
-      "note": "前期涨幅回吐"
-    },
-    {
       "name": "影视院线",
-      "change_pct": -1.66,
-      "days_declining": 2,
-      "note": "北京文化跌停领跌"
+      "change_pct": -2.39,
+      "days_declining": 3,
+      "note": "连续调整,无反弹催化"
     },
     {
-      "name": "电力",
-      "change_pct": -0.13,
+      "name": "能源金属",
+      "change_pct": -2.5,
+      "days_declining": 2,
+      "note": "锂电回调,关注锂矿价格"
+    },
+    {
+      "name": "元件",
+      "change_pct": -2.03,
       "days_declining": 1,
-      "note": "资金从防御转进攻"
+      "note": "三环-4.73%拖累板块"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": -1.35,
+      "days_declining": 1,
+      "note": "资金净流出-125亿"
     }
   ],
   "bounce_candidates": [],
-  "strategy_note": "🟡 超跌反弹优先级:低。当前主线(科技)持续强势,资金无高低切换需求。白酒基本面恶化(中报-1.95%)无反弹基础,仅在科技分歧时考虑。锂电池链偏弱(锂矿复产利空)但已不在超跌池。"
+  "strategy_note": "🟡 科技主线暂时休整,非趋势反转。宇树8/19上市+机器人大会为短期催化。能源金属/影视无反弹基础,仅科技方向可在调整充分后考虑。"
 }
