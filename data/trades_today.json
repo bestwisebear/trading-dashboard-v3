@@ -1,16 +1,61 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
-    "date": "2026-08-17",
-    "session": "close"
+    "last_updated": "2026-08-18T11:35:00+08:00",
+    "date": "2026-08-18",
+    "session": "intraday"
   },
-  "trades": [],
+  "trades": [
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "direction": "sell",
+      "quantity": 100,
+      "price": 266.4,
+      "amount": 26640.0,
+      "realized_pnl": 727.0,
+      "time": "上午",
+      "note": "减仓100股,保留100股"
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "direction": "sell",
+      "quantity": 600,
+      "price": 0,
+      "amount": 0,
+      "realized_pnl": 1946.64,
+      "time": "上午",
+      "note": "清仓600股"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "direction": "sell",
+      "quantity": 500,
+      "price": 64.36,
+      "amount": 32180.0,
+      "realized_pnl": 925.54,
+      "time": "上午",
+      "note": "清仓500股"
+    }
+  ],
   "summary": {
-    "total_trades": 0,
+    "total_trades": 3,
     "buy_count": 0,
-    "sell_count": 0,
-    "trade_count": 0,
-    "realized_pnl": 0,
+    "sell_count": 3,
+    "trade_count": 3,
+    "realized_pnl": 3599.18,
     "violation_count": 0
-  }
+  },
+  "pending": [
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "direction": "buy",
+      "quantity": 200,
+      "price": 126.0,
+      "status": "未成交",
+      "note": "挂单126元买200股"
+    }
+  ]
 }
