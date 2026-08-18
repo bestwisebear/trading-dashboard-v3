@@ -1,39 +1,44 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
-    "date": "2026-08-17",
-    "session": "close"
+    "last_updated": "2026-08-18T08:25:00+08:00",
+    "date": "2026-08-18",
+    "session": "pre_market"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
       "close": 3982.65,
       "change_pct": 1.41,
-      "pre_close": 3927.18
+      "pre_close": 3927.18,
+      "note": "8/17收盘,距4000点17点"
     },
     "sz399001": {
       "name": "深证成指",
       "close": 14704.27,
       "change_pct": 2.44,
-      "pre_close": 14354.31
+      "pre_close": 14354.31,
+      "note": "放量跟随"
     },
     "sz399006": {
       "name": "创业板指",
       "close": 3740.16,
       "change_pct": 3.14,
-      "pre_close": 3626.3
+      "pre_close": 3626.3,
+      "note": "领涨"
     },
     "sh000688": {
       "name": "科创50",
       "close": 1788.85,
       "change_pct": 4.14,
-      "pre_close": null
+      "pre_close": 1717.68,
+      "note": "长鑫+12%驱动"
     },
     "sh000300": {
       "name": "沪深300",
       "close": 4741.1,
       "change_pct": 1.61,
-      "pre_close": null
+      "pre_close": 4665.88,
+      "note": "跟随"
     }
   },
   "market_breadth": {
@@ -226,5 +231,27 @@
       "change_pct": -0.13,
       "lead_stock": ""
     }
-  ]
+  ],
+  "pre_market_signals": {
+    "ftse_a50_futures": {
+      "value": 2793.9,
+      "change_pct": -0.2,
+      "note": "MSCI A50微跌,开盘略承压"
+    },
+    "us_futures": {
+      "nasdaq": -0.3,
+      "sp500": -0.2,
+      "note": "美股期货偏弱"
+    },
+    "cny_usd": 6.74,
+    "brent_oil_usd": 90.0,
+    "brent_change_pct": 2.8,
+    "gold_usd": 4472.9,
+    "gold_change_pct": 0.8,
+    "dxy": 99.667,
+    "margin_balance_yi": 26414,
+    "margin_5d_change_yi": 341,
+    "market_score": 55,
+    "market_score_note": "中性偏多,需观察开盘30分钟资金方向"
+  }
 }

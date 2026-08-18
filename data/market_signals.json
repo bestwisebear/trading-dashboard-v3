@@ -1,35 +1,53 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
-    "date": "2026-08-17",
-    "session": "close"
+    "last_updated": "2026-08-18T08:25:00+08:00",
+    "date": "2026-08-18",
+    "session": "pre_market"
   },
   "aggregate": {
-    "green_count": 8,
-    "yellow_count": 3,
-    "red_count": 1,
-    "total_score": 70,
+    "green_count": 5,
+    "yellow_count": 4,
+    "red_count": 3,
+    "total_score": 62,
     "max_score": 100,
     "no_open_position": false,
-    "market_comment": "科技全面爆发日，赚钱效应80%。短期情绪偏热，明日大概率分化。量价齐升信号明确但需后续资金跟进。"
+    "market_comment": "8/18早间观察:科技全面爆发后首个分化日+5催化共振(集成电路税收优惠/CPO量产/宇树IPO/存储三巨头/OpenAI合作),需观察资金是否高低切换。复旦微电8/18发布中报巨幅预增(+338%),国瓷材料8/18除权除息(10派0.5)。"
   },
   "signals": {
-    "trend": "strong_rebound",
-    "volume": "heavy_volume",
-    "breadth": "broad_rally",
-    "sector_rotation": "tech_leads",
-    "sentiment": "euphoric",
-    "risk_level": "medium"
+    "trend": "strong_with_consolidation",
+    "volume": "heavy_to_normal",
+    "breadth": "broad_to_narrow",
+    "sector_rotation": "tech_leads_with_diff",
+    "sentiment": "euphoric_to_heated",
+    "risk_level": "medium_high"
   },
   "key_events": [
-    "SK海力士警告明年最严重存储荒",
-    "英伟达Spectrum-X CPO交换机全面量产",
-    "四部门发布集成电路企业所得税优惠",
-    "央行每日≤6000亿逆回购对冲税期",
-    "7月工业增加值+4.5%",
-    "摩根大通警告全球粮食危机",
-    "现货黄金站上4400美元",
-    "贵州茅台净利-1.95%国家队退出十大股东"
+    "🟢 8/18集成电路+工业母机税收优惠(四部委)",
+    "🟢 英伟达Spectrum-X CPO硅光交换机全面量产",
+    "🟢 复旦微电8/18中报:H1营收+21%/净利+338.58%",
+    "🟢 OpenAI与英伟达扩大合作 2030计算规模6000亿美元",
+    "🟢 宇树科技8/19科创板上市(发行价150.8元)",
+    "🟡 国瓷材料8/18除权除息(10派0.5,每股除息0.05元)",
+    "🟡 美股8/17连2日小幅收跌(标普-0.5%/纳指-0.3%)",
+    "🟡 美伊冲突升级+布伦特原油>$90",
+    "🔴 沪指3980-4000堆积套牢盘",
+    "🔴 科创50已涨4%获利回吐压力",
+    "🔴 锂电池链利空:宁德宜春锂矿复产(10万吨碳酸锂)"
   ],
-  "market_verdict": "科技全面爆发日，量价齐升信号明确。创业板+3.14%、科创50+4.14%领涨。半导体/CPO/存储是核心主线。"
+  "market_verdict": "🟡 **8/18分化日预警**: 8/17 4335:1064普涨后需消化获利盘,5大科技催化支撑主升浪但高位震荡概率高。新仓仅13:30-14:30窗口,严控追涨。",
+  "strategy": {
+    "no_chase": "8/17大涨的标的(长川+6.9%/通富涨停/君正+8.2%/天孚+7.04%)次日大概率分化,严禁追涨",
+    "new_position_window": "13:30-14:30",
+    "prefer_pullback": "优先回踩强支撑(7道闸≥3项+多策略共振)",
+    "focus_sectors": [
+      "MLCC/存储(复旦微电+338%催化)",
+      "光模块(等回踩)",
+      "算力/IDC(估值低)",
+      "设备(中微+3.46%)"
+    ],
+    "avoid_sectors": [
+      "锂电池(锂矿复产利空)",
+      "白酒(国家队退出+中报-1.95%)"
+    ]
+  }
 }

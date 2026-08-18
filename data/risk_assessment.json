@@ -1,17 +1,17 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
-    "date": "2026-08-17",
-    "session": "close"
+    "last_updated": "2026-08-18T08:25:00+08:00",
+    "date": "2026-08-18",
+    "session": "pre_market"
   },
   "level": "medium",
-  "score": 55,
+  "score": 60,
   "factors": [
     {
       "factor": "仓位",
       "value": "77.7%",
       "status": "normal",
-      "detail": "接近80%警戒线但未超"
+      "detail": "接近80%警戒线但未超,8/18仍可小幅加仓"
     },
     {
       "factor": "持仓数",
@@ -23,25 +23,49 @@
       "factor": "今日交易次数",
       "value": "0次",
       "status": "pass",
-      "detail": "无交易无违规"
+      "detail": "无交易无违规(待开盘)"
     },
     {
       "factor": "市场情绪",
       "value": "偏热(80%赚钱效应)",
       "status": "warning",
-      "detail": "110涨停/1跌停极度亢奋，短期可能分化"
+      "detail": "8/17普涨后或分化,严控追涨"
     },
     {
-      "factor": "成交放量",
-      "value": "2.39万亿+2446亿",
+      "factor": "美股催化",
+      "value": "🔴连2日小幅收跌",
       "status": "warning",
-      "detail": "放量普涨后次日大概率分化"
+      "detail": "标普-0.5%/纳指-0.3%,8/18开盘或承压"
     },
     {
-      "factor": "持仓浮盈",
-      "value": "长川+157/协创+2004",
-      "status": "normal",
-      "detail": "持仓全线浮盈"
+      "factor": "板块强度",
+      "value": "🟢半导体/通信/存储真强",
+      "status": "pass",
+      "detail": "5大科技主线真强(板块涨跌比>1:1+最弱股跟涨)"
+    },
+    {
+      "factor": "催化共振",
+      "value": "🟢5大催化",
+      "status": "pass",
+      "detail": "集成电路税收优惠+CPO量产+宇树IPO+OpenAI合作+复旦微电+338%"
+    },
+    {
+      "factor": "技术面压力",
+      "value": "4000点+科创50+4%",
+      "status": "warning",
+      "detail": "沪指距4000仅17点+科创50已涨4%获利回吐"
+    },
+    {
+      "factor": "8/18特殊事件",
+      "value": "复旦微电中报+国瓷材料除权",
+      "status": "pass",
+      "detail": "复旦微电+338%巨幅预增;国瓷材料8/18除权除息(10派0.5)"
+    },
+    {
+      "factor": "月度回撤",
+      "value": "+4.67%(+9336元)",
+      "status": "pass",
+      "detail": "8月盈利未触发5%周回撤/10%月回撤熔断"
     }
   ],
   "rule_checks": [

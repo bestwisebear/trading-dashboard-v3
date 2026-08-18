@@ -1,249 +1,131 @@
 {
   "meta": {
-    "date": "2026-08-17",
-    "last_updated": "2026-08-17T20:50:00+08:00",
-    "source": "web_search_evening"
+    "date": "2026-08-18",
+    "last_updated": "2026-08-18T08:25:00+08:00",
+    "source": "pre_market_briefing"
   },
   "overall_sentiment": "偏多",
-  "sentiment_summary": "科技全面爆发+晚间美股科技继续强势，存储/CPO/MLCC三重催化共振。美联储加息预期降温+AI盈利兑现，多头格局强化。明日关注分化节奏。",
+  "sentiment_summary": "8/18早间5大催化共振(集成电路税收优惠/CPO量产/宇树IPO/OpenAI合作6000亿/复旦微电+338%中报),隔夜美股连2日小幅收跌但存储芯片走强。A股科技主升浪延续但4000点压力+科创50获利回吐需消化。8/18分化日严控追涨。",
   "items": [
     {
-      "id": 1,
-      "time": "09:30",
-      "title": "SK海力士警告明年最严重'存储荒'，投资384亿美元建晶圆厂",
-      "category": "sector",
+      "time": "盘后(8/17)",
+      "title": "四部委:集成电路+工业母机税收优惠(非货币资产交换所得税5年递延)",
       "impact": "positive",
-      "impact_level": 5,
-      "detail": "SK海力士董事长崔泰源表示明年将出现最严重存储荒，将在韩国投资384亿美元建晶圆厂应对AI时代存储芯片需求。招商证券指出存储行业供需缺口将延续至2027年。",
-      "affected_stocks": [
-        "301308",
-        "300223",
-        "300604"
-      ],
-      "source": "东方财富/财联社"
+      "level": 5,
+      "scope": "半导体/工业母机",
+      "detail": "直接利好集成电路设计/制造/封测全产业链"
     },
     {
-      "id": 2,
-      "time": "09:30",
-      "title": "英伟达Spectrum-X CPO硅光交换机全面量产",
-      "category": "sector",
+      "time": "8/17 22:15 / 8/18 早盘",
+      "title": "复旦微电688385 2026中报:营收22.25亿(+21%)/净利8.49亿(+338.58%)/扣非+125.88%",
       "impact": "positive",
-      "impact_level": 5,
-      "detail": "全球首款200G/lane CPO以太网交换机量产，激光器数量减至1/4、功耗降至1/5，光损耗从22dB降至4dB。CPO技术商业化落地提速。",
-      "affected_stocks": [
-        "300394",
-        "300308",
-        "300502",
-        "002281",
-        "300857"
-      ],
-      "source": "英伟达官方/中信证券"
+      "level": 5,
+      "scope": "复旦微电/FPGA/存储/安全芯片",
+      "detail": "扣非+125.88%表明主业爆发,FPGA+安全+非挥发存储三主线齐发;战略配售盛合晶微确认公允价值变动收益+4.65亿"
     },
     {
-      "id": 3,
-      "time": "10:00",
-      "title": "四部门发布集成电路企业税收优惠政策",
-      "category": "macro",
+      "time": "8/14→8/18",
+      "title": "英伟达Spectrum-X CPO硅光交换机全面量产(激光器1/4/功耗1/5/光损1/5.5)",
       "impact": "positive",
-      "impact_level": 4,
-      "detail": "财政部等多部门发布集成电路、工业母机企业非货币性资产交换企业所得税优惠政策，减轻硬科技企业经营压力。",
-      "affected_stocks": [
-        "688012",
-        "300604",
-        "300438"
-      ],
-      "source": "财政部/国新办"
+      "level": 5,
+      "scope": "CPO/光模块",
+      "detail": "直接催化中际旭创/新易盛/天孚通信/光迅科技/剑桥科技"
     },
     {
-      "id": 4,
-      "time": "10:30",
-      "title": "7月工业增加值同比+4.5%，制造业+5.5%",
-      "category": "macro",
+      "time": "8/19",
+      "title": "宇树科技科创板上市(发行价150.8元/市值>600亿)",
+      "impact": "positive",
+      "level": 4,
+      "scope": "机器人/智能制造",
+      "detail": "机器人概念催化,关注产业链上下游"
+    },
+    {
+      "time": "6:13",
+      "title": "OpenAI与英伟达扩大计算合作 2030计算规模6000亿美元",
+      "impact": "positive",
+      "level": 4,
+      "scope": "AI算力/IDC/CPO",
+      "detail": "算力需求扩张+IDC景气度提升"
+    },
+    {
+      "time": "6:13",
+      "title": "7月数据:高技术制造业+16.9%(传感器+35.3%/存储芯片+30.2%)",
+      "impact": "positive",
+      "level": 4,
+      "scope": "传感器/存储",
+      "detail": "产业数据印证主升浪基本面"
+    },
+    {
+      "time": "6:13",
+      "title": "FGW:8000亿新型政策性金融工具加快投放",
+      "impact": "positive",
+      "level": 3,
+      "scope": "新基建/工程机械",
+      "detail": "加大对民间投资项目支持"
+    },
+    {
+      "time": "盘后(8/17)",
+      "title": "《石油天然气十五五规划》(2030油气4.4亿吨/CCUS/新型储能)",
+      "impact": "positive",
+      "level": 3,
+      "scope": "油气/储能",
+      "detail": "传统能源与新型储能规划并行"
+    },
+    {
+      "time": "8/17",
+      "title": "君正股份300223:拟1亿元-2亿元回购股份(回购价≤220元)",
+      "impact": "positive",
+      "level": 3,
+      "scope": "君正股份",
+      "detail": "8/17涨8.20%后再添回购催化,关注池股票"
+    },
+    {
+      "time": "8/18",
+      "title": "国瓷材料300285除权除息日(10派0.5元,每股除息0.05元)",
       "impact": "neutral",
-      "impact_level": 3,
-      "detail": "国家统计局发布7月经济数据，规模以上工业增加值+4.5%，制造业+5.5%。高技术制造业贡献率约五成。数据整体平稳偏弱，强化LPR下调预期。",
-      "affected_stocks": [],
-      "source": "国家统计局"
+      "level": 2,
+      "scope": "国瓷材料",
+      "detail": "短线低开消化除息0.05元,中长期不影响价值"
     },
     {
-      "id": 5,
-      "time": "11:00",
-      "title": "闪迪投资者日财务目标远超预期，存储芯片重估",
-      "category": "sector",
+      "time": "6:13",
+      "title": "人民币创3年新高破6.74",
       "impact": "positive",
-      "impact_level": 4,
-      "detail": "闪迪目标2028-2030财年中高双位数营收增长、非GAAP毛利率约80%。伯恩斯坦预计Q3传统DRAM合约价环比+17%。",
-      "affected_stocks": [
-        "301308",
-        "300223"
-      ],
-      "source": "闪迪/伯恩斯坦"
+      "level": 2,
+      "scope": "汇率/北向资金",
+      "detail": "升值预期支撑A股估值"
     },
     {
-      "id": 6,
-      "time": "13:00",
-      "title": "贵州茅台上半年净利-1.95%，国家队退出十大股东",
-      "category": "market",
+      "time": "7:21",
+      "title": "宁德宜春枧下窝锂矿复产环评受理(设计10万吨碳酸锂)",
       "impact": "negative",
-      "impact_level": 4,
-      "detail": "茅台Q2环比下降36%，中央汇金和证金公司均退出前十大股东。白酒板块-3.18%领跌，资金从消费权重向科技成长大规模搬家。",
-      "affected_stocks": [],
-      "source": "茅台半年报"
+      "level": 3,
+      "scope": "锂电池/锂价",
+      "detail": "压制锂价+锂电池链偏弱(鹏辉能源/石大胜华/德方纳米)"
     },
     {
-      "id": 7,
-      "time": "14:00",
-      "title": "现货黄金站上4400美元/盎司，大宗商品走强",
-      "category": "market",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "COMEX黄金期货收报4380.4美元。中东地缘紧张（霍尔木兹海峡）+美元走弱（99.667）推升贵金属。有色金属板块受益。",
-      "affected_stocks": [
-        "601899"
-      ],
-      "source": "伦敦金属交易所"
+      "time": "6:13",
+      "title": "美伊60天谈判窗口期满+特朗普不延长(威胁对阿曼动武)",
+      "impact": "negative",
+      "level": 3,
+      "scope": "原油/避险",
+      "detail": "布伦特原油>$90,布油+2.8%三周新高"
     },
     {
-      "id": 8,
-      "time": "14:30",
-      "title": "摩根大通警告全球粮食危机正在酝酿",
-      "category": "macro",
+      "time": "8/17美股",
+      "title": "美股连2日小幅收跌(标普-0.50%/纳指-0.31%/道指-0.51%)",
+      "impact": "negative",
+      "level": 3,
+      "scope": "隔夜美股",
+      "detail": "费城半导体+1.64%独强,闪迪+8.88%/美光+5.7%,存储板块映射A股"
+    },
+    {
+      "time": "7:51",
+      "title": "寒武纪56.1万股股权激励股份将于8月20日上市流通",
       "impact": "neutral",
-      "impact_level": 3,
-      "detail": "霍尔木兹海峡航运中断风险+超强厄尔尼诺，预计全球食品通胀率从2026H1的2.8%升至2027H1的5%。种植业板块涨4.16%。",
-      "affected_stocks": [],
-      "source": "摩根大通"
-    },
-    {
-      "id": 9,
-      "time": "15:00",
-      "title": "协创数据上半年净利18.63亿同比+331.11%",
-      "category": "stock",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "算力租赁龙头业绩爆发，H1营收+155.69%，净利+331.11%。CPO主线+算力需求旺盛驱动。",
-      "affected_stocks": [
-        "300857"
-      ],
-      "source": "协创数据业绩快报"
-    },
-    {
-      "id": 10,
-      "time": "15:30",
-      "title": "药明康德A+H齐创新高，总市值突破5000亿",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "上半年归母净利首破百亿，全面上调2026全年业绩指引。上半年创新药对外授权交易突破1100亿美元。",
-      "affected_stocks": [],
-      "source": "药明康德公告"
-    },
-    {
-      "id": 11,
-      "time": "16:00",
-      "title": "央行每日≤6000亿隔夜逆回购，流动性'主动加量'",
-      "category": "macro",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "8/17-19每日开展不超6000亿隔夜逆回购，对冲税期与政府债缴款压力。货币政策维持适度宽松基调。",
-      "affected_stocks": [],
-      "source": "央行公告"
-    },
-    {
-      "id": 12,
-      "time": "16:00",
-      "title": "Anthropic Q2营收同比暴涨14倍超115亿美元",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "AI大模型公司业绩持续爆发。国内互联网大厂加码国产算力投资，腾讯加大Q3算力采购，算力租赁行业量价齐升。",
-      "affected_stocks": [
-        "300857",
-        "300442"
-      ],
-      "source": "Anthropic/天风证券"
-    },
-    {
-      "id": 13,
-      "time": "20:00",
-      "title": "美股盘前芯片/光通信股普涨，纳指期货+0.52%",
-      "category": "market",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "闪迪涨超5%，SK海力士涨超4%，美光涨超3%。光通信Astera Labs涨超5%，Coherent/Lumentum涨超2%。科技股延续强势对A股明日开盘有正面传导",
-      "affected_stocks": [
-        "301308",
-        "300223",
-        "300394",
-        "300308",
-        "002281"
-      ],
-      "source": "新浪财经/21世纪经济报道"
-    },
-    {
-      "id": 14,
-      "time": "20:10",
-      "title": "高盛：美联储9月加息可能性'非常小'，市场鹰派预期过度",
-      "category": "macro",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "高盛首席经济学家称零售销售疲软+就业失望+通胀放缓，加息可能性很小。CME FedWatch显示9月加息概率降至约33%。全球流动性压力缓解利好科技成长",
-      "affected_stocks": [],
-      "source": "高盛报告/华尔街见闻"
-    },
-    {
-      "id": 15,
-      "time": "20:20",
-      "title": "复旦微电H1净利+338.58%爆发，Q2净利环比+372%",
-      "category": "stock",
-      "impact": "positive",
-      "impact_level": 5,
-      "detail": "营收22.25亿同比+21%，归母净利8.49亿同比+339%。Q2净利7.01亿远超Q1的1.48亿。拟出资3亿参与集成电路产业基金。存储+FPGA双主线驱动",
-      "affected_stocks": [
-        "688385"
-      ],
-      "source": "复旦微电晚间公告"
-    },
-    {
-      "id": 16,
-      "time": "20:30",
-      "title": "大摩、小摩齐看标普8000点，AI牛市进入'盈利兑现'阶段",
-      "category": "market",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "摩根大通将2026年末目标上调至8000点，摩根士丹利12个月目标8300点。至少7家华尔街机构预计标普500年底8000点。推动力从估值扩张切换为盈利上修+AI商业化兑现",
-      "affected_stocks": [
-        "300308",
-        "300857",
-        "300442"
-      ],
-      "source": "Reuters/摩根大通/摩根士丹利"
-    },
-    {
-      "id": 17,
-      "time": "20:40",
-      "title": "世界机器人大会8月19日开幕，机器人概念预热",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "2026世界机器人大会8月19-23日在北京举办。开创电气签署机器人产业基金合作框架协议。机器人板块短期有事件催化",
-      "affected_stocks": [],
-      "source": "世界机器人大会组委会"
-    },
-    {
-      "id": 18,
-      "time": "20:50",
-      "title": "洁美科技追加4.28亿投资MLCC离型膜产能扩产",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "洁美科技拟追加4.28亿元投资华北产研总部基地项目，扩大MLCC离型膜产能。MLCC涨价链上游持续扩产印证行业高景气",
-      "affected_stocks": [
-        "000636",
-        "300408",
-        "300285"
-      ],
-      "source": "洁美科技公告"
+      "level": 2,
+      "scope": "寒武纪",
+      "detail": "数量小,影响有限"
     }
   ]
 }
