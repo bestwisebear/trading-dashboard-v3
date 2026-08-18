@@ -2,11 +2,11 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-15T20:45:00+08:00",
-    "total_realized_pnl": 21108,
-    "total_trades": 43,
-    "notes": "8/3交易记录因历史数据缺失未录入，当日pnl=-5040来自历史复盘快照 | 8/10鹏辉减仓200股@62.6委托未成交，已移除seq19",
-    "data_as_of": "2026-08-14 收盘",
+    "last_updated": "2026-08-18T09:10:00+08:00",
+    "total_realized_pnl": 22953.4,
+    "total_trades": 47,
+    "notes": "8/17下午补录4笔交易：鹏辉卖400+长川清仓+风华高科买500+国瓷材料买600",
+    "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close"
   },
   "trades": [
@@ -590,6 +590,64 @@
       "realized_pnl": 0,
       "violation": "none",
       "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线"
+    },
+    {
+      "seq": 44,
+      "date": "2026-08-17",
+      "time": "13:35",
+      "code": "300438",
+      "name": "鹏辉能源",
+      "action": "sell",
+      "quantity": 400,
+      "price": 64.74,
+      "realized_pnl": 1805.2,
+      "violation": "none",
+      "cost_basis": 60.227,
+      "notes": "分批减仓，64支撑附近卖出400股。收入25896"
+    },
+    {
+      "seq": 45,
+      "date": "2026-08-17",
+      "time": "13:40",
+      "code": "300604",
+      "name": "长川科技",
+      "action": "sell",
+      "quantity": 100,
+      "price": 301.4,
+      "realized_pnl": 40.2,
+      "violation": "none",
+      "cost_basis": 300.998,
+      "notes": "清仓100股。半导体设备+6.9%后锁定利润。收入30140"
+    },
+    {
+      "seq": 46,
+      "date": "2026-08-17",
+      "time": "14:00",
+      "code": "000636",
+      "name": "风华高科",
+      "action": "buy",
+      "quantity": 500,
+      "price": 62.46,
+      "amount": 31230.0,
+      "cost_basis": 62.46,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "MLCC涨价链龙头，三环涨价30%催化。500股，支出31230"
+    },
+    {
+      "seq": 47,
+      "date": "2026-08-17",
+      "time": "14:10",
+      "code": "300285",
+      "name": "国瓷材料",
+      "action": "buy",
+      "quantity": 600,
+      "price": 71.96,
+      "amount": 43176.0,
+      "cost_basis": 71.96,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "MLCC上游粉体涨价10-40%+国内市占率80%。600股，支出43176"
     }
   ],
   "daily_summary": [
