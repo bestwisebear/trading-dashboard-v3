@@ -3,7 +3,8 @@
     "last_updated": "2026-08-18T09:10:00+08:00",
     "date": "2026-08-17",
     "session": "close_corrected",
-    "total_market_value": 155185.0
+    "total_market_value": 111043.0,
+    "position_count": 3
   },
   "summary": {
     "total_market_value": 182100.0,
@@ -77,26 +78,6 @@
       "pnl_percent": 1.57,
       "price_source": "close_20260817",
       "notes": "MLCC涨价链龙头，三环涨价30%催化"
-    },
-    {
-      "code": "300285",
-      "name": "国瓷材料",
-      "quantity": 600,
-      "cost_price": 71.96,
-      "close": 73.57,
-      "pre_close": 73.57,
-      "change_pct": 0,
-      "market_value": 44142.0,
-      "unrealized_pnl": 966.0,
-      "unrealized_return": 2.24,
-      "stop_loss": 66.0,
-      "buy_date": "2026-08-17",
-      "sector": "MLCC上游",
-      "current_price": 73.57,
-      "pnl_amount": 966.0,
-      "pnl_percent": 2.24,
-      "price_source": "close_20260817",
-      "notes": "MLCC上游钛酸钡涨价10-40%，国内市占率80%。8/18除权除息"
     }
   ]
 }

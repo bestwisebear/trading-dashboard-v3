@@ -2,9 +2,9 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-18T09:32:00+08:00",
-    "total_realized_pnl": 23680.4,
-    "total_trades": 48,
+    "last_updated": "2026-08-18T09:53:00+08:00",
+    "total_realized_pnl": 25900.4,
+    "total_trades": 49,
     "notes": "8/17下午补录4笔交易：鹏辉卖400+长川清仓+风华高科买500+国瓷材料买600",
     "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close"
@@ -662,6 +662,20 @@
       "realized_pnl": 727.0,
       "violation": "none",
       "notes": "减仓1手(200→100股)，剩余止损250不破清仓"
+    },
+    {
+      "seq": 49,
+      "date": "2026-08-18",
+      "time": "09:50",
+      "code": "300285",
+      "name": "国瓷材料",
+      "action": "sell",
+      "quantity": 600,
+      "price": 75.66,
+      "amount": 45396.0,
+      "realized_pnl": 2220.0,
+      "violation": "none",
+      "notes": "清仓600股(分两笔卖出,均价75.66)。MLCC链去重,只保留风华"
     }
   ],
   "daily_summary": [
