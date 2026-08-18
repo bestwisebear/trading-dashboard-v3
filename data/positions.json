@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
+    "last_updated": "2026-08-18T08:25:00+08:00",
     "date": "2026-08-17",
-    "session": "close"
+    "session": "pre_market"
   },
   "summary": {
     "total_market_value": 162699.0,
@@ -37,7 +37,9 @@
       "main_net_flow_5d": 310561811,
       "current_price": 65.51,
       "pnl_amount": 6339.6,
-      "pnl_percent": 8.77
+      "pnl_percent": 8.77,
+      "price_source": "close_20260817",
+      "pre_market_note": "集合竞价09:15-09:25,09:30前刷新"
     },
     {
       "code": "300604",
@@ -58,7 +60,9 @@
       "notes": "龙虎榜：深股通买入8.52亿/卖出13.92亿；机构专用3席位买入",
       "current_price": 302.57,
       "pnl_amount": 157.2,
-      "pnl_percent": 0.52
+      "pnl_percent": 0.52,
+      "price_source": "close_20260817",
+      "pre_market_note": "集合竞价09:15-09:25,09:30前刷新"
     },
     {
       "code": "300857",
@@ -79,7 +83,9 @@
       "notes": "H1净利18.63亿同比+331.11%，CPO主线",
       "current_price": 269.15,
       "pnl_amount": 2004.0,
-      "pnl_percent": 3.87
+      "pnl_percent": 3.87,
+      "price_source": "close_20260817",
+      "pre_market_note": "集合竞价09:15-09:25,09:30前刷新"
     }
   ]
 }

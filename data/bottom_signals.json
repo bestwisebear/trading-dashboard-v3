@@ -1,33 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T16:53:00+08:00",
-    "date": "2026-08-17",
-    "session": "close"
+    "last_updated": "2026-08-18T08:25:00+08:00",
+    "date": "2026-08-18",
+    "session": "pre_market"
   },
   "signals": [
     {
       "id": 1,
       "name": "缩量止跌",
       "condition": "成交额≤1.5万亿",
-      "today_value": "2.39万亿",
+      "today_value": "2.39万亿(8/17)",
       "satisfied": false,
-      "detail": "放量上涨2446亿，非缩量状态"
+      "detail": "8/17放量2446亿,8/18或回归正常(预期1.8-2.0万亿)"
     },
     {
       "id": 2,
       "name": "跌停减少",
       "condition": "跌停<30家",
-      "today_value": "1家",
+      "today_value": "1家(8/17)",
       "satisfied": true,
-      "detail": "跌停仅1家，恐慌情绪极度消退"
+      "detail": "恐慌情绪极度消退,8/18预期维持低位"
     },
     {
       "id": 3,
       "name": "涨跌恢复",
       "condition": "上涨>3000家",
-      "today_value": "4335家",
+      "today_value": "4335家(8/17)",
       "satisfied": true,
-      "detail": "普涨格局，赚钱效应80%"
+      "detail": "普涨格局,8/18或缩窄至2500-3500家(分化日)"
     },
     {
       "id": 4,
@@ -35,23 +35,33 @@
       "condition": "2天不创新低",
       "today_value": "连续2天上涨",
       "satisfied": true,
-      "detail": "上周五+今日连续反弹，上证+1.41%逼近4000点"
+      "detail": "上证+1.41%逼近4000点,8/18或震荡"
     },
     {
       "id": 5,
       "name": "北向流入",
       "condition": "连续2-3日净流入>50亿",
-      "today_value": "待确认",
+      "today_value": "待观察",
       "satisfied": false,
-      "detail": "龙虎榜显示深股通大幅卖出长川科技，北向资金态度偏谨慎"
+      "detail": "人民币升值+6.74有利北向,但美股走弱偏空,8/18观察"
+    },
+    {
+      "id": 6,
+      "name": "板块广度",
+      "condition": "强势板块>3个+最弱股跟涨",
+      "today_value": "5科技主线真强",
+      "satisfied": true,
+      "detail": "半导体/通信设备/存储/CPO/封装 全部真强(板块涨跌比>1:1)"
     }
   ],
   "aggregate": {
-    "satisfied_count": 3,
-    "total_count": 5,
-    "ratio": "3/5",
-    "recommendation": "接近底部",
-    "recommendation_detail": "3/5信号满足，市场处于接近底部区域。放量普涨+跌停极少+连续反弹，情绪已明显修复。但成交额偏大(2.39万亿)非缩量底部特征，北向资金态度待确认。建议关注明日能否延续放量态势。"
+    "satisfied_count": 4,
+    "total_count": 6,
+    "satisfied_rate": 0.67,
+    "verdict": "🟡 4/6信号触发,基础稳固但需消化获利盘",
+    "ratio": 0.67,
+    "recommendation": "hold_with_caution",
+    "recommendation_detail": "4/6信号触发(涨跌恢复+跌停减少+连续止跌+板块广度),基础稳固。8/18为分化日,严控追涨,新仓仅13:30-14:30窗口,优先回踩强支撑。"
   },
   "history_7d": [
     {
