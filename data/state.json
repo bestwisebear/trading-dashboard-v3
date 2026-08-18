@@ -1,46 +1,38 @@
 {
   "meta": {
-    "last_updated": "2026-08-17T20:50:00+08:00",
+    "last_updated": "2026-08-18T09:10:00+08:00",
     "data_date": "2026-08-17",
-    "source": "晚间复盘数据",
-    "session": "evening_review"
+    "source": "8/17收盘修正(补录4笔交易)",
+    "session": "close_corrected"
   },
   "current": {
-    "total_assets": 209336.77,
+    "total_assets": 210367.77,
     "prev_close_assets": 207076.77,
-    "available_cash": 46637.77,
+    "available_cash": 28267.77,
     "initial_capital": 200000,
-    "position_count": 3,
-    "position_ratio": 77.7,
-    "monthly_pnl": 9336.77,
-    "monthly_return_rate": 4.67
+    "position_count": 4,
+    "position_ratio": 86.6,
+    "monthly_pnl": 10367.77,
+    "monthly_return_rate": 5.18
   },
   "today_so_far": {
     "date": "2026-08-17",
-    "net_today": 2260.0,
-    "trade_count": 0,
+    "net_today": 3291.0,
+    "trade_count": 4,
     "violation_count": 0,
-    "session": "evening_review",
-    "net_today_ref": "total_assets - prev_close_assets"
+    "session": "close_corrected",
+    "net_today_ref": "total_assets - prev_close_assets",
+    "realized_pnl_today": 1845.4
   },
   "positions": [
     {
       "code": "300438",
       "name": "鹏辉能源",
-      "quantity": 1200,
+      "quantity": 800,
       "cost_price": 60.227,
       "stop_loss": 57.0,
       "buy_date": "2026-08-06",
-      "market_value": 78612.0
-    },
-    {
-      "code": "300604",
-      "name": "长川科技",
-      "quantity": 100,
-      "cost_price": 300.998,
-      "stop_loss": 275.0,
-      "buy_date": "2026-08-13",
-      "market_value": 30257.0
+      "market_value": 52408.0
     },
     {
       "code": "300857",
@@ -50,11 +42,30 @@
       "stop_loss": 250.0,
       "buy_date": "2026-08-14",
       "market_value": 53830.0
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "quantity": 500,
+      "cost_price": 62.46,
+      "stop_loss": 57.0,
+      "buy_date": "2026-08-17",
+      "market_value": 31720.0
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "quantity": 600,
+      "cost_price": 71.96,
+      "stop_loss": 66.0,
+      "buy_date": "2026-08-17",
+      "market_value": 44142.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
-    "cash_positive": true
+    "cash_positive": true,
+    "note": "8/17补录修正版"
   }
 }

@@ -6,9 +6,9 @@
   },
   "daily_metrics": {
     "date": "2026-08-17",
-    "trade_count": 0,
+    "trade_count": 4,
     "violation_count": 0,
-    "realized_pnl": 0,
+    "realized_pnl": 1845.4,
     "unrealized_pnl_change": 2260.0,
     "net_today": 2260.0,
     "total_assets": 209336.77,
