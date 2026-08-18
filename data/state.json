@@ -1,20 +1,20 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T09:32:00+08:00",
+    "last_updated": "2026-08-18T09:53:00+08:00",
     "data_date": "2026-08-17",
-    "source": "8/18盘中:协创减仓100股@266.40",
+    "source": "8/18盘中:国瓷清仓600股@75.66",
     "session": "close_corrected"
   },
   "current": {
-    "total_assets": 210092.77,
+    "total_assets": 211346.77,
     "prev_close_assets": 207076.77,
-    "available_cash": 54907.77,
+    "available_cash": 100303.77,
     "initial_capital": 200000,
-    "position_count": 4,
-    "position_ratio": 73.9,
-    "monthly_pnl": 10092.77,
-    "monthly_return_rate": 5.05,
-    "market_value": 155185.0
+    "position_count": 3,
+    "position_ratio": 52.5,
+    "monthly_pnl": 11346.77,
+    "monthly_return_rate": 5.67,
+    "market_value": 111043.0
   },
   "today_so_far": {
     "date": "2026-08-17",
@@ -52,15 +52,6 @@
       "stop_loss": 57.0,
       "buy_date": "2026-08-17",
       "market_value": 31720.0
-    },
-    {
-      "code": "300285",
-      "name": "国瓷材料",
-      "quantity": 600,
-      "cost_price": 71.96,
-      "stop_loss": 66.0,
-      "buy_date": "2026-08-17",
-      "market_value": 44142.0
     }
   ],
   "validation": {
