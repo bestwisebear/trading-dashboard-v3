@@ -1,26 +1,26 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T13:43:00+08:00",
+    "last_updated": "2026-08-18T13:46:00+08:00",
     "date": "2026-08-18",
     "session": "intraday",
     "total_market_value": 78097.0,
     "position_count": 2,
-    "source": "8/18盘中:昊志机电建仓后"
+    "source": "8/18盘中:三环建仓+协创成本更正后"
   },
   "summary": {
-    "total_market_value": 118502.0,
-    "available_cash": 92085.53,
-    "total_assets": 210587.53,
+    "total_market_value": 156692.0,
+    "available_cash": 54212.69,
+    "total_assets": 210904.69,
     "net_today": 3206.18,
     "today_return": 3206.18,
     "total_pnl_amount": 10282.95,
     "monthly_pnl": 10282.95,
     "prev_close_assets": 207076.77,
-    "position_ratio": 56.3,
+    "position_ratio": 74.3,
     "today_return_rate": 1.55,
     "monthly_return_rate": 5.14,
     "initial_capital": 200000,
-    "position_count": 3
+    "position_count": 4
   },
   "positions": [
     {
@@ -46,7 +46,7 @@
       "code": "300857",
       "name": "协创数据",
       "quantity": 100,
-      "cost_price": 259.13,
+      "cost_price": 254.14,
       "close": 261.21,
       "pre_close": 269.15,
       "change_pct": -2.95,
@@ -69,6 +69,15 @@
       "stop_loss": 73.0,
       "buy_date": "2026-08-18",
       "market_value": 40405.0
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "quantity": 300,
+      "cost_price": 126.21,
+      "stop_loss": 122.0,
+      "buy_date": "2026-08-18",
+      "market_value": 38190.0
     }
   ]
 }
