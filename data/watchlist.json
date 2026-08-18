@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T13:43:00+08:00",
+    "last_updated": "2026-08-18T13:46:00+08:00",
     "date": "2026-08-18",
     "session": "intraday",
     "data_basis": "8/18午间盘中数据",
@@ -29,7 +29,7 @@
       "code": "300408",
       "name": "三环集团",
       "score": 7,
-      "status": "buy",
+      "status": "hold",
       "sector": "MLCC/陶瓷基板",
       "today_close": 127.3,
       "today_change_pct": -2.19,
@@ -38,7 +38,7 @@
         "resistance": 137.0,
         "stop_loss": 122.0
       },
-      "notes": "MLCC涨价30%催化。午间-2.19%回调,挂单126未成交。回踩支撑附近",
+      "notes": "8/18建仓300@126.21。MLCC涨价30%催化。止损122，止盈137/145-150",
       "pre_close": 130.15,
       "price_source": "intraday_20260818_am"
     },
