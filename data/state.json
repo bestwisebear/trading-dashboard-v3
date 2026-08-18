@@ -1,20 +1,20 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T11:35:00+08:00",
+    "last_updated": "2026-08-18T13:43:00+08:00",
     "data_date": "2026-08-18",
-    "source": "午间刷新:鹏辉-0.82%/协创-2.95%",
+    "source": "8/18盘中:昊志机电建仓500@80.18",
     "session": "intraday"
   },
   "current": {
-    "total_assets": 210282.95,
+    "total_assets": 210587.53,
     "prev_close_assets": 207076.77,
-    "available_cash": 132185.95,
+    "available_cash": 92085.53,
     "initial_capital": 200000,
-    "position_count": 2,
-    "position_ratio": 37.1,
+    "position_count": 3,
+    "position_ratio": 56.3,
     "monthly_pnl": 10282.95,
     "monthly_return_rate": 5.14,
-    "market_value": 78097.0
+    "market_value": 118502.0
   },
   "today_so_far": {
     "date": "2026-08-18",
@@ -47,6 +47,15 @@
       "market_value": 26121.0,
       "intraday_price": 261.21,
       "intraday_change_pct": -2.95
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "quantity": 500,
+      "cost_price": 80.18,
+      "stop_loss": 73.0,
+      "buy_date": "2026-08-18",
+      "market_value": 40405.0
     }
   ],
   "validation": {

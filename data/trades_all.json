@@ -2,13 +2,13 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-18T10:46:00+08:00",
+    "last_updated": "2026-08-18T13:43:00+08:00",
     "total_realized_pnl": 25627.04,
     "total_trades": 50,
     "notes": "8/17下午补录4笔交易：鹏辉卖400+长川清仓+风华高科买500+国瓷材料买600",
     "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close",
-    "source": "8/18盘中:风华清仓500@64.36"
+    "source": "8/18盘中:昊志机电建仓500@80.18"
   },
   "trades": [
     {
@@ -705,6 +705,20 @@
       "realized_pnl": 925.54,
       "violation": "none",
       "notes": "清仓。PE207x偏高，换仓机器人概念"
+    },
+    {
+      "seq": 52,
+      "date": "2026-08-18",
+      "time": "13:42",
+      "code": "300503",
+      "name": "昊志机电",
+      "action": "buy",
+      "quantity": 500,
+      "price": 80.18,
+      "amount": 40090.0,
+      "realized_pnl": 0,
+      "violation": "non_watchlist",
+      "notes": "机器人大会概念博弈。替代长盛轴承(涨太多)。换手11.41%高活性"
     }
   ],
   "daily_summary": [
