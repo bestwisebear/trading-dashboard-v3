@@ -1,26 +1,26 @@
 {
   "meta": {
-    "last_updated": "2026-08-18T11:35:00+08:00",
+    "last_updated": "2026-08-18T13:43:00+08:00",
     "date": "2026-08-18",
     "session": "intraday",
     "total_market_value": 78097.0,
     "position_count": 2,
-    "source": "午间刷新:8/18上午收盘数据"
+    "source": "8/18盘中:昊志机电建仓后"
   },
   "summary": {
-    "total_market_value": 78097.0,
-    "available_cash": 132185.95,
-    "total_assets": 210282.95,
+    "total_market_value": 118502.0,
+    "available_cash": 92085.53,
+    "total_assets": 210587.53,
     "net_today": 3206.18,
     "today_return": 3206.18,
     "total_pnl_amount": 10282.95,
     "monthly_pnl": 10282.95,
     "prev_close_assets": 207076.77,
-    "position_ratio": 37.1,
+    "position_ratio": 56.3,
     "today_return_rate": 1.55,
     "monthly_return_rate": 5.14,
     "initial_capital": 200000,
-    "position_count": 2
+    "position_count": 3
   },
   "positions": [
     {
@@ -60,6 +60,15 @@
       "pnl_amount": 208.0,
       "pnl_percent": 0.8,
       "price_source": "intraday_20260818_am"
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "quantity": 500,
+      "cost_price": 80.18,
+      "stop_loss": 73.0,
+      "buy_date": "2026-08-18",
+      "market_value": 40405.0
     }
   ]
 }
