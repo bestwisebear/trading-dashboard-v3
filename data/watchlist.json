@@ -1,11 +1,12 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T20:45:00+08:00",
+    "last_updated": "2026-08-19T23:00:00+08:00",
     "date": "2026-08-19",
-    "session": "night",
-    "data_basis": "8/19收盘全量数据",
-    "screening_criteria": "全市场7道闸预评估 | 半导体/存储/光通信/机器人/MLCC专项",
-    "note": "🚨明日核心任务:止损执行!开盘清仓协创/昊志/三环!科技崩盘后关注超跌反弹机会但严禁追高!"
+    "session": "nightly_2300",
+    "data_basis": "8/19收盘全量数据+晚盘消息更新",
+    "screening_criteria": "全市场7道闸预评估 | 半导体低位专项筛选 | 中报业绩催化",
+    "transit_pool_criteria": "半导体/芯片/封测/设备/材料 | 7道闸≥4/7 | 涨幅<5% | RSI<70 | 价格在MA20附近或上方",
+    "note": "⚠️明日核心:止损执行(协创/昊志/三环开盘清仓)!鹏辉关注60支撑。半导体超跌反弹仅观察,严禁追高!涨跌家数<2000禁开新仓"
   },
   "watchlist": [
     {
@@ -21,7 +22,7 @@
         "resistance": 66,
         "stop_loss": 57
       },
-      "notes": "持仓800股@60.23。唯一未破止损仓,仍盈利+3.6%。明日关注60支撑,跌破则减仓",
+      "notes": "持仓800股@60.23。唯一未破止损仓,盈利+3.6%。亿纬锂能H1+105.66%验证锂电景气。明日关注60支撑",
       "pre_close": 65.55,
       "price_source": "close_20260819"
     },
@@ -89,7 +90,7 @@
         "resistance": 430,
         "stop_loss": 380
       },
-      "notes": "SK海力士盘后回购利好,存储或有反弹。等390支撑确认",
+      "notes": "⭐H1净利+1091%!葛卫东加仓。SK海力士40万亿回购8/20实施,ADR+5%。等390支撑企稳",
       "pre_close": 436.74,
       "price_source": "close_20260819"
     },
@@ -106,7 +107,7 @@
         "resistance": 72,
         "stop_loss": 63
       },
-      "notes": "PE22低估+算力IDC。接近支撑64。等企稳信号",
+      "notes": "PE22极低+算力IDC龙头。Anthropic/OpenAI将IPO。等64支撑企稳",
       "pre_close": 69.93,
       "price_source": "close_20260819"
     },
@@ -123,7 +124,7 @@
         "resistance": 395,
         "stop_loss": 350
       },
-      "notes": "半导体设备龙头。等360支撑确认",
+      "notes": "⭐8/19晚发布H1:营收66.91亿(+34.89%)/净利28.25亿(+300.22%)!业绩炸裂。等360支撑",
       "pre_close": 398.33,
       "price_source": "close_20260819"
     },
@@ -140,7 +141,7 @@
         "resistance": 295,
         "stop_loss": 260
       },
-      "notes": "CPO核心。跌幅相对小。等270支撑",
+      "notes": "CPO核心。跌幅相对最小。等270支撑确认",
       "pre_close": 291.44,
       "price_source": "close_20260819"
     },
@@ -157,7 +158,7 @@
         "resistance": 18.5,
         "stop_loss": 16.5
       },
-      "notes": "封测三强。等17支撑",
+      "notes": "封测三强+HBM+先进封装。等17支撑",
       "pre_close": 18.7,
       "price_source": "close_20260819"
     },
@@ -174,9 +175,121 @@
         "resistance": 58,
         "stop_loss": 50
       },
-      "notes": "H1净利+338.58%。等52支撑",
+      "notes": "H1净利+338.58%!FPGA+存储双驱动。等52支撑",
       "pre_close": 57.86,
       "price_source": "close_20260819"
     }
-  ]
+  ],
+  "transit_pool": {
+    "description": "半导体低位票专项筛选池 - 8/19崩盘后观察",
+    "screened_at": "2026-08-19T23:00:00+08:00",
+    "criteria": {
+      "sector": "半导体/芯片/封测/设备/材料",
+      "min_score": "≥4/7",
+      "max_change_pct": "<5%(当日)",
+      "max_rsi": "<70",
+      "price_vs_ma20": "价格在MA20附近或上方"
+    },
+    "note": "8/19半导体全线崩盘,多数标的已跌破MA20。以下标的7道闸≥4但大多在MA20附近/下方,需等企稳信号(放量止跌+不破支撑)才考虑介入。严禁追高!",
+    "stocks": [
+      {
+        "code": "603986",
+        "name": "兆易创新",
+        "sector": "存储芯片",
+        "score": 5,
+        "close": 403.71,
+        "change_pct": -7.56,
+        "rsi_est": "~28(超卖)",
+        "ma20_status": "已跌破MA20(~430)",
+        "catalyst": "H1净利+1091.5%!葛卫东加仓+SK回购40万亿+利基DRAM涨价",
+        "action": "等390支撑企稳+放量止跌信号。严禁追高",
+        "trigger_price": "390附近企稳可关注",
+        "stop_loss_ref": 380
+      },
+      {
+        "code": "688012",
+        "name": "中微公司",
+        "sector": "半导体设备",
+        "score": 5,
+        "close": 372.0,
+        "change_pct": -6.61,
+        "rsi_est": "~25(超卖)",
+        "ma20_status": "接近MA20(~380)",
+        "catalyst": "8/19晚H1净利+300.22%!国产替代+税收优惠+长江存储IPO支撑",
+        "action": "⭐业绩催化最强!等360支撑+8/20开盘消化半年报后观察",
+        "trigger_price": "360附近企稳可关注",
+        "stop_loss_ref": 350
+      },
+      {
+        "code": "300394",
+        "name": "天孚通信",
+        "sector": "光通信CPO",
+        "score": 5,
+        "close": 277.4,
+        "change_pct": -4.82,
+        "rsi_est": "~32(超卖)",
+        "ma20_status": "接近MA20(~280)",
+        "catalyst": "CPO核心+跌幅最小+基金重仓(15只基金前十)",
+        "action": "等270支撑确认。CPO逻辑长期不变",
+        "trigger_price": "270附近企稳可关注",
+        "stop_loss_ref": 260
+      },
+      {
+        "code": "300442",
+        "name": "润泽科技",
+        "sector": "算力IDC",
+        "score": 5,
+        "close": 65.38,
+        "change_pct": -6.51,
+        "rsi_est": "~30(超卖)",
+        "ma20_status": "接近MA20(~67)",
+        "catalyst": "PE22极低+算力IDC+Anthropic/OpenAI IPO催化",
+        "action": "等64支撑+企稳信号",
+        "trigger_price": "64附近企稳可关注",
+        "stop_loss_ref": 63
+      },
+      {
+        "code": "002185",
+        "name": "华天科技",
+        "sector": "封测",
+        "score": 4,
+        "close": 17.36,
+        "change_pct": -7.17,
+        "rsi_est": "~26(超卖)",
+        "ma20_status": "已跌破MA20(~18)",
+        "catalyst": "HBM+先进封装需求旺盛",
+        "action": "等17支撑+放量止跌",
+        "trigger_price": "17附近企稳可关注",
+        "stop_loss_ref": 16.5
+      },
+      {
+        "code": "688385",
+        "name": "复旦微电",
+        "sector": "FPGA/存储",
+        "score": 4,
+        "close": 53.98,
+        "change_pct": -6.71,
+        "rsi_est": "~27(超卖)",
+        "ma20_status": "已跌破MA20(~56)",
+        "catalyst": "H1净利+338.58%!FPGA+存储双驱动",
+        "action": "等52支撑+放量止跌",
+        "trigger_price": "52附近企稳可关注",
+        "stop_loss_ref": 50
+      },
+      {
+        "code": "002371",
+        "name": "北方华创",
+        "sector": "半导体设备",
+        "score": 4,
+        "close": 692.52,
+        "change_pct": -9.59,
+        "rsi_est": "~22(极度超卖)",
+        "ma20_status": "已跌破MA20(~730)",
+        "catalyst": "设备总龙头+国产替代",
+        "action": "估值偏高,等700以下企稳+放量止跌",
+        "trigger_price": "680附近企稳可关注",
+        "stop_loss_ref": 660
+      }
+    ]
+  }
 }
