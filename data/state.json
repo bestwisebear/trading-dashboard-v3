@@ -34,7 +34,8 @@
       "quantity": 800,
       "cost_price": 60.227,
       "stop_loss": 57.0,
-      "buy_date": "2026-08-06"
+      "buy_date": "2026-08-06",
+      "market_value": 49920.0
     },
     {
       "code": "300857",
@@ -42,7 +43,8 @@
       "quantity": 100,
       "cost_price": 254.14,
       "stop_loss": 250.0,
-      "buy_date": "2026-08-14"
+      "buy_date": "2026-08-14",
+      "market_value": 24767.0
     },
     {
       "code": "300503",
@@ -50,7 +52,8 @@
       "quantity": 500,
       "cost_price": 80.18,
       "stop_loss": 73.0,
-      "buy_date": "2026-08-18"
+      "buy_date": "2026-08-18",
+      "market_value": 34775.0
     },
     {
       "code": "300408",
@@ -58,7 +61,8 @@
       "quantity": 300,
       "cost_price": 126.21,
       "stop_loss": 122.0,
-      "buy_date": "2026-08-18"
+      "buy_date": "2026-08-18",
+      "market_value": 32880.0
     }
   ],
   "validation": {
