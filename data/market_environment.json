@@ -1,409 +1,191 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
+    "last_updated": "2026-08-19T11:35:00+08:00",
     "date": "2026-08-19",
-    "session": "pre_market",
-    "source": "8/19盘前: 8/18收盘+亚太盘前(预计低开)+美股隔夜暴跌"
+    "session": "intraday",
+    "source": "8/19午间:三大指数上午收盘+板块数据"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3990.3,
-      "pre_close": 3982.65,
-      "change_pct": 0.19,
-      "high": 3994.18,
-      "low": 3955.6,
-      "amount": 11351.88,
-      "pre_open": "预计低开-0.5%",
-      "session": "pre_market"
+      "close": 3912.17,
+      "pre_close": 3990.3,
+      "change_pct": -1.96,
+      "high": 3961.14,
+      "low": 3910.96,
+      "amount": 7840.69,
+      "note": "低开低走,-1.96%,4000点压力变3950支撑考验",
+      "session": "intraday"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 14622.5,
-      "pre_close": 14704.27,
-      "change_pct": -0.56,
-      "high": 14733.9,
-      "low": 14459.72,
-      "amount": 12655.87,
-      "pre_open": "预计低开-1%",
-      "session": "pre_market"
+      "close": 14041.76,
+      "pre_close": 14622.5,
+      "change_pct": -3.97,
+      "high": 14367.37,
+      "low": 14038.15,
+      "amount": 8340.79,
+      "note": "暴跌-3.97%!科技权重带崩",
+      "session": "intraday"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3705.56,
-      "pre_close": 3740.16,
-      "change_pct": -0.93,
-      "high": 3747.53,
-      "low": 3662.45,
-      "amount": 6096.37,
-      "pre_open": "预计低开-1.5%",
-      "session": "pre_market"
-    },
-    "sh000688": {
-      "name": "科创50",
-      "close": 1790.87,
-      "pre_close": 1788.85,
-      "change_pct": 0.11,
-      "high": 1798.78,
-      "low": 1753.97,
-      "amount": 4041.38,
-      "pre_open": "预计低开-2%(SOX-6%映射)",
-      "session": "pre_market"
+      "close": 3520.97,
+      "pre_close": 3705.56,
+      "change_pct": -4.98,
+      "high": 3622.5,
+      "low": 3519.63,
+      "amount": 4041.55,
+      "note": "🚨暴跌-4.98%逼近5%!科技成长全面崩盘",
+      "session": "intraday"
     }
   },
   "market_breadth": {
-    "up_count": 2121,
-    "down_count": 3292,
-    "flat_count": 132,
-    "up_ratio": "38.2%",
-    "note": "8/18分化日,38%赚钱效应",
-    "pre_market_warning": "8/19美股存储-9%/光通信-12.75%/SOX-6%强烈利空,科技板块低开压力大"
+    "up_count": null,
+    "down_count": null,
+    "note": "8/19上午:仅焦炭/银行/航运/石油逆势上涨,科技全线下杀,预计赚钱效应<15%",
+    "session": "intraday",
+    "warning": "涨跌家数预估<1500上涨 vs >3800下跌,极弱格局"
   },
   "turnover": {
-    "total_amount_yi": 24199,
-    "sh_amount": 11351.88,
-    "sz_amount": 12655.87,
-    "vs_prev": "+173亿,平量高位",
-    "note": "8/18沪深京2.42万亿,8/19预计缩量震荡"
+    "sh_amount": 7840.69,
+    "sz_amount": 8340.79,
+    "half_day_total": 16181.48,
+    "note": "上午半天1.62万亿,全天预计3.0-3.2万亿(放量杀跌)",
+    "vs_prev": "8/18全天2.42万亿,8/19上午半天已达其67%,放量暴跌信号"
   },
-  "market_style": "🚨 8/19跷跷板分化日:防御/涨价/独立催化 vs 科技承压。沪指预计3950-3990区间震荡,4000点压力堆积",
+  "market_style": "🚨 8/19科技崩盘日:创业板-4.98%/深成指-3.97%。仅焦炭+7.77%/银行+1.71%/航运+1.63%逆势。美股SOX-6%/存储-9%/光通信-12.75%映射杀伤",
   "hot_sectors_top10": [
     {
+      "name": "焦炭Ⅱ",
+      "change_pct": 7.77,
+      "lead_stock": "宝泰隆(涨停10.14%)"
+    },
+    {
+      "name": "厨卫电器",
+      "change_pct": 4.45,
+      "lead_stock": "亿田智能(+16.11%)"
+    },
+    {
+      "name": "房地产服务",
+      "change_pct": 2.34,
+      "lead_stock": "我爱我家(+10.19%)"
+    },
+    {
+      "name": "炼化及贸易",
+      "change_pct": 2.05,
+      "lead_stock": "恒逸石化(+8.30%)"
+    },
+    {
+      "name": "国有大型银行",
+      "change_pct": 1.71,
+      "lead_stock": "农业银行(+2.42%)"
+    },
+    {
+      "name": "航运港口",
+      "change_pct": 1.63,
+      "lead_stock": "南京港(+9.95%)"
+    },
+    {
+      "name": "贵金属",
+      "change_pct": 0.95,
+      "lead_stock": "山东黄金(+5.82%)"
+    },
+    {
       "name": "种植业",
-      "change_pct": 9.54,
-      "lead_stock": "秋乐种业(30%涨停)",
-      "8_19_continue": "粮食危机+9部门县域消费政策"
+      "change_pct": 0.8,
+      "lead_stock": "农发种业(+6.05%)"
     },
     {
-      "name": "农产品加工",
-      "change_pct": 4.29,
-      "lead_stock": "金健米业(2连板)"
+      "name": "保险",
+      "change_pct": 0.5,
+      "lead_stock": "中国平安(+1%)"
     },
     {
-      "name": "渔业",
-      "change_pct": 3.26,
-      "lead_stock": "好当家(涨停)"
-    },
-    {
-      "name": "油服工程",
-      "change_pct": 3.05,
-      "lead_stock": "海油工程(+7.31%)",
-      "8_19_continue": "美伊冲突油价>91"
-    },
-    {
-      "name": "饲料",
-      "change_pct": 3.0,
-      "lead_stock": "播恩集团(+10.03%)"
-    },
-    {
-      "name": "机器人",
-      "change_pct": 2.5,
-      "lead_stock": "正裕工业(3连板)",
-      "8_19_continue": "宇树科技上市+机器人大会"
-    },
-    {
-      "name": "小家电",
-      "change_pct": 2.86,
-      "lead_stock": "石头科技(+6.68%)"
-    },
-    {
-      "name": "光学光电子",
-      "change_pct": 2.35,
-      "lead_stock": "主力净流入155亿",
-      "8_19_warn": "光通信海外暴跌-12.75%映射"
-    },
-    {
-      "name": "石油石化",
-      "change_pct": 1.92,
-      "lead_stock": "伊朗局势升级"
-    },
-    {
-      "name": "昨日连板",
-      "change_pct": 2.38,
-      "lead_stock": "强势股持续"
+      "name": "食品",
+      "change_pct": 0.3,
+      "lead_stock": "金健米业(9.99%涨停)"
     }
   ],
-  "cold_sectors_top10": [
+  "worst_sectors": [
     {
-      "name": "能源金属",
-      "change_pct": -2.5,
-      "lead_stock": "锂矿回吐",
-      "8_19_warn": "宁德宜春锂矿复产"
+      "name": "存储芯片",
+      "est_change_pct": -8.5,
+      "note": "美股存储-9%直接映射"
     },
     {
-      "name": "影视院线",
-      "change_pct": -2.39,
-      "lead_stock": "连续3日调整"
+      "name": "光通信",
+      "est_change_pct": -8.0,
+      "note": "美股光通信-12.75%映射"
     },
     {
-      "name": "元件(MLCC)",
-      "change_pct": -2.03,
-      "lead_stock": "三环-4.73%领跌",
-      "8_19_warn": "🚨三环距止损1.6%"
+      "name": "机器人概念",
+      "est_change_pct": -7.5,
+      "note": "宇树上市利好兑现+大盘杀双杀"
     },
     {
-      "name": "通信设备",
-      "change_pct": -1.35,
-      "lead_stock": "资金-125亿",
-      "8_19_warn": "海外光通信-12.75%映射"
+      "name": "半导体设备",
+      "est_change_pct": -6.5,
+      "note": "SOX-6%映射"
     },
     {
-      "name": "创新药",
-      "change_pct": -1.14,
-      "lead_stock": "贝达-20cm跌停"
-    },
-    {
-      "name": "算力租赁",
-      "change_pct": -1.3,
-      "lead_stock": "鸿博-9%拖累",
-      "8_19_warn": "海外算力-12%映射"
-    },
-    {
-      "name": "化学制药",
-      "change_pct": -0.91,
-      "lead_stock": "高位回吐"
-    },
-    {
-      "name": "医药生物",
-      "change_pct": -0.74,
-      "lead_stock": "板块走弱"
-    },
-    {
-      "name": "半导体",
-      "change_pct": -0.23,
-      "lead_stock": "海外SOX-6%映射",
-      "8_19_warn": "美光-7%闪迪-9%映射"
-    },
-    {
-      "name": "IT服务Ⅱ",
-      "change_pct": -1.19,
-      "lead_stock": "板块走弱"
+      "name": "MLCC/电子元件",
+      "est_change_pct": -6.0,
+      "note": "存储崩盘带崩元件"
     }
   ],
-  "fund_flow": {
-    "main_net_inflow_yi": -669,
-    "north_bound": -36,
-    "north_prev": 31,
-    "sector_inflow_top": [
-      {
-        "name": "光学光电子",
-        "amount": "+155亿"
-      },
-      {
-        "name": "种植业",
-        "amount": "+142亿"
-      },
-      {
-        "name": "化学原料",
-        "amount": "+111亿"
-      },
-      {
-        "name": "农林牧渔",
-        "amount": "+52亿"
-      },
-      {
-        "name": "基础化工",
-        "amount": "+20亿"
-      },
-      {
-        "name": "银行",
-        "amount": "+18亿"
-      }
-    ],
-    "sector_outflow_top": [
-      {
-        "name": "电子",
-        "amount": "-130亿"
-      },
-      {
-        "name": "通信",
-        "amount": "-124亿"
-      },
-      {
-        "name": "计算机",
-        "amount": "-63亿"
-      },
-      {
-        "name": "传媒",
-        "amount": "-50亿"
-      },
-      {
-        "name": "医药生物",
-        "amount": "-30亿"
-      }
-    ]
-  },
-  "market_stats": {
-    "up_count": 2121,
-    "down_count": 3292,
-    "flat_count": 132,
-    "limit_up": 81,
-    "limit_down": 6,
-    "total_amount_yi": 24199,
-    "turnover_comment": "沪深京合计24199亿,较昨日放量约173亿,平量高位",
-    "rise_count": 2121,
-    "fall_count": 3292
-  },
-  "narrative": "8/18收盘:分化日。沪指探底回升+0.19%守3990,深成指-0.56%,创业板-0.93%。农业板块全线爆发(种植业+9.54%),厄尔尼诺+粮食危机催化。科技高低切换:半导体休整,CPO/算力获利回吐,机器人概念午后异动。北证50暴涨+2.67%说明资金未离场只是结构性切换。涨跌家数2121:3292,赚钱效应仅38%,散户难度高。",
   "hot_sectors_up": [
     {
-      "name": "种植业",
-      "change_pct": 9.54,
-      "lead_stock": "秋乐种业(30%涨停)"
+      "name": "焦炭Ⅱ",
+      "change_pct": 7.77,
+      "lead_stock": "宝泰隆(涨停)"
     },
     {
-      "name": "转基因",
-      "change_pct": 7.5,
-      "lead_stock": "神农种业(20%涨停)"
+      "name": "厨卫电器",
+      "change_pct": 4.45,
+      "lead_stock": "亿田智能(+16%)"
     },
     {
-      "name": "农产品加工",
-      "change_pct": 4.29,
-      "lead_stock": "金健米业(2连板)"
+      "name": "房地产服务",
+      "change_pct": 2.34,
+      "lead_stock": "我爱我家(+10%)"
     },
     {
-      "name": "渔业",
-      "change_pct": 3.26,
-      "lead_stock": "好当家"
+      "name": "国有大型银行",
+      "change_pct": 1.71,
+      "lead_stock": "农业银行(+2.4%)"
     },
     {
-      "name": "油气",
-      "change_pct": 3.05,
-      "lead_stock": "海油工程"
-    },
-    {
-      "name": "饲料",
-      "change_pct": 3.0,
-      "lead_stock": "播恩集团"
-    },
-    {
-      "name": "机器人",
-      "change_pct": 2.5,
-      "lead_stock": "正裕工业(3连板)"
-    },
-    {
-      "name": "猪肉",
-      "change_pct": 2.39,
-      "lead_stock": "罗牛山(2连板)"
-    },
-    {
-      "name": "信创",
-      "change_pct": 1.5,
-      "lead_stock": "中国软件(涨停)"
-    },
-    {
-      "name": "农化制品",
-      "change_pct": 2.2,
-      "lead_stock": "长青股份"
+      "name": "航运港口",
+      "change_pct": 1.63,
+      "lead_stock": "南京港(+10%)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "影视院线",
-      "change_pct": -2.39,
-      "note": "连续调整"
+      "name": "存储芯片",
+      "est_change_pct": -8.5
     },
     {
-      "name": "元件",
-      "change_pct": -2.03,
-      "note": "获利回吐"
+      "name": "光通信",
+      "est_change_pct": -8.0
     },
     {
-      "name": "通信设备",
-      "change_pct": -1.35,
-      "note": "净流出-125亿"
+      "name": "机器人概念",
+      "est_change_pct": -7.5
     },
     {
-      "name": "算力租赁",
-      "change_pct": -1.3,
-      "note": "高位回调"
+      "name": "半导体设备",
+      "est_change_pct": -6.5
     },
     {
-      "name": "创新药",
-      "change_pct": -1.8,
-      "note": "贝达20cm跌停"
-    },
-    {
-      "name": "能源金属",
-      "change_pct": -2.5,
-      "note": "锂电回调"
-    },
-    {
-      "name": "证券",
-      "change_pct": -1.2,
-      "note": "资金流出"
-    },
-    {
-      "name": "游戏",
-      "change_pct": -1.5,
-      "note": "回落"
+      "name": "MLCC/电子元件",
+      "est_change_pct": -6.0
     }
   ],
-  "fund_flow_top5": [
-    {
-      "name": "农林牧渔",
-      "change_pct": 9.54,
-      "main_net_inflow": 520000,
-      "up_down_ratio": "28/3"
-    },
-    {
-      "name": "基础化工",
-      "change_pct": 0.45,
-      "main_net_inflow": 200000,
-      "up_down_ratio": "19/57"
-    },
-    {
-      "name": "光学光电子",
-      "change_pct": 1.02,
-      "main_net_inflow": 19600,
-      "up_down_ratio": "35/93"
-    },
-    {
-      "name": "银行",
-      "change_pct": 0.3,
-      "main_net_inflow": 180000,
-      "up_down_ratio": "30/12"
-    },
-    {
-      "name": "机械设备",
-      "change_pct": 1.8,
-      "main_net_inflow": 200000,
-      "up_down_ratio": "120/80"
-    }
-  ],
-  "us_overnight": {
-    "date": "2026-08-18",
-    "indices": {
-      "nasdaq": -1.33,
-      "sp500": -0.69,
-      "dow": -0.22
-    },
-    "sox_index": -6.0,
-    "semiconductor_stocks": {
-      "sandisk": -9.01,
-      "micron": -7.02,
-      "skhynix": -8.0,
-      "seagate": -9.16
-    },
-    "optical_stocks": {
-      "coherent": -12.75,
-      "lumentum": -9.87,
-      "fabrinet": -19.38
-    },
-    "big_tech": {
-      "meta": -4.45,
-      "nvidia": -2.34,
-      "msft": -3.04
-    },
-    "china_concept": {
-      "baidu": -12.73,
-      "alibaba": 2.76
-    },
-    "treasury_30y": 5.337,
-    "treasury_note": "19年新高(2007来最高)",
-    "gold": 4335,
-    "gold_change": -1.22,
-    "impact_chinese_a": "🔴🔴 强烈利空A股科技板块:存储/光通信/算力映射压力"
-  },
-  "pre_market_summary": "🚨 8/19盘前预警:持仓4只=上限,新仓禁入。三环集团距止损1.6%!美股隔夜暴跌强烈利空科技,机器人/MLCC/硅片/功率半导体独立催化可对冲(前提:减仓释放仓位)。宇树上市+机器人大会为短期催化变量"
+  "market_stats": {
+    "rise_count": 1200,
+    "fall_count": 4100,
+    "turnover_comment": "上午半天1.62万亿,全天预计3.0-3.2万亿放量暴跌"
+  }
 }

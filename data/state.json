@@ -1,31 +1,31 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
-    "data_date": "2026-08-18",
-    "source": "8/19盘前刷新: 8/18收盘全量数据 + 8/19早间重磅",
-    "session": "pre_market",
-    "data_as_of": "2026-08-18 收盘 + 2026-08-19 早间",
-    "note": "持仓4只=上限,新仓禁入;三环距止损1.6%!美股隔夜暴跌强烈利空科技"
+    "last_updated": "2026-08-19T11:35:00+08:00",
+    "data_date": "2026-08-19",
+    "source": "8/19午间刷新:上午收盘(11:30)盘中价",
+    "session": "intraday",
+    "data_as_of": "2026-08-19 上午收盘",
+    "note": "🚨科技板块崩盘!沪指-1.96%/深成指-3.97%/创业板-4.98%!昊志/三环双双破止损!协创距止损0.6%!月度PnL翻负!"
   },
   "current": {
-    "total_assets": 211565.69,
+    "total_assets": 199480.69,
     "prev_close_assets": 211565.69,
     "available_cash": 54212.69,
     "initial_capital": 200000,
     "position_count": 4,
-    "position_ratio": 74.4,
-    "monthly_pnl": 11565.69,
-    "monthly_return_rate": 5.78,
-    "market_value": 157353.0,
-    "note": "盘前不重算,日PnL待9:30后开盘再算"
+    "position_ratio": 72.8,
+    "monthly_pnl": -519.31,
+    "monthly_return_rate": -0.26,
+    "market_value": 145268.0,
+    "note": "午间盘中价,不算PnL(价格铁律)"
   },
   "today_so_far": {
     "date": "2026-08-19",
-    "net_today": 0,
+    "net_today": -12085.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "pre_market",
-    "note": "盘前,无交易"
+    "session": "intraday",
+    "note": "午间:无交易,但持仓巨亏-12085元(-5.71%)"
   },
   "positions": [
     {
@@ -65,7 +65,7 @@
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "盘前快照,与8/18收盘一致"
+    "note": "午间盘中快照,prev_close_assets保持8/18收盘值不变"
   },
   "cumulative": {
     "total_pnl_amount": 11565.69,
