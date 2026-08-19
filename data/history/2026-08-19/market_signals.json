@@ -1,50 +1,54 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
+    "last_updated": "2026-08-19T16:53:00+08:00",
     "date": "2026-08-19",
-    "session": "pre_market"
+    "session": "close"
   },
   "signals": [
     {
       "name": "趋势",
       "status": "negative",
-      "detail": "沪指3990.3 距4000仅10点,美股连续3日下跌+30年美债5.337%创19年新高,短期承压"
+      "detail": "沪指3894失守3900,创业板-6.26%,科创50-6.89%。三大指数+科创全面破位,趋势极度恶化"
     },
     {
       "name": "量能",
-      "status": "warning",
-      "detail": "8/18 2.42万亿平量高位,8/19预计缩量震荡(美股暴跌压制)"
+      "status": "danger",
+      "detail": "全天2.51万亿放量暴跌!较昨日+1103亿。恐慌盘集中涌出,距缩量企稳信号差距巨大"
     },
     {
       "name": "情绪",
-      "status": "negative",
-      "detail": "8/18赚钱效应38%(2121:3292),8/19美股隔夜暴跌情绪进一步恶化"
+      "status": "danger",
+      "detail": "涨跌比1:11,119跌停/37涨停。赚钱效应极寒,连板高度仅3板,高位股集体退潮"
     },
     {
       "name": "板块",
-      "status": "mixed",
-      "detail": "农业/机器人/MLCC独立催化 vs 存储/光通信/算力海外映射承压,跷跷板分化"
+      "status": "danger",
+      "detail": "科技全面崩盘:CPO-9.5%/半导体-8.5%/机器人-8%/MLCC-7%。仅焦炭+7.56%/银行+1.91%逆势护盘"
     },
     {
       "name": "资金",
-      "status": "negative",
-      "detail": "8/18主力-669亿/北向-36亿,8/19美股暴跌可能放大资金压力"
+      "status": "danger",
+      "detail": "主力净流出782亿,电子板块净流出582亿创纪录。北向全天净流出。融资融券净流出近千亿"
     },
     {
-      "name": "技术",
-      "status": "warning",
-      "detail": "沪指下影线3955支撑有效但4000点强压,创业板-0.93%最弱"
+      "name": "外部",
+      "status": "danger",
+      "detail": "SOX-4.98%/KOSPI-5.85%/美债5.32%新高。亚太全线巨震,全球risk-off"
+    },
+    {
+      "name": "底部信号",
+      "status": "danger",
+      "detail": "0/5!所有底部信号全灭!放量暴跌+119跌停+连续新低+北向流出=典型恐慌底部未到"
     }
   ],
-  "overall": "negative",
-  "summary": "🚨 8/19盘前:美股隔夜存储-9%/光通信-12.75%/SOX-6%三重暴击A股科技,叠加三环距止损1.6%,核心任务是持仓风险管控而非开新仓。独立催化方向(机器人/MLCC涨价/硅片/功率)等待减仓后窗口介入",
+  "overall": "🔴🔴🔴极度危险!所有信号亮红灯!控制仓位+执行止损+严禁抄底!",
   "aggregate": {
     "green_count": 0,
-    "yellow_count": 1,
-    "red_count": 5,
-    "total_score": 4,
-    "max_score": 18,
+    "yellow_count": 0,
+    "red_count": 7,
+    "total_score": 0,
+    "max_score": 7,
     "no_open_position": true,
-    "market_comment": "🚨5/6信号红色,持仓4只已满=新仓禁入。三环止损风险最高,昊志分批锁利机会"
+    "market_comment": "🔴🔴🔴极度危险!所有信号亮红灯!科技崩盘日,0绿/0黄/7红。控制仓位+执行止损+严禁抄底!"
   }
 }

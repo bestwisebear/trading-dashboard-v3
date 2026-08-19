@@ -1,27 +1,26 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
-    "date": "2026-08-18",
-    "session": "pre_market",
-    "source": "8/19盘前: 8/18收盘全量+8/19早间",
-    "price_source_note": "current_price保持昨收价不变,待9:30开盘后刷新",
-    "warning": "三环123.99距止损122仅1.6%!持仓4只=上限"
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "date": "2026-08-19",
+    "session": "close",
+    "source": "盘后收盘价(15:00)",
+    "price_source_note": "收盘价(session=close),PnL有效"
   },
   "summary": {
-    "total_market_value": 157353.0,
+    "total_market_value": 142342.0,
     "available_cash": 54212.69,
-    "total_assets": 211565.69,
-    "net_today": 0,
-    "today_return": 0,
-    "total_pnl_amount": 11565.69,
-    "monthly_pnl": 11565.69,
+    "total_assets": 196554.69,
+    "net_today": -15011.0,
+    "today_return": -15011.0,
+    "total_pnl_amount": -3445.31,
+    "monthly_pnl": -3445.31,
     "prev_close_assets": 211565.69,
-    "position_ratio": 74.4,
-    "today_return_rate": 0.0,
-    "monthly_return_rate": 5.78,
+    "position_ratio": 72.4,
+    "today_return_rate": -7.1,
+    "monthly_return_rate": -1.72,
     "initial_capital": 200000,
     "position_count": 4,
-    "note": "盘前不重算,保持8/18收盘数据"
+    "note": "🚨科技崩盘日收盘!3只破止损!鹏辉唯一未破止损仓"
   },
   "positions": [
     {
@@ -30,26 +29,26 @@
       "quantity": 800,
       "cost_price": 60.227,
       "cost_source": "broker_screenshot",
-      "current_price": 65.55,
-      "price_updated_at": "2026-08-18T16:55:00+08:00",
+      "current_price": 62.4,
+      "price_updated_at": "2026-08-19T16:53:00+08:00",
       "buy_date": "2026-08-06",
-      "holding_days": 12,
+      "holding_days": 14,
       "stop_loss": 57.0,
       "stop_profit": 70.0,
-      "pnl_percent": 8.84,
-      "pnl_amount": 4258.4,
+      "pnl_percent": 3.61,
+      "pnl_amount": 1738.4,
       "sector": "锂电池",
       "status": "holding",
-      "notes": "8/18+0.06%横盘,锂电池链偏弱但鹏辉相对强势",
+      "notes": "收盘62.40,-4.81%。仍盈利+3.6%,距止损57→8.7%。唯一未破止损仓,明日关注能否企稳",
       "key_price": {
-        "support": 64.0,
-        "resistance": 70.0,
+        "support": 62.0,
+        "resistance": 66.0,
         "buy_range": [
           60.0,
           64.0
         ]
       },
-      "price_source": "close_20260818"
+      "price_source": "close_20260819"
     },
     {
       "code": "300857",
@@ -57,26 +56,26 @@
       "quantity": 100,
       "cost_price": 254.14,
       "cost_source": "broker_screenshot",
-      "current_price": 267.16,
-      "price_updated_at": "2026-08-18T16:55:00+08:00",
+      "current_price": 247.67,
+      "price_updated_at": "2026-08-19T16:53:00+08:00",
       "buy_date": "2026-08-14",
-      "holding_days": 5,
+      "holding_days": 6,
       "stop_loss": 250.0,
       "stop_profit": 280.0,
-      "pnl_percent": 5.12,
-      "pnl_amount": 1302.0,
+      "pnl_percent": -2.55,
+      "pnl_amount": -647.0,
       "sector": "算力租赁",
-      "status": "holding",
-      "notes": "8/18-0.74%算力分化,8/19美股存储-9%映射压力大,260元为日内关键",
+      "status": "🚨STOP_LOSS_BREACHED",
+      "notes": "🚨收盘247.67,-7.30%!已破止损250!浮亏-2.55%。明日开盘必须执行止损清仓",
       "key_price": {
-        "support": 260.0,
-        "resistance": 280.0,
+        "support": 245.0,
+        "resistance": 260.0,
         "buy_range": [
           240.0,
           260.0
         ]
       },
-      "price_source": "close_20260818"
+      "price_source": "close_20260819"
     },
     {
       "code": "300503",
@@ -84,26 +83,26 @@
       "quantity": 500,
       "cost_price": 80.18,
       "cost_source": "broker_screenshot",
-      "current_price": 82.0,
-      "price_updated_at": "2026-08-18T16:55:00+08:00",
+      "current_price": 69.55,
+      "price_updated_at": "2026-08-19T16:53:00+08:00",
       "buy_date": "2026-08-18",
-      "holding_days": 1,
+      "holding_days": 2,
       "stop_loss": 73.0,
       "stop_profit": 85.0,
-      "pnl_percent": 2.27,
-      "pnl_amount": 910.0,
+      "pnl_percent": -13.26,
+      "pnl_amount": -5315.0,
       "sector": "机器人概念/精密零部件",
-      "status": "holding",
-      "notes": "8/18+6.80%首日大涨,宇树上市+机器人大会为利好兑现节点,建议分批锁利",
+      "status": "🚨STOP_LOSS_BREACHED",
+      "notes": "🚨🚨收盘69.55,-15.18%!远低于止损73!浮亏-13.3%!机器人板块崩盘+宇树利好兑现。明日必须清仓",
       "key_price": {
-        "support": 80.0,
-        "resistance": 85.0,
+        "support": 68.0,
+        "resistance": 76.0,
         "buy_range": [
-          73.0,
+          76.0,
           80.0
         ]
       },
-      "price_source": "close_20260818"
+      "price_source": "close_20260819"
     },
     {
       "code": "300408",
@@ -111,27 +110,26 @@
       "quantity": 300,
       "cost_price": 126.21,
       "cost_source": "broker_screenshot",
-      "current_price": 123.99,
-      "price_updated_at": "2026-08-18T16:55:00+08:00",
+      "current_price": 109.6,
+      "price_updated_at": "2026-08-19T16:53:00+08:00",
       "buy_date": "2026-08-18",
-      "holding_days": 1,
+      "holding_days": 2,
       "stop_loss": 122.0,
-      "stop_profit": 137.0,
-      "pnl_percent": -1.76,
-      "pnl_amount": -666.0,
+      "stop_profit": 135.0,
+      "pnl_percent": -13.16,
+      "pnl_amount": -4983.0,
       "sector": "MLCC/陶瓷基板",
-      "status": "holding",
-      "notes": "🚨最危险持仓!8/18-4.73%+美股存储-9%映射,距止损122仅1.6%,开盘<122直接清仓",
+      "status": "🚨STOP_LOSS_BREACHED",
+      "notes": "🚨🚨收盘109.60,-11.61%!远低于止损122!浮亏-13.2%!MLCC板块全线崩盘。明日必须清仓",
       "key_price": {
-        "support": 122.0,
-        "resistance": 132.0,
+        "support": 108.0,
+        "resistance": 120.0,
         "buy_range": [
-          115.0,
-          122.0
+          120.0,
+          126.0
         ]
       },
-      "price_source": "close_20260818"
+      "price_source": "close_20260819"
     }
-  ],
-  "closed_today": []
+  ]
 }

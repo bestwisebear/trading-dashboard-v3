@@ -1,265 +1,185 @@
 {
   "meta": {
     "date": "2026-08-19",
-    "last_updated": "2026-08-19T08:25:00+08:00",
-    "source": "8/19盘前整合: 8/18晚间+8/19早间重磅",
-    "session": "pre_market"
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "source": "web_search_close"
   },
   "overall_sentiment": "偏空",
-  "sentiment_summary": "🚨 8/19盘前偏空:美股隔夜存储-9%/光通信-12.75%/SOX-6%三大暴击A股科技,30年美债5.337%创19年新高。国内独立催化密集(机器人/MLCC/硅片/功率/中报共振)对冲部分利空,但开盘承压基本确定。三环集团距止损1.6%是最高优先关注点",
+  "sentiment_summary": "科技崩盘日!隔夜美股SOX-4.98%叠加A股高位获利盘兑现,三大指数暴跌,119只跌停,2.51万亿放量恐慌出逃。月度PnL转负。",
   "items": [
     {
-      "id": 13,
-      "time": "20:10",
-      "title": "美股期货齐跌：纳指-1.26%，30年美债5.32%创2007年新高",
-      "category": "global",
+      "id": 1,
+      "time": "09:30",
+      "title": "三大指数集体低开低走,科技崩盘",
+      "category": "market",
       "impact": "negative",
-      "impact_level": 4,
-      "detail": "海外流动性收紧信号+科技股持续承压",
-      "affected_stocks": [
-        "300408",
-        "300857",
-        "300438",
-        "300503"
-      ],
-      "source": "东方财富/华尔街见闻"
-    },
-    {
-      "id": 14,
-      "time": "20:10",
-      "title": "美股存储/光通信盘前暴跌：美光-6%，闪迪-6%，康宁-6%",
-      "category": "global",
-      "impact": "negative",
-      "impact_level": 4,
-      "detail": "Coherent-12.75%/Lumentum-9.87%/Fabrinet-19.38%/闪迪-9.01%/美光-7.02%/SK海力士-8% 海外映射A股存储/光通信",
-      "affected_stocks": [
-        "300408",
-        "301308",
-        "300394",
-        "300308",
-        "002281",
-        "688385"
-      ],
-      "source": "新浪财经/第一财经"
-    },
-    {
-      "id": 15,
-      "time": "19:15",
-      "title": "宇树科技8/19上市首日：A股人形机器人定价锚确立",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "宇树科技科创板上市,发行价150.80元/市值~610亿/首募61亿,机器人板块情绪催化",
-      "affected_stocks": [
-        "300503",
-        "300718"
-      ],
-      "source": "东方财富"
-    },
-    {
-      "id": 16,
-      "time": "20:47",
-      "title": "宁德时代枧下窝锂矿环评拟受理，复产迎重要进展",
-      "category": "sector",
-      "impact": "neutral",
-      "impact_level": 3,
-      "detail": "锂矿复产利空锂电池链(能源金属板块已-2.5%)",
-      "affected_stocks": [
-        "300438",
-        "603026",
-        "300769"
-      ],
-      "source": "财联社"
-    },
-    {
-      "id": 17,
-      "time": "20:35",
-      "title": "中东局势升级：伊朗宣布全面进攻战略，油价持续上行",
-      "category": "global",
-      "impact": "negative",
-      "impact_level": 3,
-      "detail": "油价>91美元,油气板块短期受益(海油工程+7.31%),但避险情绪上升",
-      "affected_stocks": [
-        "601899"
-      ],
-      "source": "新华财经"
-    },
-    {
-      "id": 18,
-      "time": "20:00",
-      "title": "美联储鹰派信号频出：克利夫兰联储主席称可能需要加息",
-      "category": "global",
-      "impact": "negative",
-      "impact_level": 3,
-      "detail": "美联储鹰派+30年美债5.337%创19年新高,全球流动性收紧",
-      "affected_stocks": [],
-      "source": "华尔街见闻"
-    },
-    {
-      "id": 19,
-      "time": "08:00",
-      "title": "兆易创新603986中报：营收115.66亿(+178.67%)/净利68.57亿(+1091.5%) Q2环比+269%",
-      "category": "stock",
-      "impact": "positive",
       "impact_level": 5,
-      "detail": "核弹级中报,但短期被美股存储-9%情绪压制,多空博弈看开盘30分钟方向",
+      "detail": "沪指低开0.96%后持续下行,收3894.42(-2.40%),深成指-5.01%,创业板-6.26%,科创50-6.89%。全市场超5000只下跌,119只跌停仅37只涨停,赚钱效应极寒",
       "affected_stocks": [
-        "603986"
+        "全市场"
       ],
-      "source": "公司公告/财联社"
+      "source": "东方财富/财联社"
     },
     {
-      "id": 20,
-      "time": "08:00",
-      "title": "普冉股份中报：营收39.59亿(+336%)/净利8.27亿(+1929.65%)",
+      "id": 2,
+      "time": "隔夜",
+      "title": "费城半导体指数暴跌4.98%,美股科技全崩",
+      "category": "macro",
+      "impact": "negative",
+      "impact_level": 5,
+      "detail": "纳指-1.33%,费城半导体-4.98%。SK海力士-9%,希捷-9%,存储/光通信/AI云服务集体重挫。美30年国债收益率5.32%创2007年新高,压制全球成长股估值",
+      "affected_stocks": [
+        "半导体",
+        "存储芯片",
+        "光通信",
+        "AI算力"
+      ],
+      "source": "新浪财经/中国基金报"
+    },
+    {
+      "id": 3,
+      "time": "全天",
+      "title": "煤炭/银行防御板块逆势走强",
       "category": "sector",
       "impact": "positive",
-      "impact_level": 4,
-      "detail": "存储链中报共振,国产替代逻辑强化",
+      "impact_level": 2,
+      "detail": "焦炭+7.56%领涨(宝泰隆/陕西黑猫/大有能源涨停),银行+1.91%(中信银行+4.48%,江苏银行创历史新高),农业/化工/房地产小幅上涨。避险资金被动配置,非主动进攻",
       "affected_stocks": [
-        "688385",
-        "688702"
+        "煤炭",
+        "银行",
+        "农业"
       ],
-      "source": "公司公告"
+      "source": "证券时报/中国证券报"
     },
     {
-      "id": 21,
-      "time": "08:00",
-      "title": "天孚通信300394中报：净利12.04亿(+33.92%)",
+      "id": 4,
+      "time": "09:30",
+      "title": "宇树科技上市首日暴涨460%,成交231亿虹吸资金",
       "category": "stock",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "光通信中报+33.92%但海外光通信暴跌-12.75%短期情绪压制",
+      "impact": "negative",
+      "impact_level": 3,
+      "detail": "人形机器人第一股宇树科技(688836)登陆科创板,开盘暴涨629%,收845元涨460%,成交231亿。巨额资金虹吸对存量市场形成明显抽水效应",
       "affected_stocks": [
-        "300394"
+        "机器人概念",
+        "昊志机电",
+        "长盛轴承"
       ],
-      "source": "公司公告"
+      "source": "东方财富/财联社"
     },
     {
-      "id": 22,
-      "time": "08:05",
-      "title": "18X硅片价格涨近30%（1.097-1.12元/片）",
+      "id": 5,
+      "time": "全天",
+      "title": "CPO/光模块龙头集体重挫",
       "category": "sector",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "硅片涨价30%催化,沪硅产业/有研硅/菲利华受益",
+      "impact": "negative",
+      "impact_level": 5,
+      "detail": "中际旭创-9.36%/光迅科技-10.00%/天孚通信-4.82%/盛科通信-13.28%。OpenAI Q2亏损扩大+营收增速放缓,市场担忧下游客户缩减采购",
       "affected_stocks": [
-        "688126",
-        "300395"
+        "中际旭创",
+        "光迅科技",
+        "天孚通信",
+        "协创数据"
       ],
-      "source": "财联社"
+      "source": "中国基金报"
     },
     {
-      "id": 23,
-      "time": "08:10",
-      "title": "AI服务器用MLCC交期延长至10个月",
+      "id": 6,
+      "time": "全天",
+      "title": "半导体板块暴跌,多只千亿龙头重挫",
       "category": "sector",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "MLCC涨价+交期延长,三环集团/风华高科/国瓷材料长期受益,但三环8/18已-4.73%破位",
+      "impact": "negative",
+      "impact_level": 5,
+      "detail": "北方华创-8.24%/兆易创新-7.56%/中微公司-6.61%/华天科技-7.17%/复旦微电-6.71%/长鑫科技-2.77%。半导体设备ETF-7.53%。存储/模拟/HBM全线崩",
       "affected_stocks": [
-        "300408",
-        "000636",
-        "300285"
-      ],
-      "source": "中证网"
-    },
-    {
-      "id": 24,
-      "time": "08:15",
-      "title": "功率半导体第三波涨价10-15%（10月起）",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "功率半导体涨价10-15%,扬杰科技/士兰微/华润微受益",
-      "affected_stocks": [
-        "300373",
-        "600460"
-      ],
-      "source": "电子工程世界"
-    },
-    {
-      "id": 25,
-      "time": "08:20",
-      "title": "2026世界机器人大会今日开幕（小米机器人首次公众亮相）",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "机器人大会开幕+小米机器人亮相,昊志机电/长盛轴承/正裕工业情绪催化",
-      "affected_stocks": [
-        "300503",
-        "300718"
+        "北方华创",
+        "兆易创新",
+        "中微公司",
+        "半导体设备ETF"
       ],
       "source": "新浪财经"
     },
     {
-      "id": 26,
-      "time": "08:25",
-      "title": "9部门联合发文激发下沉市场+8000亿政策性金融工具",
-      "category": "macro",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "县域消费+新能源汽车下乡+8000亿政策性金融工具,中长期利好",
-      "affected_stocks": [],
-      "source": "商务部"
-    }
-  ],
-  "messages": [
-    {
-      "type": "利空",
-      "impact_level": 4,
-      "summary": "美股存储-9%/光通信-12.75%/SOX-6%三大暴击,科技板块开盘承压",
-      "source": "美股隔夜",
-      "time": "20:10"
-    },
-    {
-      "type": "利空",
-      "impact_level": 4,
-      "summary": "三环集团距止损1.6%!美股存储-9%+三环昨日-4.73%双重利空",
-      "source": "持仓风险",
-      "time": "盘前"
-    },
-    {
-      "type": "利空",
-      "impact_level": 3,
-      "summary": "30年美债5.337%创19年新高+美联储鹰派,全球流动性收紧",
-      "source": "宏观",
-      "time": "20:00"
-    },
-    {
-      "type": "利好",
+      "id": 7,
+      "time": "全天",
+      "title": "人形机器人概念暴跌,昊志机电-15%/长盛轴承-16%",
+      "category": "sector",
+      "impact": "negative",
       "impact_level": 5,
-      "summary": "兆易创新中报+1091.5%(Q2环比+269%)核弹级,但短期被美股情绪压制",
-      "source": "中报",
-      "time": "08:00"
+      "detail": "宇树科技利好兑现+板块获利盘集中兑现。中大力德/巨轮智能/五洲新春/晋拓股份跌停。2026世界机器人大会开幕但未能提振板块情绪",
+      "affected_stocks": [
+        "昊志机电",
+        "长盛轴承",
+        "机器人ETF"
+      ],
+      "source": "中国证券报"
     },
     {
-      "type": "利好",
+      "id": 8,
+      "time": "14:00",
+      "title": "北向资金全天持续净流出,午后加速",
+      "category": "macro",
+      "impact": "negative",
       "impact_level": 4,
-      "summary": "宇树科技上市+世界机器人大会开幕+小米机器人亮相,机器人板块催化",
-      "source": "机器人",
-      "time": "08:20"
+      "detail": "北向资金早盘低开后即开始卖出,午后随跌幅扩大流出速度加快,尾盘小幅回流但整体仍为净流出。外资对A股高估值成长股减持态度坚决",
+      "affected_stocks": [
+        "全市场"
+      ],
+      "source": "东方财富"
     },
     {
-      "type": "利好",
-      "impact_level": 4,
-      "summary": "MLCC涨价+AI服务器交期延长至10个月,长期受益",
-      "source": "MLCC",
-      "time": "08:10"
-    },
-    {
-      "type": "利好",
-      "impact_level": 4,
-      "summary": "18X硅片价格涨30%+功率半导体第三波涨价10-15%",
-      "source": "涨价",
-      "time": "08:15"
-    },
-    {
-      "type": "中性",
+      "id": 9,
+      "time": "15:00",
+      "title": "上交所对爱丽家居采取暂停交易监管措施",
+      "category": "market",
+      "impact": "negative",
       "impact_level": 3,
-      "summary": "宁德宜春锂矿复产,锂电链短期承压",
-      "source": "锂矿",
-      "time": "20:47"
+      "detail": "13天12板的爱丽家居被上交所暂停交易。高位股监管收紧信号,蓝盾光电也因严重异常波动停牌核查。高位人气股集体退潮",
+      "affected_stocks": [
+        "爱丽家居",
+        "高位连板股"
+      ],
+      "source": "上交所/财联社"
+    },
+    {
+      "id": 10,
+      "time": "全天",
+      "title": "两市成交2.51万亿,放量暴跌创恐慌信号",
+      "category": "market",
+      "impact": "negative",
+      "impact_level": 4,
+      "detail": "较昨日放量1103亿(+4.6%),放量下跌=恐慌盘和止损盘集中涌出。电子板块单日主力净流出582亿创近期纪录。融资融券单日净流出近千亿",
+      "affected_stocks": [
+        "全市场"
+      ],
+      "source": "东方财富/中金在线"
+    },
+    {
+      "id": 11,
+      "time": "全天",
+      "title": "亚太股市全线巨震,韩国KOSPI跌5.85%",
+      "category": "macro",
+      "impact": "negative",
+      "impact_level": 4,
+      "detail": "韩国综合指数盘中一度跌近7%,日经225盘中跌超3%。全球risk-off情绪蔓延,美伊谈判前景蒙阴影,国际油价持续走强加剧通胀担忧",
+      "affected_stocks": [
+        "全市场"
+      ],
+      "source": "中国证券报"
+    },
+    {
+      "id": 12,
+      "time": "全天",
+      "title": "MLCC板块崩盘,三环集团-11.61%/风华高科-9.99%跌停",
+      "category": "sector",
+      "impact": "negative",
+      "impact_level": 5,
+      "detail": "风华高科跌停,三环集团-11.61%。MLCC板块受科技整体崩盘拖累,且前期涨幅巨大获利盘集中兑现",
+      "affected_stocks": [
+        "三环集团",
+        "风华高科",
+        "洁美科技"
+      ],
+      "source": "行情数据"
     }
   ]
 }

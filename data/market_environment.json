@@ -1,191 +1,288 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T11:35:00+08:00",
+    "last_updated": "2026-08-19T16:53:00+08:00",
     "date": "2026-08-19",
-    "session": "intraday",
-    "source": "8/19午间:三大指数上午收盘+板块数据"
+    "session": "close",
+    "source": "盘后收盘价(15:00)"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3912.17,
+      "close": 3894.42,
       "pre_close": 3990.3,
-      "change_pct": -1.96,
+      "change_pct": -2.4,
       "high": 3961.14,
-      "low": 3910.96,
-      "amount": 7840.69,
-      "note": "低开低走,-1.96%,4000点压力变3950支撑考验",
-      "session": "intraday"
+      "low": 3879.58,
+      "amount": 12181.08,
+      "note": "失守3900,最低3879.58,放量下跌",
+      "session": "close"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 14041.76,
+      "close": 13890.15,
       "pre_close": 14622.5,
-      "change_pct": -3.97,
+      "change_pct": -5.01,
       "high": 14367.37,
-      "low": 14038.15,
-      "amount": 8340.79,
-      "note": "暴跌-3.97%!科技权重带崩",
-      "session": "intraday"
+      "low": 13842.32,
+      "amount": 12929.35,
+      "note": "暴跌-5.01%!科技权重带崩",
+      "session": "close"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3520.97,
+      "close": 3473.49,
       "pre_close": 3705.56,
-      "change_pct": -4.98,
+      "change_pct": -6.26,
       "high": 3622.5,
-      "low": 3519.63,
-      "amount": 4041.55,
-      "note": "🚨暴跌-4.98%逼近5%!科技成长全面崩盘",
-      "session": "intraday"
+      "low": 3455.48,
+      "amount": 6336.22,
+      "note": "🚨暴跌-6.26%!科技成长全面崩盘,接近熔断式下跌",
+      "session": "close"
     }
   },
   "market_breadth": {
-    "up_count": null,
-    "down_count": null,
-    "note": "8/19上午:仅焦炭/银行/航运/石油逆势上涨,科技全线下杀,预计赚钱效应<15%",
-    "session": "intraday",
-    "warning": "涨跌家数预估<1500上涨 vs >3800下跌,极弱格局"
+    "up_count": 400,
+    "down_count": 5000,
+    "limit_up": 37,
+    "limit_down": 119,
+    "up_down_ratio": "1:11",
+    "note": "超5000只下跌,119只跌停,仅37只涨停。赚钱效应极寒",
+    "session": "close"
   },
   "turnover": {
-    "sh_amount": 7840.69,
-    "sz_amount": 8340.79,
-    "half_day_total": 16181.48,
-    "note": "上午半天1.62万亿,全天预计3.0-3.2万亿(放量杀跌)",
-    "vs_prev": "8/18全天2.42万亿,8/19上午半天已达其67%,放量暴跌信号"
+    "total_amount": 25110,
+    "note": "全天2.51万亿,较昨日放量1103亿(+4.6%)。放量暴跌=恐慌出逃",
+    "vs_prev": "8/18:2.42万亿,8/19:2.51万亿(+0.09万亿)"
   },
-  "market_style": "🚨 8/19科技崩盘日:创业板-4.98%/深成指-3.97%。仅焦炭+7.77%/银行+1.71%/航运+1.63%逆势。美股SOX-6%/存储-9%/光通信-12.75%映射杀伤",
+  "market_style": "🚨科技崩盘日:沪指-2.40%/深成指-5.01%/创业板-6.26%/科创50-6.89%。仅焦炭+7.56%/银行+1.91%/航运+1.11%逆势。费城半导体隔夜-4.98%映射杀伤",
   "hot_sectors_top10": [
     {
       "name": "焦炭Ⅱ",
-      "change_pct": 7.77,
-      "lead_stock": "宝泰隆(涨停10.14%)"
+      "change_pct": 7.56,
+      "lead_stock": "宝泰隆(+10.14%涨停)"
     },
     {
       "name": "厨卫电器",
-      "change_pct": 4.45,
-      "lead_stock": "亿田智能(+16.11%)"
-    },
-    {
-      "name": "房地产服务",
-      "change_pct": 2.34,
-      "lead_stock": "我爱我家(+10.19%)"
+      "change_pct": 4.56,
+      "lead_stock": "亿田智能(+19.98%涨停)"
     },
     {
       "name": "炼化及贸易",
-      "change_pct": 2.05,
-      "lead_stock": "恒逸石化(+8.30%)"
+      "change_pct": 2.08,
+      "lead_stock": "华锦股份(+9.98%涨停)"
     },
     {
-      "name": "国有大型银行",
-      "change_pct": 1.71,
-      "lead_stock": "农业银行(+2.42%)"
+      "name": "股份制银行Ⅱ",
+      "change_pct": 1.91,
+      "lead_stock": "中信银行(+4.48%)"
+    },
+    {
+      "name": "城商行Ⅱ",
+      "change_pct": 1.8,
+      "lead_stock": "南京银行(+2.53%)"
+    },
+    {
+      "name": "国有大型银行Ⅱ",
+      "change_pct": 1.7,
+      "lead_stock": "农业银行(+2.58%)"
     },
     {
       "name": "航运港口",
-      "change_pct": 1.63,
-      "lead_stock": "南京港(+9.95%)"
+      "change_pct": 1.11,
+      "lead_stock": "南京港(+9.95%涨停)"
     },
     {
-      "name": "贵金属",
-      "change_pct": 0.95,
-      "lead_stock": "山东黄金(+5.82%)"
-    },
-    {
-      "name": "种植业",
+      "name": "农业",
       "change_pct": 0.8,
-      "lead_stock": "农发种业(+6.05%)"
+      "lead_stock": "京粮控股3连板"
+    },
+    {
+      "name": "房地产服务",
+      "change_pct": 0.65,
+      "lead_stock": "我爱我家涨停"
     },
     {
       "name": "保险",
-      "change_pct": 0.5,
-      "lead_stock": "中国平安(+1%)"
-    },
-    {
-      "name": "食品",
-      "change_pct": 0.3,
-      "lead_stock": "金健米业(9.99%涨停)"
+      "change_pct": 0.45,
+      "lead_stock": "中国人保小幅上涨"
     }
   ],
-  "worst_sectors": [
+  "cold_sectors_top10": [
+    {
+      "name": "通信设备(CPO)",
+      "change_pct": -9.5,
+      "note": "中际旭创-9.36%/光迅科技-10%/天孚通信-4.82%"
+    },
+    {
+      "name": "半导体",
+      "change_pct": -8.5,
+      "note": "北方华创-8.24%/兆易创新-7.56%/中微公司-6.61%"
+    },
+    {
+      "name": "人形机器人",
+      "change_pct": -8.0,
+      "note": "昊志机电-15.18%/长盛轴承-16.06%/机器人-8.46%"
+    },
     {
       "name": "存储芯片",
-      "est_change_pct": -8.5,
-      "note": "美股存储-9%直接映射"
+      "change_pct": -7.8,
+      "note": "江波龙-8.05%/复旦微电-6.71%/华天科技-7.17%"
     },
     {
-      "name": "光通信",
-      "est_change_pct": -8.0,
-      "note": "美股光通信-12.75%映射"
+      "name": "消费电子",
+      "change_pct": -7.5,
+      "note": "多只龙头跌停"
     },
     {
-      "name": "机器人概念",
-      "est_change_pct": -7.5,
-      "note": "宇树上市利好兑现+大盘杀双杀"
+      "name": "AI算力",
+      "change_pct": -7.2,
+      "note": "协创数据-7.30%/润泽科技-6.51%"
+    },
+    {
+      "name": "MLCC",
+      "change_pct": -7.0,
+      "note": "三环集团-11.61%/风华高科-9.99%跌停"
     },
     {
       "name": "半导体设备",
-      "est_change_pct": -6.5,
-      "note": "SOX-6%映射"
+      "change_pct": -7.5,
+      "note": "半导体设备ETF-7.53%"
     },
     {
-      "name": "MLCC/电子元件",
-      "est_change_pct": -6.0,
-      "note": "存储崩盘带崩元件"
+      "name": "光模块",
+      "change_pct": -9.0,
+      "note": "中际旭创-9.36%/新易盛大跌"
+    },
+    {
+      "name": "科创板",
+      "change_pct": -6.89,
+      "note": "科创50暴跌6.89%,接近熔断式下跌"
     }
+  ],
+  "capital_flow": {
+    "sh_main_net": -781.55,
+    "sh_jumbo_net": -682.68,
+    "note": "全市场主力资金净流出约782亿,电子板块单日净流出582亿创纪录",
+    "north_bound": "北向资金全天净流出,早盘即开始卖出,午后流出加速"
+  },
+  "key_events": [
+    "宇树科技(688836)上市首日暴涨460%,收845元,成交231亿。巨额资金虹吸效应",
+    "隔夜费城半导体指数-4.98%,存储芯片SK海力士-9%,光通信集体重挫",
+    "美国30年国债收益率5.32%创2007年新高,压制全球成长股估值",
+    "上交所对爱丽家居(13天12板)采取暂停交易监管措施",
+    "OpenAI Q2亏损扩大,营收增速放缓至67亿美元,下游客户或缩减采购预期",
+    "韩国KOSPI今日跌5.85%,亚太股市全线巨震",
+    "朱雀三号成功发射,商业航天受消息刺激但板块效应弱"
   ],
   "hot_sectors_up": [
     {
       "name": "焦炭Ⅱ",
-      "change_pct": 7.77,
-      "lead_stock": "宝泰隆(涨停)"
+      "change_pct": 7.56,
+      "lead_stock": "宝泰隆(+10.14%涨停)"
     },
     {
       "name": "厨卫电器",
-      "change_pct": 4.45,
-      "lead_stock": "亿田智能(+16%)"
+      "change_pct": 4.56,
+      "lead_stock": "亿田智能(+19.98%涨停)"
     },
     {
-      "name": "房地产服务",
-      "change_pct": 2.34,
-      "lead_stock": "我爱我家(+10%)"
+      "name": "炼化及贸易",
+      "change_pct": 2.08,
+      "lead_stock": "华锦股份(+9.98%涨停)"
     },
     {
-      "name": "国有大型银行",
-      "change_pct": 1.71,
-      "lead_stock": "农业银行(+2.4%)"
+      "name": "股份制银行Ⅱ",
+      "change_pct": 1.91,
+      "lead_stock": "中信银行(+4.48%)"
+    },
+    {
+      "name": "城商行Ⅱ",
+      "change_pct": 1.8,
+      "lead_stock": "南京银行(+2.53%)"
+    },
+    {
+      "name": "国有大型银行Ⅱ",
+      "change_pct": 1.7,
+      "lead_stock": "农业银行(+2.58%)"
     },
     {
       "name": "航运港口",
-      "change_pct": 1.63,
-      "lead_stock": "南京港(+10%)"
+      "change_pct": 1.11,
+      "lead_stock": "南京港(+9.95%涨停)"
+    },
+    {
+      "name": "农业",
+      "change_pct": 0.8,
+      "lead_stock": "京粮控股3连板"
+    },
+    {
+      "name": "房地产服务",
+      "change_pct": 0.65,
+      "lead_stock": "我爱我家涨停"
+    },
+    {
+      "name": "保险",
+      "change_pct": 0.45,
+      "lead_stock": "中国人保小幅上涨"
     }
   ],
   "hot_sectors_down": [
     {
+      "name": "通信设备(CPO)",
+      "change_pct": -9.5,
+      "note": "中际旭创-9.36%/光迅科技-10%/天孚通信-4.82%"
+    },
+    {
+      "name": "半导体",
+      "change_pct": -8.5,
+      "note": "北方华创-8.24%/兆易创新-7.56%/中微公司-6.61%"
+    },
+    {
+      "name": "人形机器人",
+      "change_pct": -8.0,
+      "note": "昊志机电-15.18%/长盛轴承-16.06%/机器人-8.46%"
+    },
+    {
       "name": "存储芯片",
-      "est_change_pct": -8.5
+      "change_pct": -7.8,
+      "note": "江波龙-8.05%/复旦微电-6.71%/华天科技-7.17%"
     },
     {
-      "name": "光通信",
-      "est_change_pct": -8.0
+      "name": "消费电子",
+      "change_pct": -7.5,
+      "note": "多只龙头跌停"
     },
     {
-      "name": "机器人概念",
-      "est_change_pct": -7.5
+      "name": "AI算力",
+      "change_pct": -7.2,
+      "note": "协创数据-7.30%/润泽科技-6.51%"
+    },
+    {
+      "name": "MLCC",
+      "change_pct": -7.0,
+      "note": "三环集团-11.61%/风华高科-9.99%跌停"
     },
     {
       "name": "半导体设备",
-      "est_change_pct": -6.5
+      "change_pct": -7.5,
+      "note": "半导体设备ETF-7.53%"
     },
     {
-      "name": "MLCC/电子元件",
-      "est_change_pct": -6.0
+      "name": "光模块",
+      "change_pct": -9.0,
+      "note": "中际旭创-9.36%/新易盛大跌"
+    },
+    {
+      "name": "科创板",
+      "change_pct": -6.89,
+      "note": "科创50暴跌6.89%,接近熔断式下跌"
     }
   ],
   "market_stats": {
-    "rise_count": 1200,
-    "fall_count": 4100,
-    "turnover_comment": "上午半天1.62万亿,全天预计3.0-3.2万亿放量暴跌"
+    "rise_count": 400,
+    "fall_count": 5000,
+    "limit_up": 37,
+    "limit_down": 119,
+    "turnover_comment": "2.51万亿,较昨日放量1103亿(+4.6%)。放量暴跌=恐慌出逃"
   }
 }
