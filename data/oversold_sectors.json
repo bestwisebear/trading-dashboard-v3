@@ -1,85 +1,119 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
     "date": "2026-08-19",
-    "session": "pre_market"
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "data_as_of": "2026-08-19 收盘"
   },
   "sectors": [
     {
-      "name": "影视院线",
-      "change_pct": -2.39,
-      "days_declining": 3,
-      "note": "连续调整,无反弹催化,8/19不参与"
+      "sector_name": "人形机器人",
+      "change_today": -8.0,
+      "top3_stocks": [
+        {
+          "code": "300503",
+          "name": "昊志机电",
+          "change_pct": -15.18
+        },
+        {
+          "code": "300718",
+          "name": "长盛轴承",
+          "change_pct": -16.06
+        },
+        {
+          "code": "300024",
+          "name": "机器人",
+          "change_pct": -8.46
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "科技崩盘重灾区,宇树利好兑现+获利盘踩踏。暂不抄底"
     },
     {
-      "name": "能源金属",
-      "change_pct": -2.5,
-      "days_declining": 2,
-      "note": "锂电回调+宁德宜春锂矿复产,8/19承压"
+      "sector_name": "CPO/光模块",
+      "change_today": -9.5,
+      "top3_stocks": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "change_pct": -9.36
+        },
+        {
+          "code": "002281",
+          "name": "光迅科技",
+          "change_pct": -10.0
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "change_pct": -4.82
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "OpenAI亏损扩大+SOX暴跌映射。等企稳后再观察"
     },
     {
-      "name": "元件(MLCC)",
-      "change_pct": -2.03,
-      "days_declining": 1,
-      "note": "🚨三环-4.73%拖累+美股存储-9%映射,板块情绪恶化"
+      "sector_name": "半导体",
+      "change_today": -8.5,
+      "top3_stocks": [
+        {
+          "code": "002371",
+          "name": "北方华创",
+          "change_pct": -8.24
+        },
+        {
+          "code": "603986",
+          "name": "兆易创新",
+          "change_pct": -7.56
+        },
+        {
+          "code": "688012",
+          "name": "中微公司",
+          "change_pct": -6.61
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "半导体设备ETF-7.53%,板块全面崩盘。等缩量企稳信号"
     },
     {
-      "name": "通信设备",
-      "change_pct": -1.35,
-      "days_declining": 1,
-      "note": "海外光通信-12.75%映射+资金-125亿,8/19开盘承压"
+      "sector_name": "MLCC",
+      "change_today": -7.0,
+      "top3_stocks": [
+        {
+          "code": "300408",
+          "name": "三环集团",
+          "change_pct": -11.61
+        },
+        {
+          "code": "000636",
+          "name": "风华高科",
+          "change_pct": -9.99
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "三环/风华均暴跌,持仓三环需止损。板块获利盘集中出逃"
     },
     {
-      "name": "算力租赁",
-      "change_pct": -1.3,
-      "days_declining": 2,
-      "note": "鸿博-9%拖累+海外CoreWeave-12%映射,高位回调"
-    },
-    {
-      "name": "创新药",
-      "change_pct": -1.14,
-      "days_declining": 1,
-      "note": "贝达-20cm跌停,板块杀跌"
+      "sector_name": "存储芯片",
+      "change_today": -7.8,
+      "top3_stocks": [
+        {
+          "code": "301308",
+          "name": "江波龙",
+          "change_pct": -8.05
+        },
+        {
+          "code": "688385",
+          "name": "复旦微电",
+          "change_pct": -6.71
+        },
+        {
+          "code": "002185",
+          "name": "华天科技",
+          "change_pct": -7.17
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "SK海力士隔夜-9%,存储全线崩。等待止跌企稳"
     }
-  ],
-  "oversold_sectors": [
-    {
-      "name": "影视院线",
-      "change_pct": -2.39,
-      "days_declining": 3,
-      "note": "连续调整,无反弹催化,8/19不参与"
-    },
-    {
-      "name": "能源金属",
-      "change_pct": -2.5,
-      "days_declining": 2,
-      "note": "锂电回调+宁德宜春锂矿复产,8/19承压"
-    },
-    {
-      "name": "元件(MLCC)",
-      "change_pct": -2.03,
-      "days_declining": 1,
-      "note": "🚨三环-4.73%拖累+美股存储-9%映射,板块情绪恶化"
-    },
-    {
-      "name": "通信设备",
-      "change_pct": -1.35,
-      "days_declining": 1,
-      "note": "海外光通信-12.75%映射+资金-125亿,8/19开盘承压"
-    },
-    {
-      "name": "算力租赁",
-      "change_pct": -1.3,
-      "days_declining": 2,
-      "note": "鸿博-9%拖累+海外CoreWeave-12%映射,高位回调"
-    },
-    {
-      "name": "创新药",
-      "change_pct": -1.14,
-      "days_declining": 1,
-      "note": "贝达-20cm跌停,板块杀跌"
-    }
-  ],
-  "bounce_candidates": [],
-  "strategy_note": "🚨 8/19盘前:不做反向超跌反弹!美股隔夜暴跌压制科技,5G/存储/光通信/算力映射压力大。独立催化方向(机器人/MLCC/硅片/功率)只作为减仓释放仓位后的候选"
+  ]
 }

@@ -1,59 +1,59 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
+    "last_updated": "2026-08-19T16:53:00+08:00",
     "date": "2026-08-19",
-    "session": "pre_market"
+    "session": "close"
   },
   "signals": [
     {
       "id": 1,
       "name": "缩量止跌",
       "condition": "成交额≤1.5万亿",
-      "today_value": "8/18:2.42万亿",
+      "today_value": "8/19:2.51万亿",
       "satisfied": false,
-      "detail": "维持2.4万亿高位,8/19美股暴跌可能缩量但仍超阈值"
+      "detail": "放量暴跌2.51万亿,较昨日放量1103亿!恐慌盘涌出,距1.5万亿阈值差距巨大"
     },
     {
       "id": 2,
       "name": "跌停减少",
       "condition": "跌停<30家",
-      "today_value": "8/18:6家",
-      "satisfied": true,
-      "detail": "恐慌情绪极低,连续多日维持低位"
+      "today_value": "8/19:119家",
+      "satisfied": false,
+      "detail": "119只跌停远超30家阈值!较8/18的6家暴增近20倍!恐慌情绪极度恶化"
     },
     {
       "id": 3,
       "name": "涨跌恢复",
       "condition": "上涨>3000家",
-      "today_value": "8/18:2121家",
+      "today_value": "8/19:约400家上涨",
       "satisfied": false,
-      "detail": "8/18分化,涨跌比2121:3292,8/19美股暴跌预计更差"
+      "detail": "仅约400家上涨/5000+下跌,涨跌比1:11!完全单边杀跌格局"
     },
     {
       "id": 4,
       "name": "连续止跌",
       "condition": "2天不创新低",
-      "today_value": "8/18盘中3955<昨收3982",
+      "today_value": "8/19沪指最低3879<8/18盘中3955",
       "satisfied": false,
-      "detail": "盘中创日内新低3955虽尾盘回升但已破前低,8/19低开压力大"
+      "detail": "沪指连续创新低!8/18盘中3955→8/19最低3879,趋势加速恶化"
     },
     {
       "id": 5,
       "name": "北向流入",
       "condition": "连续2-3日净流入>50亿",
-      "today_value": "8/18:-36亿",
+      "today_value": "8/19:全天净流出",
       "satisfied": false,
-      "detail": "8/17+31亿后8/18流出36亿,8/19美股暴跌可能继续流出"
+      "detail": "北向资金全天净流出,早盘即开始卖出,午后加速。8/17→8/18→8/19连续流出趋势"
     }
   ],
   "aggregate": {
-    "satisfied_count": 1,
+    "satisfied_count": 0,
     "total_count": 5,
-    "satisfied_rate": 0.2,
-    "verdict": "🔴 继续观望",
-    "ratio": 0.2,
+    "satisfied_rate": 0.0,
+    "verdict": "🔴🔴🔴 极度危险,继续观望",
+    "ratio": 0.0,
     "recommendation": "wait",
-    "recommendation_detail": "🚨 1/5信号触发(仅跌停减少),8/19底部信号极弱。美股隔夜暴跌+三环止损风险,新仓禁入。等9:30开盘+9:45方向确认"
+    "recommendation_detail": "🚨 0/5信号触发!所有底部信号全部熄灭!放量暴跌+119跌停+北向流出+连续新低=典型恐慌踩踏。严禁抄底!严禁加仓!明日首要任务是执行止损!等待恐慌情绪释放完毕+缩量企稳信号"
   },
   "history_7d": [
     {
@@ -78,7 +78,7 @@
     },
     {
       "date": "2026-08-17",
-      "satisfied_count": 3,
+      "satisfied_count": 2,
       "count": 5
     },
     {
@@ -87,8 +87,8 @@
       "count": 5
     },
     {
-      "date": "2026-08-18",
-      "satisfied_count": 1,
+      "date": "2026-08-19",
+      "satisfied_count": 0,
       "count": 5
     }
   ]
