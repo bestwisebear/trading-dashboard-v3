@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T16:53:00+08:00",
+    "last_updated": "2026-08-19T20:45:00+08:00",
     "date": "2026-08-19",
-    "session": "close"
+    "session": "night"
   },
   "daily_metrics": {
     "trade_count": 0,
@@ -18,5 +18,7 @@
     "source": "trades_all.json计算+收盘价验证"
   },
   "date": "2026-08-19",
-  "score": 50
+  "score": 15,
+  "score_detail": "execution=15,discipline=15",
+  "note": "🚨3只破止损未执行!科技崩盘日亏损-15011(-7.1%)!月度PnL转负!"
 }
