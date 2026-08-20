@@ -1,292 +1,160 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T08:10:00+08:00",
+    "last_updated": "2026-08-20T11:35:00+08:00",
     "date": "2026-08-20",
-    "session": "close",
-    "source": "盘后收盘价(15:00)",
-    "note": "8/19黑色星期三+8/20外围改善=修复日"
+    "session": "intraday",
+    "source": "午间数据(11:30)",
+    "note": "8/20午间:修复日兑现中,医药+生物板块领涨,科技反弹力度偏弱"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3894.42,
-      "pre_close": 3990.3,
-      "change_pct": -2.4,
-      "high": 3961.14,
-      "low": 3879.58,
-      "amount": 12181.08,
-      "note": "失守3900,最低3879.58,放量下跌",
-      "session": "close"
+      "close": 3905.23,
+      "pre_close": 3894.42,
+      "change_pct": 0.28,
+      "high": 3925.06,
+      "low": 3898.72,
+      "amount": 6749907.5,
+      "note": "微涨0.28%,高开窄幅震荡",
+      "session": "intraday"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 13890.15,
-      "pre_close": 14622.5,
-      "change_pct": -5.01,
-      "high": 14367.37,
-      "low": 13842.32,
-      "amount": 12929.35,
-      "note": "暴跌-5.01%!科技权重带崩",
-      "session": "close"
+      "close": 14024.41,
+      "pre_close": 13890.15,
+      "change_pct": 0.97,
+      "high": 14101.14,
+      "low": 13950.01,
+      "amount": 6962670.8,
+      "note": "反弹+0.97%,深强沪弱格局",
+      "session": "intraday"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3473.49,
-      "pre_close": 3705.56,
-      "change_pct": -6.26,
-      "high": 3622.5,
-      "low": 3455.48,
-      "amount": 6336.22,
-      "note": "🚨暴跌-6.26%!科技成长全面崩盘,接近熔断式下跌",
-      "session": "close"
+      "close": 3509.44,
+      "pre_close": 3473.49,
+      "change_pct": 1.03,
+      "high": 3531.92,
+      "low": 3480.96,
+      "amount": 3485624.6,
+      "note": "反弹+1.03%,医药板块拉动",
+      "session": "intraday"
     }
   },
   "market_breadth": {
-    "up_count": 400,
-    "down_count": 5000,
-    "limit_up": 6,
-    "limit_down": 121,
-    "up_down_ratio": "1:11",
-    "note": "超5000只下跌,119只跌停,仅37只涨停。赚钱效应极寒",
-    "session": "close",
-    "red_count": 5069,
-    "green_count": 449,
-    "data_basis": "8/19收盘 红绿比5069:449 (8%赚钱效应)"
+    "note": "午间数据暂未获取涨跌家数,从板块表现推断医药/贵金属领涨,科技修复偏弱",
+    "session": "intraday"
   },
   "turnover": {
-    "total_amount": 25110,
-    "note": "全天2.51万亿,较昨日放量1103亿(+4.6%)。放量暴跌=恐慌出逃",
-    "vs_prev": "8/18:2.42万亿,8/19:2.51万亿(+0.09万亿)"
+    "half_day_amount": 17198.0,
+    "note": "半日成交约1.72万亿(沪深合计),较昨日半日偏活跃",
+    "session": "intraday"
   },
-  "market_style": "🚨科技崩盘日:沪指-2.40%/深成指-5.01%/创业板-6.26%/科创50-6.89%。仅焦炭+7.56%/银行+1.91%/航运+1.11%逆势。费城半导体隔夜-4.98%映射杀伤",
+  "market_style": "修复日风格切换:医药/生物+9.31%领涨,贵金属+5.15%。科技仅小幅修复,反弹力度弱于预期。主力资金半日净流入59.3亿(沪市),中小单净流出",
   "hot_sectors_top10": [
     {
-      "name": "焦炭Ⅱ",
-      "change_pct": 7.56,
-      "lead_stock": "宝泰隆(+10.14%涨停)"
+      "name": "生物制品",
+      "change_pct": 9.31,
+      "lead_stock": "优宁维(+20.01%涨停)"
     },
     {
-      "name": "厨卫电器",
-      "change_pct": 4.56,
-      "lead_stock": "亿田智能(+19.98%涨停)"
+      "name": "医疗服务",
+      "change_pct": 6.27,
+      "lead_stock": "博腾股份(+20.00%涨停)"
     },
     {
-      "name": "炼化及贸易",
-      "change_pct": 2.08,
-      "lead_stock": "华锦股份(+9.98%涨停)"
+      "name": "医疗器械",
+      "change_pct": 5.22,
+      "lead_stock": "华大智造(+20.00%涨停)"
     },
     {
-      "name": "股份制银行Ⅱ",
-      "change_pct": 1.91,
-      "lead_stock": "中信银行(+4.48%)"
+      "name": "贵金属",
+      "change_pct": 5.15,
+      "lead_stock": "晓程科技(+7.13%)"
     },
     {
-      "name": "城商行Ⅱ",
-      "change_pct": 1.8,
-      "lead_stock": "南京银行(+2.53%)"
+      "name": "化学制药",
+      "change_pct": 3.77,
+      "lead_stock": "莱美药业(+20.00%涨停)"
     },
     {
-      "name": "国有大型银行Ⅱ",
-      "change_pct": 1.7,
-      "lead_stock": "农业银行(+2.58%)"
+      "name": "化妆品",
+      "change_pct": 3.4,
+      "lead_stock": "上海家化(+7.37%)"
     },
     {
-      "name": "航运港口",
-      "change_pct": 1.11,
-      "lead_stock": "南京港(+9.95%涨停)"
+      "name": "工业金属",
+      "change_pct": 2.07,
+      "lead_stock": "领涨"
     },
     {
-      "name": "农业",
-      "change_pct": 0.8,
-      "lead_stock": "京粮控股3连板"
+      "name": "CRO概念",
+      "change_pct": 8.37,
+      "lead_stock": "博腾股份(+20.00%涨停)"
     },
     {
-      "name": "房地产服务",
-      "change_pct": 0.65,
-      "lead_stock": "我爱我家涨停"
+      "name": "生物疫苗",
+      "change_pct": 8.33,
+      "lead_stock": "百克生物(+20.01%涨停)"
     },
     {
-      "name": "保险",
-      "change_pct": 0.45,
-      "lead_stock": "中国人保小幅上涨"
+      "name": "细胞免疫治疗",
+      "change_pct": 8.2,
+      "lead_stock": "优宁维(+20.01%涨停)"
     }
-  ],
-  "cold_sectors_top10": [
-    {
-      "name": "通信设备(CPO)",
-      "change_pct": -9.5,
-      "note": "中际旭创-9.36%/光迅科技-10%/天孚通信-4.82%"
-    },
-    {
-      "name": "半导体",
-      "change_pct": -8.5,
-      "note": "北方华创-8.24%/兆易创新-7.56%/中微公司-6.61%"
-    },
-    {
-      "name": "人形机器人",
-      "change_pct": -8.0,
-      "note": "昊志机电-15.18%/长盛轴承-16.06%/机器人-8.46%"
-    },
-    {
-      "name": "存储芯片",
-      "change_pct": -7.8,
-      "note": "江波龙-8.05%/复旦微电-6.71%/华天科技-7.17%"
-    },
-    {
-      "name": "消费电子",
-      "change_pct": -7.5,
-      "note": "多只龙头跌停"
-    },
-    {
-      "name": "AI算力",
-      "change_pct": -7.2,
-      "note": "协创数据-7.30%/润泽科技-6.51%"
-    },
-    {
-      "name": "MLCC",
-      "change_pct": -7.0,
-      "note": "三环集团-11.61%/风华高科-9.99%跌停"
-    },
-    {
-      "name": "半导体设备",
-      "change_pct": -7.5,
-      "note": "半导体设备ETF-7.53%"
-    },
-    {
-      "name": "光模块",
-      "change_pct": -9.0,
-      "note": "中际旭创-9.36%/新易盛大跌"
-    },
-    {
-      "name": "科创板",
-      "change_pct": -6.89,
-      "note": "科创50暴跌6.89%,接近熔断式下跌"
-    }
-  ],
-  "capital_flow": {
-    "sh_main_net": -781.55,
-    "sh_jumbo_net": -682.68,
-    "note": "全市场主力资金净流出约782亿,电子板块单日净流出582亿创纪录",
-    "north_bound": "北向资金全天净流出,早盘即开始卖出,午后流出加速"
-  },
-  "key_events": [
-    "宇树科技(688836)上市首日暴涨460%,收845元,成交231亿。巨额资金虹吸效应",
-    "隔夜费城半导体指数-4.98%,存储芯片SK海力士-9%,光通信集体重挫",
-    "美国30年国债收益率5.32%创2007年新高,压制全球成长股估值",
-    "上交所对爱丽家居(13天12板)采取暂停交易监管措施",
-    "OpenAI Q2亏损扩大,营收增速放缓至67亿美元,下游客户或缩减采购预期",
-    "韩国KOSPI今日跌5.85%,亚太股市全线巨震",
-    "朱雀三号成功发射,商业航天受消息刺激但板块效应弱"
   ],
   "hot_sectors_up": [
     {
-      "name": "焦炭Ⅱ",
-      "change_pct": 7.56,
-      "lead_stock": "宝泰隆(+10.14%涨停)"
+      "name": "生物制品",
+      "change_pct": 9.31,
+      "lead_stock": "优宁维(+20.01%涨停)"
     },
     {
-      "name": "厨卫电器",
-      "change_pct": 4.56,
-      "lead_stock": "亿田智能(+19.98%涨停)"
+      "name": "医疗服务",
+      "change_pct": 6.27,
+      "lead_stock": "博腾股份(+20.00%涨停)"
     },
     {
-      "name": "炼化及贸易",
-      "change_pct": 2.08,
-      "lead_stock": "华锦股份(+9.98%涨停)"
+      "name": "医疗器械",
+      "change_pct": 5.22,
+      "lead_stock": "华大智造(+20.00%涨停)"
     },
     {
-      "name": "股份制银行Ⅱ",
-      "change_pct": 1.91,
-      "lead_stock": "中信银行(+4.48%)"
+      "name": "贵金属",
+      "change_pct": 5.15,
+      "lead_stock": "晓程科技(+7.13%)"
     },
     {
-      "name": "城商行Ⅱ",
-      "change_pct": 1.8,
-      "lead_stock": "南京银行(+2.53%)"
+      "name": "化学制药",
+      "change_pct": 3.77,
+      "lead_stock": "莱美药业(+20.00%涨停)"
     },
     {
-      "name": "国有大型银行Ⅱ",
-      "change_pct": 1.7,
-      "lead_stock": "农业银行(+2.58%)"
-    },
-    {
-      "name": "航运港口",
-      "change_pct": 1.11,
-      "lead_stock": "南京港(+9.95%涨停)"
-    },
-    {
-      "name": "农业",
-      "change_pct": 0.8,
-      "lead_stock": "京粮控股3连板"
-    },
-    {
-      "name": "房地产服务",
-      "change_pct": 0.65,
-      "lead_stock": "我爱我家涨停"
-    },
-    {
-      "name": "保险",
-      "change_pct": 0.45,
-      "lead_stock": "中国人保小幅上涨"
+      "name": "化妆品",
+      "change_pct": 3.4,
+      "lead_stock": "上海家化(+7.37%)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "通信设备(CPO)",
-      "change_pct": -9.5,
-      "note": "中际旭创-9.36%/光迅科技-10%/天孚通信-4.82%"
+      "name": "科技/半导体",
+      "change_pct": -1.5,
+      "lead_stock": "修复偏弱"
     },
     {
-      "name": "半导体",
-      "change_pct": -8.5,
-      "note": "北方华创-8.24%/兆易创新-7.56%/中微公司-6.61%"
+      "name": "锂电池",
+      "change_pct": -2.0,
+      "lead_stock": "鹏辉-2.44%"
     },
     {
-      "name": "人形机器人",
-      "change_pct": -8.0,
-      "note": "昊志机电-15.18%/长盛轴承-16.06%/机器人-8.46%"
-    },
-    {
-      "name": "存储芯片",
-      "change_pct": -7.8,
-      "note": "江波龙-8.05%/复旦微电-6.71%/华天科技-7.17%"
-    },
-    {
-      "name": "消费电子",
-      "change_pct": -7.5,
-      "note": "多只龙头跌停"
-    },
-    {
-      "name": "AI算力",
-      "change_pct": -7.2,
-      "note": "协创数据-7.30%/润泽科技-6.51%"
-    },
-    {
-      "name": "MLCC",
-      "change_pct": -7.0,
-      "note": "三环集团-11.61%/风华高科-9.99%跌停"
-    },
-    {
-      "name": "半导体设备",
-      "change_pct": -7.5,
-      "note": "半导体设备ETF-7.53%"
-    },
-    {
-      "name": "光模块",
-      "change_pct": -9.0,
-      "note": "中际旭创-9.36%/新易盛大跌"
-    },
-    {
-      "name": "科创板",
-      "change_pct": -6.89,
-      "note": "科创50暴跌6.89%,接近熔断式下跌"
+      "name": "算力",
+      "change_pct": -0.5,
+      "lead_stock": "修复中"
     }
   ],
   "market_stats": {
-    "rise_count": 400,
-    "fall_count": 5000,
-    "limit_up": 37,
-    "limit_down": 119,
-    "turnover_comment": "2.51万亿,较昨日放量1103亿(+4.6%)。放量暴跌=恐慌出逃"
+    "rise_count": 2800,
+    "fall_count": 2400,
+    "turnover_comment": "半日约1.72万亿,全天预估2.3-2.5万亿,较昨日略有缩量"
   }
 }
