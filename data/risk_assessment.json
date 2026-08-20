@@ -1,86 +1,89 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T16:53:00+08:00",
-    "date": "2026-08-19",
+    "last_updated": "2026-08-20T08:10:00+08:00",
+    "date": "2026-08-20",
     "session": "close"
   },
-  "level": "critical",
-  "score": 95,
+  "level": "HIGH",
+  "score": 30,
   "factors": [
     {
-      "factor": "仓位",
-      "value": "72.4%",
-      "status": "pass",
-      "detail": "72.4%,较盘中略降(市值缩水)"
+      "name": "8/19红绿比<2000",
+      "status": "🔴触发",
+      "detail": "5069:449(8%赚钱效应) 触发新仓禁入条件"
     },
     {
-      "factor": "持仓数",
-      "value": "4只",
-      "status": "danger",
-      "detail": "踩线上限4只,新仓禁入"
+      "name": "持仓4只=上限",
+      "status": "🔴触发",
+      "detail": "持仓4只已达上限,新仓禁入"
     },
     {
-      "factor": "今日交易次数",
-      "value": "0笔",
-      "status": "pass",
-      "detail": "无交易,未恐慌性操作"
+      "name": "3只持仓破止损未执行",
+      "status": "🔴🔴严重",
+      "detail": "协创/昊志/三环8/19破止损未执行,8/20开盘必清(补执行)"
     },
     {
-      "factor": "市场情绪",
-      "value": "🔴🔴科技崩盘",
-      "status": "danger",
-      "detail": "119跌停/5000+下跌/涨跌比1:11。情绪极度恶化"
+      "name": "8/19电子主力-700亿",
+      "status": "🔴高",
+      "detail": "主力净流出极端值,板块情绪恶化"
     },
     {
-      "factor": "止损执行",
-      "value": "🚨3只破止损未执行!",
-      "status": "danger",
-      "detail": "协创/昊志/三环均已破止损!明日必须立即执行!这是最大风险点"
+      "name": "8/19沪指-2.40%失守3900",
+      "status": "🔴高",
+      "detail": "技术面承压"
     },
     {
-      "factor": "月度PnL",
-      "value": "-3445(-1.72%)",
-      "status": "danger",
-      "detail": "月度PnL已转负!从+5.78%→-1.72%,8月累计回撤9.5个百分点"
-    },
-    {
-      "factor": "底部信号",
-      "value": "0/5",
-      "status": "danger",
-      "detail": "所有底部信号全灭!严禁抄底!"
+      "name": "8/20外围多重利好",
+      "status": "🟢缓冲",
+      "detail": "美财政部+SK海力士+黄金限制跌幅但不改趋势"
     }
   ],
   "rule_checks": [
     {
       "rule": "持仓≤4只",
       "passed": true,
-      "current_value": "4只"
-    },
-    {
-      "rule": "单日≤6笔",
-      "passed": true,
-      "current_value": "0笔"
+      "current_value": "4/4 满仓"
     },
     {
       "rule": "新仓仅13:30-14:30",
       "passed": true,
-      "current_value": "无新仓"
-    },
-    {
-      "rule": "禁做T",
-      "passed": true,
-      "current_value": "无做T"
-    },
-    {
-      "rule": "减仓后禁当日接回",
-      "passed": true,
-      "current_value": "无接回"
+      "current_value": "8/20窗口全面禁入"
     },
     {
       "rule": "涨跌家数<2000禁开新仓",
       "passed": true,
-      "current_value": "~400家上涨,远低于2000"
+      "current_value": "8/19红绿5069:449<2000触发"
+    },
+    {
+      "rule": "止损严格执行",
+      "passed": false,
+      "current_value": "8/19持仓3只破止损未执行(协创/昊志/三环)"
+    },
+    {
+      "rule": "8/19不追高",
+      "passed": true,
+      "current_value": "8/19未追高但未止损"
+    },
+    {
+      "rule": "当日不回补",
+      "passed": true,
+      "current_value": "8/19减仓后未回补"
+    },
+    {
+      "rule": "禁止做T",
+      "passed": true,
+      "current_value": "8/19未做T"
+    },
+    {
+      "rule": "单日交易≤6笔",
+      "passed": true,
+      "current_value": "8/19全天0笔"
+    },
+    {
+      "rule": "8/20新仓禁入",
+      "passed": true,
+      "current_value": "持仓满+红绿<2000+纪律反思"
     }
   ],
-  "suggestion": "🚨🚨明日开盘立即执行止损!协创/昊志/三环全部清仓!不犹豫!不补仓!不心存幻想!鹏辉守57止损。清仓后降为1只持仓+现金,等待市场企稳信号再考虑操作"
+  "suggestion": "🚨8/20开盘必清3只破止损仓!执行后本周不开新仓,纪律重建"
 }

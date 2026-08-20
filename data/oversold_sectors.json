@@ -1,7 +1,7 @@
 {
   "meta": {
-    "date": "2026-08-19",
-    "last_updated": "2026-08-19T16:53:00+08:00",
+    "date": "2026-08-20",
+    "last_updated": "2026-08-20T08:10:00+08:00",
     "data_as_of": "2026-08-19 收盘"
   },
   "sectors": [
@@ -26,7 +26,8 @@
         }
       ],
       "can_add_watchlist": false,
-      "note": "科技崩盘重灾区,宇树利好兑现+获利盘踩踏。暂不抄底"
+      "note": "🔴 8/19宇树上市利好兑现,概念股持续承压,暂不抄底",
+      "oversold_priority": "LOW"
     },
     {
       "sector_name": "CPO/光模块",
@@ -112,8 +113,9 @@
           "change_pct": -7.17
         }
       ],
-      "can_add_watchlist": false,
-      "note": "SK海力士隔夜-9%,存储全线崩。等待止跌企稳"
+      "can_add_watchlist": true,
+      "note": "🟢🟢 8/20超跌反弹最高优先级:SK海力士290亿回购+摩根士丹利Q3涨50%双催化",
+      "oversold_priority": "HIGH"
     }
   ]
 }

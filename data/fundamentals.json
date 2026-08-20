@@ -1,8 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T16:53:00+08:00",
+    "last_updated": "2026-08-20T08:10:00+08:00",
     "data_source": "腾讯行情PE",
-    "update_frequency": "daily_on_close"
+    "update_frequency": "daily_on_close",
+    "date": "2026-08-20"
   },
   "stocks": {
     "300438": {

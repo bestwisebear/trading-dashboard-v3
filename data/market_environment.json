@@ -1,9 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T16:53:00+08:00",
-    "date": "2026-08-19",
+    "last_updated": "2026-08-20T08:10:00+08:00",
+    "date": "2026-08-20",
     "session": "close",
-    "source": "盘后收盘价(15:00)"
+    "source": "盘后收盘价(15:00)",
+    "note": "8/19黑色星期三+8/20外围改善=修复日"
   },
   "indices": {
     "sh000001": {
@@ -43,11 +44,14 @@
   "market_breadth": {
     "up_count": 400,
     "down_count": 5000,
-    "limit_up": 37,
-    "limit_down": 119,
+    "limit_up": 6,
+    "limit_down": 121,
     "up_down_ratio": "1:11",
     "note": "超5000只下跌,119只跌停,仅37只涨停。赚钱效应极寒",
-    "session": "close"
+    "session": "close",
+    "red_count": 5069,
+    "green_count": 449,
+    "data_basis": "8/19收盘 红绿比5069:449 (8%赚钱效应)"
   },
   "turnover": {
     "total_amount": 25110,

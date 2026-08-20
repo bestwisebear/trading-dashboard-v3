@@ -1,81 +1,81 @@
 {
-    "meta": {
-        "last_updated": "2026-08-19T13:16:00+08:00",
-        "date": "2026-08-19",
-        "session": "midday_final_check",
-        "task": "午间最终确认新仓标的"
+  "meta": {
+    "last_updated": "2026-08-20T08:10:00+08:00",
+    "date": "2026-08-20",
+    "session": "midday_final_check",
+    "task": "午间最终确认新仓标的"
+  },
+  "market_snapshot": {
+    "sh_index": 3912.17,
+    "sh_change_pct": -1.96,
+    "chinext_change_pct": -4.98,
+    "chinext50_change_pct": -6.07,
+    "up_count": 580,
+    "down_count": 4927,
+    "limit_up": 31,
+    "limit_down": 36,
+    "half_day_amount_yi": 16200,
+    "est_full_day_amount_yi": 22000,
+    "sector_up": 7,
+    "sector_down": 46,
+    "note": "8/19午间:年内最惨烈科技崩盘!美股费半-4.98%+美债30Y破5.3%+中东局势升级三重利空"
+  },
+  "gate_check": {
+    "gate_1_up_count_ge_2000": {
+      "value": 580,
+      "threshold": 2000,
+      "pass": false,
+      "note": "涨跌家数580:4927远<2000，大盘普跌"
     },
-    "market_snapshot": {
-        "sh_index": 3912.17,
-        "sh_change_pct": -1.96,
-        "chinext_change_pct": -4.98,
-        "chinext50_change_pct": -6.07,
-        "up_count": 580,
-        "down_count": 4927,
-        "limit_up": 31,
-        "limit_down": 36,
-        "half_day_amount_yi": 16200,
-        "est_full_day_amount_yi": 22000,
-        "sector_up": 7,
-        "sector_down": 46,
-        "note": "8/19午间:年内最惨烈科技崩盘!美股费半-4.98%+美债30Y破5.3%+中东局势升级三重利空"
+    "gate_2_amount_sufficient": {
+      "value": 16200,
+      "threshold": 20000,
+      "pass": false,
+      "note": "半日成交1.62万亿缩量，预计全天~2.2万亿<2万亿"
     },
-    "gate_check": {
-        "gate_1_up_count_ge_2000": {
-            "value": 580,
-            "threshold": 2000,
-            "pass": false,
-            "note": "涨跌家数580:4927远<2000，大盘普跌"
-        },
-        "gate_2_amount_sufficient": {
-            "value": 16200,
-            "threshold": 20000,
-            "pass": false,
-            "note": "半日成交1.62万亿缩量，预计全天~2.2万亿<2万亿"
-        },
-        "gate_3_sector_ratio_ok": {
-            "value": "7:46",
-            "threshold": "多数板块上涨",
-            "pass": false,
-            "note": "仅煤炭/银行/航运/化工等7个板块上涨，46个板块下跌，科技全面崩盘"
-        },
-        "gate_4_position_slot_available": {
-            "value": 4,
-            "threshold": "<4",
-            "pass": false,
-            "note": "持仓4只=上限，无空位。除非先止损减仓腾出仓位"
-        },
-        "gate_5_bottom_signal": {
-            "value": false,
-            "threshold": true,
-            "pass": false,
-            "note": "无底部信号。大盘暴跌日，非建仓时机"
-        },
-        "gate_6_new_target_in_watchlist": {
-            "value": false,
-            "threshold": true,
-            "pass": false,
-            "note": "无合适候选标的。全市场科技股暴跌中"
-        },
-        "gate_7_risk_budget": {
-            "value": -519.31,
-            "threshold": ">0",
-            "pass": false,
-            "note": "月度PnL已翻负-519元，风险预算耗尽"
-        }
+    "gate_3_sector_ratio_ok": {
+      "value": "7:46",
+      "threshold": "多数板块上涨",
+      "pass": false,
+      "note": "仅煤炭/银行/航运/化工等7个板块上涨，46个板块下跌，科技全面崩盘"
     },
-    "gate_summary": "通过0/7，全部不满足",
-    "verdict": "今日取消新仓",
-    "verdict_detail": "七道闸全部不通过。涨跌家数580远<2000（禁开新仓铁律）；持仓4只=上限无空位；月度PnL已翻负；大盘暴跌+午后继续恶化（机器人板块午后再跌10余股跌停）。唯一任务是持仓风控：①昊志/三环已破止损，下午开盘必须清仓；②协创距止损250仅0.6%密切监控；③鹏辉为唯一盈利仓守好57止损",
-    "risk_alerts": [
-        "🚨🚨🚨 昊志机电300503: 71.49已破止损73!亏-10.8%!下午开盘必须清仓500股!",
-        "🚨🚨🚨 三环集团300408: 112.20已破止损122!亏-11.1%!下午开盘必须清仓300股!",
-        "🚨🚨 协创数据300857: 251.51距止损250仅0.6%!跌破250必须清仓!",
-        "🚨 鹏辉能源300438: 63.39仍盈利+5.3%，唯一盈利仓，守57止损",
-        "午后机器人板块继续走低，10余股触及跌停",
-        "美联储7月FOMC纪要今晚发布，若偏鹰将进一步打压科技股",
-        "全球长债收益率创多年新高，科技股估值压制短期难解除"
-    ],
-    "candidates": [],
-    "afternoon_plan": "13:30开盘立即执行止损: ①昊志机电500股全部清仓 ②三环集团300股全部清仓 ③密切监控协创250止损线。下午13:30-14:30只观察不动手，禁止开新仓。"
+    "gate_4_position_slot_available": {
+      "value": 4,
+      "threshold": "<4",
+      "pass": false,
+      "note": "持仓4只=上限，无空位。除非先止损减仓腾出仓位"
+    },
+    "gate_5_bottom_signal": {
+      "value": false,
+      "threshold": true,
+      "pass": false,
+      "note": "无底部信号。大盘暴跌日，非建仓时机"
+    },
+    "gate_6_new_target_in_watchlist": {
+      "value": false,
+      "threshold": true,
+      "pass": false,
+      "note": "无合适候选标的。全市场科技股暴跌中"
+    },
+    "gate_7_risk_budget": {
+      "value": -519.31,
+      "threshold": ">0",
+      "pass": false,
+      "note": "月度PnL已翻负-519元，风险预算耗尽"
+    }
+  },
+  "gate_summary": "通过0/7，全部不满足",
+  "verdict": "NO_BUY",
+  "verdict_detail": "🚨8/20新仓全面禁入(8/19红绿<2000+持仓4只满+3只破止损未执行)",
+  "risk_alerts": [
+    "🚨🚨🚨 昊志机电300503: 71.49已破止损73!亏-10.8%!下午开盘必须清仓500股!",
+    "🚨🚨🚨 三环集团300408: 112.20已破止损122!亏-11.1%!下午开盘必须清仓300股!",
+    "🚨🚨 协创数据300857: 251.51距止损250仅0.6%!跌破250必须清仓!",
+    "🚨 鹏辉能源300438: 63.39仍盈利+5.3%，唯一盈利仓，守57止损",
+    "午后机器人板块继续走低，10余股触及跌停",
+    "美联储7月FOMC纪要今晚发布，若偏鹰将进一步打压科技股",
+    "全球长债收益率创多年新高，科技股估值压制短期难解除"
+  ],
+  "candidates": [],
+  "afternoon_plan": "13:30开盘立即执行止损: ①昊志机电500股全部清仓 ②三环集团300股全部清仓 ③密切监控协创250止损线。下午13:30-14:30只观察不动手，禁止开新仓。"
 }

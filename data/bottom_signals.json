@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T16:53:00+08:00",
-    "date": "2026-08-19",
+    "last_updated": "2026-08-20T08:10:00+08:00",
+    "date": "2026-08-20",
     "session": "close"
   },
   "signals": [
@@ -52,10 +52,16 @@
     "satisfied_rate": 0.0,
     "verdict": "🔴🔴🔴 极度危险,继续观望",
     "ratio": 0.0,
-    "recommendation": "wait",
-    "recommendation_detail": "🚨 0/5信号触发!所有底部信号全部熄灭!放量暴跌+119跌停+北向流出+连续新低=典型恐慌踩踏。严禁抄底!严禁加仓!明日首要任务是执行止损!等待恐慌情绪释放完毕+缩量企稳信号"
+    "recommendation": "HOLD_OBSERVE",
+    "recommendation_detail": "8/20是修复日非反转日。外围改善+多重催化限制跌幅但不立即开仓(持仓满+纪律反思)"
   },
   "history_7d": [
+    {
+      "date": "2026-08-20",
+      "satisfied_count": 0,
+      "count": 0,
+      "note": "8/20新仓禁入"
+    },
     {
       "date": "2026-08-12",
       "satisfied_count": 2,
