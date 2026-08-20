@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T11:35:00+08:00",
+    "last_updated": "2026-08-20T16:53:00+08:00",
     "date": "2026-08-20",
-    "session": "intraday",
-    "source": "午间盘中价(11:30)",
-    "price_source_note": "午间价(session=intraday),PnL为浮动",
-    "note": "午间:鹏辉60.88(-2.44%)唯一盈利仓。协创/昊志/三环仍破止损,反弹力度弱"
+    "session": "close",
+    "source": "收盘价(15:00)",
+    "price_source_note": "收盘价(session=close),PnL为真实日终PnL",
+    "note": "8/20收盘:鹏辉逆势跌-4.39%逼近止损,协创/昊志/三环仍破止损但小幅反弹"
   },
   "summary": {
-    "total_market_value": 143528.0,
+    "total_market_value": 141014.0,
     "available_cash": 54212.69,
-    "total_assets": 197740.69,
-    "net_today": -13825.0,
-    "today_return": -13825.0,
-    "total_pnl_amount": -2259.31,
-    "monthly_pnl": -2259.31,
+    "total_assets": 195226.69,
+    "net_today": -16339.0,
+    "today_return": -16339.0,
+    "total_pnl_amount": -4773.31,
+    "monthly_pnl": -4773.31,
     "prev_close_assets": 211565.69,
-    "position_ratio": 72.6,
-    "today_return_rate": -6.5,
-    "monthly_return_rate": -1.13,
+    "position_ratio": 72.2,
+    "today_return_rate": -7.72,
+    "monthly_return_rate": -2.39,
     "initial_capital": 200000,
     "position_count": 4,
-    "note": "午间修复日:持仓3只仍破止损,鹏辉微利,反弹力度偏弱"
+    "note": "收盘:鹏辉逆势下跌,协创/昊志/三环仍破止损。全天修复力度减弱"
   },
   "positions": [
     {
@@ -30,26 +30,26 @@
       "quantity": 800,
       "cost_price": 60.227,
       "cost_source": "broker_screenshot",
-      "current_price": 60.88,
-      "price_updated_at": "2026-08-20T11:35:00+08:00",
+      "current_price": 59.66,
+      "price_updated_at": "2026-08-20T16:53:00+08:00",
       "buy_date": "2026-08-06",
       "holding_days": 14,
       "stop_loss": 57.0,
       "stop_profit": 70.0,
-      "pnl_percent": 1.08,
-      "pnl_amount": 522.4,
+      "pnl_percent": -0.94,
+      "pnl_amount": -453.6,
       "sector": "锂电池",
-      "status": "holding",
-      "notes": "午间60.88(-2.44%),高开后回落,上午低点60.32接近成本。浮盈+1.08%(+522元)。距止损57→6.4%",
+      "status": "holding_loss",
+      "notes": "收盘59.66(-4.39%)。高开63.39后持续走低,收59.66。已破止损57上方+4.7%,浮亏-0.94%(-449元)。锂电池板块今日未受医药带动,逆势下跌",
       "key_price": {
-        "support": 60,
+        "support": 57,
         "resistance": 63,
         "buy_range": [
-          58,
+          57,
           63
         ]
       },
-      "price_source": "intraday_20260820"
+      "price_source": "close_20260820"
     },
     {
       "code": "300857",
@@ -57,26 +57,26 @@
       "quantity": 100,
       "cost_price": 254.14,
       "cost_source": "broker_screenshot",
-      "current_price": 248.07,
-      "price_updated_at": "2026-08-20T11:35:00+08:00",
+      "current_price": 247.38,
+      "price_updated_at": "2026-08-20T16:53:00+08:00",
       "buy_date": "2026-08-14",
       "holding_days": 6,
       "stop_loss": 250.0,
       "stop_profit": 280.0,
-      "pnl_percent": -2.39,
-      "pnl_amount": -607.0,
+      "pnl_percent": -2.66,
+      "pnl_amount": -676.0,
       "sector": "算力租赁",
       "status": "🚨STOP_LOSS_BREACHED",
-      "notes": "午间248.07(+0.16%)。仍低于止损250,低开后反弹至252.68后回落。浮亏-2.39%(-607元)",
+      "notes": "收盘247.38(-0.12%)。低开248.50,最低242.86,收于247.38。仍低于止损250!浮亏-2.66%(-676元)。今日未执行清仓→违规延续",
       "key_price": {
         "support": 242,
-        "resistance": 253,
+        "resistance": 252,
         "buy_range": [
           240,
           260
         ]
       },
-      "price_source": "intraday_20260820"
+      "price_source": "close_20260820"
     },
     {
       "code": "300503",
@@ -84,26 +84,26 @@
       "quantity": 500,
       "cost_price": 80.18,
       "cost_source": "broker_screenshot",
-      "current_price": 71.94,
-      "price_updated_at": "2026-08-20T11:35:00+08:00",
+      "current_price": 70.19,
+      "price_updated_at": "2026-08-20T16:53:00+08:00",
       "buy_date": "2026-08-18",
       "holding_days": 2,
       "stop_loss": 73.0,
-      "stop_profit": 85.0,
-      "pnl_percent": -10.28,
-      "pnl_amount": -4120.0,
-      "sector": "机器人概念/精密零部件",
+      "stop_profit": 90.0,
+      "pnl_percent": -12.46,
+      "pnl_amount": -4995.0,
+      "sector": "机器人概念",
       "status": "🚨STOP_LOSS_BREACHED",
-      "notes": "午间71.94(+3.44%)。低开67.66后反弹,最高72.72仍低于止损73。浮亏-10.28%(-4120元)。反弹力度弱",
+      "notes": "收盘70.19(+0.92%)。连续2日反弹(69.55→70.19),远低于成本80.18。仍低于止损73!浮亏-12.46%(-4995元)。机器人板块利空持续",
       "key_price": {
-        "support": 68,
-        "resistance": 73,
+        "support": 65,
+        "resistance": 75,
         "buy_range": [
-          73,
+          65,
           80
         ]
       },
-      "price_source": "intraday_20260820"
+      "price_source": "close_20260820"
     },
     {
       "code": "300408",
@@ -111,26 +111,26 @@
       "quantity": 300,
       "cost_price": 126.21,
       "cost_source": "broker_screenshot",
-      "current_price": 113.49,
-      "price_updated_at": "2026-08-20T11:35:00+08:00",
+      "current_price": 111.51,
+      "price_updated_at": "2026-08-20T16:53:00+08:00",
       "buy_date": "2026-08-18",
       "holding_days": 2,
       "stop_loss": 122.0,
-      "stop_profit": 135.0,
-      "pnl_percent": -10.08,
-      "pnl_amount": -3816.0,
-      "sector": "MLCC/陶瓷基板",
+      "stop_profit": 145.0,
+      "pnl_percent": -11.65,
+      "pnl_amount": -4410.0,
+      "sector": "MLCC",
       "status": "🚨STOP_LOSS_BREACHED",
-      "notes": "午间113.49(+3.55%)。低开109.67后反弹,最高113.86仍远低于止损122。浮亏-10.08%(-3816元)",
+      "notes": "收盘111.51(+1.74%)。连续2日反弹(109.60→111.51),远低于成本126.21。仍低于止损122!浮亏-11.65%(-4410元)。MLCC板块分化",
       "key_price": {
-        "support": 108,
-        "resistance": 115,
+        "support": 105,
+        "resistance": 118,
         "buy_range": [
-          120,
-          126
+          105,
+          125
         ]
       },
-      "price_source": "intraday_20260820"
+      "price_source": "close_20260820"
     }
   ]
 }

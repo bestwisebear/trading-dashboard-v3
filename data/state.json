@@ -1,31 +1,31 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T11:35:00+08:00",
+    "last_updated": "2026-08-20T20:55:00+08:00",
     "data_date": "2026-08-20",
-    "source": "午间收盘价(11:30)",
-    "session": "intraday",
-    "data_as_of": "2026-08-20 午间",
-    "note": "午间刷新:大盘修复日验证中,沪指+0.28%/深成指+0.97%/创业板+1.03%。持仓3只仍破止损(协创/昊志/三环)"
+    "source": "收盘价(15:00)",
+    "session": "close",
+    "data_as_of": "2026-08-20 盘后",
+    "note": "晚间复盘:今日0操作,3只破止损未清仓(协创/昊志/三环),鹏辉逆势-4.39%。8/21交割日最后通牒清仓,继续禁新仓"
   },
   "current": {
-    "total_assets": 197740.69,
+    "total_assets": 195226.69,
     "prev_close_assets": 211565.69,
     "available_cash": 54212.69,
     "initial_capital": 200000,
     "position_count": 4,
-    "position_ratio": 72.6,
-    "monthly_pnl": -2259.31,
-    "monthly_return_rate": -1.13,
-    "market_value": 143528.0,
-    "note": "午间盘中数据,PnL为浮动"
+    "position_ratio": 72.2,
+    "monthly_pnl": -4773.31,
+    "monthly_return_rate": -2.39,
+    "market_value": 141014.0,
+    "note": "收盘PnL为真实日终值"
   },
   "today_so_far": {
     "date": "2026-08-20",
-    "net_today": -13825.0,
+    "net_today": -16339.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "intraday",
-    "note": "午间:大盘修复日,沪指3905(+0.28%)。持仓3只仍破止损。医药+生物板块领涨,科技修复力度偏弱"
+    "session": "close",
+    "note": "收盘:沪指+0.24%,鹏辉-4.39%拖累,协创/昊志/三环小幅反弹但远低于止损"
   },
   "positions": [
     {
@@ -35,7 +35,7 @@
       "cost_price": 60.227,
       "stop_loss": 57.0,
       "buy_date": "2026-08-06",
-      "market_value": 48704.0
+      "market_value": 47728.0
     },
     {
       "code": "300857",
@@ -44,7 +44,7 @@
       "cost_price": 254.14,
       "stop_loss": 250.0,
       "buy_date": "2026-08-14",
-      "market_value": 24807.0
+      "market_value": 24738.0
     },
     {
       "code": "300503",
@@ -53,7 +53,7 @@
       "cost_price": 80.18,
       "stop_loss": 73.0,
       "buy_date": "2026-08-18",
-      "market_value": 35970.0
+      "market_value": 35095.0
     },
     {
       "code": "300408",
@@ -62,18 +62,18 @@
       "cost_price": 126.21,
       "stop_loss": 122.0,
       "buy_date": "2026-08-18",
-      "market_value": 34047.0
+      "market_value": 33453.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "午间盘中快照"
+    "note": "盘后收盘验证通过"
   },
   "cumulative": {
-    "total_pnl_amount": -2259.31,
-    "total_pnl_percent": -1.13,
+    "total_pnl_amount": -4773.31,
+    "total_pnl_percent": -2.39,
     "total_trades_count": 53,
     "total_violations": 1,
     "start_date": "2026-08-03"
