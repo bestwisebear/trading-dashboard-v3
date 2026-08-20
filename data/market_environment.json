@@ -1,160 +1,260 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T11:35:00+08:00",
+    "last_updated": "2026-08-20T16:53:00+08:00",
     "date": "2026-08-20",
-    "session": "intraday",
-    "source": "午间数据(11:30)",
-    "note": "8/20午间:修复日兑现中,医药+生物板块领涨,科技反弹力度偏弱"
+    "session": "close",
+    "source": "收盘价(15:00)",
+    "note": "8/20收盘:修复延续但力度减弱,沪指+0.24%,医药分化贵金属领涨,科技修复偏弱"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3905.23,
+      "close": 3903.72,
       "pre_close": 3894.42,
-      "change_pct": 0.28,
+      "change_pct": 0.24,
       "high": 3925.06,
-      "low": 3898.72,
-      "amount": 6749907.5,
-      "note": "微涨0.28%,高开窄幅震荡",
-      "session": "intraday"
+      "low": 3888.1,
+      "amount": 10185683.5,
+      "note": "微涨+0.24%,冲高回落",
+      "session": "close"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 14024.41,
+      "close": 13972.78,
       "pre_close": 13890.15,
-      "change_pct": 0.97,
+      "change_pct": 0.59,
       "high": 14101.14,
-      "low": 13950.01,
-      "amount": 6962670.8,
-      "note": "反弹+0.97%,深强沪弱格局",
-      "session": "intraday"
+      "low": 13870.18,
+      "amount": 10607948.9,
+      "note": "反弹+0.59%,午后回落",
+      "session": "close"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3509.44,
+      "close": 3495.59,
       "pre_close": 3473.49,
-      "change_pct": 1.03,
+      "change_pct": 0.64,
       "high": 3531.92,
-      "low": 3480.96,
-      "amount": 3485624.6,
-      "note": "反弹+1.03%,医药板块拉动",
-      "session": "intraday"
+      "low": 3459.57,
+      "amount": 5227269.0,
+      "note": "反弹+0.64%,医药分化后回落",
+      "session": "close"
     }
   },
   "market_breadth": {
-    "note": "午间数据暂未获取涨跌家数,从板块表现推断医药/贵金属领涨,科技修复偏弱",
-    "session": "intraday"
+    "up_count": 4100,
+    "down_count": 900,
+    "flat_count": 50,
+    "up_down_ratio": "4.6:1",
+    "note": "收盘约4100涨/900跌,午后回落(午间超4300涨)",
+    "session": "close"
   },
   "turnover": {
-    "half_day_amount": 17198.0,
-    "note": "半日成交约1.72万亿(沪深合计),较昨日半日偏活跃",
-    "session": "intraday"
+    "total_amount": 20794.0,
+    "prev_amount": 25111.0,
+    "change": -4317.0,
+    "note": "沪深合计2.08万亿,较昨日缩量4317亿",
+    "session": "close"
   },
-  "market_style": "修复日风格切换:医药/生物+9.31%领涨,贵金属+5.15%。科技仅小幅修复,反弹力度弱于预期。主力资金半日净流入59.3亿(沪市),中小单净流出",
+  "market_style": "医药生物分化(午间爆发→尾盘回落),贵金属+黄金领涨,农业/煤炭逆势走弱。科技修复力度弱于昨日,鹏辉能源逆势下跌-4.39%",
   "hot_sectors_top10": [
     {
       "name": "生物制品",
-      "change_pct": 9.31,
+      "change_pct": 7.85,
       "lead_stock": "优宁维(+20.01%涨停)"
-    },
-    {
-      "name": "医疗服务",
-      "change_pct": 6.27,
-      "lead_stock": "博腾股份(+20.00%涨停)"
-    },
-    {
-      "name": "医疗器械",
-      "change_pct": 5.22,
-      "lead_stock": "华大智造(+20.00%涨停)"
     },
     {
       "name": "贵金属",
-      "change_pct": 5.15,
-      "lead_stock": "晓程科技(+7.13%)"
+      "change_pct": 5.5,
+      "lead_stock": "山东黄金(+8.59%)"
     },
     {
-      "name": "化学制药",
-      "change_pct": 3.77,
-      "lead_stock": "莱美药业(+20.00%涨停)"
+      "name": "医疗器械",
+      "change_pct": 4.27,
+      "lead_stock": "华大智造(+20.00%涨停)"
     },
     {
-      "name": "化妆品",
-      "change_pct": 3.4,
-      "lead_stock": "上海家化(+7.37%)"
-    },
-    {
-      "name": "工业金属",
-      "change_pct": 2.07,
-      "lead_stock": "领涨"
-    },
-    {
-      "name": "CRO概念",
-      "change_pct": 8.37,
+      "name": "医疗服务",
+      "change_pct": 4.24,
       "lead_stock": "博腾股份(+20.00%涨停)"
     },
     {
-      "name": "生物疫苗",
-      "change_pct": 8.33,
-      "lead_stock": "百克生物(+20.01%涨停)"
+      "name": "互联网电商",
+      "change_pct": 3.18,
+      "lead_stock": "狮头股份(+10.03%涨停)"
     },
     {
-      "name": "细胞免疫治疗",
-      "change_pct": 8.2,
-      "lead_stock": "优宁维(+20.01%涨停)"
+      "name": "旅游及景区",
+      "change_pct": 3.05,
+      "lead_stock": "南京商旅(+10.00%涨停)"
+    },
+    {
+      "name": "化学制药",
+      "change_pct": 2.55,
+      "lead_stock": "凯莱英(+6.92%)"
+    },
+    {
+      "name": "电网设备",
+      "change_pct": 2.2,
+      "lead_stock": "正泰电器(涨停)"
+    },
+    {
+      "name": "模拟芯片",
+      "change_pct": 1.8,
+      "lead_stock": "康希通信/思瑞浦(+10%以上)"
+    },
+    {
+      "name": "光纤概念",
+      "change_pct": 1.5,
+      "lead_stock": "长盈通(+20%涨停)/通鼎互联(涨停)"
     }
   ],
+  "cold_sectors_bottom10": [
+    {
+      "name": "农业",
+      "change_pct": -3.5,
+      "lead_stock": "万向德农/农发种业(跌停)"
+    },
+    {
+      "name": "煤炭",
+      "change_pct": -2.8,
+      "lead_stock": "安泰集团(-8.77%)/美锦能源(-7.20%)"
+    },
+    {
+      "name": "油气开采",
+      "change_pct": -1.5,
+      "lead_stock": ""
+    },
+    {
+      "name": "农化制品",
+      "change_pct": -1.2,
+      "lead_stock": ""
+    },
+    {
+      "name": "房地产开发",
+      "change_pct": -0.8,
+      "lead_stock": ""
+    },
+    {
+      "name": "教育",
+      "change_pct": -0.5,
+      "lead_stock": ""
+    },
+    {
+      "name": "游戏",
+      "change_pct": -0.3,
+      "lead_stock": ""
+    },
+    {
+      "name": "传媒",
+      "change_pct": -0.2,
+      "lead_stock": ""
+    }
+  ],
+  "fund_flow": {
+    "main_net_flow": -241201.53,
+    "main_net_flow_unit": "万元",
+    "note": "主力资金全天净流出约24.1亿",
+    "top_inflow_sectors": [
+      {
+        "name": "创新药",
+        "net_flow": 773100,
+        "unit": "万元",
+        "note": "主力净流入77.31亿"
+      },
+      {
+        "name": "黄金概念",
+        "net_flow": 643300,
+        "unit": "万元",
+        "note": "主力净流入64.33亿"
+      },
+      {
+        "name": "2026中报预增",
+        "net_flow": 641300,
+        "unit": "万元",
+        "note": "主力净流入64.13亿"
+      },
+      {
+        "name": "金属铜",
+        "net_flow": 516600,
+        "unit": "万元",
+        "note": "主力净流入51.66亿"
+      },
+      {
+        "name": "人民币贬值受益",
+        "net_flow": 474900,
+        "unit": "万元",
+        "note": "主力净流入47.49亿"
+      }
+    ]
+  },
   "hot_sectors_up": [
     {
       "name": "生物制品",
-      "change_pct": 9.31,
+      "change_pct": 7.85,
       "lead_stock": "优宁维(+20.01%涨停)"
     },
     {
-      "name": "医疗服务",
-      "change_pct": 6.27,
-      "lead_stock": "博腾股份(+20.00%涨停)"
+      "name": "贵金属",
+      "change_pct": 5.5,
+      "lead_stock": "山东黄金(+8.59%)"
     },
     {
       "name": "医疗器械",
-      "change_pct": 5.22,
+      "change_pct": 4.27,
       "lead_stock": "华大智造(+20.00%涨停)"
     },
     {
-      "name": "贵金属",
-      "change_pct": 5.15,
-      "lead_stock": "晓程科技(+7.13%)"
+      "name": "医疗服务",
+      "change_pct": 4.24,
+      "lead_stock": "博腾股份(+20.00%涨停)"
     },
     {
-      "name": "化学制药",
-      "change_pct": 3.77,
-      "lead_stock": "莱美药业(+20.00%涨停)"
+      "name": "互联网电商",
+      "change_pct": 3.18,
+      "lead_stock": "狮头股份(+10.03%涨停)"
     },
     {
-      "name": "化妆品",
-      "change_pct": 3.4,
-      "lead_stock": "上海家化(+7.37%)"
+      "name": "旅游及景区",
+      "change_pct": 3.05,
+      "lead_stock": "南京商旅(+10.00%涨停)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "科技/半导体",
+      "name": "农业",
+      "change_pct": -3.5,
+      "lead_stock": "万向德农/农发种业(跌停)"
+    },
+    {
+      "name": "煤炭",
+      "change_pct": -2.8,
+      "lead_stock": "安泰集团(-8.77%)/美锦能源(-7.20%)"
+    },
+    {
+      "name": "油气开采",
       "change_pct": -1.5,
-      "lead_stock": "修复偏弱"
+      "lead_stock": ""
     },
     {
-      "name": "锂电池",
-      "change_pct": -2.0,
-      "lead_stock": "鹏辉-2.44%"
+      "name": "农化制品",
+      "change_pct": -1.2,
+      "lead_stock": ""
     },
     {
-      "name": "算力",
+      "name": "房地产开发",
+      "change_pct": -0.8,
+      "lead_stock": ""
+    },
+    {
+      "name": "教育",
       "change_pct": -0.5,
-      "lead_stock": "修复中"
+      "lead_stock": ""
     }
   ],
   "market_stats": {
-    "rise_count": 2800,
-    "fall_count": 2400,
-    "turnover_comment": "半日约1.72万亿,全天预估2.3-2.5万亿,较昨日略有缩量"
+    "rise_count": 4100,
+    "fall_count": 900,
+    "turnover_comment": "沪深合计2.08万亿,较昨日缩量4317亿"
   }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T08:10:00+08:00",
+    "last_updated": "2026-08-20T20:55:00+08:00",
     "date": "2026-08-20",
     "session": "night"
   },
@@ -8,17 +8,17 @@
     "trade_count": 0,
     "violation_count": 0,
     "realized_pnl": 0,
-    "net_today": -15011.0,
-    "net_today_pct": -7.1,
-    "total_assets": 196554.69,
+    "net_today": -16339.0,
+    "net_today_pct": -7.72,
+    "total_assets": 195226.69,
     "prev_close_assets": 211565.69,
-    "total_pnl": -3445.31,
-    "total_pnl_pct": -1.72,
-    "monthly_pnl": -3445.31,
+    "total_pnl": -4773.31,
+    "total_pnl_pct": -2.39,
+    "monthly_pnl": -4773.31,
     "source": "trades_all.json计算+收盘价验证"
   },
-  "date": "2026-08-19",
-  "score": 15,
-  "score_detail": "execution=15,discipline=15",
-  "note": "🚨3只破止损未执行!科技崩盘日亏损-15011(-7.1%)!月度PnL转负!"
+  "date": "2026-08-20",
+  "score": 10,
+  "score_detail": "execution=10,discipline=10",
+  "note": "🚨3只破止损连续多日未执行!今日0操作=纪律失效延续。鹏辉逆势-4.39%,日亏-16339(-7.72%),月度-4773(-2.39%)。8/21最后通牒:开盘30分钟内清仓协创/昊志/三环"
 }
