@@ -1,120 +1,130 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T08:10:00+08:00",
+    "last_updated": "2026-08-20T11:05:00+08:00",
     "date": "2026-08-20",
-    "session": "intraday_1100_check",
-    "task": "下午新仓第一轮确认",
-    "note": "🚨8/20新仓禁入 - 持仓4只满+纪律反思"
+    "session": "intraday_1100",
+    "check_type": "11:00第一轮确认",
+    "verdict": "🚫下午无新仓备选"
   },
   "market_snapshot": {
-    "sh_index": 3930,
-    "sh_change_pct": -1.5,
-    "chinext_change_pct": -3.0,
-    "up_count": 534,
-    "down_count": 4632,
-    "limit_up": 42,
-    "limit_down": 24,
-    "total_amount_yi": 19400,
-    "note": "大盘暴跌日,沪指-1.5%,创业板-3%+,下跌近4600只,成交不足2万亿"
+    "timestamp": "2026-08-20T10:30:00+08:00",
+    "indices": {
+      "shanghai": {
+        "value": 3907.24,
+        "change_pct": 0.33
+      },
+      "shenzhen": {
+        "value": 14004.39,
+        "change_pct": 0.82
+      },
+      "chinext": {
+        "value": 3504.72,
+        "change_pct": 0.9
+      }
+    },
+    "up_count": 4114,
+    "down_count": 1262,
+    "up_down_ratio": "3.26:1",
+    "half_day_turnover": "1.06万亿(截至10:30)",
+    "est_full_day_turnover": "约2.1-2.5万亿",
+    "market_comment": "修复日:三大指数高开反弹,涨跌比4114:1262(>2000✓),医药/消费领涨,科技分化反弹,存储/半导体/电子气体仍偏弱"
   },
-  "gate_check": {
-    "up_count_ge_2000": false,
-    "amount_sufficient": false,
-    "sector_ratio_ok": false,
-    "position_slot_available": false,
-    "verdict": "全部不满足。涨跌家数534:4632远<2000;成交额<2万亿;板块涨跌比极差;持仓4只=上限无空位"
+  "position_status": {
+    "current_count": 4,
+    "pending_stop_loss": [
+      "协创数据",
+      "昊志机电",
+      "三环集团"
+    ],
+    "expected_after_stop_loss": 1,
+    "no_reentry_days_required": "至少2-3个交易日(daily_plan预设)",
+    "days_since_crash": 1,
+    "note": "8/19为科技崩盘日(涨跌比449:5069),今日为崩盘后第2天"
   },
-  "risk_alerts": [
-    "🚨🚨🚨 三环集团300408 已击穿止损! 实时价114.60 vs 止损122,已低于止损6.0%!",
-    "🚨🚨 昊志机电300503 逼近止损! 实时价73.98 vs 止损73,仅差1.3%!机器人板块利好兑现暴跌-9.78%",
-    "🚨 协创数据300857 -4.55%跌至255,接近止损250",
-    "🚨 鹏辉能源300438 -1.39%跌至64.64,接近支撑64",
-    "持仓4只全线浮亏,总浮亏约-6500元(较昨收)",
-    "当日无新仓操作资格:涨跌家数<2000 + 持仓=4只上限"
-  ],
-  "positions_status": [
+  "decision": {
+    "verdict": "🚫下午无新仓备选",
+    "reasons": [
+      "daily_plan预设:8/20新仓全面禁入(8/19崩盘+持仓满+3只破止损)",
+      "崩盘后仅第2天,daily_plan要求至少2-3个交易日不开新仓",
+      "科技板块仍分化偏弱:存储/半导体/电子气体午后继续领跌",
+      "鹏辉能源从开盘+1.59%反转至-2.45%,反弹不稳固",
+      "板块强度:医药(+5.2%)独强,科技主线(存储/半导体/CPO)仍弱势,无明确主攻方向"
+    ],
+    "conditions_for_future_entry": [
+      "再观察1-2个交易日确认市场企稳",
+      "科技板块需出现板块级别止跌信号(涨跌比>1:1且最弱股不创新低)",
+      "13:15最终确认时若市场维持强势,可纳入8/21备选评估"
+    ]
+  },
+  "watch_stocks_status": [
     {
-      "code": "300408",
-      "name": "三环集团",
-      "quantity": 300,
-      "cost": 126.21,
-      "stop_loss": 122.0,
-      "realtime_price": 114.6,
-      "change_pct": -7.57,
-      "vs_stop_loss": "已击穿止损-6.0%",
-      "action": "🚨 应立即清仓止损,13:30前执行"
+      "code": "603986",
+      "name": "兆易创新",
+      "source": "transit_pool",
+      "close_819": 403.71,
+      "price_now": 404.81,
+      "change_today": "+0.27%",
+      "support": 380,
+      "resistance": 430,
+      "stop_loss": 365,
+      "comment": "盘中窄幅震荡,存储板块情绪修复有限,未企稳突破"
     },
     {
-      "code": "300503",
-      "name": "昊志机电",
-      "quantity": 500,
-      "cost": 80.18,
-      "stop_loss": 73.0,
-      "realtime_price": 73.98,
-      "change_pct": -9.78,
-      "vs_stop_loss": "距止损仅1.3%",
-      "action": "🚨 极高风险,盘中触及73即清,利好兑现暴跌"
+      "code": "688012",
+      "name": "中微公司",
+      "source": "transit_pool",
+      "close_819": 372.0,
+      "price_now": 374.5,
+      "change_today": "+0.67%",
+      "support": 360,
+      "resistance": 395,
+      "stop_loss": 350,
+      "comment": "H1净利+300%支撑,但盘中波动3.3%(370-382),尚未站稳380"
     },
     {
-      "code": "300857",
-      "name": "协创数据",
-      "quantity": 100,
-      "cost": 254.14,
-      "stop_loss": 250.0,
-      "realtime_price": 255.01,
-      "change_pct": -4.55,
-      "vs_stop_loss": "距止损2.0%",
-      "action": "🚨 接近止损,密切监控250元"
+      "code": "300442",
+      "name": "润泽科技",
+      "source": "transit_pool",
+      "close_819": 65.38,
+      "price_now": 65.29,
+      "change_today": "-0.14%",
+      "support": 64,
+      "resistance": 72,
+      "stop_loss": 63,
+      "comment": "平盘震荡,接近支撑64但未企稳,PE22低但板块弱"
     },
     {
       "code": "300438",
       "name": "鹏辉能源",
-      "quantity": 800,
-      "cost": 60.227,
-      "stop_loss": 57.0,
-      "realtime_price": 64.64,
-      "change_pct": -1.39,
-      "vs_stop_loss": "距止损11.9%",
-      "action": "暂时安全,关注64元支撑"
+      "source": "holding",
+      "close_819": 62.4,
+      "price_now": 60.87,
+      "change_today": "-2.45%",
+      "support": 60,
+      "resistance": 66,
+      "stop_loss": 57,
+      "comment": "⚠️高开低走!开盘63.39→60.87,逼近60元支撑和57止损,需密切监控"
     }
   ],
   "candidates": [],
-  "conclusion": "下午无新仓备选。原因：①涨跌家数534:4632远不足2000;②持仓4只=上限无空位;③大盘暴跌日;④三环已击穿止损需立即处理;⑤昊志逼近止损。核心任务:持仓止损风控,非开新仓。",
-  "realtime_prices_used": {
-    "300438_鹏辉能源": {
-      "price": 64.64,
-      "time": "~10:11",
-      "source": "wenxingonline"
+  "observe_list": [
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "reason": "H1+1091%+SK回购催化,但需等380确认支撑后再评估",
+      "earliest_entry": "8/21或更晚"
     },
-    "300857_协创数据": {
-      "price": 255.01,
-      "time": "~10:33",
-      "source": "stcn"
+    {
+      "code": "688012",
+      "name": "中微公司",
+      "reason": "H1+300%硬支撑,需等站稳380后再评估",
+      "earliest_entry": "8/21或更晚"
     },
-    "300503_昊志机电": {
-      "price": 73.98,
-      "time": "~盘中",
-      "source": "跌股榜"
-    },
-    "300408_三环集团": {
-      "price": 114.6,
-      "time": "~10:51",
-      "source": "fupanwang"
-    },
-    "300442_润泽科技": {
-      "price": 66.81,
-      "time": "~10:19",
-      "source": "aastocks"
-    },
-    "688012_中微公司": {
-      "price": 377.24,
-      "time": "~10:19",
-      "source": "aastocks"
-    },
-    "603986_兆易创新": {
-      "price": 407.03,
-      "time": "~10:13",
-      "source": "stcn"
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "reason": "CPO核心+中报+33.92%,需等265-270企稳确认",
+      "earliest_entry": "8/21或更晚"
     }
-  }
+  ]
 }
