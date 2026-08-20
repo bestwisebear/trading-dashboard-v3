@@ -1,81 +1,129 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T08:10:00+08:00",
+    "last_updated": "2026-08-20T13:16:00+08:00",
     "date": "2026-08-20",
-    "session": "midday_final_check",
-    "task": "午间最终确认新仓标的"
+    "session": "intraday_1315",
+    "check_type": "13:15最终确认",
+    "verdict": "🚫今日取消新仓"
   },
   "market_snapshot": {
-    "sh_index": 3912.17,
-    "sh_change_pct": -1.96,
-    "chinext_change_pct": -4.98,
-    "chinext50_change_pct": -6.07,
-    "up_count": 580,
-    "down_count": 4927,
-    "limit_up": 31,
-    "limit_down": 36,
-    "half_day_amount_yi": 16200,
-    "est_full_day_amount_yi": 22000,
-    "sector_up": 7,
-    "sector_down": 46,
-    "note": "8/19午间:年内最惨烈科技崩盘!美股费半-4.98%+美债30Y破5.3%+中东局势升级三重利空"
+    "timestamp": "2026-08-20T13:00:00+08:00",
+    "indices": {
+      "shanghai": {
+        "value": 3907.24,
+        "change_pct": 0.33
+      },
+      "shenzhen": {
+        "value": 14004.39,
+        "change_pct": 0.97
+      },
+      "chinext": {
+        "value": 3504.72,
+        "change_pct": 1.03
+      }
+    },
+    "up_count": 4300,
+    "down_count": 1100,
+    "up_down_ratio": "3.9:1",
+    "half_day_turnover": "1.37万亿(半日)",
+    "est_full_day_turnover": "约2.0-2.2万亿(缩量2469亿)",
+    "market_comment": "修复日第2天:医药独强+科技超跌反弹,涨跌比3.9:1(>2000✓),但成交明显缩量,增量资金未进场"
   },
   "gate_check": {
-    "gate_1_up_count_ge_2000": {
-      "value": 580,
-      "threshold": 2000,
-      "pass": false,
-      "note": "涨跌家数580:4927远<2000，大盘普跌"
+    "gate_1_涨跌比": {
+      "pass": true,
+      "value": "4300:1100",
+      "note": ">2000 ✓"
     },
-    "gate_2_amount_sufficient": {
-      "value": 16200,
-      "threshold": 20000,
+    "gate_2_daily_plan": {
       "pass": false,
-      "note": "半日成交1.62万亿缩量，预计全天~2.2万亿<2万亿"
+      "value": "全面禁入",
+      "note": "daily_plan预设8/20新仓全面禁入"
     },
-    "gate_3_sector_ratio_ok": {
-      "value": "7:46",
-      "threshold": "多数板块上涨",
+    "gate_3_崩盘天数": {
       "pass": false,
-      "note": "仅煤炭/银行/航运/化工等7个板块上涨，46个板块下跌，科技全面崩盘"
+      "value": "仅第2天",
+      "note": "8/19崩盘后仅第2天,daily_plan要求至少2-3个交易日不开新仓"
     },
-    "gate_4_position_slot_available": {
-      "value": 4,
-      "threshold": "<4",
+    "gate_4_止损仓": {
       "pass": false,
-      "note": "持仓4只=上限，无空位。除非先止损减仓腾出仓位"
+      "value": "3只破止损未清",
+      "note": "协创/昊志/三环仍破止损,优先执行止损清仓"
     },
-    "gate_5_bottom_signal": {
-      "value": false,
-      "threshold": true,
+    "gate_5_板块强度": {
       "pass": false,
-      "note": "无底部信号。大盘暴跌日，非建仓时机"
+      "value": "医药独强/科技仍弱",
+      "note": "医药(+主力净流入63亿)独强,但科技主线(存储/半导体/CPO)仅超跌反弹,无明确主攻方向"
     },
-    "gate_6_new_target_in_watchlist": {
-      "value": false,
-      "threshold": true,
+    "gate_6_外围环境": {
       "pass": false,
-      "note": "无合适候选标的。全市场科技股暴跌中"
+      "value": "FOMC偏鹰+美伊恶化",
+      "note": "FOMC纪要偏鹰(多位官员主张加息)+美伊局势恶化+油价高位,科技股承压"
     },
-    "gate_7_risk_budget": {
-      "value": -519.31,
-      "threshold": ">0",
+    "gate_7_持仓状态": {
       "pass": false,
-      "note": "月度PnL已翻负-519元，风险预算耗尽"
+      "value": "总资产-6.5%",
+      "note": "今日浮亏-13825(-6.5%),月度-1.13%,账户处于回撤状态"
     }
   },
-  "gate_summary": "通过0/7，全部不满足",
-  "verdict": "NO_BUY",
-  "verdict_detail": "🚨8/20新仓全面禁入(8/19红绿<2000+持仓4只满+3只破止损未执行)",
-  "risk_alerts": [
-    "🚨🚨🚨 昊志机电300503: 71.49已破止损73!亏-10.8%!下午开盘必须清仓500股!",
-    "🚨🚨🚨 三环集团300408: 112.20已破止损122!亏-11.1%!下午开盘必须清仓300股!",
-    "🚨🚨 协创数据300857: 251.51距止损250仅0.6%!跌破250必须清仓!",
-    "🚨 鹏辉能源300438: 63.39仍盈利+5.3%，唯一盈利仓，守57止损",
-    "午后机器人板块继续走低，10余股触及跌停",
-    "美联储7月FOMC纪要今晚发布，若偏鹰将进一步打压科技股",
-    "全球长债收益率创多年新高，科技股估值压制短期难解除"
+  "decision": {
+    "verdict": "🚫今日取消新仓",
+    "confidence": "高",
+    "reasons": [
+      "【核心否决】daily_plan明确预设8/20新仓全面禁入(崩盘后止损日)",
+      "【规则否决】8/19科技崩盘后仅第2天,按规则需至少2-3个交易日不开新仓",
+      "【优先级否决】3只持仓(协创/昊志/三环)仍破止损,当务之急是执行止损清仓而非开新仓",
+      "【量能否决】半日成交1.37万亿较上日缩量2469亿,增量资金未进场,修复力度弱",
+      "【外围否决】FOMC纪要偏鹰(许多官员主张加息)+美伊局势恶化+WTI原油84.94高位",
+      "【板块否决】医药独强但科技主线(持仓方向)仅超跌反弹,CPO/存储/半导体反弹力度不足"
+    ],
+    "conditions_for_future_entry": [
+      "8/21或8/22: 确认市场企稳(连续2日涨跌比>1:1且指数不破新低)",
+      "科技板块出现板块级止跌信号(涨跌比>1:1且最弱股不创新低)",
+      "3只止损仓完成清仓,账户回归仅鹏辉能源持仓",
+      "关注标的需站稳支撑位: 江波龙370/兆易创新380/天孚通信265"
+    ]
+  },
+  "candidates_confirmed": [],
+  "observe_list_for_tomorrow": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "sector": "存储",
+      "gates": 5,
+      "support": 370,
+      "resistance": 415,
+      "stop_loss": 360,
+      "reason": "PE13.6极低+SK海力士回购+存储Q3涨价50%催化,8/19-8.05%超跌",
+      "entry_condition": "站稳370+存储板块止跌确认"
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "sector": "存储芯片",
+      "gates": 5,
+      "support": 380,
+      "resistance": 430,
+      "stop_loss": 365,
+      "reason": "H1净利+1091%+Q2环比+269%!SK回购+存储涨价催化共振",
+      "entry_condition": "站稳380+成交量放大确认"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "sector": "光模块/CPO",
+      "gates": 5,
+      "support": 265,
+      "resistance": 290,
+      "stop_loss": 255,
+      "reason": "CPO核心+中报+33.92%硬支撑,8/19板块跌幅最小(-4.82%)",
+      "entry_condition": "265支撑不破+CPO板块止跌"
+    }
   ],
-  "candidates": [],
-  "afternoon_plan": "13:30开盘立即执行止损: ①昊志机电500股全部清仓 ②三环集团300股全部清仓 ③密切监控协创250止损线。下午13:30-14:30只观察不动手，禁止开新仓。"
+  "priority_actions": [
+    "🚨P0: 协创数据(100股)止损清仓 - 当前248.07仍<止损250",
+    "🚨P0: 昊志机电(500股)止损清仓 - 当前71.94仍<止损73(虽反弹但距止损仅1.5%)",
+    "🚨P0: 三环集团(300股)止损清仓 - 当前113.49远低于止损122",
+    "📌P1: 鹏辉能源(800股)监控60元支撑 - 当前60.88(-2.44%),60破则减至57止损"
+  ]
 }
