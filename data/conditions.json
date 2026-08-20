@@ -1,52 +1,55 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T08:25:00+08:00",
-    "date": "2026-08-19",
+    "last_updated": "2026-08-20T08:10:00+08:00",
+    "date": "2026-08-20",
     "session": "pre_market"
   },
   "market_conditions": {
     "trend": "震荡",
     "volume_level": "高量(2.42万亿)",
     "breadth": "弱(38%上涨)",
-    "style": "防御(农业)+科技休整"
+    "style": "防御(农业)+科技休整",
+    "date": "2026-08-20",
+    "status": "🔴 新仓禁入",
+    "reason": "8/19红绿5069:449<2000+持仓4只满+3只破止损未执行需补执行",
+    "next_window": "至少8/22后(2-3个交易日观察期)"
   },
   "position_conditions": {
     "ring_alarm": "三环集团距止损仅1.6%",
     "watchlist_update": "昊志机电补入观察池",
-    "sector_rotation": "MLCC三股→机器人+MLCC龙头"
+    "sector_rotation": "MLCC三股→机器人+MLCC龙头",
+    "count": 4,
+    "status": "AT_LIMIT",
+    "stop_loss_pending": [
+      "协创数据",
+      "昊志机电",
+      "三环集团"
+    ]
   },
   "stop_loss_orders": [
     {
-      "code": "300408",
-      "name": "三环集团",
-      "trigger": "开盘价<122.00",
-      "action": "清仓300股",
-      "priority": "highest",
-      "note": "🚨最高优先级,距止损1.6%"
+      "code": "300857",
+      "name": "协创数据",
+      "stop_price": 250.0,
+      "status": "🚨BREACHED_今日必清"
     },
     {
       "code": "300503",
       "name": "昊志机电",
-      "trigger": "开盘价<73.00",
-      "action": "清仓500股",
-      "priority": "high",
-      "note": "止损位,严守"
+      "stop_price": 73.0,
+      "status": "🚨BREACHED_今日必清"
     },
     {
-      "code": "300857",
-      "name": "协创数据",
-      "trigger": "开盘价<250.00",
-      "action": "清仓100股",
-      "priority": "high",
-      "note": "止损位,严守"
+      "code": "300408",
+      "name": "三环集团",
+      "stop_price": 122.0,
+      "status": "🚨BREACHED_今日必清"
     },
     {
       "code": "300438",
       "name": "鹏辉能源",
-      "trigger": "开盘价<57.00",
-      "action": "清仓800股",
-      "priority": "high",
-      "note": "止损位,严守"
+      "stop_price": 57.0,
+      "status": "🟢未触发"
     }
   ],
   "take_profit_orders": [
@@ -110,6 +113,14 @@
       "code": "300503",
       "name": "昊志机电",
       "rule": "减仓后禁当日接回,下交易日再评估"
+    },
+    {
+      "scope": "8/20全局",
+      "rule": "🚨8/20新仓全面禁入,持仓3只破止损需开盘-30分钟内补清仓"
+    },
+    {
+      "scope": "8/20清仓后",
+      "rule": "至少2-3个交易日不开新仓(纪律反思)"
     }
   ],
   "notes": "8/19盘前条件单核心:持仓风险管控>开新仓。三环止损为最高优先级,昊志分批锁利为次优先。"

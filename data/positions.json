@@ -1,10 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-19T16:53:00+08:00",
-    "date": "2026-08-19",
+    "last_updated": "2026-08-20T08:10:00+08:00",
+    "date": "2026-08-20",
     "session": "close",
     "source": "盘后收盘价(15:00)",
-    "price_source_note": "收盘价(session=close),PnL有效"
+    "price_source_note": "收盘价(session=close),PnL有效",
+    "note": "🚨8/20盘前:3只破止损未执行需开盘-30分钟内补清仓!鹏辉观察"
   },
   "summary": {
     "total_market_value": 142342.0,
