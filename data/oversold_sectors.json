@@ -1,121 +1,125 @@
 {
   "meta": {
-    "date": "2026-08-20",
-    "last_updated": "2026-08-20T08:10:00+08:00",
-    "data_as_of": "2026-08-19 收盘"
+    "date": "2026-08-21",
+    "last_updated": "2026-08-21T08:15:00+08:00",
+    "data_as_of": "2026-08-20 收盘 + 8/21盘前消息面",
+    "note": "20日跌幅>10%板块取前5。8/20为缩量修复日(涨跌4096:1347),存储/CPO企稳,机器人/MLCC未修复。8/21隔夜存储/光通信逆势大涨,超跌反弹优先级:存储>CPO>设备>机器人/MLCC。⚠️新仓全面禁入,扫描结果仅供清仓后观察"
   },
   "sectors": [
     {
-      "sector_name": "人形机器人",
-      "change_today": -8.0,
+      "sector_name": "存储芯片",
+      "change_today": 0.2,
       "top3_stocks": [
         {
-          "code": "300503",
-          "name": "昊志机电",
-          "change_pct": -15.18
+          "code": "300223",
+          "name": "北京君正",
+          "change_pct": 0.77
         },
         {
-          "code": "300718",
-          "name": "长盛轴承",
-          "change_pct": -16.06
-        },
-        {
-          "code": "300024",
-          "name": "机器人",
-          "change_pct": -8.46
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "🔴 8/19宇树上市利好兑现,概念股持续承压,暂不抄底",
-      "oversold_priority": "LOW"
-    },
-    {
-      "sector_name": "CPO/光模块",
-      "change_today": -9.5,
-      "top3_stocks": [
-        {
-          "code": "300308",
-          "name": "中际旭创",
-          "change_pct": -9.36
-        },
-        {
-          "code": "002281",
-          "name": "光迅科技",
-          "change_pct": -10.0
-        },
-        {
-          "code": "300394",
-          "name": "天孚通信",
-          "change_pct": -4.82
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "OpenAI亏损扩大+SOX暴跌映射。等企稳后再观察"
-    },
-    {
-      "sector_name": "半导体",
-      "change_today": -8.5,
-      "top3_stocks": [
-        {
-          "code": "002371",
-          "name": "北方华创",
-          "change_pct": -8.24
+          "code": "301308",
+          "name": "江波龙",
+          "change_pct": 0.01
         },
         {
           "code": "603986",
           "name": "兆易创新",
-          "change_pct": -7.56
+          "change_pct": -0.05
+        }
+      ],
+      "can_add_watchlist": true,
+      "note": "🟢🟢 8/21超跌反弹最高优先级:隔夜美光+3.97%/SK海力士+4%逆势大涨+兆易10-20亿注销式回购股东会通过+长江存储IPO辅导验收完成(3个月最快)+大摩Q3 DRAM涨50%。四重催化共振",
+      "oversold_priority": "HIGH"
+    },
+    {
+      "sector_name": "CPO/光模块",
+      "change_today": 0.4,
+      "top3_stocks": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "change_pct": 0.96
+        },
+        {
+          "code": "300502",
+          "name": "新易盛",
+          "change_pct": 0.61
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "change_pct": -0.41
+        }
+      ],
+      "can_add_watchlist": true,
+      "note": "🟢 隔夜Lumentum+6.24%/Marvell+5.79%/AOI+5%光通信逆势大涨,今日有跟涨动能。新易盛股权激励(授予价212元)独立催化。中际旭创守900关口,天孚RSI超买防追高",
+      "oversold_priority": "HIGH-MEDIUM"
+    },
+    {
+      "sector_name": "半导体设备",
+      "change_today": -0.3,
+      "top3_stocks": [
+        {
+          "code": "300604",
+          "name": "长川科技",
+          "change_pct": 1.0
+        },
+        {
+          "code": "002371",
+          "name": "北方华创",
+          "change_pct": -0.06
         },
         {
           "code": "688012",
           "name": "中微公司",
-          "change_pct": -6.61
+          "change_pct": -1.75
         }
       ],
       "can_add_watchlist": false,
-      "note": "半导体设备ETF-7.53%,板块全面崩盘。等缩量企稳信号"
+      "note": "🟡 修复分化:长川+1%但中微-1.75%/北方华创平。台积电A16工艺Q4量产为中期催化。等北方华创收复729(MA20)再评估",
+      "oversold_priority": "MEDIUM"
     },
     {
       "sector_name": "MLCC",
-      "change_today": -7.0,
+      "change_today": -1.8,
       "top3_stocks": [
         {
           "code": "300408",
           "name": "三环集团",
-          "change_pct": -11.61
+          "change_pct": 1.74
         },
         {
           "code": "000636",
           "name": "风华高科",
-          "change_pct": -9.99
+          "change_pct": -5.38
         }
       ],
       "can_add_watchlist": false,
-      "note": "三环/风华均暴跌,持仓三环需止损。板块获利盘集中出逃"
+      "note": "🔴 板块严重分化假强:三环+1.74%但风华-5.38%高量下跌(换手16.26%)。电子纱/电子布涨价消息或带来脉冲,但获利盘出逃未止。持仓三环今日清仓,板块禁入",
+      "oversold_priority": "LOW"
     },
     {
-      "sector_name": "存储芯片",
-      "change_today": -7.8,
+      "sector_name": "人形机器人",
+      "change_today": -3.0,
       "top3_stocks": [
         {
-          "code": "301308",
-          "name": "江波龙",
-          "change_pct": -8.05
+          "code": "300503",
+          "name": "昊志机电",
+          "change_pct": 0.92
         },
         {
-          "code": "688385",
-          "name": "复旦微电",
-          "change_pct": -6.71
+          "code": "sh688017",
+          "name": "绿的谐波",
+          "change_pct": -1.13
         },
         {
-          "code": "002185",
-          "name": "华天科技",
-          "change_pct": -7.17
+          "code": "300024",
+          "name": "机器人",
+          "change_pct": -2.03
         }
       ],
-      "can_add_watchlist": true,
-      "note": "🟢🟢 8/20超跌反弹最高优先级:SK海力士290亿回购+摩根士丹利Q3涨50%双催化",
-      "oversold_priority": "HIGH"
+      "can_add_watchlist": false,
+      "note": "🔴 8/20修复日板块仍跌(长盛轴承-5.8%),宇树次日-18.7%情绪未复。持仓昊志今日清仓。不做超跌反弹",
+      "oversold_priority": "LOW"
     }
   ]
 }
