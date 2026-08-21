@@ -5,23 +5,23 @@
     "session": "close",
     "source": "收盘价(15:00)",
     "price_source_note": "收盘价(session=close),PnL为真实日终PnL",
-    "note": "8/21收盘:鹏辉+3.5%收61.75,三只破止损仓(协创/昊志/三环)连续第4天未清仓。创业板+1.43%"
+    "note": "8/21收盘:鹏辉+3.5%收61.75,三只破止损仓连续第4天未清仓。创业板+1.43%"
   },
   "summary": {
     "total_market_value": 143136.0,
     "available_cash": 54212.69,
     "total_assets": 197348.69,
-    "net_today": -114.0,
-    "today_return": -114.0,
+    "net_today": 2122.0,
+    "today_return": 2122.0,
     "total_pnl_amount": -4773.31,
     "monthly_pnl": -2651.31,
-    "prev_close_assets": 211565.69,
+    "prev_close_assets": 195226.69,
     "position_ratio": 72.5,
-    "today_return_rate": -7.72,
-    "monthly_return_rate": -2.39,
+    "today_return_rate": 1.09,
+    "monthly_return_rate": -1.33,
     "initial_capital": 200000,
     "position_count": 4,
-    "note": "收盘:鹏辉+3.5%,三只破止损仓连续第4天未清仓"
+    "note": "收盘:鹏辉+3.5%,三只破止损仓(协创/昊志/三环)连续第4天未清仓"
   },
   "positions": [
     {
