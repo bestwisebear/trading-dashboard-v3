@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-21T11:37:13+08:00",
+    "last_updated": "2026-08-21T17:04:48+08:00",
     "date": "2026-08-21",
-    "session": "intraday",
-    "source": "午间行情(11:36)",
+    "session": "close",
+    "source": "收盘价(15:00)",
     "price_source_note": "收盘价(session=close),PnL为真实日终PnL",
-    "note": "8/21午间:鹏辉+4.19%强势反弹至62.16,协创/昊志/三环仍破止损未清仓(最后通牒日)。深成指+0.63%/创业板+1.21%低开高走"
+    "note": "8/21收盘:鹏辉+3.5%收61.75,三只破止损仓(协创/昊志/三环)连续第4天未清仓。创业板+1.43%"
   },
   "summary": {
-    "total_market_value": 143250.0,
+    "total_market_value": 143136.0,
     "available_cash": 54212.69,
-    "total_assets": 197462.69,
-    "net_today": 2236.0,
-    "today_return": 2236.0,
+    "total_assets": 197348.69,
+    "net_today": -114.0,
+    "today_return": -114.0,
     "total_pnl_amount": -4773.31,
-    "monthly_pnl": -2537.31,
+    "monthly_pnl": -2651.31,
     "prev_close_assets": 211565.69,
     "position_ratio": 72.5,
     "today_return_rate": -7.72,
     "monthly_return_rate": -2.39,
     "initial_capital": 200000,
     "position_count": 4,
-    "note": "午间:鹏辉+4.19%反弹至62.16(进入61-62.7减仓观察区),三只破止损仓仍未清仓"
+    "note": "收盘:鹏辉+3.5%,三只破止损仓连续第4天未清仓"
   },
   "positions": [
     {
@@ -30,14 +30,14 @@
       "quantity": 800,
       "cost_price": 60.227,
       "cost_source": "broker_screenshot",
-      "current_price": 62.16,
-      "price_updated_at": "2026-08-21T11:37:13+08:00",
+      "current_price": 61.75,
+      "price_updated_at": "2026-08-21T17:04:48+08:00",
       "buy_date": "2026-08-06",
       "holding_days": 14,
       "stop_loss": 57.0,
       "stop_profit": 70.0,
-      "pnl_percent": 3.21,
-      "pnl_amount": 1546.4,
+      "pnl_percent": 2.53,
+      "pnl_amount": 1218.4,
       "sector": "锂电池",
       "status": "holding_gain",
       "notes": "收盘59.66(-4.39%)。高开63.39后持续走低,收59.66。已破止损57上方+4.7%,浮亏-0.94%(-449元)。锂电池板块今日未受医药带动,逆势下跌",
@@ -49,9 +49,9 @@
           63
         ]
       },
-      "price_source": "intraday_20260821",
-      "session": "intraday",
-      "market_value": 49728.0
+      "price_source": "close_20260821",
+      "session": "close",
+      "market_value": 49400.0
     },
     {
       "code": "300857",
@@ -59,14 +59,14 @@
       "quantity": 100,
       "cost_price": 254.14,
       "cost_source": "broker_screenshot",
-      "current_price": 247.39,
-      "price_updated_at": "2026-08-21T11:37:13+08:00",
+      "current_price": 247.41,
+      "price_updated_at": "2026-08-21T17:04:48+08:00",
       "buy_date": "2026-08-14",
       "holding_days": 6,
       "stop_loss": 250.0,
       "stop_profit": 280.0,
-      "pnl_percent": -2.66,
-      "pnl_amount": -675.0,
+      "pnl_percent": -2.65,
+      "pnl_amount": -673.0,
       "sector": "算力租赁",
       "status": "🚨STOP_LOSS_BREACHED",
       "notes": "收盘247.38(-0.12%)。低开248.50,最低242.86,收于247.38。仍低于止损250!浮亏-2.66%(-676元)。今日未执行清仓→违规延续",
@@ -78,9 +78,9 @@
           260
         ]
       },
-      "price_source": "intraday_20260821",
-      "session": "intraday",
-      "market_value": 24739.0
+      "price_source": "close_20260821",
+      "session": "close",
+      "market_value": 24741.0
     },
     {
       "code": "300503",
@@ -88,14 +88,14 @@
       "quantity": 500,
       "cost_price": 80.18,
       "cost_source": "broker_screenshot",
-      "current_price": 69.25,
-      "price_updated_at": "2026-08-21T11:37:13+08:00",
+      "current_price": 69.65,
+      "price_updated_at": "2026-08-21T17:04:48+08:00",
       "buy_date": "2026-08-18",
       "holding_days": 2,
       "stop_loss": 73.0,
       "stop_profit": 90.0,
-      "pnl_percent": -13.63,
-      "pnl_amount": -5465.0,
+      "pnl_percent": -13.13,
+      "pnl_amount": -5265.0,
       "sector": "机器人概念",
       "status": "🚨STOP_LOSS_BREACHED",
       "notes": "收盘70.19(+0.92%)。连续2日反弹(69.55→70.19),远低于成本80.18。仍低于止损73!浮亏-12.46%(-4995元)。机器人板块利空持续",
@@ -107,9 +107,9 @@
           80
         ]
       },
-      "price_source": "intraday_20260821",
-      "session": "intraday",
-      "market_value": 34625.0
+      "price_source": "close_20260821",
+      "session": "close",
+      "market_value": 34825.0
     },
     {
       "code": "300408",
@@ -117,14 +117,14 @@
       "quantity": 300,
       "cost_price": 126.21,
       "cost_source": "broker_screenshot",
-      "current_price": 113.86,
-      "price_updated_at": "2026-08-21T11:37:13+08:00",
+      "current_price": 113.9,
+      "price_updated_at": "2026-08-21T17:04:48+08:00",
       "buy_date": "2026-08-18",
       "holding_days": 2,
       "stop_loss": 122.0,
       "stop_profit": 145.0,
-      "pnl_percent": -9.79,
-      "pnl_amount": -3705.0,
+      "pnl_percent": -9.75,
+      "pnl_amount": -3693.0,
       "sector": "MLCC",
       "status": "🚨STOP_LOSS_BREACHED",
       "notes": "收盘111.51(+1.74%)。连续2日反弹(109.60→111.51),远低于成本126.21。仍低于止损122!浮亏-11.65%(-4410元)。MLCC板块分化",
@@ -136,9 +136,9 @@
           125
         ]
       },
-      "price_source": "intraday_20260821",
-      "session": "intraday",
-      "market_value": 34158.0
+      "price_source": "close_20260821",
+      "session": "close",
+      "market_value": 34170.0
     }
   ]
 }
