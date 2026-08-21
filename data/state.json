@@ -1,31 +1,31 @@
 {
   "meta": {
-    "last_updated": "2026-08-21T13:16:00+08:00",
+    "last_updated": "2026-08-21T17:04:48+08:00",
     "data_date": "2026-08-21",
-    "source": "午间行情(11:36)",
-    "session": "intraday",
+    "source": "收盘价(15:00)",
+    "session": "close",
     "data_as_of": "2026-08-20 盘后",
-    "note": "8/21午间:修复state.positions市值口径对齐午间价(原为8/20收盘价,差今日浮盈2236);鹏辉+3.62%反弹,3只破止损仓最后通牒日"
+    "note": "8/21收盘:三只破止损仓连续第4天未清仓(最后通牒日已过),鹏辉+3.5%唯一回血"
   },
   "current": {
-    "total_assets": 197462.69,
-    "prev_close_assets": 211565.69,
+    "total_assets": 197348.69,
+    "prev_close_assets": 195226.69,
     "available_cash": 54212.69,
     "initial_capital": 200000,
     "position_count": 4,
     "position_ratio": 72.5,
-    "monthly_pnl": -2537.31,
-    "monthly_return_rate": -1.27,
-    "market_value": 143250.0,
+    "monthly_pnl": -2651.31,
+    "monthly_return_rate": -1.33,
+    "market_value": 143136.0,
     "note": "收盘PnL为真实日终值"
   },
   "today_so_far": {
     "date": "2026-08-21",
-    "net_today": 2236.0,
+    "net_today": 2122.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "intraday",
-    "note": "午间:鹏辉+4.19%至62.16,三只破止损仓仍未清仓"
+    "session": "close",
+    "note": "8/21收盘:0笔交易,三只破止损仓未清仓,鹏辉+3.5%,今日+2122(+1.09%)"
   },
   "positions": [
     {
