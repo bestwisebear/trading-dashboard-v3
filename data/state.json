@@ -1,31 +1,31 @@
 {
   "meta": {
-    "last_updated": "2026-08-20T20:55:00+08:00",
-    "data_date": "2026-08-20",
-    "source": "收盘价(15:00)",
-    "session": "close",
+    "last_updated": "2026-08-21T11:37:13+08:00",
+    "data_date": "2026-08-21",
+    "source": "午间行情(11:36)",
+    "session": "intraday",
     "data_as_of": "2026-08-20 盘后",
-    "note": "晚间复盘:今日0操作,3只破止损未清仓(协创/昊志/三环),鹏辉逆势-4.39%。8/21交割日最后通牒清仓,继续禁新仓"
+    "note": "8/21午间:鹏辉+4.19%反弹,三只破止损仓(协创/昊志/三环)仍持仓未清仓,最后通牒日"
   },
   "current": {
-    "total_assets": 195226.69,
+    "total_assets": 197462.69,
     "prev_close_assets": 211565.69,
     "available_cash": 54212.69,
     "initial_capital": 200000,
     "position_count": 4,
-    "position_ratio": 72.2,
-    "monthly_pnl": -4773.31,
-    "monthly_return_rate": -2.39,
-    "market_value": 141014.0,
+    "position_ratio": 72.5,
+    "monthly_pnl": -2537.31,
+    "monthly_return_rate": -1.27,
+    "market_value": 143250.0,
     "note": "收盘PnL为真实日终值"
   },
   "today_so_far": {
-    "date": "2026-08-20",
-    "net_today": -16339.0,
+    "date": "2026-08-21",
+    "net_today": 2236.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "close",
-    "note": "收盘:沪指+0.24%,鹏辉-4.39%拖累,协创/昊志/三环小幅反弹但远低于止损"
+    "session": "intraday",
+    "note": "午间:鹏辉+4.19%至62.16,三只破止损仓仍未清仓"
   },
   "positions": [
     {
