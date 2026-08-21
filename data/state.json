@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-21T11:37:13+08:00",
+    "last_updated": "2026-08-21T13:16:00+08:00",
     "data_date": "2026-08-21",
     "source": "午间行情(11:36)",
     "session": "intraday",
     "data_as_of": "2026-08-20 盘后",
-    "note": "8/21午间:鹏辉+4.19%反弹,三只破止损仓(协创/昊志/三环)仍持仓未清仓,最后通牒日"
+    "note": "8/21午间:修复state.positions市值口径对齐午间价(原为8/20收盘价,差今日浮盈2236);鹏辉+3.62%反弹,3只破止损仓最后通牒日"
   },
   "current": {
     "total_assets": 197462.69,
@@ -35,7 +35,7 @@
       "cost_price": 60.227,
       "stop_loss": 57.0,
       "buy_date": "2026-08-06",
-      "market_value": 47728.0
+      "market_value": 49728.0
     },
     {
       "code": "300857",
@@ -44,7 +44,7 @@
       "cost_price": 254.14,
       "stop_loss": 250.0,
       "buy_date": "2026-08-14",
-      "market_value": 24738.0
+      "market_value": 24739.0
     },
     {
       "code": "300503",
@@ -53,7 +53,7 @@
       "cost_price": 80.18,
       "stop_loss": 73.0,
       "buy_date": "2026-08-18",
-      "market_value": 35095.0
+      "market_value": 34625.0
     },
     {
       "code": "300408",
@@ -62,7 +62,7 @@
       "cost_price": 126.21,
       "stop_loss": 122.0,
       "buy_date": "2026-08-18",
-      "market_value": 33453.0
+      "market_value": 34158.0
     }
   ],
   "validation": {
