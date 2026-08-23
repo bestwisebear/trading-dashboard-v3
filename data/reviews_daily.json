@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-08-22T20:55:00+08:00",
+    "last_updated": "2026-08-23T20:45:00+08:00",
     "date": "2026-08-21",
-    "total_records": 14,
+    "total_records": 16,
     "session": "night"
   },
   "records": [
@@ -737,6 +737,62 @@
         "严禁追涨政策利好脉冲(财政贴息/网信委/宏观发力提效均属中长期催化)",
         "周末复盘纪律失效根因,下周一重建执行纪律"
       ]
+    },
+    {
+      "date": "2026-08-22",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "trade_count": 0,
+      "violation_count": 0,
+      "execution_score": 10,
+      "discipline_score": 10,
+      "net_today": 0,
+      "today_return": 0,
+      "total_pnl_amount": -2651.31,
+      "key_decisions": [
+        "周末非交易日,无操作",
+        "8/24(周一)唯一任务=无条件清仓3只破止损仓(协创/昊志/三环)",
+        "周末晚间消息面整理:政策底强化(国常会通信网+消费贴息)+外围利空(美债5.27%)"
+      ],
+      "operation_analysis": {
+        "good": "周末无冲动操作,未因政策利好改变清仓计划",
+        "bad": "3只破止损仓连续拖延(自8/18起),周一必须执行",
+        "improvement": "周一9:25前预挂市价卖单,机械执行不给犹豫空间"
+      },
+      "planned_executed": [],
+      "planned_not_executed": [],
+      "unplanned_actions": [],
+      "market_review": "周末非交易日。上周五(8/21)收盘:三大指数温和收涨,成交萎缩至1.89万亿(破2万亿)。锂矿+4.96%领涨,电子行业周主力净流出380亿+",
+      "emotion_state": "平静,清仓模式明确,不抱侥幸",
+      "tomorrow_focus": "🚨8/24无条件清仓:协创100股/昊志500股/三环300股全部市价清仓。鹏辉能源:破57清,反弹61-62.7乏力减半"
+    },
+    {
+      "date": "2026-08-23",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "trade_count": 0,
+      "violation_count": 0,
+      "execution_score": 10,
+      "discipline_score": 10,
+      "net_today": 0,
+      "today_return": 0,
+      "total_pnl_amount": -2651.31,
+      "key_decisions": [
+        "周末非交易日,无操作",
+        "8/24(周一)唯一任务=无条件清仓3只破止损仓(协创/昊志/三环)",
+        "周末晚间消息面整理:政策底强化(国常会通信网+消费贴息)+外围利空(美债5.27%)"
+      ],
+      "operation_analysis": {
+        "good": "周末无冲动操作,未因政策利好改变清仓计划",
+        "bad": "3只破止损仓连续拖延(自8/18起),周一必须执行",
+        "improvement": "周一9:25前预挂市价卖单,机械执行不给犹豫空间"
+      },
+      "planned_executed": [],
+      "planned_not_executed": [],
+      "unplanned_actions": [],
+      "market_review": "周末非交易日。上周五(8/21)收盘:三大指数温和收涨,成交萎缩至1.89万亿(破2万亿)。锂矿+4.96%领涨,电子行业周主力净流出380亿+",
+      "emotion_state": "平静,清仓模式明确,不抱侥幸",
+      "tomorrow_focus": "🚨8/24无条件清仓:协创100股/昊志500股/三环300股全部市价清仓。鹏辉能源:破57清,反弹61-62.7乏力减半"
     }
   ]
 }

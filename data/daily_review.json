@@ -1,24 +1,24 @@
 {
   "meta": {
-    "last_updated": "2026-08-21T20:50:00+08:00",
-    "date": "2026-08-21",
-    "session": "night"
+    "last_updated": "2026-08-23T20:45:00+08:00",
+    "date": "2026-08-23",
+    "session": "weekend_evening"
   },
   "daily_metrics": {
     "trade_count": 0,
     "violation_count": 0,
     "realized_pnl": 0,
-    "net_today": 2122.0,
-    "net_today_pct": 1.09,
+    "net_today": 0,
+    "net_today_pct": 0,
     "total_assets": 197348.69,
-    "prev_close_assets": 195226.69,
+    "prev_close_assets": 197348.69,
     "total_pnl": -2651.31,
     "total_pnl_pct": -1.33,
     "monthly_pnl": -2651.31,
-    "source": "收盘价验证(8/21)+state.json;8/22周末交叉校验通过,total_pnl基准修正(-2651.31)"
+    "source": "周末检查点:数据截至8/21收盘,8/22-23非交易日无变化"
   },
-  "date": "2026-08-21",
+  "date": "2026-08-23",
   "score": 10,
   "score_detail": "execution=10,discipline=10",
-  "note": "🚨最后通牒日再次失效!3只破止损仓(协创/昊志/三环)连续第4天未清仓,0操作=纪律形同虚设。仅鹏辉+3.5%回血,今日+2122(+1.09%),月度-2651(-1.33%)。下周一(8/24)唯一任务=无条件清仓3只破止损仓"
+  "note": "周末检查点:无交易无操作。8/24(周一)唯一任务=无条件清仓3只破止损仓(协创/昊志/三环)。周末消息面偏暖但外围利空加剧(美债5.27%),一切不改变止损执行纪律"
 }
