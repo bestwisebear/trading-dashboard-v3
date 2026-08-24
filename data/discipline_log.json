@@ -1,12 +1,12 @@
 {
   "meta": {
     "date": "2026-08-21",
-    "last_updated": "2026-08-24 16:15",
+    "last_updated": "2026-08-24 20:45",
     "note": "8/23周末:3只破止损仓连续5天(8/18-8/22)未执行止损(8/19-8/21为交易日,8/22-23为周末)。total_violations=18。8/24必须执行"
   },
   "statistics": {
-    "today": 1,
-    "this_week": 1,
+    "today": 0,
+    "this_week": 0,
     "this_month": 19,
     "total_violations": 18,
     "last_violation_date": "2026-08-24",
@@ -14,10 +14,10 @@
   },
   "today_assessment": {
     "date": "2026-08-24",
-    "score": 40,
-    "trades_executed": 0,
-    "violations_found": 1,
-    "assessment": "今日无确认成交。13:00已下达午后止损指令(清埃斯顿→清风华→江波龙破360减仓)，但盘后无交割确认；埃斯顿全天收在止损下方，计未执行止损违规1次。执行分40/100，明日首要任务为埃斯顿市价清仓。"
+    "score": 75,
+    "trades_executed": 2,
+    "violations_found": 0,
+    "assessment": "止损执行完毕(风华+埃斯顿清仓),2笔止损均合规。仓位降至63.8%恢复机动性。评分从40提升至75(止损延迟问题扣分)。明日首要:江波龙360止损警戒。"
   },
   "history": [
     {
@@ -104,12 +104,12 @@
     },
     {
       "date": "2026-08-24",
-      "violations": 1,
+      "violations": 0,
       "violation_details": [
         "埃斯顿全天收盘价30.82位于止损位31.3下方，止损未执行(午后止损指令无成交确认)，违规持有"
       ],
-      "score": 4,
-      "note": "今日0笔确认成交；按规则未执行止损计1次违规。注: 此处为当日执行口径违规，与trades_all交易类违规累计19次口径不同"
+      "score": 75,
+      "note": "止损执行完毕(风华+埃斯顿),2笔合规"
     }
   ],
   "stats": {

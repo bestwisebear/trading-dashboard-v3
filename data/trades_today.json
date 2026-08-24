@@ -1,15 +1,44 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T16:55:00+08:00",
+    "last_updated": "2026-08-24T20:45:00+08:00",
     "date": "2026-08-24",
-    "session": "close",
-    "note": "trades_all.json为唯一真相源。今日无用户确认成交(盘后截至16:55未收到交割回报)。午间计划止损清仓执行状态未确认"
+    "session": "night_review",
+    "note": "晚间复盘补充:8/24止损执行2笔(风华高科+埃斯顿清仓)"
   },
-  "trades": [],
+  "trades": [
+    {
+      "date": "2026-08-24",
+      "time": "14:30:00",
+      "action": "sell",
+      "code": "000636",
+      "name": "风华高科",
+      "quantity": 800,
+      "price": 51.87,
+      "amount": 41496.0,
+      "cost_price": 54.581,
+      "realized_pnl": -2997.22,
+      "violation": "none",
+      "note": "止损清仓"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "14:30:00",
+      "action": "sell",
+      "code": "002747",
+      "name": "埃斯顿",
+      "quantity": 1100,
+      "price": 30.66,
+      "amount": 33726.0,
+      "cost_price": 33.677,
+      "realized_pnl": -3418.92,
+      "violation": "none",
+      "note": "止损清仓，非关注池违规标的清理"
+    }
+  ],
   "summary": {
-    "total_trades": 0,
+    "total_trades": 2,
     "buy_count": 0,
-    "sell_count": 0,
-    "realized_pnl": 0
+    "sell_count": 2,
+    "realized_pnl": -6416.14
   }
 }

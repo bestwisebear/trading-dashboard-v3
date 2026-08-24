@@ -1,11 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T17:27:00+08:00",
+    "last_updated": "2026-08-24T20:45:00+08:00",
     "data_date": "2026-08-24",
-    "source": "券商截图(东方财富) 17:27收盘",
-    "session": "close",
-    "data_as_of": "2026-08-24 收盘",
-    "note": "8/24收盘：止损执行完毕。风华/埃斯顿清仓。总资产171,519.28，今日-10,470(-5.75%)，累计-28,481(-14.24%)，仓位63.8%"
+    "source": "晚间复盘更新",
+    "session": "night_review",
+    "note": "2026-08-24晚间复盘:止损执行完毕,2只持仓+63.8%仓位+62005现金"
   },
   "current": {
     "total_assets": 171519.28,
@@ -17,22 +16,22 @@
     "monthly_pnl": -28480.72,
     "monthly_return_rate": -14.24,
     "market_value": 109514.0,
-    "note": "2只持仓(江波龙/利通电子)，风华/埃斯顿已清仓，可用资金62005"
+    "note": "2只持仓(江波龙/利通电子),止损执行完毕"
   },
   "today_so_far": {
     "date": "2026-08-24",
     "net_today": -10469.72,
     "trade_count": 2,
     "violation_count": 0,
-    "session": "close",
-    "note": "8/24收盘：止损2笔(风华800股+埃斯顿1100股)，今日-10,470(-5.75%)"
+    "session": "night_review",
+    "note": "止损2笔(风华800股+埃斯顿1100股),实现亏损-6416.14,浮亏-4054"
   },
   "positions": [
     {
       "code": "301308",
       "name": "江波龙",
       "quantity": 200,
-      "cost_price": 381.630,
+      "cost_price": 381.63,
       "stop_loss": 360.0,
       "buy_date": "2026-08-21",
       "market_value": 72980.0
@@ -51,13 +50,18 @@
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "收盘校验通过：市值109514+现金62005.18=171519.18≈171519.28( rounding)"
+    "note": "晚间复盘校验通过:市值109514+现金62005=171519≈171519.28"
   },
   "cumulative": {
     "total_pnl_amount": -28480.72,
     "total_pnl_percent": -14.24,
     "total_trades_count": 52,
-    "total_violations": 18,
-    "start_date": "2026-08-03"
+    "total_violations": 18
+  },
+  "next_action": {
+    "date": "2026-08-25",
+    "action": "持仓观察+禁新仓",
+    "key_levels": "江波龙360止损/利通电子117止损",
+    "risk_events": "8/26英伟达财报+8/27 Jackson Hole"
   }
 }

@@ -2,13 +2,14 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-24T08:46:00+08:00",
+    "last_updated": "2026-08-24T20:45:00+08:00",
     "total_realized_pnl": 25627.04,
     "total_trades": 50,
     "notes": "⚠️8/19-8/21交易明细缺失待补录(周末大幅调仓：清旧4仓鹏辉/协创/昊志/三环，买入风华/埃斯顿/江波龙/利通电子)。当前持仓以券商截图8/24为准，trades_all仅记录到seq50(8/18)",
     "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close",
-    "data_gap": "2026-08-19 ~ 2026-08-21 交易记录缺失"
+    "data_gap": "2026-08-19 ~ 2026-08-21 交易记录缺失",
+    "note": "8/24晚间复盘补充2笔止损清仓(风华+埃斯顿)"
   },
   "trades": [
     {
@@ -691,6 +692,36 @@
       "realized_pnl": 1091.3,
       "violation": "none",
       "notes": "清仓第2笔(共2笔)。MLCC链去重,保留风华出国产瓷"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "14:30:00",
+      "action": "sell",
+      "code": "000636",
+      "name": "风华高科",
+      "quantity": 800,
+      "price": 51.87,
+      "amount": 41496.0,
+      "cost_price": 54.581,
+      "realized_pnl": -2997.22,
+      "violation": "none",
+      "note": "止损清仓，跌破支撑51.88执行",
+      "session": "close"
+    },
+    {
+      "date": "2026-08-24",
+      "time": "14:30:00",
+      "action": "sell",
+      "code": "002747",
+      "name": "埃斯顿",
+      "quantity": 1100,
+      "price": 30.66,
+      "amount": 33726.0,
+      "cost_price": 33.677,
+      "realized_pnl": -3418.92,
+      "violation": "none",
+      "note": "止损清仓，非关注池违规标的清理",
+      "session": "close"
     }
   ],
   "daily_summary": [
