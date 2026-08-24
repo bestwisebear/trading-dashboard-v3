@@ -1,301 +1,399 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T08:15:00+08:00",
+    "last_updated": "2026-08-24T08:46:00+08:00",
     "date": "2026-08-24",
-    "session": "pre_market_0805",
-    "data_basis": "8/21收盘真实行情(最后交易日)+8/24 08:10盘前板块+周末消息面叠加",
-    "screening_criteria": "固定关注池15只+观察名单2只逐只过七道闸 | 持仓4只(3只破止损连续5天未清,8/24=最后通牒清仓日)",
-    "note": "8/24核心任务=清仓3只破止损仓(协创/昊志/三环),零新仓. 周末政策利好密集(国常会通信网7万亿+消费贷贴息5000+长存IPO受理+锂矿爆发+功率半导体涨价)对冲30年美债5.27%新高压力,清仓后纪律观察期(≥3天)候选池优先:江波龙/中际旭创/通富微电/新易盛/浪潮信息"
+    "session": "pre_market",
+    "data_basis": "8/24盘前持仓重建：周末大幅调仓，换入风华/埃斯顿/江波龙/利通电子",
+    "screening_criteria": "7道闸预评估 | 持仓满4只禁新仓 | 纪律重建期",
+    "note": "⚠️4只持仓中仅江波龙在固定关注池，风华/埃斯顿/利通电子均非关注池标的(纪律问题)"
   },
   "watchlist": [
     {
-      "code": "300438",
-      "name": "鹏辉能源",
-      "score": 6,
-      "status": "🟡HOLD_CONDITIONAL",
-      "sector": "锂电池",
-      "today_close": 61.75,
-      "today_change_pct": 3.50,
-      "key_price": {"support": 59.4, "resistance": 63.6, "stop_loss": 57.0},
-      "ma20": 62.72,
-      "ma5": 62.97,
-      "rsi6": 32.68,
-      "rsi12": 44.12,
-      "ma_arrangement": "mixed",
-      "notes": "持仓800股@60.227. 8/21收61.75(+3.50%)唯一健康仓. 周末锂矿爆发(碳酸锂半月+16%/期货+4.12%)+质量强链催化. 8/24策略:守57底线/反弹>61.4减200股锁利/>62.6减400股(半仓)/破59减半/破57全清. 减仓后禁当日回补",
-      "gates": 6
+      "code": "301308",
+      "name": "江波龙",
+      "score": 5,
+      "status": "hold",
+      "sector": "存储",
+      "today_close": 380.66,
+      "today_change_pct": 0.44,
+      "key_price": {
+        "support": 370,
+        "resistance": 415,
+        "stop_loss": 360
+      },
+      "notes": "持仓200股@379.461。PE13.6最低估，H1净利+71528%。重仓41.8%",
+      "gates": 5
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "score": 3,
+      "status": "hold",
+      "sector": "MLCC被动元件",
+      "today_close": 54.67,
+      "today_change_pct": 2.98,
+      "key_price": {
+        "support": 51.88,
+        "resistance": 58,
+        "stop_loss": 51.5
+      },
+      "notes": "持仓800股@54.581。MLCC涨价+国资龙头，但8/19跌停后均线空头未企稳，PE205倍偏高。非关注池",
+      "gates": 3
+    },
+    {
+      "code": "002747",
+      "name": "埃斯顿",
+      "score": 3,
+      "status": "hold",
+      "sector": "工业机器人",
+      "today_close": 33.57,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 31.3,
+        "resistance": 35.7,
+        "stop_loss": 31.3
+      },
+      "notes": "持仓1100股@33.677。国产机器人龙头。非关注池",
+      "gates": 3
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "score": 3,
+      "status": "hold",
+      "sector": "算力租赁/液冷",
+      "today_close": 125.97,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 117,
+        "resistance": 140,
+        "stop_loss": 117
+      },
+      "notes": "持仓200股@125.721。算力租赁+液冷，腾讯50亿长单，但负债率75%+定增摊薄。全新标的",
+      "gates": 3
     },
     {
       "code": "300857",
       "name": "协创数据",
       "score": 1,
-      "status": "🚨SELL_TODAY_LAST_WARNING",
+      "status": "watch",
       "sector": "算力租赁",
       "today_close": 247.41,
-      "today_change_pct": 0.01,
-      "key_price": {"support": 247.4, "resistance": 258.8, "stop_loss": 250.0},
-      "ma20": 240.69,
-      "ma5": 255.75,
-      "rsi6": 37.7,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "持仓100股@254.14. 8/21收247.41破止损250连续5天. 8/24=最后通牒:开盘立即市价清,任何开盘价不改变. 清仓后禁当日回补",
-      "gates": 1
-    },
-    {
-      "code": "300503",
-      "name": "昊志机电",
-      "score": 1,
-      "status": "🚨SELL_TODAY_LAST_WARNING",
-      "sector": "机器人概念",
-      "today_close": 69.65,
-      "today_change_pct": -0.77,
-      "key_price": {"support": 67.7, "resistance": 72.2, "stop_loss": 73.0},
-      "ma20": 69.89,
-      "ma5": 73.63,
-      "rsi6": 44.3,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "持仓500股@80.18(亏损最大-5265). 8/21收69.65破止损73连续5天. 8/24=最后通牒:预挂市价70元(开盘≥69即触发). 质量强链利好不改变清仓. 清仓后禁当日回补",
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 240,
+        "resistance": 252,
+        "stop_loss": 240
+      },
+      "notes": "8/21已清仓(原破止损250)。回到关注池观察",
       "gates": 1
     },
     {
       "code": "300408",
       "name": "三环集团",
-      "score": 1,
-      "status": "🚨SELL_TODAY_LAST_WARNING",
+      "score": 3,
+      "status": "watch",
       "sector": "MLCC",
-      "today_close": 113.90,
-      "today_change_pct": 2.14,
-      "key_price": {"support": 111.5, "resistance": 124, "stop_loss": 122.0},
-      "ma20": 119.37,
-      "ma5": 117.83,
-      "rsi6": 22.7,
-      "ma_arrangement": "mixed",
-      "notes": "持仓300股@126.21. 8/21收113.90破止损122连续5天,RSI6=22.7超卖. 8/24=最后通牒:开盘立即市价清,冲高115即清. 超卖不构成等反弹理由. 清仓后禁当日回补",
-      "gates": 1
+      "today_close": 113.9,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 105,
+        "resistance": 118,
+        "stop_loss": 105
+      },
+      "notes": "8/21已清仓(原破止损122)。MLCC涨价链，回池观察",
+      "gates": 3
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "score": 4,
+      "status": "watch",
+      "sector": "锂电池",
+      "today_close": 61.75,
+      "today_change_pct": 3.5,
+      "key_price": {
+        "support": 57,
+        "resistance": 66,
+        "stop_loss": 57
+      },
+      "notes": "8/21已清仓(原盈利仓)。锂矿爆发周利好，回池观察",
+      "gates": 4
     },
     {
       "code": "002156",
       "name": "通富微电",
       "score": 6,
-      "status": "watch_A",
+      "status": "watch",
       "sector": "先进封装",
-      "today_close": 63.88,
-      "today_change_pct": 1.16,
-      "key_price": {"support": 62.1, "resistance": 69.0, "stop_loss": null},
-      "ma20": 62.74,
-      "ma5": 66.11,
-      "rsi6": 55.0,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "A级. 8/21收63.88(+1.16%)MA5>MA20趋势bullish. 国常会通信网7万亿直接利好封测. 今日禁入,清仓后纪律观察期(≥3天)结束后评估回踩62-63入场机会",
+      "today_close": 64.3,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 60,
+        "resistance": 70,
+        "stop_loss": 58
+      },
+      "notes": "封测低位+先进封装国产替代",
       "gates": 6
     },
     {
       "code": "300502",
       "name": "新易盛",
-      "score": 6,
-      "status": "watch_A",
+      "score": 5,
+      "status": "watch",
       "sector": "光模块",
-      "today_close": 442.00,
-      "today_change_pct": 6.76,
-      "key_price": {"support": 414.0, "resistance": null, "stop_loss": null},
-      "ma20": 425.15,
-      "ma5": 437.28,
-      "rsi6": 54.9,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "A级. 8/21收442(+6.76%)站上MA20=425转强,RSI6=54.9中性. 国常会通信网7万亿+股权激励. 今日禁追涨(已+6.76%透支),回踩425-430企稳再看",
-      "gates": 6
+      "today_close": 414.36,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 400,
+        "resistance": 460,
+        "stop_loss": 390
+      },
+      "notes": "光模块，业绩硬支撑",
+      "gates": 5
     },
     {
       "code": "300308",
       "name": "中际旭创",
       "score": 5,
-      "status": "watch_A",
-      "sector": "光模块/CPO",
-      "today_close": 943.00,
-      "today_change_pct": 4.29,
-      "key_price": {"support": 921.0, "resistance": 941.0, "stop_loss": null},
-      "ma20": 935.88,
-      "ma5": 946.39,
-      "rsi6": 54.7,
-      "ma_arrangement": "mixed",
-      "notes": "A级. 8/21收943(+4.29%)MA20=935附近,趋势mixed. 国常会7万亿+光通信催化. MA5=946.39微破MA20=935.88,需站稳. 今日禁追. 清仓后900-920企稳再评估",
+      "status": "watch",
+      "sector": "光模块龙头",
+      "today_close": 896.73,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 880,
+        "resistance": 970,
+        "stop_loss": 850
+      },
+      "notes": "H1净利+241.7%，光通信量能待确认",
       "gates": 5
     },
     {
       "code": "300394",
       "name": "天孚通信",
-      "score": 3,
-      "status": "watch_B",
+      "score": 4,
+      "status": "watch",
       "sector": "光模块/CPO",
-      "today_close": 273.08,
-      "today_change_pct": -1.15,
-      "key_price": {"support": 267.7, "resistance": null, "stop_loss": null},
-      "ma20": 229.22,
-      "ma5": 280.95,
-      "rsi6": 65.1,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "B级. 8/21收273.08(-1.15%)MA5/MA20乖离过大+RSI6=65.1偏高. 禁追涨. 回踩267.7-270企稳再看",
-      "gates": 3
+      "today_close": 280.92,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 265,
+        "resistance": 290,
+        "stop_loss": 255
+      },
+      "notes": "CPO核心+中报+33.92%",
+      "gates": 4
     },
     {
       "code": "300223",
       "name": "北京君正",
-      "score": 5,
-      "status": "watch_A",
-      "sector": "存储/MCU",
-      "today_close": 138.48,
-      "today_change_pct": 0.13,
-      "key_price": {"support": 136.0, "resistance": 138.5, "stop_loss": null},
-      "ma20": 136.52,
-      "ma5": 144.43,
-      "rsi6": 51.3,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "A级. 8/21收138.48(+0.13%)MA5>MA20趋势bullish. 长存IPO+存储涨价+兆易回购外溢. 136-137.3支撑带. 今日禁入",
-      "gates": 5
-    },
-    {
-      "code": "301308",
-      "name": "江波龙",
-      "score": 6,
-      "status": "watch_A",
-      "sector": "存储模组",
-      "today_close": 380.66,
-      "today_change_pct": 0.44,
-      "key_price": {"support": 375.0, "resistance": 397.0, "stop_loss": null},
-      "ma20": 375.54,
-      "ma5": 394.02,
-      "rsi6": 37.3,
-      "ma_arrangement": "mixed",
-      "notes": "A级⭐. 8/21收380.66(+0.44%)MA5微破MA20,RSI6=37.3低位,PE 13.7关注池最低估. 长存IPO正式受理=存储链最重磅. 375-379支撑带. 清仓后首选观察标的",
-      "gates": 6
+      "score": 4,
+      "status": "watch",
+      "sector": "存储",
+      "today_close": 139.54,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 130,
+        "resistance": 150,
+        "stop_loss": 125
+      },
+      "notes": "存储，SK海力士回购催化",
+      "gates": 4
     },
     {
       "code": "300395",
       "name": "菲利华",
       "score": 4,
-      "status": "watch_B",
+      "status": "watch",
       "sector": "半导体材料",
-      "today_close": 87.99,
-      "today_change_pct": -1.16,
-      "key_price": {"support": 86.5, "resistance": 92.5, "stop_loss": null},
-      "ma20": 84.22,
-      "ma5": 90.63,
-      "rsi6": 33.5,
-      "ma_arrangement": "mixed",
-      "notes": "B级. 8/21收87.99(-1.16%)MA20=84.22上方,RSI6=33.5低位. 中报+44%/+33%已落地. 回踩86.5-88企稳是观察点. 今日禁入",
+      "today_close": 89.15,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 84,
+        "resistance": 94,
+        "stop_loss": 82
+      },
+      "notes": "硅片涨价30%逻辑",
       "gates": 4
     },
     {
       "code": "300442",
       "name": "润泽科技",
       "score": 4,
-      "status": "watch_B",
+      "status": "watch",
       "sector": "算力IDC",
-      "today_close": 64.38,
-      "today_change_pct": -0.31,
-      "key_price": {"support": 64.0, "resistance": 67.7, "stop_loss": null},
-      "ma20": 66.52,
-      "ma5": 67.37,
-      "rsi6": 33.0,
-      "ma_arrangement": "mixed",
-      "notes": "B级. 8/21收64.38(-0.31%)MA5=67.37破MA20=66.52,RSI6=33超卖,PE 20.3关注池第二低估. 64关键支撑. 今日禁入",
+      "today_close": 65.2,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 64,
+        "resistance": 72,
+        "stop_loss": 63
+      },
+      "notes": "PE22极低+算力IDC龙头",
       "gates": 4
     },
     {
       "code": "300604",
       "name": "长川科技",
       "score": 5,
-      "status": "watch_A",
+      "status": "watch",
       "sector": "半导体设备",
-      "today_close": 279.42,
-      "today_change_pct": 1.33,
-      "key_price": {"support": 278.0, "resistance": 280.0, "stop_loss": null},
-      "ma20": 275.85,
-      "ma5": 286.35,
-      "rsi6": 48.0,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "A级. 8/21收279.42(+1.33%)MA5>MA20趋势bullish. 长存IPO+功率半导体涨价+设备景气延续. 280-281技术压力. 今日禁入",
+      "today_close": 277.16,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 268,
+        "resistance": 300,
+        "stop_loss": 260
+      },
+      "notes": "设备国产化逻辑",
       "gates": 5
     },
     {
       "code": "000988",
       "name": "华工科技",
-      "score": 5,
-      "status": "watch_A",
-      "sector": "激光/光通信",
-      "today_close": 106.78,
-      "today_change_pct": 2.50,
-      "key_price": {"support": 102.4, "resistance": 107.0, "stop_loss": null},
-      "ma20": 103.62,
-      "ma5": 107.78,
-      "rsi6": 49.4,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "A级. 8/21收106.78(+2.50%)MA5>MA20趋势bullish. 国常会通信网7万亿+激光制造. 106.8-107技术压力. 今日禁入",
-      "gates": 5
+      "score": 4,
+      "status": "watch",
+      "sector": "光通信/激光",
+      "today_close": 105.13,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 100,
+        "resistance": 110,
+        "stop_loss": 95
+      },
+      "notes": "光通信，100元支撑",
+      "gates": 4
     },
     {
       "code": "002384",
       "name": "东山精密",
-      "score": 4,
-      "status": "watch_B",
+      "score": 3,
+      "status": "watch",
       "sector": "PCB",
-      "today_close": 201.08,
-      "today_change_pct": 1.73,
-      "key_price": {"support": 194.0, "resistance": 211.9, "stop_loss": null},
-      "ma20": 192.20,
-      "ma5": 205.47,
-      "rsi6": 48.7,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "B级. 8/21收201.08(+1.73%)MA5>MA20趋势bullish. 国常会通信网7万亿直接利好PCB链. PE 102.7估值偏高需回落至80以下. 今日禁入",
-      "gates": 4
+      "today_close": 199.8,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 192,
+        "resistance": 210,
+        "stop_loss": 188
+      },
+      "notes": "PE177估值过高",
+      "gates": 3
     },
     {
       "code": "000977",
       "name": "浪潮信息",
-      "score": 5,
-      "status": "watch_A",
-      "sector": "AI服务器",
-      "today_close": 76.35,
-      "today_change_pct": 1.69,
-      "key_price": {"support": 75.1, "resistance": 76.7, "stop_loss": null},
-      "ma20": 76.47,
-      "ma5": 77.19,
-      "rsi6": 39.2,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "A级. 8/21收76.35(+1.69%)MA5=77.19>MA20=76.47趋势bullish. 国常会绿色算力+Anthropic超级IPO+博通600亿融资. 75.1-75支撑. 今日禁入",
-      "gates": 5
+      "score": 4,
+      "status": "watch",
+      "sector": "服务器",
+      "today_close": 74.98,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 70,
+        "resistance": 78,
+        "stop_loss": 68
+      },
+      "notes": "AI服务器，70元支撑",
+      "gates": 4
     },
     {
       "code": "603026",
       "name": "石大胜华",
       "score": 3,
-      "status": "watch_C_观察名单",
+      "status": "observe",
       "sector": "电解液",
-      "today_close": 65.27,
-      "today_change_pct": 3.06,
-      "key_price": {"support": 63.8, "resistance": 66.4, "stop_loss": null},
-      "ma20": 65.99,
-      "ma5": 65.91,
-      "rsi6": 45.0,
-      "ma_arrangement": "mixed",
-      "notes": "C级. 8/21收65.27(+3.06%)MA5微破MA20,趋势mixed. 锂矿爆发或外溢但自身业绩未验证. 65-66是压力带. 今日禁入",
+      "today_close": 64.12,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 64,
+        "resistance": 68,
+        "stop_loss": 62
+      },
+      "notes": "锂电池链观察",
       "gates": 3
     },
     {
       "code": "300769",
       "name": "德方纳米",
       "score": 2,
-      "status": "watch_C_观察名单",
+      "status": "observe",
       "sector": "磷酸铁锂",
-      "today_close": 47.15,
-      "today_change_pct": 3.97,
-      "key_price": {"support": 47.0, "resistance": 47.3, "stop_loss": null},
-      "ma20": 45.72,
-      "ma5": 47.18,
-      "rsi6": 53.0,
-      "ma_arrangement": "bullish_arrangement",
-      "notes": "C级. 8/21收47.15(+3.97%)MA5>MA20趋势bullish. PE -34亏损,磷酸铁锂价格战未结束. 47支撑破位看44.3. 今日禁入",
+      "today_close": 45.88,
+      "today_change_pct": 0.0,
+      "key_price": {
+        "support": 45,
+        "resistance": 50,
+        "stop_loss": 44
+      },
+      "notes": "PE为负亏损，暂不介入",
       "gates": 2
+    }
+  ],
+  "transit_pool": [
+    {
+      "name": "兆易创新",
+      "code": "603986",
+      "sector": "存储芯片",
+      "score": 6,
+      "gates": 6,
+      "key_price": {
+        "support": 380,
+        "resistance": 430,
+        "stop_loss": 365
+      },
+      "notes": "回购落地+存储涨价催化，候清仓后重建候选"
+    },
+    {
+      "name": "江波龙",
+      "code": "301308",
+      "sector": "存储",
+      "score": 5,
+      "gates": 5,
+      "key_price": {
+        "support": 370,
+        "resistance": 415,
+        "stop_loss": 360
+      },
+      "notes": "已持仓200股"
+    },
+    {
+      "name": "长电科技",
+      "code": "600584",
+      "sector": "封测",
+      "score": 5,
+      "gates": 5,
+      "key_price": {
+        "support": 75,
+        "resistance": 85,
+        "stop_loss": 72
+      },
+      "notes": "H1净利+79%+先进封装扩产"
+    },
+    {
+      "name": "菲利华",
+      "code": "300395",
+      "sector": "半导体材料",
+      "score": 5,
+      "gates": 5,
+      "key_price": {
+        "support": 84,
+        "resistance": 94,
+        "stop_loss": 82
+      },
+      "notes": "H1营收+44%+硅片涨价"
+    },
+    {
+      "name": "复旦微电",
+      "code": "688385",
+      "sector": "FPGA/存储",
+      "score": 5,
+      "gates": 5,
+      "key_price": {
+        "support": 52,
+        "resistance": 58,
+        "stop_loss": 50
+      },
+      "notes": "H1+338%+FPGA国产替代"
     }
   ]
 }
