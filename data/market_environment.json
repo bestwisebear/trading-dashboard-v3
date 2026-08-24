@@ -1,53 +1,34 @@
 {
   "meta": {
-    "last_updated": "2026-08-23T23:00:00+08:00",
-    "date": "2026-08-21",
-    "session": "close",
-    "source": "8/21收盘价(最后交易日)+8/23晚消息面叠加",
-    "note": "8/23周日23:00扫描:8/22周六/23周日无交易,数据基准沿用8/21收盘。周末消息面偏暖但外围利空,8/24唯一任务=清仓"
+    "last_updated": "2026-08-24T08:15:00+08:00",
+    "date": "2026-08-24",
+    "session": "pre_market",
+    "source": "8/21收盘价(最后交易日)+8/24 08:10盘前板块+周末消息面叠加",
+    "note": "8/24周一=清仓执行日. 8/21已收盘(8/22-23周末),数据基准沿用8/21收盘. 周末4线政策催化(国常会通信网7万亿+消费贷贴息+长存IPO受理+锂矿爆发)对冲30年美债5.27%新高压力. 8/24唯一任务=清仓3只破止损仓+鹏辉条件管理+零新仓"
   },
   "indices": {
-    "sh000001": {
-      "name": "上证指数",
-      "close": 3905.2,
-      "pre_close": 3894.42,
-      "change_pct": 0.04,
-      "high": 3912.13,
-      "low": 3883.79,
-      "amount": 10185683.5,
-      "note": "微涨+0.24%,冲高回落",
-      "session": "close"
-    },
-    "sz399001": {
-      "name": "深证成指",
-      "close": 14094.17,
-      "pre_close": 13890.15,
-      "change_pct": 0.87,
-      "high": 14132.04,
-      "low": 13866.39,
-      "amount": 10607948.9,
-      "note": "反弹+0.59%,午后回落",
-      "session": "close"
-    },
-    "sz399006": {
-      "name": "创业板指",
-      "close": 3545.58,
-      "pre_close": 3473.49,
-      "change_pct": 1.43,
-      "high": 3563.06,
-      "low": 3478.52,
-      "amount": 5227269.0,
-      "note": "反弹+0.64%,医药分化后回落",
-      "session": "close"
-    }
+    "sh000001": {"name": "上证指数", "close": 3905.2, "pre_close": 3903.72, "change_pct": 0.04, "high": 3912.13, "low": 3883.79, "amount": 10185683.5, "note": "8/21收3905.20(+0.04%)缩量,8/24预计小幅高开3915-3935(消费贷贴息+通信网政策)", "session": "close"},
+    "sz399001": {"name": "深证成指", "close": 14094.17, "pre_close": 13890.15, "change_pct": 0.87, "high": 14132.04, "low": 13866.39, "amount": 10607948.9, "note": "8/21收14094.17(+0.87%)反弹,8/24预计高开跟随", "session": "close"},
+    "sz399006": {"name": "创业板指", "close": 3545.58, "pre_close": 3473.49, "change_pct": 1.43, "high": 3563.06, "low": 3478.52, "amount": 5227269.0, "note": "8/21收3545.58(+1.43%)算力硬件拉动,8/24预计跟随高开", "session": "close"}
   },
   "market_breadth": {
     "up_count": 2505,
     "down_count": 2862,
     "flat_count": 182,
-    "up_down_ratio": "3.0:1",
-    "note": "8/21收盘2505涨/2862跌/182平,涨跌比0.87:1(较8/20的4096:1347明显转弱)",
+    "up_down_ratio": "0.87:1",
+    "note": "8/21收盘2505涨/2862跌/182平,涨跌比0.87:1(过2000铁律线但偏弱)",
     "session": "close"
+  },
+  "market_stats": {
+    "rise_count": 2505,
+    "fall_count": 2862,
+    "flat_count": 182,
+    "up_down_ratio": "0.87:1",
+    "limit_up": 83,
+    "limit_down": 13,
+    "turnover": 1.89,
+    "turnover_comment": "沪深合计1.89万亿,较8/20缩量约2000亿,时隔19个交易日再度跌破2万亿. 量能不足=反弹高度受限,8/24需观察政策利好能否放量",
+    "session": "close_20260821"
   },
   "turnover": {
     "total_amount": 18793,
@@ -56,226 +37,49 @@
     "note": "沪深合计1.89万亿,较8/20缩量约2000亿,时隔19个交易日再度跌破2万亿",
     "session": "close"
   },
-  "market_style": "医药生物分化(午间爆发→尾盘回落),贵金属+黄金领涨,农业/煤炭逆势走弱。科技修复力度弱于昨日,鹏辉能源逆势下跌-4.39%",
-  "hot_sectors_top10": [
-    {
-      "name": "生物制品",
-      "change_pct": 7.85,
-      "lead_stock": "优宁维(+20.01%涨停)"
-    },
-    {
-      "name": "贵金属",
-      "change_pct": 5.5,
-      "lead_stock": "山东黄金(+8.59%)"
-    },
-    {
-      "name": "医疗器械",
-      "change_pct": 4.27,
-      "lead_stock": "华大智造(+20.00%涨停)"
-    },
-    {
-      "name": "医疗服务",
-      "change_pct": 4.24,
-      "lead_stock": "博腾股份(+20.00%涨停)"
-    },
-    {
-      "name": "互联网电商",
-      "change_pct": 3.18,
-      "lead_stock": "狮头股份(+10.03%涨停)"
-    },
-    {
-      "name": "旅游及景区",
-      "change_pct": 3.05,
-      "lead_stock": "南京商旅(+10.00%涨停)"
-    },
-    {
-      "name": "化学制药",
-      "change_pct": 2.55,
-      "lead_stock": "凯莱英(+6.92%)"
-    },
-    {
-      "name": "电网设备",
-      "change_pct": 2.2,
-      "lead_stock": "正泰电器(涨停)"
-    },
-    {
-      "name": "模拟芯片",
-      "change_pct": 1.8,
-      "lead_stock": "康希通信/思瑞浦(+10%以上)"
-    },
-    {
-      "name": "光纤概念",
-      "change_pct": 1.5,
-      "lead_stock": "长盈通(+20%涨停)/通鼎互联(涨停)"
-    }
-  ],
-  "cold_sectors_bottom10": [
-    {
-      "name": "农业",
-      "change_pct": -3.5,
-      "lead_stock": "万向德农/农发种业(跌停)"
-    },
-    {
-      "name": "煤炭",
-      "change_pct": -2.8,
-      "lead_stock": "安泰集团(-8.77%)/美锦能源(-7.20%)"
-    },
-    {
-      "name": "油气开采",
-      "change_pct": -1.5,
-      "lead_stock": ""
-    },
-    {
-      "name": "农化制品",
-      "change_pct": -1.2,
-      "lead_stock": ""
-    },
-    {
-      "name": "房地产开发",
-      "change_pct": -0.8,
-      "lead_stock": ""
-    },
-    {
-      "name": "教育",
-      "change_pct": -0.5,
-      "lead_stock": ""
-    },
-    {
-      "name": "游戏",
-      "change_pct": -0.3,
-      "lead_stock": ""
-    },
-    {
-      "name": "传媒",
-      "change_pct": -0.2,
-      "lead_stock": ""
-    }
-  ],
-  "fund_flow": {
-    "main_net_flow": -241201.53,
-    "main_net_flow_unit": "万元",
-    "note": "主力资金全天净流出约24.1亿",
-    "top_inflow_sectors": [
-      {
-        "name": "创新药",
-        "net_flow": 773100,
-        "unit": "万元",
-        "note": "主力净流入77.31亿"
-      },
-      {
-        "name": "黄金概念",
-        "net_flow": 643300,
-        "unit": "万元",
-        "note": "主力净流入64.33亿"
-      },
-      {
-        "name": "2026中报预增",
-        "net_flow": 641300,
-        "unit": "万元",
-        "note": "主力净流入64.13亿"
-      },
-      {
-        "name": "金属铜",
-        "net_flow": 516600,
-        "unit": "万元",
-        "note": "主力净流入51.66亿"
-      },
-      {
-        "name": "人民币贬值受益",
-        "net_flow": 474900,
-        "unit": "万元",
-        "note": "主力净流入47.49亿"
-      }
-    ]
-  },
   "hot_sectors_up": [
-    {
-      "name": "生物制品",
-      "change_pct": 7.85,
-      "lead_stock": "优宁维(+20.01%涨停)"
-    },
-    {
-      "name": "贵金属",
-      "change_pct": 5.5,
-      "lead_stock": "山东黄金(+8.59%)"
-    },
-    {
-      "name": "医疗器械",
-      "change_pct": 4.27,
-      "lead_stock": "华大智造(+20.00%涨停)"
-    },
-    {
-      "name": "医疗服务",
-      "change_pct": 4.24,
-      "lead_stock": "博腾股份(+20.00%涨停)"
-    },
-    {
-      "name": "互联网电商",
-      "change_pct": 3.18,
-      "lead_stock": "狮头股份(+10.03%涨停)"
-    },
-    {
-      "name": "旅游及景区",
-      "change_pct": 3.05,
-      "lead_stock": "南京商旅(+10.00%涨停)"
-    }
+    {"name": "贵金属", "change_pct": 4.64, "lead_stock": "山东黄金+8.59", "rank": 1},
+    {"name": "能源金属/锂矿", "change_pct": 4.60, "lead_stock": "锂矿爆发,碳酸锂半月+16%/期货+4.12%", "rank": 2},
+    {"name": "通信设备", "change_pct": 2.98, "lead_stock": "中际旭创+4.29/新易盛+6.76", "rank": 3},
+    {"name": "元件/PCB", "change_pct": 2.80, "lead_stock": "PCB概念", "rank": 4},
+    {"name": "工业金属", "change_pct": 2.42, "lead_stock": "铜概念", "rank": 5},
+    {"name": "电池", "change_pct": 1.68, "lead_stock": "鹏辉能源+3.50", "rank": 6},
+    {"name": "CPO/光模块", "change_pct": 1.48, "lead_stock": "中际旭创+新易盛", "rank": 7},
+    {"name": "消费电子", "change_pct": 1.34, "lead_stock": "—", "rank": 8},
+    {"name": "半导体", "change_pct": 0.47, "lead_stock": "长川+1.33", "rank": 9},
+    {"name": "存储器", "change_pct": 0.60, "lead_stock": "江波龙+0.44/君正+0.13", "rank": 10}
   ],
   "hot_sectors_down": [
-    {
-      "name": "农业",
-      "change_pct": -3.5,
-      "lead_stock": "万向德农/农发种业(跌停)"
-    },
-    {
-      "name": "煤炭",
-      "change_pct": -2.8,
-      "lead_stock": "安泰集团(-8.77%)/美锦能源(-7.20%)"
-    },
-    {
-      "name": "油气开采",
-      "change_pct": -1.5,
-      "lead_stock": ""
-    },
-    {
-      "name": "农化制品",
-      "change_pct": -1.2,
-      "lead_stock": ""
-    },
-    {
-      "name": "房地产开发",
-      "change_pct": -0.8,
-      "lead_stock": ""
-    },
-    {
-      "name": "教育",
-      "change_pct": -0.5,
-      "lead_stock": ""
-    }
+    {"name": "种植业", "change_pct": -4.81, "lead_stock": "—"},
+    {"name": "化学制药", "change_pct": -4.33, "lead_stock": "Moderna回吞后兑现"},
+    {"name": "医疗服务", "change_pct": -3.75, "lead_stock": "—"},
+    {"name": "创新药", "change_pct": -3.78, "lead_stock": "—"},
+    {"name": "医药生物", "change_pct": -3.48, "lead_stock": "昨日涨停潮兑现"},
+    {"name": "生物制品", "change_pct": -3.63, "lead_stock": "昨日+9.12%回吐"},
+    {"name": "MLCC", "change_pct": -1.80, "lead_stock": "风华高科-5.38%高量下跌"}
   ],
-  "market_stats": {
-    "rise_count": 4096,
-    "fall_count": 1347,
-    "turnover_comment": "沪深合计2.08万亿,较昨日缩量4317亿"
-  },
-  "pre_market_overview": {
-    "as_of": "2026-08-21 08:25",
-    "overnight_us": {
-      "dow": "-1.31%(-703.84点)",
-      "sp500": "-0.86%",
-      "nasdaq": "-1.00%",
-      "philly_semi": "+0.53%(11800.02,当日最强)",
-      "structure": "七巨头全跌(亚马逊-2.16%/苹果-1.75%/特斯拉-1.71%),沃尔玛-9.2%创2022年5月以来最大跌幅,Moderna-23.55%回吞前日涨幅",
-      "storage_optical": "存储/光通信逆势:美光+3.97%/SK海力士+4%/闪迪+2%/Lumentum+6.24%/Marvell+5.79%",
-      "fed": "7月纪要鹰派,9月加息概率约30%;10Y美债4.708%/30Y回升至5.25%(财政部回购仅撑一天)"
-    },
-    "asia_pacific_morning": {
-      "japan": "日经225低开1.19%报65427.69,盘中跌幅扩大(证券时报e公司快讯:日经收跌2.79%,铠侠-15.03%,软银-6.27%)",
-      "korea": "KOSPI低开1.35%报6759.95后崩跌(e公司:韩国综指跌6.37%,SK海力士-11.53%,三星-8.77%,韩股杠杆ETF连环强平、多次触发熔断)",
-      "hk": "恒指期货低开0.32%报25327.66;恒指主连夜盘收平25696",
-      "catalyst": "传美国商务部施压韩国半导体+全球AI抛售加速,隔夜美股存储涨幅被完全抵消",
-      "implication": "⚠️A股存储链(江波龙/北京君正/兆易)开盘承压,科技情绪受压;清仓执行不受影响,只卖不买"
-    },
-    "commodities": "COMEX黄金+0.66%报4575.1创新高;WTI+2.3%报87.83五连涨(近月新高);沪银/铂8/20涨超4%",
-    "domestic_policy": "上海沪八条今日施行;LPR连续15个月不变;央行7天逆回购零投放净回笼3274亿(专家称非收紧);发改委民企座谈会;许家印案一审宣判无期"
+  "market_style": "8/21领涨:贵金属+4.64/能源金属+4.60(锂矿)/电池+1.68/通信设备+2.98/PCB+1.30. 8/21弱势:化学制药-4.33/创新药-3.78/医药生物-3.48/种植业-4.81. 8/24盘前板块(5日累计):通信设备+2.98/锂矿+3.77/存储器+0.60/CPO+1.48/半导体+0.47",
+  "weekend_catalysts": [
+    {"name": "国常会:通信网7万亿", "direction": "利好通信/光模块/PCB/封测", "level": "⭐⭐⭐⭐⭐", "source": "上证报"},
+    {"name": "国常会:消费贷贴息上限5000", "direction": "利好消费/家电/汽车", "level": "⭐⭐⭐⭐", "source": "上证报"},
+    {"name": "长江存储IPO正式受理", "direction": "利好存储链/封测链/设备", "level": "⭐⭐⭐⭐⭐", "source": "券商中国"},
+    {"name": "锂矿爆发:碳酸锂半月+16%/期货+4.12%", "direction": "利好锂电链(鹏辉直接受益)", "level": "⭐⭐⭐⭐⭐", "source": "财联社"},
+    {"name": "功率半导体涨价(多家MOSFET厂商发函)", "direction": "利好半导体/分立器件", "level": "⭐⭐⭐⭐", "source": "财联社"},
+    {"name": "固态电池/机器人纳入质量强链", "direction": "中长期利好", "level": "⭐⭐⭐", "source": "上证报"},
+    {"name": "网信办:高端芯片/工业软件/绿色算力5年规划", "direction": "利好信创/算力/半导体", "level": "⭐⭐⭐⭐", "source": "网信办"}
+  ],
+  "external_pressure": [
+    {"name": "30Y美债5.27%创近19年新高", "impact": "🔴 高估值科技承压"},
+    {"name": "10Y美债4.73%", "impact": "🔴 融资成本担忧"},
+    {"name": "达利欧警告美债危机", "impact": "🔴 中期不确定性"},
+    {"name": "特朗普称可'出兵'干预债市", "impact": "🟡 政策预期不稳"},
+    {"name": "中美贸易谈判接触升温", "impact": "🟡 短期情绪缓和"}
+  ],
+  "session_outlook": {
+    "opening": "小幅高开概率大(政策利好对冲美债压力),沪指3915-3935区间",
+    "lithium_boost": "锂矿链高开概率大,鹏辉反弹>61.4减200股/>62.6减400股,绝不清仓后追涨",
+    "storage_boost": "存储链高开概率大(长存IPO),但仅作清仓后候选观察,今日不操作",
+    "telecom_boost": "通信链全线走强,关注池已超涨8/21 +4~7%,禁追涨",
+    "close_outlook": "午后波动受量能制约(1.89万亿偏低),14:30前必须完成清仓3只"
   }
 }

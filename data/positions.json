@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-21T17:04:48+08:00",
-    "date": "2026-08-21",
-    "session": "close",
-    "source": "收盘价(15:00)",
-    "price_source_note": "收盘价(session=close),PnL为真实日终PnL",
-    "note": "8/21收盘:鹏辉+3.5%收61.75,三只破止损仓连续第4天未清仓。创业板+1.43%"
+    "last_updated": "2026-08-24T08:15:00+08:00",
+    "date": "2026-08-24",
+    "session": "pre_market_0805",
+    "source": "8/21收盘价(15:00)+8/24盘前调整",
+    "price_source_note": "8/21收盘(session=close),8/24盘前评估",
+    "note": "8/24=3只破止损仓最后通牒清仓日(连续5天未清). 8/21收市后4只持仓(72.5%仓位). 8/24盘前必清协创/昊志/三环,仅鹏辉按条件管理"
   },
   "summary": {
     "total_market_value": 143136.0,
     "available_cash": 54212.69,
     "total_assets": 197348.69,
-    "net_today": 2122.0,
-    "today_return": 2122.0,
+    "net_today": 0,
+    "today_return": 0,
     "total_pnl_amount": -2651.31,
     "monthly_pnl": -2651.31,
-    "prev_close_assets": 195226.69,
+    "prev_close_assets": 197348.69,
     "position_ratio": 72.5,
-    "today_return_rate": 1.09,
+    "today_return_rate": 0,
     "monthly_return_rate": -1.33,
     "initial_capital": 200000,
     "position_count": 4,
-    "note": "收盘:鹏辉+3.5%,三只破止损仓(协创/昊志/三环)连续第4天未清仓"
+    "note": "8/24盘前:持仓4只(72.5%仓位). 8/24必清3只破止损仓(协创/昊志/三环),清仓后仓位约24%仅鹏辉"
   },
   "positions": [
     {
@@ -39,15 +39,12 @@
       "pnl_percent": 2.53,
       "pnl_amount": 1218.4,
       "sector": "锂电池",
-      "status": "holding_gain",
-      "notes": "收盘59.66(-4.39%)。高开63.39后持续走低,收59.66。已破止损57上方+4.7%,浮亏-0.94%(-449元)。锂电池板块今日未受医药带动,逆势下跌",
+      "status": "🟡HOLD_CONDITIONAL",
+      "notes": "8/21收61.75(+3.50%)唯一健康仓. 周末锂矿爆发(碳酸锂半月+16%/期货+4.12%)+质量强链催化. 8/24策略:守57底线/反弹>61.4减200股锁利/>62.6减400股(半仓)/破59减半/破57全清. 减仓后禁当日回补",
       "key_price": {
-        "support": 57,
-        "resistance": 63,
-        "buy_range": [
-          57,
-          63
-        ]
+        "support": 59.4,
+        "resistance": 63.6,
+        "buy_range": [57, 63]
       },
       "price_source": "close_20260821",
       "session": "close",
@@ -65,18 +62,15 @@
       "holding_days": 6,
       "stop_loss": 250.0,
       "stop_profit": 280.0,
-      "pnl_percent": -2.65,
+      "pnl_percent": -2.66,
       "pnl_amount": -673.0,
       "sector": "算力租赁",
-      "status": "🚨STOP_LOSS_BREACHED",
-      "notes": "收盘247.38(-0.12%)。低开248.50,最低242.86,收于247.38。仍低于止损250!浮亏-2.66%(-676元)。今日未执行清仓→违规延续",
+      "status": "🚨SELL_TODAY_LAST_WARNING",
+      "notes": "8/21收247.41破止损250连续5天. 8/24=最后通牒:开盘立即市价清,任何开盘价不等反弹. 清仓后禁当日回补",
       "key_price": {
-        "support": 242,
+        "support": 243,
         "resistance": 252,
-        "buy_range": [
-          240,
-          260
-        ]
+        "buy_range": [240, 260]
       },
       "price_source": "close_20260821",
       "session": "close",
@@ -97,15 +91,12 @@
       "pnl_percent": -13.13,
       "pnl_amount": -5265.0,
       "sector": "机器人概念",
-      "status": "🚨STOP_LOSS_BREACHED",
-      "notes": "收盘70.19(+0.92%)。连续2日反弹(69.55→70.19),远低于成本80.18。仍低于止损73!浮亏-12.46%(-4995元)。机器人板块利空持续",
+      "status": "🚨SELL_TODAY_LAST_WARNING",
+      "notes": "8/21收69.65破止损73连续5天(亏损最大-5265). 8/24=最后通牒:预挂市价70元(开盘≥69即触发). 质量强链利好不改变清仓. 清仓后禁当日回补",
       "key_price": {
-        "support": 65,
-        "resistance": 75,
-        "buy_range": [
-          65,
-          80
-        ]
+        "support": 67.7,
+        "resistance": 72.2,
+        "buy_range": [65, 80]
       },
       "price_source": "close_20260821",
       "session": "close",
@@ -117,7 +108,7 @@
       "quantity": 300,
       "cost_price": 126.21,
       "cost_source": "broker_screenshot",
-      "current_price": 113.9,
+      "current_price": 113.90,
       "price_updated_at": "2026-08-21T17:04:48+08:00",
       "buy_date": "2026-08-18",
       "holding_days": 2,
@@ -126,15 +117,12 @@
       "pnl_percent": -9.75,
       "pnl_amount": -3693.0,
       "sector": "MLCC",
-      "status": "🚨STOP_LOSS_BREACHED",
-      "notes": "收盘111.51(+1.74%)。连续2日反弹(109.60→111.51),远低于成本126.21。仍低于止损122!浮亏-11.65%(-4410元)。MLCC板块分化",
+      "status": "🚨SELL_TODAY_LAST_WARNING",
+      "notes": "8/21收113.90破止损122连续5天,RSI6=22.7超卖. 8/24=最后通牒:开盘立即市价清,冲高115即清. 超卖不构成等反弹理由. 清仓后禁当日回补",
       "key_price": {
-        "support": 105,
-        "resistance": 118,
-        "buy_range": [
-          105,
-          125
-        ]
+        "support": 111.5,
+        "resistance": 124,
+        "buy_range": [105, 125]
       },
       "price_source": "close_20260821",
       "session": "close",
