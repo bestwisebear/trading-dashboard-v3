@@ -1,31 +1,31 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T08:45:00+08:00",
+    "last_updated": "2026-08-24T11:35:00+08:00",
     "data_date": "2026-08-24",
-    "source": "券商截图(8/24 08:32) + 8/21收盘价",
-    "session": "pre_market",
-    "data_as_of": "2026-08-21 收盘(调仓后真实值)",
-    "note": "8/24盘前持仓重建：周末大幅调仓，累计亏损-17895.58(-8.95%)，满仓4只"
+    "source": "stock-data-skill实时行情(腾讯)11:30上午收盘",
+    "session": "intraday",
+    "data_as_of": "2026-08-24 午间(11:30上午收盘)",
+    "note": "8/24午间：满仓4只遭遇科技股崩盘，总资产171607.42，今日浮亏-10497(-5.76%)。风华/埃斯顿破止损"
   },
   "current": {
-    "total_assets": 182104.42,
+    "total_assets": 171607.42,
     "prev_close_assets": 182104.42,
     "available_cash": 115.42,
     "initial_capital": 200000,
     "position_count": 4,
-    "position_ratio": 99.9,
-    "monthly_pnl": -17895.58,
-    "monthly_return_rate": -8.95,
-    "market_value": 181989.0,
-    "note": "满仓4只，江波龙重仓41.8%"
+    "position_ratio": 99.93,
+    "monthly_pnl": -28392.58,
+    "monthly_return_rate": -14.2,
+    "market_value": 171492.0,
+    "note": "满仓4只，风华/埃斯顿破止损，江波龙逼近360"
   },
   "today_so_far": {
     "date": "2026-08-24",
-    "net_today": 0.0,
+    "net_today": -10497.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "pre_market",
-    "note": "8/24盘前未开盘，无交易"
+    "session": "intraday",
+    "note": "8/24午间浮亏-10497(-5.76%)，无成交"
   },
   "positions": [
     {
@@ -35,7 +35,7 @@
       "cost_price": 379.461,
       "stop_loss": 360.0,
       "buy_date": "2026-08-21",
-      "market_value": 76132.0
+      "market_value": 72132.0
     },
     {
       "code": "000636",
@@ -44,7 +44,7 @@
       "cost_price": 54.581,
       "stop_loss": 51.5,
       "buy_date": "2026-08-21",
-      "market_value": 43736.0
+      "market_value": 41120.0
     },
     {
       "code": "002747",
@@ -53,7 +53,7 @@
       "cost_price": 33.677,
       "stop_loss": 31.3,
       "buy_date": "2026-08-21",
-      "market_value": 36927.0
+      "market_value": 34166.0
     },
     {
       "code": "603629",
@@ -62,18 +62,18 @@
       "cost_price": 125.721,
       "stop_loss": 117.0,
       "buy_date": "2026-08-21",
-      "market_value": 25194.0
+      "market_value": 24074.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "重建校验通过：市值181989+现金115.42=182104.42"
+    "note": "午间校验通过：市值171492+现金115.42=171607.42"
   },
   "cumulative": {
-    "total_pnl_amount": -17895.58,
-    "total_pnl_percent": -8.95,
+    "total_pnl_amount": -28392.58,
+    "total_pnl_percent": -14.2,
     "total_trades_count": 50,
     "total_violations": 18,
     "start_date": "2026-08-03"

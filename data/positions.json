@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T08:45:00+08:00",
+    "last_updated": "2026-08-24T11:35:00+08:00",
     "date": "2026-08-24",
-    "session": "pre_market",
-    "source": "券商截图(8/24 08:32) + 8/21收盘价",
-    "price_source_note": "现价=8/21收盘价(8/24盘前未开盘)；成本价来自券商截图。8/22-8/23周末无交易",
-    "note": "8/24盘前持仓重建：周末大幅调仓，旧4仓(鹏辉/协创/昊志/三环)已清，换入风华/埃斯顿/江波龙/利通电子4只，仓位99.9%近满仓"
+    "session": "intraday",
+    "source": "stock-data-skill 实时行情(腾讯) 11:30上午收盘",
+    "price_source_note": "现价=8/24上午收盘价(11:30)，session=intraday；成本价来自券商截图。午间仅盘中展示，日PnL待盘后用收盘价结算",
+    "note": "8/24午间：满仓4只遭遇科技股崩盘全线大跌，风华/埃斯顿破止损，江波龙逼近止损360"
   },
   "summary": {
-    "total_market_value": 181989.0,
+    "total_market_value": 171492.0,
     "available_cash": 115.42,
-    "total_assets": 182104.42,
-    "net_today": 0.0,
-    "today_return": 0.0,
-    "total_pnl_amount": -17895.58,
-    "monthly_pnl": -17895.58,
+    "total_assets": 171607.42,
+    "net_today": -10497.0,
+    "today_return": -10497.0,
+    "total_pnl_amount": -28392.58,
+    "monthly_pnl": -28392.58,
     "prev_close_assets": 182104.42,
-    "position_ratio": 99.9,
-    "today_return_rate": 0.0,
-    "monthly_return_rate": -8.95,
+    "position_ratio": 99.93,
+    "today_return_rate": -5.76,
+    "monthly_return_rate": -14.2,
     "initial_capital": 200000,
     "position_count": 4,
-    "note": "8/24盘前：总资产182104.42，累计亏损-17895.58(-8.95%)，满仓4只"
+    "note": "8/24午间：总资产171607.42，今日浮亏-10497(-5.76%)，满仓4只全线大跌，风华/埃斯顿破止损"
   },
   "positions": [
     {
@@ -30,16 +30,16 @@
       "quantity": 200,
       "cost_price": 379.461,
       "cost_source": "broker_screenshot",
-      "current_price": 380.66,
-      "price_updated_at": "2026-08-24T08:45:00+08:00",
+      "current_price": 360.66,
+      "price_updated_at": "2026-08-24T11:35:00+08:00",
       "buy_date": "2026-08-21(待确认)",
       "holding_days": 1,
       "stop_loss": 360.0,
       "stop_profit": 415.0,
-      "pnl_percent": 0.32,
-      "pnl_amount": 240.0,
+      "pnl_percent": -4.95,
+      "pnl_amount": -3760.2,
       "sector": "存储",
-      "status": "holding_gain",
+      "status": "holding_loss",
       "notes": "存储，PE13.6为池内最低估。H1净利+71528%，本周跌6.35%主力净流出26亿。8/19低点373.6。重仓41.8%",
       "key_price": {
         "support": 370,
@@ -49,9 +49,9 @@
           385
         ]
       },
-      "price_source": "close_20260821",
-      "session": "pre_market",
-      "market_value": 76132.0
+      "price_source": "intraday_20260824",
+      "session": "intraday",
+      "market_value": 72132.0
     },
     {
       "code": "000636",
@@ -59,16 +59,16 @@
       "quantity": 800,
       "cost_price": 54.581,
       "cost_source": "broker_screenshot",
-      "current_price": 54.67,
-      "price_updated_at": "2026-08-24T08:45:00+08:00",
+      "current_price": 51.4,
+      "price_updated_at": "2026-08-24T11:35:00+08:00",
       "buy_date": "2026-08-21(待确认)",
       "holding_days": 1,
       "stop_loss": 51.5,
       "stop_profit": 61.0,
-      "pnl_percent": 0.16,
-      "pnl_amount": 71.0,
+      "pnl_percent": -5.83,
+      "pnl_amount": -2544.8,
       "sector": "MLCC被动元件",
-      "status": "holding_gain",
+      "status": "holding_loss",
       "notes": "MLCC龙头，三星电机8/1涨30%+太阳诱电9/1涨。8/19跌停-9.99%，8/20低点51.88生命线，均线空头未企稳(MA5=57.93)。PE205倍偏高",
       "key_price": {
         "support": 51.88,
@@ -78,9 +78,9 @@
           55
         ]
       },
-      "price_source": "close_20260821",
-      "session": "pre_market",
-      "market_value": 43736.0
+      "price_source": "intraday_20260824",
+      "session": "intraday",
+      "market_value": 41120.0
     },
     {
       "code": "002747",
@@ -88,14 +88,14 @@
       "quantity": 1100,
       "cost_price": 33.677,
       "cost_source": "broker_screenshot",
-      "current_price": 33.57,
-      "price_updated_at": "2026-08-24T08:45:00+08:00",
+      "current_price": 31.06,
+      "price_updated_at": "2026-08-24T11:35:00+08:00",
       "buy_date": "2026-08-21(待确认)",
       "holding_days": 1,
       "stop_loss": 31.3,
       "stop_profit": 37.0,
-      "pnl_percent": -0.32,
-      "pnl_amount": -118.0,
+      "pnl_percent": -7.77,
+      "pnl_amount": -2878.7,
       "sector": "工业机器人",
       "status": "holding_loss",
       "notes": "国产工业机器人龙头。8/12曾35.23清仓(-235)，本次重新买入1000+股。非关注池标的",
@@ -107,9 +107,9 @@
           34
         ]
       },
-      "price_source": "close_20260821",
-      "session": "pre_market",
-      "market_value": 36927.0
+      "price_source": "intraday_20260824",
+      "session": "intraday",
+      "market_value": 34166.0
     },
     {
       "code": "603629",
@@ -117,16 +117,16 @@
       "quantity": 200,
       "cost_price": 125.721,
       "cost_source": "broker_screenshot",
-      "current_price": 125.97,
-      "price_updated_at": "2026-08-24T08:45:00+08:00",
+      "current_price": 120.37,
+      "price_updated_at": "2026-08-24T11:35:00+08:00",
       "buy_date": "2026-08-21(待确认)",
       "holding_days": 1,
       "stop_loss": 117.0,
       "stop_profit": 140.0,
-      "pnl_percent": 0.2,
-      "pnl_amount": 50.0,
+      "pnl_percent": -4.26,
+      "pnl_amount": -1070.2,
       "sector": "算力租赁/液冷",
-      "status": "holding_gain",
+      "status": "holding_loss",
       "notes": "算力租赁+液冷，英伟达Preferred级，腾讯50亿三年长单。8/19晚50亿定增(宁夏中卫智算中心)。H1净利+1172%~1368%但负债率75%偏高，动态PE46倍。全新标的(非关注池)",
       "key_price": {
         "support": 117,
@@ -136,9 +136,9 @@
           128
         ]
       },
-      "price_source": "close_20260821",
-      "session": "pre_market",
-      "market_value": 25194.0
+      "price_source": "intraday_20260824",
+      "session": "intraday",
+      "market_value": 24074.0
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T08:46:00+08:00",
+    "last_updated": "2026-08-24T11:35:00+08:00",
     "date": "2026-08-24",
-    "session": "pre_market",
-    "data_basis": "8/24盘前持仓重建：周末大幅调仓，换入风华/埃斯顿/江波龙/利通电子",
-    "screening_criteria": "7道闸预评估 | 持仓满4只禁新仓 | 纪律重建期",
-    "note": "⚠️4只持仓中仅江波龙在固定关注池，风华/埃斯顿/利通电子均非关注池标的(纪律问题)"
+    "session": "intraday",
+    "data_basis": "8/24午间实时行情(11:30上午收盘)，stock-data-skill腾讯数据源",
+    "screening_criteria": "7道闸预评估 | 持仓满4只禁新仓 | 科技股崩盘日纪律重建期",
+    "note": "8/24午间：科技股全面崩盘，持仓4只+关注池全线大跌。风华/埃斯顿破止损，江波龙逼近360。鹏辉能源逆势+0.6%唯红"
   },
   "watchlist": [
     {
@@ -14,8 +14,8 @@
       "score": 5,
       "status": "hold",
       "sector": "存储",
-      "today_close": 380.66,
-      "today_change_pct": 0.44,
+      "today_close": 360.66,
+      "today_change_pct": -5.25,
       "key_price": {
         "support": 370,
         "resistance": 415,
@@ -30,8 +30,8 @@
       "score": 3,
       "status": "hold",
       "sector": "MLCC被动元件",
-      "today_close": 54.67,
-      "today_change_pct": 2.98,
+      "today_close": 51.4,
+      "today_change_pct": -5.98,
       "key_price": {
         "support": 51.88,
         "resistance": 58,
@@ -46,8 +46,8 @@
       "score": 3,
       "status": "hold",
       "sector": "工业机器人",
-      "today_close": 33.57,
-      "today_change_pct": 0.0,
+      "today_close": 31.06,
+      "today_change_pct": -7.48,
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
@@ -62,8 +62,8 @@
       "score": 3,
       "status": "hold",
       "sector": "算力租赁/液冷",
-      "today_close": 125.97,
-      "today_change_pct": 0.0,
+      "today_close": 120.37,
+      "today_change_pct": -4.45,
       "key_price": {
         "support": 117,
         "resistance": 140,
@@ -78,8 +78,8 @@
       "score": 1,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 247.41,
-      "today_change_pct": 0.0,
+      "today_close": 236.57,
+      "today_change_pct": -4.38,
       "key_price": {
         "support": 240,
         "resistance": 252,
@@ -94,8 +94,8 @@
       "score": 3,
       "status": "watch",
       "sector": "MLCC",
-      "today_close": 113.9,
-      "today_change_pct": 0.0,
+      "today_close": 106.57,
+      "today_change_pct": -6.44,
       "key_price": {
         "support": 105,
         "resistance": 118,
@@ -110,8 +110,8 @@
       "score": 4,
       "status": "watch",
       "sector": "锂电池",
-      "today_close": 61.75,
-      "today_change_pct": 3.5,
+      "today_close": 62.12,
+      "today_change_pct": 0.6,
       "key_price": {
         "support": 57,
         "resistance": 66,
@@ -126,8 +126,8 @@
       "score": 6,
       "status": "watch",
       "sector": "先进封装",
-      "today_close": 64.3,
-      "today_change_pct": 0.0,
+      "today_close": 60.69,
+      "today_change_pct": -4.99,
       "key_price": {
         "support": 60,
         "resistance": 70,
@@ -142,8 +142,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 414.36,
-      "today_change_pct": 0.0,
+      "today_close": 408.77,
+      "today_change_pct": -7.52,
       "key_price": {
         "support": 400,
         "resistance": 460,
@@ -158,8 +158,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块龙头",
-      "today_close": 896.73,
-      "today_change_pct": 0.0,
+      "today_close": 869.77,
+      "today_change_pct": -7.77,
       "key_price": {
         "support": 880,
         "resistance": 970,
@@ -174,8 +174,8 @@
       "score": 4,
       "status": "watch",
       "sector": "光模块/CPO",
-      "today_close": 280.92,
-      "today_change_pct": 0.0,
+      "today_close": 248.79,
+      "today_change_pct": -8.89,
       "key_price": {
         "support": 265,
         "resistance": 290,
@@ -190,8 +190,8 @@
       "score": 4,
       "status": "watch",
       "sector": "存储",
-      "today_close": 139.54,
-      "today_change_pct": 0.0,
+      "today_close": 132.17,
+      "today_change_pct": -4.56,
       "key_price": {
         "support": 130,
         "resistance": 150,
@@ -206,8 +206,8 @@
       "score": 4,
       "status": "watch",
       "sector": "半导体材料",
-      "today_close": 89.15,
-      "today_change_pct": 0.0,
+      "today_close": 83.39,
+      "today_change_pct": -5.23,
       "key_price": {
         "support": 84,
         "resistance": 94,
@@ -222,8 +222,8 @@
       "score": 4,
       "status": "watch",
       "sector": "算力IDC",
-      "today_close": 65.2,
-      "today_change_pct": 0.0,
+      "today_close": 62.14,
+      "today_change_pct": -3.48,
       "key_price": {
         "support": 64,
         "resistance": 72,
@@ -238,8 +238,8 @@
       "score": 5,
       "status": "watch",
       "sector": "半导体设备",
-      "today_close": 277.16,
-      "today_change_pct": 0.0,
+      "today_close": 268.27,
+      "today_change_pct": -3.99,
       "key_price": {
         "support": 268,
         "resistance": 300,
@@ -254,8 +254,8 @@
       "score": 4,
       "status": "watch",
       "sector": "光通信/激光",
-      "today_close": 105.13,
-      "today_change_pct": 0.0,
+      "today_close": 102.92,
+      "today_change_pct": -3.61,
       "key_price": {
         "support": 100,
         "resistance": 110,
@@ -270,8 +270,8 @@
       "score": 3,
       "status": "watch",
       "sector": "PCB",
-      "today_close": 199.8,
-      "today_change_pct": 0.0,
+      "today_close": 190.99,
+      "today_change_pct": -5.02,
       "key_price": {
         "support": 192,
         "resistance": 210,
@@ -286,8 +286,8 @@
       "score": 4,
       "status": "watch",
       "sector": "服务器",
-      "today_close": 74.98,
-      "today_change_pct": 0.0,
+      "today_close": 72.15,
+      "today_change_pct": -5.5,
       "key_price": {
         "support": 70,
         "resistance": 78,
@@ -302,8 +302,8 @@
       "score": 3,
       "status": "observe",
       "sector": "电解液",
-      "today_close": 64.12,
-      "today_change_pct": 0.0,
+      "today_close": 63.65,
+      "today_change_pct": -2.48,
       "key_price": {
         "support": 64,
         "resistance": 68,
@@ -318,8 +318,8 @@
       "score": 2,
       "status": "observe",
       "sector": "磷酸铁锂",
-      "today_close": 45.88,
-      "today_change_pct": 0.0,
+      "today_close": 47.09,
+      "today_change_pct": -0.13,
       "key_price": {
         "support": 45,
         "resistance": 50,
