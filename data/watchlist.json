@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T20:45:00+08:00",
+    "last_updated": "2026-08-24T23:00:00+08:00",
     "date": "2026-08-24",
-    "session": "close",
-    "data_basis": "2026-08-24晚间复盘更新",
-    "screening_criteria": "7道闸 | 仓位63.8% | 止损后观察期",
-    "note": "2026-08-24晚间:止损执行完毕,2只持仓+观察池,禁新仓至8/27英伟达财报后"
+    "session": "23:00_scan",
+    "data_basis": "2026-08-24 23:00全市场扫描更新",
+    "screening_criteria": "7道闸 | 禁新仓至8/27 | 半导体中转池",
+    "note": "23:00扫描:第一闸未通过(1460<2000),科技全线杀跌。半导体中转池2只(赛腾/斯达),候清仓+英伟达财报后评估"
   },
   "watchlist": [
     {
@@ -327,60 +327,98 @@
       },
       "notes": "PE为负亏损，暂不介入",
       "gates": 2
+    },
+    {
+      "code": "000938",
+      "name": "紫光股份",
+      "score": 3.5,
+      "status": "semi_watch",
+      "sector": "半导体",
+      "today_close": 34.49,
+      "today_change_pct": -5.35,
+      "key_price": {
+        "support": 34.08,
+        "resistance": 40.26,
+        "stop_loss": 33.0576
+      },
+      "notes": "未进中转池:score3.5<4|MA20下方|候市场企稳后再评估",
+      "gates": 5
+    },
+    {
+      "code": "605358",
+      "name": "立昂微",
+      "score": 3.5,
+      "status": "semi_watch",
+      "sector": "半导体",
+      "today_close": 44.47,
+      "today_change_pct": 0.84,
+      "key_price": {
+        "support": 37.27,
+        "resistance": 46.32,
+        "stop_loss": 36.151900000000005
+      },
+      "notes": "未进中转池:score3.5<4|候市场企稳后再评估",
+      "gates": 5
+    },
+    {
+      "code": "300077",
+      "name": "国民技术",
+      "score": 3.5,
+      "status": "semi_watch",
+      "sector": "半导体",
+      "today_close": 19.72,
+      "today_change_pct": 1.6,
+      "key_price": {
+        "support": 16.41,
+        "resistance": 20.21,
+        "stop_loss": 15.9177
+      },
+      "notes": "未进中转池:score3.5<4|候市场企稳后再评估",
+      "gates": 5
+    },
+    {
+      "code": "300623",
+      "name": "捷捷微电",
+      "score": 3.5,
+      "status": "semi_watch",
+      "sector": "半导体",
+      "today_close": 29.82,
+      "today_change_pct": 0.68,
+      "key_price": {
+        "support": 23.53,
+        "resistance": 29.45,
+        "stop_loss": 22.8241
+      },
+      "notes": "未进中转池:score3.5<4|RSI73.38≥70|候市场企稳后再评估",
+      "gates": 5
     }
   ],
   "transit_pool": [
     {
-      "name": "兆易创新",
-      "code": "603986",
-      "sector": "存储芯片",
-      "score": 6,
+      "name": "赛腾股份",
+      "code": "603283",
+      "sector": "半导体",
+      "score": 4.5,
       "gates": 6,
       "key_price": {
-        "support": 380,
-        "resistance": 430,
-        "stop_loss": 365
+        "support": 38.43,
+        "resistance": 48.73,
+        "stop_loss": 37.2771
       },
-      "notes": "回购落地+存储涨价催化，候清仓后重建候选"
+      "notes": "7道闸6/7通过|涨幅1.82%|RSI=46.68|MA20上方|候清仓后重建候选"
     },
     {
-      "name": "长电科技",
-      "code": "600584",
-      "sector": "封测",
-      "score": 5,
-      "gates": 5,
+      "name": "斯达半导",
+      "code": "603290",
+      "sector": "半导体",
+      "score": 4.0,
+      "gates": 6,
       "key_price": {
-        "support": 75,
-        "resistance": 85,
-        "stop_loss": 72
+        "support": 80.71,
+        "resistance": 95.61,
+        "stop_loss": 78.28869999999999
       },
-      "notes": "H1净利+79%+先进封装扩产"
-    },
-    {
-      "name": "菲利华",
-      "code": "300395",
-      "sector": "半导体材料",
-      "score": 5,
-      "gates": 5,
-      "key_price": {
-        "support": 84,
-        "resistance": 94,
-        "stop_loss": 82
-      },
-      "notes": "H1营收+44%+硅片涨价"
-    },
-    {
-      "name": "复旦微电",
-      "code": "688385",
-      "sector": "FPGA/存储",
-      "score": 5,
-      "gates": 5,
-      "key_price": {
-        "support": 52,
-        "resistance": 58,
-        "stop_loss": 50
-      },
-      "notes": "H1+338%+FPGA国产替代"
+      "notes": "7道闸6/7通过|涨幅-5.07%|RSI=61.65|MA20上方|候清仓后重建候选"
     }
   ]
 }
