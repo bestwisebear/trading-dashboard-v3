@@ -1,0 +1,18 @@
+{
+  "code": "sh000001",
+  "name": "上证指数",
+  "close": 3882.01,
+  "open": 3902.7,
+  "high": 3910.24,
+  "low": 3855.35,
+  "pre_close": 3905.2,
+  "change": -23.19,
+  "change_percent": -0.59,
+  "volume": 486931412,
+  "amount": 95203926,
+  "turnover_rate": 1,
+  "market_cap": 606879.33,
+  "pe_ratio": 17.72,
+  "date": "20260824161402",
+  "source": "tencent"
+}

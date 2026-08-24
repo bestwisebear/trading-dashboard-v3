@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T16:55:00+08:00",
+    "last_updated": "2026-08-24T17:27:00+08:00",
     "date": "2026-08-24",
     "session": "close",
-    "data_basis": "8/24收盘行情，stock-data-skill腾讯数据源",
-    "screening_criteria": "7道闸预评估 | 持仓满4只禁新仓 | 科技崩盘日纪律重建期",
-    "note": "8/24收盘：持仓4只全跌(-3.3%~-8.2%)，埃斯顿全天破止损。关注池仅鹏辉能源(+0.11%)/德方纳米(-0.55%)抗跌。光模块三巨头重挫(-6.8%~-8.6%)。新仓禁入，关注池仅作止损后重建候选参考"
+    "data_basis": "8/24收盘券商截图，已执行止损(风华+埃斯顿清仓)",
+    "screening_criteria": "7道闸 | 仓位63.8% | 止损执行后观察期",
+    "note": "8/24收盘：风华高科/埃斯顿已清仓止损。剩江波龙+利通电子2只。可用资金62005。禁开新仓(减仓后当日禁回补)"
   },
   "watchlist": [
     {
@@ -14,47 +14,15 @@
       "score": 5,
       "status": "hold",
       "sector": "存储",
-      "today_close": 364.9,
+      "today_close": 364.90,
       "today_change_pct": -4.14,
       "key_price": {
-        "support": 370,
+        "support": 360,
         "resistance": 415,
         "stop_loss": 360
       },
-      "notes": "持仓200股@379.461。盘中破360(低355.87)尾盘收回364.90。港交所聆讯通过+H1净利+715倍。重仓42.2%，主力-7.63亿",
+      "notes": "持仓200股@381.63。PE13.6最低估，H1净利+71528%。收盘364.9距止损360仅4.9元，高度警戒",
       "gates": 5
-    },
-    {
-      "code": "000636",
-      "name": "风华高科",
-      "score": 3,
-      "status": "hold",
-      "sector": "MLCC被动元件",
-      "today_close": 51.91,
-      "today_change_pct": -5.05,
-      "key_price": {
-        "support": 51.88,
-        "resistance": 58,
-        "stop_loss": 51.5
-      },
-      "notes": "持仓800股@54.581。盘中破51.5(低50.55)尾盘收回51.91。主力-3.82亿。非关注池违规仓",
-      "gates": 3
-    },
-    {
-      "code": "002747",
-      "name": "埃斯顿",
-      "score": 3,
-      "status": "hold",
-      "sector": "工业机器人",
-      "today_close": 30.82,
-      "today_change_pct": -8.19,
-      "key_price": {
-        "support": 31.3,
-        "resistance": 35.7,
-        "stop_loss": 31.3
-      },
-      "notes": "持仓1100股@33.677。全天破31.3止损(低30.25)。主力-2.25亿+龙虎榜机构净卖1.71亿。非关注池违规仓，8/25优先处理",
-      "gates": 3
     },
     {
       "code": "603629",
@@ -69,8 +37,40 @@
         "resistance": 140,
         "stop_loss": 117
       },
-      "notes": "持仓200股@125.721。最低117.48距止损117仅0.48元，收盘守住。主力-2.00亿。全新标的",
+      "notes": "持仓300股@123.33。算力租赁+液冷，腾讯50亿长单，H1净利+1172%~1368%。收盘121.78距止损117有4.78元缓冲",
       "gates": 3
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "score": 0,
+      "status": "sold_stoploss",
+      "sector": "MLCC被动元件",
+      "today_close": 51.91,
+      "today_change_pct": -5.05,
+      "key_price": {
+        "support": 51.88,
+        "resistance": 58,
+        "stop_loss": 51.5
+      },
+      "notes": "⚠️8/24止损清仓800股，实现亏损-2997.22。MLCC涨价+国资龙头，但PE205倍偏高，均线空头未企稳",
+      "gates": 0
+    },
+    {
+      "code": "002747",
+      "name": "埃斯顿",
+      "score": 0,
+      "status": "sold_stoploss",
+      "sector": "工业机器人",
+      "today_close": 30.82,
+      "today_change_pct": -8.19,
+      "key_price": {
+        "support": 31.3,
+        "resistance": 35.7,
+        "stop_loss": 31.3
+      },
+      "notes": "⚠️8/24止损清仓1100股，实现亏损-3418.92。国产机器人龙头。非关注池违规标的已清理",
+      "gates": 0
     },
     {
       "code": "300857",
@@ -78,8 +78,8 @@
       "score": 1,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 240.8,
-      "today_change_pct": -2.67,
+      "today_close": 236.57,
+      "today_change_pct": -4.38,
       "key_price": {
         "support": 240,
         "resistance": 252,
@@ -94,8 +94,8 @@
       "score": 3,
       "status": "watch",
       "sector": "MLCC",
-      "today_close": 108.94,
-      "today_change_pct": -4.35,
+      "today_close": 106.57,
+      "today_change_pct": -6.44,
       "key_price": {
         "support": 105,
         "resistance": 118,
@@ -110,8 +110,8 @@
       "score": 4,
       "status": "watch",
       "sector": "锂电池",
-      "today_close": 61.82,
-      "today_change_pct": 0.11,
+      "today_close": 62.12,
+      "today_change_pct": 0.6,
       "key_price": {
         "support": 57,
         "resistance": 66,
@@ -126,8 +126,8 @@
       "score": 6,
       "status": "watch",
       "sector": "先进封装",
-      "today_close": 61.24,
-      "today_change_pct": -4.13,
+      "today_close": 60.69,
+      "today_change_pct": -4.99,
       "key_price": {
         "support": 60,
         "resistance": 70,
@@ -142,8 +142,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 412.0,
-      "today_change_pct": -6.79,
+      "today_close": 408.77,
+      "today_change_pct": -7.52,
       "key_price": {
         "support": 400,
         "resistance": 460,
@@ -158,8 +158,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块龙头",
-      "today_close": 870.22,
-      "today_change_pct": -7.72,
+      "today_close": 869.77,
+      "today_change_pct": -7.77,
       "key_price": {
         "support": 880,
         "resistance": 970,
@@ -174,8 +174,8 @@
       "score": 4,
       "status": "watch",
       "sector": "光模块/CPO",
-      "today_close": 249.5,
-      "today_change_pct": -8.63,
+      "today_close": 248.79,
+      "today_change_pct": -8.89,
       "key_price": {
         "support": 265,
         "resistance": 290,
@@ -190,8 +190,8 @@
       "score": 4,
       "status": "watch",
       "sector": "存储",
-      "today_close": 133.66,
-      "today_change_pct": -3.48,
+      "today_close": 132.17,
+      "today_change_pct": -4.56,
       "key_price": {
         "support": 130,
         "resistance": 150,
@@ -206,8 +206,8 @@
       "score": 4,
       "status": "watch",
       "sector": "半导体材料",
-      "today_close": 83.99,
-      "today_change_pct": -4.55,
+      "today_close": 83.39,
+      "today_change_pct": -5.23,
       "key_price": {
         "support": 84,
         "resistance": 94,
@@ -222,8 +222,8 @@
       "score": 4,
       "status": "watch",
       "sector": "算力IDC",
-      "today_close": 62.45,
-      "today_change_pct": -3.0,
+      "today_close": 62.14,
+      "today_change_pct": -3.48,
       "key_price": {
         "support": 64,
         "resistance": 72,
@@ -238,8 +238,8 @@
       "score": 5,
       "status": "watch",
       "sector": "半导体设备",
-      "today_close": 271.1,
-      "today_change_pct": -2.98,
+      "today_close": 268.27,
+      "today_change_pct": -3.99,
       "key_price": {
         "support": 268,
         "resistance": 300,
@@ -254,8 +254,8 @@
       "score": 4,
       "status": "watch",
       "sector": "光通信/激光",
-      "today_close": 103.35,
-      "today_change_pct": -3.21,
+      "today_close": 102.92,
+      "today_change_pct": -3.61,
       "key_price": {
         "support": 100,
         "resistance": 110,
@@ -270,8 +270,8 @@
       "score": 3,
       "status": "watch",
       "sector": "PCB",
-      "today_close": 193.6,
-      "today_change_pct": -3.72,
+      "today_close": 190.99,
+      "today_change_pct": -5.02,
       "key_price": {
         "support": 192,
         "resistance": 210,
@@ -286,8 +286,8 @@
       "score": 4,
       "status": "watch",
       "sector": "服务器",
-      "today_close": 73.22,
-      "today_change_pct": -4.1,
+      "today_close": 72.15,
+      "today_change_pct": -5.5,
       "key_price": {
         "support": 70,
         "resistance": 78,
@@ -302,8 +302,8 @@
       "score": 3,
       "status": "observe",
       "sector": "电解液",
-      "today_close": 63.9,
-      "today_change_pct": -2.1,
+      "today_close": 63.65,
+      "today_change_pct": -2.48,
       "key_price": {
         "support": 64,
         "resistance": 68,
@@ -318,8 +318,8 @@
       "score": 2,
       "status": "observe",
       "sector": "磷酸铁锂",
-      "today_close": 46.89,
-      "today_change_pct": -0.55,
+      "today_close": 47.09,
+      "today_change_pct": -0.13,
       "key_price": {
         "support": 45,
         "resistance": 50,
@@ -341,24 +341,7 @@
         "resistance": 430,
         "stop_loss": 365
       },
-      "notes": "回购落地+存储涨价催化，候清仓后重建候选",
-      "today_close": 381.66,
-      "today_change_pct": -6.7
-    },
-    {
-      "name": "江波龙",
-      "code": "301308",
-      "sector": "存储",
-      "score": 5,
-      "gates": 5,
-      "key_price": {
-        "support": 370,
-        "resistance": 415,
-        "stop_loss": 360
-      },
-      "notes": "已持仓200股",
-      "today_close": 364.9,
-      "today_change_pct": -4.14
+      "notes": "回购落地+存储涨价催化，候清仓后重建候选"
     },
     {
       "name": "长电科技",
@@ -371,9 +354,7 @@
         "resistance": 85,
         "stop_loss": 72
       },
-      "notes": "H1净利+79%+先进封装扩产",
-      "today_close": 73.8,
-      "today_change_pct": -6.07
+      "notes": "H1净利+79%+先进封装扩产"
     },
     {
       "name": "菲利华",
@@ -386,9 +367,7 @@
         "resistance": 94,
         "stop_loss": 82
       },
-      "notes": "H1营收+44%+硅片涨价",
-      "today_close": 83.99,
-      "today_change_pct": -4.55
+      "notes": "H1营收+44%+硅片涨价"
     },
     {
       "name": "复旦微电",

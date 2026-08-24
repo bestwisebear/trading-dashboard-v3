@@ -2,13 +2,12 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-24T16:55:00+08:00",
-    "total_realized_pnl": 24921.18,
-    "total_trades": 53,
-    "notes": "⚠️8/19-8/21交易明细缺失待补录(周末大幅调仓：清旧4仓鹏辉/协创/昊志/三环，买入风华/埃斯顿/江波龙/利通电子)。当前持仓以券商截图8/24为准，trades_all记录到seq53(8/18)",
-    "data_as_of": "2026-08-24 收盘",
+    "last_updated": "2026-08-24T08:46:00+08:00",
+    "total_realized_pnl": 25627.04,
+    "total_trades": 50,
+    "notes": "⚠️8/19-8/21交易明细缺失待补录(周末大幅调仓：清旧4仓鹏辉/协创/昊志/三环，买入风华/埃斯顿/江波龙/利通电子)。当前持仓以券商截图8/24为准，trades_all仅记录到seq50(8/18)",
+    "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close",
-    "source": "8/18盘中:三环建仓300@126.21+协创成本更正254.14",
     "data_gap": "2026-08-19 ~ 2026-08-21 交易记录缺失"
   },
   "trades": [
@@ -586,12 +585,12 @@
       "name": "协创数据",
       "action": "buy",
       "quantity": 200,
-      "price": 254.14,
-      "amount": 25414.0,
+      "price": 259.13,
+      "amount": 51826.0,
       "cost_basis": 259.13,
       "realized_pnl": 0,
       "violation": "none",
-      "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线 [成本更正254.14]"
+      "notes": "算力租赁标的，H1营收+155.69%，净利+331.11%，CPO主线"
     },
     {
       "seq": 44,
@@ -692,48 +691,6 @@
       "realized_pnl": 1091.3,
       "violation": "none",
       "notes": "清仓第2笔(共2笔)。MLCC链去重,保留风华出国产瓷"
-    },
-    {
-      "seq": 51,
-      "date": "2026-08-18",
-      "time": "10:45",
-      "code": "000636",
-      "name": "风华高科",
-      "action": "sell",
-      "quantity": 500,
-      "price": 64.36,
-      "amount": 32180.0,
-      "realized_pnl": 925.54,
-      "violation": "none",
-      "notes": "清仓。PE207x偏高，换仓机器人概念"
-    },
-    {
-      "seq": 52,
-      "date": "2026-08-18",
-      "time": "13:42",
-      "code": "300503",
-      "name": "昊志机电",
-      "action": "buy",
-      "quantity": 500,
-      "price": 80.18,
-      "amount": 40090.0,
-      "realized_pnl": 0,
-      "violation": "non_watchlist",
-      "notes": "机器人大会概念博弈。替代长盛轴承(涨太多)。换手11.41%高活性"
-    },
-    {
-      "seq": 53,
-      "date": "2026-08-18",
-      "time": "13:45",
-      "code": "300408",
-      "name": "三环集团",
-      "action": "buy",
-      "quantity": 300,
-      "price": 126.21,
-      "amount": 37863.0,
-      "realized_pnl": 0,
-      "violation": "none",
-      "notes": "MLCC涨价30%催化。挂单126成交126.21。止损122，止盈137/145-150"
     }
   ],
   "daily_summary": [
@@ -790,27 +747,6 @@
       "trade_count": 3,
       "realized_pnl": 1477,
       "violation_count": 0
-    },
-    {
-      "date": "2026-08-17",
-      "trade_count": 4,
-      "realized_pnl": 1845.4,
-      "violation_count": 0,
-      "note": "补录：鹏辉减仓400@64.74(+1805.2)+长川清仓100@301.4(+40.2)+风华买入500@62.46+国瓷买入600@71.96"
-    },
-    {
-      "date": "2026-08-18",
-      "trade_count": 6,
-      "realized_pnl": 3599.18,
-      "violation_count": 1,
-      "note": "补录：协创减仓100(+727)+国瓷清仓2笔(+855.34/+1091.3)+风华清仓500(+925.54)+昊志建仓500(violation)+三环建仓300"
-    },
-    {
-      "date": "2026-08-24",
-      "trade_count": 0,
-      "realized_pnl": 0,
-      "violation_count": 0,
-      "note": "无确认成交(用户未回报交割)"
     }
   ]
 }
