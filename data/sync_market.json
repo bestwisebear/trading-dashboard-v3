@@ -1,22 +1,36 @@
 {
-  "last_updated": "2026-08-19T16:53:00+08:00",
-  "date": "2026-08-19",
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25"
+  },
   "indices": {
     "上证指数": {
-      "close": 3894.42,
-      "change_pct": -2.4
+      "close": 3889.44,
+      "change_pct": 0.19
     },
     "深证成指": {
-      "close": 13890.15,
-      "change_pct": -5.01
+      "close": 13745.87,
+      "change_pct": -0.35
     },
     "创业板指": {
-      "close": 3473.49,
-      "change_pct": -6.26
+      "close": 3397.52,
+      "change_pct": -1.0
     }
   },
-  "total_assets": 196554.69,
-  "net_today": -15011,
-  "total_pnl": -3445.31,
-  "market_summary": "🚨8/19科技崩盘日!沪指-2.40%失守3900/深成指-5.01%/创业板-6.26%/科创50-6.89%。119跌停/5000+下跌/2.51万亿放量。仅煤炭/银行逆势。月度PnL转负-3445(-1.72%)。3只持仓破止损!"
+  "market_breadth": {
+    "up": 4229,
+    "down": 1243,
+    "limit_up": 70
+  },
+  "volume": {
+    "total": 18318,
+    "change": -1756
+  },
+  "north_flow": -18.62,
+  "bottom_signals": {
+    "satisfied": 2,
+    "total": 5,
+    "verdict": "继续观望"
+  },
+  "signals_summary": "5红2黄,涨跌大幅恢复,消费/农业/医药领涨vs科技杀跌"
 }

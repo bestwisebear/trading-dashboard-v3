@@ -1,33 +1,37 @@
 {
   "meta": {
-    "last_updated": "2026-08-24 16:15",
-    "date": "2026-08-17"
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25",
+    "session": "post_close"
   },
-  "avoid": [
+  "items": [
     {
-      "code": "002015",
-      "name": "协鑫能科",
-      "reason": "8/13清仓，质押风险+算力逻辑纸面"
+      "code": "000636",
+      "name": "风华高科",
+      "reason": "8/24止损清仓,亏损-2997。PE205倍偏高,均线空头",
+      "added_date": "2026-08-24",
+      "status": "sold_stoploss"
     },
     {
-      "code": "159558",
-      "name": "半导体设备ETF",
-      "reason": "8/13清仓"
+      "code": "002747",
+      "name": "埃斯顿",
+      "reason": "8/24止损清仓,亏损-3419。非关注池违规标的",
+      "added_date": "2026-08-24",
+      "status": "sold_stoploss"
     },
     {
-      "code": "000977",
-      "name": "浪潮信息",
-      "reason": "8/14-0.83%连续弱势，观望"
+      "code": "300857",
+      "name": "协创数据",
+      "reason": "8/18减仓,科技链系统性杀跌期避开",
+      "added_date": "2026-08-18",
+      "status": "avoid"
     },
     {
-      "code": "600519",
-      "name": "贵州茅台",
-      "reason": "8/16公告H1净利-1.95%，大消费承压"
-    },
-    {
-      "code": "688295",
-      "name": "中复神鹰",
-      "reason": "股东减持1.3%"
+      "code": "300285",
+      "name": "国瓷材料",
+      "reason": "8/18清仓,MLCC链去重",
+      "added_date": "2026-08-18",
+      "status": "sold"
     }
   ]
 }
