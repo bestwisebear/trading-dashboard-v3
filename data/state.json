@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T16:55:00+08:00",
+    "last_updated": "2026-08-25T20:45:00+08:00",
     "data_date": "2026-08-25",
     "source": "盘后全量刷新",
-    "session": "post_close",
-    "note": "8/25收盘:零操作。江波龙369.66(+1.30%)回升至止损上方。利通电子119.30(-2.04%)。沪指探底回升+0.19%,成交1.83万亿缩量1756亿"
+    "session": "evening_plan",
+    "note": "8/25晚间:零操作日。美股期货反弹芯片走强,但8/26英伟达财报+PCE=双重高波动。APEX熔断+崩盘后纪律防御=全天零新仓至8/31"
   },
   "current": {
     "total_assets": 171727.18,
@@ -23,8 +23,8 @@
     "net_today": -10377.24,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "post_close",
-    "note": "收盘:零操作。江波龙+1.30%回升,利通电子-2.04%。市场探底回升,沪指+0.19%"
+    "session": "evening_plan",
+    "note": "晚间计划已生成。8/26核心:江波龙360/利通电子117止损核对+英伟达财报+PCE数据+Jackson Hole前瞻"
   },
   "positions": [
     {
