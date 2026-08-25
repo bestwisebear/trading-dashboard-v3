@@ -1,35 +1,42 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T08:23:00+08:00",
+    "last_updated": "2026-08-25T11:35:00+08:00",
     "date": "2026-08-25",
-    "session": "pre_market",
-    "source": "stock-data-skill盘前+8/24夜全球市场+8/25盘前政策",
-    "data_basis": "8/24收盘(确定)+8/25 08:00-08:23亚太盘前+美股8/24收盘",
-    "note": "8/25盘前：APEX二级熔断生效(月度-14.24%>10%阈值)+纳指7连阴+费半-2.7%+存储-5%以上+8/25亚太日韩低开(KOSPI-2.4%/日经-0.52%)+央行MLF+6G+机器人+卫星物联网催化"
+    "session": "intraday",
+    "source": "stock-data-skill午间盘中",
+    "data_basis": "8/25上午收盘(腾讯行情)",
+    "note": "8/25午间：三大指数均下跌,创业板-1.43%领跌。盘中低3850.86创回调新低后回升至3876。小家电+8.06%领涨,科技链继续弱势。央行5000亿MLF支持流动性"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3882.01,
-      "change_pct": -0.59,
-      "pre_close": 3905.2,
-      "note": "8/24收3882.01失守3900,盘中最低3855.35击穿3880箱底,8/25盘前观望",
-      "session": "close"
+      "close": 3876.38,
+      "change_pct": -0.15,
+      "pre_close": 3882.01,
+      "note": "午间3876.38(-0.15%),盘中低3850.86创本轮回调新低后回升",
+      "session": "intraday",
+      "intraday_low": 3850.86,
+      "intraday_high": 3884.27
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 13794.29,
-      "change_pct": -2.13,
-      "pre_close": 14094.17,
-      "note": "8/24高开低走重挫-2.13%,8/25盘前关注能否企稳",
-      "session": "close"
+      "close": 13687.06,
+      "change_pct": -0.78,
+      "pre_close": 13794.29,
+      "note": "午间13687.06(-0.78%),盘中低13568.51",
+      "session": "intraday",
+      "intraday_low": 13568.51,
+      "intraday_high": 13771.76
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3431.89,
-      "change_pct": -3.21,
-      "pre_close": 3545.58,
-      "note": "8/24盘中-4.58%创近期最大跌幅,算力硬件拖累,8/25盘前关注科技股情绪"
+      "close": 3382.81,
+      "change_pct": -1.43,
+      "pre_close": 3431.89,
+      "note": "午间3382.81(-1.43%),盘中低3359.74,CPO/元件拖累",
+      "session": "intraday",
+      "intraday_low": 3359.74,
+      "intraday_high": 3420.24
     }
   },
   "overseas": {

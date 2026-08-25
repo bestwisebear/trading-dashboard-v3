@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T08:23:00+08:00",
+    "last_updated": "2026-08-25T11:35:00+08:00",
     "date": "2026-08-25",
-    "session": "pre_market",
-    "data_basis": "2026-08-24收盘+8/25盘前(亚太+美股8/24)",
+    "session": "intraday",
+    "data_basis": "8/25午间盘中(腾讯行情)",
     "screening_criteria": "7道闸+APEX二级熔断(月度-14.24%>10%阈值8/25-8/31禁新仓)+崩盘后纪律防御期",
     "note": "8/25防御+熔断+持仓警戒日。APEX二级熔断生效(8/25-8/31禁新仓)+崩盘后纪律防御(8/27英伟达财报后评估)+清仓次日禁回补=三重锁定全天零新仓。江波龙364.9距止损360仅4.9元(1.32%)首要警戒"
   },
@@ -14,14 +14,14 @@
       "score": 5,
       "status": "hold_alert",
       "sector": "存储",
-      "today_close": 364.9,
-      "today_change_pct": -4.14,
+      "today_close": 364.33,
+      "today_change_pct": -0.16,
       "key_price": {
         "support": 360,
         "resistance": 415,
         "stop_loss": 360
       },
-      "notes": "🚨持仓200股@381.63首要警戒。8/24收盘364.9距止损360仅4.9元(1.32%)。8/24夜美光-5.83%/闪迪-6.45%/西部数据-5.24%/SK海力士-4.92%冲击存储链。PE13.08最低估+港股聆讯+长存IPO为基本面支撑。破360立即市价清,不挂限价等反弹。APEX二级熔断生效禁补仓"
+      "notes": "🚨持仓200股@381.63。午间364.33(-0.16%),盘中低353.88已破止损360!回升至364距止损仅1.19%。存储链承压,美光-5.83%传导。PE13.06最低估。APEX二级熔断禁补仓。下午再破360立即执行"
     },
     {
       "code": "603629",
@@ -29,14 +29,14 @@
       "score": 3,
       "status": "hold",
       "sector": "算力租赁/液冷",
-      "today_close": 121.78,
-      "today_change_pct": -3.33,
+      "today_close": 119.79,
+      "today_change_pct": -1.63,
       "key_price": {
         "support": 117,
         "resistance": 140,
         "stop_loss": 117
       },
-      "notes": "持仓300股@123.33。算力租赁+液冷+腾讯50亿长单+H1净利+1172%~1368%。收盘121.78距止损117有4.78元(3.92%)缓冲。8/24盘中破117仅3分钟收回。8/25外盘算力链-5.21%传导。破117立即市价清。APEX熔断禁补仓"
+      "notes": "🚨持仓300股@123.33。午间119.79(-1.63%),盘中低115.66已破止损117!回升至119.79距止损3.46%。算力链承压,英伟达7连阴。龙虎榜沪股通大额卖出。APEX熔断禁补仓。下午再破117立即执行"
     },
     {
       "code": "000636",
@@ -44,8 +44,8 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "MLCC被动元件",
-      "today_close": 51.91,
-      "today_change_pct": -5.05,
+      "today_close": 50.97,
+      "today_change_pct": -1.81,
       "key_price": {
         "support": 51.88,
         "resistance": 58,
@@ -59,8 +59,8 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "工业机器人",
-      "today_close": 30.82,
-      "today_change_pct": -8.19,
+      "today_close": 31.14,
+      "today_change_pct": 1.04,
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
@@ -74,8 +74,8 @@
       "score": 1,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 240.8,
-      "today_change_pct": -2.67,
+      "today_close": 237.06,
+      "today_change_pct": -1.55,
       "key_price": {
         "support": 231.77,
         "resistance": 250,
@@ -89,8 +89,8 @@
       "score": 3,
       "status": "watch",
       "sector": "MLCC",
-      "today_close": 108.94,
-      "today_change_pct": -4.35,
+      "today_close": 108.91,
+      "today_change_pct": -0.03,
       "key_price": {
         "support": 105.86,
         "resistance": 119,
@@ -104,8 +104,8 @@
       "score": 4,
       "status": "watch",
       "sector": "锂电储能",
-      "today_close": 61.82,
-      "today_change_pct": -3.8,
+      "today_close": 60.78,
+      "today_change_pct": -1.68,
       "key_price": {
         "support": 58,
         "resistance": 68,
@@ -119,8 +119,8 @@
       "score": 6,
       "status": "watch",
       "sector": "封测/AMD",
-      "today_close": 61.24,
-      "today_change_pct": -3.0,
+      "today_close": 60.71,
+      "today_change_pct": -0.87,
       "key_price": {
         "support": 58,
         "resistance": 70,
@@ -134,8 +134,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 412.0,
-      "today_change_pct": -6.79,
+      "today_close": 401.2,
+      "today_change_pct": -2.62,
       "key_price": {
         "support": 400,
         "resistance": 470,
@@ -149,8 +149,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 870.22,
-      "today_change_pct": -7.72,
+      "today_close": 842.75,
+      "today_change_pct": -3.16,
       "key_price": {
         "support": 850,
         "resistance": 1050,
@@ -164,8 +164,8 @@
       "score": 4,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 249.5,
-      "today_change_pct": -8.63,
+      "today_close": 251.88,
+      "today_change_pct": 0.95,
       "key_price": {
         "support": 230,
         "resistance": 290,
@@ -179,8 +179,8 @@
       "score": 4,
       "status": "watch",
       "sector": "存储IC设计",
-      "today_close": 133.66,
-      "today_change_pct": -3.48,
+      "today_close": 131.05,
+      "today_change_pct": -1.95,
       "key_price": {
         "support": 130,
         "resistance": 155,
@@ -194,8 +194,8 @@
       "score": 4,
       "status": "watch",
       "sector": "石英材料/半导体",
-      "today_close": 83.99,
-      "today_change_pct": -2.5,
+      "today_close": 82.9,
+      "today_change_pct": -1.3,
       "key_price": {
         "support": 82,
         "resistance": 95,
@@ -209,8 +209,8 @@
       "score": 4,
       "status": "watch",
       "sector": "IDC/液冷",
-      "today_close": 62.45,
-      "today_change_pct": -3.8,
+      "today_close": 62.14,
+      "today_change_pct": -0.5,
       "key_price": {
         "support": 60,
         "resistance": 72,
@@ -224,8 +224,8 @@
       "score": 5,
       "status": "watch",
       "sector": "半导体测试设备",
-      "today_close": 271.1,
-      "today_change_pct": -2.98,
+      "today_close": 261.06,
+      "today_change_pct": -3.7,
       "key_price": {
         "support": 265,
         "resistance": 305,
@@ -239,8 +239,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块/激光",
-      "today_close": 103.35,
-      "today_change_pct": -4.5,
+      "today_close": 101.99,
+      "today_change_pct": -1.32,
       "key_price": {
         "support": 100,
         "resistance": 120,
@@ -254,8 +254,8 @@
       "score": 4,
       "status": "watch",
       "sector": "PCB/果链",
-      "today_close": 193.6,
-      "today_change_pct": -2.0,
+      "today_close": 190.97,
+      "today_change_pct": -1.36,
       "key_price": {
         "support": 188,
         "resistance": 220,
@@ -269,8 +269,8 @@
       "score": 5,
       "status": "watch_avoid",
       "sector": "服务器/AI算力",
-      "today_close": 73.22,
-      "today_change_pct": -2.5,
+      "today_close": 72.9,
+      "today_change_pct": -0.44,
       "key_price": {
         "support": 70,
         "resistance": 85,
@@ -284,8 +284,8 @@
       "score": 3,
       "status": "watch",
       "sector": "锂电电解液",
-      "today_close": 63.9,
-      "today_change_pct": -1.8,
+      "today_close": 61.59,
+      "today_change_pct": -3.62,
       "key_price": {
         "support": 60,
         "resistance": 72,
@@ -299,8 +299,8 @@
       "score": 2,
       "status": "watch",
       "sector": "锂电正极/磷酸铁锂",
-      "today_close": 46.89,
-      "today_change_pct": -2.5,
+      "today_close": 45.3,
+      "today_change_pct": -3.39,
       "key_price": {
         "support": 45,
         "resistance": 55,
