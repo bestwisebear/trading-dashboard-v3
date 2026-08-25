@@ -694,34 +694,105 @@
       "notes": "清仓第2笔(共2笔)。MLCC链去重,保留风华出国产瓷"
     },
     {
+      "seq": 51,
       "date": "2026-08-24",
-      "time": "14:30:00",
-      "action": "sell",
+      "time": "14:30",
       "code": "000636",
       "name": "风华高科",
+      "action": "sell",
       "quantity": 800,
-      "price": 51.87,
-      "amount": 41496.0,
+      "price": 50.834,
+      "amount": 40667.2,
       "cost_price": 54.581,
       "realized_pnl": -2997.22,
       "violation": "none",
-      "note": "止损清仓，跌破支撑51.88执行",
-      "session": "close"
+      "notes": "止损清仓"
     },
     {
+      "seq": 52,
       "date": "2026-08-24",
-      "time": "14:30:00",
-      "action": "sell",
+      "time": "14:30",
       "code": "002747",
       "name": "埃斯顿",
+      "action": "sell",
       "quantity": 1100,
-      "price": 30.66,
-      "amount": 33726.0,
+      "price": 30.567,
+      "amount": 33623.7,
       "cost_price": 33.677,
       "realized_pnl": -3418.92,
       "violation": "none",
-      "note": "止损清仓，非关注池违规标的清理",
-      "session": "close"
+      "notes": "止损清仓，非关注池标的清理"
+    },
+    {
+      "seq": 53,
+      "date": "2026-08-25",
+      "time": "盘中",
+      "code": "301308",
+      "name": "江波龙",
+      "action": "sell",
+      "quantity": 200,
+      "price": 368.82,
+      "amount": 73764.0,
+      "cost_price": 381.63,
+      "realized_pnl": -2562.0,
+      "violation": "intraday_T_ban",
+      "notes": "做T卖出(原200股)，后高价回补100股。违规：禁做T铁律"
+    },
+    {
+      "seq": 54,
+      "date": "2026-08-25",
+      "time": "盘中",
+      "code": "301308",
+      "name": "江波龙",
+      "action": "buy",
+      "quantity": 100,
+      "price": 386.73,
+      "amount": 38673.0,
+      "realized_pnl": 0,
+      "violation": "intraday_T_ban",
+      "notes": "做T回补100股(卖低买高)，T+1不可卖。违规：禁做T"
+    },
+    {
+      "seq": 55,
+      "date": "2026-08-25",
+      "time": "盘中",
+      "code": "603629",
+      "name": "利通电子",
+      "action": "buy",
+      "quantity": 200,
+      "price": 119.35,
+      "amount": 23870.0,
+      "realized_pnl": 0,
+      "violation": "apex_circuit_breaker+non_window",
+      "notes": "APEX熔断期加仓200股(原300→500)。违规：熔断期禁开新仓+非13:30-14:30窗口"
+    },
+    {
+      "seq": 56,
+      "date": "2026-08-25",
+      "time": "盘中",
+      "code": "002851",
+      "name": "麦格米特",
+      "action": "buy",
+      "quantity": 300,
+      "price": 121.324,
+      "amount": 36397.2,
+      "realized_pnl": 0,
+      "violation": "non_watchlist+apex_circuit_breaker",
+      "notes": "新建仓300股。违规：非关注池标的+APEX熔断期建仓"
+    },
+    {
+      "seq": 57,
+      "date": "2026-08-25",
+      "time": "盘中",
+      "code": "300285",
+      "name": "国瓷材料",
+      "action": "buy",
+      "quantity": 600,
+      "price": 64.013,
+      "amount": 38407.8,
+      "realized_pnl": 0,
+      "violation": "non_watchlist+apex_circuit_breaker",
+      "notes": "新建仓600股。违规：非关注池标的+APEX熔断期建仓"
     }
   ],
   "daily_summary": [
@@ -779,5 +850,10 @@
       "realized_pnl": 1477,
       "violation_count": 0
     }
-  ]
+  ],
+  "last_updated": "2026-08-25T22:39:43+08:00",
+  "total_trades": 57,
+  "total_realized_pnl": 15017.5,
+  "notes": "⚠️8/19-8/21交易明细仍缺失。8/24止损2笔(seq51-52)+8/25做T+建仓6笔(seq53-57)已按券商截图反推补录",
+  "data_gap": "2026-08-19 ~ 2026-08-21 交易记录仍缺失"
 }
