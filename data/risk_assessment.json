@@ -1,11 +1,13 @@
 {
   "meta": {
-    "last_updated": "2026-08-24 20:45",
-    "data_date": "2026-08-24",
-    "source": "晚间复盘"
+    "last_updated": "2026-08-25T08:23:00+08:00",
+    "date": "2026-08-25",
+    "session": "pre_market",
+    "data_as_of": "8/24收盘+8/25盘前",
+    "source": "stock-data-skill+8/25亚太盘前+美股8/24收盘"
   },
   "level": "high",
-  "score": 65,
+  "score": 70,
   "factors": [
     {
       "factor": "仓位",
@@ -23,37 +25,37 @@
       "factor": "当日盈亏",
       "value": "-5.75%",
       "status": "fail",
-      "detail": "单日亏损-10470,为近期最大单日亏损之一"
+      "detail": "8/24单日亏损-10470,为近期最大单日亏损之一"
     },
     {
       "factor": "累计盈亏",
       "value": "-14.24%",
-      "status": "warn",
-      "detail": "累计-28481,距月度-20%红线(40000)剩11519(约5.75%回撤空间)"
+      "status": "fail",
+      "detail": "累计-28481,触发APEX二级熔断(月度-14.24%>10%阈值,8/25-8/31禁新仓)"
     },
     {
       "factor": "持仓集中度",
       "value": "2只全科技链",
       "status": "warn",
-      "detail": "江波龙(存储)+利通电子(算力租赁),均为科技链,板块相关性高"
+      "detail": "江波龙(存储)+利通电子(算力租赁),均为科技链,板块相关性高;8/24夜外盘存储-5%以上+AAOI-13.77%冲击光通信"
     },
     {
       "factor": "市场趋势",
-      "value": "创业板-3.21%",
+      "value": "创业板-3.21%+亚太日韩低开",
       "status": "fail",
-      "detail": "创业板大跌,科技股系统性杀跌,短期趋势偏空"
+      "detail": "创业板8/24大跌-3.21%,8/25盘前日经-0.52%/KOSPI-3%,科技股系统性杀跌,短期趋势偏空"
     },
     {
       "factor": "资金面",
       "value": "主力-695亿",
       "status": "fail",
-      "detail": "主力净流出-695亿,电子行业-212亿居首"
+      "detail": "8/24主力净流出-695.23亿,电子行业-212亿居首;持仓主力齐流出：江波龙-7.63亿/利通-2.00亿"
     },
     {
       "factor": "外部事件",
-      "value": "英伟达财报+Jackson Hole",
-      "status": "warn",
-      "detail": "8/26英伟达财报+8/27 Jackson Hole+美国CPI,外部风险窗口集中"
+      "value": "英伟达+Jackson Hole+沃什",
+      "status": "fail",
+      "detail": "8/26英伟达财报+8/27-29 Jackson Hole+8/28 22:00沃什首次主旨演讲+8/29美国PCE,外部风险窗口集中且冲击大"
     }
   ],
   "rule_checks": [
@@ -65,28 +67,43 @@
     {
       "rule": "单日≤6笔",
       "passed": true,
-      "current_value": "2笔"
+      "current_value": "0笔(8/25)"
     },
     {
       "rule": "新仓仅13:30-14:30",
       "passed": true,
-      "current_value": "今日无新仓"
+      "current_value": "今日无新仓计划"
     },
     {
       "rule": "止损执行",
       "passed": true,
-      "current_value": "风华+埃斯顿已清仓"
+      "current_value": "风华+埃斯顿8/24清仓完毕"
     },
     {
       "rule": "涨跌家数<2000禁开新仓",
       "passed": true,
-      "current_value": "上涨1456家,规则生效"
+      "current_value": "8/24上涨1456家,规则生效"
     },
     {
       "rule": "月度回撤<20%",
       "passed": true,
       "current_value": "-14.24%,距红线还有5.76个百分点"
+    },
+    {
+      "rule": "APEX二级熔断(月度-10%阈值)",
+      "passed": false,
+      "current_value": "-14.24%>10%,熔断生效(8/25-8/31禁新仓)"
+    },
+    {
+      "rule": "崩盘后纪律防御期",
+      "passed": false,
+      "current_value": "8/24崩盘,观察期至8/27英伟达财报后"
+    },
+    {
+      "rule": "当日清仓后次日禁回补",
+      "passed": false,
+      "current_value": "8/24清仓风华+埃斯顿,8/25禁回补"
     }
   ],
-  "suggestion": "🚨 8/25开盘首要:确认江波龙是否破360,破则立即止损。利通电子守117。禁新仓至8/27英伟达财报落地后。"
+  "suggestion": "🚨 8/25开盘首要:确认江波龙是否破360,破则立即止损。利通电子守117。禁新仓至8/27英伟达财报+8/28 Jackson Hole沃什演讲后。9/1起评估APEX熔断解除"
 }
