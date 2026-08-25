@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-24T20:45:00+08:00",
-    "date": "2026-08-24",
-    "session": "night_review",
-    "note": "晚间复盘补充:8/24止损执行2笔(风华高科+埃斯顿清仓)"
+    "last_updated": "2026-08-25T11:35:00+08:00",
+    "date": "2026-08-25",
+    "session": "intraday",
+    "note": "8/25午间:无交易。APEX二级熔断+崩盘后纪律防御+清仓次日禁回补=零新仓"
   },
   "trades": [
     {
@@ -39,6 +39,7 @@
     "total_trades": 2,
     "buy_count": 0,
     "sell_count": 2,
-    "realized_pnl": -6416.14
+    "realized_pnl": -6416.14,
+    "note": "8/25截至午间无新交易"
   }
 }
