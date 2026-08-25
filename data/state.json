@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T11:35:00+08:00",
+    "last_updated": "2026-08-25T13:16:00+08:00",
     "data_date": "2026-08-25",
     "source": "午间数据刷新",
-    "session": "intraday",
-    "note": "8/25午间:持仓2只盘中均触及止损后回升,江波龙低353.88<360/利通电子低115.66<117,APEX二级熔断持续"
+    "session": "afternoon_final_confirm",
+    "note": "8/25 13:16:午间消息扫描+最终确认完成。六重锁定禁新仓。双持仓盘中均破止损后回升"
   },
   "current": {
     "total_assets": 170808.18,
@@ -23,8 +23,8 @@
     "net_today": -711.1,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "intraday",
-    "note": "午间:江波龙盘中低353.88(破止损360)/利通电子盘中低115.66(破止损117),均回升"
+    "session": "afternoon_final_confirm",
+    "note": "午间:双持仓均破止损后回升。六重锁定禁新仓。下午专注止损管理"
   },
   "positions": [
     {
@@ -60,8 +60,8 @@
   },
   "next_action": {
     "date": "2026-08-25",
-    "action": "持仓观察+禁新仓",
+    "action": "持仓止损管理+禁新仓",
     "key_levels": "江波龙360止损/利通电子117止损",
-    "risk_events": "8/26英伟达财报+8/27 Jackson Hole"
+    "risk_events": "8/26英伟达财报+8/27 Jackson Hole+8/28沃什演讲"
   }
 }
