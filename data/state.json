@@ -1,67 +1,81 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T20:45:00+08:00",
+    "last_updated": "2026-08-25T22:39:43+08:00",
     "data_date": "2026-08-25",
     "source": "盘后全量刷新",
     "session": "evening_plan",
-    "note": "8/25晚间:零操作日。美股期货反弹芯片走强,但8/26英伟达财报+PCE=双重高波动。APEX熔断+崩盘后纪律防御=全天零新仓至8/31"
+    "note": "8/25券商截图纠正：实际4只持仓(非2只)，6笔交易含5笔违规。满仓99.4%过英伟达财报夜=极度危险"
   },
   "current": {
-    "total_assets": 171727.18,
-    "prev_close_assets": 182104.42,
-    "available_cash": 62005.18,
+    "total_assets": 171939.02,
+    "prev_close_assets": 171519.28,
+    "available_cash": 983.02,
     "initial_capital": 200000.0,
-    "position_count": 2,
-    "position_ratio": 63.9,
-    "monthly_pnl": -28272.82,
-    "monthly_return_rate": -14.14,
-    "market_value": 109722.0,
-    "note": "2只持仓(江波龙/利通电子),收盘仓位63.9%"
+    "position_count": 4,
+    "position_ratio": 99.4,
+    "monthly_pnl": -28060.98,
+    "monthly_return_rate": -14.03,
+    "market_value": 170956.0,
+    "note": "4只持仓(江波龙100/利通500/麦格米特300/国瓷600),满仓99.4%,现金仅983"
   },
   "today_so_far": {
     "date": "2026-08-25",
-    "net_today": -10377.24,
-    "trade_count": 0,
-    "violation_count": 0,
-    "session": "evening_plan",
-    "note": "晚间计划已生成。8/26核心:江波龙360/利通电子117止损核对+英伟达财报+PCE数据+Jackson Hole前瞻"
+    "net_today": 419.74,
+    "trade_count": 6,
+    "violation_count": 5,
+    "session": "post_close",
+    "note": "做T+加仓+建仓6笔。江波龙卖200买100(做T亏2562),利通加仓200,麦格米特300/国瓷600新建仓"
   },
   "positions": [
     {
       "code": "301308",
       "name": "江波龙",
-      "quantity": 200,
-      "cost_price": 381.63,
+      "quantity": 100,
+      "cost_price": 386.73,
       "stop_loss": 360.0,
-      "buy_date": "2026-08-21",
-      "market_value": 73932.0
+      "market_value": 36966.0
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "quantity": 300,
-      "cost_price": 123.327,
+      "quantity": 500,
+      "cost_price": 121.737,
       "stop_loss": 117.0,
-      "buy_date": "2026-08-21",
-      "market_value": 35790.0
+      "market_value": 59650.0
+    },
+    {
+      "code": "002851",
+      "name": "麦格米特",
+      "quantity": 300,
+      "cost_price": 121.324,
+      "stop_loss": 115.76,
+      "market_value": 36396.0
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "quantity": 600,
+      "cost_price": 64.013,
+      "stop_loss": 60.22,
+      "market_value": 37944.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "收盘校验:市值109722.0+现金62005.18=171727.18"
+    "note": "收盘校验:市值170956+现金983.02=171939.02"
   },
   "cumulative": {
-    "total_pnl_amount": -28272.82,
-    "total_pnl_percent": -14.14,
-    "total_trades_count": 52,
-    "total_violations": 18
+    "total_pnl_amount": -28060.98,
+    "total_pnl_percent": -14.03,
+    "total_trades_count": 57,
+    "total_violations": 23
   },
   "next_action": {
     "date": "2026-08-26",
-    "action": "持仓止损管理+APEX熔断禁新仓(月度-14.14%>10%阈值)+8/26英伟达财报观察",
-    "key_levels": "江波龙360止损/利通电子117止损",
-    "risk_events": "8/26英伟达财报+8/27 Jackson Hole+8/28沃什演讲"
+    "action": "🚨满仓过英伟达财报夜极度危险！开盘优先减仓违规标的(麦格米特/国瓷)+做T江波龙，降至20%仓位",
+    "key_levels": "江波龙360/利通117/麦格米特115.76/国瓷60.22",
+    "risk_events": "8/26英伟达财报+PCE+8/27 Jackson Hole"
   }
 }
