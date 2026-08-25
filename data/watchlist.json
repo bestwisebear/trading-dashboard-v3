@@ -318,5 +318,1014 @@
     "watch_avoid_apex_meltdown": 18,
     "passed_seven_gates": 0,
     "new_position_recommendation": "🚨全天零新仓。APEX二级熔断+崩盘后纪律防御+清仓次日禁回补=三重锁定"
-  }
+  },
+  "transit_pool": [
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "price": 395.51,
+      "change_pct": 3.63,
+      "pe": 35.0,
+      "turnover_rate": 5.93,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+3.63% PE35.0",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 101.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=35.0"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+3.63%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价395.51"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手5.9%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+3.63%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+3.63%"
+        }
+      },
+      "key_price": {
+        "support": 375.73,
+        "resistance": 435.06,
+        "buy_range": [
+          383.64,
+          403.42
+        ]
+      }
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "price": 74.05,
+      "change_pct": 0.34,
+      "pe": 68.33,
+      "turnover_rate": 4.82,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+0.34% PE68.3",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 98,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=68.3"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+0.34%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价74.05"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手4.8%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+0.34%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+0.34%"
+        }
+      },
+      "key_price": {
+        "support": 70.35,
+        "resistance": 81.45,
+        "buy_range": [
+          71.83,
+          75.53
+        ]
+      }
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "price": 60.9,
+      "change_pct": -0.56,
+      "pe": 63.9,
+      "turnover_rate": 4.19,
+      "gates_passed": 5,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 5/7闸 涨-0.56% PE63.9",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 70,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=63.9"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-0.56%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价60.9"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手4.2%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-0.56%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-0.56%"
+        }
+      },
+      "key_price": {
+        "support": 57.85,
+        "resistance": 66.99,
+        "buy_range": [
+          59.07,
+          62.12
+        ]
+      }
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "price": 700.4,
+      "change_pct": -1.06,
+      "pe": 89.42,
+      "turnover_rate": 1.04,
+      "gates_passed": 4,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 4/7闸 涨-1.06% PE89.4",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 56,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=89.4"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-1.06%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价700.4"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.0%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-1.06%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-1.06%"
+        }
+      },
+      "key_price": {
+        "support": 665.38,
+        "resistance": 770.44,
+        "buy_range": [
+          679.39,
+          714.41
+        ]
+      }
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "price": 397.03,
+      "change_pct": -0.83,
+      "pe": 21.95,
+      "turnover_rate": 6.38,
+      "gates_passed": 5,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 5/7闸 涨-0.83% PE21.9",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 75.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=21.9"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-0.83%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价397.03"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手6.4%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-0.83%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-0.83%"
+        }
+      },
+      "key_price": {
+        "support": 377.18,
+        "resistance": 436.73,
+        "buy_range": [
+          385.12,
+          404.97
+        ]
+      }
+    },
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "price": 369.66,
+      "change_pct": 1.3,
+      "pe": 13.25,
+      "turnover_rate": 3.4,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+1.30% PE13.2",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 105.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=13.2"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+1.30%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价369.66"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手3.4%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+1.30%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+1.30%"
+        }
+      },
+      "key_price": {
+        "support": 351.18,
+        "resistance": 406.63,
+        "buy_range": [
+          358.57,
+          377.05
+        ]
+      }
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "price": 238.02,
+      "change_pct": -1.15,
+      "pe": 44.89,
+      "turnover_rate": 2.15,
+      "gates_passed": 5,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 5/7闸 涨-1.15% PE44.9",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 71.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=44.9"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-1.15%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价238.02"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手2.1%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-1.15%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-1.15%"
+        }
+      },
+      "key_price": {
+        "support": 226.12,
+        "resistance": 261.82,
+        "buy_range": [
+          230.88,
+          242.78
+        ]
+      }
+    },
+    {
+      "code": "002409",
+      "name": "雅克科技",
+      "price": 137.19,
+      "change_pct": -2.42,
+      "pe": 62.88,
+      "turnover_rate": 6.83,
+      "gates_passed": 4,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 4/7闸 涨-2.42% PE62.9",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 56,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=62.9"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-2.42%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价137.19"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手6.8%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-2.42%"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.42%"
+        }
+      },
+      "key_price": {
+        "support": 130.33,
+        "resistance": 150.91,
+        "buy_range": [
+          133.07,
+          139.93
+        ]
+      }
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "price": 16.84,
+      "change_pct": -0.24,
+      "pe": 43.18,
+      "turnover_rate": 5.76,
+      "gates_passed": 5,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 5/7闸 涨-0.24% PE43.2",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 71.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=43.2"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-0.24%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价16.84"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手5.8%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-0.24%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-0.24%"
+        }
+      },
+      "key_price": {
+        "support": 16.0,
+        "resistance": 18.52,
+        "buy_range": [
+          16.33,
+          17.18
+        ]
+      }
+    },
+    {
+      "code": "000021",
+      "name": "深科技",
+      "price": 36.82,
+      "change_pct": 0.08,
+      "pe": 47.23,
+      "turnover_rate": 3.98,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+0.08% PE47.2",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 98.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=47.2"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+0.08%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价36.82"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手4.0%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+0.08%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+0.08%"
+        }
+      },
+      "key_price": {
+        "support": 34.98,
+        "resistance": 40.5,
+        "buy_range": [
+          35.72,
+          37.56
+        ]
+      }
+    },
+    {
+      "code": "300054",
+      "name": "鼎龙股份",
+      "price": 72.19,
+      "change_pct": -1.94,
+      "pe": 73.42,
+      "turnover_rate": 3.27,
+      "gates_passed": 5,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 5/7闸 涨-1.94% PE73.4",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 70,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=73.4"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-1.94%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价72.19"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手3.3%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-1.94%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-1.94%"
+        }
+      },
+      "key_price": {
+        "support": 68.58,
+        "resistance": 79.41,
+        "buy_range": [
+          70.02,
+          73.63
+        ]
+      }
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "price": 175.06,
+      "change_pct": 0.26,
+      "pe": 54.16,
+      "turnover_rate": 1.59,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+0.26% PE54.2",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 98,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=54.2"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+0.26%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价175.06"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.6%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+0.26%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+0.26%"
+        }
+      },
+      "key_price": {
+        "support": 166.31,
+        "resistance": 192.57,
+        "buy_range": [
+          169.81,
+          178.56
+        ]
+      }
+    },
+    {
+      "code": "603290",
+      "name": "斯达半导",
+      "price": 92.99,
+      "change_pct": 0.0,
+      "pe": 114.32,
+      "turnover_rate": 4.18,
+      "gates_passed": 4,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 4/7闸 涨+0.00% PE114.3",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 56,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=114.3"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌+0.00%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价92.99"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手4.2%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+0.00%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+0.00%"
+        }
+      },
+      "key_price": {
+        "support": 88.34,
+        "resistance": 102.29,
+        "buy_range": [
+          90.2,
+          94.85
+        ]
+      }
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "price": 114.86,
+      "change_pct": 3.36,
+      "pe": 128.88,
+      "turnover_rate": 1.73,
+      "gates_passed": 6,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 6/7闸 涨+3.36% PE128.9",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 84,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=128.9"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+3.36%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价114.86"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.7%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+3.36%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+3.36%"
+        }
+      },
+      "key_price": {
+        "support": 109.12,
+        "resistance": 126.35,
+        "buy_range": [
+          111.41,
+          117.16
+        ]
+      }
+    },
+    {
+      "code": "603283",
+      "name": "赛腾股份",
+      "price": 47.1,
+      "change_pct": -1.05,
+      "pe": 30.55,
+      "turnover_rate": 6.81,
+      "gates_passed": 5,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 5/7闸 涨-1.05% PE30.6",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 73.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=30.6"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-1.05%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价47.1"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手6.8%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-1.05%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体-1.05%"
+        }
+      },
+      "key_price": {
+        "support": 44.74,
+        "resistance": 51.81,
+        "buy_range": [
+          45.69,
+          48.04
+        ]
+      }
+    },
+    {
+      "code": "300458",
+      "name": "全志科技",
+      "price": 30.7,
+      "change_pct": 0.66,
+      "pe": 51.6,
+      "turnover_rate": 3.04,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+0.66% PE51.6",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 98,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=51.6"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+0.66%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价30.7"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手3.0%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+0.66%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+0.66%"
+        }
+      },
+      "key_price": {
+        "support": 29.16,
+        "resistance": 33.77,
+        "buy_range": [
+          29.78,
+          31.31
+        ]
+      }
+    },
+    {
+      "code": "002049",
+      "name": "紫光国微",
+      "price": 61.46,
+      "change_pct": 0.77,
+      "pe": 33.59,
+      "turnover_rate": 1.27,
+      "gates_passed": 7,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 7/7闸 涨+0.77% PE33.6",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 101.0,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=33.6"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "涨跌+0.77%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价61.46"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.3%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌+0.77%"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+0.77%"
+        }
+      },
+      "key_price": {
+        "support": 58.39,
+        "resistance": 67.61,
+        "buy_range": [
+          59.62,
+          62.69
+        ]
+      }
+    },
+    {
+      "code": "603005",
+      "name": "晶方科技",
+      "price": 30.33,
+      "change_pct": -4.17,
+      "pe": 58.61,
+      "turnover_rate": 7.32,
+      "gates_passed": 4,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 4/7闸 涨-4.17% PE58.6",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 56,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=58.6"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-4.17%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价30.33"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手7.3%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-4.17%"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-4.17%"
+        }
+      },
+      "key_price": {
+        "support": 28.81,
+        "resistance": 33.36,
+        "buy_range": [
+          29.42,
+          30.94
+        ]
+      }
+    },
+    {
+      "code": "300236",
+      "name": "上海新阳",
+      "price": 86.7,
+      "change_pct": -2.47,
+      "pe": 71.39,
+      "turnover_rate": 3.49,
+      "gates_passed": 4,
+      "sector": "半导体",
+      "added_date": "2026-08-25",
+      "reason": "半导体低位 4/7闸 涨-2.47% PE71.4",
+      "status": "pending_review",
+      "notes": "APEX熔断期间暂不操作，解除后优先观察",
+      "score": 56,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "4229涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=71.4"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "涨跌-2.47%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价86.7"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手3.5%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "涨跌-2.47%"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.47%"
+        }
+      },
+      "key_price": {
+        "support": 82.36,
+        "resistance": 95.37,
+        "buy_range": [
+          84.1,
+          88.43
+        ]
+      }
+    }
+  ]
 }
