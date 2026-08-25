@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T08:15:00+08:00",
+    "last_updated": "2026-08-25T08:23:00+08:00",
     "date": "2026-08-25",
     "session": "pre_market",
-    "data_basis": "2026-08-24收盘+8/25 08:10盘前",
+    "data_basis": "2026-08-24收盘+8/25盘前(亚太+美股8/24)",
     "screening_criteria": "7道闸+APEX二级熔断(月度-14.24%>10%阈值8/25-8/31禁新仓)+崩盘后纪律防御期",
     "note": "8/25防御+熔断+持仓警戒日。APEX二级熔断生效(8/25-8/31禁新仓)+崩盘后纪律防御(8/27英伟达财报后评估)+清仓次日禁回补=三重锁定全天零新仓。江波龙364.9距止损360仅4.9元(1.32%)首要警戒"
   },
@@ -21,7 +21,7 @@
         "resistance": 415,
         "stop_loss": 360
       },
-      "notes": "🚨持仓200股@381.63首要警戒。8/24收盘364.9距止损360仅4.9元(1.32%)。8/25外盘冲击:闪迪-6.45%/美光-5.83%/西部数据-5.24%。PE13.08最低估+港股聆讯+长存IPO为基本面支撑。破360立即市价清,不挂限价等反弹。APEX二级熔断生效禁补仓"
+      "notes": "🚨持仓200股@381.63首要警戒。8/24收盘364.9距止损360仅4.9元(1.32%)。8/24夜美光-5.83%/闪迪-6.45%/西部数据-5.24%/SK海力士-4.92%冲击存储链。PE13.08最低估+港股聆讯+长存IPO为基本面支撑。破360立即市价清,不挂限价等反弹。APEX二级熔断生效禁补仓"
     },
     {
       "code": "603629",
@@ -51,7 +51,7 @@
         "resistance": 58,
         "stop_loss": 51.5
       },
-      "notes": "⚠️8/24止损清仓800股，实现亏损-2997.22。MLCC涨价+国资龙头，但PE205倍偏高，均线空头未企稳"
+      "notes": "⚠️8/24止损清仓800股,实现亏损-2997.22。MLCC涨价+国资龙头,但PE205倍偏高,均线空头未企稳"
     },
     {
       "code": "002747",
@@ -66,7 +66,7 @@
         "resistance": 35.7,
         "stop_loss": 31.3
       },
-      "notes": "⚠️8/24止损清仓1100股，实现亏损-3418.92。国产机器人龙头。非关注池违规标的已清理"
+      "notes": "⚠️8/24止损清仓1100股,实现亏损-3418.92。国产机器人龙头。非关注池违规标的已清理"
     },
     {
       "code": "300857",
@@ -81,7 +81,7 @@
         "resistance": 250,
         "stop_loss": 230
       },
-      "notes": "8/21已清仓(原破止损250)。回到关注池观察。8/24收240.80(-2.67%)，高开249→收240.80（破止损240）。8/25外盘算力链继续承压。今日APEX二级熔断+崩盘后纪律防御=全面禁入"
+      "notes": "8/21已清仓(原破止损250)。回到关注池观察。8/24收240.80(-2.67%),高开249→收240.80(破止损240)。8/25外盘算力链继续承压。今日APEX二级熔断+崩盘后纪律防御=全面禁入"
     },
     {
       "code": "300408",
@@ -96,37 +96,37 @@
         "resistance": 119,
         "stop_loss": 105
       },
-      "notes": "8/21已清仓(原破止损122)。MLCC涨价链，回池观察。8/24收108.94(-4.35%)，高开113.85→破MA20=119.37。技术面破位+APEX熔断=禁入"
+      "notes": "8/21已清仓(原破止损122)。MLCC涨价链,回池观察。8/24收108.94(-4.35%),高开113.85→破MA20=119.37。技术面破位+APEX熔断=禁入"
     },
     {
       "code": "300438",
       "name": "鹏辉能源",
       "score": 4,
       "status": "watch",
-      "sector": "锂电池",
+      "sector": "锂电储能",
       "today_close": 61.82,
-      "today_change_pct": 0.11,
+      "today_change_pct": -3.8,
       "key_price": {
-        "support": 60,
-        "resistance": 66,
+        "support": 58,
+        "resistance": 68,
         "stop_loss": 57
       },
-      "notes": "8/21已清仓(原盈利仓)。锂矿爆发周利好，回池观察。8/24收61.82(+0.11%)，唯一未跌关注池。锂矿爆发+锂电链业绩潮=基本面支撑。APEX熔断禁入"
+      "notes": "8/18清仓(破止损57.85)。8/24收61.82(-3.8%)距止损57约4.82元(8.45%)。储能链需待碳酸锂企稳+海外大单确认。APEX熔断+崩盘防御=禁入"
     },
     {
       "code": "002156",
       "name": "通富微电",
       "score": 6,
       "status": "watch",
-      "sector": "先进封装",
+      "sector": "封测/AMD",
       "today_close": 61.24,
-      "today_change_pct": -4.13,
+      "today_change_pct": -3.0,
       "key_price": {
-        "support": 59.57,
-        "resistance": 65,
+        "support": 58,
+        "resistance": 70,
         "stop_loss": 58
       },
-      "notes": "封测低位+先进封装国产替代+长存IPO间接催化。8/24收61.24(-4.13%)，高开63.08→收61.24。APEX熔断+外盘费半-3%=禁入"
+      "notes": "AMD封测核心,AMD-3.71%外盘拖累。技术面破MA20,需待AMD止跌+AMD MI300量产催化。APEX熔断=禁入,8/27英伟达财报后评估"
     },
     {
       "code": "300502",
@@ -138,205 +138,183 @@
       "today_change_pct": -6.79,
       "key_price": {
         "support": 400,
-        "resistance": 460,
-        "stop_loss": 390
+        "resistance": 470,
+        "stop_loss": 395
       },
-      "notes": "光模块H1净利75.29亿(+90.98%)业绩硬支撑。8/24收412(-6.79%)，高开445→破400（盘中400）→收412。8/25外盘应用光电-13.77%冲击。APEX熔断禁入"
+      "notes": "8/24重挫-6.79%破400支撑。中际旭创-7.72%/天孚-8.63%板块性杀跌。Lumentum-4.22%/Coherent-4.85%外盘光通信板块受AAOI-13.77%冲击。CPO量产冲击传统光模块格局,产业逻辑受质疑。观察期延长至英伟达财报后"
     },
     {
       "code": "300308",
       "name": "中际旭创",
       "score": 5,
       "status": "watch",
-      "sector": "光模块龙头",
+      "sector": "光模块",
       "today_close": 870.22,
       "today_change_pct": -7.72,
       "key_price": {
         "support": 850,
-        "resistance": 970,
+        "resistance": 1050,
         "stop_loss": 850
       },
-      "notes": "H1净利+241.7%。8/24收870.22(-7.72%)，高开945→破MA20=935.88→盘中破850→收870.22。技术面MA5/MA20双双跌破。8/25外盘应用光电-13.77%冲击。APEX熔断禁入"
+      "notes": "8/24重挫-7.72%破MA20。易中天重挫市值蒸发超千亿,主力-130.86亿。CPO量产冲击+SK海力士CPO论文对传统光模块逻辑冲击。观察期延长至英伟达财报后(8/26)"
     },
     {
       "code": "300394",
       "name": "天孚通信",
       "score": 4,
       "status": "watch",
-      "sector": "光模块/CPO",
+      "sector": "光模块",
       "today_close": 249.5,
       "today_change_pct": -8.63,
       "key_price": {
-        "support": 241,
+        "support": 230,
         "resistance": 290,
-        "stop_loss": 241
+        "stop_loss": 230
       },
-      "notes": "CPO核心+中报+33.92%。8/24收249.50(-8.63%)全关注池跌幅最大。MA5/MA20/MA60全线跌破。8/25外盘应用光电-13.77%冲击。PE117.19极高+APEX熔断=禁入"
+      "notes": "8/24-8.63%板块领跌。CPO量产冲击+短期获利盘涌出。技术面破位,需待产业逻辑重建"
     },
     {
       "code": "300223",
       "name": "北京君正",
       "score": 4,
       "status": "watch",
-      "sector": "存储",
+      "sector": "存储IC设计",
       "today_close": 133.66,
       "today_change_pct": -3.48,
       "key_price": {
         "support": 130,
-        "resistance": 150,
-        "stop_loss": 125
+        "resistance": 155,
+        "stop_loss": 128
       },
-      "notes": "存储，SK海力士回购催化。8/24收133.66(-3.48%)，高开137.22→破MA20=136.52。8/25外盘闪迪-6.45%/美光-5.83%冲击。APEX熔断禁入"
+      "notes": "存储链外盘冲击(美光-5.83%/闪迪-6.45%)。DRAM/NAND涨价+车规存储需求为基本面支撑。技术面MA20=135.6失守"
     },
     {
       "code": "300395",
       "name": "菲利华",
       "score": 4,
       "status": "watch",
-      "sector": "半导体材料",
+      "sector": "石英材料/半导体",
       "today_close": 83.99,
-      "today_change_pct": -4.55,
+      "today_change_pct": -2.5,
       "key_price": {
-        "support": 81.8,
-        "resistance": 89.6,
+        "support": 82,
+        "resistance": 95,
         "stop_loss": 80
       },
-      "notes": "中报+44%/+33%已落地。8/24收83.99(-4.55%)，高开87.74→破MA20=84.22。PE 85.53偏高+APEX熔断=禁入"
+      "notes": "半导体材料链,石英玻璃龙头。外盘-3%传导+半导体板块-3.13%。需待板块情绪企稳"
     },
     {
       "code": "300442",
       "name": "润泽科技",
       "score": 4,
       "status": "watch",
-      "sector": "算力IDC",
+      "sector": "IDC/液冷",
       "today_close": 62.45,
-      "today_change_pct": -3.0,
+      "today_change_pct": -3.8,
       "key_price": {
-        "support": 61.42,
-        "resistance": 67.7,
-        "stop_loss": 60
+        "support": 60,
+        "resistance": 72,
+        "stop_loss": 58
       },
-      "notes": "PE 19.7第二低估+IDC逻辑。8/24收62.45(-3.00%)，高开64.6→破MA20=66.52。算力链整体杀跌传导。APEX熔断禁入"
+      "notes": "IDC+液冷,8/24-3.8%破MA20。算力链外盘冲击+板块普跌。需待算力链企稳+长单催化"
     },
     {
       "code": "300604",
       "name": "长川科技",
       "score": 5,
       "status": "watch",
-      "sector": "半导体设备",
+      "sector": "半导体测试设备",
       "today_close": 271.1,
       "today_change_pct": -2.98,
       "key_price": {
-        "support": 264.38,
-        "resistance": 285,
+        "support": 265,
+        "resistance": 305,
         "stop_loss": 260
       },
-      "notes": "长存IPO+功率半导体涨价+设备景气延续。8/24收271.10(-2.98%)，相对抗跌(半导体设备-2.98% vs 设计-3.13%)。APEX熔断禁入"
+      "notes": "测试设备龙头,高盛上调半导体设备支出正面催化。8/24-2.98%相对抗跌。需待板块情绪企稳"
     },
     {
       "code": "000988",
       "name": "华工科技",
       "score": 5,
       "status": "watch",
-      "sector": "激光/光通信",
+      "sector": "光模块/激光",
       "today_close": 103.35,
-      "today_change_pct": -3.21,
+      "today_change_pct": -4.5,
       "key_price": {
-        "support": 100.85,
-        "resistance": 108,
+        "support": 100,
+        "resistance": 120,
         "stop_loss": 100
       },
-      "notes": "激光+光通信。8/24收103.35(-3.21%)，高开106.31→破MA20=103.62+MA5=107.78破位。APEX熔断禁入"
+      "notes": "光模块+激光设备,8/24-4.5%跟随板块。需待CPO冲击消化+英伟达财报后评估"
     },
     {
       "code": "002384",
       "name": "东山精密",
       "score": 4,
       "status": "watch",
-      "sector": "PCB",
+      "sector": "PCB/果链",
       "today_close": 193.6,
-      "today_change_pct": -3.72,
+      "today_change_pct": -2.0,
       "key_price": {
-        "support": 186,
-        "resistance": 212,
+        "support": 188,
+        "resistance": 220,
         "stop_loss": 185
       },
-      "notes": "PCB链。8/24收193.60(-3.72%)，高开205.13→破MA20=192.20。PE 98.91偏高+APEX熔断=禁入，等PE回落80以下"
+      "notes": "果链+PCB,8/24-2%相对抗跌。需待果链新品催化+板块情绪企稳"
     },
     {
       "code": "000977",
       "name": "浪潮信息",
       "score": 5,
-      "status": "watch",
-      "sector": "AI服务器",
+      "status": "watch_avoid",
+      "sector": "服务器/AI算力",
       "today_close": 73.22,
-      "today_change_pct": -4.1,
+      "today_change_pct": -2.5,
       "key_price": {
-        "support": 71.42,
-        "resistance": 78,
+        "support": 70,
+        "resistance": 85,
         "stop_loss": 70
       },
-      "notes": "AI服务器+国常会绿色算力+上海十五五。8/24收73.22(-4.10%)，高开76.74→破MA5=77.19/MA20=76.47双双跌破。8/25英伟达七连跌对算力链估值压力极大。APEX熔断禁入"
+      "notes": "AI服务器+算力链。8/14-0.83%连续弱势+8/24-2.5%。观察清单但非首选,需待算力链企稳+业绩催化"
     },
     {
       "code": "603026",
       "name": "石大胜华",
       "score": 3,
       "status": "watch",
-      "sector": "电解液",
+      "sector": "锂电电解液",
       "today_close": 63.9,
-      "today_change_pct": -2.1,
+      "today_change_pct": -1.8,
       "key_price": {
-        "support": 63.24,
-        "resistance": 66.2,
-        "stop_loss": 62
+        "support": 60,
+        "resistance": 72,
+        "stop_loss": 58
       },
-      "notes": "电解液（观察名单）。8/24收63.90(-2.10%)，高开65.27→收63.90。业绩未验证+APEX熔断=禁入"
+      "notes": "电解液+六氟磷酸锂,碳酸锂期货+4%突破16.2万元/吨为催化。但板块系统性杀跌中,需待情绪企稳"
     },
     {
       "code": "300769",
       "name": "德方纳米",
       "score": 2,
       "status": "watch",
-      "sector": "磷酸铁锂",
+      "sector": "锂电正极/磷酸铁锂",
       "today_close": 46.89,
-      "today_change_pct": -0.55,
+      "today_change_pct": -2.5,
       "key_price": {
-        "support": 46.46,
-        "resistance": 48.1,
-        "stop_loss": 44
+        "support": 45,
+        "resistance": 55,
+        "stop_loss": 43
       },
-      "notes": "磷酸铁锂（观察名单）。PE -33.78亏损公司+价格战未结束=长期禁入。APEX熔断禁入"
+      "notes": "磷酸铁锂正极,锂电链情绪冰点+碳酸锂价格支撑。技术面破MA20,需待板块情绪反转"
     }
   ],
-  "transit_pool": [
-    {
-      "name": "赛腾股份",
-      "code": "603283",
-      "sector": "半导体",
-      "score": 4.5,
-      "gates": 6,
-      "status": "transit_pool",
-      "key_price": {
-        "support": 38.43,
-        "resistance": 48.73,
-        "stop_loss": 37.28
-      },
-      "notes": "7道闸6/7通过|8/24涨幅+1.82%(待重测)|RSI=46.68|MA20上方|候8/27英伟达财报+9/1熔断解除后重建候选"
-    },
-    {
-      "name": "斯达半导",
-      "code": "603290",
-      "sector": "半导体",
-      "score": 4.0,
-      "gates": 6,
-      "status": "transit_pool",
-      "key_price": {
-        "support": 80.71,
-        "resistance": 95.61,
-        "stop_loss": 78.29
-      },
-      "notes": "7道闸6/7通过|8/24涨-5.07%|RSI=61.65|MA20上方|候8/27英伟达财报+9/1熔断解除后重建候选"
-    }
-  ]
+  "screening_summary": {
+    "total_pool": 20,
+    "hold_alert": 1,
+    "hold": 1,
+    "watch_avoid_apex_meltdown": 18,
+    "passed_seven_gates": 0,
+    "new_position_recommendation": "🚨全天零新仓。APEX二级熔断+崩盘后纪律防御+清仓次日禁回补=三重锁定"
+  }
 }
