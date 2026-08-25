@@ -1,7 +1,15 @@
 {
-  "last_updated": "2026-08-19T16:53:00+08:00",
-  "total_records": 12,
-  "latest_date": "2026-08-19",
-  "latest_pnl": -15011,
-  "latest_note": "科技崩盘日,0笔交易,持仓浮亏-15011。3只破止损未执行!"
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25"
+  },
+  "daily_review": {
+    "date": "2026-08-25",
+    "pnl_amount": -10377.24,
+    "pnl_percent": -5.7,
+    "trade_count": 0,
+    "violation_count": 0,
+    "score": 65,
+    "summary": "零操作日。APEX熔断+崩盘后纪律防御=多重锁定零新仓。持仓盘中破止损后回升。市场高低切换明显"
+  }
 }

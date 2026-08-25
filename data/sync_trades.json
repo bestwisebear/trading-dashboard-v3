@@ -1,94 +1,23 @@
 {
-  "last_updated": "2026-08-19T16:53:00+08:00",
-  "total_trades": 53,
-  "today_count": 0,
-  "today_realized_pnl": 0,
-  "today_date": "2026-08-19",
-  "latest_trades": [
-    {
-      "seq": 48,
-      "date": "2026-08-18",
-      "time": "09:30",
-      "code": "300857",
-      "name": "协创数据",
-      "action": "sell",
-      "quantity": 100,
-      "price": 266.4,
-      "amount": 26640.0,
-      "realized_pnl": 727.0,
-      "violation": "none",
-      "notes": "减仓1手(200→100股)，剩余止损250不破清仓"
-    },
-    {
-      "seq": 49,
-      "date": "2026-08-18",
-      "time": "09:48",
-      "code": "300285",
-      "name": "国瓷材料",
-      "action": "sell",
-      "quantity": 300,
-      "price": 74.86,
-      "amount": 22458.0,
-      "realized_pnl": 855.34,
-      "violation": "none",
-      "notes": "清仓第1笔(共2笔)。MLCC链去重,保留风华出国产瓷"
-    },
-    {
-      "seq": 50,
-      "date": "2026-08-18",
-      "time": "09:50",
-      "code": "300285",
-      "name": "国瓷材料",
-      "action": "sell",
-      "quantity": 300,
-      "price": 75.66,
-      "amount": 22698.0,
-      "realized_pnl": 1091.3,
-      "violation": "none",
-      "notes": "清仓第2笔(共2笔)。MLCC链去重,保留风华出国产瓷"
-    },
-    {
-      "seq": 51,
-      "date": "2026-08-18",
-      "time": "10:45",
-      "code": "000636",
-      "name": "风华高科",
-      "action": "sell",
-      "quantity": 500,
-      "price": 64.36,
-      "amount": 32180.0,
-      "realized_pnl": 925.54,
-      "violation": "none",
-      "notes": "清仓。PE207x偏高，换仓机器人概念"
-    },
-    {
-      "seq": 52,
-      "date": "2026-08-18",
-      "time": "13:42",
-      "code": "300503",
-      "name": "昊志机电",
-      "action": "buy",
-      "quantity": 500,
-      "price": 80.18,
-      "amount": 40090.0,
-      "realized_pnl": 0,
-      "violation": "non_watchlist",
-      "notes": "机器人大会概念博弈。替代长盛轴承(涨太多)。换手11.41%高活性"
-    },
-    {
-      "seq": 53,
-      "date": "2026-08-18",
-      "time": "13:45",
-      "code": "300408",
-      "name": "三环集团",
-      "action": "buy",
-      "quantity": 300,
-      "price": 126.21,
-      "amount": 37863.0,
-      "realized_pnl": 0,
-      "violation": "none",
-      "notes": "MLCC涨价30%催化。挂单126成交126.21。止损122，止盈137/145-150"
-    }
-  ],
-  "note": "8/19无交易(0笔),全天持仓浮亏-15011"
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25",
+    "source": "盘后全量刷新"
+  },
+  "positions": {
+    "total_assets": 171727.18,
+    "net_today": -10377.24,
+    "total_pnl": -28272.82,
+    "total_pnl_pct": -14.14,
+    "position_count": 2,
+    "position_ratio": 63.9,
+    "cash": 62005.18
+  },
+  "trades_today": [],
+  "daily_metrics": {
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": -10377.24
+  }
 }

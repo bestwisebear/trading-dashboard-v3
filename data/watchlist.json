@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T11:35:00+08:00",
+    "last_updated": "2026-08-25T16:55:00+08:00",
     "date": "2026-08-25",
-    "session": "intraday",
-    "data_basis": "8/25午间盘中(腾讯行情)",
-    "screening_criteria": "7道闸+APEX二级熔断(月度-14.24%>10%阈值8/25-8/31禁新仓)+崩盘后纪律防御期",
-    "note": "8/25防御+熔断+持仓警戒日。APEX二级熔断生效(8/25-8/31禁新仓)+崩盘后纪律防御(8/27英伟达财报后评估)+清仓次日禁回补=三重锁定全天零新仓。江波龙364.9距止损360仅4.9元(1.32%)首要警戒"
+    "session": "post_close",
+    "data_basis": "8/25收盘(腾讯行情)",
+    "screening_criteria": "7道闸+APEX二级熔断(月度-14.14%>10%阈值→8/25-8/31禁新仓)+崩盘后纪律防御期",
+    "note": "8/25收盘:零操作。江波龙369.66(+1.30%)回升至止损上方。利通电子119.30(-2.04%)仍在止损上方。涨跌4229:1243大幅改善。消费/农业/医药领涨vs科技杀跌。液冷反弹利好持仓"
   },
   "watchlist": [
     {
@@ -14,14 +14,14 @@
       "score": 5,
       "status": "hold_alert",
       "sector": "存储",
-      "today_close": 364.33,
-      "today_change_pct": -0.16,
+      "today_close": 369.66,
+      "today_change_pct": 1.3,
       "key_price": {
         "support": 360,
         "resistance": 415,
         "stop_loss": 360
       },
-      "notes": "🚨持仓200股@381.63。午间364.33(-0.16%),盘中低353.88已破止损360!回升至364距止损仅1.19%。存储链承压,美光-5.83%传导。PE13.06最低估。APEX二级熔断禁补仓。下午再破360立即执行"
+      "notes": "收盘369.66(+1.30%),盘中低353.88破止损后回升至止损上方9.66元。港股通过聆讯利好(有望A+H上市)。PE13.25最低估。重仓43.2%。8/26英伟达财报关注"
     },
     {
       "code": "603629",
@@ -29,14 +29,14 @@
       "score": 3,
       "status": "hold",
       "sector": "算力租赁/液冷",
-      "today_close": 119.79,
-      "today_change_pct": -1.63,
+      "today_close": 119.3,
+      "today_change_pct": -2.04,
       "key_price": {
         "support": 117,
         "resistance": 140,
         "stop_loss": 117
       },
-      "notes": "🚨持仓300股@123.33。午间119.79(-1.63%),盘中低115.66已破止损117!回升至119.79距止损3.46%。算力链承压,英伟达7连阴。龙虎榜沪股通大额卖出。APEX熔断禁补仓。下午再破117立即执行"
+      "notes": "收盘119.30(-2.04%),盘中低115.66破止损后回升至止损上方2.30元。液冷概念午后大幅反弹(英维克涨停)。定增50亿智算中心。PE81.87偏高。仓位20.8%"
     },
     {
       "code": "000636",
@@ -44,8 +44,8 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "MLCC被动元件",
-      "today_close": 50.97,
-      "today_change_pct": -1.81,
+      "today_close": 51.0,
+      "today_change_pct": -1.79,
       "key_price": {
         "support": 51.88,
         "resistance": 58,
@@ -59,8 +59,8 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "工业机器人",
-      "today_close": 31.14,
-      "today_change_pct": 1.04,
+      "today_close": 31.2,
+      "today_change_pct": 1.1,
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
