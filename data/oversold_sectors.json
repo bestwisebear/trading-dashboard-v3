@@ -1,10 +1,10 @@
 {
   "meta": {
-    "date": "2026-08-25",
-    "last_updated": "2026-08-25T16:55:00+08:00",
-    "data_as_of": "8/24收盘+8/25 08:10盘前外盘",
-    "note": "8/25收盘:有色金属-2.48%/电力设备-1.07%/石油石化-0.61%领跌。半导体-2.74%/贵金属-4.12%。消费/农业/医药逆势上涨",
-    "session": "post_close"
+    "date": "2026-08-26",
+    "last_updated": "2026-08-26T08:11:00+08:00",
+    "data_as_of": "8/25收盘+8/25夜美股大反弹",
+    "note": "8/26盘前:8/25夜美股大反弹(纳指+0.66%/费半+1.49%/NVDA+2.19%/存储+2-3%/光通信+4-7%)+长江存储IPO催化。关注池内(存储/算力/光模块/CPO/PCB)今日高开概率极大,但APEX熔断全面禁入",
+    "session": "pre_market"
   },
   "sectors": [
     {
@@ -14,22 +14,22 @@
         {
           "code": "300308",
           "name": "中际旭创",
-          "change_pct": -7.72
+          "change_pct": -2.78
         },
         {
           "code": "300502",
           "name": "新易盛",
-          "change_pct": -6.79
+          "change_pct": -2.7
         },
         {
           "code": "300394",
           "name": "天孚通信",
-          "change_pct": -8.63
+          "change_pct": 3.05
         }
       ],
       "can_add_watchlist": false,
-      "note": "🔴 SK海力士CPO论文+英伟达CPO量产冲击传统光模块格局,易中天市值蒸发超千亿,主力-130.86亿。产业逻辑受质疑,非单纯超跌,观察期延长至英伟达财报后",
-      "oversold_priority": "LOW(观望)"
+      "note": "🟢 8/25夜Lumentum+6.67%/Coherent+4.59%/Marvell+4.84%映射,8/26预计大幅高开。但SK海力士CPO论文+英伟达CPO量产冲击仍存,产业逻辑受质疑,APEX二级熔断全面禁入",
+      "oversold_priority": "NONE(APEX禁入)"
     },
     {
       "sector_name": "半导体(设计/存储)",
@@ -38,92 +38,92 @@
         {
           "code": "603986",
           "name": "兆易创新",
-          "change_pct": -6.7
+          "change_pct": -3.5
         },
         {
           "code": "301308",
           "name": "江波龙",
-          "change_pct": -4.14
+          "change_pct": 1.3
         },
         {
           "code": "300223",
           "name": "北京君正",
-          "change_pct": -3.48
-        }
-      ],
-      "can_add_watchlist": true,
-      "note": "🟡 长存IPO受理+江波龙聆讯基本面催化仍在,但随板块杀跌。设备材料端相对抗跌(长川-2.98%)。存储超级周期逻辑未破,回调后关注江波龙360-365/兆易380支撑",
-      "oversold_priority": "MEDIUM"
-    },
-    {
-      "sector_name": "医药生物(创新药/CRO)",
-      "change_today": -3.24,
-      "top3_stocks": [
-        {
-          "code": "-",
-          "name": "生物制品-4.75%",
-          "change_pct": -4.75
-        },
-        {
-          "code": "-",
-          "name": "医疗服务-4.31%",
-          "change_pct": -4.31
-        },
-        {
-          "code": "-",
-          "name": "化学制药-3.66%",
-          "change_pct": -3.66
+          "change_pct": 0.33
         }
       ],
       "can_add_watchlist": false,
-      "note": "🔴 CRO/创新药领跌,博拓生物/海特生物/双鹭药业跌停。不在账户关注方向,仅记录",
-      "oversold_priority": "N/A(非关注方向)"
+      "note": "🟢🟢 8/25夜美光+2.48%/希捷+3.40%/西部数据+3.53%/SK海力士+2.68%映射+长江存储IPO催化(江波龙/兆易/北京君正为合作公司),8/26预计大幅高开。但APEX二级熔断全面禁入,等英伟达财报后评估",
+      "oversold_priority": "NONE(APEX禁入)"
     },
     {
-      "sector_name": "MLCC/被动元件",
-      "change_today": -4.18,
+      "sector_name": "半导体设备",
+      "change_today": -2.98,
       "top3_stocks": [
         {
-          "code": "000636",
-          "name": "风华高科",
-          "change_pct": -5.05
+          "code": "300604",
+          "name": "长川科技",
+          "change_pct": -2.76
         },
         {
-          "code": "300408",
-          "name": "三环集团",
-          "change_pct": -4.35
-        },
-        {
-          "code": "-",
-          "name": "元件板块",
-          "change_pct": -4.18
+          "code": "002371",
+          "name": "北方华创",
+          "change_pct": -2.0
         }
       ],
       "can_add_watchlist": false,
-      "note": "🔴 持仓风华800股在列。涨价逻辑仍在但技术面破位,先处理持仓止损再谈板块",
-      "oversold_priority": "LOW(持仓处理优先)"
+      "note": "🟢 8/25夜费半+1.49%映射,8/26预计高开。长江存储IPO+功率半导体涨价支撑,但APEX熔断禁入",
+      "oversold_priority": "NONE(APEX禁入)"
     },
     {
-      "sector_name": "机器人",
-      "change_today": -4.0,
+      "sector_name": "算力IDC/服务器",
+      "change_today": -5.21,
       "top3_stocks": [
         {
-          "code": "002747",
-          "name": "埃斯顿",
-          "change_pct": -8.19
+          "code": "000977",
+          "name": "浪潮信息",
+          "change_pct": 1.22
         },
         {
-          "code": "-",
-          "name": "机器人方向跌幅居前",
-          "change_pct": -4.0
+          "code": "300442",
+          "name": "润泽科技",
+          "change_pct": 0.24
+        },
+        {
+          "code": "603629",
+          "name": "利通电子(持仓)",
+          "change_pct": -2.04
         }
       ],
       "can_add_watchlist": false,
-      "note": "🔴 持仓埃斯顿1100股全天破止损。机构净卖1.71亿资金出逃,先止损",
-      "oversold_priority": "LOW(持仓处理优先)"
+      "note": "🟢🟢 8/25夜英伟达+2.19%/AMD+4.91%映射,8/26预计大幅高开。国新办十五五+沪电PCB+73.72%双重催化,但APEX熔断禁入",
+      "oversold_priority": "NONE(APEX禁入)"
+    },
+    {
+      "sector_name": "PCB",
+      "change_today": -3.72,
+      "top3_stocks": [
+        {
+          "code": "002384",
+          "name": "东山精密",
+          "change_pct": -1.43
+        },
+        {
+          "code": "002463",
+          "name": "沪电股份",
+          "change_pct": null
+        },
+        {
+          "code": "603920",
+          "name": "世运电路",
+          "change_pct": null
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "🟢🟢 沪电股份中报+73.72%+NVDA+2.19%映射,8/26预计高开。但东山精密估值偏高(PE97.50)+技术破位=禁入",
+      "oversold_priority": "NONE(APEX禁入)"
     }
   ],
-  "conclusion": "8/24成长板块普跌但属放量杀跌(2.01万亿)非缩量见底,不满足抄底条件。满仓4只+月度-13.56%状态下禁止一切新建仓,超跌板块仅供8/27英伟达财报+底部信号≥3/5后重建候选池参考",
+  "conclusion": "8/26盘前:8/25夜美股大反弹+长江存储IPO催化+沪电PCB兑现,关注池整体高开概率极大。但APEX二级熔断(月度-14.03%>10%)依然生效,8/26全面禁入。优先清仓违规持仓(麦格米特+国瓷),借高开减仓核心持仓(江波龙+利通)。8/27英伟达财报+8/28 Jackson Hole沃什演讲+9/1起评估重建候选池",
   "pre_market_outlook_8_25": {
     "policy_catalysts": [
       {
@@ -166,5 +166,11 @@
       }
     ],
     "watchlist_focus": "**关注池全数承压（光模块/存储/算力/PCB/CPO），APEX二级熔断生效，今日全面禁入**"
+  },
+  "pre_market_outlook_8_26": {
+    "overseas_drivers": "🟢🟢 8/25夜美股大反弹(纳指+0.66%/费半+1.49%/NVDA+2.19%/存储+2-3%/光通信+4-7%)+美债收益率回落(30Y从5.34%→5.17%)+油价大跌(WTI-3.12%)",
+    "domestic_catalysts": "🟢🟢 国新办十五五+沪电PCB+73.72%+长江存储IPO(江波龙/兆易/北京君正合作公司)+道交法/创新药/粮食/卫星互联网",
+    "watchlist_focus": "关注池整体高开但APEX熔断全面禁入,等英伟达财报+Jackson Hole+9/1后重建候选池",
+    "pre_market_action": "9:30-9:45借高开优先清仓违规持仓(麦格米特+国瓷)+核对核心持仓止损(江波龙360/利通117)"
   }
 }

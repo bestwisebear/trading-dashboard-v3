@@ -1,16 +1,18 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T16:55:00+08:00",
-    "date": "2026-08-25",
-    "session": "post_close"
+    "last_updated": "2026-08-26T08:11:00+08:00",
+    "date": "2026-08-26",
+    "session": "pre_market"
   },
   "statistics": {
-    "total_trades_today": 0,
-    "total_violations_today": 0,
-    "total_trades_cumulative": 52,
-    "total_violations_cumulative": 18,
-    "violation_rate": 34.6,
-    "note": "8/25零操作,无违规"
+    "total_violations": 23,
+    "recent_violations": 5,
+    "violation_rate": 0.4,
+    "consecutive_violations": 5,
+    "clearing_priority": 2,
+    "monthly_pnl_percent": -14.03,
+    "apex_status": "二级熔断生效(8/26-8/31禁新仓)",
+    "execution_score_30d": 60
   },
   "stats": {
     "total_trades_today": 0,
@@ -20,17 +22,18 @@
     "violation_rate": 34.6
   },
   "today_assessment": {
-    "date": "2026-08-25",
-    "score": 65,
-    "execution_score": 70,
-    "discipline_score": 60,
-    "summary": "零操作日。APEX二级熔断期间严格遵守禁新仓纪律。持仓盘中破止损后回升,未触发清仓。整体纪律执行良好",
-    "violations": [],
-    "good_behaviors": [
-      "APEX熔断期间零新仓",
-      "持仓止损管理到位(盘中破止损后回升=合理观察)",
-      "无情绪化操作"
-    ]
+    "date": "2026-08-26",
+    "session": "pre_market",
+    "planned_actions": [
+      "9:30-9:45借高开优先清仓麦格米特300+国瓷600(违规标的)",
+      "核对江波龙360/利通117止损(破则立即市价清)",
+      "借高开减仓核心持仓(江波龙>372减50/利通>122减150-200)",
+      "全天零新仓+不补仓",
+      "收盘前仓位降至30-50%"
+    ],
+    "compliance_score": 0,
+    "risk_level": "critical",
+    "note": "8/26是纪律修复日,优先清零违规持仓。APEX熔断+崩盘后纪律防御+减仓后禁回补=三重锁定"
   },
   "logs": [
     {
@@ -43,5 +46,27 @@
       ],
       "note": "零操作日,无违规"
     }
-  ]
+  ],
+  "today_checks": {
+    "open_new_position": {
+      "allowed": false,
+      "reason": "APEX二级熔断(月度-14.03%>10%阈值),8/26-8/31禁新仓",
+      "risk_if_violated": "极高(月度回撤距-20%红线仅剩5.97%)"
+    },
+    "buy_violation_stocks": {
+      "allowed": false,
+      "reason": "违规持仓必须清仓(麦格米特+国瓷),不允许加仓",
+      "risk_if_violated": "加剧APEX熔断+双重违规"
+    },
+    "t_operation": {
+      "allowed": false,
+      "reason": "禁做T(纪律)",
+      "risk_if_violated": "成本抬高+仓位失控"
+    },
+    "buy_back_after_reduction": {
+      "allowed": false,
+      "reason": "减仓后禁当日回补(次日也禁至8/27英伟达财报后)",
+      "risk_if_violated": "破坏止损纪律+情绪化操作"
+    }
+  }
 }
