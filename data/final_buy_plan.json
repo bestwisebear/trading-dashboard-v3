@@ -1,146 +1,97 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T08:11:00+08:00",
+    "last_updated": "2026-08-26T13:16:00+08:00",
     "date": "2026-08-26",
-    "session": "pre_market_8_26",
-    "generated_by": "8/25收盘+8/25夜美股大反弹+8/26盘前国内政策"
+    "session": "intraday_1315_final",
+    "data_source": "13:15最终确认(腾讯盘中价+数据文件综合)"
   },
-  "decision": "今日取消新仓+优先清仓违规持仓",
-  "decision_detail": {
-    "action": "全天零新仓+借高开优先清仓违规持仓(麦格米特+国瓷)+减仓核心持仓(江波龙+利通)",
-    "reason": "七重锁定+账户满仓99.4%+违规持仓2只:",
-    "blocks": [
+  "decision": "今日取消新仓",
+  "confirmed_count": 0,
+  "max_allowed": 2,
+  "reasons": [
+    "🚨 APEX二级熔断生效(月度-14.03%>10%阈值),8/25-8/31全面禁新仓 — 一票否决",
+    "当前持仓4只=满仓(≤4只规则),无开仓名额",
+    "现金仅983元,无任何建仓资金",
+    "今晚英伟达FY27Q2财报(盘后)+8/27 PCE+8/28 Jackson Hole=三重风险窗口",
+    "午间资金信号矛盾:指数涨+半导体主力净流出,典型拉高出货信号",
+    "持仓4只中2只为违规持仓(麦格米特+国瓷),首要任务为清仓违规+止损管理"
+  ],
+  "gate_check": {
+    "gate_apex_fuse": {
+      "pass": false,
+      "value": "月度-14.03%,二级熔断,禁新仓至8/31",
+      "verdict": "一票否决,后续闸门无需执行"
+    },
+    "gate_position_limit": {
+      "pass": false,
+      "value": "当前4只/上限4只,无名额"
+    },
+    "gate_cash_available": {
+      "pass": false,
+      "value": "现金983元,不足建仓"
+    },
+    "gate_breadth": {
+      "pass": true,
+      "value": "超3500股上涨(午间),但半导体资金净流出"
+    },
+    "gate_risk_events": {
+      "pass": false,
+      "value": "英伟达财报(今晚)+PCE(8/27)+Jackson Hole(8/28)"
+    }
+  },
+  "candidates": [],
+  "position_focus": {
+    "must_clear": [
       {
-        "id": 1,
-        "name": "APEX二级熔断",
-        "status": "ACTIVE",
-        "detail": "月度回撤-14.03%>10%阈值,8/26-8/31全面禁新仓"
+        "code": "002851",
+        "name": "麦格米特",
+        "qty": 300,
+        "reason": "违规持仓(非关注池+APEX熔断期建仓),借高开清仓"
       },
       {
-        "id": 2,
-        "name": "崩盘后纪律防御期",
-        "status": "ACTIVE",
-        "detail": "8/24大跌后≥3天观察期,最早8/27英伟达财报后评估"
-      },
-      {
-        "id": 3,
-        "name": "英伟达财报风险窗口",
-        "status": "CRITICAL",
-        "detail": "今晚(8/26)盘后发Q2财报,一致预期920亿,期权计入5.4%双向波动。财报落地前算力/存储链不确定性极高"
-      },
-      {
-        "id": 4,
-        "name": "Jackson Hole央行年会",
-        "status": "ACTIVE",
-        "detail": "8/27-29举行,美联储主席沃什首次主旨演讲(8/28 22:00),全球流动性预期关键窗口"
-      },
-      {
-        "id": 5,
-        "name": "违规持仓待清",
-        "status": "CRITICAL",
-        "detail": "麦格米特300+国瓷600=非关注池+APEX熔断期建仓=双重违规。8/26开盘必须借高开市价清仓"
-      },
-      {
-        "id": 6,
-        "name": "账户满仓+零缓冲",
-        "status": "CRITICAL",
-        "detail": "满仓99.4%+现金仅983元+月度回撤距-20%红线仅剩5.97%缓冲。容错空间极小"
-      },
-      {
-        "id": 7,
-        "name": "8/25夜美股大反弹≠方向已定",
-        "status": "CAUTION",
-        "detail": "8/25夜纳指+0.66%/费半+1.49%/NVDA+2.19%终结7连跌,但英伟达财报后可能反转。今日关注池高开=减仓机会,非加仓机会"
+        "code": "300285",
+        "name": "国瓷材料",
+        "qty": 600,
+        "reason": "违规持仓(非关注池+APEX熔断期建仓),借高开清仓"
       }
-    ]
-  },
-  "candidate_list": [],
-  "observation_for_afternoon": {
-    "position_management": [
+    ],
+    "stop_loss_watch": [
       {
         "code": "301308",
         "name": "江波龙",
-        "quantity": 200,
-        "cost": 381.63,
-        "stop_loss": 360.0,
-        "midday_price": 364.33,
-        "distance_to_stoploss": "距止损360仅4.33元(1.19%)",
-        "action": "🚨下午若收盘确认<360→立即市价清仓200股(不挂限价)。若守住360+反弹>370可继续持有。绝对不补仓"
+        "qty": 100,
+        "stop_loss": 360,
+        "current": 369,
+        "distance_pct": 2.4
       },
       {
         "code": "603629",
         "name": "利通电子",
-        "quantity": 300,
-        "cost": 123.33,
-        "stop_loss": 117.0,
-        "midday_price": 119.79,
-        "distance_to_stoploss": "距止损117仅2.79元(2.33%)",
-        "action": "🚨下午若收盘确认<117→立即市价清仓300股。若守住117+反弹>120可继续持有。绝对不补仓"
+        "qty": 500,
+        "stop_loss": 117,
+        "current": 118.5,
+        "distance_pct": 1.3
       }
+    ]
+  },
+  "next_evaluation": {
+    "date": "2026-09-01",
+    "pre_conditions": [
+      "英伟达财报落地(8/27凌晨,无重大利空)",
+      "Jackson Hole沃什演讲(8/28 22:00,无超预期鹰派)",
+      "关注池标的止跌企稳(MA5/MA20站稳)",
+      "月度回撤收窄至<-10%(APEX熔断解除)",
+      "涨跌家数恢复至>2000",
+      "现金储备>2万元"
+    ]
+  },
+  "market_context": {
+    "morning_summary": "A股全线走强,沪指+0.70%创业板+1.37%,有色/金融领涨,半导体V型反转但资金净流出",
+    "key_events": [
+      "今晚:英伟达FY27Q2财报(盘后)",
+      "8/27:美国7月PCE数据",
+      "8/28:Jackson Hole沃什演讲"
     ],
-    "key_events_to_watch": [
-      "8/26盘后英伟达Q2财报(算力/存储链最大变量)",
-      "8/27 Jackson Hole央行年会开幕",
-      "8/28 22:00美联储主席沃什首次主旨演讲",
-      "下午盘面算力/半导体是否企稳(判断超卖反弹or继续杀跌)"
-    ]
-  },
-  "next_review": {
-    "date": "2026-08-27",
-    "trigger": "英伟达财报落地+Jackson Hole开幕后",
-    "conditions_to_reopen": [
-      "APEX二级熔断解除(月度回撤收窄至<-10%且市场企稳)",
-      "英伟达财报超预期+指引上调且股价不跌",
-      "沃什Jackson Hole演讲释放鸽派信号",
-      "涨跌家数恢复>2000"
-    ]
-  },
-  "position_management": [
-    {
-      "code": "002851",
-      "name": "麦格米特",
-      "quantity": 300,
-      "cost": 121.324,
-      "current_price": 121.32,
-      "stop_loss": 115.76,
-      "pnl_pct": -0.003,
-      "distance_to_stoploss": "距止损115.76有5.56元(4.58%)缓冲",
-      "violation_tag": "🚨违规:非关注池+APEX熔断期建仓=双重违规",
-      "action": "🟢9:30-9:45借高开立即市价清仓300股(违规标的必须清)。预期回笼约36,400元"
-    },
-    {
-      "code": "300285",
-      "name": "国瓷材料",
-      "quantity": 600,
-      "cost": 64.013,
-      "current_price": 63.24,
-      "stop_loss": 60.22,
-      "pnl_pct": -1.21,
-      "distance_to_stoploss": "距止损60.22有3.02元(4.78%)缓冲",
-      "violation_tag": "🚨违规:非关注池+APEX熔断期建仓=双重违规",
-      "action": "🟢9:30-9:45借高开立即市价清仓600股(违规标的必须清)。预期回笼约37,900元"
-    },
-    {
-      "code": "301308",
-      "name": "江波龙",
-      "quantity": 100,
-      "cost": 386.73,
-      "current_price": 369.66,
-      "stop_loss": 360.0,
-      "pnl_pct": -4.41,
-      "distance_to_stoploss": "距止损360仅9.66元(2.61%)",
-      "action": "🚨首要警戒:①低开≤360立即市价清仓100股(不挂限价)②高开>372借势减50股锁利③平开360-370观望,反弹乏力(<375)+量能<1.8万亿=减50股"
-    },
-    {
-      "code": "603629",
-      "name": "利通电子",
-      "quantity": 500,
-      "cost": 121.737,
-      "current_price": 119.3,
-      "stop_loss": 117.0,
-      "pnl_pct": -2.0,
-      "distance_to_stoploss": "距止损117仅2.30元(1.93%)",
-      "action": "🚨次要警戒:①低开≤117立即市价清仓500股②高开>122借势减150-200股锁利③平开117-120观望,反弹乏力(<120)+量能<1.8万亿=减200股"
-    }
-  ]
+    "sentiment": "指数强但资金分歧大,财报前观望为主"
+  }
 }
