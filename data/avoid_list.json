@@ -1,37 +1,28 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T16:55:00+08:00",
-    "date": "2026-08-25",
-    "session": "post_close"
+    "last_updated": "2026-08-26T16:55:00+08:00",
+    "date": "2026-08-26"
   },
   "items": [
     {
-      "code": "000636",
-      "name": "风华高科",
-      "reason": "8/24止损清仓,亏损-2997。PE205倍偏高,均线空头",
-      "added_date": "2026-08-24",
-      "status": "sold_stoploss"
+      "name": "CRO/医疗服务",
+      "reason": "板块持续调整",
+      "until": "2026-09-01"
     },
     {
-      "code": "002747",
-      "name": "埃斯顿",
-      "reason": "8/24止损清仓,亏损-3419。非关注池违规标的",
-      "added_date": "2026-08-24",
-      "status": "sold_stoploss"
+      "name": "传媒",
+      "reason": "领跌板块",
+      "until": "2026-09-01"
     },
     {
-      "code": "300857",
-      "name": "协创数据",
-      "reason": "8/18减仓,科技链系统性杀跌期避开",
-      "added_date": "2026-08-18",
-      "status": "avoid"
+      "name": "宇树科技",
+      "reason": "股价腰斩趋势",
+      "until": "2026-09-15"
     },
     {
-      "code": "300285",
-      "name": "国瓷材料",
-      "reason": "8/18清仓,MLCC链去重",
-      "added_date": "2026-08-18",
-      "status": "sold"
+      "name": "泸州老窖",
+      "reason": "中报净利-43%",
+      "until": "2026-09-01"
     }
   ]
 }
