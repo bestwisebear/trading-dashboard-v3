@@ -1,67 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T11:08:00+08:00",
+    "last_updated": "2026-08-26T16:55:00+08:00",
     "date": "2026-08-26",
-    "session": "intraday_1100_check",
-    "data_source": "腾讯实时行情(11:08)+盘前数据文件"
-  },
-  "market_snapshot": {
-    "sh000001": {
-      "name": "上证指数",
-      "price": 3918.11,
-      "change_pct": 0.74,
-      "pre_close": 3889.44
-    },
-    "sz399001": {
-      "name": "深证成指",
-      "price": 13885.02,
-      "change_pct": 1.01,
-      "pre_close": 13745.87
-    },
-    "sz399006": {
-      "name": "创业板指",
-      "price": 3432.1,
-      "change_pct": 1.02,
-      "pre_close": 3397.52
-    },
-    "comment": "8/26上午市场高开高走,三大指数全线飘红。PCB/CPO/创新药活跃,黄金/农业/油气调整"
-  },
-  "apex_status": {
-    "active": true,
-    "level": "二级熔断",
-    "monthly_return": -14.03,
-    "threshold": -10.0,
-    "effective_period": "2026-08-25至2026-08-31",
-    "rule": "月度回撤-14.03%超过10%阈值,禁新仓"
+    "session": "close"
   },
   "candidates": [],
-  "conclusion": "下午无新仓备选",
-  "reasons": [
-    "APEX二级熔断生效(月度-14.03%>10%阈值),8/25-8/31全面禁新仓",
-    "前一日晚计划明确:buy_plan.enabled=false,candidates=[],零新仓",
-    "今日三重风险窗口:英伟达财报(今晚盘后)+PCE(8/27)+Jackson Hole(8/28沃什演讲)",
-    "当前满仓99.4%(现金仅983元),首要任务为减仓违规持仓(麦格米特+国瓷)+止损管理",
-    "持仓≤4只规则:已满仓4只,无开仓名额"
-  ],
-  "position_focus": {
-    "must_clear": [
-      "麦格米特(002851)违规清仓",
-      "国瓷材料(300285)违规清仓"
-    ],
-    "stop_loss_watch": [
-      "江波龙(301308)止损360",
-      "利通电子(603629)止损117"
-    ],
-    "target": "收盘仓位降至30-50%以下"
-  },
-  "next_evaluation": {
-    "date": "2026-09-01",
-    "pre_conditions": [
-      "英伟达财报落地(无重大利空)",
-      "Jackson Hole沃什演讲(无超预期鹰派)",
-      "关注池标的止跌企稳(MA5/MA20站稳)",
-      "月度回撤收窄至<-10%",
-      "涨跌家数恢复至>2000"
-    ]
-  }
+  "note": "APEX熔断全面禁入。8/27无候选标的"
 }
