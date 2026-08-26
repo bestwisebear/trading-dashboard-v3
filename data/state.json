@@ -1,30 +1,30 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T22:39:43+08:00",
-    "data_date": "2026-08-25",
-    "source": "盘后全量刷新",
-    "session": "evening_plan",
+    "last_updated": "2026-08-26T11:30:00+08:00",
+    "data_date": "2026-08-26",
+    "source": "午间数据刷新",
+    "session": "intraday",
     "note": "8/25券商截图纠正：实际4只持仓(非2只)，6笔交易含5笔违规。满仓99.4%过英伟达财报夜=极度危险"
   },
   "current": {
-    "total_assets": 171939.02,
+    "total_assets": 173310.02,
     "prev_close_assets": 171519.28,
     "available_cash": 983.02,
     "initial_capital": 200000.0,
     "position_count": 4,
     "position_ratio": 99.4,
-    "monthly_pnl": -28060.98,
-    "monthly_return_rate": -14.03,
-    "market_value": 170956.0,
+    "monthly_pnl": -26689.98,
+    "monthly_return_rate": -13.34,
+    "market_value": 172327.0,
     "note": "4只持仓(江波龙100/利通500/麦格米特300/国瓷600),满仓99.4%,现金仅983"
   },
   "today_so_far": {
-    "date": "2026-08-25",
-    "net_today": 419.74,
-    "trade_count": 6,
-    "violation_count": 5,
-    "session": "post_close",
-    "note": "做T+加仓+建仓6笔。江波龙卖200买100(做T亏2562),利通加仓200,麦格米特300/国瓷600新建仓"
+    "date": "2026-08-26",
+    "net_today": 1790.74,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "intraday",
+    "note": "上午盘震荡,无交易。持仓:江波龙-4.62%(-1788)/利通-2.64%(-1609)/麦格+1.93%(+701)/国瓷+1.76%(+676)"
   },
   "positions": [
     {
@@ -33,7 +33,7 @@
       "quantity": 100,
       "cost_price": 386.73,
       "stop_loss": 360.0,
-      "market_value": 36966.0
+      "market_value": 36885.0
     },
     {
       "code": "603629",
@@ -41,7 +41,7 @@
       "quantity": 500,
       "cost_price": 121.737,
       "stop_loss": 117.0,
-      "market_value": 59650.0
+      "market_value": 59260.0
     },
     {
       "code": "002851",
@@ -49,7 +49,7 @@
       "quantity": 300,
       "cost_price": 121.324,
       "stop_loss": 115.76,
-      "market_value": 36396.0
+      "market_value": 37098.0
     },
     {
       "code": "300285",
@@ -57,7 +57,7 @@
       "quantity": 600,
       "cost_price": 64.013,
       "stop_loss": 60.22,
-      "market_value": 37944.0
+      "market_value": 39084.0
     }
   ],
   "validation": {

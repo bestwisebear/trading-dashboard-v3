@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T17:00:00+08:00",
-    "date": "2026-08-25",
-    "session": "post_close",
-    "source": "券商截图Screenshot_20260825_140150+腾讯收盘价",
-    "price_source note": "收盘价(15:00后)",
+    "last_updated": "2026-08-26T11:30:00+08:00",
+    "date": "2026-08-26",
+    "session": "intraday",
+    "source": "午间行情刷新(腾讯盘中价)",
+    "price_source note": "盘中价(11:30)",
     "correction": "8/25盘后任务仅记录2只持仓(江波龙200/利通300)，与券商实际4只持仓严重不符。本次按券商截图全量纠正"
   },
   "summary": {
-    "total_market_value": 170956.0,
+    "total_market_value": 172327.0,
     "available_cash": 983.02,
-    "total_assets": 171939.02,
-    "net_today": 419.74,
-    "today_return": 419.74,
+    "total_assets": 173310.02,
+    "net_today": 1790.74,
+    "today_return": 1790.74,
     "total_pnl_amount": -28060.98,
-    "monthly_pnl": -28060.98,
+    "monthly_pnl": -26689.98,
     "prev_close_assets": 171519.28,
     "position_ratio": 99.4,
-    "today_return_rate": 0.24,
-    "monthly_return_rate": -14.03,
+    "today_return_rate": 1.04,
+    "monthly_return_rate": -13.34,
     "initial_capital": 200000.0,
     "position_count": 4,
-    "note": "8/25收盘：4只持仓，仓位99.4%。今日6笔交易(江波龙做T+利通加仓+麦格米特/国瓷新建仓)，零现金缓冲。⚠️8/26英伟达财报+PCE+Jackson Hole三重风险，满仓状态极度危险"
+    "note": "8/26上午盘:4只持仓,仓位99.4%,现金983元。江波龙-4.62%(-1788)破低363.10/利通-2.64%(-1609)低116.02破止损117(未触发)/麦格+1.93%(+701)/国瓷+3.00%(+676)。⚠️8/26英伟达财报今晚+PCE+Jackson Hole三重风险,APEX熔断禁新仓"
   },
   "positions": [
     {
@@ -31,17 +31,17 @@
       "available": 0,
       "cost_price": 386.73,
       "cost_source": "broker_screenshot_0825_1401",
-      "current_price": 369.66,
-      "price_updated_at": "2026-08-25T16:55:00+08:00",
+      "current_price": 368.85,
+      "price_updated_at": "2026-08-26T11:30:00+08:00",
       "buy_date": "2026-08-25(做T回补)",
       "holding_days": 1,
       "stop_loss": 360.0,
       "stop_profit": 415.0,
-      "pnl_percent": -4.41,
-      "pnl_amount": -1707.0,
+      "pnl_percent": -4.62,
+      "pnl_amount": -1788.0,
       "sector": "存储",
       "status": "holding_loss",
-      "notes": "8/25做T：原200股@368.82卖出(实现亏-2562)→386.73买回100股(T+1不可卖)。收盘369.66(+1.30%)。通过港交所聆讯利好。成本因做T抬高。违规：禁做T",
+      "notes": "上午盘368.85(-0.22%)低363.10破止损360后回升。港股通过聆讯。盘中距止损360仅8.85元(2.40%)。⚠️英伟达今晚财报观察",
       "key_price": {
         "support": 360,
         "resistance": 415,
@@ -52,7 +52,7 @@
       },
       "price_source": "tencent_close_20260825",
       "session": "post_close",
-      "market_value": 36966.0
+      "market_value": 36885.0
     },
     {
       "code": "603629",
@@ -61,17 +61,17 @@
       "available": 200,
       "cost_price": 121.737,
       "cost_source": "broker_screenshot_0825_1401",
-      "current_price": 119.3,
-      "price_updated_at": "2026-08-25T16:55:00+08:00",
+      "current_price": 118.52,
+      "price_updated_at": "2026-08-26T11:30:00+08:00",
       "buy_date": "2026-08-21(原300)+08-25(加200@119.35)",
       "holding_days": 5,
       "stop_loss": 117.0,
       "stop_profit": 140.0,
-      "pnl_percent": -2.0,
-      "pnl_amount": -1218.5,
+      "pnl_percent": -2.64,
+      "pnl_amount": -1608.5,
       "sector": "算力租赁/液冷",
       "status": "holding_loss",
-      "notes": "8/25加仓200股@119.35(总500)，成本从123.327摊至121.737。收盘119.30(-2.04%)。液冷概念午后反弹(英维克涨停)。定增50亿智算中心。违规：APEX熔断期加仓+非操作时段",
+      "notes": "上午盘118.52(-0.65%)低116.02破止损117(未触发收盘)。液冷概念反弹。高盛+瑞银+沪股通大买。距止损117仅1.52元(1.28%)",
       "key_price": {
         "support": 117,
         "resistance": 140,
@@ -82,7 +82,7 @@
       },
       "price_source": "tencent_close_20260825",
       "session": "post_close",
-      "market_value": 59650.0
+      "market_value": 59260.0
     },
     {
       "code": "002851",
@@ -91,17 +91,17 @@
       "available": 0,
       "cost_price": 121.324,
       "cost_source": "broker_screenshot_0825_1401",
-      "current_price": 121.32,
-      "price_updated_at": "2026-08-25T16:55:00+08:00",
+      "current_price": 123.66,
+      "price_updated_at": "2026-08-26T11:30:00+08:00",
       "buy_date": "2026-08-25",
       "holding_days": 1,
       "stop_loss": 115.76,
       "stop_profit": 130.0,
-      "pnl_percent": -0.003,
-      "pnl_amount": -1.2,
+      "pnl_percent": 1.93,
+      "pnl_amount": 700.8,
       "sector": "电源/算力电力",
       "status": "holding_flat",
-      "notes": "8/25新建仓300股@121.324。收盘121.32(+1.23%)，盘中低115.76。⚠️非关注池标的+APEX熔断期建仓=双重违规。止损设盘中低115.76下方",
+      "notes": "上午盘123.66(+1.93%)高开高走。违规持仓(非关注池+APEX熔断期建仓)。建议借高开出清",
       "key_price": {
         "support": 115.76,
         "resistance": 125,
@@ -112,7 +112,7 @@
       },
       "price_source": "tencent_close_20260825",
       "session": "post_close",
-      "market_value": 36396.0
+      "market_value": 37098.0
     },
     {
       "code": "300285",
@@ -121,17 +121,17 @@
       "available": 0,
       "cost_price": 64.013,
       "cost_source": "broker_screenshot_0825_1401",
-      "current_price": 63.24,
-      "price_updated_at": "2026-08-25T16:55:00+08:00",
+      "current_price": 65.14,
+      "price_updated_at": "2026-08-26T11:30:00+08:00",
       "buy_date": "2026-08-25",
       "holding_days": 1,
       "stop_loss": 60.22,
       "stop_profit": 70.0,
-      "pnl_percent": -1.21,
-      "pnl_amount": -463.8,
+      "pnl_percent": 1.76,
+      "pnl_amount": 676.2,
       "sector": "MLCC/电子陶瓷",
       "status": "holding_loss",
-      "notes": "8/25新建仓600股@64.013。收盘63.24(-1.34%)，盘中低60.22。⚠️非关注池标的+APEX熔断期建仓=双重违规。止损设盘中低60.22下方",
+      "notes": "上午盘65.14(+3.00%)高开高走。MLCC反弹+深股通+机构大买。违规持仓(非关注池+APEX熔断期建仓)。建议借高开出清",
       "key_price": {
         "support": 60.22,
         "resistance": 67,
@@ -142,7 +142,7 @@
       },
       "price_source": "tencent_close_20260825",
       "session": "post_close",
-      "market_value": 37944.0
+      "market_value": 39084.0
     }
   ]
 }

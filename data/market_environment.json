@@ -1,119 +1,108 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T08:11:00+08:00",
+    "last_updated": "2026-08-26T11:30:00+08:00",
     "date": "2026-08-26",
-    "session": "pre_market",
-    "source": "stock-data-skill收盘行情",
+    "session": "intraday",
+    "source": "午间行情刷新(腾讯盘中价)",
     "data_basis": "8/25收盘(腾讯行情)+8/25夜全球市场",
     "note": "8/26盘前：8/25夜美股大反弹(纳指+0.66%/费半+1.49%/NVDA+2.19%终结七连跌/存储+2-3%/光通信+4-7%)+长江存储IPO催化+沪电PCB+73.72%。关注池预计高开,但APEX熔断全面禁入"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3889.44,
-      "change_pct": 0.19,
-      "pre_close": 3882.01,
-      "open": 3863.37,
-      "high": 3896.21,
-      "low": 3850.86,
-      "volume": 464117264,
-      "amount": 85887423,
-      "pe_ratio": 17.71,
-      "note": "收盘3889.44(+0.19%),探底回升,盘中低3850.86后反弹38.58点"
+      "close": 3916.83,
+      "change_pct": 0.7,
+      "pre_close": 3889.44,
+      "open": 3881.74,
+      "high": 3926.44,
+      "low": 3881.74,
+      "volume": 331841928,
+      "amount": 58086861,
+      "pe_ratio": 17.78,
+      "note": "午间3916.83(+0.70%)高开震荡,守3900攻3926"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 13745.87,
-      "change_pct": -0.35,
-      "pre_close": 13794.29,
-      "open": 13683.91,
-      "high": 13848.4,
-      "low": 13568.51,
-      "volume": 579779582,
-      "amount": 97297023,
-      "pe_ratio": 43.05,
-      "note": "收盘13745.87(-0.35%),午后回升收窄跌幅"
+      "close": 13911.29,
+      "change_pct": 1.2,
+      "pre_close": 13745.87,
+      "open": 13761.36,
+      "high": 13948.69,
+      "low": 13714.05,
+      "volume": 397481220,
+      "amount": 65003557,
+      "pe_ratio": 43.64,
+      "note": "午间13911.29(+1.20%)强势反弹"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3397.52,
-      "change_pct": -1.0,
-      "pre_close": 3431.89,
-      "open": 3403.2,
-      "high": 3440.65,
-      "low": 3359.74,
-      "volume": 170664183,
-      "amount": 46397673,
-      "pe_ratio": 55.32,
-      "note": "收盘3397.52(-1.00%),半导体/光模块拖累,午后弱修复"
+      "close": 3444.05,
+      "change_pct": 1.37,
+      "pre_close": 3397.52,
+      "open": 3409.28,
+      "high": 3455.89,
+      "low": 3379.14,
+      "volume": 112760908,
+      "amount": 30590898,
+      "pe_ratio": 56.94,
+      "note": "午间3444.05(+1.37%)领涨三大指数"
     }
   },
   "market_breadth": {
-    "up_count": 4229,
-    "down_count": 1243,
-    "flat_count": 70,
-    "limit_up": 70,
-    "up_down_ratio": "3.40:1",
-    "note": "Wind:4229涨/1243跌/70平,涨跌比3.40:1,个股普涨,小票赚钱效应好。70家涨停"
+    "up_count": "待盘后更新",
+    "down_count": "待盘后更新",
+    "note": "三大指数全面上涨(上证+0.70%/深成指+1.20%/创业板+1.37%),赚钱效应良好"
   },
   "volume": {
-    "total_amount": 18318,
-    "prev_amount": 20074,
-    "change": -1756,
-    "note": "沪深合计1.83万亿,较上日缩量1756亿,存量博弈特征明显"
+    "total_amount": 30736,
+    "prev_amount": 18318,
+    "change": 12418,
+    "note": "午间半天成交约15368万元,预估全天30736亿元(较昨日1.83万亿放量)"
   },
   "north_flow": {
     "net_flow": -18.62,
-    "note": "北向资金净流出18.62亿元"
+    "note": "北向资金数据待盘后更新(午间暂沿用8/25值)"
   },
   "sector_top10_up": [
     {
-      "name": "美容护理",
-      "change_pct": 3.66,
-      "lead_stock": "石头科技(20.00)"
+      "name": "造纸",
+      "change_pct": 4.47,
+      "lead_stock": "青山纸业(10.16)"
     },
     {
-      "name": "农林牧渔",
-      "change_pct": 2.23,
-      "lead_stock": "金健米业(10.05)"
+      "name": "工业金属",
+      "change_pct": 4.3,
+      "lead_stock": "精艺股份(10.03)"
     },
     {
-      "name": "医药生物",
-      "change_pct": 2.08,
-      "lead_stock": "凯莱英(10.00)"
+      "name": "冶钢原料",
+      "change_pct": 3.03,
+      "lead_stock": "河钢资源(5.45)"
     },
     {
-      "name": "轻工制造",
-      "change_pct": 2.07
+      "name": "证券Ⅱ",
+      "change_pct": 2.67,
+      "lead_stock": "锦龙股份(10.05)"
     },
     {
-      "name": "社会服务",
-      "change_pct": 1.99
+      "name": "非金属材料Ⅱ",
+      "change_pct": 2.6,
+      "lead_stock": "联瑞新材(6.24)"
     },
     {
-      "name": "小家电",
-      "change_pct": 8.02,
-      "lead_stock": "石头科技(20.00)"
+      "name": "农化制品",
+      "change_pct": 2.43,
+      "lead_stock": "新农股份(9.99)"
     },
     {
-      "name": "化妆品",
-      "change_pct": 5.23,
-      "lead_stock": "青岛金王(10.06)"
+      "name": "肿瘤疫苗(概念)",
+      "change_pct": 7.4,
+      "lead_stock": "康希诺(20.00)"
     },
     {
-      "name": "房地产服务",
-      "change_pct": 4.37,
-      "lead_stock": "我爱我家(10.14)"
-    },
-    {
-      "name": "装修装饰",
-      "change_pct": 3.64,
-      "lead_stock": "东易日盛(10.06)"
-    },
-    {
-      "name": "医疗服务",
-      "change_pct": 3.4,
-      "lead_stock": "凯莱英(10.00)"
+      "name": "证券IT(概念)",
+      "change_pct": 4.13,
+      "lead_stock": "汇金科技(12.79)"
     }
   ],
   "sector_top10_down": [
