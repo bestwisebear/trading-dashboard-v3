@@ -1,11 +1,17 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T20:45:00+08:00",
+    "last_updated": "2026-08-26T23:00:00+08:00",
     "date": "2026-08-26",
     "session": "evening_review",
     "data_basis": "8/26收盘(腾讯行情)",
     "screening_criteria": "7道闸+APEX二级熔断(月度-14.20%>10%阈值→8/26-8/31禁新仓)+8/27 Jackson Hole+PCE",
-    "note": "8/26晚间:关注池科技分化。APEX熔断持续。8/27英伟达财报+Jackson Hole。利通连续2日盘中破止损未执行,8/27必须清违规+止损"
+    "note": "8/26晚间:关注池科技分化。APEX熔断持续。8/27英伟达财报+Jackson Hole。利通连续2日盘中破止损未执行,8/27必须清违规+止损",
+    "semi_screening": {
+      "status": "已完成",
+      "count": 13,
+      "criteria": "半导体/芯片/封测/设备/材料, 7道闸≥4/7, 涨幅<5%, RSI<70, 价格≥MA20",
+      "note": "半导体板块+1.05%弱修复。设备板块反弹力度最强,封测横盘,材料偏弱。APEX熔断期间仅做预筛选,不做买入操作"
+    }
   },
   "watchlist": [
     {
@@ -351,6 +357,320 @@
         "stop_loss": 1.05
       },
       "notes": "收盘1.125(+1.63%)"
+    }
+  ],
+  "transit_pool": [
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "close": 276.2,
+      "change_pct": 4.77,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "gates_passed": "6/7",
+      "rsi": 62,
+      "above_ma20": true,
+      "pe": 113.36,
+      "note": "半导体测试设备龙头,+4.77%放量。高盛上修设备支出预期催化",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体设备, 6/7道闸通过, 涨幅4.77%, RSI=62"
+    },
+    {
+      "code": "688037",
+      "name": "芯源微",
+      "close": 372.82,
+      "change_pct": 4.83,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "gates_passed": "6/7",
+      "rsi": 65,
+      "above_ma20": true,
+      "pe": 1017,
+      "note": "涂胶显影设备,+4.83%。PE极高但赛道稀缺",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体设备, 6/7道闸通过, 涨幅4.83%, RSI=65"
+    },
+    {
+      "code": "688012",
+      "name": "中微公司",
+      "close": 368.05,
+      "change_pct": 3.97,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "gates_passed": "7/7",
+      "rsi": 58,
+      "above_ma20": true,
+      "pe": 62.39,
+      "note": "刻蚀设备龙头,+3.97%。PE合理,北向资金重仓",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体设备, 7/7道闸通过, 涨幅3.97%, RSI=58"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "close": 61.25,
+      "change_pct": 0.57,
+      "sector": "封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "gates_passed": "7/7",
+      "rsi": 52,
+      "above_ma20": true,
+      "pe": 76.56,
+      "note": "封测龙头,+0.57%。先进封装扩产,42.2亿定增获批",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 封测, 7/7道闸通过, 涨幅0.57%, RSI=52"
+    },
+    {
+      "code": "688019",
+      "name": "安集科技",
+      "close": 233.8,
+      "change_pct": 0.09,
+      "sector": "半导体材料",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "gates_passed": "7/7",
+      "rsi": 45,
+      "above_ma20": true,
+      "pe": 64.27,
+      "note": "CMP材料,+0.09%。中报净利+41.56%,估值合理",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体材料, 7/7道闸通过, 涨幅0.09%, RSI=45"
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "close": 210.6,
+      "change_pct": 2.09,
+      "sector": "半导体检测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 17,
+      "gates_passed": "6/7",
+      "rsi": 55,
+      "above_ma20": true,
+      "pe": 662,
+      "note": "检测设备,+2.09%。PE极高",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体检测, 6/7道闸通过, 涨幅2.09%, RSI=55"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "close": 700.7,
+      "change_pct": 0.04,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 17,
+      "gates_passed": "7/7",
+      "rsi": 48,
+      "above_ma20": true,
+      "pe": 89.46,
+      "note": "设备龙头,平盘。中报营收+24.9%,净利仅+5%。资金观望英伟达财报",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体设备, 7/7道闸通过, 涨幅0.04%, RSI=48"
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "close": 73.62,
+      "change_pct": -0.58,
+      "sector": "封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 17,
+      "gates_passed": "6/7",
+      "rsi": 42,
+      "above_ma20": true,
+      "pe": 57.94,
+      "note": "封测龙头,-0.58%。先进封装扩产中",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 封测, 6/7道闸通过, 涨幅-0.58%, RSI=42"
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "close": 16.66,
+      "change_pct": -1.07,
+      "sector": "封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 16,
+      "gates_passed": "6/7",
+      "rsi": 40,
+      "above_ma20": true,
+      "pe": 75.73,
+      "note": "封测,-1.07%。跟随板块被动波动",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 封测, 6/7道闸通过, 涨幅-1.07%, RSI=40"
+    },
+    {
+      "code": "000021",
+      "name": "深科技",
+      "close": 36.23,
+      "change_pct": -1.6,
+      "sector": "存储封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 2,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 16,
+      "gates_passed": "6/7",
+      "rsi": 38,
+      "above_ma20": true,
+      "pe": 46.47,
+      "note": "存储封测,-1.60%。中报净利+20.28%",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 存储封测, 6/7道闸通过, 涨幅-1.6%, RSI=38"
+    },
+    {
+      "code": "688072",
+      "name": "拓荆科技",
+      "close": 380.0,
+      "change_pct": -1.23,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 16,
+      "gates_passed": "6/7",
+      "rsi": 43,
+      "above_ma20": true,
+      "pe": 87.53,
+      "note": "薄膜沉积设备,-1.23%",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体设备, 6/7道闸通过, 涨幅-1.23%, RSI=43"
+    },
+    {
+      "code": "300751",
+      "name": "迈为股份",
+      "close": 221.18,
+      "change_pct": 4.58,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 16,
+      "gates_passed": "6/7",
+      "rsi": 60,
+      "above_ma20": true,
+      "pe": 120,
+      "note": "HJT设备,+4.58%。跨界半导体",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体设备, 6/7道闸通过, 涨幅4.58%, RSI=60"
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "close": 54.47,
+      "change_pct": -0.87,
+      "sector": "半导体材料",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 15,
+      "gates_passed": "5/7",
+      "rsi": 41,
+      "above_ma20": true,
+      "pe": 108,
+      "note": "光刻胶材料,-0.87%。PE偏高",
+      "added_date": "2026-08-26",
+      "reason": "半导体低位筛选: 半导体材料, 5/7道闸通过, 涨幅-0.87%, RSI=41"
     }
   ]
 }
