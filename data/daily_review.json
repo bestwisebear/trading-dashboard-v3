@@ -1,77 +1,20 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T08:11:00+08:00",
+    "last_updated": "2026-08-26T20:45:00+08:00",
     "date": "2026-08-26",
-    "session": "pre_market"
+    "session": "evening_review"
   },
   "daily_metrics": {
-    "trade_count": 6,
-    "buy_count": 5,
-    "sell_count": 1,
-    "violation_count": 5,
-    "realized_pnl": -2562.0,
-    "net_today": 419.74,
-    "total_assets": 171939.02,
+    "trade_count": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": 73.74,
+    "total_assets": 171593.02,
     "position_ratio": 99.4,
-    "discipline_score": 25
+    "discipline_score": 15
   },
-  "date": "2026-08-25",
-  "score": 65,
-  "score_detail": "execution=70,discipline=60;零操作=纪律执行良好。江波龙/利通电子盘中均破止损后回升,未触发清仓(未确认跌破收盘价在止损下方)。APEX熔断期间禁新仓=严格遵守",
-  "note": "8/25收盘:零操作。今日-10377.24元(-5.7%)。沪指探底回升+0.19%,涨跌4229家大幅改善。江波龙+1.30%回升至止损上方,利通电子-2.04%仍在止损上方。市场高低切换明显(消费/农业/医药领涨vs科技杀跌)。8/26英伟达财报是关键催化",
-  "operation_analysis": {
-    "summary": "严重违规日。APEX熔断期间建仓3个新仓+做T+加仓，6笔交易5笔违规。满仓99.4%过英伟达财报夜",
-    "violations": [
-      {
-        "type": "intraday_T_ban",
-        "stock": "江波龙",
-        "detail": "卖200@368.82→买100@386.73，做T卖低买高亏2562"
-      },
-      {
-        "type": "apex_circuit_breaker",
-        "stock": "利通电子/麦格米特/国瓷材料",
-        "detail": "APEX二级熔断期间加仓/建仓"
-      },
-      {
-        "type": "non_watchlist",
-        "stock": "麦格米特/国瓷材料",
-        "detail": "非关注池标的开仓"
-      },
-      {
-        "type": "non_window",
-        "stock": "利通电子",
-        "detail": "非13:30-14:30窗口加仓"
-      }
-    ],
-    "what_went_wrong": "在明确禁新仓的交易日内，连续违反多条铁律。特别是在英伟达财报前夜满仓，将账户暴露在不可控的跳空风险中",
-    "what_went_right": "风华高科+埃斯顿止损后没有在8/24重新建仓(虽然8/25又违规)"
-  },
-  "emotion_state": {
-    "level": "high_risk",
-    "description": "8/24止损后8/25立即重建仓，典型的'割肉后想回本'情绪驱动操作。做T卖低买高更是情绪失控的表现",
-    "advice": "8/26必须机械执行减仓计划，不看盘不犹豫"
-  },
-  "tomorrow_focus": [
-    "开盘减麦格米特/国瓷(违规标的，无持有理由)",
-    "利通电子减半或全清",
-    "江波龙100股小仓可观察",
-    "20:30 PCE + 盘后英伟达财报",
-    "目标收盘仓位≤20%"
-  ],
-  "today_preview_8_26": {
-    "date": "2026-08-26",
-    "session": "pre_market",
-    "planned_actions": [
-      "9:30-9:45借高开优先清仓麦格米特300+国瓷600(违规)",
-      "核对江波龙360/利通117止损",
-      "借高开减仓核心持仓",
-      "全天零新仓+不补仓"
-    ],
-    "expected_position_change": "从99.4%仓位降至30-50%(违规清仓后预计57%,核心再减后预计21.5%)",
-    "key_risks": [
-      "今晚英伟达财报(盘后)=全球AI情绪风向标",
-      "APEX月回撤-14.03%>10%二级熔断",
-      "账户满仓+零缓冲+违规持仓"
-    ]
-  }
+  "date": "2026-08-26",
+  "score": 20
 }
