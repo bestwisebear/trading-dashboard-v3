@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T08:11:00+08:00",
+    "last_updated": "2026-08-26T08:25:00+08:00",
     "date": "2026-08-26",
     "session": "pre_market",
-    "data_basis": "8/25收盘(腾讯行情)+8/25夜美股反弹+8/26盘前国内政策",
+    "data_basis": "8/25收盘(腾讯公开API)+8/25夜全球市场+8/26盘前国内政策",
     "screening_criteria": "7道闸+APEX二级熔断(月度-14.03%>10%阈值→8/26-8/31禁新仓)+8/25夜美股大反弹+长江存储IPO催化",
     "note": "8/26盘前:8/25夜美股大反弹(纳指+0.66%/费半+1.49%/NVDA+2.19%终结7连跌/存储+2-3%/光通信+4-7%)+长江存储IPO催化+沪电PCB+73.72%。关注池整体高开概率极大,但APEX熔断禁新仓,8/26全面禁入,优先清仓违规持仓"
   },
@@ -46,12 +46,14 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "MLCC被动元件",
-      "today_close": 51.0,
-      "today_change_pct": -1.79,
+      "today_close": 51.33,
+      "today_change_pct": -1.12,
       "key_price": {
         "support": 51.88,
         "resistance": 58,
-        "stop_loss": 51.5
+        "stop_loss": 51.5,
+        "low_observed": 49.46,
+        "high_observed": 52.59
       },
       "notes": "⚠️8/24止损清仓800股,实现亏损-2997.22。MLCC涨价+国资龙头,但PE205倍偏高,均线空头未企稳"
     },
@@ -61,12 +63,14 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "工业机器人",
-      "today_close": 31.2,
-      "today_change_pct": 1.1,
+      "today_close": 31.68,
+      "today_change_pct": 2.79,
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
-        "stop_loss": 31.3
+        "stop_loss": 31.3,
+        "low_observed": 30.57,
+        "high_observed": 32.25
       },
       "notes": "⚠️8/24止损清仓1100股,实现亏损-3418.92。国产机器人龙头。非关注池违规标的已清理"
     },
@@ -76,12 +80,13 @@
       "score": 1,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 237.06,
-      "today_change_pct": -1.55,
+      "today_close": 238.02,
+      "today_change_pct": -1.15,
       "key_price": {
         "support": 231.77,
         "resistance": 250,
-        "stop_loss": 230
+        "stop_loss": 230,
+        "high_observed": 241.57
       },
       "notes": "8/21已清仓(原破止损250)。回到关注池观察。8/24收240.80(-2.67%),高开249→收240.80(破止损240)。8/25外盘算力链继续承压。今日APEX二级熔断+崩盘后纪律防御=全面禁入"
     },
@@ -91,12 +96,14 @@
       "score": 3,
       "status": "watch",
       "sector": "MLCC",
-      "today_close": 108.91,
-      "today_change_pct": -0.03,
+      "today_close": 109.1,
+      "today_change_pct": 0.15,
       "key_price": {
         "support": 105.86,
         "resistance": 119,
-        "stop_loss": 105
+        "stop_loss": 105,
+        "low_observed": 103.45,
+        "high_observed": 110.76
       },
       "notes": "8/21已清仓(原破止损122)。MLCC涨价链,回池观察。8/24收108.94(-4.35%),高开113.85→破MA20=119.37。技术面破位+APEX熔断=禁入"
     },
@@ -106,12 +113,13 @@
       "score": 4,
       "status": "watch",
       "sector": "锂电储能",
-      "today_close": 60.78,
-      "today_change_pct": -1.68,
+      "today_close": 60.6,
+      "today_change_pct": -1.97,
       "key_price": {
         "support": 58,
         "resistance": 68,
-        "stop_loss": 57
+        "stop_loss": 57,
+        "high_observed": 61.99
       },
       "notes": "8/18清仓(破止损57.85)。8/24收61.82(-3.8%)距止损57约4.82元(8.45%)。储能链需待碳酸锂企稳+海外大单确认。APEX熔断+崩盘防御=禁入"
     },
@@ -121,12 +129,13 @@
       "score": 6,
       "status": "watch",
       "sector": "封测/AMD",
-      "today_close": 60.71,
-      "today_change_pct": -0.87,
+      "today_close": 60.9,
+      "today_change_pct": -0.56,
       "key_price": {
         "support": 58,
         "resistance": 70,
-        "stop_loss": 58
+        "stop_loss": 58,
+        "high_observed": 62.06
       },
       "notes": "AMD封测核心,AMD-3.71%外盘拖累。技术面破MA20,需待AMD止跌+AMD MI300量产催化。APEX熔断=禁入,8/27英伟达财报后评估"
     },
@@ -136,12 +145,14 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 401.2,
-      "today_change_pct": -2.62,
+      "today_close": 400.87,
+      "today_change_pct": -2.7,
       "key_price": {
         "support": 400,
         "resistance": 470,
-        "stop_loss": 395
+        "stop_loss": 395,
+        "low_observed": 395.0,
+        "high_observed": 413.02
       },
       "notes": "8/24重挫-6.79%破400支撑。中际旭创-7.72%/天孚-8.63%板块性杀跌。Lumentum-4.22%/Coherent-4.85%外盘光通信板块受AAOI-13.77%冲击。CPO量产冲击传统光模块格局,产业逻辑受质疑。观察期延长至英伟达财报后"
     },
@@ -151,12 +162,14 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 842.75,
-      "today_change_pct": -3.16,
+      "today_close": 846.0,
+      "today_change_pct": -2.78,
       "key_price": {
         "support": 850,
         "resistance": 1050,
-        "stop_loss": 850
+        "stop_loss": 850,
+        "low_observed": 837.12,
+        "high_observed": 871.91
       },
       "notes": "8/24重挫-7.72%破MA20。易中天重挫市值蒸发超千亿,主力-130.86亿。CPO量产冲击+SK海力士CPO论文对传统光模块逻辑冲击。观察期延长至英伟达财报后(8/26)"
     },
@@ -166,12 +179,13 @@
       "score": 4,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 251.88,
-      "today_change_pct": 0.95,
+      "today_close": 257.1,
+      "today_change_pct": 3.05,
       "key_price": {
         "support": 230,
         "resistance": 290,
-        "stop_loss": 230
+        "stop_loss": 230,
+        "high_observed": 264.72
       },
       "notes": "8/24-8.63%板块领跌。CPO量产冲击+短期获利盘涌出。技术面破位,需待产业逻辑重建"
     },
@@ -181,12 +195,14 @@
       "score": 4,
       "status": "watch",
       "sector": "存储IC设计",
-      "today_close": 131.05,
-      "today_change_pct": -1.95,
+      "today_close": 134.1,
+      "today_change_pct": 0.33,
       "key_price": {
         "support": 130,
         "resistance": 155,
-        "stop_loss": 128
+        "stop_loss": 128,
+        "low_observed": 128.51,
+        "high_observed": 134.98
       },
       "notes": "存储链外盘冲击(美光-5.83%/闪迪-6.45%)。DRAM/NAND涨价+车规存储需求为基本面支撑。技术面MA20=135.6失守"
     },
@@ -196,12 +212,14 @@
       "score": 4,
       "status": "watch",
       "sector": "石英材料/半导体",
-      "today_close": 82.9,
-      "today_change_pct": -1.3,
+      "today_close": 83.28,
+      "today_change_pct": -0.85,
       "key_price": {
         "support": 82,
         "resistance": 95,
-        "stop_loss": 80
+        "stop_loss": 80,
+        "low_observed": 81.05,
+        "high_observed": 84.96
       },
       "notes": "半导体材料链,石英玻璃龙头。外盘-3%传导+半导体板块-3.13%。需待板块情绪企稳"
     },
@@ -211,12 +229,13 @@
       "score": 4,
       "status": "watch",
       "sector": "IDC/液冷",
-      "today_close": 62.14,
-      "today_change_pct": -0.5,
+      "today_close": 62.6,
+      "today_change_pct": 0.24,
       "key_price": {
         "support": 60,
         "resistance": 72,
-        "stop_loss": 58
+        "stop_loss": 58,
+        "high_observed": 63.18
       },
       "notes": "IDC+液冷,8/24-3.8%破MA20。算力链外盘冲击+板块普跌。需待算力链企稳+长单催化"
     },
@@ -226,12 +245,14 @@
       "score": 5,
       "status": "watch",
       "sector": "半导体测试设备",
-      "today_close": 261.06,
-      "today_change_pct": -3.7,
+      "today_close": 263.62,
+      "today_change_pct": -2.76,
       "key_price": {
         "support": 265,
         "resistance": 305,
-        "stop_loss": 260
+        "stop_loss": 260,
+        "low_observed": 253.0,
+        "high_observed": 269.14
       },
       "notes": "测试设备龙头,高盛上调半导体设备支出正面催化。8/24-2.98%相对抗跌。需待板块情绪企稳"
     },
@@ -241,12 +262,13 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块/激光",
-      "today_close": 101.99,
-      "today_change_pct": -1.32,
+      "today_close": 105.27,
+      "today_change_pct": 1.86,
       "key_price": {
         "support": 100,
         "resistance": 120,
-        "stop_loss": 100
+        "stop_loss": 100,
+        "high_observed": 106.49
       },
       "notes": "光模块+激光设备,8/24-4.5%跟随板块。需待CPO冲击消化+英伟达财报后评估"
     },
@@ -256,12 +278,14 @@
       "score": 4,
       "status": "watch",
       "sector": "PCB/果链",
-      "today_close": 190.97,
-      "today_change_pct": -1.36,
+      "today_close": 190.84,
+      "today_change_pct": -1.43,
       "key_price": {
         "support": 188,
         "resistance": 220,
-        "stop_loss": 185
+        "stop_loss": 185,
+        "low_observed": 186.3,
+        "high_observed": 196.99
       },
       "notes": "果链+PCB,8/24-2%相对抗跌。需待果链新品催化+板块情绪企稳"
     },
@@ -271,12 +295,13 @@
       "score": 5,
       "status": "watch_avoid",
       "sector": "服务器/AI算力",
-      "today_close": 72.9,
-      "today_change_pct": -0.44,
+      "today_close": 74.11,
+      "today_change_pct": 1.22,
       "key_price": {
         "support": 70,
         "resistance": 85,
-        "stop_loss": 70
+        "stop_loss": 70,
+        "high_observed": 74.99
       },
       "notes": "AI服务器+算力链。8/14-0.83%连续弱势+8/24-2.5%。观察清单但非首选,需待算力链企稳+业绩催化"
     },
@@ -286,12 +311,13 @@
       "score": 3,
       "status": "watch",
       "sector": "锂电电解液",
-      "today_close": 61.59,
-      "today_change_pct": -3.62,
+      "today_close": 62.2,
+      "today_change_pct": -2.66,
       "key_price": {
         "support": 60,
         "resistance": 72,
-        "stop_loss": 58
+        "stop_loss": 58,
+        "high_observed": 63.91
       },
       "notes": "电解液+六氟磷酸锂,碳酸锂期货+4%突破16.2万元/吨为催化。但板块系统性杀跌中,需待情绪企稳"
     },
@@ -301,12 +327,14 @@
       "score": 2,
       "status": "watch",
       "sector": "锂电正极/磷酸铁锂",
-      "today_close": 45.3,
-      "today_change_pct": -3.39,
+      "today_close": 45.72,
+      "today_change_pct": -2.5,
       "key_price": {
         "support": 45,
         "resistance": 55,
-        "stop_loss": 43
+        "stop_loss": 43,
+        "low_observed": 44.8,
+        "high_observed": 46.45
       },
       "notes": "磷酸铁锂正极,锂电链情绪冰点+碳酸锂价格支撑。技术面破MA20,需待板块情绪反转"
     }
