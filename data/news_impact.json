@@ -1,8 +1,9 @@
 {
   "meta": {
-    "date": "2026-08-25",
-    "last_updated": "2026-08-25T20:45:00+08:00",
-    "source": "web_search_close"
+    "date": "2026-08-26",
+    "last_updated": "2026-08-26T08:11:00+08:00",
+    "source": "web_search_close",
+    "session": "pre_market"
   },
   "overall_sentiment": "中性偏空(晚间)",
   "sentiment_summary": "晚间增量偏空:英伟达七连跌+PCE加息风险+Jackson Hole沃什首秀不确定性,但美股期货反弹+芯片盘前走强提供缓冲。APEX熔断持续,8/26零新仓+持仓止损警戒",
@@ -206,5 +207,85 @@
       "affected_stocks": [],
       "source": "东方财富/财联社"
     }
-  ]
+  ],
+  "messages": [
+    {
+      "date": "2026-08-26",
+      "type": "利好",
+      "category": "海外",
+      "title": "8/25夜美股大反弹:纳指+0.66%终结7连阴/费半+1.49%/英伟达+2.19%终结7连跌",
+      "detail": "美股三大指数集体收涨,科技股在财报季前夕迎来强势反弹。AMD+4.91%/Marvell+4.84%/美光+2.48%/Lumentum+6.67%/希捷+3.40%/西部数据+3.53%/SK海力士+2.68%。30Y美债5.17%从5.34%回落,WTI原油-3.12%",
+      "impact_level": 4,
+      "link_to_watchlist": "关注池整体高开概率大(光模块/存储/CPO/PCB/算力链)",
+      "source": "新华网/第一财经/证券时报"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "利好",
+      "category": "国内政策",
+      "title": "国新办十五五新型工业化新闻发布会(8/26上午)",
+      "detail": "工业和信息化部副部长辛国斌介绍全力抓好\"十五五\"规划实施,加快推进新型工业化有关情况。关注AI+制造/算力链",
+      "impact_level": 3,
+      "link_to_watchlist": "AI+制造(江波龙/浪潮信息/通富微电)",
+      "source": "国务院"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "利好",
+      "category": "存储",
+      "title": "长江存储科创板IPO受理(8/21已挂网)持续催化",
+      "detail": "长江存储拟募资330亿元,创科创板历史最大IPO。2026Q1营收470.42亿元,归母净利润333.79亿元。江波龙/兆易/北京君正均为合作公司,机构一致预测2026年净利润增幅超过900%",
+      "impact_level": 4,
+      "link_to_watchlist": "江波龙(持仓·首要警戒)/北京君正/兆易创新(关注池外)",
+      "source": "证券时报/中国工业报"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "利好",
+      "category": "PCB",
+      "title": "沪电股份中报+73.72%(AI服务器PCB兑现)",
+      "detail": "沪电股份上半年实现营业收入136.89亿元(+61.17%),归母净利润29.23亿元(+73.72%)。AI服务器/高端PCB业绩兑现",
+      "impact_level": 3,
+      "link_to_watchlist": "东山精密(关注池内)",
+      "source": "中证报"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "利空",
+      "category": "风险事件",
+      "title": "今晚英伟达Q2财报(盘后)=全球AI情绪风向标",
+      "detail": "北京时间8/27凌晨英伟达将公布2027财年Q2财报。期权市场隐含财报后次日双向波动约5.4%。三种情景:超预期→科技全线反弹,符合预期→产业链分化,不及预期→科技再遭抛压。8/25夜美股大反弹可能反转",
+      "impact_level": 4,
+      "link_to_watchlist": "关注池全面(光模块/存储/CPO/PCB/算力链)",
+      "source": "一财/雪球/东吴证券"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "利空",
+      "category": "风险事件",
+      "title": "8/27美国7月PCE+8/28 Jackson Hole沃什演讲",
+      "detail": "8/27美国7月PCE数据(核心预期3.3%)+8/28-30 Jackson Hole央行年会+8/28 22:00美联储主席沃什首次主旨演讲(9月FOMC前最重要锚点)",
+      "impact_level": 3,
+      "link_to_watchlist": "宏观面影响所有持仓",
+      "source": "一财/华尔街见闻"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "利空",
+      "category": "熔断",
+      "title": "APEX月回撤-14.03%>10%二级熔断生效",
+      "detail": "月度回撤-14.03%(-28061元)>10%阈值,二级熔断生效,8/26-8/31禁新仓。叠加崩盘后纪律防御期+减仓后禁当日回补=三重锁定",
+      "impact_level": 4,
+      "link_to_watchlist": "关注池全面禁入",
+      "source": "交易纪律规则"
+    }
+  ],
+  "statistics": {
+    "total_messages": 7,
+    "positive_count": 4,
+    "negative_count": 3,
+    "neutral_count": 0,
+    "date": "2026-08-26",
+    "session": "pre_market"
+  }
 }
