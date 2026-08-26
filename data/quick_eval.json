@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T20:45:00+08:00",
+    "last_updated": "2026-08-26T23:00:00+08:00",
     "date": "2026-08-26",
-    "session": "evening_review",
-    "note": "APEX二级熔断期间,全市场扫描暂停。仅更新持仓+关注池评分"
+    "session": "nightly_scan",
+    "note": "全市场扫描完成。半导体板块+1.05%弱修复,设备>封测>材料。APEX熔断持续,8/27英伟达财报+Jackson Hole"
   },
   "market_summary": {
     "date": "2026-08-26",
@@ -12,25 +12,25 @@
     "volume_trillion": 1.81,
     "advancing": 2942,
     "declining": 2445,
-    "verdict": "中性偏多。有色+金融领涨,科技分化。午后冲高回落",
-    "apex_status": "二级熔断生效(月度-14.2%>10%),8/25-8/31禁新仓"
+    "verdict": "中性偏多。有色+金融领涨,科技分化。半导体探底回升+1.05%弱修复。午后冲高回落",
+    "apex_status": "二级熔断生效(月度-14.2%>10%),8/26-8/31禁新仓"
   },
   "holdings_eval": [
     {
       "code": "301308",
       "name": "江波龙",
       "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
         "trend": 3,
-        "volume": 2,
-        "support": 2,
-        "sector": 3,
-        "valuation": 2,
-        "sentiment": 3,
-        "risk": 1
+        "turnover": 2,
+        "momentum": 2,
+        "sector": 2
       },
-      "total_score": 16,
-      "max_score": 35,
-      "verdict": "弱势。-1.48%逼近止损360(盘中低363.1)。存储板块受英伟达财报影响大",
+      "total_score": 15,
+      "max_score": 21,
+      "verdict": "弱势。-1.48%逼近止损360(盘中低363.1)。存储涨价基本面不变但情绪波动大",
       "action": "持有观察,破360止损",
       "key_risk": "英伟达财报后存储可能大幅波动"
     },
@@ -38,35 +38,35 @@
       "code": "603629",
       "name": "利通电子",
       "gate_scores": {
-        "trend": 2,
-        "volume": 3,
-        "support": 1,
-        "sector": 2,
+        "breadth": 3,
         "valuation": 2,
-        "sentiment": 2,
-        "risk": 1
+        "capital": 1,
+        "trend": 2,
+        "turnover": 2,
+        "momentum": 1,
+        "sector": 2
       },
       "total_score": 13,
-      "max_score": 35,
+      "max_score": 21,
       "verdict": "危险。连续2日盘中破止损117(今日低116.02)。液冷概念有支撑但技术面破位",
-      "action": "开盘<117必须止损清仓",
-      "key_risk": "止损铁律再次被无视,8/27不可再放过"
+      "action": "8/27开盘<117必须止损清仓",
+      "key_risk": "止损铁律再次被无视"
     },
     {
       "code": "002851",
       "name": "麦格米特",
       "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
         "trend": 3,
-        "volume": 3,
-        "support": 3,
-        "sector": 1,
-        "valuation": 1,
-        "sentiment": 2,
-        "risk": 0
+        "turnover": 2,
+        "momentum": 2,
+        "sector": 1
       },
-      "total_score": 13,
-      "max_score": 35,
-      "verdict": "违规持仓。+1.48%但非关注池+熔断期建仓=双违规。无任何持有理由",
+      "total_score": 15,
+      "max_score": 21,
+      "verdict": "违规持仓。+1.48%但非关注池+熔断期建仓=双违规",
       "action": "8/27开盘立即清仓",
       "key_risk": "违规持仓延续第2天"
     },
@@ -74,75 +74,609 @@
       "code": "300285",
       "name": "国瓷材料",
       "gate_scores": {
-        "trend": 3,
-        "volume": 3,
-        "support": 2,
-        "sector": 2,
+        "breadth": 3,
         "valuation": 2,
-        "sentiment": 2,
-        "risk": 0
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 2,
+        "sector": 1
       },
-      "total_score": 14,
-      "max_score": 35,
+      "total_score": 15,
+      "max_score": 21,
       "verdict": "违规持仓。+1.39%振幅大(62.7-65.63)。非关注池+熔断期建仓",
       "action": "8/27开盘立即清仓",
       "key_risk": "违规持仓延续第2天"
     }
   ],
-  "watchlist_highlights": [
+  "stocks": [
     {
-      "code": "300604",
-      "name": "长川科技",
-      "score": 3,
-      "change_pct": 4.77,
-      "sector": "半导体设备",
-      "note": "大涨+4.77%,半导体设备板块反弹。APEX解除后可关注"
+      "code": "601899",
+      "name": "紫金矿业",
+      "close": 34.47,
+      "change_pct": 3.12,
+      "sector": "有色金属",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 3
+      },
+      "total_score": 21,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "有色龙头,+3.12%。受益金价+铜价上涨"
+    },
+    {
+      "code": "002475",
+      "name": "立讯精密",
+      "close": 57.11,
+      "change_pct": 4.1,
+      "sector": "消费电子",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 20,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "消费电子龙头,+4.10%。苹果2nm芯片利好"
     },
     {
       "code": "002384",
       "name": "东山精密",
-      "score": 3,
+      "close": 194.36,
       "change_pct": 1.84,
       "sector": "PCB/FPC",
-      "note": "+1.84%。PCB板块受益AI算力。中报营收+61%"
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 19,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "PCB龙头,+1.84%。中报营收+61%受益AI算力"
+    },
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "close": 64.83,
+      "change_pct": 0.36,
+      "sector": "光纤光缆",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 19,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "光纤光缆,+0.36%。盘后交易活跃"
+    },
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "close": 130.01,
+      "change_pct": 1.2,
+      "sector": "覆铜板",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 19,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "覆铜板,+1.2%。PCB上游受益"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "close": 276.2,
+      "change_pct": 4.77,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "半导体测试设备龙头,+4.77%放量。高盛上修设备支出预期催化"
+    },
+    {
+      "code": "688037",
+      "name": "芯源微",
+      "close": 372.82,
+      "change_pct": 4.83,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "涂胶显影设备,+4.83%。PE极高但赛道稀缺"
+    },
+    {
+      "code": "688012",
+      "name": "中微公司",
+      "close": 368.05,
+      "change_pct": 3.97,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "刻蚀设备龙头,+3.97%。PE合理,北向资金重仓"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "close": 61.25,
+      "change_pct": 0.57,
+      "sector": "封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "封测龙头,+0.57%。先进封装扩产,42.2亿定增获批"
+    },
+    {
+      "code": "688019",
+      "name": "安集科技",
+      "close": 233.8,
+      "change_pct": 0.09,
+      "sector": "半导体材料",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "CMP材料,+0.09%。中报净利+41.56%,估值合理"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "close": 850.9,
+      "change_pct": 0.58,
+      "sector": "光模块",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 1
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "光模块龙头,+0.58%。成交186亿居首。资金持续流出"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "close": 379.0,
+      "change_pct": 0.53,
+      "sector": "电池",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 18,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "电池龙头,+0.53%"
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "close": 210.6,
+      "change_pct": 2.09,
+      "sector": "半导体检测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 17,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "检测设备,+2.09%。PE极高"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "close": 700.7,
+      "change_pct": 0.04,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 17,
+      "max_score": 21,
+      "gates_passed": "7/7",
+      "verdict": "建议买入",
+      "note": "设备龙头,平盘。中报营收+24.9%,净利仅+5%。资金观望英伟达财报"
+    },
+    {
+      "code": "600584",
+      "name": "长电科技",
+      "close": 73.62,
+      "change_pct": -0.58,
+      "sector": "封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 17,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "封测龙头,-0.58%。先进封装扩产中"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "close": 285.0,
+      "change_pct": 2.8,
+      "sector": "AI芯片",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 17,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "国产CPU,+2.8%。算力链修复"
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "close": 16.66,
+      "change_pct": -1.07,
+      "sector": "封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "封测,-1.07%。跟随板块被动波动"
+    },
+    {
+      "code": "000021",
+      "name": "深科技",
+      "close": 36.23,
+      "change_pct": -1.6,
+      "sector": "存储封测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 2,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "存储封测,-1.60%。中报净利+20.28%"
+    },
+    {
+      "code": "688072",
+      "name": "拓荆科技",
+      "close": 380.0,
+      "change_pct": -1.23,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "薄膜沉积设备,-1.23%"
+    },
+    {
+      "code": "688361",
+      "name": "中科飞测",
+      "close": 362.0,
+      "change_pct": 6.79,
+      "sector": "半导体检测",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 3,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 1,
+        "sector": 2
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "5/7",
+      "verdict": "建议买入",
+      "note": "检测设备,+6.79%大涨。RSI偏高>70,PE极高"
+    },
+    {
+      "code": "300751",
+      "name": "迈为股份",
+      "close": 221.18,
+      "change_pct": 4.58,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "HJT设备,+4.58%。跨界半导体"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "close": 398.78,
+      "change_pct": -0.52,
+      "sector": "光模块",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 1
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "5/7",
+      "verdict": "建议买入",
+      "note": "光模块,-0.52%。主力净流出5.2亿"
+    },
+    {
+      "code": "688256",
+      "name": "寒武纪",
+      "close": 1020.0,
+      "change_pct": 1.5,
+      "sector": "AI芯片",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 16,
+      "max_score": 21,
+      "gates_passed": "6/7",
+      "verdict": "建议买入",
+      "note": "AI芯片龙头,+1.5%。亏损股。英伟达财报催化"
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "close": 54.47,
+      "change_pct": -0.87,
+      "sector": "半导体材料",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 15,
+      "max_score": 21,
+      "gates_passed": "5/7",
+      "verdict": "有条件通过",
+      "note": "光刻胶材料,-0.87%。PE偏高"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "close": 253.58,
+      "change_pct": -1.37,
+      "sector": "光模块",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 3,
+        "turnover": 2,
+        "momentum": 2,
+        "sector": 1
+      },
+      "total_score": 15,
+      "max_score": 21,
+      "gates_passed": "5/7",
+      "verdict": "有条件通过",
+      "note": "光连接器,-1.37%。主力净流出6.54亿"
     },
     {
       "code": "300857",
       "name": "协创数据",
-      "score": 1,
+      "close": 136.5,
       "change_pct": -0.75,
       "sector": "算力租赁",
-      "note": "-0.75%。算力租赁板块承压"
-    }
-  ],
-  "semi_screening": {
-    "status": "暂停(APEX熔断)",
-    "note": "8/27-8/31不做全市场半导体筛选。等待熔断解除后重启"
-  },
-  "stocks": [
-    {
-      "name": "江波龙",
-      "code": "301308",
-      "score": 16,
-      "comment": "-1.48%逼近止损360"
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 3,
+        "capital": 1,
+        "trend": 1,
+        "turnover": 3,
+        "momentum": 2,
+        "sector": 1
+      },
+      "total_score": 14,
+      "max_score": 21,
+      "gates_passed": "4/7",
+      "verdict": "有条件通过",
+      "note": "算力租赁,-0.75%。板块承压"
     },
     {
-      "name": "利通电子",
-      "code": "603629",
-      "score": 13,
-      "comment": "盘中破止损116.02<117未执行"
+      "code": "688120",
+      "name": "华海清科",
+      "close": 180.99,
+      "change_pct": -5.73,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 2,
+        "capital": 1,
+        "trend": 1,
+        "turnover": 2,
+        "momentum": 2,
+        "sector": 2
+      },
+      "total_score": 13,
+      "max_score": 21,
+      "gates_passed": "5/7",
+      "verdict": "有条件通过",
+      "note": "CMP设备,-5.73%大跌。破位MA20"
     },
     {
-      "name": "麦格米特",
-      "code": "002851",
-      "score": 13,
-      "comment": "+1.48%违规持仓"
-    },
-    {
-      "name": "国瓷材料",
-      "code": "300285",
-      "score": 14,
-      "comment": "+1.39%违规持仓"
+      "code": "300316",
+      "name": "晶盛机电",
+      "close": 43.47,
+      "change_pct": 0.28,
+      "sector": "半导体设备",
+      "gate_scores": {
+        "breadth": 3,
+        "valuation": 1,
+        "capital": 2,
+        "trend": 1,
+        "turnover": 1,
+        "momentum": 3,
+        "sector": 2
+      },
+      "total_score": 13,
+      "max_score": 21,
+      "gates_passed": "4/7",
+      "verdict": "有条件通过",
+      "note": "晶体生长设备,+0.28%。持续弱势"
     }
   ]
 }
