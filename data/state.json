@@ -1,30 +1,30 @@
 {
   "meta": {
-    "last_updated": "2026-08-27T08:10:00+08:00",
+    "last_updated": "2026-08-27T11:33:00+08:00",
     "data_date": "2026-08-27",
-    "source": "8/27盘前筛选(腾讯API+英伟达财报)",
-    "session": "pre_market",
-    "note": "8/27盘前:APEX二级熔断生效第2天(月度-14.20%>10%阈值)。英伟达Q2财报大超预期(Q3指引1080亿+90%/2028财年+70%)。违规持仓2只(麦格+国瓷)+利通连续2日破止损。零新仓·借高开清仓+止损执行"
+    "source": "8/27午间(英伟达财报催化)",
+    "session": "intraday",
+    "note": "8/27午间:英伟达财报催化算力链大涨。4只持仓全线飘红。国瓷+7.83%/江波龙+5.14%/利通+5.13%/麦格+3.41%。总资产+9160至180753"
   },
   "current": {
-    "total_assets": 171593.02,
+    "total_assets": 180753.02,
     "prev_close_assets": 171519.28,
     "available_cash": 983.02,
     "initial_capital": 200000.0,
     "position_count": 4,
-    "position_ratio": 99.4,
-    "monthly_pnl": -28406.98,
-    "monthly_return_rate": -14.2,
-    "market_value": 170610.0,
-    "note": "8/26收盘4只持仓(江波龙100/利通500/麦格300/国瓷600),满仓99.4%,现金仅983。月度回撤-14.20% APEX熔断持续"
+    "position_ratio": 99.5,
+    "monthly_pnl": -19246.98,
+    "monthly_return_rate": -9.62,
+    "market_value": 179770.0,
+    "note": "8/27午间:4只持仓全线大涨,总市值179770.0。总资产180753.02。APEX月度回撤从-14.20%改善至-9.62%"
   },
   "today_so_far": {
     "date": "2026-08-27",
-    "net_today": 0,
+    "net_today": 9160.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "pre_market",
-    "note": "8/27盘前:零交易。英伟达财报大超预期但APEX熔断持续禁新仓。9:30-9:45借高开清仓违规+止损"
+    "session": "intraday",
+    "note": "8/27午间:零交易。持仓全线上涨,浮盈+9160。APEX熔断禁新仓持续"
   },
   "positions": [
     {
@@ -33,7 +33,7 @@
       "quantity": 100,
       "cost_price": 386.73,
       "stop_loss": 360.0,
-      "market_value": 36420.0
+      "market_value": 38293.0
     },
     {
       "code": "603629",
@@ -41,7 +41,7 @@
       "quantity": 500,
       "cost_price": 121.737,
       "stop_loss": 117.0,
-      "market_value": 58785.0
+      "market_value": 61800.0
     },
     {
       "code": "002851",
@@ -49,7 +49,7 @@
       "quantity": 300,
       "cost_price": 121.324,
       "stop_loss": 115.76,
-      "market_value": 36933.0
+      "market_value": 38193.0
     },
     {
       "code": "300285",
@@ -57,25 +57,25 @@
       "quantity": 600,
       "cost_price": 64.013,
       "stop_loss": 60.22,
-      "market_value": 38472.0
+      "market_value": 41484.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "收盘校验:市值170610+现金983.02=171593.02"
+    "note": "午间校验:市值179770.0+现金983.02=180753.02"
   },
   "cumulative": {
-    "total_pnl_amount": -28406.98,
-    "total_pnl_percent": -14.2,
+    "total_pnl_amount": -19246.98,
+    "total_pnl_percent": -9.62,
     "total_trades_count": 57,
     "total_violations": 23
   },
   "next_action": {
     "date": "2026-08-27",
-    "action": "🔴8/27借英伟达财报高开立即清仓麦格米特+国瓷(违规第2天),清仓利通(连续2日破止损),江波龙借>380减50/破360清。APEX熔断持续禁新仓",
-    "key_levels": "江波龙360/利通117/麦格115.76/国瓷60.22",
-    "risk_events": "英伟达财报后A股算力链高开反应+Jackson Hole(周五沃什讲话)+30Y美债5.185%+Q3毛利率指引74%(略低于预期75%)+Q4触底71-72%"
+    "action": "🔴8/27午间:持仓大涨但APEX熔断持续禁新仓。下午关注:①冲高分批锁利(江波龙>380/利通>124) ②违规持仓清仓时机 ③Jackson Hole+PCE数据",
+    "key_levels": "江波龙384.97(高)/360(止损)·利通124.90(高)/117(止损)·麦格127.89(高)/115.76(止损)·国瓷69.28(高)/60.22(止损)",
+    "risk_events": "8/26英伟达财报+PCE+8/27 Jackson Hole"
   }
 }

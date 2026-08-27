@@ -1,275 +1,388 @@
 {
   "meta": {
-    "last_updated": "2026-08-27T08:10:00+08:00",
+    "last_updated": "2026-08-27T11:33:00+08:00",
     "date": "2026-08-27",
-    "session": "pre_market",
-    "source": "8/27盘前(腾讯API+英伟达财报)",
-    "data_basis": "8/26收盘(腾讯API实测)+8/27盘前"
+    "session": "intraday",
+    "source": "8/27午间(腾讯API盘中价)",
+    "data_basis": "8/27午间(腾讯API盘中价)+英伟达财报催化",
+    "note": "8/26盘前：8/25夜美股大反弹(纳指+0.66%/费半+1.49%/NVDA+2.19%终结七连跌/存储+2-3%/光通信+4-7%)+长江存储IPO催化+沪电PCB+73.72%。关注池预计高开,但APEX熔断全面禁入"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3912.52,
-      "change_pct": 0.59,
-      "pre_close": 3889.44,
-      "open": 3881.74,
-      "high": 3926.44,
-      "low": 3881.74,
-      "volume": 489553021,
-      "amount": 85722,
-      "pe_ratio": 17.71,
-      "note": "8/26收盘3912.52(+0.59%)。冲高回落,午后涨幅收窄"
+      "close": 3935.99,
+      "change_pct": 0.6,
+      "pre_close": 3912.52,
+      "open": 3911.89,
+      "high": 3938.97,
+      "low": 3909.31,
+      "volume": 332424249,
+      "amount": 64919117,
+      "pe_ratio": 17.85,
+      "note": "8/27午间3935.99(+0.60%)。高开高走,受英伟达财报提振"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 13841.33,
-      "change_pct": 0.69,
-      "pre_close": 13745.87,
-      "open": 13761.36,
-      "high": 13948.69,
-      "low": 13714.05,
-      "volume": 577607360,
-      "amount": 95150,
-      "pe_ratio": 43.45,
-      "note": "8/26收盘13841.33(+0.69%)"
+      "close": 14005.93,
+      "change_pct": 1.19,
+      "pre_close": 13841.33,
+      "open": 13876.79,
+      "high": 14020.78,
+      "low": 13808.62,
+      "volume": 383968128,
+      "amount": 70249548,
+      "pe_ratio": 43.95,
+      "note": "8/27午间14005.93(+1.19%)"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3414.88,
-      "change_pct": 0.51,
-      "pre_close": 3397.52,
-      "open": 3409.28,
-      "high": 3455.89,
-      "low": 3379.14,
-      "volume": 164782656,
-      "amount": 44358,
-      "pe_ratio": 56.53,
-      "note": "8/26收盘3414.88(+0.51%)。午后回落明显"
+      "close": 3466.4,
+      "change_pct": 1.51,
+      "pre_close": 3414.88,
+      "open": 3437.9,
+      "high": 3471.38,
+      "low": 3408.8,
+      "volume": 113272075,
+      "amount": 34133958,
+      "pe_ratio": 57.17,
+      "note": "8/27午间3466.40(+1.51%)。创业板领涨,科技股强势"
     },
     "sh000688": {
       "name": "科创50",
-      "close": 1632.02,
-      "change_pct": 1.71,
-      "pre_close": 1604.59,
-      "note": "8/26收盘1632.02(+1.71%)。半导体强势"
+      "close": 1688.38,
+      "change_pct": 3.45,
+      "pre_close": 1632.02,
+      "note": "8/27午间1688.38(+3.45%)。科创50领涨,半导体强势"
     }
   },
   "market_breadth": {
-    "up_count": 2942,
-    "down_count": 2445,
-    "flat_count": 156,
-    "note": "8/26:2942涨/2445跌/156平。涨多跌少但涨幅收窄"
+    "up_count": 3800,
+    "down_count": 1500,
+    "flat_count": 200,
+    "note": "8/27午间:约3800涨/1500跌。普涨行情,英伟达财报催化"
   },
   "volume": {
-    "total_amount": 18087,
-    "prev_amount": 18318,
-    "change": -231,
-    "note": "8/26全天成交18087亿(1.81万亿),较8/25缩量231亿。连续缩量"
+    "total_amount": 13517,
+    "prev_amount": 18087,
+    "note": "8/27半日成交约1.35万亿(沪6492亿+深7025亿),按半日节奏看量能充裕"
   },
   "north_flow": {
-    "net_flow": -18.62,
-    "note": "8/26北向资金净流出18.62亿。盘后确认"
+    "net_flow": null,
+    "note": "8/27午间:北向资金数据待盘后确认"
   },
   "sector_top10_up": [
     {
-      "name": "造纸",
-      "change_pct": 3.79,
-      "lead_stock": "青山纸业(10.16)"
+      "name": "非金属材料",
+      "change_pct": 8.45,
+      "lead_stock": "联瑞新材(20.00)"
     },
     {
-      "name": "工业金属",
-      "change_pct": 3.33,
-      "lead_stock": "精艺股份(10.03)"
+      "name": "覆铜板",
+      "change_pct": 8.24,
+      "lead_stock": "金安国纪(10.00)"
     },
     {
-      "name": "证券",
-      "change_pct": 2.75,
-      "lead_stock": "锦龙股份(10.05)"
+      "name": "元件",
+      "change_pct": 5.78,
+      "lead_stock": "中英科技(14.70)"
     },
     {
-      "name": "冶钢原料",
-      "change_pct": 2.71,
-      "lead_stock": "鄂尔多斯(5.25)"
+      "name": "电子化学品",
+      "change_pct": 5.58,
+      "lead_stock": "宏昌电子(10.02)"
     },
     {
-      "name": "非银金融",
-      "change_pct": 2.47,
-      "lead_stock": "锦龙股份(10.05)"
+      "name": "玻璃玻纤",
+      "change_pct": 4.93,
+      "lead_stock": "中国巨石(6.94)"
     },
     {
-      "name": "农化制品",
-      "change_pct": 2.25,
-      "lead_stock": "新农股份(9.99)"
+      "name": "通信设备",
+      "change_pct": 4.4,
+      "lead_stock": "长芯博创(14.58)"
     },
     {
-      "name": "有色金属",
-      "change_pct": 1.84,
-      "lead_stock": "江西铜业(10.01)"
-    },
-    {
-      "name": "钢铁",
-      "change_pct": 1.34,
-      "lead_stock": "鄂尔多斯(5.25)"
-    },
-    {
-      "name": "房地产",
-      "change_pct": 1.25,
+      "name": "半导体",
+      "change_pct": 4.3,
       "lead_stock": ""
     },
     {
-      "name": "环保",
-      "change_pct": 1.2,
-      "lead_stock": ""
+      "name": "博通概念",
+      "change_pct": 6.17,
+      "lead_stock": "生益电子(13.34)"
+    },
+    {
+      "name": "光芯片",
+      "change_pct": 6.08,
+      "lead_stock": "赛微电子(20.01)"
+    },
+    {
+      "name": "陶瓷基板",
+      "change_pct": 5.55,
+      "lead_stock": "科翔股份(12.63)"
     }
   ],
   "sector_top10_down": [
     {
-      "name": "CRO",
-      "change_pct": -2.5,
-      "lead_stock": "诚达药业"
+      "name": "锂电(鹏辉-1.79%)",
+      "change_pct": -1.79,
+      "lead_stock": "鹏辉能源"
     },
     {
-      "name": "医疗服务",
-      "change_pct": -1.8,
-      "lead_stock": "康龙化成"
+      "name": "石大胜华",
+      "change_pct": -0.51,
+      "lead_stock": "石大胜华"
     },
     {
-      "name": "射频天线",
-      "change_pct": -1.5,
-      "lead_stock": ""
-    },
-    {
-      "name": "培育钻石",
-      "change_pct": -1.2,
-      "lead_stock": ""
-    },
-    {
-      "name": "综合",
-      "change_pct": -0.56,
-      "lead_stock": ""
-    },
-    {
-      "name": "传媒",
-      "change_pct": -0.42,
-      "lead_stock": ""
-    },
-    {
-      "name": "机械设备",
-      "change_pct": -0.22,
-      "lead_stock": ""
-    },
-    {
-      "name": "家用电器",
-      "change_pct": -0.13,
-      "lead_stock": ""
-    },
-    {
-      "name": "石油石化",
-      "change_pct": -0.12,
-      "lead_stock": ""
-    },
-    {
-      "name": "交通运输",
-      "change_pct": -0.3,
-      "lead_stock": ""
+      "name": "德方纳米",
+      "change_pct": -0.86,
+      "lead_stock": "德方纳米"
     }
   ],
-  "capital_flow": {
-    "total_net_inflow": 11025765558,
-    "top_inflow_sectors": [
-      "有色金属(+53.94亿)",
-      "非银金融(+45.20亿)",
-      "电子",
-      "电力设备"
-    ],
-    "top_outflow_sectors": [
-      "交通运输(-3.83亿)",
-      "石油石化(-3.74亿)",
-      "建筑装饰",
-      "传媒"
-    ],
-    "top_individual": [
-      "洛阳钼业(+16.43亿)",
-      "江西铜业(+14.42亿)",
-      "剑桥科技(+12.77亿)"
-    ],
-    "note": "特大单净流入203亿。有色金属+非银金融主导流入"
-  },
-  "hot_concepts": [
-    "肿瘤疫苗(+7.02%)",
-    "证券IT(+3.26%)",
-    "铅锌概念(+3.08%)",
-    "券商(+2.99%)",
-    "白银概念(+2.71%)",
-    "黄金概念",
-    "核聚变",
-    "大金融",
-    "工业金属",
-    "绿电"
+  "concept_top": [
+    {
+      "name": "富勒烯",
+      "change_pct": 5.31
+    },
+    {
+      "name": "华为机器人",
+      "change_pct": 4.64
+    },
+    {
+      "name": "转基因",
+      "change_pct": 3.74
+    },
+    {
+      "name": "粮食概念",
+      "change_pct": 3.64
+    },
+    {
+      "name": "液冷服务器",
+      "change_pct": 3.2
+    },
+    {
+      "name": "CRO",
+      "change_pct": 3.44
+    },
+    {
+      "name": "血液制品",
+      "change_pct": 4.0
+    }
   ],
-  "summary": {
-    "market_status": "8/26收盘偏强(2942:2445),8/27盘前英伟达Q2财报大超预期(Q3指引+90%/2028财年+70%)",
-    "key_events": "英伟达Q2营收962亿+106%/数据中心890亿+117%/Q3指引1080亿+90%/2028财年+70%/亚马逊200万GPU合作",
-    "outlook": "AI算力链强催化但APEX熔断持续禁新仓。8/27核心:借财报高开清仓违规+止损",
-    "pre_market_focus": "英伟达盘后+4.5%+ → 8/27A股光模块/存储/CPO高开预期"
+  "concept_bottom": [
+    {
+      "name": "锂矿",
+      "change_pct": -3.5
+    },
+    {
+      "name": "稀有金属",
+      "change_pct": -3.0
+    },
+    {
+      "name": "半导体硅片",
+      "change_pct": -2.8
+    },
+    {
+      "name": "工业金属",
+      "change_pct": -2.5
+    }
+  ],
+  "money_flow_top": [
+    {
+      "name": "通信设备",
+      "main_net_inflow": 234153,
+      "change_pct": -0.46
+    },
+    {
+      "name": "元件",
+      "main_net_inflow": 208068,
+      "change_pct": 0.2
+    },
+    {
+      "name": "专用设备",
+      "main_net_inflow": 203294,
+      "change_pct": 1.39
+    }
+  ],
+  "overseas": {
+    "us_dji_close_20260825": {
+      "name": "道指",
+      "value": 53577.4,
+      "change_pct": 0.3,
+      "note": "8/25收盘:连涨3日,涨幅0.30%"
+    },
+    "us_spx_close_20260825": {
+      "name": "标普500",
+      "value": 7677.28,
+      "change_pct": 0.32,
+      "note": "8/25收盘:科技板块领涨+0.98%"
+    },
+    "us_ixic_close_20260825": {
+      "name": "纳指",
+      "value": 26151.3,
+      "change_pct": 0.66,
+      "note": "8/25收盘:终结7连阴,科技股反弹+0.98%"
+    },
+    "us_sox_close_20260825": {
+      "name": "费城半导体",
+      "value": 11592.99,
+      "change_pct": 1.49,
+      "note": "8/25收盘:英伟达财报前反弹,AMD+4.91%/Marvell+4.84%/美光+2.48%"
+    },
+    "us_nvda_close_20260825": {
+      "name": "英伟达",
+      "value": null,
+      "change_pct": 2.19,
+      "note": "8/25收盘+2.19%终结7连跌,今晚盘后发Q2财报(2027财年Q2)"
+    },
+    "key_risk_events": [
+      "8/26(今晚):英伟达Q2财报(盘后)=全球AI情绪风向标",
+      "8/27:美国7月PCE(核心预期3.3%)",
+      "8/28:Jackson Hole央行年会+沃什首次主旨演讲(22:00)",
+      "9/1:APEX熔断评估窗口",
+      "9/15:FOMC会议"
+    ],
+    "note": "8/25夜美股:纳指+0.66%/标普+0.32%/道指+0.30%/费半+1.49%/英伟达+2.19%终结7连跌/AMD+4.91%/Marvell+4.84%/美光+2.48%/Lumentum+6.67%/Coherent+4.59%/希捷+3.40%/西部数据+3.53%/SK海力士+2.68%。30Y美债5.17%(从5.34%回落)/WTI原油-3.12%。全球估值压力释放"
   },
   "hot_sectors_up": [
     {
-      "name": "非银金融",
-      "change_pct": 2.47,
-      "lead_stock": "锦龙股份(10.05)"
-    },
-    {
-      "name": "有色金属",
-      "change_pct": 1.84,
-      "lead_stock": "江西铜业(10.01)"
-    },
-    {
-      "name": "钢铁",
-      "change_pct": 1.34,
-      "lead_stock": "鄂尔多斯(5.25)"
-    },
-    {
-      "name": "房地产",
-      "change_pct": 1.25,
+      "name": "半导体",
+      "change_pct": 4.3,
       "lead_stock": ""
     },
     {
-      "name": "环保",
-      "change_pct": 1.2,
-      "lead_stock": ""
+      "name": "元件",
+      "change_pct": 5.78,
+      "lead_stock": "中英科技(14.70)"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 4.4,
+      "lead_stock": "长芯博创(14.58)"
+    },
+    {
+      "name": "非金属材料",
+      "change_pct": 8.45,
+      "lead_stock": "联瑞新材(20.00)"
+    },
+    {
+      "name": "覆铜板",
+      "change_pct": 8.24,
+      "lead_stock": "金安国纪(10.00)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "综合",
-      "change_pct": -0.56,
-      "lead_stock": ""
-    },
-    {
-      "name": "传媒",
-      "change_pct": -0.42,
-      "lead_stock": ""
-    },
-    {
-      "name": "机械设备",
-      "change_pct": -0.22,
-      "lead_stock": ""
-    },
-    {
-      "name": "家用电器",
-      "change_pct": -0.13,
-      "lead_stock": ""
-    },
-    {
-      "name": "石油石化",
-      "change_pct": -0.12,
-      "lead_stock": ""
+      "name": "锂电",
+      "change_pct": -1.79,
+      "lead_stock": "鹏辉能源"
     }
   ],
   "market_stats": {
-    "rise_count": 2942,
-    "fall_count": 2445,
-    "turnover_comment": "成交18087亿,缩量231亿"
+    "rise_count": 3800,
+    "fall_count": 1500,
+    "turnover_comment": "半日成交1.35万亿,量能充裕"
+  },
+  "market_stats_8_24": {
+    "rise_count": 4229,
+    "fall_count": 1243
+  },
+  "pre_market_outlook_8_26": {
+    "overseas_drivers": [
+      {
+        "name": "纳指+0.66%终结7连阴",
+        "impact": "成长股估值压力释放"
+      },
+      {
+        "name": "费半+1.49%",
+        "impact": "半导体板块直接利好"
+      },
+      {
+        "name": "英伟达+2.19%终结7连跌",
+        "impact": "算力链情绪修复"
+      },
+      {
+        "name": "美光+2.48%/希捷+3.40%/西部数据+3.53%",
+        "impact": "存储链外溢(江波龙/兆易/北京君正关联)"
+      },
+      {
+        "name": "Lumentum+6.67%/Coherent+4.59%/Marvell+4.84%",
+        "impact": "光通信外溢(中际旭创/新易盛/天孚通信关联)"
+      },
+      {
+        "name": "30Y美债5.17%从5.34%回落",
+        "impact": "全球估值压力释放"
+      },
+      {
+        "name": "WTI原油-3.12%/布伦特-3.9%",
+        "impact": "通胀预期降温"
+      }
+    ],
+    "domestic_catalysts": [
+      {
+        "name": "国新办十五五新型工业化新闻发布会(8/26上午)",
+        "link": "AI+制造/算力(关注池内)"
+      },
+      {
+        "name": "沪电股份中报+73.72%",
+        "link": "AI服务器PCB(东山精密关联)"
+      },
+      {
+        "name": "长江存储科创板IPO受理(8/21已挂网)",
+        "link": "存储链(江波龙/兆易/北京君正直接关联)"
+      }
+    ],
+    "risk_events": [
+      {
+        "name": "8/26(今晚):英伟达Q2财报",
+        "impact": "全球科技股最大变量,可能反转"
+      },
+      {
+        "name": "8/27:美国7月PCE",
+        "impact": "美联储政策预期"
+      },
+      {
+        "name": "8/28:Jackson Hole沃什演讲",
+        "impact": "9月FOMC前最重要锚点"
+      },
+      {
+        "name": "APEX月回撤-14.03%>10%",
+        "impact": "二级熔断禁新仓至8/31"
+      }
+    ],
+    "watchlist_focus": "**关注池整体高开概率极大(8/25夜美股大反弹+长江存储IPO催化),但APEX二级熔断依然生效,8/26全面禁入。优先清仓违规持仓(麦格米特+国瓷),借高开减仓核心持仓(江波龙+利通)。8/27英伟达财报后评估方向**"
+  },
+  "capital_flow": {
+    "total_net_inflow": 15196367107,
+    "top_inflow_sectors": [
+      "半导体(+131.5亿)",
+      "元件(+105.5亿)",
+      "通信设备(+92.3亿)"
+    ],
+    "top_outflow_sectors": [
+      "阳光电源(个股流出)",
+      "部分传统板块"
+    ],
+    "top_individual": [
+      "江波龙(+4.94亿)",
+      "利通电子(+1.41亿)",
+      "国瓷材料(+5.38亿)"
+    ],
+    "note": "主力资金大幅流入半导体+元件+通信设备。英伟达财报催化算力链"
+  },
+  "hot_concepts": [
+    "覆铜板(+8.24%)",
+    "博通概念(+6.17%)",
+    "光芯片(+6.08%)",
+    "陶瓷基板(+5.55%)",
+    "模拟芯片(+5.54%)",
+    "锗镓概念(+5.34%)",
+    "半导体(+4.30%)"
+  ],
+  "summary": {
+    "market_status": "8/27午间全线大涨:沪指+0.60%/深成+1.19%/创业板+1.51%/科创50+3.45%。英伟达财报催化算力链普涨",
+    "key_events": "英伟达Q2财报大超预期→A股算力链全面爆发:存储+5%/光模块+3~7%/半导体+4.3%/覆铜板+8.24%",
+    "outlook": "下午关注冲高回落风险+Jackson Hole+PCE数据。APEX熔断持续禁新仓",
+    "pre_market_focus": "英伟达盘后+4.5%→A股高开(符合预期)。算力链全线大涨,覆铜板/元件/光芯片领涨"
   }
 }
