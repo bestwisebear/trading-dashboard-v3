@@ -1,97 +1,78 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T13:16:00+08:00",
-    "date": "2026-08-26",
-    "session": "intraday_1315_final",
-    "data_source": "13:15最终确认(腾讯盘中价+数据文件综合)"
+    "last_updated": "2026-08-27T13:16:00+08:00",
+    "date": "2026-08-27",
+    "session": "midday_final",
+    "data_basis": "8/27 13:16 午间最终确认"
   },
   "decision": "今日取消新仓",
-  "confirmed_count": 0,
-  "max_allowed": 2,
-  "reasons": [
-    "🚨 APEX二级熔断生效(月度-14.03%>10%阈值),8/25-8/31全面禁新仓 — 一票否决",
-    "当前持仓4只=满仓(≤4只规则),无开仓名额",
-    "现金仅983元,无任何建仓资金",
-    "今晚英伟达FY27Q2财报(盘后)+8/27 PCE+8/28 Jackson Hole=三重风险窗口",
-    "午间资金信号矛盾:指数涨+半导体主力净流出,典型拉高出货信号",
-    "持仓4只中2只为违规持仓(麦格米特+国瓷),首要任务为清仓违规+止损管理"
-  ],
-  "gate_check": {
-    "gate_apex_fuse": {
+  "decision_time": "2026-08-27T13:16:00+08:00",
+  "confirmed_candidates": [],
+  "max_candidates_allowed": 2,
+  "gate_results": {
+    "gate0_apex_circuit_breaker": {
       "pass": false,
-      "value": "月度-14.03%,二级熔断,禁新仓至8/31",
-      "verdict": "一票否决,后续闸门无需执行"
+      "status": "ACTIVE",
+      "level": "二级熔断",
+      "monthly_return_pct": -9.62,
+      "threshold_pct": -10.0,
+      "start_date": "2026-08-26",
+      "end_date": "2026-08-31",
+      "detail": "月度回撤-9.62%接近但仍在-10%阈值内(熔断判定基于8/25收盘-14.20%,已触发至8/31)。APEX熔断期间全面禁新仓"
     },
-    "gate_position_limit": {
+    "gate1_available_cash": {
       "pass": false,
-      "value": "当前4只/上限4只,无名额"
+      "available_cash": 983.02,
+      "detail": "可用现金仅983元,仓位99.5%满仓。即使无熔断也无法开出任何有意义的新仓位(最低买入100股*最便宜标的远超983元)"
     },
-    "gate_cash_available": {
-      "pass": false,
-      "value": "现金983元,不足建仓"
-    },
-    "gate_breadth": {
+    "gate2_position_count": {
       "pass": true,
-      "value": "超3500股上涨(午间),但半导体资金净流出"
+      "current_count": 4,
+      "max_allowed": 4,
+      "detail": "当前持仓4只=上限,无空余仓位。需先减仓才能开新仓"
     },
-    "gate_risk_events": {
+    "gate3_daily_trade_limit": {
+      "pass": true,
+      "today_trades": 0,
+      "max_daily": 6,
+      "detail": "今日零交易,额度充足"
+    },
+    "gate4_market_breadth": {
+      "pass": true,
+      "up_count": 4300,
+      "down_count": 1200,
+      "threshold": 2000,
+      "detail": "涨跌4300:1200,远超2000阈值。市场赚钱效应极好"
+    },
+    "gate5_intraday_candidates": {
       "pass": false,
-      "value": "英伟达财报(今晚)+PCE(8/27)+Jackson Hole(8/28)"
+      "detail": "11:00备选名单candidates为空(APEX熔断禁入)。无候选标的可确认"
+    },
+    "gate6_four_stage_process": {
+      "pass": false,
+      "detail": "无候选标的,四段式流程无法执行"
     }
   },
-  "candidates": [],
-  "position_focus": {
-    "must_clear": [
-      {
-        "code": "002851",
-        "name": "麦格米特",
-        "qty": 300,
-        "reason": "违规持仓(非关注池+APEX熔断期建仓),借高开清仓"
-      },
-      {
-        "code": "300285",
-        "name": "国瓷材料",
-        "qty": 600,
-        "reason": "违规持仓(非关注池+APEX熔断期建仓),借高开清仓"
-      }
-    ],
-    "stop_loss_watch": [
-      {
-        "code": "301308",
-        "name": "江波龙",
-        "qty": 100,
-        "stop_loss": 360,
-        "current": 369,
-        "distance_pct": 2.4
-      },
-      {
-        "code": "603629",
-        "name": "利通电子",
-        "qty": 500,
-        "stop_loss": 117,
-        "current": 118.5,
-        "distance_pct": 1.3
-      }
+  "risk_context": {
+    "apex_status": "二级熔断生效中(8/26-8/31禁新仓)",
+    "monthly_return_improvement": "从-14.20%(8/25)改善至-9.62%(8/27午间),改善4.58个百分点",
+    "apex_release_condition": "月度回撤需收窄至<-10%且维持至8/31后评估。当前-9.62%非常接近,但熔断已触发至8/31",
+    "cash_constraint": "983元=无法开仓",
+    "market_condition": "英伟达财报催化科技全线爆发,但持仓已满仓+熔断",
+    "key_events_pending": [
+      "8/28 22:00 Jackson Hole沃什主旨演讲",
+      "8/31 APEX熔断到期评估"
     ]
   },
-  "next_evaluation": {
-    "date": "2026-09-01",
-    "pre_conditions": [
-      "英伟达财报落地(8/27凌晨,无重大利空)",
-      "Jackson Hole沃什演讲(8/28 22:00,无超预期鹰派)",
-      "关注池标的止跌企稳(MA5/MA20站稳)",
-      "月度回撤收窄至<-10%(APEX熔断解除)",
-      "涨跌家数恢复至>2000",
-      "现金储备>2万元"
-    ]
-  },
-  "market_context": {
-    "morning_summary": "A股全线走强,沪指+0.70%创业板+1.37%,有色/金融领涨,半导体V型反转但资金净流出",
-    "key_events": [
-      "今晚:英伟达FY27Q2财报(盘后)",
-      "8/27:美国7月PCE数据",
-      "8/28:Jackson Hole沃什演讲"
+  "holding_management_priority": {
+    "priority_order": [
+      "① 国瓷材料(300285)+7.83%:冲高分批锁利(接近前高70元压力位,日内+7.83%>5%触发冲高分批锁利规则)",
+      "② 江波龙(301308)+5.14%:盘中高384.97接近目标380+,可考虑减50股锁利",
+      "③ 利通电子(603629)+5.13%:远离止损117,可考虑减150-200股锁利",
+      "④ 麦格米特(002851)+3.41%:违规持仓第2天,借高开清仓300股"
     ],
-    "sentiment": "指数强但资金分歧大,财报前观望为主"
-  }
+    "note": "保收益优先:4只持仓全线大涨,优先借冲高分批锁利+清仓违规。今日不开新仓"
+  },
+  "next_review": "8/28盘后(沃什演讲后评估APEX解除条件+9/1重新开仓窗口)",
+  "conclusion": "🔴 今日取消新仓。APEX二级熔断+983元现金+4只持仓满仓=三重锁定。下午重点:持仓锁利+违规清仓"
 }
