@@ -1,9 +1,104 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T16:55:00+08:00",
-    "date": "2026-08-26",
-    "session": "close"
+    "last_updated": "2026-08-27T11:00:00+08:00",
+    "date": "2026-08-27",
+    "session": "midday_check",
+    "data_basis": "8/27盘中(腾讯API+多源交叉验证~10:55)"
   },
+  "market_snapshot": {
+    "shanghai_index": 3920,
+    "shanghai_change_pct": 0.2,
+    "shenzhen_index": 13993,
+    "shenzhen_change_pct": 1.1,
+    "chinext_index": 3462,
+    "chinext_change_pct": 1.38,
+    "estimated_volume_trillion": 1.9,
+    "up_count_estimate": 3800,
+    "down_count_estimate": 1600,
+    "verdict": "英伟达财报利好传导:PCB/CPO/存储/半导体全线走强。上午3800+只上涨,成交放量预计1.9万亿",
+    "hot_sectors": [
+      "PCB概念涨停潮",
+      "CPO概念走高",
+      "存储芯片(大普微20cm涨停)",
+      "算力硬件",
+      "液冷服务器",
+      "通信设备",
+      "黄金概念"
+    ]
+  },
+  "holdings_realtime": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "pre_close": 364.2,
+      "current_price": 384.93,
+      "change_pct": 5.69,
+      "high": 384.93,
+      "low": 366.02,
+      "volume_amount_billion": 31.36,
+      "stop_loss": 360.0,
+      "distance_to_stop_pct": 6.9,
+      "action": "借高开>380减50股锁利。已远离止损,英伟达利好+存储景气催化"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "pre_close": 117.57,
+      "current_price": 124.35,
+      "change_pct": 5.77,
+      "high": 124.9,
+      "low": 117.1,
+      "volume_amount_billion": 27.4,
+      "stop_loss": 117.0,
+      "distance_to_stop_pct": 6.3,
+      "action": "大幅反弹+5.77%远离止损。液冷概念受益。建议借>120减150-200股锁利"
+    },
+    {
+      "code": "002851",
+      "name": "麦格米特",
+      "pre_close": 123.11,
+      "current_price": 125.81,
+      "change_pct": 2.19,
+      "high": 126.5,
+      "low": 123.12,
+      "volume_amount_billion": 11.58,
+      "stop_loss": 115.76,
+      "action": "违规持仓第2天。借高开立即市价清仓300股"
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "pre_close": 64.12,
+      "current_price": 66.01,
+      "change_pct": 2.95,
+      "high": 66.4,
+      "low": 63.68,
+      "volume_amount_billion": 22.8,
+      "stop_loss": 60.22,
+      "action": "违规持仓第2天。借高开立即市价清仓600股"
+    }
+  ],
+  "apex_circuit_breaker": {
+    "status": "ACTIVE",
+    "level": "二级熔断",
+    "monthly_return_pct": -14.2,
+    "threshold_pct": 10.0,
+    "start_date": "2026-08-26",
+    "end_date": "2026-08-31",
+    "description": "月度回撤-14.20%>10%阈值,8/26-8/31全面禁新仓"
+  },
+  "available_cash": 983.02,
   "candidates": [],
-  "note": "APEX熔断全面禁入。8/27无候选标的"
+  "conclusion": "下午无新仓备选",
+  "reasons": [
+    "🚨 APEX二级熔断生效第2天(月度-14.20%>10%阈值),8/26-8/31全面禁新仓",
+    "可用现金仅983元(满仓99.4%),即使无熔断也无法开新仓",
+    "8/27核心任务:借英伟达利好高开清仓违规持仓(麦格米特+国瓷材料)+利通电子止损/减仓+江波龙锁利"
+  ],
+  "next_review": "8/28评估(仍需APEX熔断解除+市场企稳信号)",
+  "risk_alerts": [
+    "8/27 Jackson Hole进行中,8/28 22:00沃什主旨演讲",
+    "英伟达Q3毛利率指引74%(略低于预期75%),Q4触底71-72%",
+    "PCE整体+0.2%超预期,核心3.3%符合预期"
+  ]
 }
