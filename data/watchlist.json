@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-27T11:33:00+08:00",
-    "date": "2026-08-26",
-    "session": "intraday",
-    "data_basis": "8/27午间(腾讯API盘中价)+英伟达财报催化",
+    "last_updated": "2026-08-27T17:01:25.619294+08:00",
+    "date": "2026-08-27",
+    "session": "close",
+    "data_basis": "2026-08-27收盘(收盘价)",
     "screening_criteria": "7道闸+APEX二级熔断(月度-14.03%>10%阈值→8/26-8/31禁新仓)+8/25夜美股大反弹+长江存储IPO催化",
-    "note": "8/27午间:英伟达财报催化算力链全面爆发。持仓全线大涨,关注池普涨。APEX熔断禁新仓"
+    "note": "2026-08-27收盘:英伟达财报催化全面大涨。协创数据+9.72%领涨关注池,国瓷+9.19%/利通+6.51%/江波龙+6.05%持仓大涨。APEX熔断禁新仓"
   },
   "watchlist": [
     {
@@ -14,14 +14,14 @@
       "score": 5,
       "status": "holding",
       "sector": "存储",
-      "today_close": 382.93,
-      "today_change_pct": 5.14,
+      "today_close": 386.25,
+      "today_change_pct": 6.05,
       "key_price": {
         "support": 360,
         "resistance": 415,
         "stop_loss": 360,
         "low_observed": 366.02,
-        "high_observed": 384.97
+        "high_observed": 386.25
       },
       "notes": "持仓100股·午间382.93(+5.14%)·英伟达财报催化大涨·盘中高384.97接近目标380+·APEX熔断禁减仓后回补",
       "holding_qty": 100
@@ -32,14 +32,14 @@
       "score": 3,
       "status": "holding",
       "sector": "算力租赁/液冷",
-      "today_close": 123.6,
-      "today_change_pct": 5.13,
+      "today_close": 125.22,
+      "today_change_pct": 6.51,
       "key_price": {
         "support": 117,
         "resistance": 140,
         "stop_loss": 117,
         "low_observed": 117.1,
-        "high_observed": 124.9
+        "high_observed": 125.37
       },
       "notes": "持仓500股·午间123.60(+5.13%)·远离止损117·龙虎榜:沪股通大额买卖·3日偏离值>20%·APEX禁新仓",
       "holding_qty": 500
@@ -50,14 +50,14 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "MLCC被动元件",
-      "today_close": 53.58,
-      "today_change_pct": 5.04,
+      "today_close": 54.11,
+      "today_change_pct": 6.08,
       "key_price": {
         "support": 51.88,
         "resistance": 58,
         "stop_loss": 51.5,
         "low_observed": 51.2,
-        "high_observed": 53.78
+        "high_observed": 54.29
       },
       "notes": "⚠️8/24止损清仓800股,实现亏损-2997.22。MLCC涨价+国资龙头,但PE205倍偏高,均线空头未企稳"
     },
@@ -67,14 +67,14 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "工业机器人",
-      "today_close": 31.76,
-      "today_change_pct": 1.63,
+      "today_close": 31.81,
+      "today_change_pct": 1.79,
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
         "stop_loss": 31.3,
         "low_observed": 31.07,
-        "high_observed": 31.84
+        "high_observed": 31.93
       },
       "notes": "⚠️8/24止损清仓1100股,实现亏损-3418.92。国产机器人龙头。非关注池违规标的已清理"
     },
@@ -84,13 +84,13 @@
       "score": 1,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 248.69,
-      "today_change_pct": 5.27,
+      "today_close": 259.2,
+      "today_change_pct": 9.72,
       "key_price": {
         "support": 231.77,
         "resistance": 250,
         "stop_loss": 230,
-        "high_observed": 250.5,
+        "high_observed": 260.66,
         "low_observed": 237.66
       },
       "notes": "午间248.69(+5.27%)·算力租赁大涨·PE 46.90·9/1后观察"
@@ -101,8 +101,8 @@
       "score": 3,
       "status": "watch",
       "sector": "MLCC",
-      "today_close": 112.87,
-      "today_change_pct": 3.85,
+      "today_close": 112.48,
+      "today_change_pct": 3.49,
       "key_price": {
         "support": 105.86,
         "resistance": 119,
@@ -118,8 +118,8 @@
       "score": 4,
       "status": "watch",
       "sector": "锂电储能",
-      "today_close": 61.9,
-      "today_change_pct": -1.79,
+      "today_close": 62.33,
+      "today_change_pct": -1.11,
       "key_price": {
         "support": 58,
         "resistance": 68,
@@ -135,8 +135,8 @@
       "score": 6,
       "status": "watch",
       "sector": "封测/AMD",
-      "today_close": 63.7,
-      "today_change_pct": 4.0,
+      "today_close": 63.73,
+      "today_change_pct": 4.05,
       "key_price": {
         "support": 58,
         "resistance": 70,
@@ -152,13 +152,13 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 412.0,
-      "today_change_pct": 3.32,
+      "today_close": 409.1,
+      "today_change_pct": 2.59,
       "key_price": {
         "support": 400,
         "resistance": 470,
         "stop_loss": 395,
-        "low_observed": 404.12,
+        "low_observed": 402.51,
         "high_observed": 413.5
       },
       "notes": "午间412.00(+3.32%)·光模块修复·PE 43.79·9/1后观察"
@@ -169,13 +169,13 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 877.01,
-      "today_change_pct": 3.07,
+      "today_close": 866.12,
+      "today_change_pct": 1.79,
       "key_price": {
         "support": 850,
         "resistance": 1050,
         "stop_loss": 850,
-        "low_observed": 865.0,
+        "low_observed": 860.05,
         "high_observed": 880.0
       },
       "notes": "午间877.01(+3.07%)·光模块龙头·PE 50.16·9/1后观察"
@@ -186,8 +186,8 @@
       "score": 4,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 272.44,
-      "today_change_pct": 7.44,
+      "today_close": 267.16,
+      "today_change_pct": 5.36,
       "key_price": {
         "support": 230,
         "resistance": 290,
@@ -203,14 +203,14 @@
       "score": 4,
       "status": "watch",
       "sector": "存储IC设计",
-      "today_close": 139.68,
-      "today_change_pct": 5.76,
+      "today_close": 140.48,
+      "today_change_pct": 6.37,
       "key_price": {
         "support": 130,
         "resistance": 155,
         "stop_loss": 128,
         "low_observed": 132.7,
-        "high_observed": 140.38
+        "high_observed": 140.68
       },
       "notes": "午间133.09(跌0.75%)。APEX熔断禁入"
     },
@@ -220,8 +220,8 @@
       "score": 4,
       "status": "watch",
       "sector": "石英材料/半导体",
-      "today_close": 89.61,
-      "today_change_pct": 1.06,
+      "today_close": 89.51,
+      "today_change_pct": 0.95,
       "key_price": {
         "support": 82,
         "resistance": 95,
@@ -237,8 +237,8 @@
       "score": 4,
       "status": "watch",
       "sector": "IDC/液冷",
-      "today_close": 63.7,
-      "today_change_pct": 2.2,
+      "today_close": 63.69,
+      "today_change_pct": 2.18,
       "key_price": {
         "support": 60,
         "resistance": 72,
@@ -254,8 +254,8 @@
       "score": 5,
       "status": "watch",
       "sector": "半导体测试设备",
-      "today_close": 285.5,
-      "today_change_pct": 3.37,
+      "today_close": 284.8,
+      "today_change_pct": 3.11,
       "key_price": {
         "support": 265,
         "resistance": 305,
@@ -271,8 +271,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块/激光",
-      "today_close": 106.44,
-      "today_change_pct": 2.54,
+      "today_close": 104.9,
+      "today_change_pct": 1.06,
       "key_price": {
         "support": 100,
         "resistance": 120,
@@ -288,8 +288,8 @@
       "score": 4,
       "status": "watch",
       "sector": "PCB/果链",
-      "today_close": 202.89,
-      "today_change_pct": 4.39,
+      "today_close": 200.6,
+      "today_change_pct": 3.21,
       "key_price": {
         "support": 188,
         "resistance": 220,
@@ -305,14 +305,14 @@
       "score": 5,
       "status": "watch_avoid",
       "sector": "服务器/AI算力",
-      "today_close": 74.74,
-      "today_change_pct": 0.85,
+      "today_close": 78.27,
+      "today_change_pct": 6.07,
       "key_price": {
         "support": 70,
         "resistance": 85,
         "stop_loss": 70,
-        "high_observed": 75.12,
-        "low_observed": 73.4
+        "high_observed": 78.3,
+        "low_observed": 74.79
       },
       "notes": "午间74.74(涨0.85%)。APEX熔断禁入"
     },
@@ -322,8 +322,8 @@
       "score": 3,
       "status": "watch",
       "sector": "锂电电解液",
-      "today_close": 62.93,
-      "today_change_pct": -0.51,
+      "today_close": 63.0,
+      "today_change_pct": -0.4,
       "key_price": {
         "support": 60,
         "resistance": 72,
