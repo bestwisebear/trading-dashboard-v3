@@ -1,36 +1,466 @@
 {
   "meta": {
-    "last_updated": "2026-08-25T16:55:00+08:00",
-    "date": "2026-08-25"
+    "generated_at": "2026-08-27T17:02:22.946847+08:00",
+    "session": "close"
   },
-  "indices": {
-    "上证指数": {
-      "close": 3889.44,
-      "change_pct": 0.19
+  "positions": {
+    "meta": {
+      "last_updated": "2026-08-27T16:57:53.178429+08:00",
+      "date": "2026-08-27",
+      "session": "close",
+      "source": "收盘价(腾讯API)",
+      "price_source note": "15:00后收盘价",
+      "data_basis": "2026-08-27盘后(收盘价)"
     },
-    "深证成指": {
-      "close": 13745.87,
-      "change_pct": -0.35
+    "summary": {
+      "total_market_value": 181539.0,
+      "available_cash": 983.02,
+      "total_assets": 182522.02,
+      "net_today": 10929.0,
+      "today_return": 6.3691,
+      "total_pnl_amount": -17477.98,
+      "monthly_pnl": -17477.98,
+      "prev_close_assets": 171593.02,
+      "position_ratio": 99.5,
+      "today_return_rate": 6.3691,
+      "monthly_return_rate": -8.74,
+      "initial_capital": 200000.0,
+      "position_count": 4,
+      "note": "8/27收盘:4只持仓全线大涨。国瓷+9.19%/利通+6.51%/江波龙+6.05%/麦格+3.70%。浮盈+10929.0",
+      "total_pnl_percent": -8.74
     },
-    "创业板指": {
-      "close": 3397.52,
-      "change_pct": -1.0
+    "positions": [
+      {
+        "code": "301308",
+        "name": "江波龙",
+        "quantity": 100,
+        "cost_price": 386.73,
+        "stop_loss": 360.0,
+        "close_price": 386.25,
+        "pre_close": 364.2,
+        "open": 369.0,
+        "high": 386.25,
+        "low": 366.02,
+        "change_pct": 6.05,
+        "change_amount": 22.05,
+        "market_value": 38625.0,
+        "floating_pnl": -48.0,
+        "floating_pnl_pct": -0.12,
+        "today_pnl": 2205.0,
+        "volume": 150492,
+        "amount": 570331,
+        "turnover_rate": 5.34,
+        "pe_ratio": 13.85,
+        "note": "收盘386.25(+6.05%)。高386.25/低366.02",
+        "current_price": 386.25,
+        "pnl_percent": -0.12,
+        "pnl_amount": -48.0
+      },
+      {
+        "code": "603629",
+        "name": "利通电子",
+        "quantity": 500,
+        "cost_price": 121.737,
+        "stop_loss": 117.0,
+        "close_price": 125.22,
+        "pre_close": 117.57,
+        "open": 119.99,
+        "high": 125.37,
+        "low": 117.1,
+        "change_pct": 6.51,
+        "change_amount": 7.65,
+        "market_value": 62610.0,
+        "floating_pnl": 1741.5,
+        "floating_pnl_pct": 2.86,
+        "today_pnl": 3825.0,
+        "volume": 395272,
+        "amount": 482238,
+        "turnover_rate": 10.96,
+        "pe_ratio": 85.93,
+        "note": "收盘125.22(+6.51%)。高125.37/低117.1",
+        "current_price": 125.22,
+        "pnl_percent": 2.86,
+        "pnl_amount": 1741.5
+      },
+      {
+        "code": "002851",
+        "name": "麦格米特",
+        "quantity": 300,
+        "cost_price": 121.324,
+        "stop_loss": 115.76,
+        "close_price": 127.66,
+        "pre_close": 123.11,
+        "open": 125.8,
+        "high": 128.0,
+        "low": 123.12,
+        "change_pct": 3.7,
+        "change_amount": 4.55,
+        "market_value": 38298.0,
+        "floating_pnl": 1900.8,
+        "floating_pnl_pct": 5.22,
+        "today_pnl": 1365.0,
+        "volume": 292031,
+        "amount": 367280,
+        "turnover_rate": 5.94,
+        "pe_ratio": 487.53,
+        "note": "收盘127.66(+3.7%)。高128.0/低123.12",
+        "current_price": 127.66,
+        "pnl_percent": 5.22,
+        "pnl_amount": 1900.8
+      },
+      {
+        "code": "300285",
+        "name": "国瓷材料",
+        "quantity": 600,
+        "cost_price": 64.013,
+        "stop_loss": 60.22,
+        "close_price": 70.01,
+        "pre_close": 64.12,
+        "open": 64.83,
+        "high": 70.71,
+        "low": 63.68,
+        "change_pct": 9.19,
+        "change_amount": 5.89,
+        "market_value": 42006.0,
+        "floating_pnl": 3598.2,
+        "floating_pnl_pct": 9.37,
+        "today_pnl": 3534.0,
+        "volume": 1119980,
+        "amount": 758548,
+        "turnover_rate": 13.13,
+        "pe_ratio": 108.83,
+        "note": "收盘70.01(+9.19%)。高70.71/低63.68",
+        "current_price": 70.01,
+        "pnl_percent": 9.37,
+        "pnl_amount": 3598.2
+      }
+    ]
+  },
+  "market": {
+    "meta": {
+      "last_updated": "2026-08-27T16:58:53.515324+08:00",
+      "date": "2026-08-27",
+      "session": "close",
+      "source": "2026-08-27盘后(收盘价)",
+      "data_basis": "2026-08-27收盘:英伟达财报催化全面大涨+成交2.14万亿放量3191亿",
+      "note": "8/27收盘:三大指数涨>1%,科创50+3.77%领涨。成交2.14万亿放量,涨跌3394:1944,涨停77/跌停4。算力硬件全面爆发"
+    },
+    "indices": {
+      "sh000001": {
+        "name": "上证指数",
+        "close": 3956.57,
+        "change_pct": 1.13,
+        "pre_close": 3912.52,
+        "open": 3911.89,
+        "high": 3958.03,
+        "low": 3909.31,
+        "volume": 516777549,
+        "amount": 101022657,
+        "pe_ratio": 17.94,
+        "note": "收盘3956.57(+1.13%)"
+      },
+      "sz399001": {
+        "name": "深证成指",
+        "close": 14048.88,
+        "change_pct": 1.5,
+        "pre_close": 13841.33,
+        "open": 13876.79,
+        "high": 14049.99,
+        "low": 13808.62,
+        "volume": 614047288,
+        "amount": 111570023,
+        "pe_ratio": 44.11,
+        "note": "收盘14048.88(+1.50%)"
+      },
+      "sz399006": {
+        "name": "创业板指",
+        "close": 3473.35,
+        "change_pct": 1.71,
+        "pre_close": 3414.88,
+        "open": 3437.9,
+        "high": 3474.07,
+        "low": 3408.8,
+        "volume": 182569439,
+        "amount": 54232019,
+        "pe_ratio": 57.33,
+        "note": "收盘3473.35(+1.71%)"
+      },
+      "sh000688": {
+        "name": "科创50",
+        "close": 1693.48,
+        "change_pct": 3.77,
+        "pre_close": 1632.02,
+        "note": "收盘1693.48(+3.77%)领涨"
+      }
+    },
+    "market_breadth": {
+      "up_count": 3394,
+      "down_count": 1944,
+      "flat_count": 212,
+      "total_limit_up": 77,
+      "total_limit_down": 4,
+      "note": "收盘:3394涨/1944跌/212平。涨停77/跌停4"
+    },
+    "volume": {
+      "total_amount": 21412,
+      "prev_amount": 18221,
+      "note": "收盘成交21412亿(2.14万亿),较昨日放量3191亿。量价齐升"
+    },
+    "north_flow": {
+      "net_flow": 179.49,
+      "note": "深股通半日净流入179.49亿,全天北向净流入。融资融券半日净流入317.82亿。合计近500亿增量资金"
+    },
+    "sector_top10_up": [
+      {
+        "name": "非金属材料",
+        "change_pct": 9.63,
+        "lead_stock": "联瑞新材(+20.00)"
+      },
+      {
+        "name": "电子化学品",
+        "change_pct": 5.56,
+        "lead_stock": "宏昌电子(+10.02)"
+      },
+      {
+        "name": "玻璃玻纤",
+        "change_pct": 5.36,
+        "lead_stock": "中国巨石(+7.95)"
+      },
+      {
+        "name": "元件",
+        "change_pct": 5.09,
+        "lead_stock": "生益电子(+14.32)"
+      },
+      {
+        "name": "其他电子",
+        "change_pct": 4.68,
+        "lead_stock": "瑞可达(+12.16)"
+      },
+      {
+        "name": "半导体",
+        "change_pct": 4.54,
+        "lead_stock": "赛微电子(+20.01)"
+      },
+      {
+        "name": "覆铜板",
+        "change_pct": 7.92,
+        "lead_stock": "金安国纪(+10.00)"
+      },
+      {
+        "name": "模拟芯片",
+        "change_pct": 7.39,
+        "lead_stock": "晶丰明源(+20.00)"
+      },
+      {
+        "name": "陶瓷基板",
+        "change_pct": 5.86,
+        "lead_stock": "科翔股份(+14.01)"
+      },
+      {
+        "name": "次新股",
+        "change_pct": 3.73,
+        "lead_stock": "花溪科技(+30.00)"
+      }
+    ],
+    "sector_top10_down": [
+      {
+        "name": "发电设备",
+        "change_pct": -1.63,
+        "lead_stock": "阳光电源(-12.24)"
+      },
+      {
+        "name": "电器行业",
+        "change_pct": -1.09,
+        "lead_stock": "思源电气(-10.00)"
+      },
+      {
+        "name": "酿酒行业",
+        "change_pct": -0.75,
+        "lead_stock": ""
+      },
+      {
+        "name": "公路桥梁",
+        "change_pct": -0.63,
+        "lead_stock": ""
+      },
+      {
+        "name": "传媒娱乐",
+        "change_pct": -0.31,
+        "lead_stock": ""
+      },
+      {
+        "name": "供水供气",
+        "change_pct": -0.25,
+        "lead_stock": ""
+      },
+      {
+        "name": "交通运输",
+        "change_pct": -0.21,
+        "lead_stock": ""
+      },
+      {
+        "name": "开发区",
+        "change_pct": -0.16,
+        "lead_stock": ""
+      },
+      {
+        "name": "纺织机械",
+        "change_pct": -0.08,
+        "lead_stock": ""
+      },
+      {
+        "name": "金融行业",
+        "change_pct": 0.06,
+        "lead_stock": "银行普跌"
+      }
+    ],
+    "fund_flow": {
+      "top_inflow": [
+        {
+          "sector": "半导体",
+          "net_inflow": 18004.1,
+          "change_pct": 4.54
+        },
+        {
+          "sector": "元件",
+          "net_inflow": 12871.7,
+          "change_pct": 5.09
+        },
+        {
+          "sector": "通信设备",
+          "net_inflow": 10414.25,
+          "change_pct": 3.85
+        }
+      ],
+      "top_outflow": [
+        {
+          "sector": "光伏设备",
+          "net_inflow": -1926.0,
+          "change_pct": -1.63
+        },
+        {
+          "sector": "银行",
+          "net_inflow": -1352.0,
+          "change_pct": 0.06
+        },
+        {
+          "sector": "电力",
+          "net_inflow": -1575.0,
+          "change_pct": -0.25
+        }
+      ],
+      "note": "资金全面转向科技进攻。半导体/元件/通信设备净流入居前"
+    },
+    "hot_sectors_up": [
+      {
+        "name": "非金属材料",
+        "change_pct": 9.63,
+        "lead_stock": "联瑞新材(+20.00)"
+      },
+      {
+        "name": "电子化学品",
+        "change_pct": 5.56,
+        "lead_stock": "宏昌电子(+10.02)"
+      },
+      {
+        "name": "玻璃玻纤",
+        "change_pct": 5.36,
+        "lead_stock": "中国巨石(+7.95)"
+      },
+      {
+        "name": "元件",
+        "change_pct": 5.09,
+        "lead_stock": "生益电子(+14.32)"
+      },
+      {
+        "name": "其他电子",
+        "change_pct": 4.68,
+        "lead_stock": "瑞可达(+12.16)"
+      },
+      {
+        "name": "半导体",
+        "change_pct": 4.54,
+        "lead_stock": "赛微电子(+20.01)"
+      },
+      {
+        "name": "覆铜板",
+        "change_pct": 7.92,
+        "lead_stock": "金安国纪(+10.00)"
+      },
+      {
+        "name": "模拟芯片",
+        "change_pct": 7.39,
+        "lead_stock": "晶丰明源(+20.00)"
+      },
+      {
+        "name": "陶瓷基板",
+        "change_pct": 5.86,
+        "lead_stock": "科翔股份(+14.01)"
+      },
+      {
+        "name": "次新股",
+        "change_pct": 3.73,
+        "lead_stock": "花溪科技(+30.00)"
+      }
+    ],
+    "hot_sectors_down": [
+      {
+        "name": "发电设备",
+        "change_pct": -1.63,
+        "lead_stock": "阳光电源(-12.24)"
+      },
+      {
+        "name": "电器行业",
+        "change_pct": -1.09,
+        "lead_stock": "思源电气(-10.00)"
+      },
+      {
+        "name": "酿酒行业",
+        "change_pct": -0.75,
+        "lead_stock": ""
+      },
+      {
+        "name": "公路桥梁",
+        "change_pct": -0.63,
+        "lead_stock": ""
+      },
+      {
+        "name": "传媒娱乐",
+        "change_pct": -0.31,
+        "lead_stock": ""
+      },
+      {
+        "name": "供水供气",
+        "change_pct": -0.25,
+        "lead_stock": ""
+      },
+      {
+        "name": "交通运输",
+        "change_pct": -0.21,
+        "lead_stock": ""
+      },
+      {
+        "name": "开发区",
+        "change_pct": -0.16,
+        "lead_stock": ""
+      },
+      {
+        "name": "纺织机械",
+        "change_pct": -0.08,
+        "lead_stock": ""
+      },
+      {
+        "name": "金融行业",
+        "change_pct": 0.06,
+        "lead_stock": "银行普跌"
+      }
+    ],
+    "market_stats": {
+      "rise_count": 3394,
+      "fall_count": 1944,
+      "turnover_comment": "2.14万亿放量3191亿,量价齐升",
+      "total_limit_up": 77,
+      "total_limit_down": 4
     }
-  },
-  "market_breadth": {
-    "up": 4229,
-    "down": 1243,
-    "limit_up": 70
-  },
-  "volume": {
-    "total": 18318,
-    "change": -1756
-  },
-  "north_flow": -18.62,
-  "bottom_signals": {
-    "satisfied": 2,
-    "total": 5,
-    "verdict": "继续观望"
-  },
-  "signals_summary": "5红2黄,涨跌大幅恢复,消费/农业/医药领涨vs科技杀跌"
+  }
 }

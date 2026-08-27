@@ -1,149 +1,44 @@
 {
   "meta": {
+    "last_updated": "2026-08-27T17:01:25.619294+08:00",
     "date": "2026-08-27",
-    "last_updated": "2026-08-27T08:10:00+08:00",
-    "data_as_of": "8/26收盘",
-    "note": "8/27盘前:英伟达财报大超预期但APEX熔断禁入。8/26关注池内科技板块分化(领涨:半导体设备/锂电;杀跌:光模块高位/存储链)"
+    "session": "close"
   },
   "sectors": [
     {
-      "sector_name": "半导体(设备/材料)",
-      "change_today": 1.21,
-      "top3_stocks": [
-        {
-          "code": "300604",
-          "name": "长川科技",
-          "change_pct": 4.77
-        },
-        {
-          "code": "300395",
-          "name": "菲利华",
-          "change_pct": 6.47
-        },
-        {
-          "code": "300408",
-          "name": "三环集团",
-          "change_pct": -0.38
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "8/26领涨板块。设备链(长川+4.77%)+材料(菲利华+6.47%)强势。APEX熔断禁入",
-      "oversold_priority": "NONE(APEX禁入)"
+      "name": "发电设备",
+      "change_pct": -1.63,
+      "note": "阳光电源-12.24%领跌"
     },
     {
-      "sector_name": "锂电储能",
-      "change_today": 2.85,
-      "top3_stocks": [
-        {
-          "code": "300438",
-          "name": "鹏辉能源",
-          "change_pct": 4.01
-        },
-        {
-          "code": "300769",
-          "name": "德方纳米",
-          "change_pct": 2.01
-        },
-        {
-          "code": "603026",
-          "name": "石大胜华",
-          "change_pct": 1.69
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "8/26领涨+4%。锂电链整体修复。APEX熔断禁入",
-      "oversold_priority": "NONE(APEX禁入)"
+      "name": "电器行业",
+      "change_pct": -1.09,
+      "note": "思源电气跌停"
     },
     {
-      "sector_name": "光模块/光通信",
-      "change_today": -0.55,
-      "top3_stocks": [
-        {
-          "code": "300308",
-          "name": "中际旭创",
-          "change_pct": 0.58
-        },
-        {
-          "code": "300502",
-          "name": "新易盛",
-          "change_pct": -0.52
-        },
-        {
-          "code": "300394",
-          "name": "天孚通信",
-          "change_pct": -1.37
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "8/26分化。中际旭创抗跌,新易盛破400,天孚高位回调。隔夜Lumentum+6%/康宁+3.82%映射。APEX熔断禁入",
-      "oversold_priority": "NONE(APEX禁入)"
+      "name": "酿酒行业",
+      "change_pct": -0.75,
+      "note": "白酒普跌"
     },
     {
-      "sector_name": "存储",
-      "change_today": -1.49,
-      "top3_stocks": [
-        {
-          "code": "301308",
-          "name": "江波龙",
-          "change_pct": -1.48
-        },
-        {
-          "code": "300223",
-          "name": "北京君正",
-          "change_pct": -1.51
-        },
-        {
-          "code": "301308",
-          "name": "江波龙(双计)",
-          "change_pct": -1.48
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "8/26杀跌。英伟达财报+长存IPO+200%H1增长=强催化。APEX熔断禁入",
-      "oversold_priority": "NONE(APEX禁入)"
+      "name": "公路桥梁",
+      "change_pct": -0.63,
+      "note": ""
     },
     {
-      "sector_name": "PCB/果链",
-      "change_today": 1.84,
-      "top3_stocks": [
-        {
-          "code": "002384",
-          "name": "东山精密",
-          "change_pct": 1.84
-        },
-        {
-          "code": "000988",
-          "name": "华工科技",
-          "change_pct": -1.4
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "8/26东山精密+1.84%放量领涨。APEX熔断禁入",
-      "oversold_priority": "NONE(APEX禁入)"
+      "name": "传媒娱乐",
+      "change_pct": -0.31,
+      "note": ""
     },
     {
-      "sector_name": "算力/IDC/服务器",
-      "change_today": -0.55,
-      "top3_stocks": [
-        {
-          "code": "000977",
-          "name": "浪潮信息",
-          "change_pct": -0.43
-        },
-        {
-          "code": "300857",
-          "name": "协创数据",
-          "change_pct": -0.75
-        },
-        {
-          "code": "300442",
-          "name": "润泽科技",
-          "change_pct": -0.43
-        }
-      ],
-      "can_add_watchlist": false,
-      "note": "8/26弱势。英伟达Vera Rubin全面投产+亚马逊200万GPU=强催化。APEX熔断禁入",
-      "oversold_priority": "NONE(APEX禁入)"
+      "name": "供水供气",
+      "change_pct": -0.25,
+      "note": ""
+    },
+    {
+      "name": "交通运输",
+      "change_pct": -0.21,
+      "note": ""
     }
   ]
 }
