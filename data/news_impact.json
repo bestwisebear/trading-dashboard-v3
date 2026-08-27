@@ -1,12 +1,13 @@
 {
   "meta": {
-    "date": "2026-08-26",
-    "last_updated": "2026-08-26T08:11:00+08:00",
+    "date": "2026-08-27",
+    "last_updated": "2026-08-27T13:16:00+08:00",
     "source": "web_search_close",
-    "session": "pre_market"
+    "session": "midday_scan",
+    "note": "8/27午间:英伟达Q2财报大超预期(营收962亿+106%),A股科技全线爆发,科创50+3.45%。存储/PCB/CPO涨停潮。PCE核心+3.3%符合预期。APEX熔断持续禁新仓"
   },
-  "overall_sentiment": "中性偏空(晚间)",
-  "sentiment_summary": "晚间增量偏空:英伟达七连跌+PCE加息风险+Jackson Hole沃什首秀不确定性,但美股期货反弹+芯片盘前走强提供缓冲。APEX熔断持续,8/26零新仓+持仓止损警戒",
+  "overall_sentiment": "偏多(午间)",
+  "sentiment_summary": "英伟达Q2财报大超预期催化A股科技全线爆发。PCB/CPO/存储/光纤涨停潮。PCE数据中性。Jackson Hole沃什演讲待定。APEX熔断禁新仓",
   "items": [
     {
       "id": 1,
@@ -206,6 +207,125 @@
       "detail": "WTI原油期货跌幅扩大至3%报82.43美元/桶,布伦特跌1.77%至88.94美元/桶。美国宣布加大对伊朗经济制裁+全球需求担忧双重压力。油价下跌有利于降低全球通胀预期,但也反映经济放缓担忧",
       "affected_stocks": [],
       "source": "东方财富/财联社"
+    },
+    {
+      "id": 101,
+      "time": "8/27凌晨",
+      "title": "英伟达Q2财报大超预期:营收962亿美元(+106%),净利597亿(+126%),盘后涨超4%",
+      "category": "external",
+      "impact": "positive",
+      "impact_level": 5,
+      "detail": "英伟达FY27Q2营收962.21亿美元同比+106%,数据中心890亿美元(+117%),毛利率75%。Q3指引1080亿美元超预期。盘后先跌3%后拉涨超4%。CFO称FY28营收增长约70%远超市场预期45%。黄仁勋:AI已达拐点,Vera Rubin全面投产。亚马逊将额外部署200万块GPU",
+      "affected_stocks": [
+        "301308",
+        "603629"
+      ],
+      "source": "新华社/证券时报/第一财经"
+    },
+    {
+      "id": 102,
+      "time": "8/27午间",
+      "title": "A股午间:科技全线爆发,科创50+3.45%,半日成交1.35万亿放量1208亿",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "沪指+0.6%报3936,深成指+1.19%,创业板+1.51%,科创50+3.45%。全市场超3000股上涨,65股涨停。PCB/CPO/存储/光纤/半导体全线走强。午后非银金融继续拉升,沪指收+0.7%,成交1.739万亿",
+      "affected_stocks": [],
+      "source": "财联社/新华财经"
+    },
+    {
+      "id": 103,
+      "time": "8/27上午",
+      "title": "PCB概念涨停潮:金安国纪/宝鼎科技/嘉立创/协和电子等集体涨停",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "PCB板块盘中涨幅持续扩大,金安国纪/宝鼎科技/协和电子/宏昌电子/嘉立创封涨停。天津普林中报净利+560%冲涨停。沪电股份H1净利+73.72%验证AI服务器PCB需求爆发。深南电路H1营收+46.33%净利+65.55%",
+      "affected_stocks": [],
+      "source": "财联社/证券时报"
+    },
+    {
+      "id": 104,
+      "time": "8/27上午",
+      "title": "存储芯片超级景气:大普微签34.91亿元大单+20cm涨停,江波龙净利增71528%",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 5,
+      "detail": "大普微签订5.14亿美元(34.91亿元)企业级SSD大单,20cm涨停。存储概念全线爆发,大普微/赛微电子/昂瑞微20cm涨停。江波龙H1净利105.77亿(+71528%),全球存储市场预计2026年达8373亿美元。Gartner:DRAM增长246.6%/NAND增长371.9%",
+      "affected_stocks": [
+        "301308"
+      ],
+      "source": "证券时报/集邦咨询/Gartner"
+    },
+    {
+      "id": 105,
+      "time": "8/27",
+      "title": "美国7月PCE:核心同比+3.3%符合预期,整体+0.2%超预期,9月加息概率升至42%",
+      "category": "macro",
+      "impact": "neutral",
+      "impact_level": 3,
+      "detail": "美国7月PCE环比+0.2%(预期+0.1%),同比+3.7%。核心PCE环比+0.2%,同比+3.3%符合预期。实际消费支出环比持平。CME:9月加息概率从36%升至42%,维持不变概率58%。通胀仍高于2%目标连续超5年",
+      "affected_stocks": [],
+      "source": "美国商务部/CME"
+    },
+    {
+      "id": 106,
+      "time": "8/27-29",
+      "title": "Jackson Hole央行年会进行中,8/28 22:00沃什首次主旨演讲",
+      "category": "macro",
+      "impact": "neutral",
+      "impact_level": 4,
+      "detail": "杰克逊霍尔年会8/27-29举行。美联储主席沃什8/28北京时间22:00发表首次主旨演讲。市场期待明确加息反应函数。美银:若沃什不释放加息信号,30Y美债或冲5.5%。分析师:沃什可能采取'少即是多'策略,不会给出太多方向",
+      "affected_stocks": [],
+      "source": "华尔街见闻/新华财经"
+    },
+    {
+      "id": 107,
+      "time": "8/27",
+      "title": "国家统计局:1-7月电子行业利润同比增1.1倍,集成电路利润增18.5倍",
+      "category": "domestic",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "国家统计局数据:1-7月电子行业利润同比增1.1倍,拉动规模以上工业利润增9.3pct。集成电路行业利润同比增18.5倍,对电子行业贡献率超八成。计算机整机/外围设备/工控分别增3.3/2.5/1.6倍。半导体分立器件/电子电路制造分别增45.8%/37.1%",
+      "affected_stocks": [
+        "301308"
+      ],
+      "source": "国家统计局"
+    },
+    {
+      "id": 108,
+      "time": "8/27午间",
+      "title": "国瓷材料+7.83%领涨:MLCC涨价+氧化钇概念+QFII二季度新增持仓10亿+",
+      "category": "stock",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "国瓷材料盘中涨7.83%至69.14。MLCC超级周期涨价持续,AI服务器+汽车电子需求拉动。QFII二季度新增持仓市值超10亿。氧化钇概念上涨。MSCI中国指数8/31生效新纳入国瓷材料。融资余额42.15亿(近一月+30.2%)",
+      "affected_stocks": [
+        "300285"
+      ],
+      "source": "东方财富/中国证券报"
+    },
+    {
+      "id": 109,
+      "time": "8/27午后",
+      "title": "午后市场:非银金融爆发+PTFE涨停潮,全天成交1.739万亿放量1773亿",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "午后非银金融异军突起:保险/互金大涨,中国太平/平安涨超5%,赢盛时空/瑞达期货涨停。PTFE概念:东材科技/肯特股份/联瑞新材涨停。收盘沪指+0.7%,深成指+1.08%,创业板+1.36%,全市场4300+股上涨",
+      "affected_stocks": [],
+      "source": "财联社"
+    },
+    {
+      "id": 110,
+      "time": "8/27",
+      "title": "CPO/光纤概念强势:赛微电子20cm涨停,天孚通信+9%,'易中天'集体走强",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "CPO概念赛微电子20cm涨停,天孚通信盘中涨超9%,中际旭创+3%,新易盛+3%。光纤概念:法尔胜/杭电股份2连板,长飞光纤涨停。中际旭创港股纳入港股通。亨通光电H1营收420亿(+31%)/净利31.2亿(+93%)",
+      "affected_stocks": [],
+      "source": "财联社/证券时报"
     }
   ],
   "messages": [
@@ -281,11 +401,11 @@
     }
   ],
   "statistics": {
-    "total_messages": 7,
-    "positive_count": 4,
-    "negative_count": 3,
-    "neutral_count": 0,
-    "date": "2026-08-26",
-    "session": "pre_market"
+    "total_messages": 26,
+    "positive_count": 13,
+    "negative_count": 5,
+    "neutral_count": 8,
+    "date": "2026-08-27",
+    "session": "midday_scan"
   }
 }
