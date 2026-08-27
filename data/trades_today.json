@@ -1,8 +1,8 @@
 {
   "meta": {
-    "date": "2026-08-26",
-    "last_updated": "2026-08-26T16:55:00+08:00",
-    "source": "盘后全量刷新(当日无交易)"
+    "date": "2026-08-27",
+    "last_updated": "2026-08-27T11:33:00+08:00",
+    "source": "午间数据刷新(无交易)"
   },
   "summary": {
     "trade_count": 0,
@@ -10,10 +10,46 @@
     "sell_count": 0,
     "violation_count": 0,
     "realized_pnl": 0,
-    "net_today": 73.74,
-    "note": "8/26全天无交易操作。今日收益+73.74(纯浮盈)。持仓未变",
+    "net_today": 9160.0,
+    "note": "8/27午间:零交易。持仓浮盈+9160.0。APEX熔断禁新仓",
     "total_trades": 0
   },
   "trades": [],
-  "violations": []
+  "violations": [
+    {
+      "seq": 53,
+      "code": "301308",
+      "name": "江波龙",
+      "violation": "intraday_T_ban",
+      "notes": "做T卖出(原200股)，后高价回补100股。违规：禁做T铁律"
+    },
+    {
+      "seq": 54,
+      "code": "301308",
+      "name": "江波龙",
+      "violation": "intraday_T_ban",
+      "notes": "做T回补100股(卖低买高)，T+1不可卖。违规：禁做T"
+    },
+    {
+      "seq": 55,
+      "code": "603629",
+      "name": "利通电子",
+      "violation": "apex_circuit_breaker+non_window",
+      "notes": "APEX熔断期加仓200股(原300→500)。违规：熔断期禁开新仓+非13:30-14:30窗口"
+    },
+    {
+      "seq": 56,
+      "code": "002851",
+      "name": "麦格米特",
+      "violation": "non_watchlist+apex_circuit_breaker",
+      "notes": "新建仓300股。违规：非关注池标的+APEX熔断期建仓"
+    },
+    {
+      "seq": 57,
+      "code": "300285",
+      "name": "国瓷材料",
+      "violation": "non_watchlist+apex_circuit_breaker",
+      "notes": "新建仓600股。违规：非关注池标的+APEX熔断期建仓"
+    }
+  ]
 }

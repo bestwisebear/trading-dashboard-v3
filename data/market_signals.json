@@ -1,69 +1,70 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T16:55:00+08:00",
-    "date": "2026-08-26",
-    "session": "close",
-    "source": "盘后全量刷新"
+    "last_updated": "2026-08-27T11:33:00+08:00",
+    "date": "2026-08-27",
+    "session": "intraday",
+    "data_basis": "8/26午间(腾讯盘中价)+隔夜美股+英伟达财报前",
+    "note": "8/26盘前定性:8/25夜美股大反弹(纳指+0.66%/费半+1.49%/NVDA+2.19%终结7连跌/存储+2-3%/光通信+4-7%)+长江存储IPO催化+沪电PCB+73.72%,关注池预计高开。但APEX二级熔断(月度-14.03%>10%阈值)+8/26英伟达财报前夜=8/26全面禁入。优先清仓违规持仓(麦格米特+国瓷)"
   },
   "signals": [
     {
       "id": "volume_signal",
       "name": "成交量信号",
-      "status": "warning",
-      "detail": "成交1.81万亿,连续缩量(昨日1.83万亿→今日1.81万亿)。缩至1.5万亿以下才是底部特征",
-      "color": "yellow"
+      "status": "positive",
+      "detail": "半日成交1.35万亿,量能充裕。全天预估2.5万亿+,较昨日1.81万亿大幅放量",
+      "color": "red"
     },
     {
       "id": "breadth_signal",
       "name": "涨跌家数",
-      "status": "neutral",
-      "detail": "2942涨/2445跌。涨多跌少但未达3000家阈值",
-      "color": "yellow"
+      "status": "positive",
+      "detail": "约3800涨/1500跌。普涨行情,涨跌比>2.5:1",
+      "color": "red"
     },
     {
       "id": "index_signal",
       "name": "指数信号",
       "status": "positive",
-      "detail": "三大指数全线收涨(沪指+0.59%/深成+0.69%/创业板+0.51%)。沪指连续2日不创新低",
+      "detail": "三大指数全线大涨(沪指+0.60%/深成+1.19%/创业板+1.51%/科创50+3.45%)。连续3日不创新低",
       "color": "red"
     },
     {
       "id": "sector_signal",
       "name": "板块轮动",
-      "status": "neutral",
-      "detail": "有色金属+大金融领涨(周期+金融),科技板块分化(光模块净流出/半导体涨少跌多)。风格偏传统价值",
-      "color": "yellow"
+      "status": "positive",
+      "detail": "科技全面领涨:覆铜板+8.24%/元件+5.78%/光芯片+6.08%/半导体+4.30%。英伟达财报催化算力链全面爆发",
+      "color": "red"
     },
     {
       "id": "capital_signal",
       "name": "资金流向",
-      "status": "neutral",
-      "detail": "特大单净流入203亿,但北向净流出18.62亿。主力资金流入有色+非银,流出光模块(天孚-6.54亿/新易盛-5.20亿)",
-      "color": "yellow"
+      "status": "positive",
+      "detail": "主力大幅流入:半导体+131.5亿/元件+105.5亿/通信设备+92.3亿。特大单净流入151.97亿",
+      "color": "red"
     },
     {
       "id": "apex_signal",
       "name": "APEX熔断",
       "status": "danger",
-      "detail": "月度收益率-14.20%>10%阈值,二级熔断持续。8/26-8/31全面禁新仓",
+      "detail": "月度收益率从-14.20%改善至-9.62%,但APEX二级熔断仍生效。8/27-8/31持续禁新仓",
       "color": "green"
     },
     {
       "id": "risk_event",
       "name": "风险事件",
       "status": "warning",
-      "detail": "8/27 Jackson Hole沃什演讲+美联储PCE数据+英伟达盘后反应。多重不确定性",
+      "detail": "8/27 Jackson Hole沃什演讲+美联储PCE数据。冲高回落风险:多只个股涨>5%接近前高压力位",
       "color": "yellow"
     }
   ],
-  "overall": "中性偏谨慎。指数连稳+成交缩+科技分化。APEX熔断禁新仓,关注8/27宏观事件",
+  "overall": "强势上涨·科技全面领涨。但APEX熔断持续禁新仓+冲高回落风险",
   "aggregate": {
     "green_count": 0,
-    "yellow_count": 4,
+    "yellow_count": 2,
     "red_count": 0,
-    "total_score": 28,
+    "total_score": 42,
     "max_score": 49,
     "no_open_position": true,
-    "market_comment": "中性偏谨慎。指数连稳+成交缩+科技分化。APEX熔断禁新仓"
+    "market_comment": "强势上涨。5/7信号偏红(成交/涨跌/指数/板块/资金)。APEX熔断+宏观风险事件2黄"
   }
 }
