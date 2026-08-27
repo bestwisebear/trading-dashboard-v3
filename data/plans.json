@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-26T16:55:00+08:00",
-    "date": "2026-08-26",
-    "session": "close",
-    "plan_date": "2026-08-27"
+    "last_updated": "2026-08-27T08:10:00+08:00",
+    "date": "2026-08-27",
+    "session": "pre_market",
+    "source": "8/27盘前(英伟达财报+APEX熔断)"
   },
   "core_plan": {
     "action": "减仓避险",
@@ -51,5 +51,78 @@
       "priority": "最高",
       "status": "pending"
     }
-  ]
+  ],
+  "plan": {
+    "date": "2026-08-27",
+    "status": "🔴 高警戒日",
+    "core_action": "借英伟达财报高开立即清仓违规持仓+止损执行+全天零新仓",
+    "priority_tasks": [
+      {
+        "priority": "P0",
+        "task": "9:15-9:25集合竞价观察4只持仓",
+        "time": "09:15-09:25"
+      },
+      {
+        "priority": "P0",
+        "task": "9:30-9:45借高开市价清仓麦格米特300股(违规第2天)",
+        "time": "09:30-09:45",
+        "expected_price": "≥123.50"
+      },
+      {
+        "priority": "P0",
+        "task": "9:30-9:45借高开市价清仓国瓷材料600股(违规第2天)",
+        "time": "09:30-09:45",
+        "expected_price": "≥64.50"
+      },
+      {
+        "priority": "P0",
+        "task": "9:30-9:45清仓利通电子500股(连续2日破止损未执行·8/27必须)",
+        "time": "09:30-09:45",
+        "stop_loss": "117.00"
+      },
+      {
+        "priority": "P1",
+        "task": "9:30-9:45核对江波龙止损360",
+        "time": "09:30-09:45",
+        "stop_loss": "360.00"
+      },
+      {
+        "priority": "P1",
+        "task": "9:45-10:30借财报高开>380减仓江波龙50股锁利",
+        "time": "09:45-10:30"
+      },
+      {
+        "priority": "P2",
+        "task": "全天零新仓(APEX熔断持续)",
+        "time": "09:30-15:00"
+      },
+      {
+        "priority": "P2",
+        "task": "收盘前将仓位从99.4%降至合理水平",
+        "time": "14:30-15:00"
+      }
+    ],
+    "no_new_position": true,
+    "no_new_position_reason": "APEX二级熔断(月度-14.20%>10%阈值)8/27-8/31持续禁新仓",
+    "key_levels": {
+      "江波龙": {
+        "stop_loss": 360.0,
+        "take_profit": 380.0
+      },
+      "利通电子": {
+        "stop_loss": 117.0,
+        "take_profit": 122.0
+      },
+      "麦格米特": {
+        "stop_loss": 115.76,
+        "take_profit": 125.0
+      },
+      "国瓷材料": {
+        "stop_loss": 60.22,
+        "take_profit": 66.0
+      }
+    },
+    "risk_events": "英伟达财报后A股算力链反应+Jackson Hole(周五沃什讲话)+30Y美债5.185%+Q3毛利率指引74%(略低于预期75%)+Q4触底71-72%",
+    "next_session": "9/1起月度回撤窗口开启,评估熔断解除条件,重建候选池"
+  }
 }
