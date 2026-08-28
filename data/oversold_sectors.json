@@ -1,43 +1,43 @@
 {
   "meta": {
-    "last_updated": "2026-08-27T17:01:25.619294+08:00",
-    "date": "2026-08-27",
+    "last_updated": "2026-08-28T16:53:00+08:00",
+    "date": "2026-08-28",
     "session": "close"
   },
   "sectors": [
     {
-      "name": "发电设备",
-      "change_pct": -1.63,
-      "note": "阳光电源-12.24%领跌"
+      "name": "半导体",
+      "change_pct": -3.5,
+      "note": "获利回吐·主力净流出128亿·超纯应材-8%领跌"
     },
     {
-      "name": "电器行业",
-      "change_pct": -1.09,
-      "note": "思源电气跌停"
+      "name": "CRO/医药",
+      "change_pct": -2.8,
+      "note": "万邦医药-17%领跌·生物制品/疫苗下挫"
     },
     {
-      "name": "酿酒行业",
-      "change_pct": -0.75,
-      "note": "白酒普跌"
-    },
-    {
-      "name": "公路桥梁",
-      "change_pct": -0.63,
+      "name": "电信运营",
+      "change_pct": -2.0,
       "note": ""
     },
     {
-      "name": "传媒娱乐",
-      "change_pct": -0.31,
+      "name": "保险",
+      "change_pct": -1.5,
+      "note": "中报承压"
+    },
+    {
+      "name": "银行",
+      "change_pct": -1.2,
+      "note": "五大行中报披露期"
+    },
+    {
+      "name": "电子化学品",
+      "change_pct": -1.0,
       "note": ""
     },
     {
-      "name": "供水供气",
-      "change_pct": -0.25,
-      "note": ""
-    },
-    {
-      "name": "交通运输",
-      "change_pct": -0.21,
+      "name": "消费电子",
+      "change_pct": -0.8,
       "note": ""
     }
   ]
