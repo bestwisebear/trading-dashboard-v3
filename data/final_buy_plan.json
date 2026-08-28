@@ -1,228 +1,93 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T08:25:00+08:00",
+    "last_updated": "2026-08-28T13:16:00+08:00",
     "date": "2026-08-28",
+    "session": "midday_final",
+    "data_basis": "8/28午间确认(腾讯API+多源验证)"
+  },
+  "decision": "今日取消新仓",
+  "confirmed_count": 0,
+  "confirmed_stocks": [],
+  "cancellation_reasons": [
+    {
+      "gate": "APEX熔断",
+      "status": "BLOCKED",
+      "detail": "APEX二级熔断收官日(8/26-8/28),月度回撤-10.41%超-10%阈值.9/1才完全解除.盘前计划明确:全天零新仓",
+      "passed": false
+    },
+    {
+      "gate": "现金不足",
+      "status": "BLOCKED",
+      "detail": "可用现金仅983元(仓位99.5%),物理上无法开新仓",
+      "passed": false
+    },
+    {
+      "gate": "时段限制",
+      "status": "BLOCKED",
+      "detail": "四段式流程:13:15最终确认→13:30-14:30执行.但APEX熔断+现金不足=无需进入执行阶段",
+      "passed": false
+    },
+    {
+      "gate": "市场风险",
+      "status": "BLOCKED",
+      "detail": "周五+月末+A50交割日+沃什22:00首秀=四重风险叠加.冲高回落已兑现英伟达利好.利通-3.47%逼近止损需优先风控",
+      "passed": false
+    },
+    {
+      "gate": "涨跌家数",
+      "status": "MARGINAL",
+      "detail": "半日超3100只上涨,但全天预估收盘可能不足2000.热点杂乱,科技板块冲高回落分化",
+      "passed": false
+    },
+    {
+      "gate": "候选池",
+      "status": "EMPTY",
+      "detail": "intraday_candidates.json(11:00生成):candidates=[],conclusion=下午无新仓备选",
+      "passed": false
+    },
+    {
+      "gate": "持仓风控优先",
+      "status": "PRIORITY",
+      "detail": "保收益优先规则:利通电子120.88(-3.47%)距止损117仅3.05%.下午核心是持仓风控而非开新仓.14:30-14:55沃什避险减仓",
+      "passed": false
+    }
+  ],
+  "afternoon_action_plan": {
+    "priority_1": "⚠️ 利通电子120.88(-3.47%)距止损117仅3.05%.若破118准备减仓/止损",
+    "priority_2": "🔒 14:30-14:55沃什讲话前减仓避险(利通150+国瓷200+麦格100)",
+    "priority_3": "👀 江波龙观察378支撑·麦格米特观察127支撑",
+    "priority_4": "📊 8/28收盘后复盘APEX熔断是否确认解除→9/1盘前评估重建候选池"
+  },
+  "next_action": {
+    "date": "2026-09-01",
     "session": "pre_market",
-    "data_basis": "8/28盘前v2·基于8/27真实收盘+8/27夜外盘+Jackson Hole沃什首秀4种情景+A50 14729(+0.01%)"
-  },
-  "decision": "🚨 今日取消新仓(全天零新仓)",
-  "decision_time": "2026-08-28T08:25:00+08:00",
-  "confirmed_candidates": [],
-  "max_candidates_allowed": 0,
-  "gate_results": {
-    "gate0_apex_circuit_breaker": {
-      "pass": false,
-      "status": "ACTIVE_ENDING",
-      "level": "二级熔断收官日",
-      "monthly_return_pct": -8.74,
-      "threshold_pct": -10.0,
-      "start_date": "2026-08-26",
-      "end_date": "2026-08-31",
-      "detail": "月度回撤-8.74%已回-10%阈值内(8/27收盘数据).8/28是APEX二级熔断原计划最后一天(8/25-8/31),8/28盘中需根据走势明确确认APEX解除条件,8/28首要是冲高锁利+沃什避险+复盘明确.9/1起完全解除+重建候选池"
-    },
-    "gate1_available_cash": {
-      "pass": false,
-      "available_cash": 983.02,
-      "detail": "可用现金仅983.02元,仓位99.5%满仓.即使无熔断也无法开出任何有意义的新仓位"
-    },
-    "gate2_position_count": {
-      "pass": false,
-      "current_count": 4,
-      "max_allowed": 4,
-      "detail": "持仓4只(国瓷600+利通500+麦格300+江波龙100)已达上限"
-    },
-    "gate3_breadth_8_28_open": {
-      "pass": "TBD",
-      "8_27_value": 3394,
-      "detail": "8/27涨跌3394:1944=1.74:1·通过.8/28开盘后30min若上涨家数<2000=主线扩散失败"
-    },
-    "gate4_volume_8_28_open": {
-      "pass": "TBD",
-      "8_27_value": 21412,
-      "detail": "8/27成交2.14万亿放量3191亿·通过.8/28开盘后30min若量能<1.6万亿=冲高乏力"
-    },
-    "gate5_jackson_hole": {
-      "pass": "BLOCKED",
-      "detail": "Jackson Hole沃什22:00首秀偏鹰风险高·4种情景均将提升波动率·今日不持仓过夜"
-    },
-    "gate6_friday_monthend": {
-      "pass": "BLOCKED",
-      "detail": "周五+月末效应+8月A50期货今日交割·资金面偏谨慎·获利盘堆积"
-    }
-  },
-  "execution_plan": {
-    "phase_1_morning_lock_profit": {
-      "time": "9:30-9:45",
-      "actions": [
-        {
-          "stock": "国瓷材料",
-          "code": "300285",
-          "action": "市价卖",
-          "qty": 200,
-          "trigger": "高开≥71",
-          "rationale": "浮盈+9.37%·前高70.71·锁1/3"
-        },
-        {
-          "stock": "麦格米特",
-          "code": "002851",
-          "action": "市价卖",
-          "qty": 100,
-          "trigger": "高开≥128.5",
-          "rationale": "浮盈+5.22%·前高128.00·锁1/3"
-        },
-        {
-          "stock": "利通电子",
-          "code": "603629",
-          "action": "市价卖",
-          "qty": 150,
-          "trigger": "高开≥126",
-          "rationale": "浮盈+2.86%·前高125.37·借势减"
-        },
-        {
-          "stock": "江波龙",
-          "code": "301308",
-          "action": "市价卖",
-          "qty": 50,
-          "trigger": "高开≥395",
-          "rationale": "接近前高415·锁1/2"
-        }
-      ],
-      "fallback": "若9:30-9:45高开乏力(<0.5%)且量能<1.6万亿·仅减国瓷100+利通50(借任何冲高减)"
-    },
-    "phase_2_midday_observe": {
-      "time": "10:00-13:00",
-      "actions": [
-        "持仓观察·不追高·不补仓",
-        "9/1后重建候选池预研(存储/光模块/半导体设备/算力链/MLCC)"
-      ]
-    },
-    "phase_3_afternoon_hedge": {
-      "time": "14:30-14:55",
-      "actions": [
-        {
-          "stock": "国瓷材料",
-          "code": "300285",
-          "action": "市价卖",
-          "qty": "100-200",
-          "trigger": "沃什预期偏鹰",
-          "rationale": "沃什讲话前减仓避险"
-        },
-        {
-          "stock": "麦格米特",
-          "code": "002851",
-          "action": "市价卖",
-          "qty": "50-100",
-          "trigger": "沃什预期偏鹰",
-          "rationale": "沃什讲话前减仓避险"
-        },
-        {
-          "stock": "利通电子",
-          "code": "603629",
-          "action": "市价卖",
-          "qty": 100,
-          "trigger": "沃什预期偏鹰",
-          "rationale": "沃什讲话前减仓避险"
-        }
-      ],
-      "target_cash_after_hedge": "5000-10000元(降低仓位至90-95%)"
-    },
-    "phase_4_overnight": {
-      "time": "22:00",
-      "actions": [
-        "不持仓过夜·若仍有持仓按硬止损执行(国瓷≤60.22/利通≤117/麦格≤115.76/江波龙≤360)",
-        "8/28盘后复盘:明确APEX熔断解除条件·确认8/29-8/31周末无交易·9/1开盘完全解除"
-      ]
-    }
-  },
-  "stop_loss_anchors": {
-    "国瓷材料": {
-      "price": 60.22,
-      "qty": 600,
-      "rationale": "支撑位下方1%缓冲·跌破即市价全清"
-    },
-    "麦格米特": {
-      "price": 115.76,
-      "qty": 300,
-      "rationale": "支撑位下方1%缓冲·跌破即市价全清"
-    },
-    "利通电子": {
-      "price": 117.0,
-      "qty": 500,
-      "rationale": "支撑位下方1%缓冲·跌破即市价全清"
-    },
-    "江波龙": {
-      "price": 360.0,
-      "qty": 100,
-      "rationale": "支撑位下方1%缓冲·跌破即市价全清"
-    }
-  },
-  "new_position_candidates_9_1": {
-    "policy": "9/1起APEX完全解除后启用·今日仅作预研",
-    "candidates": [
-      {
-        "code": "300857",
-        "name": "协创数据",
-        "sector": "算力租赁",
-        "today_change_pct": 9.72,
-        "close": 259.2,
-        "rationale": "+9.72%领涨突破前高260·算力租赁龙头"
-      },
-      {
-        "code": "300223",
-        "name": "君正股份",
-        "sector": "存储IC设计",
-        "today_change_pct": 6.37,
-        "close": 140.48,
-        "rationale": "存储链+6.37%·长存IPO催化"
-      },
-      {
-        "code": "000977",
-        "name": "浪潮信息",
-        "sector": "服务器/AI算力",
-        "today_change_pct": 6.07,
-        "close": 78.27,
-        "rationale": "+6.07%领涨+算力链"
-      },
-      {
-        "code": "300394",
-        "name": "天孚通信",
-        "sector": "光模块/CPO",
-        "today_change_pct": 5.36,
-        "close": 267.16,
-        "rationale": "+5.36%领涨+光模块"
-      },
-      {
-        "code": "002156",
-        "name": "通富微电",
-        "sector": "封测/AMD",
-        "today_change_pct": 4.05,
-        "close": 63.73,
-        "rationale": "+4.05%领涨+封测"
-      },
-      {
-        "code": "300408",
-        "name": "三环集团",
-        "sector": "MLCC",
-        "today_change_pct": 3.49,
-        "close": 112.48,
-        "rationale": "+3.49%领涨+MLCC"
-      },
-      {
-        "code": "300604",
-        "name": "长川科技",
-        "sector": "半导体测试设备",
-        "today_change_pct": 3.11,
-        "close": 284.8,
-        "rationale": "+3.11%领涨+测试设备"
-      },
-      {
-        "code": "300502",
-        "name": "新易盛",
-        "sector": "光模块",
-        "today_change_pct": 2.59,
-        "close": 409.1,
-        "rationale": "+2.59%修复+1.6T光模块下半年放量"
-      }
+    "plan": "APEX熔断8/28收盘后解除→9/1开盘完全解除.盘前评估8只候选池(协创数据/通富微电/新易盛/天孚通信/兆易创新/生益科技/三环集团/长川科技)+intraday_candidates中10只半导体候选.条件:成交≥1.5万亿+上涨≥2000+沃什讲话无极端鹰派",
+    "candidates_pool": [
+      "协创数据(300857·score3·等回踩231支撑)",
+      "通富微电(002156·score6·等回踩58支撑)",
+      "新易盛(300502·score5·支撑400)",
+      "天孚通信(300394·score5·等回踩230支撑)",
+      "兆易创新(603986·score6·PE41极低·等回踩375支撑)",
+      "生益科技(600183·score6·覆铜板龙头+4.75%·注意追高风险)",
+      "三环集团(300408·score3·支撑105)",
+      "长川科技(300604·score6·等回踩66支撑)"
     ]
-  }
+  },
+  "market_snapshot_1310": {
+    "shanghai_index": 3959,
+    "shanghai_change_pct": 0.08,
+    "chinext_index": 3462,
+    "chinext_change_pct": -0.32,
+    "half_day_volume_trillion": 1.42,
+    "volume_change_vs_prev": "+716亿",
+    "up_count": 3100,
+    "verdict": "冲高回落.英伟达利好已部分兑现.科技分化.沃什22:00前观望为主"
+  },
+  "risk_alerts": [
+    "⚠️ 利通电子120.88(-3.47%)距止损117仅3.05%,下午重点关注",
+    "🔴 沃什22:00 Jackson Hole首秀,美联储官员分歧大",
+    "📅 A50期货8月交割+周五+月末=尾盘波动加大",
+    "📉 央行净回笼2455亿,流动性边际收紧",
+    "🔄 英伟达利好已部分兑现(高开+1%后回落至+0.08%)"
+  ]
 }
