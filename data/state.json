@@ -1,63 +1,63 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T21:00:00+08:00",
+    "last_updated": "2026-08-28T21:30:00+08:00",
     "data_date": "2026-08-28",
     "source": "2026-08-28晚间复盘",
     "session": "evening_review",
-    "note": "8/28收盘:全跌·利通-4.21%领跌距止损2.5%·成交2.12万亿缩量·APEX月度-11.11%超阈值→8/31结束·沃什偏鹰首秀·美股存储盘前跌"
+    "note": "8/28收盘(修正):用户主动换仓半导体→能源资源,仓位82.7%,现金30992,总资产179099,月度-10.45%"
   },
   "current": {
-    "total_assets": 177771.02,
-    "prev_close_assets": 171593.02,
-    "available_cash": 983.02,
+    "total_assets": 179099.0,
+    "prev_close_assets": 182522.02,
+    "available_cash": 30992.0,
     "initial_capital": 200000.0,
     "position_count": 4,
-    "position_ratio": 99.4,
-    "monthly_pnl": -22228.98,
-    "monthly_return_rate": -11.11,
-    "market_value": 176788.0,
-    "note": "收盘:市值176788.0+现金983.02=总资产177771.02"
+    "position_ratio": 82.7,
+    "monthly_pnl": -20901.0,
+    "monthly_return_rate": -10.45,
+    "market_value": 148107.0,
+    "note": "8/28修正:清仓国瓷/麦格/江波龙+减利通,买入鹏辉/飞南/大有。仓位82.7%"
   },
   "today_so_far": {
     "date": "2026-08-28",
-    "net_today": 6178.0,
-    "trade_count": 0,
-    "violation_count": 0,
-    "session": "evening_review",
-    "note": "8/28收盘:零交易。今日收益+6178。APEX月度-11.11%超阈值"
+    "net_today": -3423.02,
+    "trade_count": 7,
+    "violation_count": 3,
+    "session": "close_corrected",
+    "note": "8/28实际7笔交易:卖国瓷600/卖麦格300/卖江波龙100/卖利通200/买鹏辉800/买飞南1400/买大有4200。3笔新仓违反APEX熔断"
   },
   "positions": [
     {
-      "code": "301308",
-      "name": "江波龙",
-      "quantity": 100,
-      "cost_price": 386.73,
-      "stop_loss": 360.0,
-      "market_value": 37688.0
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 800,
+      "cost_price": 60.493,
+      "stop_loss": 57.0,
+      "market_value": 48688.0
+    },
+    {
+      "code": "301500",
+      "name": "飞南资源",
+      "quantity": 1400,
+      "cost_price": 23.933,
+      "stop_loss": 22.0,
+      "market_value": 33446.0
+    },
+    {
+      "code": "600403",
+      "name": "大有能源",
+      "quantity": 4200,
+      "cost_price": 7.332,
+      "stop_loss": 6.8,
+      "market_value": 29988.0
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "quantity": 500,
-      "cost_price": 121.737,
-      "stop_loss": 117.0,
-      "market_value": 59975.0
-    },
-    {
-      "code": "002851",
-      "name": "麦格米特",
       "quantity": 300,
-      "cost_price": 121.324,
-      "stop_loss": 115.76,
-      "market_value": 37785.0
-    },
-    {
-      "code": "300285",
-      "name": "国瓷材料",
-      "quantity": 600,
-      "cost_price": 64.013,
-      "stop_loss": 60.22,
-      "market_value": 41340.0
+      "cost_price": 120.968,
+      "stop_loss": 117.0,
+      "market_value": 35985.0
     }
   ],
   "validation": {
