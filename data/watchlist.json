@@ -1,102 +1,94 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T21:00:00+08:00",
+    "last_updated": "2026-08-28T23:00:00+08:00",
     "date": "2026-08-28",
-    "session": "evening_review",
-    "data_basis": "2026-08-28收盘(真实收盘价)",
-    "screening_criteria": "APEX 8/31结束→9/1完全解除+候选池重建+沃什偏鹰后评估",
-    "note": "8/28晚间:科技全线获利回吐。利通-4.21%逼近止损·星网锐捷涨停+10.01%(算力)·美股存储盘前跌>2%。9/1是关键评估日"
+    "session": "nightly_scan",
+    "data_basis": "2026-08-28收盘(腾讯行情真实收盘价)",
+    "screening_criteria": "7道闸预评估+半导体低位票中转池(7道闸>=4/7+涨幅<5%+RSI<70+价>MA20)+APEX二级熔断(8/31结束)",
+    "note": "8/28夜扫描:科技获利回吐,半导体-2.12%。持仓4只(鹏辉/飞南/大有/利通)。APEX熔断禁新仓至8/31,9/1解除评估。利通距止损117仅2.5%"
   },
   "watchlist": [
     {
-      "code": "301308",
-      "name": "江波龙",
+      "code": "sz300438",
+      "name": "鹏辉能源",
       "score": 5,
       "status": "holding",
-      "sector": "存储",
-      "today_close": 376.88,
-      "today_change_pct": -2.43,
+      "sector": "储能/电池",
+      "today_close": 60.86,
+      "today_change_pct": -2.36,
       "key_price": {
-        "support": 360,
-        "resistance": 415,
-        "stop_loss": 360,
-        "low_observed": 376.69,
-        "high_observed": 386.88
+        "support": 60.93,
+        "resistance": 64.51,
+        "stop_loss": 57.0
       },
-      "notes": "持仓100股·-2.55%浮亏·中报净利105.77亿·港股IPO通过·⚠️美股存储盘前跌>2%→9/1可能低开",
-      "holding_qty": 100
+      "notes": "持仓800股@60.493·浮盈+0.61%·H1扭亏8.16亿储能满产·止损57",
+      "holding_qty": 800
     },
     {
-      "code": "603629",
+      "code": "sz301500",
+      "name": "飞南资源",
+      "score": 5,
+      "status": "holding",
+      "sector": "有色/资源回收",
+      "today_close": 23.89,
+      "today_change_pct": 1.01,
+      "key_price": {
+        "support": 22.67,
+        "resistance": 25.32,
+        "stop_loss": 22.0
+      },
+      "notes": "持仓1400股@23.933·浮亏-0.18%·H1净利6.49亿+307%·PE17低·止损22",
+      "holding_qty": 1400
+    },
+    {
+      "code": "sh600403",
+      "name": "大有能源",
+      "score": 4,
+      "status": "holding",
+      "sector": "煤炭",
+      "today_close": 7.14,
+      "today_change_pct": 0.42,
+      "key_price": {
+        "support": 6.38,
+        "resistance": 7.57,
+        "stop_loss": 6.8
+      },
+      "notes": "持仓4200股@7.332·浮亏-2.62%·焦炭涨价4天2板·H1亏损6.43亿·止损6.8",
+      "holding_qty": 4200
+    },
+    {
+      "code": "sh603629",
       "name": "利通电子",
       "score": 3,
       "status": "holding",
-      "sector": "算力租赁/液冷",
+      "sector": "消费电子/结构件",
       "today_close": 119.95,
       "today_change_pct": -4.21,
       "key_price": {
-        "support": 119,
-        "resistance": 140,
-        "stop_loss": 117,
-        "low_observed": 119.62,
-        "high_observed": 125.19
+        "support": 119.24,
+        "resistance": 127.15,
+        "stop_loss": 117.0
       },
-      "notes": "持仓500股·-1.47%浮亏·🔴119.95距止损117仅2.5%!9/1开盘第一优先级!破117立即止损",
-      "holding_qty": 500
-    },
-    {
-      "code": "002851",
-      "name": "麦格米特",
-      "score": 5,
-      "status": "holding",
-      "sector": "电力电子/机器人",
-      "today_close": 125.95,
-      "today_change_pct": -1.34,
-      "key_price": {
-        "support": 125,
-        "resistance": 140,
-        "stop_loss": 115.76,
-        "low_observed": 125.68,
-        "high_observed": 133.98
-      },
-      "notes": "持仓300股·+3.81%浮盈·冲高133.98回落125.95·PE328极高·发改委具身智能政策利好",
+      "notes": "持仓300股@120.968(减仓后)·浮亏-0.84%·🔴距止损117仅2.5%·9/1破117立即止损",
       "holding_qty": 300
     },
     {
-      "code": "300285",
-      "name": "国瓷材料",
-      "score": 6,
-      "status": "holding",
-      "sector": "MLCC/新材料",
-      "today_close": 68.9,
-      "today_change_pct": -1.59,
-      "key_price": {
-        "support": 68,
-        "resistance": 75,
-        "stop_loss": 60.22,
-        "low_observed": 68.09,
-        "high_observed": 71.87
-      },
-      "notes": "持仓600股·+7.63%浮盈·MLCC涨价25-30%·QFII新增·换手11.51%冲高回落·跌破68考虑减半仓",
-      "holding_qty": 600
-    },
-    {
-      "code": "000636",
+      "code": "sz000636",
       "name": "风华高科",
       "score": 2,
       "status": "sold_stoploss",
-      "sector": "MLCC被动元件",
+      "sector": "MLCC/被动元件",
       "today_close": 55.45,
       "today_change_pct": 2.48,
       "key_price": {
-        "support": 51.88,
-        "resistance": 58,
+        "support": 55.92,
+        "resistance": 58.78,
         "stop_loss": 51.5
       },
-      "notes": "8/24止损清仓·8/27+6.08%·今日+2.48%·MLCC涨价受益·观察中"
+      "notes": ""
     },
     {
-      "code": "002747",
+      "code": "sz002747",
       "name": "埃斯顿",
       "score": 1,
       "status": "sold_stoploss",
@@ -104,44 +96,29 @@
       "today_close": 31.49,
       "today_change_pct": -1.01,
       "key_price": {
-        "support": 31.3,
-        "resistance": 35.7,
+        "support": 32.88,
+        "resistance": 33.38,
         "stop_loss": 31.3
       },
-      "notes": "8/24止损清仓·继续弱势-1.01%·验证清仓决策正确"
+      "notes": ""
     },
     {
-      "code": "002396",
+      "code": "sz002396",
       "name": "星网锐捷",
       "score": 5,
-      "status": "candidate",
+      "status": "watch",
       "sector": "通信/算力",
       "today_close": 36.69,
       "today_change_pct": 10.01,
       "key_price": {
-        "support": 33,
-        "resistance": 40,
-        "stop_loss": 32
+        "support": 29.86,
+        "resistance": 38.89,
+        "stop_loss": 32.0
       },
-      "notes": "🔴涨停+10.01%!算力龙头·封单1.45亿。9/1关注是否连板/高开回落。追高风险大"
+      "notes": "涨停+10.01%算力龙头,9/1关注是否连板"
     },
     {
-      "code": "300857",
-      "name": "协创数据",
-      "score": 3,
-      "status": "watch",
-      "sector": "算力租赁",
-      "today_close": 253.88,
-      "today_change_pct": -2.05,
-      "key_price": {
-        "support": 250,
-        "resistance": 280,
-        "stop_loss": 240
-      },
-      "notes": "算力租赁·9/1候选池·-2.05%回调·负债率83%触发APEX硬门禁⚠️"
-    },
-    {
-      "code": "300308",
+      "code": "sz300308",
       "name": "中际旭创",
       "score": 4,
       "status": "watch",
@@ -149,14 +126,134 @@
       "today_close": 858.35,
       "today_change_pct": -0.9,
       "key_price": {
-        "support": 840,
-        "resistance": 920,
-        "stop_loss": 800
+        "support": 887.9,
+        "resistance": 909.85,
+        "stop_loss": 800.0
       },
-      "notes": "光模块龙头·-0.9%回调·9/1候选池·主力持续流出"
+      "notes": "光模块龙头回调,9/1候选池"
     },
     {
-      "code": "601869",
+      "code": "sh603986",
+      "name": "兆易创新",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/存储",
+      "today_close": 396.82,
+      "today_change_pct": -3.5,
+      "key_price": {
+        "support": 387.97,
+        "resistance": 420.63,
+        "stop_loss": 360.0
+      },
+      "notes": "存储龙头-3.5%回吐,美股存储盘前跌>2%"
+    },
+    {
+      "code": "sz002156",
+      "name": "通富微电",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/封测",
+      "today_close": 63.75,
+      "today_change_pct": 0.03,
+      "key_price": {
+        "support": 60.4,
+        "resistance": 67.58,
+        "stop_loss": 57.0
+      },
+      "notes": "AMD封测龙头抗跌,中转池入选"
+    },
+    {
+      "code": "sh688041",
+      "name": "海光信息",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/CPU",
+      "today_close": 245.49,
+      "today_change_pct": -0.2,
+      "key_price": {
+        "support": 259.5,
+        "resistance": 260.22,
+        "stop_loss": 220.0
+      },
+      "notes": "国产CPU龙头,9/1候选池"
+    },
+    {
+      "code": "sh688008",
+      "name": "澜起科技",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/存储接口",
+      "today_close": 213,
+      "today_change_pct": -3.72,
+      "key_price": {
+        "support": 200.97,
+        "resistance": 225.78,
+        "stop_loss": 200.0
+      },
+      "notes": "DDR5接口龙头,中转池入选"
+    },
+    {
+      "code": "sz001309",
+      "name": "德明利",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/存储",
+      "today_close": 429.03,
+      "today_change_pct": -0.17,
+      "key_price": {
+        "support": 389.48,
+        "resistance": 454.77,
+        "stop_loss": 380.0
+      },
+      "notes": "PE14极低,中转池入选"
+    },
+    {
+      "code": "sh688825",
+      "name": "长鑫科技",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/DRAM",
+      "today_close": 58.6,
+      "today_change_pct": -0.88,
+      "key_price": {
+        "support": 53.98,
+        "resistance": 62.12,
+        "stop_loss": 53.0
+      },
+      "notes": "DRAM,中转池入选"
+    },
+    {
+      "code": "sh600183",
+      "name": "生益科技",
+      "score": 4,
+      "status": "watch",
+      "sector": "PCB/覆铜板",
+      "today_close": 145.65,
+      "today_change_pct": 3.32,
+      "key_price": {
+        "support": 128.37,
+        "resistance": 154.39,
+        "stop_loss": 125.0
+      },
+      "notes": "PCB+3.32%逆势走强"
+    },
+    {
+      "code": "sz300857",
+      "name": "协创数据",
+      "score": 3,
+      "status": "watch",
+      "sector": "算力租赁",
+      "today_close": 253.88,
+      "today_change_pct": -2.05,
+      "key_price": {
+        "support": 241.4,
+        "resistance": 269.11,
+        "stop_loss": 240.0
+      },
+      "notes": "算力租赁,负债率83%触发APEX硬门禁"
+    },
+    {
+      "code": "sh601869",
       "name": "长飞光纤",
       "score": 3,
       "status": "watch",
@@ -164,56 +261,458 @@
       "today_close": 422.36,
       "today_change_pct": -1.04,
       "key_price": {
-        "support": 410,
-        "resistance": 460,
-        "stop_loss": 390
+        "support": 343.22,
+        "resistance": 447.7,
+        "stop_loss": 390.0
       },
-      "notes": "光纤龙头·-1.04%·9/1候选池"
-    },
-    {
-      "code": "603986",
-      "name": "兆易创新",
-      "score": 4,
-      "status": "watch",
-      "sector": "半导体/存储",
-      "today_close": 394.5,
-      "today_change_pct": -3.5,
-      "key_price": {
-        "support": 380,
-        "resistance": 430,
-        "stop_loss": 360
-      },
-      "notes": "存储龙头-3.5%回吐·美股存储盘前跌>2%→9/1可能继续承压·9/1候选池"
-    },
-    {
-      "code": "002156",
-      "name": "通富微电",
-      "score": 4,
-      "status": "watch",
-      "sector": "半导体/封测",
-      "today_close": 62.0,
-      "today_change_pct": -2.7,
-      "key_price": {
-        "support": 60,
-        "resistance": 68,
-        "stop_loss": 57
-      },
-      "notes": "AMD封测龙头-2.7%回吐·9/1候选池"
-    },
-    {
-      "code": "688041",
-      "name": "海光信息",
-      "score": 4,
-      "status": "watch",
-      "sector": "AI芯片/CPU",
-      "today_close": 245.0,
-      "today_change_pct": -2.0,
-      "key_price": {
-        "support": 235,
-        "resistance": 265,
-        "stop_loss": 220
-      },
-      "notes": "国产CPU龙头-2.0%回吐·9/1候选池"
+      "notes": "光纤龙头回调"
     }
-  ]
+  ],
+  "screening_summary": {
+    "total_pool": 17,
+    "hold_alert": 1,
+    "hold": 4,
+    "watch_avoid_apex_meltdown": 11,
+    "passed_seven_gates": 0,
+    "new_position_recommendation": "🔴全天零新仓。APEX二级熔断(月度-10.45%>10%)+半导体回吐+利通逼近止损=三重防御,9/1解除后再评估"
+  },
+  "transit_pool": [
+    {
+      "code": "sz002156",
+      "name": "通富微电",
+      "price": 63.75,
+      "change_pct": 0.03,
+      "pe": 38.33,
+      "turnover_rate": 6.05,
+      "gates_passed": 6,
+      "sector": "半导体/封测",
+      "added_date": "2026-08-28",
+      "reason": "通富微电 6/7闸 价63.75>MA2062.27 RSI53.49未超买 涨0.03%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 76,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=38.33"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "主力净流入7582.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价63.75>MA2062.27"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手6.05%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=53.49"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 60.4,
+        "resistance": 67.58,
+        "buy_range": [
+          61.0,
+          62.82
+        ]
+      }
+    },
+    {
+      "code": "sh688012",
+      "name": "中微公司",
+      "price": 367,
+      "change_pct": -2.4,
+      "pe": 83.09,
+      "turnover_rate": 1.32,
+      "gates_passed": 4,
+      "sector": "半导体/设备",
+      "added_date": "2026-08-28",
+      "reason": "中微公司 4/7闸 价367>MA20365.15 RSI48.69未超买 涨-2.4%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 57,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=83.09"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "主力净流出24665.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价367>MA20365.15"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.32%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=48.69"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 354.2,
+        "resistance": 389.02,
+        "buy_range": [
+          357.74,
+          368.37
+        ]
+      }
+    },
+    {
+      "code": "sh688037",
+      "name": "芯源微",
+      "price": 367.74,
+      "change_pct": -1.94,
+      "pe": 1162.19,
+      "turnover_rate": 1.99,
+      "gates_passed": 5,
+      "sector": "半导体/设备",
+      "added_date": "2026-08-28",
+      "reason": "芯源微 5/7闸 价367.74>MA20335.55 RSI60.11未超买 涨-1.94%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 62,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=1162.19"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "主力净流入1796.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价367.74>MA20335.55"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.99%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=60.11"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 325.48,
+        "resistance": 389.8,
+        "buy_range": [
+          328.73,
+          338.5
+        ]
+      }
+    },
+    {
+      "code": "sh688361",
+      "name": "中科飞测",
+      "price": 362.66,
+      "change_pct": -2.96,
+      "pe": -2531.69,
+      "turnover_rate": 1.93,
+      "gates_passed": 4,
+      "sector": "半导体/设备",
+      "added_date": "2026-08-28",
+      "reason": "中科飞测 4/7闸 价362.66>MA20347.62 RSI55.17未超买 涨-2.96%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 52,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=-2531.69"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "主力净流出7268.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价362.66>MA20347.62"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.93%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=55.17"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 337.19,
+        "resistance": 384.42,
+        "buy_range": [
+          340.56,
+          350.68
+        ]
+      }
+    },
+    {
+      "code": "sz300604",
+      "name": "长川科技",
+      "price": 277.11,
+      "change_pct": -2.7,
+      "pe": 95.77,
+      "turnover_rate": 3.13,
+      "gates_passed": 4,
+      "sector": "半导体/设备",
+      "added_date": "2026-08-28",
+      "reason": "长川科技 4/7闸 价277.11>MA20276.63 RSI48.72未超买 涨-2.7%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 62,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=95.77"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "主力净流出15033.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价277.11>MA20276.63"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手3.13%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=48.72"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 268.33,
+        "resistance": 293.74,
+        "buy_range": [
+          271.01,
+          279.06
+        ]
+      }
+    },
+    {
+      "code": "sz001309",
+      "name": "德明利",
+      "price": 429.03,
+      "change_pct": -0.17,
+      "pe": 14.26,
+      "turnover_rate": 11.62,
+      "gates_passed": 5,
+      "sector": "半导体/存储",
+      "added_date": "2026-08-28",
+      "reason": "德明利 5/7闸 价429.03>MA20401.53 RSI62.11未超买 涨-0.17%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 67,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=14.26"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "主力净流出42491.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价429.03>MA20401.53"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手11.62%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=62.11"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 389.48,
+        "resistance": 454.77,
+        "buy_range": [
+          393.37,
+          405.06
+        ]
+      }
+    },
+    {
+      "code": "sh688008",
+      "name": "澜起科技",
+      "price": 213,
+      "change_pct": -3.72,
+      "pe": 84.58,
+      "turnover_rate": 3.4,
+      "gates_passed": 4,
+      "sector": "半导体/存储接口",
+      "added_date": "2026-08-28",
+      "reason": "澜起科技 4/7闸 价213>MA20207.19 RSI56.67未超买 涨-3.72%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 57,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=84.58"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "主力净流出135405.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价213>MA20207.19"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手3.4%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=56.67"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 200.97,
+        "resistance": 225.78,
+        "buy_range": [
+          202.98,
+          209.01
+        ]
+      }
+    },
+    {
+      "code": "sh688825",
+      "name": "长鑫科技",
+      "price": 58.6,
+      "change_pct": -0.88,
+      "pe": 48.62,
+      "turnover_rate": 5.02,
+      "gates_passed": 5,
+      "sector": "半导体/DRAM",
+      "added_date": "2026-08-28",
+      "reason": "长鑫科技 5/7闸 价58.6>MA2055.65 RSI61.67未超买 涨-0.88%<5%,半导体低位票",
+      "status": "pending_review",
+      "notes": "APEX熔断8/31结束,9/1解除后优先评估。半导体-2.12%回吐日仍收于MA20上方的抗跌标的",
+      "score": 67,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3013涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=48.62"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "主力净流出63786.0万"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价58.6>MA2055.65"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手5.02%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=61.67"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体-2.12%"
+        }
+      },
+      "key_price": {
+        "support": 53.98,
+        "resistance": 62.12,
+        "buy_range": [
+          54.52,
+          56.14
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "date_2026_08_28": {
+      "pre_market_outlook": "冲高回落科技回吐(已兑现)",
+      "apex_status": "二级熔断(月度-10.45%>10%阈值),8/31结束,9/1解除",
+      "key_action": "①9/1开盘优先:利通119.95距止损117仅2.5%,破117立即止损②半导体中转池7只抗跌标的等待9/1评估③全天零新仓④鹏辉距成本极近防浮盈回吐",
+      "position_status": "4只持仓(鹏辉800/飞南1400/大有4200/利通300),仓位82.7%,现金30992",
+      "risk_level": "critical",
+      "overseas_drivers": "美股存储股盘前跌>2%(闪迪/美光/西数)+沃什偏鹰年底加息>70%",
+      "domestic_catalysts": "农业/化工/地产领涨+星网锐捷涨停(算力)+MLCC涨价+焦炭涨价概念",
+      "risk_events": "8/29-8/30休市+8/31 APEX结束+9/1完全解除评估持仓+美股存储股走势",
+      "next_action": "9/1开盘核心:利通止损执行(首优先)+APEX解除后持仓全面评估+半导体中转池7只标的复核"
+    }
+  }
 }
