@@ -1,7 +1,7 @@
 {
   "meta": {
-    "date": "2026-08-27",
-    "last_updated": "2026-08-27T11:33:00+08:00",
+    "date": "2026-08-28",
+    "last_updated": "2026-08-28T11:34:00+08:00",
     "source": "午间数据刷新(无交易)"
   },
   "summary": {
@@ -10,8 +10,8 @@
     "sell_count": 0,
     "violation_count": 0,
     "realized_pnl": 0,
-    "net_today": 9160.0,
-    "note": "8/27午间:零交易。持仓浮盈+9160.0。APEX熔断禁新仓",
+    "net_today": -3342.0,
+    "note": "8/28午间:零交易。APEX月度-10.41%超阈值·禁新仓",
     "total_trades": 0
   },
   "trades": [],
