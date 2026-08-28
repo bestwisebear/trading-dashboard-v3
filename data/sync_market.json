@@ -1,466 +1,514 @@
 {
   "meta": {
-    "generated_at": "2026-08-27T17:02:22.946847+08:00",
-    "session": "close"
-  },
-  "positions": {
-    "meta": {
-      "last_updated": "2026-08-27T16:57:53.178429+08:00",
-      "date": "2026-08-27",
-      "session": "close",
-      "source": "收盘价(腾讯API)",
-      "price_source note": "15:00后收盘价",
-      "data_basis": "2026-08-27盘后(收盘价)"
-    },
-    "summary": {
-      "total_market_value": 181539.0,
-      "available_cash": 983.02,
-      "total_assets": 182522.02,
-      "net_today": 10929.0,
-      "today_return": 6.3691,
-      "total_pnl_amount": -17477.98,
-      "monthly_pnl": -17477.98,
-      "prev_close_assets": 171593.02,
-      "position_ratio": 99.5,
-      "today_return_rate": 6.3691,
-      "monthly_return_rate": -8.74,
-      "initial_capital": 200000.0,
-      "position_count": 4,
-      "note": "8/27收盘:4只持仓全线大涨。国瓷+9.19%/利通+6.51%/江波龙+6.05%/麦格+3.70%。浮盈+10929.0",
-      "total_pnl_percent": -8.74
-    },
-    "positions": [
-      {
-        "code": "301308",
-        "name": "江波龙",
-        "quantity": 100,
-        "cost_price": 386.73,
-        "stop_loss": 360.0,
-        "close_price": 386.25,
-        "pre_close": 364.2,
-        "open": 369.0,
-        "high": 386.25,
-        "low": 366.02,
-        "change_pct": 6.05,
-        "change_amount": 22.05,
-        "market_value": 38625.0,
-        "floating_pnl": -48.0,
-        "floating_pnl_pct": -0.12,
-        "today_pnl": 2205.0,
-        "volume": 150492,
-        "amount": 570331,
-        "turnover_rate": 5.34,
-        "pe_ratio": 13.85,
-        "note": "收盘386.25(+6.05%)。高386.25/低366.02",
-        "current_price": 386.25,
-        "pnl_percent": -0.12,
-        "pnl_amount": -48.0
-      },
-      {
-        "code": "603629",
-        "name": "利通电子",
-        "quantity": 500,
-        "cost_price": 121.737,
-        "stop_loss": 117.0,
-        "close_price": 125.22,
-        "pre_close": 117.57,
-        "open": 119.99,
-        "high": 125.37,
-        "low": 117.1,
-        "change_pct": 6.51,
-        "change_amount": 7.65,
-        "market_value": 62610.0,
-        "floating_pnl": 1741.5,
-        "floating_pnl_pct": 2.86,
-        "today_pnl": 3825.0,
-        "volume": 395272,
-        "amount": 482238,
-        "turnover_rate": 10.96,
-        "pe_ratio": 85.93,
-        "note": "收盘125.22(+6.51%)。高125.37/低117.1",
-        "current_price": 125.22,
-        "pnl_percent": 2.86,
-        "pnl_amount": 1741.5
-      },
-      {
-        "code": "002851",
-        "name": "麦格米特",
-        "quantity": 300,
-        "cost_price": 121.324,
-        "stop_loss": 115.76,
-        "close_price": 127.66,
-        "pre_close": 123.11,
-        "open": 125.8,
-        "high": 128.0,
-        "low": 123.12,
-        "change_pct": 3.7,
-        "change_amount": 4.55,
-        "market_value": 38298.0,
-        "floating_pnl": 1900.8,
-        "floating_pnl_pct": 5.22,
-        "today_pnl": 1365.0,
-        "volume": 292031,
-        "amount": 367280,
-        "turnover_rate": 5.94,
-        "pe_ratio": 487.53,
-        "note": "收盘127.66(+3.7%)。高128.0/低123.12",
-        "current_price": 127.66,
-        "pnl_percent": 5.22,
-        "pnl_amount": 1900.8
-      },
-      {
-        "code": "300285",
-        "name": "国瓷材料",
-        "quantity": 600,
-        "cost_price": 64.013,
-        "stop_loss": 60.22,
-        "close_price": 70.01,
-        "pre_close": 64.12,
-        "open": 64.83,
-        "high": 70.71,
-        "low": 63.68,
-        "change_pct": 9.19,
-        "change_amount": 5.89,
-        "market_value": 42006.0,
-        "floating_pnl": 3598.2,
-        "floating_pnl_pct": 9.37,
-        "today_pnl": 3534.0,
-        "volume": 1119980,
-        "amount": 758548,
-        "turnover_rate": 13.13,
-        "pe_ratio": 108.83,
-        "note": "收盘70.01(+9.19%)。高70.71/低63.68",
-        "current_price": 70.01,
-        "pnl_percent": 9.37,
-        "pnl_amount": 3598.2
-      }
-    ]
+    "date": "2026-08-28",
+    "last_updated": "2026-08-28T16:53:00+08:00"
   },
   "market": {
     "meta": {
-      "last_updated": "2026-08-27T16:58:53.515324+08:00",
-      "date": "2026-08-27",
+      "last_updated": "2026-08-28T16:53:00+08:00",
+      "date": "2026-08-28",
       "session": "close",
-      "source": "2026-08-27盘后(收盘价)",
-      "data_basis": "2026-08-27收盘:英伟达财报催化全面大涨+成交2.14万亿放量3191亿",
-      "note": "8/27收盘:三大指数涨>1%,科创50+3.77%领涨。成交2.14万亿放量,涨跌3394:1944,涨停77/跌停4。算力硬件全面爆发"
+      "source": "2026-08-28收盘(真实收盘价)",
+      "data_basis": "2026-08-28收盘:冲高回落·权重拖累·题材活跃·成交2.12万亿缩量232亿",
+      "note": "8/28收盘:沪指-0.11%·深成-0.68%·创业板-1.41%·科创50-1.85%。3013涨/2390跌·83涨停/2跌停。农业/化工领涨·半导体/医药领跌"
     },
     "indices": {
       "sh000001": {
         "name": "上证指数",
-        "close": 3956.57,
-        "change_pct": 1.13,
-        "pre_close": 3912.52,
-        "open": 3911.89,
-        "high": 3958.03,
-        "low": 3909.31,
-        "volume": 516777549,
-        "amount": 101022657,
-        "pe_ratio": 17.94,
-        "note": "收盘3956.57(+1.13%)"
+        "close": 3952.18,
+        "change_pct": -0.11,
+        "pre_close": 3956.57,
+        "open": 3950.24,
+        "high": 3970.31,
+        "low": 3947.8,
+        "volume": 510581645,
+        "amount": 97036515,
+        "pe_ratio": 17.52,
+        "note": "收盘3952.18(-0.11%)·高3970.31/低3947.80"
       },
       "sz399001": {
         "name": "深证成指",
-        "close": 14048.88,
-        "change_pct": 1.5,
-        "pre_close": 13841.33,
-        "open": 13876.79,
-        "high": 14049.99,
-        "low": 13808.62,
-        "volume": 614047288,
-        "amount": 111570023,
-        "pe_ratio": 44.11,
-        "note": "收盘14048.88(+1.50%)"
+        "close": 13953.07,
+        "change_pct": -0.68,
+        "pre_close": 14048.88,
+        "open": 14019.28,
+        "high": 14148.68,
+        "low": 13949.62,
+        "volume": 630346080,
+        "amount": 113134987,
+        "pe_ratio": 43.4,
+        "note": "收盘13953.07(-0.68%)·冲高回落"
       },
       "sz399006": {
         "name": "创业板指",
-        "close": 3473.35,
-        "change_pct": 1.71,
-        "pre_close": 3414.88,
-        "open": 3437.9,
-        "high": 3474.07,
-        "low": 3408.8,
-        "volume": 182569439,
-        "amount": 54232019,
-        "pe_ratio": 57.33,
-        "note": "收盘3473.35(+1.71%)"
-      },
-      "sh000688": {
-        "name": "科创50",
-        "close": 1693.48,
-        "change_pct": 3.77,
-        "pre_close": 1632.02,
-        "note": "收盘1693.48(+3.77%)领涨"
+        "close": 3424.4,
+        "change_pct": -1.41,
+        "pre_close": 3473.35,
+        "open": 3453.73,
+        "high": 3521.47,
+        "low": 3423.07,
+        "volume": 186154222,
+        "amount": 54425510,
+        "pe_ratio": 56.38,
+        "note": "收盘3424.40(-1.41%)·权重拖累"
       }
     },
     "market_breadth": {
-      "up_count": 3394,
-      "down_count": 1944,
-      "flat_count": 212,
-      "total_limit_up": 77,
-      "total_limit_down": 4,
-      "note": "收盘:3394涨/1944跌/212平。涨停77/跌停4"
+      "up_count": 3013,
+      "down_count": 2390,
+      "flat_count": 144,
+      "total_limit_up": 83,
+      "total_limit_down": 2,
+      "note": "3013涨/2390跌·涨跌比1.26:1·83涨停/2跌停"
     },
     "volume": {
-      "total_amount": 21412,
-      "prev_amount": 18221,
-      "note": "收盘成交21412亿(2.14万亿),较昨日放量3191亿。量价齐升"
+      "total_amount": 21177,
+      "prev_amount": 21412,
+      "change": -235,
+      "unit": "亿",
+      "note": "成交2.12万亿·较昨日缩量232亿"
     },
-    "north_flow": {
-      "net_flow": 179.49,
-      "note": "深股通半日净流入179.49亿,全天北向净流入。融资融券半日净流入317.82亿。合计近500亿增量资金"
-    },
-    "sector_top10_up": [
-      {
-        "name": "非金属材料",
-        "change_pct": 9.63,
-        "lead_stock": "联瑞新材(+20.00)"
-      },
-      {
-        "name": "电子化学品",
-        "change_pct": 5.56,
-        "lead_stock": "宏昌电子(+10.02)"
-      },
-      {
-        "name": "玻璃玻纤",
-        "change_pct": 5.36,
-        "lead_stock": "中国巨石(+7.95)"
-      },
-      {
-        "name": "元件",
-        "change_pct": 5.09,
-        "lead_stock": "生益电子(+14.32)"
-      },
-      {
-        "name": "其他电子",
-        "change_pct": 4.68,
-        "lead_stock": "瑞可达(+12.16)"
-      },
-      {
-        "name": "半导体",
-        "change_pct": 4.54,
-        "lead_stock": "赛微电子(+20.01)"
-      },
-      {
-        "name": "覆铜板",
-        "change_pct": 7.92,
-        "lead_stock": "金安国纪(+10.00)"
-      },
-      {
-        "name": "模拟芯片",
-        "change_pct": 7.39,
-        "lead_stock": "晶丰明源(+20.00)"
-      },
-      {
-        "name": "陶瓷基板",
-        "change_pct": 5.86,
-        "lead_stock": "科翔股份(+14.01)"
-      },
-      {
-        "name": "次新股",
-        "change_pct": 3.73,
-        "lead_stock": "花溪科技(+30.00)"
-      }
-    ],
-    "sector_top10_down": [
-      {
-        "name": "发电设备",
-        "change_pct": -1.63,
-        "lead_stock": "阳光电源(-12.24)"
-      },
-      {
-        "name": "电器行业",
-        "change_pct": -1.09,
-        "lead_stock": "思源电气(-10.00)"
-      },
-      {
-        "name": "酿酒行业",
-        "change_pct": -0.75,
-        "lead_stock": ""
-      },
-      {
-        "name": "公路桥梁",
-        "change_pct": -0.63,
-        "lead_stock": ""
-      },
-      {
-        "name": "传媒娱乐",
-        "change_pct": -0.31,
-        "lead_stock": ""
-      },
-      {
-        "name": "供水供气",
-        "change_pct": -0.25,
-        "lead_stock": ""
-      },
-      {
-        "name": "交通运输",
-        "change_pct": -0.21,
-        "lead_stock": ""
-      },
-      {
-        "name": "开发区",
-        "change_pct": -0.16,
-        "lead_stock": ""
-      },
-      {
-        "name": "纺织机械",
-        "change_pct": -0.08,
-        "lead_stock": ""
-      },
-      {
-        "name": "金融行业",
-        "change_pct": 0.06,
-        "lead_stock": "银行普跌"
-      }
-    ],
-    "fund_flow": {
-      "top_inflow": [
+    "sector_performance": {
+      "leading": [
         {
-          "sector": "半导体",
-          "net_inflow": 18004.1,
-          "change_pct": 4.54
+          "name": "渔业",
+          "change_pct": 4.55,
+          "lead_stock": "中水渔业(+10%)"
         },
         {
-          "sector": "元件",
-          "net_inflow": 12871.7,
-          "change_pct": 5.09
+          "name": "房地产服务",
+          "change_pct": 3.75,
+          "lead_stock": "我爱我家(涨停)"
+        },
+        {
+          "name": "饰品",
+          "change_pct": 3.42,
+          "lead_stock": "深中华A(+9.99%)"
+        },
+        {
+          "name": "炼化及贸易",
+          "change_pct": 2.66,
+          "lead_stock": "华锦股份(+10.08%)"
+        },
+        {
+          "name": "农产品加工",
+          "change_pct": 2.65,
+          "lead_stock": "冠农股份(涨停)"
+        },
+        {
+          "name": "化学原料",
+          "change_pct": 2.42,
+          "lead_stock": "雪天盐业(+10.02%)"
+        }
+      ],
+      "lagging": [
+        {
+          "name": "半导体",
+          "change_pct": -3.5,
+          "note": "获利回吐·主力净流出128亿"
+        },
+        {
+          "name": "医药/CRO",
+          "change_pct": -2.8,
+          "note": "万邦医药-17%领跌"
+        },
+        {
+          "name": "电信运营",
+          "change_pct": -2.0,
+          "note": ""
+        },
+        {
+          "name": "保险",
+          "change_pct": -1.5,
+          "note": ""
+        },
+        {
+          "name": "银行",
+          "change_pct": -1.2,
+          "note": "中报承压"
+        }
+      ]
+    },
+    "capital_flow": {
+      "inflow_top": [
+        {
+          "sector": "软件开发",
+          "net_flow_yi": 22.46
+        },
+        {
+          "sector": "化学制品",
+          "net_flow_yi": 17.96
+        },
+        {
+          "sector": "化学原料",
+          "net_flow_yi": 10.44
+        }
+      ],
+      "outflow_top": [
+        {
+          "sector": "半导体",
+          "net_flow_yi": -128.0
         },
         {
           "sector": "通信设备",
-          "net_inflow": 10414.25,
-          "change_pct": 3.85
-        }
-      ],
-      "top_outflow": [
-        {
-          "sector": "光伏设备",
-          "net_inflow": -1926.0,
-          "change_pct": -1.63
+          "net_flow_yi": -61.0
         },
         {
-          "sector": "银行",
-          "net_inflow": -1352.0,
-          "change_pct": 0.06
-        },
-        {
-          "sector": "电力",
-          "net_inflow": -1575.0,
-          "change_pct": -0.25
+          "sector": "元件",
+          "net_flow_yi": -26.0
         }
       ],
-      "note": "资金全面转向科技进攻。半导体/元件/通信设备净流入居前"
+      "note": "资金从科技获利回吐·转向化工/软件防御性板块"
+    },
+    "northbound": {
+      "net_flow_yi": -272,
+      "note": "北向资金全天净流出272亿·10:00后转为流出·拉高诱多"
+    },
+    "margin_trading": {
+      "balance_yi": 26280.8,
+      "change_pct": 0.43,
+      "note": "融资余额微增0.43%至26280.8亿·杠杆情绪一般"
     },
     "hot_sectors_up": [
       {
-        "name": "非金属材料",
-        "change_pct": 9.63,
-        "lead_stock": "联瑞新材(+20.00)"
+        "name": "渔业",
+        "change_pct": 4.55,
+        "lead_stock": "中水渔业(+10%)"
       },
       {
-        "name": "电子化学品",
-        "change_pct": 5.56,
-        "lead_stock": "宏昌电子(+10.02)"
+        "name": "房地产服务",
+        "change_pct": 3.75,
+        "lead_stock": "我爱我家(涨停)"
       },
       {
-        "name": "玻璃玻纤",
-        "change_pct": 5.36,
-        "lead_stock": "中国巨石(+7.95)"
+        "name": "饰品",
+        "change_pct": 3.42,
+        "lead_stock": "深中华A(+9.99%)"
       },
       {
-        "name": "元件",
-        "change_pct": 5.09,
-        "lead_stock": "生益电子(+14.32)"
+        "name": "炼化及贸易",
+        "change_pct": 2.66,
+        "lead_stock": "华锦股份(+10.08%)"
       },
       {
-        "name": "其他电子",
-        "change_pct": 4.68,
-        "lead_stock": "瑞可达(+12.16)"
+        "name": "农产品加工",
+        "change_pct": 2.65,
+        "lead_stock": "冠农股份(涨停)"
       },
       {
-        "name": "半导体",
-        "change_pct": 4.54,
-        "lead_stock": "赛微电子(+20.01)"
-      },
-      {
-        "name": "覆铜板",
-        "change_pct": 7.92,
-        "lead_stock": "金安国纪(+10.00)"
-      },
-      {
-        "name": "模拟芯片",
-        "change_pct": 7.39,
-        "lead_stock": "晶丰明源(+20.00)"
-      },
-      {
-        "name": "陶瓷基板",
-        "change_pct": 5.86,
-        "lead_stock": "科翔股份(+14.01)"
-      },
-      {
-        "name": "次新股",
-        "change_pct": 3.73,
-        "lead_stock": "花溪科技(+30.00)"
+        "name": "化学原料",
+        "change_pct": 2.42,
+        "lead_stock": "雪天盐业(+10.02%)"
       }
     ],
     "hot_sectors_down": [
       {
-        "name": "发电设备",
-        "change_pct": -1.63,
-        "lead_stock": "阳光电源(-12.24)"
+        "name": "半导体",
+        "change_pct": -3.5,
+        "note": "获利回吐·主力-128亿"
       },
       {
-        "name": "电器行业",
-        "change_pct": -1.09,
-        "lead_stock": "思源电气(-10.00)"
+        "name": "CRO/医药",
+        "change_pct": -2.8,
+        "note": "万邦医药-17%"
       },
       {
-        "name": "酿酒行业",
-        "change_pct": -0.75,
-        "lead_stock": ""
+        "name": "电信运营",
+        "change_pct": -2.0,
+        "note": ""
       },
       {
-        "name": "公路桥梁",
-        "change_pct": -0.63,
-        "lead_stock": ""
+        "name": "保险",
+        "change_pct": -1.5,
+        "note": ""
       },
       {
-        "name": "传媒娱乐",
-        "change_pct": -0.31,
-        "lead_stock": ""
-      },
-      {
-        "name": "供水供气",
-        "change_pct": -0.25,
-        "lead_stock": ""
-      },
-      {
-        "name": "交通运输",
-        "change_pct": -0.21,
-        "lead_stock": ""
-      },
-      {
-        "name": "开发区",
-        "change_pct": -0.16,
-        "lead_stock": ""
-      },
-      {
-        "name": "纺织机械",
-        "change_pct": -0.08,
-        "lead_stock": ""
-      },
-      {
-        "name": "金融行业",
-        "change_pct": 0.06,
-        "lead_stock": "银行普跌"
+        "name": "银行",
+        "change_pct": -1.2,
+        "note": "中报承压"
       }
     ],
     "market_stats": {
-      "rise_count": 3394,
-      "fall_count": 1944,
-      "turnover_comment": "2.14万亿放量3191亿,量价齐升",
-      "total_limit_up": 77,
-      "total_limit_down": 4
+      "rise_count": 3013,
+      "fall_count": 2390,
+      "turnover_comment": "成交2.12万亿·较昨日缩量232亿",
+      "limit_up": 83,
+      "limit_down": 2
     }
+  },
+  "bottom_signals": {
+    "meta": {
+      "last_updated": "2026-08-28T16:53:00+08:00",
+      "date": "2026-08-28",
+      "session": "close",
+      "data_as_of": "2026-08-28收盘",
+      "note": "2026-08-28收盘底部信号3/5(与8/27持平)。成交2.12万亿缩量232亿。涨跌3013家>3000阈值勉强达标。连续4天不创新低。北向净流出272亿❌"
+    },
+    "signals": [
+      {
+        "id": 1,
+        "name": "缩量止跌",
+        "condition": "成交额≤1.5万亿",
+        "today_value": "2026-08-28:2.12万亿",
+        "satisfied": false,
+        "detail": "2026-08-28成交21177亿(2.12万亿),较昨日2.14万亿缩量232亿。仍远>1.5万亿阈值。❌不满足"
+      },
+      {
+        "id": 2,
+        "name": "跌停减少",
+        "condition": "跌停<30家",
+        "today_value": "2026-08-28:2家",
+        "satisfied": true,
+        "detail": "涨停83/跌停2。恐慌性跌停极少,市场情绪稳定。✅满足"
+      },
+      {
+        "id": 3,
+        "name": "涨跌恢复",
+        "condition": "上涨>3000家",
+        "today_value": "2026-08-28:3013家",
+        "satisfied": true,
+        "detail": "3013涨/2390跌。涨跌比1.26:1,较8/27的3394家减少但仍>3000阈值。✅满足(勉强)"
+      },
+      {
+        "id": 4,
+        "name": "连续止跌",
+        "condition": "2天不创新低",
+        "today_value": "最低3947.80>8/27最低3909.31>8/26最低3881.74>8/25最低3850.86",
+        "satisfied": true,
+        "detail": "沪指2026-08-28全天低点3947.80,高于8/27低点3909.31,已连续4天不创新低!✅满足"
+      },
+      {
+        "id": 5,
+        "name": "北向流入",
+        "condition": "连续2-3日净流入>50亿",
+        "today_value": "2026-08-28:北向净流出272亿",
+        "satisfied": false,
+        "detail": "8/28北向大幅净流出272亿,10:00后持续流出。8/27虽有大幅净流入,但8/28大幅逆转,不构成'连续净流入>50亿'。❌不满足"
+      }
+    ],
+    "aggregate": {
+      "ratio": 0.6,
+      "recommendation": "接近底部",
+      "recommendation_detail": "底部信号3/5(与8/27持平):涨跌恢复(勉强)+连续止跌(4天不创新低)+跌停减少。成交缩量2.12万亿但仍远>1.5万亿。北向大幅流出272亿为负面信号。APEX熔断8/31结束·9/1完全解除后观察底部确认",
+      "current_status": "底部修复中但北向流出·3/5信号持平。权重拖累+科技获利回吐·农业/化工防御轮动",
+      "next_observation": "8/29-8/31无交易(APEX继续)·9/1完全解除+沃什讲话后市场评估"
+    },
+    "history_7d": [
+      {
+        "date": "2026-08-18",
+        "satisfied_count": 1,
+        "count": 5
+      },
+      {
+        "date": "2026-08-19",
+        "satisfied_count": 1,
+        "count": 5
+      },
+      {
+        "date": "2026-08-20",
+        "satisfied_count": 2,
+        "count": 5
+      },
+      {
+        "date": "2026-08-21",
+        "satisfied_count": 2,
+        "count": 5
+      },
+      {
+        "date": "2026-08-24",
+        "satisfied_count": 1,
+        "count": 5
+      },
+      {
+        "date": "2026-08-26",
+        "satisfied_count": 2,
+        "count": 5
+      },
+      {
+        "date": "2026-08-27",
+        "satisfied_count": 3,
+        "count": 5
+      },
+      {
+        "date": "2026-08-28",
+        "satisfied_count": 3,
+        "count": 5
+      }
+    ]
+  },
+  "news": {
+    "meta": {
+      "date": "2026-08-28",
+      "last_updated": "2026-08-28T16:53:00+08:00",
+      "source": "web_search_close"
+    },
+    "overall_sentiment": "中性偏空",
+    "sentiment_summary": "冲高回落·科技获利回吐·农业/化工防御轮动·北向大幅流出272亿·沃什首秀增加不确定性",
+    "items": [
+      {
+        "id": 1,
+        "time": "15:00",
+        "title": "A股冲高回落·创业板指跌1.41%",
+        "category": "market",
+        "impact": "negative",
+        "impact_level": 3,
+        "detail": "三大指数低开后翻红冲高回落。沪指-0.11%收3952.18·深成-0.68%·创业板-1.41%·科创50-1.85%。成交2.12万亿缩量232亿。3013涨/2390跌",
+        "affected_stocks": [
+          "301308",
+          "603629",
+          "002851",
+          "300285"
+        ],
+        "source": "新浪财经/界面新闻"
+      },
+      {
+        "id": 2,
+        "time": "15:00",
+        "title": "半导体板块获利回吐·主力净流出128亿",
+        "category": "sector",
+        "impact": "negative",
+        "impact_level": 4,
+        "detail": "英伟达+8.74%利好A股已提前兑现,今日算力硬件获利回吐。半导体-128亿/通信设备-61亿/元件-26亿大幅流出。兆易-3.5%/长鑫-0.88%/中际旭创-0.9%",
+        "affected_stocks": [
+          "301308",
+          "002851"
+        ],
+        "source": "东方财富"
+      },
+      {
+        "id": 3,
+        "time": "10:45",
+        "title": "发改委:推动'六张网'和'两重'建设·加大民间投资支持",
+        "category": "macro",
+        "impact": "positive",
+        "impact_level": 3,
+        "detail": "发改委政策研究室副主任李超:加快投放金融工具资金·聚焦算力网/新型电网/通信网三网融合·建立2+3+N协调机制。8000亿超长期特别国债用于两重建设",
+        "affected_stocks": [
+          "603629"
+        ],
+        "source": "界面新闻"
+      },
+      {
+        "id": 4,
+        "time": "10:32",
+        "title": "发改委:加速具身智能在制造/医疗/消费等领域应用落地",
+        "category": "sector",
+        "impact": "positive",
+        "impact_level": 3,
+        "detail": "发改委:以具身智能实训场为抓手·统筹布局具身智能实训场·加速机器人在真实场景迭代技术。支持视觉/语言/动作模型前沿创新",
+        "affected_stocks": [
+          "002851"
+        ],
+        "source": "财联社"
+      },
+      {
+        "id": 5,
+        "time": "15:46",
+        "title": "标普维持中国主权信用评级'A+'·展望稳定",
+        "category": "macro",
+        "impact": "positive",
+        "impact_level": 2,
+        "detail": "财政部回应:充分肯定中国宏观经济韧性/财政运行稳健性。下半年继续实施更加积极有为的宏观政策·以更大力度落实财政金融协同促内需",
+        "affected_stocks": [],
+        "source": "新华社/北京日报"
+      },
+      {
+        "id": 6,
+        "time": "09:02",
+        "title": "前7月规模以上工业企业利润增长17.6%·电子行业利润+1.1倍",
+        "category": "macro",
+        "impact": "positive",
+        "impact_level": 3,
+        "detail": "1-7月全国规上工业企业利润保持较快增长。高技术制造业引领作用明显·电子行业利润同比增长110%",
+        "affected_stocks": [
+          "301308",
+          "002851",
+          "300285"
+        ],
+        "source": "国家统计局"
+      },
+      {
+        "id": 7,
+        "time": "16:14",
+        "title": "江波龙主力净流出3.17亿·中报净利润+71528%·港股IPO通过聆讯",
+        "category": "stock",
+        "impact": "neutral",
+        "impact_level": 3,
+        "detail": "江波龙收盘376.88(-2.43%)。中报净利润105.77亿(+71528.66%)。港股IPO通过聆讯。机构目标价494.5(5家评级·4买入1增持)。主力净流出3.17亿",
+        "affected_stocks": [
+          "301308"
+        ],
+        "source": "证券之星"
+      },
+      {
+        "id": 8,
+        "time": "15:28",
+        "title": "利通电子主力净流出3.15亿·拟定增募资50亿建智算中心",
+        "category": "stock",
+        "impact": "negative",
+        "impact_level": 3,
+        "detail": "利通电子收盘119.95(-4.21%)。8/19公告拟定增50亿用于智算中心。主力净流出3.15亿·游资净流出8834万·散户净流入4.04亿。距止损117仅2.5%",
+        "affected_stocks": [
+          "603629"
+        ],
+        "source": "证券之星"
+      },
+      {
+        "id": 9,
+        "time": "08:27",
+        "title": "MLCC产业正式迈入上升格局·SEMCO调涨Q4报价25-30%",
+        "category": "sector",
+        "impact": "positive",
+        "impact_level": 4,
+        "detail": "三星电机率先对OEM/ODM客户调涨2026Q4消费级X5R产品价格25-30%·AI Server高端X6S涨10-20%。MLCC供需紧缺格局延续至2028年。国瓷材料QFII新增持仓",
+        "affected_stocks": [
+          "300285"
+        ],
+        "source": "TrendForce/证券时报"
+      },
+      {
+        "id": 10,
+        "time": "16:29",
+        "title": "北向资金全天净流出272亿·融资余额微增0.43%至26280亿",
+        "category": "market",
+        "impact": "negative",
+        "impact_level": 3,
+        "detail": "北向资金早盘短暂流入后10:00转为流出·全天净流出272亿。主力净流出370亿。融资余额微增0.43%。杠杆+北向分歧加大",
+        "affected_stocks": [
+          "301308",
+          "603629",
+          "002851",
+          "300285"
+        ],
+        "source": "复盘数据/国金证券"
+      },
+      {
+        "id": 11,
+        "time": "15:04",
+        "title": "农业/化工/地产逆势领涨·防御轮动明显",
+        "category": "sector",
+        "impact": "neutral",
+        "impact_level": 2,
+        "detail": "种植业(万向德农4连板)/地产(我爱我家涨停)/化工(金牛化工涨停)/黄金(深中华A涨停)。资金从科技切向防御性板块·高低切换信号",
+        "affected_stocks": [],
+        "source": "界面新闻"
+      },
+      {
+        "id": 12,
+        "time": "22:00",
+        "title": "Jackson Hole沃什今晚首秀·市场高度关注",
+        "category": "macro",
+        "impact": "negative",
+        "impact_level": 4,
+        "detail": "美联储主席沃什22:00在杰克逊霍尔年会首秀。4种情景:偏鹰+加息20%/偏鹰+不加30%/温和+不加35%/温和+加息15%。无论哪种情景波动率均将上升。全球流动性预期关键节点",
+        "affected_stocks": [
+          "301308",
+          "603629",
+          "002851",
+          "300285"
+        ],
+        "source": "东方财富"
+      }
+    ]
   }
 }

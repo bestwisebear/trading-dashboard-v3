@@ -1,17 +1,17 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T16:53:00+08:00",
+    "last_updated": "2026-08-28T21:00:00+08:00",
     "date": "2026-08-28",
-    "session": "close",
+    "session": "evening_review",
     "data_basis": "2026-08-28收盘(真实收盘价)",
-    "screening_criteria": "7道闸+APEX熔断8/31结束→9/1完全解除+沃什首秀后评估+候选池重建",
-    "note": "8/28收盘:科技板块全线获利回吐。利通-4.21%逼近止损·江波龙-2.43%·国瓷-1.59%·麦格-1.34%。星网锐捷+10.01%涨停(算力)"
+    "screening_criteria": "APEX 8/31结束→9/1完全解除+候选池重建+沃什偏鹰后评估",
+    "note": "8/28晚间:科技全线获利回吐。利通-4.21%逼近止损·星网锐捷涨停+10.01%(算力)·美股存储盘前跌>2%。9/1是关键评估日"
   },
   "watchlist": [
     {
       "code": "301308",
       "name": "江波龙",
-      "score": 6,
+      "score": 5,
       "status": "holding",
       "sector": "存储",
       "today_close": 376.88,
@@ -23,13 +23,13 @@
         "low_observed": 376.69,
         "high_observed": 386.88
       },
-      "notes": "持仓100股·-2.55%浮亏·中报净利105.77亿+71528%·港股IPO通过聆讯·主力净流出3.17亿·止损360",
+      "notes": "持仓100股·-2.55%浮亏·中报净利105.77亿·港股IPO通过·⚠️美股存储盘前跌>2%→9/1可能低开",
       "holding_qty": 100
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "score": 5,
+      "score": 3,
       "status": "holding",
       "sector": "算力租赁/液冷",
       "today_close": 119.95,
@@ -41,13 +41,13 @@
         "low_observed": 119.62,
         "high_observed": 125.19
       },
-      "notes": "持仓500股·-1.47%浮亏·定增50亿建智算中心·主力净流出3.15亿·⚠️119.95距止损117仅2.5%",
+      "notes": "持仓500股·-1.47%浮亏·🔴119.95距止损117仅2.5%!9/1开盘第一优先级!破117立即止损",
       "holding_qty": 500
     },
     {
       "code": "002851",
       "name": "麦格米特",
-      "score": 6,
+      "score": 5,
       "status": "holding",
       "sector": "电力电子/机器人",
       "today_close": 125.95,
@@ -59,13 +59,13 @@
         "low_observed": 125.68,
         "high_observed": 133.98
       },
-      "notes": "持仓300股·+3.81%浮盈·具身智能受益·机构目标价高·振幅15%上龙虎榜",
+      "notes": "持仓300股·+3.81%浮盈·冲高133.98回落125.95·PE328极高·发改委具身智能政策利好",
       "holding_qty": 300
     },
     {
       "code": "300285",
       "name": "国瓷材料",
-      "score": 7,
+      "score": 6,
       "status": "holding",
       "sector": "MLCC/新材料",
       "today_close": 68.9,
@@ -77,13 +77,13 @@
         "low_observed": 68.09,
         "high_observed": 71.87
       },
-      "notes": "持仓600股·+7.63%浮盈·MLCC涨价25-30%·QFII新增·融资净买入4.84亿·152家机构调研",
+      "notes": "持仓600股·+7.63%浮盈·MLCC涨价25-30%·QFII新增·换手11.51%冲高回落·跌破68考虑减半仓",
       "holding_qty": 600
     },
     {
       "code": "000636",
       "name": "风华高科",
-      "score": 0,
+      "score": 2,
       "status": "sold_stoploss",
       "sector": "MLCC被动元件",
       "today_close": 55.45,
@@ -91,16 +91,14 @@
       "key_price": {
         "support": 51.88,
         "resistance": 58,
-        "stop_loss": 51.5,
-        "low_observed": 51.2,
-        "high_observed": 57.36
+        "stop_loss": 51.5
       },
-      "notes": "8/24止损清仓800股·8/27+6.08%·今日+2.48%·MLCC涨价受益·复盘观察"
+      "notes": "8/24止损清仓·8/27+6.08%·今日+2.48%·MLCC涨价受益·观察中"
     },
     {
       "code": "002747",
       "name": "埃斯顿",
-      "score": 0,
+      "score": 1,
       "status": "sold_stoploss",
       "sector": "工业机器人",
       "today_close": 31.49,
@@ -108,11 +106,24 @@
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
-        "stop_loss": 31.3,
-        "low_observed": 31.07,
-        "high_observed": 32.34
+        "stop_loss": 31.3
       },
-      "notes": "8/24止损清仓1100股·-1.01%继续弱势·复盘观察"
+      "notes": "8/24止损清仓·继续弱势-1.01%·验证清仓决策正确"
+    },
+    {
+      "code": "002396",
+      "name": "星网锐捷",
+      "score": 5,
+      "status": "candidate",
+      "sector": "通信/算力",
+      "today_close": 36.69,
+      "today_change_pct": 10.01,
+      "key_price": {
+        "support": 33,
+        "resistance": 40,
+        "stop_loss": 32
+      },
+      "notes": "🔴涨停+10.01%!算力龙头·封单1.45亿。9/1关注是否连板/高开回落。追高风险大"
     },
     {
       "code": "300857",
@@ -127,27 +138,12 @@
         "resistance": 280,
         "stop_loss": 240
       },
-      "notes": "算力租赁·9/1候选池·今日-2.05%回调"
-    },
-    {
-      "code": "002396",
-      "name": "星网锐捷",
-      "score": 4,
-      "status": "watch",
-      "sector": "通信/算力",
-      "today_close": 36.69,
-      "today_change_pct": 10.01,
-      "key_price": {
-        "support": 33,
-        "resistance": 40,
-        "stop_loss": 32
-      },
-      "notes": "涨停+10.01%!算力龙头·封单1.45亿·关注追高风险"
+      "notes": "算力租赁·9/1候选池·-2.05%回调·负债率83%触发APEX硬门禁⚠️"
     },
     {
       "code": "300308",
       "name": "中际旭创",
-      "score": 5,
+      "score": 4,
       "status": "watch",
       "sector": "光模块",
       "today_close": 858.35,
@@ -157,7 +153,7 @@
         "resistance": 920,
         "stop_loss": 800
       },
-      "notes": "光模块龙头·-0.9%回调·9/1候选池"
+      "notes": "光模块龙头·-0.9%回调·9/1候选池·主力持续流出"
     },
     {
       "code": "601869",
@@ -173,6 +169,51 @@
         "stop_loss": 390
       },
       "notes": "光纤龙头·-1.04%·9/1候选池"
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/存储",
+      "today_close": 394.5,
+      "today_change_pct": -3.5,
+      "key_price": {
+        "support": 380,
+        "resistance": 430,
+        "stop_loss": 360
+      },
+      "notes": "存储龙头-3.5%回吐·美股存储盘前跌>2%→9/1可能继续承压·9/1候选池"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "score": 4,
+      "status": "watch",
+      "sector": "半导体/封测",
+      "today_close": 62.0,
+      "today_change_pct": -2.7,
+      "key_price": {
+        "support": 60,
+        "resistance": 68,
+        "stop_loss": 57
+      },
+      "notes": "AMD封测龙头-2.7%回吐·9/1候选池"
+    },
+    {
+      "code": "688041",
+      "name": "海光信息",
+      "score": 4,
+      "status": "watch",
+      "sector": "AI芯片/CPU",
+      "today_close": 245.0,
+      "today_change_pct": -2.0,
+      "key_price": {
+        "support": 235,
+        "resistance": 265,
+        "stop_loss": 220
+      },
+      "notes": "国产CPU龙头-2.0%回吐·9/1候选池"
     }
   ]
 }
