@@ -1,104 +1,167 @@
 {
   "meta": {
-    "last_updated": "2026-08-27T11:00:00+08:00",
-    "date": "2026-08-27",
+    "last_updated": "2026-08-28T11:08:00+08:00",
+    "date": "2026-08-28",
     "session": "midday_check",
-    "data_basis": "8/27盘中(腾讯API+多源交叉验证~10:55)"
+    "data_basis": "8/28盘中(腾讯API~11:08+多源交叉验证)"
   },
   "market_snapshot": {
-    "shanghai_index": 3920,
-    "shanghai_change_pct": 0.2,
-    "shenzhen_index": 13993,
-    "shenzhen_change_pct": 1.1,
-    "chinext_index": 3462,
-    "chinext_change_pct": 1.38,
-    "estimated_volume_trillion": 1.9,
-    "up_count_estimate": 3800,
-    "down_count_estimate": 1600,
-    "verdict": "英伟达财报利好传导:PCB/CPO/存储/半导体全线走强。上午3800+只上涨,成交放量预计1.9万亿",
+    "shanghai_index": 3959,
+    "shanghai_change_pct": 0.07,
+    "shenzhen_index": 14009,
+    "shenzhen_change_pct": -0.28,
+    "chinext_index": 3458,
+    "chinext_change_pct": -0.44,
+    "kcb50_index": 1681,
+    "kcb50_change_pct": -0.73,
+    "estimated_volume_trillion": 1.2,
+    "up_count_estimate": 3200,
+    "down_count_estimate": 1900,
+    "verdict": "冲高回落。早盘弱高开(-0.16%)后反弹至+0.3%区域(10:21 3968),随后回落至平盘。科技股分化,昨涨停股今日普遍回调。成交预估半日1200亿",
     "hot_sectors": [
-      "PCB概念涨停潮",
-      "CPO概念走高",
-      "存储芯片(大普微20cm涨停)",
-      "算力硬件",
-      "液冷服务器",
-      "通信设备",
-      "黄金概念"
+      "覆铜板(生益科技+5.32%领涨)",
+      "MLCC概念",
+      "影视院线",
+      "医药商业"
+    ],
+    "weak_sectors": [
+      "存储芯片(兆易-2.44%/澜起-2.13%)",
+      "光通信(亨通-1.47%)",
+      "半导体设备(北方华创-1.35%)",
+      "有色金属"
     ]
   },
   "holdings_realtime": [
     {
       "code": "301308",
       "name": "江波龙",
-      "pre_close": 364.2,
-      "current_price": 384.93,
-      "change_pct": 5.69,
-      "high": 384.93,
-      "low": 366.02,
-      "volume_amount_billion": 31.36,
+      "pre_close": 386.25,
+      "current_price": 381.45,
+      "change_pct": -1.24,
+      "high": 386.88,
+      "low": 378.2,
       "stop_loss": 360.0,
-      "distance_to_stop_pct": 6.9,
-      "action": "借高开>380减50股锁利。已远离止损,英伟达利好+存储景气催化"
+      "distance_to_stop_pct": 5.61,
+      "action": "冲高回落-1.24%,存储板块分化。距止损5.6%尚安全。观察378支撑"
     },
     {
       "code": "603629",
       "name": "利通电子",
-      "pre_close": 117.57,
-      "current_price": 124.35,
-      "change_pct": 5.77,
-      "high": 124.9,
-      "low": 117.1,
-      "volume_amount_billion": 27.4,
+      "pre_close": 125.22,
+      "current_price": 120.68,
+      "change_pct": -3.63,
+      "high": 125.19,
+      "low": 120.0,
       "stop_loss": 117.0,
-      "distance_to_stop_pct": 6.3,
-      "action": "大幅反弹+5.77%远离止损。液冷概念受益。建议借>120减150-200股锁利"
+      "distance_to_stop_pct": 3.05,
+      "action": "⚠️大幅回落-3.63%逼近止损117!仅3.05%距离。下午若破120需高度警惕"
     },
     {
       "code": "002851",
       "name": "麦格米特",
-      "pre_close": 123.11,
-      "current_price": 125.81,
-      "change_pct": 2.19,
-      "high": 126.5,
-      "low": 123.12,
-      "volume_amount_billion": 11.58,
+      "pre_close": 127.66,
+      "current_price": 127.81,
+      "change_pct": 0.12,
+      "high": 133.98,
+      "low": 127.18,
       "stop_loss": 115.76,
-      "action": "违规持仓第2天。借高开立即市价清仓300股"
+      "distance_to_stop_pct": 9.44,
+      "action": "冲高133.98后大幅回落至平盘。振幅5.3%说明分歧大"
     },
     {
       "code": "300285",
       "name": "国瓷材料",
-      "pre_close": 64.12,
-      "current_price": 66.01,
-      "change_pct": 2.95,
-      "high": 66.4,
-      "low": 63.68,
-      "volume_amount_billion": 22.8,
+      "pre_close": 70.01,
+      "current_price": 68.94,
+      "change_pct": -1.53,
+      "high": 71.87,
+      "low": 68.56,
       "stop_loss": 60.22,
-      "action": "违规持仓第2天。借高开立即市价清仓600股"
+      "distance_to_stop_pct": 12.66,
+      "action": "冲高71.87后回落-1.53%。昨日+9.19%今日获利盘兑现"
     }
   ],
   "apex_circuit_breaker": {
-    "status": "ACTIVE",
+    "status": "ACTIVE - 收官日",
     "level": "二级熔断",
-    "monthly_return_pct": -14.2,
+    "monthly_return_pct": -8.74,
     "threshold_pct": 10.0,
     "start_date": "2026-08-26",
-    "end_date": "2026-08-31",
-    "description": "月度回撤-14.20%>10%阈值,8/26-8/31全面禁新仓"
+    "end_date": "2026-08-28",
+    "lift_date": "2026-09-01",
+    "description": "月度回撤-8.74%已回-10%阈值内。8/28为APEX熔断收官日,8/28收盘后复盘确认→9/1完全解除"
   },
   "available_cash": 983.02,
   "candidates": [],
   "conclusion": "下午无新仓备选",
   "reasons": [
-    "🚨 APEX二级熔断生效第2天(月度-14.20%>10%阈值),8/26-8/31全面禁新仓",
-    "可用现金仅983元(满仓99.4%),即使无熔断也无法开新仓",
-    "8/27核心任务:借英伟达利好高开清仓违规持仓(麦格米特+国瓷材料)+利通电子止损/减仓+江波龙锁利"
+    "🚨 APEX二级熔断收官日(8/26-8/28),9/1才完全解除。盘前计划明确:全天零新仓",
+    "💰 可用现金仅983元(仓位99.5%),物理上无法开新仓",
+    "📅 周五+月末+A50交割日+Jackson Hole沃什22:00首秀=四重风险叠加",
+    "📉 持仓利通电子-3.63%逼近止损117(仅3.05%距离),下午核心是持仓风控而非开新仓",
+    "🔄 昨日大涨后今日冲高回落属于正常获利兑现,不符合新开仓条件"
   ],
-  "next_review": "8/28评估(仍需APEX熔断解除+市场企稳信号)",
+  "afternoon_priorities": [
+    "⚠️ 利通电子120.68(-3.63%)逼近止损117,下午若破120需准备减仓/止损",
+    "🔒 14:30-14:55沃什讲话前减仓避险(按盘前计划:国瓷100-200+麦格50-100+利通100)",
+    "👀 江波龙观察378支撑,麦格米特观察127支撑",
+    "📊 8/28收盘后复盘APEX熔断是否确认解除→9/1评估重建候选池"
+  ],
+  "watchlist_for_9_1": [
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "score": 3,
+      "note": "半年报营收+153%/净利+325%超预期。当前257.60(-0.62%),等回踩231支撑"
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "score": 6,
+      "note": "AMD封测龙头。当前64.03(+0.47%),等回踩58支撑"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "score": 5,
+      "note": "光模块修复。当前408.21(-0.22%),支撑400"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "score": 5,
+      "note": "CPO龙头。当前267.79(+0.24%),等回踩230支撑"
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "score": 6,
+      "note": "存储龙头PE41极低。当前401.18(-2.44%),等回踩375支撑"
+    },
+    {
+      "code": "600183",
+      "name": "生益科技",
+      "score": 6,
+      "note": "覆铜板龙头+5.32%逆势大涨。PE38合理,注意追高风险"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "score": 3,
+      "note": "MLCC跟涨。当前113.61(+1.00%),支撑105"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "score": 6,
+      "note": "半导体测试设备。等回踩66支撑"
+    }
+  ],
+  "next_review": "8/28盘后复盘APEX解除→9/1盘前评估建仓机会",
   "risk_alerts": [
-    "8/27 Jackson Hole进行中,8/28 22:00沃什主旨演讲",
-    "英伟达Q3毛利率指引74%(略低于预期75%),Q4触底71-72%",
-    "PCE整体+0.2%超预期,核心3.3%符合预期"
+    "⚠️ 利通电子距止损仅3.05%,下午重点关注",
+    "🔴 Jackson Hole沃什22:00首秀,4种情景均将提升波动率",
+    "📅 周五+月末+A50交割日=尾盘波动加大",
+    "📉 昨日涨停股今日回调(德明利+1.85%但澜起-2.13%/亨通-1.47%)"
   ]
 }
