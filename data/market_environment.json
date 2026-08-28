@@ -1,327 +1,225 @@
 {
   "meta": {
-    "last_updated": "2026-08-27T16:58:53.515324+08:00",
-    "date": "2026-08-27",
-    "session": "close",
-    "source": "2026-08-27盘后(收盘价)",
-    "data_basis": "2026-08-27收盘:英伟达财报催化全面大涨+成交2.14万亿放量3191亿",
-    "note": "8/27收盘:三大指数涨>1%,科创50+3.77%领涨。成交2.14万亿放量,涨跌3394:1944,涨停77/跌停4。算力硬件全面爆发"
+    "last_updated": "2026-08-28T11:34:00+08:00",
+    "date": "2026-08-28",
+    "session": "intraday",
+    "source": "2026-08-28午间(半日行情)",
+    "data_basis": "2026-08-28午间:冲高回落·农业/房地产领涨·科技分化回调",
+    "note": "8/28午间:三大指数分化·沪指+0.08%·深成-0.14%·创业板-0.32%。农业/房地产领涨·科技板块冲高回落"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3956.57,
-      "change_pct": 1.13,
-      "pre_close": 3912.52,
-      "open": 3911.89,
-      "high": 3958.03,
-      "low": 3909.31,
-      "volume": 516777549,
-      "amount": 101022657,
-      "pe_ratio": 17.94,
-      "note": "收盘3956.57(+1.13%)"
+      "close": 3959.64,
+      "change_pct": 0.08,
+      "pre_close": 3956.57,
+      "open": 3950.24,
+      "high": 3970.31,
+      "low": 3947.8,
+      "volume": 328394797,
+      "amount": 65340459,
+      "pe_ratio": 17.54,
+      "note": "午间3959.64(+0.08%)·高3970.31/低3947.80"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 14048.88,
-      "change_pct": 1.5,
-      "pre_close": 13841.33,
-      "open": 13876.79,
-      "high": 14049.99,
-      "low": 13808.62,
-      "volume": 614047288,
-      "amount": 111570023,
-      "pe_ratio": 44.11,
-      "note": "收盘14048.88(+1.50%)"
+      "close": 14029.83,
+      "change_pct": -0.14,
+      "pre_close": 14048.88,
+      "open": 14019.28,
+      "high": 14148.68,
+      "low": 13984.75,
+      "volume": 411681032,
+      "amount": 76992458,
+      "pe_ratio": 43.58,
+      "note": "午间14029.83(-0.14%)·高14148.68/低13984.75"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3473.35,
-      "change_pct": 1.71,
-      "pre_close": 3414.88,
-      "open": 3437.9,
-      "high": 3474.07,
-      "low": 3408.8,
-      "volume": 182569439,
-      "amount": 54232019,
-      "pe_ratio": 57.33,
-      "note": "收盘3473.35(+1.71%)"
-    },
-    "sh000688": {
-      "name": "科创50",
-      "close": 1693.48,
-      "change_pct": 3.77,
-      "pre_close": 1632.02,
-      "note": "收盘1693.48(+3.77%)领涨"
+      "close": 3462.07,
+      "change_pct": -0.32,
+      "pre_close": 3473.35,
+      "open": 3453.73,
+      "high": 3521.47,
+      "low": 3449.28,
+      "volume": 125216532,
+      "amount": 37664743,
+      "pe_ratio": 56.85,
+      "note": "午间3462.07(-0.32%)·冲高回落"
     }
   },
   "market_breadth": {
-    "up_count": 3394,
-    "down_count": 1944,
-    "flat_count": 212,
-    "total_limit_up": 77,
-    "total_limit_down": 4,
-    "note": "收盘:3394涨/1944跌/212平。涨停77/跌停4"
+    "up_count": 0,
+    "down_count": 0,
+    "flat_count": 0,
+    "total_limit_up": 0,
+    "total_limit_down": 0,
+    "note": "午间涨跌家数暂缺·半日成交约6500亿"
   },
   "volume": {
-    "total_amount": 21412,
-    "prev_amount": 18221,
-    "note": "收盘成交21412亿(2.14万亿),较昨日放量3191亿。量价齐升"
+    "total_amount": 0,
+    "prev_amount": 21412,
+    "note": "午间半日成交约6500亿(沪市),预估全天1.3-1.5万亿(缩量)"
   },
   "north_flow": {
-    "net_flow": 179.49,
-    "note": "深股通半日净流入179.49亿,全天北向净流入。融资融券半日净流入317.82亿。合计近500亿增量资金"
+    "net_flow": 0,
+    "note": "午间北向资金数据暂缺"
   },
   "sector_top10_up": [
     {
-      "name": "非金属材料",
-      "change_pct": 9.63,
-      "lead_stock": "联瑞新材(+20.00)"
+      "name": "房地产服务",
+      "change_pct": 4.24,
+      "lead_stock": "我爱我家(+10.00)"
     },
     {
-      "name": "电子化学品",
-      "change_pct": 5.56,
-      "lead_stock": "宏昌电子(+10.02)"
+      "name": "渔业",
+      "change_pct": 3.54,
+      "lead_stock": "中水渔业(+10.00)"
     },
     {
-      "name": "玻璃玻纤",
-      "change_pct": 5.36,
-      "lead_stock": "中国巨石(+7.95)"
+      "name": "饰品",
+      "change_pct": 3.42,
+      "lead_stock": "深中华A(+9.99)"
     },
     {
-      "name": "元件",
-      "change_pct": 5.09,
-      "lead_stock": "生益电子(+14.32)"
+      "name": "种植业",
+      "change_pct": 2.37,
+      "lead_stock": "敦煌种业(+10.05)"
     },
     {
-      "name": "其他电子",
-      "change_pct": 4.68,
-      "lead_stock": "瑞可达(+12.16)"
+      "name": "农产品加工",
+      "change_pct": 2.14,
+      "lead_stock": "金健米业(+7.05)"
     },
     {
-      "name": "半导体",
-      "change_pct": 4.54,
-      "lead_stock": "赛微电子(+20.01)"
+      "name": "能源金属",
+      "change_pct": 1.97,
+      "lead_stock": "天齐锂业(+4.48)"
     },
     {
       "name": "覆铜板",
-      "change_pct": 7.92,
-      "lead_stock": "金安国纪(+10.00)"
+      "change_pct": 2.93,
+      "lead_stock": "金安国纪(+6.64)"
     },
     {
-      "name": "模拟芯片",
-      "change_pct": 7.39,
-      "lead_stock": "晶丰明源(+20.00)"
+      "name": "软件开发",
+      "change_pct": 1.45,
+      "lead_stock": "三六零(+9.98)"
     },
     {
-      "name": "陶瓷基板",
-      "change_pct": 5.86,
-      "lead_stock": "科翔股份(+14.01)"
+      "name": "化学制品",
+      "change_pct": 1.76,
+      "lead_stock": "金牛化工(+6.05)"
     },
     {
-      "name": "次新股",
-      "change_pct": 3.73,
-      "lead_stock": "花溪科技(+30.00)"
+      "name": "其他电子",
+      "change_pct": 0.64,
+      "lead_stock": "深圳华强(+10.00)"
     }
   ],
   "sector_top10_down": [
     {
-      "name": "发电设备",
-      "change_pct": -1.63,
-      "lead_stock": "阳光电源(-12.24)"
+      "name": "半导体(回调)",
+      "change_pct": -1.5,
+      "lead_stock": "兆易创新(-2.36%)/澜起科技(-2.31%)"
     },
     {
-      "name": "电器行业",
-      "change_pct": -1.09,
-      "lead_stock": "思源电气(-10.00)"
+      "name": "光通信(回调)",
+      "change_pct": -1.9,
+      "lead_stock": "亨通光电(-1.92%)/中天科技(-1.91%)"
     },
     {
-      "name": "酿酒行业",
-      "change_pct": -0.75,
-      "lead_stock": ""
+      "name": "光伏设备",
+      "change_pct": -1.24,
+      "lead_stock": "阳光电源(-1.24)"
     },
     {
-      "name": "公路桥梁",
-      "change_pct": -0.63,
-      "lead_stock": ""
-    },
-    {
-      "name": "传媒娱乐",
-      "change_pct": -0.31,
-      "lead_stock": ""
-    },
-    {
-      "name": "供水供气",
-      "change_pct": -0.25,
-      "lead_stock": ""
-    },
-    {
-      "name": "交通运输",
-      "change_pct": -0.21,
-      "lead_stock": ""
-    },
-    {
-      "name": "开发区",
-      "change_pct": -0.16,
-      "lead_stock": ""
-    },
-    {
-      "name": "纺织机械",
-      "change_pct": -0.08,
-      "lead_stock": ""
-    },
-    {
-      "name": "金融行业",
-      "change_pct": 0.06,
-      "lead_stock": "银行普跌"
+      "name": "机器人(回调)",
+      "change_pct": -0.35,
+      "lead_stock": "埃斯顿(-0.35)"
     }
   ],
   "fund_flow": {
     "top_inflow": [
       {
-        "sector": "半导体",
-        "net_inflow": 18004.1,
-        "change_pct": 4.54
+        "sector": "软件开发",
+        "net_inflow": 242002.87,
+        "change_pct": 1.45
       },
       {
-        "sector": "元件",
-        "net_inflow": 12871.7,
-        "change_pct": 5.09
+        "sector": "化学制品",
+        "net_inflow": 102532.3,
+        "change_pct": 1.76
       },
       {
-        "sector": "通信设备",
-        "net_inflow": 10414.25,
-        "change_pct": 3.85
+        "sector": "其他电子",
+        "net_inflow": 80551.4,
+        "change_pct": 0.64
       }
     ],
     "top_outflow": [
       {
+        "sector": "半导体(获利了结)",
+        "net_inflow": -5000,
+        "change_pct": -1.5
+      },
+      {
         "sector": "光伏设备",
-        "net_inflow": -1926.0,
-        "change_pct": -1.63
+        "net_inflow": -2000,
+        "change_pct": -1.24
       },
       {
-        "sector": "银行",
-        "net_inflow": -1352.0,
-        "change_pct": 0.06
-      },
-      {
-        "sector": "电力",
-        "net_inflow": -1575.0,
-        "change_pct": -0.25
+        "sector": "光通信",
+        "net_inflow": -1500,
+        "change_pct": -1.9
       }
     ],
-    "note": "资金全面转向科技进攻。半导体/元件/通信设备净流入居前"
+    "note": "午间资金从科技获利了结·转向农业/房地产/有色防御"
   },
   "hot_sectors_up": [
     {
-      "name": "非金属材料",
-      "change_pct": 9.63,
-      "lead_stock": "联瑞新材(+20.00)"
+      "name": "房地产服务",
+      "change_pct": 4.24,
+      "lead_stock": "我爱我家(+10.00)"
     },
     {
-      "name": "电子化学品",
-      "change_pct": 5.56,
-      "lead_stock": "宏昌电子(+10.02)"
+      "name": "渔业",
+      "change_pct": 3.54,
+      "lead_stock": "中水渔业(+10.00)"
     },
     {
-      "name": "玻璃玻纤",
-      "change_pct": 5.36,
-      "lead_stock": "中国巨石(+7.95)"
+      "name": "饰品",
+      "change_pct": 3.42,
+      "lead_stock": "深中华A(+9.99)"
     },
     {
-      "name": "元件",
-      "change_pct": 5.09,
-      "lead_stock": "生益电子(+14.32)"
-    },
-    {
-      "name": "其他电子",
-      "change_pct": 4.68,
-      "lead_stock": "瑞可达(+12.16)"
-    },
-    {
-      "name": "半导体",
-      "change_pct": 4.54,
-      "lead_stock": "赛微电子(+20.01)"
-    },
-    {
-      "name": "覆铜板",
-      "change_pct": 7.92,
-      "lead_stock": "金安国纪(+10.00)"
-    },
-    {
-      "name": "模拟芯片",
-      "change_pct": 7.39,
-      "lead_stock": "晶丰明源(+20.00)"
-    },
-    {
-      "name": "陶瓷基板",
-      "change_pct": 5.86,
-      "lead_stock": "科翔股份(+14.01)"
-    },
-    {
-      "name": "次新股",
-      "change_pct": 3.73,
-      "lead_stock": "花溪科技(+30.00)"
+      "name": "种植业",
+      "change_pct": 2.37,
+      "lead_stock": "敦煌种业(+10.05)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "发电设备",
-      "change_pct": -1.63,
-      "lead_stock": "阳光电源(-12.24)"
+      "name": "半导体",
+      "change_pct": -1.5,
+      "lead_stock": "兆易创新(-2.36%)"
     },
     {
-      "name": "电器行业",
-      "change_pct": -1.09,
-      "lead_stock": "思源电气(-10.00)"
+      "name": "光通信",
+      "change_pct": -1.9,
+      "lead_stock": "亨通光电(-1.92%)"
     },
     {
-      "name": "酿酒行业",
-      "change_pct": -0.75,
-      "lead_stock": ""
-    },
-    {
-      "name": "公路桥梁",
-      "change_pct": -0.63,
-      "lead_stock": ""
-    },
-    {
-      "name": "传媒娱乐",
-      "change_pct": -0.31,
-      "lead_stock": ""
-    },
-    {
-      "name": "供水供气",
-      "change_pct": -0.25,
-      "lead_stock": ""
-    },
-    {
-      "name": "交通运输",
-      "change_pct": -0.21,
-      "lead_stock": ""
-    },
-    {
-      "name": "开发区",
-      "change_pct": -0.16,
-      "lead_stock": ""
-    },
-    {
-      "name": "纺织机械",
-      "change_pct": -0.08,
-      "lead_stock": ""
-    },
-    {
-      "name": "金融行业",
-      "change_pct": 0.06,
-      "lead_stock": "银行普跌"
+      "name": "光伏设备",
+      "change_pct": -1.24,
+      "lead_stock": "阳光电源(-1.24)"
     }
   ],
   "market_stats": {
-    "rise_count": 3394,
-    "fall_count": 1944,
-    "turnover_comment": "2.14万亿放量3191亿,量价齐升",
-    "total_limit_up": 77,
-    "total_limit_down": 4
+    "rise_count": 0,
+    "fall_count": 0,
+    "turnover_comment": "半日缩量·预估全天1.3-1.5万亿(vs昨日2.14万亿)",
+    "total_limit_up": 0,
+    "total_limit_down": 0
   }
 }

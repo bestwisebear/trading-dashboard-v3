@@ -1,30 +1,30 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T08:25:00+08:00",
+    "last_updated": "2026-08-28T11:34:00+08:00",
     "data_date": "2026-08-28",
-    "source": "2026-08-27盘后(收盘价)+8/28盘前(A50+沃什首秀+英伟达+8.74%)",
-    "session": "pre_market",
-    "note": "8/28盘前v2:APEX二级熔断收官日(月度-8.74%已回-10%阈值内·需复盘明确确认)·冲高锁利+沃什避险+全天零新仓·9/1评估完全解除+重建候选池"
+    "source": "2026-08-28午间(盘中价)",
+    "session": "intraday",
+    "note": "8/28午间:APEX熔断月度-10.41%超-10%阈值·冲高回落·利通-3.47%逼近止损·14:30沃什避险"
   },
   "current": {
-    "total_assets": 182522.02,
+    "total_assets": 179180.02,
     "prev_close_assets": 171593.02,
     "available_cash": 983.02,
     "initial_capital": 200000.0,
     "position_count": 4,
     "position_ratio": 99.5,
-    "monthly_pnl": -17477.98,
-    "monthly_return_rate": -8.74,
-    "market_value": 181539.0,
-    "note": "8/27收盘:市值181539.00+现金983.02=总资产182522.02。APEX月度回撤从-9.62%改善至-8.74%·8/28熔断收官日"
+    "monthly_pnl": -20819.98,
+    "monthly_return_rate": -10.41,
+    "market_value": 178197.0,
+    "note": "8/28午间:市值178197.0+现金983.02=总资产179180.02。APEX月度-10.41%超阈值"
   },
   "today_so_far": {
     "date": "2026-08-28",
-    "net_today": 0,
+    "net_today": -3342.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "pre_market",
-    "note": "8/28盘前:零交易。APEX熔断收官日·首要是冲高锁利+沃什避险"
+    "session": "intraday",
+    "note": "8/28午间:零交易。浮盈回撤-3342.0。APEX熔断持续"
   },
   "positions": [
     {
@@ -33,7 +33,7 @@
       "quantity": 100,
       "cost_price": 386.73,
       "stop_loss": 360.0,
-      "market_value": 38625.0
+      "market_value": 38089.0
     },
     {
       "code": "603629",
@@ -41,7 +41,7 @@
       "quantity": 500,
       "cost_price": 121.737,
       "stop_loss": 117.0,
-      "market_value": 62610.0
+      "market_value": 60440.0
     },
     {
       "code": "002851",
@@ -49,7 +49,7 @@
       "quantity": 300,
       "cost_price": 121.324,
       "stop_loss": 115.76,
-      "market_value": 38298.0
+      "market_value": 38280.0
     },
     {
       "code": "300285",
@@ -57,26 +57,26 @@
       "quantity": 600,
       "cost_price": 64.013,
       "stop_loss": 60.22,
-      "market_value": 42006.0
+      "market_value": 41388.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "盘前校验:市值181539.00+现金983.02=182522.02·未变"
+    "note": "午间校验:市值178197.0+现金983.02=179180.02"
   },
   "cumulative": {
-    "total_pnl_amount": -17477.98,
-    "total_pnl_percent": -8.74,
+    "total_pnl_amount": -20819.98,
+    "total_pnl_percent": -10.41,
     "total_trades_count": 57,
     "total_violations": 23
   },
   "next_action": {
     "date": "2026-08-28",
-    "action": "🔴8/28:APEX熔断收官日·冲高锁利+沃什避险+全天零新仓。9:30-9:45借高开减仓(国瓷200+麦格100+利通150+江波龙50)·14:30-14:55沃什避险再减仓(国瓷100-200+麦格50-100+利通100)·22:00沃什讲话后不持仓过夜·8/28盘后复盘明确APEX解除·9/1完全解除+重建候选池",
-    "key_levels": "国瓷70.01(昨收=止盈目标)/71(锁利触发)/60.22(止损)·利通125.22/126(锁利)/117(止损)·江波龙386.25(昨收=最高价)/395(锁利)/360(止损)·麦格127.66/128.5(锁利)/115.76(止损)",
-    "risk_events": "8/28 Jackson Hole沃什22:00首秀(4种情景均将提升波动率)+A50期货8月合约交割日+周五+月末效应"
+    "action": "🔴8/28午间:APEX月度-10.41%超-10%阈值·14:30沃什避险减仓(利通150+国瓷200+麦格100)·利通120.88逼近止损117盯盘·全天零新仓·8/28盘后复盘APEX",
+    "key_levels": "国瓷70.01(昨收)/71.87(午间高)/68.56(午间低)/60.22(止损)·利通125.22(昨收)/120(午间低)/117(止损⚠️逼近)·江波龙386.25(昨收)/378.2(午间低)/360(止损)·麦格127.66(昨收)/133.98(午间高)/115.76(止损)",
+    "risk_events": "Jackson Hole沃什22:00首秀+A50期货8月交割+周五+月末效应+APEX月度超阈值"
   },
   "pre_market_2026_08_28": {
     "date": "2026-08-28",

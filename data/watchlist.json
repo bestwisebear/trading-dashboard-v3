@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T08:15:00+08:00",
+    "last_updated": "2026-08-28T11:34:00+08:00",
     "date": "2026-08-28",
-    "session": "pre_market",
-    "data_basis": "2026-08-28盘前(基于8/27收盘)",
+    "session": "intraday",
+    "data_basis": "2026-08-28午间(盘中价)",
     "screening_criteria": "7道闸+APEX二级熔断收官日(月度-8.74%已回-10%阈值内·需复盘明确)+英伟达+8.74%+Jackson Hole沃什22:00首秀+A50交割日",
-    "note": "2026-08-28盘前:APEX二级熔断收官日(月度-8.74%已回阈值).8/28首要是冲高锁利+沃什避险+复盘明确.9/1重建候选池"
+    "note": "2026-08-28午间:科技板块冲高回落·生益科技+4.75%领涨·利通-3.47%·兆易/澜起-2.3%回调·生益/中际旭创强势"
   },
   "watchlist": [
     {
@@ -14,14 +14,14 @@
       "score": 6,
       "status": "holding",
       "sector": "存储",
-      "today_close": 386.25,
-      "today_change_pct": 6.05,
+      "today_close": 380.89,
+      "today_change_pct": -1.39,
       "key_price": {
         "support": 360,
         "resistance": 415,
         "stop_loss": 360,
         "low_observed": 366.02,
-        "high_observed": 386.25
+        "high_observed": 386.88
       },
       "notes": "持仓100股·+6.05%收最高·英伟达+8.74%催化存储·8/28冲高395减50股·止损360",
       "holding_qty": 100
@@ -32,8 +32,8 @@
       "score": 5,
       "status": "holding",
       "sector": "算力租赁/液冷",
-      "today_close": 125.22,
-      "today_change_pct": 6.51,
+      "today_close": 120.88,
+      "today_change_pct": -3.47,
       "key_price": {
         "support": 120,
         "resistance": 140,
@@ -50,14 +50,14 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "MLCC被动元件",
-      "today_close": 54.11,
-      "today_change_pct": 6.08,
+      "today_close": 55.66,
+      "today_change_pct": 2.86,
       "key_price": {
         "support": 51.88,
         "resistance": 58,
         "stop_loss": 51.5,
         "low_observed": 51.2,
-        "high_observed": 54.29
+        "high_observed": 57.36
       },
       "notes": "8/24止损清仓800股·8/27+6.08%卖飞·MLCC涨价·PE偏高·复盘观察"
     },
@@ -67,14 +67,14 @@
       "score": 0,
       "status": "sold_stoploss",
       "sector": "工业机器人",
-      "today_close": 31.81,
-      "today_change_pct": 1.79,
+      "today_close": 31.7,
+      "today_change_pct": -0.35,
       "key_price": {
         "support": 31.3,
         "resistance": 35.7,
         "stop_loss": 31.3,
         "low_observed": 31.07,
-        "high_observed": 31.93
+        "high_observed": 32.34
       },
       "notes": "8/24止损清仓1100股·国产机器人·复盘观察"
     },
@@ -84,13 +84,13 @@
       "score": 3,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 259.2,
-      "today_change_pct": 9.72,
+      "today_close": 257.83,
+      "today_change_pct": -0.53,
       "key_price": {
         "support": 231.77,
         "resistance": 260,
         "stop_loss": 230,
-        "high_observed": 260.66,
+        "high_observed": 261.54,
         "low_observed": 237.66
       },
       "notes": "+9.72%大涨突破前高260·算力租赁龙头·APEX熔断禁入·9/1后观察"
@@ -101,14 +101,14 @@
       "score": 3,
       "status": "watch",
       "sector": "MLCC",
-      "today_close": 112.48,
-      "today_change_pct": 3.49,
+      "today_close": 113.28,
+      "today_change_pct": 0.71,
       "key_price": {
         "support": 105.86,
         "resistance": 119,
         "stop_loss": 105,
         "low_observed": 108.58,
-        "high_observed": 113.4
+        "high_observed": 118.11
       },
       "notes": "+3.49%·MLCC跟涨·PE78.34·9/1后观察"
     },
@@ -118,14 +118,14 @@
       "score": 4,
       "status": "watch",
       "sector": "锂电储能",
-      "today_close": 62.33,
-      "today_change_pct": -1.11,
+      "today_close": 60.67,
+      "today_change_pct": -2.66,
       "key_price": {
         "support": 58,
         "resistance": 68,
         "stop_loss": 57,
         "high_observed": 63.33,
-        "low_observed": 60.21
+        "low_observed": 59.73
       },
       "notes": "-1.11%逆势下跌·锂电承压·APEX熔断禁入"
     },
@@ -135,13 +135,13 @@
       "score": 6,
       "status": "watch",
       "sector": "封测/AMD",
-      "today_close": 63.73,
-      "today_change_pct": 4.05,
+      "today_close": 63.95,
+      "today_change_pct": 0.35,
       "key_price": {
         "support": 58,
         "resistance": 70,
         "stop_loss": 58,
-        "high_observed": 63.87,
+        "high_observed": 65.9,
         "low_observed": 61.14
       },
       "notes": "+4.05%·AMD封测龙头·先进封装+4.29%·APEX熔断禁入·9/1后观察"
@@ -152,14 +152,14 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 409.1,
-      "today_change_pct": 2.59,
+      "today_close": 408.6,
+      "today_change_pct": -0.12,
       "key_price": {
         "support": 400,
         "resistance": 470,
         "stop_loss": 395,
         "low_observed": 402.51,
-        "high_observed": 413.5
+        "high_observed": 427.1
       },
       "notes": "+2.59%·光模块修复·PE43.79·9/1后观察"
     },
@@ -169,14 +169,14 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 866.12,
-      "today_change_pct": 1.79,
+      "today_close": 881.5,
+      "today_change_pct": 1.78,
       "key_price": {
         "support": 850,
         "resistance": 1050,
         "stop_loss": 850,
-        "low_observed": 860.05,
-        "high_observed": 880.0
+        "low_observed": 859.96,
+        "high_observed": 915.88
       },
       "notes": "+1.79%弱于板块·PE50.16·9/1后观察"
     },
@@ -186,8 +186,8 @@
       "score": 5,
       "status": "watch",
       "sector": "光模块/CPO",
-      "today_close": 267.16,
-      "today_change_pct": 5.36,
+      "today_close": 268.0,
+      "today_change_pct": 0.31,
       "key_price": {
         "support": 230,
         "resistance": 290,
@@ -203,13 +203,13 @@
       "score": 6,
       "status": "watch",
       "sector": "存储芯片",
-      "today_close": 408.73,
-      "today_change_pct": 4.76,
+      "today_close": 401.5,
+      "today_change_pct": -2.36,
       "key_price": {
         "support": 375.73,
         "resistance": 435,
         "stop_loss": 370,
-        "high_observed": 408.77,
+        "high_observed": 410.53,
         "low_observed": 394.58
       },
       "notes": "+4.76%·存储龙头·主力净流入17.11亿·PE41极低·长江存储IPO催化·APEX禁入·9/1后观察"
@@ -220,13 +220,13 @@
       "score": 5,
       "status": "watch",
       "sector": "封测",
-      "today_close": 74.05,
-      "today_change_pct": 3.97,
+      "today_close": 75.89,
+      "today_change_pct": -0.85,
       "key_price": {
         "support": 70.35,
         "resistance": 81.45,
         "stop_loss": 70,
-        "high_observed": 74.5,
+        "high_observed": 77.98,
         "low_observed": 71.0
       },
       "notes": "+3.97%封测龙头·主力净流入6.55亿·APEX禁入·9/1后观察"
@@ -237,13 +237,13 @@
       "score": 4,
       "status": "watch",
       "sector": "半导体设备",
-      "today_close": 718.0,
-      "today_change_pct": 2.47,
+      "today_close": 707.16,
+      "today_change_pct": -1.51,
       "key_price": {
         "support": 665.38,
         "resistance": 770,
         "stop_loss": 660,
-        "high_observed": 720.0,
+        "high_observed": 724.51,
         "low_observed": 693.7
       },
       "notes": "+2.47%弱于板块·PE91.67偏高·半导体设备·APEX禁入·9/1后观察"
@@ -254,13 +254,13 @@
       "score": 6,
       "status": "watch",
       "sector": "存储分销",
-      "today_close": 436.73,
-      "today_change_pct": 10.0,
+      "today_close": 436.4,
+      "today_change_pct": 1.55,
       "key_price": {
         "support": 377.18,
         "resistance": 480,
         "stop_loss": 370,
-        "high_observed": 436.73,
+        "high_observed": 448.25,
         "low_observed": 397.03
       },
       "notes": "涨停+10%!·存储分销·PE21.95极低·主力净流入9.78亿·APEX禁入·9/1后观察"
@@ -271,13 +271,13 @@
       "score": 6,
       "status": "watch",
       "sector": "存储接口",
-      "today_close": 221.22,
-      "today_change_pct": 10.06,
+      "today_close": 216.12,
+      "today_change_pct": -2.31,
       "key_price": {
         "support": 200,
         "resistance": 250,
         "stop_loss": 195,
-        "high_observed": 221.22,
+        "high_observed": 221.49,
         "low_observed": 205.0
       },
       "notes": "涨停+10.06%!·DDR5接口龙头·主力净流入14.92亿·APEX禁入·9/1后观察"
@@ -288,13 +288,13 @@
       "score": 6,
       "status": "watch",
       "sector": "光通信",
-      "today_close": 32.5,
-      "today_change_pct": 9.98,
+      "today_close": 69.93,
+      "today_change_pct": -1.92,
       "key_price": {
         "support": 28,
         "resistance": 36,
         "stop_loss": 27,
-        "high_observed": 32.5,
+        "high_observed": 72.21,
         "low_observed": 29.5
       },
       "notes": "涨停+9.98%!·光纤光缆·PE28极低·主力净流入14.28亿·APEX禁入·9/1后观察"
@@ -305,13 +305,13 @@
       "score": 6,
       "status": "watch",
       "sector": "PCB/覆铜板",
-      "today_close": 37.5,
-      "today_change_pct": 8.43,
+      "today_close": 147.67,
+      "today_change_pct": 4.75,
       "key_price": {
         "support": 33,
         "resistance": 40,
         "stop_loss": 32,
-        "high_observed": 37.8,
+        "high_observed": 151.79,
         "low_observed": 34.5
       },
       "notes": "+8.43%·覆铜板龙头·主力净流入27亿全市场第一·PE38合理·APEX禁入·9/1后观察"
