@@ -1,0 +1,18 @@
+{
+  "code": "sz399006",
+  "name": "创业板指",
+  "close": 3431.89,
+  "open": 3550.25,
+  "high": 3551.51,
+  "low": 3376.64,
+  "pre_close": 3545.58,
+  "change": -113.69,
+  "change_percent": -3.21,
+  "volume": 170316149,
+  "amount": 50582822,
+  "turnover_rate": 3.17,
+  "market_cap": 148968.81,
+  "pe_ratio": 55.99,
+  "date": "20260824161424",
+  "source": "tencent"
+}

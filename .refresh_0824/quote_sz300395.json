@@ -1,0 +1,18 @@
+{
+  "code": "sz300395",
+  "name": "菲利华",
+  "close": 83.99,
+  "open": 87.74,
+  "high": 88.08,
+  "low": 81.8,
+  "pre_close": 87.99,
+  "change": -4,
+  "change_percent": -4.55,
+  "volume": 166018,
+  "amount": 139559,
+  "turnover_rate": 3.24,
+  "market_cap": 430.48,
+  "pe_ratio": 85.53,
+  "date": "20260824161406",
+  "source": "tencent"
+}
