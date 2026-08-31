@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
+    "last_updated": "2026-08-31T23:59:00+08:00",
     "date": "2026-08-31",
     "session": "close_1615",
     "source": "8/31收盘·腾讯行情真实收盘价",
@@ -8,20 +8,20 @@
     "note": "8/31收盘·APEX熔断最后一天·5只持仓·飞南+7.91%大有+7.14%领涨"
   },
   "summary": {
-    "total_market_value": 174982.0,
-    "available_cash": 8012.0,
+    "total_market_value": 106760.0,
+    "available_cash": 76234.0,
     "total_assets": 182994.0,
     "net_today": 4171.0,
     "today_return": 2.33,
     "total_pnl_amount": -17006.0,
     "monthly_pnl": -17006.0,
     "prev_close_assets": 178823.0,
-    "position_ratio": 95.6,
+    "position_ratio": 58.3,
     "today_return_rate": 2.33,
     "monthly_return_rate": -8.5,
     "initial_capital": 200000.0,
-    "position_count": 5,
-    "note": "8/31收盘·飞南+7.91%大有+7.14%利通+1.84%·鹏辉-2.83%圣邦-0.44%"
+    "position_count": 3,
+    "note": "8/31收盘:大有7.65+飞南25.78清仓锁利+3922,剩3只持仓"
   },
   "positions": [
     {
@@ -46,52 +46,6 @@
       "current_price": 59.14,
       "pnl_percent": -2.24,
       "pnl_amount": -1082.4
-    },
-    {
-      "code": "301500",
-      "name": "飞南资源",
-      "quantity": 1400,
-      "cost_price": 23.933,
-      "stop_loss": 22.0,
-      "close_price": 25.78,
-      "pre_close": 23.89,
-      "open": 23.2,
-      "high": 26.11,
-      "low": 22.41,
-      "change_pct": 7.91,
-      "change_amount": 1.89,
-      "market_value": 36092.0,
-      "floating_pnl": 2585.8,
-      "floating_pnl_pct": 7.72,
-      "today_pnl": 2646.0,
-      "pe_ratio": 18.62,
-      "sector": "有色/资源回收",
-      "current_price": 25.78,
-      "pnl_percent": 7.72,
-      "pnl_amount": 2585.8
-    },
-    {
-      "code": "600403",
-      "name": "大有能源",
-      "quantity": 4200,
-      "cost_price": 7.332,
-      "stop_loss": 6.8,
-      "close_price": 7.65,
-      "pre_close": 7.14,
-      "open": 7.3,
-      "high": 7.85,
-      "low": 7.08,
-      "change_pct": 7.14,
-      "change_amount": 0.51,
-      "market_value": 32130.0,
-      "floating_pnl": 1335.6,
-      "floating_pnl_pct": 4.34,
-      "today_pnl": 2142.0,
-      "pe_ratio": -10.12,
-      "sector": "煤炭",
-      "current_price": 7.65,
-      "pnl_percent": 4.34,
-      "pnl_amount": 1335.6
     },
     {
       "code": "603629",
