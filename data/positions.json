@@ -8,19 +8,19 @@
     "note": "8/31午间·上午收盘数据·持仓4只·大有+6.86%领涨·鹏辉-4.65%重挫·利通118.97距止损117仅1.68%"
   },
   "summary": {
-    "total_market_value": 147831.0,
-    "available_cash": 30992.0,
-    "total_assets": 178823.0,
+    "total_market_value": 170731.0,
+    "available_cash": 8012.0,
+    "total_assets": 178743.0,
     "net_today": -3699.02,
     "today_return": -2.03,
     "total_pnl_amount": -21177.0,
     "monthly_pnl": -21177.0,
     "prev_close_assets": 182522.02,
-    "position_ratio": 82.7,
+    "position_ratio": 95.5,
     "today_return_rate": -2.03,
     "monthly_return_rate": -10.59,
     "initial_capital": 200000.0,
-    "position_count": 4,
+    "position_count": 5,
     "note": "8/31午间·APEX熔断最后一天·大有+6.86%·鹏辉-4.65%·利通距止损1.68%"
   },
   "positions": [
@@ -119,6 +119,23 @@
       "current_price": 118.97,
       "pnl_percent": -1.65,
       "pnl_amount": -599.4
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "quantity": 200,
+      "cost_price": 114.9,
+      "stop_loss": 110.0,
+      "close_price": 114.5,
+      "current_price": 114.5,
+      "market_value": 22900.0,
+      "floating_pnl": -80.0,
+      "floating_pnl_pct": -0.35,
+      "pe_ratio": 158.0,
+      "sector": "半导体/模拟芯片",
+      "note": "8/28违规开仓,APEX熔断期,PE158倍极贵,午间未刷新实时价",
+      "pnl_percent": -0.35,
+      "pnl_amount": -80.0
     }
   ]
 }
