@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "signals": [
+    {
+      "id": 1,
+      "name": "缩量止跌",
+      "condition": "成交额≤1.5万亿",
+      "today_value": "2.39万亿",
+      "satisfied": false,
+      "detail": "放量上涨2446亿，非缩量状态"
+    },
+    {
+      "id": 2,
+      "name": "跌停减少",
+      "condition": "跌停<30家",
+      "today_value": "1家",
+      "satisfied": true,
+      "detail": "跌停仅1家，恐慌情绪极度消退"
+    },
+    {
+      "id": 3,
+      "name": "涨跌恢复",
+      "condition": "上涨>3000家",
+      "today_value": "4335家",
+      "satisfied": true,
+      "detail": "普涨格局，赚钱效应80%"
+    },
+    {
+      "id": 4,
+      "name": "连续止跌",
+      "condition": "2天不创新低",
+      "today_value": "连续2天上涨",
+      "satisfied": true,
+      "detail": "上周五+今日连续反弹，上证+1.41%逼近4000点"
+    },
+    {
+      "id": 5,
+      "name": "北向流入",
+      "condition": "连续2-3日净流入>50亿",
+      "today_value": "待确认",
+      "satisfied": false,
+      "detail": "龙虎榜显示深股通大幅卖出长川科技，北向资金态度偏谨慎"
+    }
+  ],
+  "aggregate": {
+    "satisfied_count": 3,
+    "total_count": 5,
+    "ratio": "3/5",
+    "recommendation": "接近底部",
+    "recommendation_detail": "3/5信号满足，市场处于接近底部区域。放量普涨+跌停极少+连续反弹，情绪已明显修复。但成交额偏大(2.39万亿)非缩量底部特征，北向资金态度待确认。建议关注明日能否延续放量态势。"
+  },
+  "history_7d": [
+    {
+      "date": "2026-08-11",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-12",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-13",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-14",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-15",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-17",
+      "satisfied_count": 3,
+      "count": 5
+    }
+  ]
+}

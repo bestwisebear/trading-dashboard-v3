@@ -198,14 +198,13 @@ if fu:
 # ============================================================
 ni = load_json(os.path.join(DATA_DIR, 'news_impact.json'))
 if ni:
-    check('messages' in ni, "news_impact.json: 缺少 'messages'")
-    check('overall_sentiment' in ni, "news_impact.json: 缺少 'overall_sentiment'")
-    for i, m in enumerate(ni.get('messages', [])[:5]):
-        check('title' in m, f"news_impact.json: messages[{i}] 缺少 'title'")
-        check('type' in m, f"news_impact.json: messages[{i}] 缺少 'type'")
-        check(m.get('type') in ['利好', '利空', '中性'], f"news_impact.json: messages[{i}].type 必须是 利好/利空/中性")
-        check('impact_level' in m, f"news_impact.json: messages[{i}] 缺少 'impact_level'")
-        check(isinstance(m.get('impact_level'), (int, float)), f"news_impact.json: messages[{i}].impact_level 必须是数值")
+    check('items' in ni, "news_impact.json: 缺少 'items'")
+    check(len(ni.get('items', [])) >= 3, f"news_impact.json: items 数量不足(当前{len(ni.get('items',[]))}，需≥3)")
+    for i, m in enumerate(ni.get('items', [])[:5]):
+        check('title' in m, f"news_impact.json: items[{i}] 缺少 'title'")
+        check('impact' in m, f"news_impact.json: items[{i}] 缺少 'impact'")
+        check(m.get('impact') in ['positive', 'negative', 'neutral'], f"news_impact.json: items[{i}].impact 必须是 positive/negative/neutral")
+        check('detail' in m, f"news_impact.json: items[{i}] 缺少 'detail'")
 
 # ============================================================
 # 16. quick_eval.json

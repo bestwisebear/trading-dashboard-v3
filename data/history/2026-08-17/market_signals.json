@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "aggregate": {
+    "green_count": 8,
+    "yellow_count": 3,
+    "red_count": 1,
+    "total_score": 70,
+    "max_score": 100,
+    "no_open_position": false,
+    "market_comment": "科技全面爆发日，赚钱效应80%。短期情绪偏热，明日大概率分化。量价齐升信号明确但需后续资金跟进。"
+  },
+  "signals": {
+    "trend": "strong_rebound",
+    "volume": "heavy_volume",
+    "breadth": "broad_rally",
+    "sector_rotation": "tech_leads",
+    "sentiment": "euphoric",
+    "risk_level": "medium"
+  },
+  "key_events": [
+    "SK海力士警告明年最严重存储荒",
+    "英伟达Spectrum-X CPO交换机全面量产",
+    "四部门发布集成电路企业所得税优惠",
+    "央行每日≤6000亿逆回购对冲税期",
+    "7月工业增加值+4.5%",
+    "摩根大通警告全球粮食危机",
+    "现货黄金站上4400美元",
+    "贵州茅台净利-1.95%国家队退出十大股东"
+  ],
+  "market_verdict": "科技全面爆发日，量价齐升信号明确。创业板+3.14%、科创50+4.14%领涨。半导体/CPO/存储是核心主线。"
+}

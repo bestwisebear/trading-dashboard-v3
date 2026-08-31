@@ -1,0 +1,352 @@
+{
+  "meta": {
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "date": "2026-08-19",
+    "session": "close",
+    "data_basis": "8/19收盘全量数据",
+    "screening_criteria": "全市场7道闸预评估 | 半导体/存储/光通信/机器人/MLCC专项",
+    "note": "🚨8/19科技崩盘日!关注池全线暴跌!长盛轴承-16%/昊志-15%/盛科-13%/光迅-10%。明日止损优先!"
+  },
+  "watchlist": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "score": 5,
+      "status": "hold",
+      "sector": "锂电池",
+      "today_close": 62.4,
+      "today_change_pct": -4.81,
+      "key_price": {
+        "support": 62.0,
+        "resistance": 66.0,
+        "stop_loss": 57.0
+      },
+      "notes": "持仓800股@60.23。收盘62.40,-4.81%。仍盈利+3.6%,距止损57→8.7%。唯一未破止损仓",
+      "pre_close": 65.55,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "score": 5,
+      "status": "hold",
+      "sector": "算力租赁",
+      "today_close": 247.67,
+      "today_change_pct": -7.3,
+      "key_price": {
+        "support": 250.0,
+        "resistance": 265.0,
+        "stop_loss": 250.0
+      },
+      "notes": "🚨持仓100股@254.14。收盘247.67,-7.30%!已破止损250!明日必须清仓止损",
+      "pre_close": 267.16,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "score": 5,
+      "status": "hold",
+      "sector": "机器人概念/精密零部件",
+      "today_close": 69.55,
+      "today_change_pct": -15.18,
+      "key_price": {
+        "support": 70.0,
+        "resistance": 76.0,
+        "stop_loss": 73.0
+      },
+      "notes": "🚨🚨持仓500股@80.18。收盘69.55,-15.18%!远低于止损73!明日必须清仓止损",
+      "pre_close": 82.0,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "score": 3,
+      "status": "hold",
+      "sector": "MLCC/陶瓷基板",
+      "today_close": 109.6,
+      "today_change_pct": -11.61,
+      "key_price": {
+        "support": 110.0,
+        "resistance": 122.0,
+        "stop_loss": 122.0
+      },
+      "notes": "🚨🚨持仓300股@126.21。收盘109.60,-11.61%!远低于止损122!明日必须清仓止损",
+      "pre_close": 123.99,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "score": 7,
+      "status": "watch",
+      "sector": "算力IDC",
+      "today_close": 65.38,
+      "today_change_pct": -6.51,
+      "key_price": {
+        "support": 64.0,
+        "resistance": 72.0,
+        "stop_loss": 63.0
+      },
+      "notes": "收盘65.38,-6.51%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 69.93,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "603986",
+      "name": "兆易创新",
+      "score": 7,
+      "status": "watch",
+      "sector": "存储芯片",
+      "today_close": 403.71,
+      "today_change_pct": -7.56,
+      "key_price": {
+        "support": 390.0,
+        "resistance": 430.0,
+        "stop_loss": 380.0
+      },
+      "notes": "收盘403.71,-7.56%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 436.74,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "688012",
+      "name": "中微公司",
+      "score": 6,
+      "status": "watch",
+      "sector": "半导体设备",
+      "today_close": 372.0,
+      "today_change_pct": -6.61,
+      "key_price": {
+        "support": 360.0,
+        "resistance": 395.0,
+        "stop_loss": 350.0
+      },
+      "notes": "收盘372.0,-6.61%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 398.33,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "score": 6,
+      "status": "watch",
+      "sector": "封测",
+      "today_close": 17.36,
+      "today_change_pct": -7.17,
+      "key_price": {
+        "support": 17.0,
+        "resistance": 18.5,
+        "stop_loss": 16.5
+      },
+      "notes": "收盘17.36,-7.17%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 18.7,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "688385",
+      "name": "复旦微电",
+      "score": 6,
+      "status": "watch",
+      "sector": "FPGA/存储",
+      "today_close": 53.98,
+      "today_change_pct": -6.71,
+      "key_price": {
+        "support": 52.0,
+        "resistance": 58.0,
+        "stop_loss": 50.0
+      },
+      "notes": "收盘53.98,-6.71%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 57.86,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "002281",
+      "name": "光迅科技",
+      "score": 6,
+      "status": "watch",
+      "sector": "光通信",
+      "today_close": 177.88,
+      "today_change_pct": -10.0,
+      "key_price": {
+        "support": 175.0,
+        "resistance": 195.0,
+        "stop_loss": 170.0
+      },
+      "notes": "收盘177.88,-10.00%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 197.64,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "score": 7,
+      "status": "watch",
+      "sector": "光通信",
+      "today_close": 277.4,
+      "today_change_pct": -4.82,
+      "key_price": {
+        "support": 270.0,
+        "resistance": 295.0,
+        "stop_loss": 260.0
+      },
+      "notes": "收盘277.4,-4.82%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 291.44,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "score": 7,
+      "status": "watch",
+      "sector": "光模块",
+      "today_close": 895.6,
+      "today_change_pct": -9.36,
+      "key_price": {
+        "support": 900.0,
+        "resistance": 980.0,
+        "stop_loss": 880.0
+      },
+      "notes": "收盘895.6,-9.36%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 988.1,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "score": 5,
+      "status": "watch",
+      "sector": "网络芯片",
+      "today_close": 378.0,
+      "today_change_pct": -13.28,
+      "key_price": {
+        "support": 370.0,
+        "resistance": 420.0,
+        "stop_loss": 350.0
+      },
+      "notes": "收盘378.0,-13.28%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 435.72,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "score": 6,
+      "status": "watch",
+      "sector": "存储模组",
+      "today_close": 378.98,
+      "today_change_pct": -8.05,
+      "key_price": {
+        "support": 370.0,
+        "resistance": 410.0,
+        "stop_loss": 360.0
+      },
+      "notes": "收盘378.98,-8.05%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 412.17,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "688825",
+      "name": "长鑫科技",
+      "score": 6,
+      "status": "watch",
+      "sector": "DRAM",
+      "today_close": 57.55,
+      "today_change_pct": -2.77,
+      "key_price": {
+        "support": 55.0,
+        "resistance": 60.0,
+        "stop_loss": 53.0
+      },
+      "notes": "收盘57.55,-2.77%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 59.19,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "score": 6,
+      "status": "watch",
+      "sector": "黄金/有色",
+      "today_close": 32.76,
+      "today_change_pct": -2.38,
+      "key_price": {
+        "support": 32.0,
+        "resistance": 34.0,
+        "stop_loss": 31.0
+      },
+      "notes": "收盘32.76,-2.38%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 33.56,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300718",
+      "name": "长盛轴承",
+      "score": 5,
+      "status": "watch",
+      "sector": "机器人零部件",
+      "today_close": 60.56,
+      "today_change_pct": -16.06,
+      "key_price": {
+        "support": 60.0,
+        "resistance": 70.0,
+        "stop_loss": 58.0
+      },
+      "notes": "收盘60.56,-16.06%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 71.87,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "002371",
+      "name": "北方华创",
+      "score": 7,
+      "status": "watch",
+      "sector": "半导体设备",
+      "today_close": 712.95,
+      "today_change_pct": -8.24,
+      "key_price": {
+        "support": 700.0,
+        "resistance": 770.0,
+        "stop_loss": 680.0
+      },
+      "notes": "收盘712.95,-8.24%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 777.09,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "603026",
+      "name": "石大胜华",
+      "score": 5,
+      "status": "watch",
+      "sector": "锂电溶剂",
+      "today_close": 65.13,
+      "today_change_pct": -2.88,
+      "key_price": {
+        "support": 65.0,
+        "resistance": 70.0,
+        "stop_loss": 63.0
+      },
+      "notes": "收盘65.13,-2.88%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 67.06,
+      "price_source": "close_20260819"
+    },
+    {
+      "code": "300769",
+      "name": "德方纳米",
+      "score": 5,
+      "status": "watch",
+      "sector": "磷酸铁锂",
+      "today_close": 46.1,
+      "today_change_pct": -4.18,
+      "key_price": {
+        "support": 45.0,
+        "resistance": 50.0,
+        "stop_loss": 43.0
+      },
+      "notes": "收盘46.1,-4.18%。科技崩盘日全线下杀,暂不操作",
+      "pre_close": 48.1,
+      "price_source": "close_20260819"
+    }
+  ]
+}

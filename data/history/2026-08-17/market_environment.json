@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "indices": {
+    "sh000001": {
+      "name": "上证指数",
+      "close": 3982.65,
+      "change_pct": 1.41,
+      "pre_close": 3927.18
+    },
+    "sz399001": {
+      "name": "深证成指",
+      "close": 14704.27,
+      "change_pct": 2.44,
+      "pre_close": 14354.31
+    },
+    "sz399006": {
+      "name": "创业板指",
+      "close": 3740.16,
+      "change_pct": 3.14,
+      "pre_close": 3626.3
+    },
+    "sh000688": {
+      "name": "科创50",
+      "close": 1788.85,
+      "change_pct": 4.14,
+      "pre_close": null
+    },
+    "sh000300": {
+      "name": "沪深300",
+      "close": 4741.1,
+      "change_pct": 1.61,
+      "pre_close": null
+    }
+  },
+  "market_breadth": {
+    "up_count": 4335,
+    "down_count": 1064,
+    "flat_count": 0,
+    "limit_up": 110,
+    "limit_down": 1,
+    "profit_rate": 80.0
+  },
+  "turnover": {
+    "total_amount_wan": 238740000,
+    "total_amount_yi": 23874,
+    "vs_prev_change": 2446,
+    "vs_prev_pct": "放量2446亿"
+  },
+  "market_style": "深强沪弱，科技全面爆发，成长>价值",
+  "hot_sectors_top10": [
+    {
+      "name": "电子化学品Ⅱ",
+      "change_pct": 5.61,
+      "lead_stock": "中石科技(20.00)"
+    },
+    {
+      "name": "半导体",
+      "change_pct": 5.46,
+      "lead_stock": "中微半导(16.81)"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 4.77,
+      "lead_stock": "太辰光(20.00)"
+    },
+    {
+      "name": "其他电子Ⅱ",
+      "change_pct": 4.22,
+      "lead_stock": "盈方微(10.07)"
+    },
+    {
+      "name": "种植业",
+      "change_pct": 4.16,
+      "lead_stock": "神农种业(11.13)"
+    },
+    {
+      "name": "橡胶",
+      "change_pct": 4.06,
+      "lead_stock": "震安科技(11.61)"
+    },
+    {
+      "name": "元件",
+      "change_pct": 3.22,
+      "lead_stock": ""
+    },
+    {
+      "name": "消费电子",
+      "change_pct": 3.27,
+      "lead_stock": ""
+    },
+    {
+      "name": "通用设备",
+      "change_pct": 3.73,
+      "lead_stock": ""
+    },
+    {
+      "name": "玻璃玻纤",
+      "change_pct": 3.6,
+      "lead_stock": ""
+    }
+  ],
+  "cold_sectors_top10": [
+    {
+      "name": "白酒Ⅱ",
+      "change_pct": -3.18,
+      "lead_stock": ""
+    },
+    {
+      "name": "游戏Ⅱ",
+      "change_pct": -1.89,
+      "lead_stock": ""
+    },
+    {
+      "name": "影视院线",
+      "change_pct": -1.66,
+      "lead_stock": "北京文化跌停"
+    },
+    {
+      "name": "电力",
+      "change_pct": -0.13,
+      "lead_stock": ""
+    }
+  ],
+  "fund_flow_top5": [
+    {
+      "name": "半导体",
+      "change_pct": 5.46,
+      "main_net_inflow": 2004926.23,
+      "up_down_ratio": "171/178"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 4.77,
+      "main_net_inflow": 597365.94,
+      "up_down_ratio": "74/85"
+    },
+    {
+      "name": "电子化学品Ⅱ",
+      "change_pct": 5.61,
+      "main_net_inflow": 318112.18,
+      "up_down_ratio": "33/35"
+    }
+  ],
+  "narrative": "科技全面爆发，半导体+5.46%领涨，CPO/算力硬件持续走强。SK海力士警告存储荒+英伟达CPO量产双催化。白酒领跌-3.18%，茅台中报下滑+国家队退出。农业种植受摩根大通粮食危机预警刺激涨4.16%。全天成交2.39万亿放量2446亿，量价齐升。",
+  "market_stats": {
+    "rise_count": 4335,
+    "fall_count": 1064,
+    "limit_up": 110,
+    "limit_down": 1,
+    "turnover_comment": "2.39万亿放量2446亿，量价齐升"
+  },
+  "hot_sectors_up": [
+    {
+      "name": "电子化学品Ⅱ",
+      "change_pct": 5.61,
+      "lead_stock": "中石科技(20.00)"
+    },
+    {
+      "name": "半导体",
+      "change_pct": 5.46,
+      "lead_stock": "中微半导(16.81)"
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 4.77,
+      "lead_stock": "太辰光(20.00)"
+    },
+    {
+      "name": "其他电子Ⅱ",
+      "change_pct": 4.22,
+      "lead_stock": "盈方微(10.07)"
+    },
+    {
+      "name": "种植业",
+      "change_pct": 4.16,
+      "lead_stock": "神农种业(11.13)"
+    },
+    {
+      "name": "橡胶",
+      "change_pct": 4.06,
+      "lead_stock": "震安科技(11.61)"
+    },
+    {
+      "name": "元件",
+      "change_pct": 3.22,
+      "lead_stock": ""
+    },
+    {
+      "name": "消费电子",
+      "change_pct": 3.27,
+      "lead_stock": ""
+    },
+    {
+      "name": "通用设备",
+      "change_pct": 3.73,
+      "lead_stock": ""
+    },
+    {
+      "name": "玻璃玻纤",
+      "change_pct": 3.6,
+      "lead_stock": ""
+    }
+  ],
+  "hot_sectors_down": [
+    {
+      "name": "白酒Ⅱ",
+      "change_pct": -3.18,
+      "lead_stock": ""
+    },
+    {
+      "name": "游戏Ⅱ",
+      "change_pct": -1.89,
+      "lead_stock": ""
+    },
+    {
+      "name": "影视院线",
+      "change_pct": -1.66,
+      "lead_stock": "北京文化跌停"
+    },
+    {
+      "name": "电力",
+      "change_pct": -0.13,
+      "lead_stock": ""
+    }
+  ]
+}

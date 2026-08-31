@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "last_updated": "2026-08-26T16:55:00+08:00",
+    "date": "2026-08-26",
+    "session": "close",
+    "data_as_of": "8/26收盘",
+    "note": "8/26收盘底部信号2/5(较8/25改善:连续止跌新达标,沪指全天低点3881.74不再创新低)。成交1.81万亿仍>1.5万亿。涨跌2942家差3000阈值仅58家。继续观望"
+  },
+  "signals": [
+    {
+      "id": 1,
+      "name": "缩量止跌",
+      "condition": "成交额≤1.5万亿",
+      "today_value": "8/26:1.81万亿",
+      "satisfied": false,
+      "detail": "8/26成交18087亿(1.81万亿),较昨日1.83万亿再缩231亿,但仍高于1.5万亿阈值。❌不满足"
+    },
+    {
+      "id": 2,
+      "name": "跌停减少",
+      "condition": "跌停<30家",
+      "today_value": "8/26:估计<20家",
+      "satisfied": true,
+      "detail": "2942涨/2445跌,涨跌比1.20:1。个股涨多跌少,恐慌性跌停可控。✅满足"
+    },
+    {
+      "id": 3,
+      "name": "涨跌恢复",
+      "condition": "上涨>3000家",
+      "today_value": "8/26:2942家",
+      "satisfied": false,
+      "detail": "Wind:2942家上涨,差3000家阈值仅58家。较8/25的4229家回落,午后冲高回落影响。❌不满足"
+    },
+    {
+      "id": 4,
+      "name": "连续止跌",
+      "condition": "2天不创新低",
+      "today_value": "8/26最低3881.74>8/25最低3850.86",
+      "satisfied": true,
+      "detail": "沪指8/26全天低点3881.74,高于8/25低点3850.86,已连续2天不创新低!✅满足"
+    },
+    {
+      "id": 5,
+      "name": "北向流入",
+      "condition": "连续2-3日净流入>50亿",
+      "today_value": "8/26:净流出18.62亿",
+      "satisfied": false,
+      "detail": "北向资金净流出18.62亿元。❌不满足"
+    }
+  ],
+  "aggregate": {
+    "ratio": 0.4,
+    "recommendation": "观望",
+    "recommendation_detail": "底部信号2/5:连续止跌新达标(关键改善!)+跌停减少。成交仍高+涨跌未恢复+北向流出。APEX熔断禁新仓。需3/5以上信号确认底部",
+    "current_status": "底部修复中,连续止跌+跌停减少,但量能和涨跌恢复未达标",
+    "next_observation": "8/27 Jackson Hole+美联储PCE+英伟达盘后反应"
+  },
+  "history_7d": [
+    {
+      "date": "2026-08-18",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-19",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-20",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-21",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-22",
+      "satisfied_count": 1,
+      "count": 5
+    },
+    {
+      "date": "2026-08-25",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-26",
+      "satisfied_count": 2,
+      "count": 5
+    }
+  ]
+}

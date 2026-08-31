@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "last_updated": "2026-08-18T16:55:00+08:00",
+    "data_date": "2026-08-18",
+    "source": "8/18盘后收盘:收盘全量刷新",
+    "session": "close"
+  },
+  "current": {
+    "total_assets": 211565.69,
+    "prev_close_assets": 207076.77,
+    "available_cash": 54212.69,
+    "initial_capital": 200000,
+    "position_count": 4,
+    "position_ratio": 74.4,
+    "monthly_pnl": 11565.69,
+    "monthly_return_rate": 5.78,
+    "market_value": 157353.0
+  },
+  "today_so_far": {
+    "date": "2026-08-18",
+    "net_today": 4488.92,
+    "trade_count": 6,
+    "violation_count": 1,
+    "session": "close",
+    "net_today_ref": "total_assets - prev_close_assets",
+    "realized_pnl_today": 3599.1800000000003
+  },
+  "positions": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 800,
+      "cost_price": 60.227,
+      "stop_loss": 57.0,
+      "buy_date": "2026-08-06",
+      "market_value": 52440.0,
+      "close_price": 65.55,
+      "close_change_pct": 0.06
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "quantity": 100,
+      "cost_price": 254.14,
+      "stop_loss": 250.0,
+      "buy_date": "2026-08-14",
+      "market_value": 26716.0,
+      "close_price": 267.16,
+      "close_change_pct": -0.74
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "quantity": 500,
+      "cost_price": 80.18,
+      "stop_loss": 73.0,
+      "buy_date": "2026-08-18",
+      "market_value": 41000.0,
+      "close_price": 82.0,
+      "close_change_pct": 6.8
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "quantity": 300,
+      "cost_price": 126.21,
+      "stop_loss": 122.0,
+      "buy_date": "2026-08-18",
+      "market_value": 37197.0,
+      "close_price": 123.99,
+      "close_change_pct": -4.73
+    }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true,
+    "net_today_cross_check": true,
+    "total_pnl_cross_check": true,
+    "note": "盘后收盘全量刷新,收盘价已验证"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "date": "2026-08-19",
+    "session": "close"
+  },
+  "daily_metrics": {
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": -15011.0,
+    "net_today_pct": -7.1,
+    "total_assets": 196554.69,
+    "prev_close_assets": 211565.69,
+    "total_pnl": -3445.31,
+    "total_pnl_pct": -1.72,
+    "monthly_pnl": -3445.31,
+    "source": "trades_all.json计算+收盘价验证"
+  },
+  "date": "2026-08-19",
+  "score": 50
+}

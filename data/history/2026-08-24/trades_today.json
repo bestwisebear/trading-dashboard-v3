@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "last_updated": "2026-08-24T16:55:00+08:00",
+    "date": "2026-08-24",
+    "session": "close",
+    "note": "trades_all.json为唯一真相源。今日无用户确认成交(盘后截至16:55未收到交割回报)。午间计划止损清仓执行状态未确认"
+  },
+  "trades": [],
+  "summary": {
+    "total_trades": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "realized_pnl": 0
+  }
+}

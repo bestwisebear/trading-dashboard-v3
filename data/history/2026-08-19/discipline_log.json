@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "date": "2026-08-19",
+    "last_updated": "2026-08-19T16:53:00+08:00"
+  },
+  "statistics": {
+    "today": 0,
+    "this_week": 0,
+    "this_month": 0,
+    "total_violations": 15,
+    "last_violation_date": "2026-08-18"
+  },
+  "today_assessment": {
+    "date": "2026-08-19",
+    "score": 50,
+    "summary": "全天0笔交易,未恐慌性操作。但🚨3只持仓破止损却未执行止损!这是严重纪律缺失!明日必须补执行!",
+    "violations": [
+      {
+        "type": "未执行止损",
+        "detail": "昊志机电(止损73→收69.55)/三环集团(止损122→收109.60)/协创数据(止损250→收247.67)均已破止损但未在下午执行清仓",
+        "severity": "high"
+      }
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-08-04",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-05",
+      "violations": 2,
+      "score": 6
+    },
+    {
+      "date": "2026-08-06",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-07",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-10",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-11",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-12",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-13",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-14",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-17",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-18",
+      "violations": 1,
+      "score": 8
+    }
+  ],
+  "stats": {
+    "today": 0,
+    "this_week": 0,
+    "this_month": 0,
+    "total_violations": 15,
+    "last_violation_date": "2026-08-18"
+  },
+  "logs": [
+    {
+      "date": "2026-08-04",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-05",
+      "violations": 2,
+      "score": 6
+    },
+    {
+      "date": "2026-08-06",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-07",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-10",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-11",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-12",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-13",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-14",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-17",
+      "violations": 0,
+      "score": 10
+    }
+  ]
+}

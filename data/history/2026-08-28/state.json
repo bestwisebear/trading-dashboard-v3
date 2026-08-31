@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "last_updated": "2026-08-28T16:53:00+08:00",
+    "data_date": "2026-08-28",
+    "source": "2026-08-28收盘(真实收盘价)",
+    "session": "close",
+    "note": "8/28收盘:全跌·利通-4.21%领跌·成交2.12万亿缩量232亿·APEX月度-11.11%超-10%阈值"
+  },
+  "current": {
+    "total_assets": 177771.02,
+    "prev_close_assets": 171593.02,
+    "available_cash": 983.02,
+    "initial_capital": 200000.0,
+    "position_count": 4,
+    "position_ratio": 99.4,
+    "monthly_pnl": -22228.98,
+    "monthly_return_rate": -11.11,
+    "market_value": 176788.0,
+    "note": "收盘:市值176788.0+现金983.02=总资产177771.02"
+  },
+  "today_so_far": {
+    "date": "2026-08-28",
+    "net_today": 6178.0,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "close",
+    "note": "8/28收盘:零交易。今日收益6178.0。APEX月度-11.11%超阈值"
+  },
+  "positions": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "quantity": 100,
+      "cost_price": 386.73,
+      "stop_loss": 360.0,
+      "market_value": 37688.0
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "quantity": 500,
+      "cost_price": 121.737,
+      "stop_loss": 117.0,
+      "market_value": 59975.0
+    },
+    {
+      "code": "002851",
+      "name": "麦格米特",
+      "quantity": 300,
+      "cost_price": 121.324,
+      "stop_loss": 115.76,
+      "market_value": 37785.0
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "quantity": 600,
+      "cost_price": 64.013,
+      "stop_loss": 60.22,
+      "market_value": 41340.0
+    }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true,
+    "note": "收盘校验:市值176788.0+现金983.02=177771.02"
+  },
+  "cumulative": {
+    "total_pnl_amount": -22228.98,
+    "total_pnl_percent": -11.11,
+    "total_trades_count": 57,
+    "total_violations": 23
+  },
+  "next_action": {
+    "date": "2026-08-28",
+    "action": "🔴8/28收盘:全跌·利通-4.21%逼近止损(119.95距117仅2.5%)·APEX月度-11.11%超阈值·8/28-8/31熔断继续·9/1完全解除",
+    "key_levels": "国瓷68.90(收盘)/70.01(昨收)/68.09(日低)/60.22(止损)·利通119.95(收盘)/125.22(昨收)/119.62(日低)/117(止损⚠️2.5%)·江波龙376.88(收盘)/386.25(昨收)/376.69(日低)/360(止损)·麦格125.95(收盘)/127.66(昨收)/125.68(日低)/115.76(止损)",
+    "risk_events": "Jackson Hole沃什22:00首秀·周五+月末效应·APEX月度超阈值·8/31熔断结束·下周一中报收官"
+  }
+}

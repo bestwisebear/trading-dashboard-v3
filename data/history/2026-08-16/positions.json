@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "last_updated": "2026-08-16T20:50:00+08:00",
+    "version": "3.0",
+    "data_as_of": "2026-08-14 收盘(周末无交易)",
+    "session": "weekend_evening_update"
+  },
+  "positions": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1200,
+      "cost_price": 60.227,
+      "cost_source": "broker",
+      "current_price": 65.78,
+      "price_updated_at": "2026-08-14T15:00:00+08:00",
+      "buy_date": "2026-08-06",
+      "holding_days": 9,
+      "stop_loss": 57.0,
+      "stop_profit": null,
+      "pnl_percent": 9.22,
+      "pnl_amount": 6663.6,
+      "sector": "电池/储能在",
+      "status": "holding",
+      "notes": "储能龙头，Q1净利+815% | 8/14分批锁利600股@67.12(实收40272) | 剩余1200股 | 今日盈利+2006.66(含已实现2872.8) | 支撑64止损57",
+      "key_price": {
+        "support": 64.0,
+        "resistance": 67.95,
+        "buy_range": [
+          57.0,
+          60.0
+        ]
+      }
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "quantity": 100,
+      "cost_price": 300.998,
+      "cost_source": "broker",
+      "current_price": 283.05,
+      "price_updated_at": "2026-08-14T15:00:00+08:00",
+      "buy_date": "2026-08-13",
+      "holding_days": 2,
+      "stop_loss": 275.0,
+      "stop_profit": null,
+      "pnl_percent": -5.96,
+      "pnl_amount": -1794.8,
+      "sector": "半导体设备",
+      "status": "holding",
+      "notes": "半导体ATE龙头 | 8/14减仓200股@281(亏损-1396) | 剩余100股 | 今日盈利+57.47 | 支撑278止损275",
+      "key_price": {
+        "support": 278.0,
+        "resistance": 291.0
+      }
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "quantity": 200,
+      "cost_price": 259.13,
+      "cost_source": "broker",
+      "current_price": 265.99,
+      "price_updated_at": "2026-08-14T15:00:00+08:00",
+      "buy_date": "2026-08-14",
+      "holding_days": 1,
+      "stop_loss": 250.0,
+      "stop_profit": null,
+      "pnl_percent": 2.65,
+      "pnl_amount": 1372.0,
+      "sector": "算力租赁/CPO",
+      "status": "holding",
+      "notes": "算力租赁主线 | H1营收+155.69%，净利+331.11% | 今日盈利+1371.64 | 注意负债率~83%触发硬门禁风险",
+      "key_price": {
+        "support": 250.0,
+        "resistance": 270.0
+      }
+    }
+  ],
+  "closed_today": [
+    {
+      "code": "159558",
+      "name": "半导体设备ETF",
+      "quantity": 47100,
+      "sell_price": 1.194,
+      "realized_pnl": 141.0,
+      "notes": "8/13清仓"
+    },
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "quantity": 2000,
+      "sell_price": 16.15,
+      "realized_pnl": 1586.0,
+      "notes": "8/13清仓"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技(减仓)",
+      "quantity": 200,
+      "sell_price": 281.0,
+      "realized_pnl": -1396.0,
+      "notes": "8/14上午减仓200股，剩100股"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源(减仓)",
+      "quantity": 600,
+      "sell_price": 67.12,
+      "realized_pnl": 2872.8,
+      "notes": "8/14分批锁利600股@67.12，剩1200股"
+    }
+  ],
+  "summary": {
+    "total_market_value": 160439.0,
+    "total_pnl_amount": 6240.8,
+    "total_pnl_percent": 3.12,
+    "net_today": 3435.77,
+    "monthly_pnl": 7076.77,
+    "today_return": 3435.77,
+    "prev_close_assets": 203641.0,
+    "today_return_rate": 1.69,
+    "position_ratio": 77.4,
+    "available_cash": 46637.77,
+    "total_assets": 207076.77,
+    "monthly_return_rate": 3.54,
+    "initial_capital": 200000
+  }
+}

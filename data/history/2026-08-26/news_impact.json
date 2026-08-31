@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "date": "2026-08-26",
+    "last_updated": "2026-08-26T16:55:00+08:00",
+    "source": "web_search_close"
+  },
+  "overall_sentiment": "中性偏多",
+  "sentiment_summary": "8/26三大指数小幅收涨,有色金属+大金融领涨,午后冲高回落。成交1.81万亿缩量。科技板块分化,光模块资金撤离。宏观政策面偏暖(十五五规划+促消费)。英伟达财报+Jackson Hole仍为短期主要风险",
+  "items": [
+    {
+      "id": 1,
+      "time": "15:00",
+      "title": "A股三大指数小幅收涨,沪指+0.59%报3912.52",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "沪指+0.59%,深成指+0.69%,创业板+0.51%。午后冲高回落涨幅收窄。成交18087亿缩量231亿。2942涨/2445跌",
+      "affected_stocks": [],
+      "source": "粤开证券日报/证券时报"
+    },
+    {
+      "id": 2,
+      "time": "15:00",
+      "title": "有色金属板块领涨,工业金属+3.33%/江西铜业涨停",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "有色金属大涨:紫金矿业+3.86%/洛阳钼业+6.35%/江西铜业涨停。中报业绩亮眼:紫金矿业归母净利+68%,江西铜业+107%,中国铝业预告+58-73%。AI算力拉动铜需求新逻辑",
+      "affected_stocks": [
+        "601899",
+        "603993",
+        "600362"
+      ],
+      "source": "中国证券报/证券时报"
+    },
+    {
+      "id": 3,
+      "time": "14:30",
+      "title": "大金融板块全天强势,券商+保险领涨",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "非银金融+2.47%。券商:锦龙股份/湘财股份涨停。保险:五大险企全线上涨。中报亮眼:招商证券归母净利+105%,长江证券+84%。金融监管总局发布保险公司资产负债管理办法",
+      "affected_stocks": [
+        "600030",
+        "300059"
+      ],
+      "source": "中国证券报"
+    },
+    {
+      "id": 4,
+      "time": "16:47",
+      "title": "全天特大单净流入203亿,有色+非银主导",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "特大单净流入203亿。洛阳钼业+16.43亿/江西铜业+14.42亿/剑桥科技+12.77亿居前。光模块净流出:长鑫科技-7.61亿/天孚通信-6.54亿/新易盛-5.20亿",
+      "affected_stocks": [],
+      "source": "证券时报/数据宝"
+    },
+    {
+      "id": 5,
+      "time": "13:35",
+      "title": "核聚变概念全天活跃,2026核聚变能大会披露进展",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "2026核聚变能大会披露中国环流四号进展:2028年前建成25T高温超导磁体测试线。百利电气/融发核电/顺钠股份涨停。方正证券关注合锻智能/旭光电子/西部超导",
+      "affected_stocks": [],
+      "source": "证券时报/方正证券"
+    },
+    {
+      "id": 6,
+      "time": "09:00",
+      "title": "工信部:十五五推进中小企业发展,深化数智赋能",
+      "category": "macro",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "国新办发布会:促进中小企业发展十五五规划将发布。四项重点:培育专精特新/数智赋能/健全服务/强化要素。成立国家中小企业发展基金二期。着力扩大优质消费品供给,深入实施AI+商品",
+      "affected_stocks": [],
+      "source": "经济参考报/国新办"
+    },
+    {
+      "id": 7,
+      "time": "11:33",
+      "title": "数字产业上半年收入20.71万亿+13.6%,利润+19.3%",
+      "category": "macro",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "工信部:上半年数字产业收入20.71万亿(+13.6%),利润1.79万亿(+19.3%)。AI需求+出口双拉动。收入利润率8.6%(+0.7pct)。政策面持续支撑科技产业",
+      "affected_stocks": [],
+      "source": "工信部/央广网"
+    },
+    {
+      "id": 8,
+      "time": "15:05",
+      "title": "宇树科技股价接近腰斩,机器人板块承压",
+      "category": "stock",
+      "impact": "negative",
+      "impact_level": 3,
+      "detail": "宇树科技-W(688836)跌-1.87%至591.53,自高点接近腰斩。机器人概念降温",
+      "affected_stocks": [
+        "688836"
+      ],
+      "source": "中新经纬"
+    },
+    {
+      "id": 9,
+      "time": "15:00",
+      "title": "CRO概念震荡调整,诚达药业/康龙化成跌幅靠前",
+      "category": "sector",
+      "impact": "negative",
+      "impact_level": 2,
+      "detail": "CRO/医疗服务板块回调。诚达药业、康龙化成、义翘神州、万邦医药跌幅靠前。医药板块持续调整",
+      "affected_stocks": [],
+      "source": "中新经纬"
+    },
+    {
+      "id": 10,
+      "time": "09:07",
+      "title": "8/26盘前:财政部发行300亿贴现国债+AGIC深圳AI展举办",
+      "category": "macro",
+      "impact": "neutral",
+      "impact_level": 2,
+      "detail": "财政部拟发行300亿91天贴现国债。AGIC 2026深圳国际通用人工智能展8/26-28举办。游戏展Gamescom 8/26-30德国科隆举行",
+      "affected_stocks": [],
+      "source": "央广财经"
+    },
+    {
+      "id": 11,
+      "time": "16:00",
+      "title": "泸州老窖上半年净利-43.37%,消费板块分化",
+      "category": "stock",
+      "impact": "negative",
+      "impact_level": 2,
+      "detail": "泸州老窖上半年归母净利43.39亿(-43.37%)。消费板块承压。但四川长虹+228.62%/盐湖股份+137.88%表现亮眼",
+      "affected_stocks": [
+        "000568"
+      ],
+      "source": "央广财经"
+    },
+    {
+      "id": 12,
+      "time": "20:00",
+      "title": "8/27关注:Jackson Hole沃什演讲+英伟达盘后反应",
+      "category": "macro",
+      "impact": "neutral",
+      "impact_level": 4,
+      "detail": "8/27重大风险事件:①Jackson Hole全球央行年会沃什演讲 ②英伟达财报盘后市场反应(8/26盘后) ③美联储PCE数据。多重不确定性叠加",
+      "affected_stocks": [],
+      "source": "综合"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "last_updated": "2026-08-28T16:53:00+08:00",
+    "date": "2026-08-28",
+    "session": "close"
+  },
+  "daily_metrics": {
+    "trade_count": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": 6178.0,
+    "total_assets": 177771.02,
+    "position_ratio": 99.4,
+    "discipline_score": 90
+  },
+  "date": "2026-08-28",
+  "score": 90
+}

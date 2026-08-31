@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "daily_metrics": {
+    "date": "2026-08-17",
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "unrealized_pnl_change": 2260.0,
+    "net_today": 2260.0,
+    "total_assets": 209336.77,
+    "position_ratio": 77.7,
+    "note": "今日无操作，持仓过夜享受反弹收益"
+  },
+  "market_summary": {
+    "sh_change_pct": 1.41,
+    "sz_change_pct": 2.44,
+    "cy_change_pct": 3.14,
+    "kc50_change_pct": 4.14,
+    "up_count": 4335,
+    "down_count": 1064,
+    "limit_up": 110,
+    "limit_down": 1,
+    "total_amount_yi": 23874,
+    "main_theme": "半导体+5.46%领涨，CPO/存储/算力全面爆发"
+  },
+  "positions_review": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "close": 65.51,
+      "change_pct": -0.41,
+      "comment": "锂电池板块小幅调整，主力净流出1.57亿，但5日净流入3.1亿"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "close": 302.57,
+      "change_pct": 6.9,
+      "comment": "半导体设备大涨6.9%！龙虎榜显示机构3席位买入，深股通买8.5亿。浮盈转正"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "close": 269.15,
+      "change_pct": 1.19,
+      "comment": "算力租赁温和上涨，H1业绩+331%支撑。主力小幅净流出3.1亿"
+    }
+  ],
+  "date": "2026-08-17",
+  "score": 10
+}

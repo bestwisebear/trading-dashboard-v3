@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "core_plan": {
+    "action": "持仓观望",
+    "detail": "科技全面爆发后明日大概率分化，持仓享受收益不追高",
+    "conditions": [
+      "明日缩量则科技分化概率大",
+      "长川涨6.9%后关注300元支撑",
+      "鹏辉弱势需关注65元支撑"
+    ]
+  },
+  "plans": [
+    {
+      "stock": "300604",
+      "name": "长川科技",
+      "action": "关注300元支撑，跌破295考虑减仓",
+      "trigger": "跌破295"
+    },
+    {
+      "stock": "300438",
+      "name": "鹏辉能源",
+      "action": "弱势股关注65元支撑，跌破63考虑止损",
+      "trigger": "跌破63"
+    },
+    {
+      "stock": "300857",
+      "name": "协创数据",
+      "action": "持有观察，业绩支撑强",
+      "trigger": "跌破260"
+    }
+  ],
+  "key_stats": {
+    "win_rate_30d": 0.65,
+    "monthly_pnl_percent": 4.67,
+    "execution_score": 7.2
+  },
+  "tomorrow_watchlist": [
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "reason": "CPO龙头涨7.04%强势"
+    },
+    {
+      "code": "000636",
+      "name": "风华高科",
+      "reason": "MLCC涨价受益"
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "reason": "MLCC上游+3.68%"
+    }
+  ]
+}

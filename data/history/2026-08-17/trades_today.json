@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "trades": [],
+  "summary": {
+    "total_trades": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "trade_count": 0,
+    "realized_pnl": 0,
+    "violation_count": 0
+  }
+}

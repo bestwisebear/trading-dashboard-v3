@@ -1,42 +1,117 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00"
+    "last_updated": "2026-08-19T11:35:00+08:00",
+    "date": "2026-08-19",
+    "session": "intraday"
   },
-  "level": "medium",
-  "score": 65,
+  "level": "critical",
+  "score": 95,
   "factors": [
-    "仓位70%合理",
-    "持仓均为科技方向",
-    "浪潮信息距止损+3.9%",
-    "底部信号仅2/5"
+    {
+      "factor": "仓位",
+      "value": "72.8%",
+      "status": "pass",
+      "detail": "72.8%,较盘前74.4%略降(市值缩水)"
+    },
+    {
+      "factor": "持仓数",
+      "value": "4只",
+      "status": "danger",
+      "detail": "踩线上限4只,新仓禁入"
+    },
+    {
+      "factor": "今日交易次数",
+      "value": "0笔",
+      "status": "pass",
+      "detail": "午间0笔,等13:00开盘后执行止损"
+    },
+    {
+      "factor": "市场情绪",
+      "value": "🔴🔴科技崩盘",
+      "status": "critical",
+      "detail": "创业板-4.98%/深成指-3.97%/沪指-1.96%!放量暴跌,科技全线跌停潮"
+    },
+    {
+      "factor": "持仓表现",
+      "value": "4只全绿",
+      "status": "critical",
+      "detail": "鹏辉-3.30%/协创-5.86%/昊志-12.82%/三环-9.51%,全面亏损"
+    },
+    {
+      "factor": "板块强度",
+      "value": "🔴🔴科技全面崩盘",
+      "status": "critical",
+      "detail": "存储-8.5%/光通信-8%/机器人-7.5%/半导体设备-6.5%。仅焦炭/银行/航运逆势"
+    },
+    {
+      "factor": "昊志止损",
+      "value": "🚨已破止损!",
+      "status": "critical",
+      "detail": "71.49远低于止损73.0!亏-10.8%(-4345元)!下午必须清仓500股"
+    },
+    {
+      "factor": "三环止损",
+      "value": "🚨已破止损!",
+      "status": "critical",
+      "detail": "112.20远低于止损122.0!亏-11.1%(-4203元)!下午必须清仓300股"
+    },
+    {
+      "factor": "协创止损距离",
+      "value": "🚨距止损0.6%!",
+      "status": "critical",
+      "detail": "251.51距止损250仅0.6%!下午极可能触发止损"
+    },
+    {
+      "factor": "月度PnL",
+      "value": "🚨翻负!",
+      "status": "danger",
+      "detail": "月度PnL从+11565→-519元!收益率从+5.78%→-0.26%!今日一天亏掉全部月利润"
+    },
+    {
+      "factor": "账户级回撤",
+      "value": "今日-5.71%",
+      "status": "danger",
+      "detail": "今日-12085元(-5.71%),触发APEX一级熔断(周回撤5%)!"
+    }
   ],
-  "suggestion": "当前风险可控，继续持有观察。浪潮信息接近止损线需警惕。",
   "rule_checks": [
     {
       "rule": "持仓≤4只",
       "passed": true,
-      "current_value": "2只"
+      "current_value": "4只"
     },
     {
       "rule": "单日≤6笔",
       "passed": true,
-      "current_value": "2笔"
+      "current_value": "午间0笔,等13:00开盘"
     },
     {
-      "rule": "新仓时段13:30-14:30",
-      "passed": true,
-      "current_value": "无新仓"
+      "rule": "新仓13:30-14:30",
+      "passed": null,
+      "current_value": "当前禁开新仓(止损优先)"
     },
     {
-      "rule": "禁做T",
+      "rule": "禁止做T",
       "passed": true,
-      "current_value": "未做T"
+      "current_value": "0笔"
     },
     {
-      "rule": "减仓后禁接回",
-      "passed": true,
-      "current_value": "未接回"
+      "rule": "减仓后禁当日接回",
+      "passed": null,
+      "current_value": "待执行"
+    },
+    {
+      "rule": "涨跌<2000禁开新仓",
+      "passed": null,
+      "current_value": "预计涨跌家数<1500,禁止开新仓"
+    },
+    {
+      "rule": "APEX周回撤5%熔断",
+      "passed": false,
+      "current_value": "今日-5.71%已触发!必须减仓止损"
     }
-  ]
+  ],
+  "action_plan": "🚨🚨 13:00开盘后立即执行:\n1. 昊志机电500股→清仓止损(已破73止损,71.49)\n2. 三环集团300股→清仓止损(已破122止损,112.20)\n3. 协创数据100股→盯250止损线,跌破即清\n4. 鹏辉能源800股→唯一盈利仓,守57止损\n止损后仓位降至~35%,保留现金等待企稳",
+  "summary": "🚨🚨 CRITICAL: 科技板块崩盘,2只已破止损/1只濒临破止损。今日-5.71%触发APEX一级熔断。下午核心:严格止损,不再犹豫!",
+  "suggestion": "🚨13:00开盘立即止损:昊志500股清仓(已破73)/三环300股清仓(已破122)/协创盯250线。止损后仓位降至~35%,保留现金等待企稳。今日禁止任何抄底操作。"
 }

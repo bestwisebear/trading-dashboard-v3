@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25",
+    "session": "post_close",
+    "source": "stock-data-skill收盘行情",
+    "data_basis": "8/25收盘(腾讯行情)",
+    "note": "8/25收盘：沪指探底回升+0.19%，深成指-0.35%，创业板-1.00%。成交1.83万亿缩量1756亿。涨跌4229:1243，70家涨停。消费/农业/医药领涨，有色/电力设备/半导体回调"
+  },
+  "indices": {
+    "sh000001": {
+      "name": "上证指数",
+      "close": 3889.44,
+      "change_pct": 0.19,
+      "pre_close": 3882.01,
+      "open": 3863.37,
+      "high": 3896.21,
+      "low": 3850.86,
+      "volume": 464117264,
+      "amount": 85887423,
+      "pe_ratio": 17.71,
+      "note": "收盘3889.44(+0.19%),探底回升,盘中低3850.86后反弹38.58点"
+    },
+    "sz399001": {
+      "name": "深证成指",
+      "close": 13745.87,
+      "change_pct": -0.35,
+      "pre_close": 13794.29,
+      "open": 13683.91,
+      "high": 13848.4,
+      "low": 13568.51,
+      "volume": 579779582,
+      "amount": 97297023,
+      "pe_ratio": 43.05,
+      "note": "收盘13745.87(-0.35%),午后回升收窄跌幅"
+    },
+    "sz399006": {
+      "name": "创业板指",
+      "close": 3397.52,
+      "change_pct": -1.0,
+      "pre_close": 3431.89,
+      "open": 3403.2,
+      "high": 3440.65,
+      "low": 3359.74,
+      "volume": 170664183,
+      "amount": 46397673,
+      "pe_ratio": 55.32,
+      "note": "收盘3397.52(-1.00%),半导体/光模块拖累,午后弱修复"
+    }
+  },
+  "market_breadth": {
+    "up_count": 4229,
+    "down_count": 1243,
+    "flat_count": 70,
+    "limit_up": 70,
+    "up_down_ratio": "3.40:1",
+    "note": "Wind:4229涨/1243跌/70平,涨跌比3.40:1,个股普涨,小票赚钱效应好。70家涨停"
+  },
+  "volume": {
+    "total_amount": 18318,
+    "prev_amount": 20074,
+    "change": -1756,
+    "note": "沪深合计1.83万亿,较上日缩量1756亿,存量博弈特征明显"
+  },
+  "north_flow": {
+    "net_flow": -18.62,
+    "note": "北向资金净流出18.62亿元"
+  },
+  "sector_top10_up": [
+    {
+      "name": "美容护理",
+      "change_pct": 3.66,
+      "lead_stock": "石头科技(20.00)"
+    },
+    {
+      "name": "农林牧渔",
+      "change_pct": 2.23,
+      "lead_stock": "金健米业(10.05)"
+    },
+    {
+      "name": "医药生物",
+      "change_pct": 2.08,
+      "lead_stock": "凯莱英(10.00)"
+    },
+    {
+      "name": "轻工制造",
+      "change_pct": 2.07
+    },
+    {
+      "name": "社会服务",
+      "change_pct": 1.99
+    },
+    {
+      "name": "小家电",
+      "change_pct": 8.02,
+      "lead_stock": "石头科技(20.00)"
+    },
+    {
+      "name": "化妆品",
+      "change_pct": 5.23,
+      "lead_stock": "青岛金王(10.06)"
+    },
+    {
+      "name": "房地产服务",
+      "change_pct": 4.37,
+      "lead_stock": "我爱我家(10.14)"
+    },
+    {
+      "name": "装修装饰",
+      "change_pct": 3.64,
+      "lead_stock": "东易日盛(10.06)"
+    },
+    {
+      "name": "医疗服务",
+      "change_pct": 3.4,
+      "lead_stock": "凯莱英(10.00)"
+    }
+  ],
+  "sector_top10_down": [
+    {
+      "name": "有色金属",
+      "change_pct": -2.48,
+      "lead_stock": "国城矿业(-8.50)"
+    },
+    {
+      "name": "电力设备",
+      "change_pct": -1.07
+    },
+    {
+      "name": "石油石化",
+      "change_pct": -0.61
+    },
+    {
+      "name": "银行",
+      "change_pct": -0.6
+    },
+    {
+      "name": "通信",
+      "change_pct": -0.29
+    },
+    {
+      "name": "煤炭",
+      "change_pct": -0.21
+    },
+    {
+      "name": "基础化工",
+      "change_pct": -0.23
+    },
+    {
+      "name": "贵金属",
+      "change_pct": -4.12
+    },
+    {
+      "name": "半导体",
+      "change_pct": -2.74
+    },
+    {
+      "name": "锂矿",
+      "change_pct": -3.5
+    }
+  ],
+  "concept_top": [
+    {
+      "name": "富勒烯",
+      "change_pct": 5.31
+    },
+    {
+      "name": "华为机器人",
+      "change_pct": 4.64
+    },
+    {
+      "name": "转基因",
+      "change_pct": 3.74
+    },
+    {
+      "name": "粮食概念",
+      "change_pct": 3.64
+    },
+    {
+      "name": "液冷服务器",
+      "change_pct": 3.2
+    },
+    {
+      "name": "CRO",
+      "change_pct": 3.44
+    },
+    {
+      "name": "血液制品",
+      "change_pct": 4.0
+    }
+  ],
+  "concept_bottom": [
+    {
+      "name": "锂矿",
+      "change_pct": -3.5
+    },
+    {
+      "name": "稀有金属",
+      "change_pct": -3.0
+    },
+    {
+      "name": "半导体硅片",
+      "change_pct": -2.8
+    },
+    {
+      "name": "工业金属",
+      "change_pct": -2.5
+    }
+  ],
+  "money_flow_top": [
+    {
+      "name": "通信设备",
+      "main_net_inflow": 234153,
+      "change_pct": -0.46
+    },
+    {
+      "name": "元件",
+      "main_net_inflow": 208068,
+      "change_pct": 0.2
+    },
+    {
+      "name": "专用设备",
+      "main_net_inflow": 203294,
+      "change_pct": 1.39
+    }
+  ],
+  "overseas": {
+    "us_dji_close_20260824": {
+      "name": "道指",
+      "value": 53417.16,
+      "change_pct": 0.26
+    },
+    "us_spx_close_20260824": {
+      "name": "标普500",
+      "value": 7652.86,
+      "change_pct": -0.28
+    },
+    "us_ixic_close_20260824": {
+      "name": "纳指",
+      "value": 25980.19,
+      "change_pct": -0.76,
+      "note": "7连阴,2022年来最长连跌"
+    },
+    "note": "8/24收盘:纳指7连阴,费半-2.7%,存储股-5%以上。8/25亚太午后反攻,KOSPI收涨0.46%(此前跌超4%)"
+  },
+  "hot_sectors_up": [
+    {
+      "name": "美容护理",
+      "change_pct": 3.66,
+      "lead_stock": "石头科技(20.00)"
+    },
+    {
+      "name": "农林牧渔",
+      "change_pct": 2.23,
+      "lead_stock": "金健米业(10.05)"
+    },
+    {
+      "name": "医药生物",
+      "change_pct": 2.08,
+      "lead_stock": "凯莱英(10.00)"
+    },
+    {
+      "name": "轻工制造",
+      "change_pct": 2.07
+    },
+    {
+      "name": "社会服务",
+      "change_pct": 1.99
+    },
+    {
+      "name": "小家电",
+      "change_pct": 8.02,
+      "lead_stock": "石头科技(20.00)"
+    },
+    {
+      "name": "化妆品",
+      "change_pct": 5.23,
+      "lead_stock": "青岛金王(10.06)"
+    },
+    {
+      "name": "房地产服务",
+      "change_pct": 4.37,
+      "lead_stock": "我爱我家(10.14)"
+    },
+    {
+      "name": "装修装饰",
+      "change_pct": 3.64,
+      "lead_stock": "东易日盛(10.06)"
+    },
+    {
+      "name": "医疗服务",
+      "change_pct": 3.4,
+      "lead_stock": "凯莱英(10.00)"
+    }
+  ],
+  "hot_sectors_down": [
+    {
+      "name": "有色金属",
+      "change_pct": -2.48,
+      "lead_stock": "国城矿业(-8.50)"
+    },
+    {
+      "name": "电力设备",
+      "change_pct": -1.07
+    },
+    {
+      "name": "石油石化",
+      "change_pct": -0.61
+    },
+    {
+      "name": "银行",
+      "change_pct": -0.6
+    },
+    {
+      "name": "通信",
+      "change_pct": -0.29
+    },
+    {
+      "name": "煤炭",
+      "change_pct": -0.21
+    },
+    {
+      "name": "基础化工",
+      "change_pct": -0.23
+    },
+    {
+      "name": "贵金属",
+      "change_pct": -4.12
+    },
+    {
+      "name": "半导体",
+      "change_pct": -2.74
+    },
+    {
+      "name": "锂矿",
+      "change_pct": -3.5
+    }
+  ],
+  "market_stats": {
+    "rise_count": 4229,
+    "fall_count": 1243,
+    "turnover_comment": "沪深合计1.83万亿,较上日缩量1756亿"
+  },
+  "market_stats_8_24": {
+    "rise_count": 4229,
+    "fall_count": 1243
+  }
+}

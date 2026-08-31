@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "date": "2026-08-21",
+    "last_updated": "2026-08-22T20:55:00+08:00",
+    "note": "8/22周末补录8/19-8/21三天'未执行止损'违规;total_violations自8/20口径的15累计+3"
+  },
+  "statistics": {
+    "today": 1,
+    "this_week": 4,
+    "this_month": 18,
+    "total_violations": 18,
+    "last_violation_date": "2026-08-21"
+  },
+  "today_assessment": {
+    "date": "2026-08-21",
+    "score": 50,
+    "summary": "0笔交易无冲动操作,但🚨3只破止损仓(协创/昊志/三环)最后通牒日仍未清仓,连续第4天纪律失效。周一(8/24)9:25前预挂市价单无条件清仓",
+    "violations": [
+      {
+        "type": "未执行止损",
+        "detail": "协创(止损250→收247.41)/昊志(止损73→收69.65)/三环(止损122→收113.90)连续4天破止损未清仓",
+        "severity": "high"
+      }
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-08-04",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-05",
+      "violations": 2,
+      "score": 6
+    },
+    {
+      "date": "2026-08-06",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-07",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-10",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-11",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-12",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-13",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-14",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-17",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-18",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-19",
+      "violations": 1,
+      "score": 5
+    },
+    {
+      "date": "2026-08-20",
+      "violations": 1,
+      "score": 5
+    },
+    {
+      "date": "2026-08-21",
+      "violations": 1,
+      "score": 5
+    }
+  ],
+  "stats": {
+    "today": 1,
+    "this_week": 4,
+    "this_month": 18,
+    "total_violations": 18,
+    "last_violation_date": "2026-08-21"
+  },
+  "logs": [
+    {
+      "date": "2026-08-04",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-05",
+      "violations": 2,
+      "score": 6
+    },
+    {
+      "date": "2026-08-06",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-07",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-10",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-11",
+      "violations": 7,
+      "score": 2
+    },
+    {
+      "date": "2026-08-12",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-13",
+      "violations": 1,
+      "score": 8
+    },
+    {
+      "date": "2026-08-14",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-17",
+      "violations": 0,
+      "score": 10
+    },
+    {
+      "date": "2026-08-19",
+      "violations": 1,
+      "score": 5,
+      "note": "科技崩盘日3只破止损未执行止损(high)"
+    },
+    {
+      "date": "2026-08-20",
+      "violations": 1,
+      "score": 5,
+      "note": "破止损仓第2天仍未清仓(high)"
+    },
+    {
+      "date": "2026-08-21",
+      "violations": 1,
+      "score": 5,
+      "note": "最后通牒日第4天仍未清仓(high)"
+    }
+  ]
+}

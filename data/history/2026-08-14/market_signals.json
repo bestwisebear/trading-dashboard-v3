@@ -1,0 +1,125 @@
+{
+    "meta": {
+        "date": "2026-08-14",
+        "last_updated": "2026-08-14T16:55:00+08:00",
+        "session": "close",
+        "data_basis": "8/14收盘数据"
+    },
+    "overall_signal": "green",
+    "gate_status": {
+        "gates_pass": 6,
+        "gates_total": 7,
+        "verdict": "收盘信号从午间yellow升至green。三大指数集体收涨，创业板+1.12%表现突出。算力/光模块全天领涨，持仓标的全面飘红。底部信号从1/5升至3/5接近底部。但涨跌家数2800:2400未达3000线，且主力仍整体净流出"
+    },
+    "aggregate": {
+        "green_count": 5,
+        "yellow_count": 1,
+        "red_count": 0,
+        "total_score": 11,
+        "max_score": 12,
+        "no_open_position": false,
+        "market_comment": "8/14收盘市场偏强，创业板+1.12%领涨。持仓全面飘红：鹏辉+1.32%，长川+0.48%，协创+3.9%。算力/光模块/通信设备全天强势。底部信号从1/5升至3/5。央行万亿逆回购托底。明日关注：涨跌家数能否破3000确认底部，鹏辉能否站稳66"
+    },
+    "signals_20260814": [
+        {
+            "id": "market_trend",
+            "name": "市场趋势",
+            "value": "沪指+0.01%/深成指+0.45%/创业板+1.12%",
+            "status": "green",
+            "detail": "三大指数集体收涨，创业板+1.12%领涨，科技成长风格占优"
+        },
+        {
+            "id": "sector_rotation",
+            "name": "板块轮动",
+            "value": "通信设备+3.63%/光模块涨停潮/算力硬件集体反弹",
+            "status": "green",
+            "detail": "算力/光模块/通信全天最强，存储/半导体跟涨，科技主线确认"
+        },
+        {
+            "id": "holding_performance",
+            "name": "持仓表现",
+            "value": "鹏辉+1.32%/长川+0.48%/协创+3.9%",
+            "status": "green",
+            "detail": "三只持仓全面飘红，协创数据首日建仓即盈利+2.65%"
+        },
+        {
+            "id": "bottom_signal",
+            "name": "底部信号",
+            "value": "3/5满足（缩量止跌+跌停减少+连续止跌）",
+            "status": "green",
+            "detail": "从昨日1/5大幅升至3/5，接近底部区域"
+        },
+        {
+            "id": "liquidity",
+            "name": "流动性",
+            "value": "央行1万亿买断式逆回购+成交2.14万亿缩量",
+            "status": "green",
+            "detail": "央行万亿操作托底，缩量企稳非恐慌"
+        },
+        {
+            "id": "breadth",
+            "name": "市场广度",
+            "value": "涨跌2800:2400（红盘率53%）",
+            "status": "yellow",
+            "detail": "较昨日1143:4317大幅改善，但未达3000线。分化行情"
+        },
+        {
+            "id": "capital_flow",
+            "name": "资金流向",
+            "value": "主力净流出~37亿（通信设备净流入12亿）",
+            "status": "yellow",
+            "detail": "主力整体仍净流出，但通信/算力方向资金集中流入"
+        }
+    ],
+    "signals": [
+        {
+            "id": "market_trend",
+            "name": "市场趋势",
+            "value": "沪指+0.01%/深成指+0.45%/创业板+1.12%",
+            "status": "green",
+            "detail": "三大指数集体收涨，创业板+1.12%领涨，科技成长风格占优"
+        },
+        {
+            "id": "sector_rotation",
+            "name": "板块轮动",
+            "value": "通信设备+3.63%/光模块涨停潮/算力硬件集体反弹",
+            "status": "green",
+            "detail": "算力/光模块/通信全天最强，存储/半导体跟涨，科技主线确认"
+        },
+        {
+            "id": "holding_performance",
+            "name": "持仓表现",
+            "value": "鹏辉+1.32%/长川+0.48%/协创+3.9%",
+            "status": "green",
+            "detail": "三只持仓全面飘红，协创数据首日建仓即盈利+2.65%"
+        },
+        {
+            "id": "bottom_signal",
+            "name": "底部信号",
+            "value": "3/5满足（缩量止跌+跌停减少+连续止跌）",
+            "status": "green",
+            "detail": "从昨日1/5大幅升至3/5，接近底部区域"
+        },
+        {
+            "id": "liquidity",
+            "name": "流动性",
+            "value": "央行1万亿买断式逆回购+成交2.14万亿缩量",
+            "status": "green",
+            "detail": "央行万亿操作托底，缩量企稳非恐慌"
+        },
+        {
+            "id": "breadth",
+            "name": "市场广度",
+            "value": "涨跌2800:2400（红盘率53%）",
+            "status": "yellow",
+            "detail": "较昨日1143:4317大幅改善，但未达3000线。分化行情"
+        },
+        {
+            "id": "capital_flow",
+            "name": "资金流向",
+            "value": "主力净流出~37亿（通信设备净流入12亿）",
+            "status": "yellow",
+            "detail": "主力整体仍净流出，但通信/算力方向资金集中流入"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "last_updated": "2026-08-25T08:23:00+08:00",
+    "data_date": "2026-08-24",
+    "source": "8/19午间刷新:上午收盘(11:30)盘中价",
+    "session": "intraday",
+    "data_as_of": "2026-08-19 上午收盘",
+    "note": "🚨8/25盘前刷新:持仓2只(江波龙/利通),APEX二级熔断生效(月度-14.24%>10%阈值,8/25-8/31禁新仓),崩盘后纪律防御+清仓次日禁回补=三重锁定全天零新仓"
+  },
+  "current": {
+    "total_assets": 171519.28,
+    "prev_close_assets": 211565.69,
+    "available_cash": 62005.18,
+    "initial_capital": 200000,
+    "position_count": 2,
+    "position_ratio": 63.8,
+    "monthly_pnl": -28480.72,
+    "monthly_return_rate": -14.24,
+    "market_value": 109514.0,
+    "note": "8/25盘前刷新,价格仍以8/24收盘为准(price_source=broker_close_20260824,等9:30开盘再更新)"
+  },
+  "today_so_far": {
+    "date": "2026-08-19",
+    "net_today": -12085.0,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "intraday",
+    "note": "午间:无交易,但持仓巨亏-12085元(-5.71%)"
+  },
+  "positions": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "quantity": 200,
+      "cost_price": 381.63,
+      "stop_loss": 360.0,
+      "buy_date": "2026-08-21(待确认)"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "quantity": 300,
+      "cost_price": 123.327,
+      "stop_loss": 117.0,
+      "buy_date": "2026-08-21(待确认)"
+    }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true,
+    "note": "午间盘中快照,prev_close_assets保持8/18收盘值不变"
+  },
+  "cumulative": {
+    "total_pnl_amount": 11565.69,
+    "total_pnl_percent": 5.78,
+    "total_trades_count": 53,
+    "total_violations": 1,
+    "start_date": "2026-08-03"
+  }
+}

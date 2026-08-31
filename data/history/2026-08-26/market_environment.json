@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "last_updated": "2026-08-26T16:55:00+08:00",
+    "date": "2026-08-26",
+    "session": "close",
+    "source": "盘后全量刷新(腾讯收盘+券商研报)",
+    "data_basis": "8/26收盘行情"
+  },
+  "indices": {
+    "sh000001": {
+      "name": "上证指数",
+      "close": 3912.52,
+      "change_pct": 0.59,
+      "pre_close": 3889.44,
+      "open": 3881.74,
+      "high": 3926.44,
+      "low": 3881.74,
+      "volume": 489553021,
+      "amount": 85722349,
+      "pe_ratio": 17.76,
+      "note": "收盘3912.52(+0.59%)。冲高回落,午后涨幅收窄"
+    },
+    "sz399001": {
+      "name": "深证成指",
+      "close": 13841.33,
+      "change_pct": 0.69,
+      "pre_close": 13745.87,
+      "open": 13761.36,
+      "high": 13948.69,
+      "low": 13714.05,
+      "volume": 577607360,
+      "amount": 95149975,
+      "pe_ratio": 43.47,
+      "note": "收盘13841.33(+0.69%)"
+    },
+    "sz399006": {
+      "name": "创业板指",
+      "close": 3414.88,
+      "change_pct": 0.51,
+      "pre_close": 3397.52,
+      "open": 3409.28,
+      "high": 3455.89,
+      "low": 3379.14,
+      "volume": 164782656,
+      "amount": 44358063,
+      "pe_ratio": 56.55,
+      "note": "收盘3414.88(+0.51%)。午后回落明显"
+    }
+  },
+  "market_breadth": {
+    "up_count": 2942,
+    "down_count": 2445,
+    "flat_count": 156,
+    "note": "2942涨/2445跌/156平。个股涨多跌少但涨幅收窄"
+  },
+  "volume": {
+    "total_amount": 18087,
+    "prev_amount": 18318,
+    "change": -231,
+    "note": "全天成交18087亿(1.81万亿),较昨日缩量231亿。连续缩量"
+  },
+  "north_flow": {
+    "net_flow": -18.62,
+    "note": "北向资金净流出18.62亿。待盘后确认"
+  },
+  "sector_top10_up": [
+    {
+      "name": "非银金融",
+      "change_pct": 2.47,
+      "lead_stock": "锦龙股份(10.05)"
+    },
+    {
+      "name": "有色金属",
+      "change_pct": 1.84,
+      "lead_stock": "江西铜业(10.01)"
+    },
+    {
+      "name": "钢铁",
+      "change_pct": 1.34,
+      "lead_stock": "鄂尔多斯(5.25)"
+    },
+    {
+      "name": "房地产",
+      "change_pct": 1.25,
+      "lead_stock": ""
+    },
+    {
+      "name": "环保",
+      "change_pct": 1.2,
+      "lead_stock": ""
+    },
+    {
+      "name": "造纸",
+      "change_pct": 3.79,
+      "lead_stock": "青山纸业(10.16)"
+    },
+    {
+      "name": "工业金属",
+      "change_pct": 3.33,
+      "lead_stock": "精艺股份(10.03)"
+    },
+    {
+      "name": "证券",
+      "change_pct": 2.75,
+      "lead_stock": "锦龙股份(10.05)"
+    },
+    {
+      "name": "冶钢原料",
+      "change_pct": 2.71,
+      "lead_stock": "鄂尔多斯(5.25)"
+    },
+    {
+      "name": "农化制品",
+      "change_pct": 2.25,
+      "lead_stock": "新农股份(9.99)"
+    }
+  ],
+  "sector_top10_down": [
+    {
+      "name": "综合",
+      "change_pct": -0.56,
+      "lead_stock": ""
+    },
+    {
+      "name": "传媒",
+      "change_pct": -0.42,
+      "lead_stock": ""
+    },
+    {
+      "name": "机械设备",
+      "change_pct": -0.22,
+      "lead_stock": ""
+    },
+    {
+      "name": "家用电器",
+      "change_pct": -0.13,
+      "lead_stock": ""
+    },
+    {
+      "name": "石油石化",
+      "change_pct": -0.12,
+      "lead_stock": ""
+    },
+    {
+      "name": "CRO",
+      "change_pct": -2.5,
+      "lead_stock": "诚达药业"
+    },
+    {
+      "name": "医疗服务",
+      "change_pct": -1.8,
+      "lead_stock": "康龙化成"
+    },
+    {
+      "name": "射频天线",
+      "change_pct": -1.5,
+      "lead_stock": ""
+    },
+    {
+      "name": "培育钻石",
+      "change_pct": -1.2,
+      "lead_stock": ""
+    },
+    {
+      "name": "交通运输",
+      "change_pct": -0.3,
+      "lead_stock": ""
+    }
+  ],
+  "capital_flow": {
+    "total_net_inflow": 11025765558,
+    "top_inflow_sectors": [
+      "有色金属(+53.94亿)",
+      "非银金融(+45.20亿)",
+      "电子",
+      "电力设备"
+    ],
+    "top_outflow_sectors": [
+      "交通运输(-3.83亿)",
+      "石油石化(-3.74亿)",
+      "建筑装饰",
+      "传媒"
+    ],
+    "top_individual": [
+      "洛阳钼业(+16.43亿)",
+      "江西铜业(+14.42亿)",
+      "剑桥科技(+12.77亿)"
+    ],
+    "note": "特大单净流入203亿。有色金属+非银金融主导流入"
+  },
+  "hot_concepts": [
+    "肿瘤疫苗(+7.02%)",
+    "证券IT(+3.26%)",
+    "铅锌概念(+3.08%)",
+    "券商(+2.99%)",
+    "白银概念(+2.71%)",
+    "黄金概念",
+    "核聚变",
+    "大金融",
+    "工业金属",
+    "绿电"
+  ],
+  "summary": "8/26三大指数小幅收涨(沪指+0.59%/深成+0.69%/创业板+0.51%),午后冲高回落涨幅收窄。成交1.81万亿缩量231亿。有色金属+大金融领涨,CRO+传媒领跌。2942涨/2445跌。资金流入有色金属+非银金融,光模块净流出。"
+}

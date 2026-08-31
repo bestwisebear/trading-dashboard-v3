@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "date": "2026-08-19",
+    "session": "close"
+  },
+  "level": "critical",
+  "score": 95,
+  "factors": [
+    {
+      "factor": "仓位",
+      "value": "72.4%",
+      "status": "pass",
+      "detail": "72.4%,较盘中略降(市值缩水)"
+    },
+    {
+      "factor": "持仓数",
+      "value": "4只",
+      "status": "danger",
+      "detail": "踩线上限4只,新仓禁入"
+    },
+    {
+      "factor": "今日交易次数",
+      "value": "0笔",
+      "status": "pass",
+      "detail": "无交易,未恐慌性操作"
+    },
+    {
+      "factor": "市场情绪",
+      "value": "🔴🔴科技崩盘",
+      "status": "danger",
+      "detail": "119跌停/5000+下跌/涨跌比1:11。情绪极度恶化"
+    },
+    {
+      "factor": "止损执行",
+      "value": "🚨3只破止损未执行!",
+      "status": "danger",
+      "detail": "协创/昊志/三环均已破止损!明日必须立即执行!这是最大风险点"
+    },
+    {
+      "factor": "月度PnL",
+      "value": "-3445(-1.72%)",
+      "status": "danger",
+      "detail": "月度PnL已转负!从+5.78%→-1.72%,8月累计回撤9.5个百分点"
+    },
+    {
+      "factor": "底部信号",
+      "value": "0/5",
+      "status": "danger",
+      "detail": "所有底部信号全灭!严禁抄底!"
+    }
+  ],
+  "rule_checks": [
+    {
+      "rule": "持仓≤4只",
+      "passed": true,
+      "current_value": "4只"
+    },
+    {
+      "rule": "单日≤6笔",
+      "passed": true,
+      "current_value": "0笔"
+    },
+    {
+      "rule": "新仓仅13:30-14:30",
+      "passed": true,
+      "current_value": "无新仓"
+    },
+    {
+      "rule": "禁做T",
+      "passed": true,
+      "current_value": "无做T"
+    },
+    {
+      "rule": "减仓后禁当日接回",
+      "passed": true,
+      "current_value": "无接回"
+    },
+    {
+      "rule": "涨跌家数<2000禁开新仓",
+      "passed": true,
+      "current_value": "~400家上涨,远低于2000"
+    }
+  ],
+  "suggestion": "🚨🚨明日开盘立即执行止损!协创/昊志/三环全部清仓!不犹豫!不补仓!不心存幻想!鹏辉守57止损。清仓后降为1只持仓+现金,等待市场企稳信号再考虑操作"
+}

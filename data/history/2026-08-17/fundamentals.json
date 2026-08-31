@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17"
+  },
+  "stocks": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "pe": 57.4,
+      "market_cap": 264.77,
+      "turnover_rate": 4.84,
+      "sector": "锂电池"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "pe": 124.19,
+      "market_cap": 1481.01,
+      "turnover_rate": 4.27,
+      "sector": "半导体设备"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "pe": 50.76,
+      "market_cap": 1310.38,
+      "turnover_rate": 5.44,
+      "sector": "算力租赁"
+    }
+  ],
+  "holdings": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "pe": 57.4,
+      "market_cap": 264.77,
+      "turnover_rate": 4.84,
+      "sector": "锂电池"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "pe": 124.19,
+      "market_cap": 1481.01,
+      "turnover_rate": 4.27,
+      "sector": "半导体设备"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "pe": 50.76,
+      "market_cap": 1310.38,
+      "turnover_rate": 5.44,
+      "sector": "算力租赁"
+    }
+  ]
+}

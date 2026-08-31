@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "last_updated": "2026-08-24 16:15",
+    "date": "2026-08-24",
+    "session": "post_close"
+  },
+  "daily_metrics": {
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": -9223.0,
+    "net_today_pct": -5.06,
+    "total_assets": 172881.42,
+    "prev_close_assets": 182104.42,
+    "total_pnl": -27118.58,
+    "total_pnl_pct": -13.56,
+    "monthly_pnl": -27118.58,
+    "source": "trades_all.json daily_summary 2026-08-24 + state.json收盘结算"
+  },
+  "date": "2026-08-24",
+  "score": 35,
+  "score_detail": "execution=30,discipline=40;交易类违规0笔(无确认成交),但埃斯顿未执行止损计执行违规1次(见discipline_log)",
+  "note": "今日0笔确认成交。13:00已下达午后止损指令(清埃斯顿/风华破51.5清/江波龙破360减),盘后无交割确认,未入账。埃斯顿全天收30.82在止损31.3下方。账户总市值172766+现金115.42=172881.42,较昨收182104.42亏损-9223元(-5.06%)。注意:总资产口径已按8/24券商截图重建,8/19-8/21未入账亏损体现在累计数中,待交割单补录。"
+}

@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "date": "2026-08-19",
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "data_as_of": "2026-08-19 收盘"
+  },
+  "sectors": [
+    {
+      "sector_name": "人形机器人",
+      "change_today": -8.0,
+      "top3_stocks": [
+        {
+          "code": "300503",
+          "name": "昊志机电",
+          "change_pct": -15.18
+        },
+        {
+          "code": "300718",
+          "name": "长盛轴承",
+          "change_pct": -16.06
+        },
+        {
+          "code": "300024",
+          "name": "机器人",
+          "change_pct": -8.46
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "科技崩盘重灾区,宇树利好兑现+获利盘踩踏。暂不抄底"
+    },
+    {
+      "sector_name": "CPO/光模块",
+      "change_today": -9.5,
+      "top3_stocks": [
+        {
+          "code": "300308",
+          "name": "中际旭创",
+          "change_pct": -9.36
+        },
+        {
+          "code": "002281",
+          "name": "光迅科技",
+          "change_pct": -10.0
+        },
+        {
+          "code": "300394",
+          "name": "天孚通信",
+          "change_pct": -4.82
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "OpenAI亏损扩大+SOX暴跌映射。等企稳后再观察"
+    },
+    {
+      "sector_name": "半导体",
+      "change_today": -8.5,
+      "top3_stocks": [
+        {
+          "code": "002371",
+          "name": "北方华创",
+          "change_pct": -8.24
+        },
+        {
+          "code": "603986",
+          "name": "兆易创新",
+          "change_pct": -7.56
+        },
+        {
+          "code": "688012",
+          "name": "中微公司",
+          "change_pct": -6.61
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "半导体设备ETF-7.53%,板块全面崩盘。等缩量企稳信号"
+    },
+    {
+      "sector_name": "MLCC",
+      "change_today": -7.0,
+      "top3_stocks": [
+        {
+          "code": "300408",
+          "name": "三环集团",
+          "change_pct": -11.61
+        },
+        {
+          "code": "000636",
+          "name": "风华高科",
+          "change_pct": -9.99
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "三环/风华均暴跌,持仓三环需止损。板块获利盘集中出逃"
+    },
+    {
+      "sector_name": "存储芯片",
+      "change_today": -7.8,
+      "top3_stocks": [
+        {
+          "code": "301308",
+          "name": "江波龙",
+          "change_pct": -8.05
+        },
+        {
+          "code": "688385",
+          "name": "复旦微电",
+          "change_pct": -6.71
+        },
+        {
+          "code": "002185",
+          "name": "华天科技",
+          "change_pct": -7.17
+        }
+      ],
+      "can_add_watchlist": false,
+      "note": "SK海力士隔夜-9%,存储全线崩。等待止跌企稳"
+    }
+  ]
+}

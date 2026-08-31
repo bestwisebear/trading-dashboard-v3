@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "sectors": [
+    {
+      "name": "白酒Ⅱ",
+      "change_pct": -3.18,
+      "days_declining": 3,
+      "note": "茅台中报下滑+国家队退出"
+    },
+    {
+      "name": "游戏Ⅱ",
+      "change_pct": -1.89,
+      "days_declining": 2,
+      "note": "前期涨幅回吐"
+    },
+    {
+      "name": "影视院线",
+      "change_pct": -1.66,
+      "days_declining": 2,
+      "note": "北京文化跌停领跌"
+    },
+    {
+      "name": "电力",
+      "change_pct": -0.13,
+      "days_declining": 1,
+      "note": "资金从防御转进攻"
+    }
+  ],
+  "oversold_sectors": [
+    {
+      "name": "白酒Ⅱ",
+      "change_pct": -3.18,
+      "days_declining": 3,
+      "note": "茅台中报下滑+国家队退出"
+    },
+    {
+      "name": "游戏Ⅱ",
+      "change_pct": -1.89,
+      "days_declining": 2,
+      "note": "前期涨幅回吐"
+    },
+    {
+      "name": "影视院线",
+      "change_pct": -1.66,
+      "days_declining": 2,
+      "note": "北京文化跌停领跌"
+    },
+    {
+      "name": "电力",
+      "change_pct": -0.13,
+      "days_declining": 1,
+      "note": "资金从防御转进攻"
+    }
+  ],
+  "bounce_candidates": []
+}

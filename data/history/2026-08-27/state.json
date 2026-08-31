@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "last_updated": "2026-08-27T16:57:53.178429+08:00",
+    "data_date": "2026-08-27",
+    "source": "2026-08-27盘后(收盘价)",
+    "session": "close",
+    "note": "8/27收盘:英伟达财报催化全面大涨。4只持仓全线飘红。国瓷+9.19%/利通+6.51%/江波龙+6.05%/麦格+3.70%。总资产182522.02，日收益+10929.0"
+  },
+  "current": {
+    "total_assets": 182522.02,
+    "prev_close_assets": 171593.02,
+    "available_cash": 983.02,
+    "initial_capital": 200000.0,
+    "position_count": 4,
+    "position_ratio": 99.5,
+    "monthly_pnl": -17477.98,
+    "monthly_return_rate": -8.74,
+    "market_value": 181539.0,
+    "note": "8/27收盘:市值181539.00+现金983.02=总资产182522.02。APEX月度回撤从-9.62%改善至-8.74%"
+  },
+  "today_so_far": {
+    "date": "2026-08-27",
+    "net_today": 10929.0,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "close",
+    "note": "8/27收盘:零交易。持仓全线上涨,浮盈+10929.0。APEX熔断禁新仓持续"
+  },
+  "positions": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "quantity": 100,
+      "cost_price": 386.73,
+      "stop_loss": 360.0,
+      "market_value": 38625.0
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "quantity": 500,
+      "cost_price": 121.737,
+      "stop_loss": 117.0,
+      "market_value": 62610.0
+    },
+    {
+      "code": "002851",
+      "name": "麦格米特",
+      "quantity": 300,
+      "cost_price": 121.324,
+      "stop_loss": 115.76,
+      "market_value": 38298.0
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "quantity": 600,
+      "cost_price": 64.013,
+      "stop_loss": 60.22,
+      "market_value": 42006.0
+    }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true,
+    "note": "收盘校验:市值181539.00+现金983.02=182522.02"
+  },
+  "cumulative": {
+    "total_pnl_amount": -17477.98,
+    "total_pnl_percent": -8.74,
+    "total_trades_count": 57,
+    "total_violations": 23
+  },
+  "next_action": {
+    "date": "2026-08-28",
+    "action": "🔴8/28:持仓大涨后关注冲高分批锁利。国瓷+9.19%接近前高压力位需警惕回调。APEX熔断持续禁新仓至8/31。关注:①周五Jackson Hole沃什演讲 ②持仓止损管理 ③冲高分批锁利执行",
+    "key_levels": "江波龙386.25收盘=最高价(新高!)/360(止损)·利通125.22/117(止损)·麦格127.66/115.76(止损)·国瓷70.01(收盘接近最高70.71)/60.22(止损)",
+    "risk_events": "8/28 Jackson Hole沃什演讲+PCE数据后续影响"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "last_updated": "2026-08-18T16:55:00+08:00",
+    "date": "2026-08-18",
+    "session": "close"
+  },
+  "signals": [
+    {
+      "name": "趋势",
+      "status": "neutral",
+      "detail": "沪指3990横盘4000关口,创业板-0.93%回调"
+    },
+    {
+      "name": "量能",
+      "status": "neutral",
+      "detail": "2.42万亿平量高位,多空分歧加大"
+    },
+    {
+      "name": "情绪",
+      "status": "negative",
+      "detail": "赚钱效应38%,涨跌比2121:3292,散户难度高"
+    },
+    {
+      "name": "板块",
+      "status": "neutral",
+      "detail": "农业爆发+科技休整,风格切换非趋势反转"
+    },
+    {
+      "name": "资金",
+      "status": "negative",
+      "detail": "主力净流出669亿,北向-36亿,电子/通信大出血"
+    },
+    {
+      "name": "技术",
+      "status": "neutral",
+      "detail": "沪指下影线3955支撑有效,4000点仍需蓄势"
+    }
+  ],
+  "overall": "neutral",
+  "summary": "分化日信号混合:农业防御接棒+科技休整。量能维持但赚钱效应差,短期方向选择中。宇树8/19+机器人大会为短期催化变量。",
+  "aggregate": {
+    "green_count": 1,
+    "yellow_count": 3,
+    "red_count": 2,
+    "total_score": 6,
+    "max_score": 18,
+    "no_open_position": false,
+    "market_comment": "分化日信号混合：趋势/量能/板块中性，情绪/资金偏空，技术中性。宇树8/19+机器人大会为催化变量"
+  }
+}

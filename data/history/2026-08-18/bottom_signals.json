@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "last_updated": "2026-08-18T16:55:00+08:00",
+    "date": "2026-08-18",
+    "session": "close"
+  },
+  "signals": [
+    {
+      "id": 1,
+      "name": "缩量止跌",
+      "condition": "成交额≤1.5万亿",
+      "today_value": "2.42万亿",
+      "satisfied": false,
+      "detail": "维持2.4万亿高位,远超1.5万亿阈值"
+    },
+    {
+      "id": 2,
+      "name": "跌停减少",
+      "condition": "跌停<30家",
+      "today_value": "6家",
+      "satisfied": true,
+      "detail": "恐慌情绪极低,连续多日维持低位"
+    },
+    {
+      "id": 3,
+      "name": "涨跌恢复",
+      "condition": "上涨>3000家",
+      "today_value": "2121家",
+      "satisfied": false,
+      "detail": "分化日,涨跌比2121:3292,赚钱效应仅38%"
+    },
+    {
+      "id": 4,
+      "name": "连续止跌",
+      "condition": "2天不创新低",
+      "today_value": "盘中3955<昨收3982",
+      "satisfied": false,
+      "detail": "盘中创日内新低3955虽尾盘回升但已破前低"
+    },
+    {
+      "id": 5,
+      "name": "北向流入",
+      "condition": "连续2-3日净流入>50亿",
+      "today_value": "-36亿(昨+31亿)",
+      "satisfied": false,
+      "detail": "昨日+31亿后今日流出36亿,未形成连续流入"
+    }
+  ],
+  "aggregate": {
+    "satisfied_count": 1,
+    "total_count": 5,
+    "satisfied_rate": 0.2,
+    "verdict": "🔴 继续观望",
+    "ratio": 0.2,
+    "recommendation": "wait",
+    "recommendation_detail": "1/5信号触发(仅跌停减少)。分化日,赚钱效应差,不宜追涨,控制仓位。"
+  },
+  "history_7d": [
+    {
+      "date": "2026-08-11",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-12",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-13",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-14",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-15",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-17",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-18",
+      "satisfied_count": 1,
+      "count": 5
+    }
+  ]
+}

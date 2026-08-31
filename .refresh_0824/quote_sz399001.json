@@ -1,0 +1,18 @@
+{
+  "code": "sz399001",
+  "name": "深证成指",
+  "close": 13794.29,
+  "open": 14118.02,
+  "high": 14118.15,
+  "low": 13616.75,
+  "pre_close": 14094.17,
+  "change": -299.88,
+  "change_percent": -2.13,
+  "volume": 563532457,
+  "amount": 105541713,
+  "turnover_rate": 2.3,
+  "market_cap": 373284.56,
+  "pe_ratio": 43.59,
+  "date": "20260824161409",
+  "source": "tencent"
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "data_date": "2026-08-25",
+    "source": "盘后全量刷新",
+    "session": "post_close",
+    "note": "8/25收盘:零操作。江波龙369.66(+1.30%)回升至止损上方。利通电子119.30(-2.04%)。沪指探底回升+0.19%,成交1.83万亿缩量1756亿"
+  },
+  "current": {
+    "total_assets": 171727.18,
+    "prev_close_assets": 182104.42,
+    "available_cash": 62005.18,
+    "initial_capital": 200000.0,
+    "position_count": 2,
+    "position_ratio": 63.9,
+    "monthly_pnl": -28272.82,
+    "monthly_return_rate": -14.14,
+    "market_value": 109722.0,
+    "note": "2只持仓(江波龙/利通电子),收盘仓位63.9%"
+  },
+  "today_so_far": {
+    "date": "2026-08-25",
+    "net_today": -10377.24,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "post_close",
+    "note": "收盘:零操作。江波龙+1.30%回升,利通电子-2.04%。市场探底回升,沪指+0.19%"
+  },
+  "positions": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "quantity": 200,
+      "cost_price": 381.63,
+      "stop_loss": 360.0,
+      "buy_date": "2026-08-21",
+      "market_value": 73932.0
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "quantity": 300,
+      "cost_price": 123.327,
+      "stop_loss": 117.0,
+      "buy_date": "2026-08-21",
+      "market_value": 35790.0
+    }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true,
+    "note": "收盘校验:市值109722.0+现金62005.18=171727.18"
+  },
+  "cumulative": {
+    "total_pnl_amount": -28272.82,
+    "total_pnl_percent": -14.14,
+    "total_trades_count": 52,
+    "total_violations": 18
+  },
+  "next_action": {
+    "date": "2026-08-26",
+    "action": "持仓止损管理+APEX熔断禁新仓(月度-14.14%>10%阈值)+8/26英伟达财报观察",
+    "key_levels": "江波龙360止损/利通电子117止损",
+    "risk_events": "8/26英伟达财报+8/27 Jackson Hole+8/28沃什演讲"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "last_updated": "2026-08-19T08:25:00+08:00",
+    "date": "2026-08-19",
+    "session": "pre_market"
+  },
+  "market_conditions": {
+    "trend": "震荡",
+    "volume_level": "高量(2.42万亿)",
+    "breadth": "弱(38%上涨)",
+    "style": "防御(农业)+科技休整"
+  },
+  "position_conditions": {
+    "ring_alarm": "三环集团距止损仅1.6%",
+    "watchlist_update": "昊志机电补入观察池",
+    "sector_rotation": "MLCC三股→机器人+MLCC龙头"
+  },
+  "stop_loss_orders": [
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "trigger": "开盘价<122.00",
+      "action": "清仓300股",
+      "priority": "highest",
+      "note": "🚨最高优先级,距止损1.6%"
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "trigger": "开盘价<73.00",
+      "action": "清仓500股",
+      "priority": "high",
+      "note": "止损位,严守"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "trigger": "开盘价<250.00",
+      "action": "清仓100股",
+      "priority": "high",
+      "note": "止损位,严守"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "trigger": "开盘价<57.00",
+      "action": "清仓800股",
+      "priority": "high",
+      "note": "止损位,严守"
+    }
+  ],
+  "take_profit_orders": [
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "trigger": "高开>84.5元或日内>85元",
+      "action": "减仓200-250股",
+      "priority": "high",
+      "note": "宇树上市+机器人大会利好兑现节点,分批锁利"
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "trigger": "日内>87元",
+      "action": "再减100-150股",
+      "priority": "medium",
+      "note": "剩余仓位继续持有"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "trigger": "高开>270元",
+      "action": "减仓50股",
+      "priority": "medium",
+      "note": "算力映射承压,260元为日内关键"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "trigger": "日内涨>5%(>68.8元)",
+      "action": "减200-300股",
+      "priority": "medium",
+      "note": "分批锁利"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "trigger": "日内涨>8%(>70.8元)",
+      "action": "再减400股",
+      "priority": "low",
+      "note": "剩余400股持有"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "trigger": "高开>125元",
+      "action": "暂持有,严守122止损",
+      "priority": "high",
+      "note": "若高开可减亏观察,但止损第一"
+    }
+  ],
+  "reentry_rules": [
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "rule": "若止损清仓:站稳125元+2日+缩量+七道闸过→减半仓100股",
+      "disabled": "禁当日回补"
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "rule": "减仓后禁当日接回,下交易日再评估"
+    }
+  ],
+  "notes": "8/19盘前条件单核心:持仓风险管控>开新仓。三环止损为最高优先级,昊志分批锁利为次优先。"
+}

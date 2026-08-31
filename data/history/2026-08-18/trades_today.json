@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "last_updated": "2026-08-18T16:55:00+08:00",
+    "date": "2026-08-18",
+    "session": "close"
+  },
+  "trades": [
+    {
+      "seq": 48,
+      "time": "09:30",
+      "code": "300857",
+      "name": "协创数据",
+      "action": "sell",
+      "quantity": 100,
+      "price": 266.4,
+      "amount": 26640.0,
+      "realized_pnl": 727.0,
+      "violation": "none",
+      "notes": "减仓1手(200→100股)"
+    },
+    {
+      "seq": 49,
+      "time": "09:48",
+      "code": "300285",
+      "name": "国瓷材料",
+      "action": "sell",
+      "quantity": 300,
+      "price": 74.86,
+      "amount": 22458.0,
+      "realized_pnl": 855.34,
+      "violation": "none",
+      "notes": "清仓第1笔,MLCC链去重"
+    },
+    {
+      "seq": 50,
+      "time": "09:50",
+      "code": "300285",
+      "name": "国瓷材料",
+      "action": "sell",
+      "quantity": 300,
+      "price": 75.66,
+      "amount": 22698.0,
+      "realized_pnl": 1091.3,
+      "violation": "none",
+      "notes": "清仓第2笔,保留风华出国产瓷"
+    },
+    {
+      "seq": 51,
+      "time": "10:45",
+      "code": "000636",
+      "name": "风华高科",
+      "action": "sell",
+      "quantity": 500,
+      "price": 64.36,
+      "amount": 32180.0,
+      "realized_pnl": 925.54,
+      "violation": "none",
+      "notes": "清仓,PE207x偏高换仓机器人"
+    },
+    {
+      "seq": 52,
+      "time": "13:42",
+      "code": "300503",
+      "name": "昊志机电",
+      "action": "buy",
+      "quantity": 500,
+      "price": 80.18,
+      "amount": 40090.0,
+      "realized_pnl": 0,
+      "violation": "non_watchlist",
+      "notes": "机器人大会概念博弈,换手14%高活性"
+    },
+    {
+      "seq": 53,
+      "time": "13:45",
+      "code": "300408",
+      "name": "三环集团",
+      "action": "buy",
+      "quantity": 300,
+      "price": 126.21,
+      "amount": 37863.0,
+      "realized_pnl": 0,
+      "violation": "none",
+      "notes": "MLCC涨价30%催化,止损122止盈137/145-150"
+    }
+  ],
+  "summary": {
+    "total_trades": 6,
+    "buy_count": 2,
+    "sell_count": 4,
+    "realized_pnl": 3599.18
+  }
+}
