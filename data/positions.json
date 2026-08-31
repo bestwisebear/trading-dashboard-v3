@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-08-28T21:30:00+08:00",
+    "last_updated": "2026-08-31T08:20:00+08:00",
     "date": "2026-08-28",
     "session": "close_corrected",
     "source": "券商截图14:45+收盘价修正",
@@ -8,20 +8,20 @@
     "correction_note": "8/28用户实际进行了换仓操作：清仓国瓷/麦格/江波龙+减利通200，买入鹏辉/飞南/大有。系统旧数据已纠正。"
   },
   "summary": {
-    "total_market_value": 148107.0,
-    "available_cash": 30992.0,
-    "total_assets": 179099.0,
+    "total_market_value": 171007.0,
+    "available_cash": 8012.0,
+    "total_assets": 179019.0,
     "net_today": -3423.02,
     "today_return": -1.88,
     "total_pnl_amount": -20901.0,
     "monthly_pnl": -20901.0,
     "prev_close_assets": 182522.02,
-    "position_ratio": 82.7,
+    "position_ratio": 95.5,
     "today_return_rate": -1.88,
     "monthly_return_rate": -10.45,
     "initial_capital": 200000.0,
-    "position_count": 4,
-    "note": "8/28收盘(修正):4只持仓3跌1涨。用户主动从半导体切换至能源资源板块避险,仓位从99.5%降至82.7%,现金从983升至30992.0"
+    "position_count": 5,
+    "note": "8/28收盘(修正):5只持仓(含圣邦股份违规开仓),仓位95.5%"
   },
   "positions": [
     {
@@ -119,6 +119,30 @@
       "current_price": 119.95,
       "pnl_percent": -0.84,
       "pnl_amount": -305.4
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "quantity": 200,
+      "cost_price": 114.9,
+      "stop_loss": 110.0,
+      "close_price": 114.5,
+      "pre_close": 116.89,
+      "open": 116.5,
+      "high": 117.2,
+      "low": 114.0,
+      "change_pct": -2.04,
+      "change_amount": -2.39,
+      "market_value": 22900.0,
+      "floating_pnl": -80.0,
+      "floating_pnl_pct": -0.35,
+      "today_pnl": -400.0,
+      "pe_ratio": 158.0,
+      "sector": "半导体/模拟芯片",
+      "note": "8/28下午买入,APEX熔断期违规开仓,H1净利4.2亿+109%,PE158倍极贵",
+      "current_price": 114.5,
+      "pnl_percent": -0.35,
+      "pnl_amount": -80.0
     }
   ]
 }

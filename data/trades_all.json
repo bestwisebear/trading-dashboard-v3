@@ -2,15 +2,15 @@
   "meta": {
     "description": "交易总账 - 唯一交易真相源。所有PnL计算必须从此文件派生。",
     "start_date": "2026-08-04",
-    "last_updated": "2026-08-28T21:30:00+08:00",
+    "last_updated": "2026-08-31T08:20:00+08:00",
     "total_realized_pnl": 25627.04,
-    "total_trades": 50,
+    "total_trades": 65,
     "notes": "⚠️8/19-8/21交易明细缺失待补录(周末大幅调仓：清旧4仓鹏辉/协创/昊志/三环，买入风华/埃斯顿/江波龙/利通电子)。当前持仓以券商截图8/24为准，trades_all仅记录到seq50(8/18)",
     "data_as_of": "2026-08-17 收盘(修正)",
     "session": "close",
     "data_gap": "2026-08-19~2026-08-21交易记录仍缺失;8/28部分卖价为估算待交割单确认",
     "note": "8/24晚间复盘补充2笔止损清仓(风华+埃斯顿)",
-    "last_seq": 64
+    "last_seq": 65
   },
   "trades": [
     {
@@ -892,6 +892,20 @@
       "realized_pnl": 0,
       "violation": "apex_new_position",
       "notes": "🚫违规:APEX熔断期间开新仓+非关注池.煤炭涨价概念,H1仍亏损"
+    },
+    {
+      "seq": 65,
+      "date": "2026-08-28",
+      "time": "14:00",
+      "code": "300661",
+      "name": "圣邦股份",
+      "action": "buy",
+      "quantity": 200,
+      "price": 114.9,
+      "amount": 22980.0,
+      "realized_pnl": 0,
+      "violation": "apex_new_position+non_watchlist+over_limit",
+      "notes": "🚫违规:APEX熔断期间开新仓+非关注池+持仓超4只上限(第5只).H1净利4.2亿+109%,PE158倍"
     }
   ],
   "daily_summary": [
