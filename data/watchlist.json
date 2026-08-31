@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
+    "last_updated": "2026-08-31T20:44:00+08:00",
     "date": "2026-08-31",
-    "session": "close_1615",
+    "session": "evening_review_2044",
     "data_basis": "2026-08-31收盘(腾讯行情真实收盘价)",
     "screening_criteria": "盘前8:25筛选·APEX二级熔断最后一天(8/31到期/9/1解除)·外围暴跌(日经-2.3%/韩KOSPI-3.3%/费半-3.47%)·七道闸4/7 FAIL",
-    "note": "8/31收盘·传媒AI爆发·飞南+7.91%大有+7.14%强劲反弹·浪潮涨停+9.99%·APEX熔断最后一天"
+    "note": "8/31晚间复盘·APEX熔断已到期·5只持仓复盘·布伦特破90美元·9月加息概率57%"
   },
   "watchlist": [
     {
@@ -17,11 +17,11 @@
       "today_close": 59.14,
       "today_change_pct": -2.83,
       "key_price": {
-        "support": 60.93,
-        "resistance": 64.51,
+        "support": 59.0,
+        "resistance": 62.0,
         "stop_loss": 57.0
       },
-      "notes": "🔴持仓800股@60.493·-2.83%·储能承压·H1净利+1025%·户储全球第一",
+      "notes": "🔴持仓800股@60.493·-2.83%·已破60支撑·H1净利+1025%·户储全球第一·守59",
       "holding_qty": 800
     },
     {
@@ -33,11 +33,11 @@
       "today_close": 25.78,
       "today_change_pct": 7.91,
       "key_price": {
-        "support": 22.67,
-        "resistance": 25.32,
+        "support": 24.0,
+        "resistance": 26.11,
         "stop_loss": 22.0
       },
-      "notes": "🟢持仓1400股@23.933·+7.91%强势反弹·PE18.6倍·持有",
+      "notes": "🟢持仓1400股@23.933·+7.91%强势反弹·浮盈7.72%·PE18.6倍·持有",
       "holding_qty": 1400
     },
     {
@@ -49,11 +49,11 @@
       "today_close": 7.65,
       "today_change_pct": 7.14,
       "key_price": {
-        "support": 6.38,
-        "resistance": 7.57,
+        "support": 7.0,
+        "resistance": 7.85,
         "stop_loss": 6.8
       },
-      "notes": "🟢持仓4200股@7.332·+7.14%强劲反弹·PE为负·关注冲高回落",
+      "notes": "🟢持仓4200股@7.332·+7.14%反弹·浮盈4.34%·布伦特破90美元利好·7.85以上减半仓",
       "holding_qty": 4200
     },
     {
@@ -65,11 +65,11 @@
       "today_close": 122.16,
       "today_change_pct": 1.84,
       "key_price": {
-        "support": 119.24,
-        "resistance": 127.15,
+        "support": 120.0,
+        "resistance": 125.0,
         "stop_loss": 117.0
       },
-      "notes": "🟢持仓300股@120.968·+1.84%·低开高走·安全距止损4.4%",
+      "notes": "🟢持仓300股@120.968·+1.84%·低开高走·安全距止损4.4%·持有观察",
       "holding_qty": 300
     },
     {
@@ -206,15 +206,31 @@
         "stop_loss": 42.0
       },
       "notes": "德方纳米·-1.30%·磷酸铁锂·PE极高"
+    },
+    {
+      "code": "sz300661",
+      "name": "圣邦股份",
+      "score": 2,
+      "status": "holding",
+      "sector": "模拟芯片",
+      "today_close": 114.0,
+      "today_change_pct": -0.44,
+      "key_price": {
+        "support": 108.0,
+        "resistance": 118.0,
+        "stop_loss": 108.0
+      },
+      "notes": "持仓200股@114.9·-0.44%微跌·PE102高估值·持有观察",
+      "holding_qty": 200
     }
   ],
   "screening_summary": {
     "total_pool": 17,
     "hold_alert": 1,
-    "hold": 4,
+    "hold": 5,
     "watch_apex_meltdown": 13,
     "passed_seven_gates": 0,
-    "new_position_recommendation": "🔴全天零新仓。APEX二级熔断最后一天+深证-1%/创业板-1.29%=零新仓。核心:①大有7.3以上减半仓②利通118.97距止损1.68%警戒。新仓最早9/2。"
+    "new_position_recommendation": "🟡9/1 APEX解除首日:零新仓。核心:①大有7.85以上减半仓②鹏辉守59③飞南/利通/圣邦持有。新仓最早9/2且必须7道闸全过+涨跌>2000。中际旭创40-80亿回购=光模块利好。"
   },
   "transit_pool": [
     {
