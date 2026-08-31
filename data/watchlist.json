@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T20:44:00+08:00",
+    "last_updated": "2026-08-31T23:00:00+08:00",
     "date": "2026-08-31",
-    "session": "evening_review_2044",
+    "session": "night_scan_2300",
     "data_basis": "2026-08-31收盘(腾讯行情真实收盘价)",
     "screening_criteria": "盘前8:25筛选·APEX二级熔断最后一天(8/31到期/9/1解除)·外围暴跌(日经-2.3%/韩KOSPI-3.3%/费半-3.47%)·七道闸4/7 FAIL",
-    "note": "8/31晚间复盘·APEX熔断已到期·5只持仓复盘·布伦特破90美元·9月加息概率57%"
+    "note": "8/31 23:00全市场扫描·APEX熔断到期·半导体全面反弹·电子+1.97%·6只半导体入中转池"
   },
   "watchlist": [
     {
@@ -21,7 +21,7 @@
         "resistance": 62.0,
         "stop_loss": 57.0
       },
-      "notes": "🔴持仓800股@60.493·-2.83%·已破60支撑·H1净利+1025%·户储全球第一·守59",
+      "notes": "🔴持仓800股@60.493·-2.83%·已破60支撑·H1净利+1025%·守59",
       "holding_qty": 800
     },
     {
@@ -37,7 +37,7 @@
         "resistance": 26.11,
         "stop_loss": 22.0
       },
-      "notes": "🟢持仓1400股@23.933·+7.91%强势反弹·浮盈7.72%·PE18.6倍·持有",
+      "notes": "🟢持仓1400股@23.933·+7.91%强势反弹·浮盈7.72%·PE18.6倍·警惕RSI76超买",
       "holding_qty": 1400
     },
     {
@@ -53,7 +53,7 @@
         "resistance": 7.85,
         "stop_loss": 6.8
       },
-      "notes": "🟢持仓4200股@7.332·+7.14%反弹·浮盈4.34%·布伦特破90美元利好·7.85以上减半仓",
+      "notes": "🟢持仓4200股@7.332·+7.14%反弹·浮盈4.34%·RSI75超买·布伦特破90美元利好·7.85以上减半仓",
       "holding_qty": 4200
     },
     {
@@ -69,7 +69,7 @@
         "resistance": 125.0,
         "stop_loss": 117.0
       },
-      "notes": "🟢持仓300股@120.968·+1.84%·低开高走·安全距止损4.4%·持有观察",
+      "notes": "🟢持仓300股@120.968·+1.84%·低开高走·MA20下方·持有观察",
       "holding_qty": 300
     },
     {
@@ -85,7 +85,7 @@
         "resistance": 67.58,
         "stop_loss": 57.0
       },
-      "notes": "封测龙头·+1.27%·低开回升·关注"
+      "notes": "🟢半导体封测龙头·7/7闸全过·RSI57.7·PE38.8·价>MA20·中转池首选"
     },
     {
       "code": "sz300395",
@@ -236,44 +236,44 @@
     {
       "code": "sz002156",
       "name": "通富微电",
-      "price": 63.75,
-      "change_pct": 0.03,
-      "pe": 38.33,
-      "turnover_rate": 6.05,
-      "gates_passed": 6,
+      "price": 64.56,
+      "change_pct": 1.27,
+      "pe": 38.82,
+      "turnover_rate": 5.21,
+      "gates_passed": 7,
       "sector": "半导体/封测",
-      "added_date": "2026-08-28",
+      "added_date": "2026-08-31",
       "status": "pending_review",
-      "notes": "APEX熔断8/31到期(最后一天),9/2重新评估。封测龙头抗跌,6/7闸。今日半导体受外围费半-3.47%冲击。",
-      "score": 76,
+      "notes": "8/31扫描:7/7闸全过·价64.56>MA20(62.93)·RSI57.7·PE38.8·电子+1.97%·封测龙头·9/2复核",
+      "score": 85,
       "gates": {
         "gate1_breadth": {
           "pass": true,
-          "value": "3013涨>2000"
+          "value": "3181涨>2000"
         },
         "gate2_pe": {
           "pass": true,
-          "value": "PE=38.33"
+          "value": "PE=38.8"
         },
         "gate3_fund_flow": {
           "pass": true,
-          "value": "主力净流入7582万"
+          "value": "+1.27%资金流入"
         },
         "gate4_trend": {
           "pass": true,
-          "value": "价63.75>MA2062.27"
+          "value": "价64.56>MA20(62.93)"
         },
         "gate5_turnover": {
           "pass": true,
-          "value": "换手6.05%"
+          "value": "换手5.21%"
         },
         "gate6_momentum": {
           "pass": true,
-          "value": "RSI6=54.57"
+          "value": "RSI6=57.7"
         },
         "gate7_sector": {
-          "pass": false,
-          "value": "半导体-3.5%(8/28)·费半-3.47%外围重压"
+          "pass": true,
+          "value": "半导体+1.97%"
         }
       },
       "key_price": {
@@ -282,6 +282,266 @@
         "buy_range": [
           61.0,
           62.82
+        ]
+      }
+    },
+    {
+      "code": "sz001309",
+      "name": "德明利",
+      "price": 436.5,
+      "change_pct": 1.74,
+      "pe": 14.51,
+      "turnover_rate": 8.1,
+      "gates_passed": 7,
+      "sector": "半导体/存储",
+      "added_date": "2026-08-31",
+      "status": "pending_review",
+      "notes": "8/31扫描:7/7闸全过·价436.50>MA20(405.90)·RSI65.7·PE仅14.5·HBM涨价利好·H1利润暴增",
+      "score": 82,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3181涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=14.5(极低)"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "+1.74%资金流入"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价436.50>MA20(405.90)"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手8.10%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=65.7"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+1.97%"
+        }
+      },
+      "key_price": {
+        "support": 400,
+        "resistance": 450,
+        "buy_range": [
+          405,
+          420
+        ]
+      }
+    },
+    {
+      "code": "sh603986",
+      "name": "兆易创新",
+      "price": 406.0,
+      "change_pct": 2.31,
+      "pe": 35.93,
+      "turnover_rate": 4.75,
+      "gates_passed": 7,
+      "sector": "半导体/存储",
+      "added_date": "2026-08-31",
+      "status": "pending_review",
+      "notes": "8/31扫描:7/7闸全过·价406>MA20(403.23)·RSI51.7·PE35.9·低开高走+2.31%·MCU+存储双主线",
+      "score": 80,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3181涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=35.9"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "+2.31%资金流入"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价406>MA20(403.23)"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手4.75%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=51.7"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+1.97%"
+        }
+      },
+      "key_price": {
+        "support": 380,
+        "resistance": 420,
+        "buy_range": [
+          385,
+          400
+        ]
+      }
+    },
+    {
+      "code": "sh688825",
+      "name": "长鑫科技",
+      "price": 58.01,
+      "change_pct": -1.01,
+      "pe": 48.13,
+      "turnover_rate": 7.94,
+      "gates_passed": 6,
+      "sector": "半导体/DRAM",
+      "added_date": "2026-08-31",
+      "status": "pending_review",
+      "notes": "8/31扫描:6/7闸·价58.01>MA20(55.80)·RSI56.6·PE48.1·DRAM国产替代龙头·-1.01%微调",
+      "score": 72,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3181涨>2000"
+        },
+        "gate2_pe": {
+          "pass": true,
+          "value": "PE=48.1"
+        },
+        "gate3_fund_flow": {
+          "pass": false,
+          "value": "-1.01%微流出"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价58.01>MA20(55.80)"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手7.94%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=56.6"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+1.97%"
+        }
+      },
+      "key_price": {
+        "support": 54,
+        "resistance": 60,
+        "buy_range": [
+          55,
+          57
+        ]
+      }
+    },
+    {
+      "code": "sh688037",
+      "name": "芯源微",
+      "price": 370.0,
+      "change_pct": 0.61,
+      "pe": 1169.33,
+      "turnover_rate": 2.61,
+      "gates_passed": 6,
+      "sector": "半导体/设备",
+      "added_date": "2026-08-31",
+      "status": "pending_review",
+      "notes": "8/31扫描:6/7闸·价370>MA20(341)·RSI61.9·PE极高(1169)·设备龙头·注意PE闸风险",
+      "score": 68,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3181涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=1169(极高)"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "+0.61%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价370>MA20(341)"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手2.61%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=61.9"
+        },
+        "gate7_sector": {
+          "pass": true,
+          "value": "半导体+1.97%"
+        }
+      },
+      "key_price": {
+        "support": 340,
+        "resistance": 380,
+        "buy_range": [
+          345,
+          360
+        ]
+      }
+    },
+    {
+      "code": "sh688361",
+      "name": "中科飞测",
+      "price": 365.99,
+      "change_pct": 0.92,
+      "pe": -2554.94,
+      "turnover_rate": 1.84,
+      "gates_passed": 5,
+      "sector": "半导体/设备",
+      "added_date": "2026-08-31",
+      "status": "pending_review",
+      "notes": "8/31扫描:5/7闸·价365.99>MA20(350.77)·RSI57.3·PE亏损·量测设备龙头·注意PE闸",
+      "score": 62,
+      "gates": {
+        "gate1_breadth": {
+          "pass": true,
+          "value": "3181涨>2000"
+        },
+        "gate2_pe": {
+          "pass": false,
+          "value": "PE=-2555(亏损)"
+        },
+        "gate3_fund_flow": {
+          "pass": true,
+          "value": "+0.92%"
+        },
+        "gate4_trend": {
+          "pass": true,
+          "value": "价365.99>MA20(350.77)"
+        },
+        "gate5_turnover": {
+          "pass": true,
+          "value": "换手1.84%"
+        },
+        "gate6_momentum": {
+          "pass": true,
+          "value": "RSI6=57.3"
+        },
+        "gate7_sector": {
+          "pass": false,
+          "value": "半导体+1.97%但PE亏损"
+        }
+      },
+      "key_price": {
+        "support": 340,
+        "resistance": 380,
+        "buy_range": [
+          345,
+          360
         ]
       }
     }
