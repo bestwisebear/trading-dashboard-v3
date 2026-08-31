@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "last_updated": "2026-08-28T13:16:00+08:00",
+    "date": "2026-08-28",
+    "session": "midday_final",
+    "data_basis": "8/28午间确认(腾讯API+多源验证)"
+  },
+  "decision": "今日取消新仓",
+  "confirmed_count": 0,
+  "confirmed_stocks": [],
+  "cancellation_reasons": [
+    {
+      "gate": "APEX熔断",
+      "status": "BLOCKED",
+      "detail": "APEX二级熔断收官日(8/26-8/28),月度回撤-10.41%超-10%阈值.9/1才完全解除.盘前计划明确:全天零新仓",
+      "passed": false
+    },
+    {
+      "gate": "现金不足",
+      "status": "BLOCKED",
+      "detail": "可用现金仅983元(仓位99.5%),物理上无法开新仓",
+      "passed": false
+    },
+    {
+      "gate": "时段限制",
+      "status": "BLOCKED",
+      "detail": "四段式流程:13:15最终确认→13:30-14:30执行.但APEX熔断+现金不足=无需进入执行阶段",
+      "passed": false
+    },
+    {
+      "gate": "市场风险",
+      "status": "BLOCKED",
+      "detail": "周五+月末+A50交割日+沃什22:00首秀=四重风险叠加.冲高回落已兑现英伟达利好.利通-3.47%逼近止损需优先风控",
+      "passed": false
+    },
+    {
+      "gate": "涨跌家数",
+      "status": "MARGINAL",
+      "detail": "半日超3100只上涨,但全天预估收盘可能不足2000.热点杂乱,科技板块冲高回落分化",
+      "passed": false
+    },
+    {
+      "gate": "候选池",
+      "status": "EMPTY",
+      "detail": "intraday_candidates.json(11:00生成):candidates=[],conclusion=下午无新仓备选",
+      "passed": false
+    },
+    {
+      "gate": "持仓风控优先",
+      "status": "PRIORITY",
+      "detail": "保收益优先规则:利通电子120.88(-3.47%)距止损117仅3.05%.下午核心是持仓风控而非开新仓.14:30-14:55沃什避险减仓",
+      "passed": false
+    }
+  ],
+  "afternoon_action_plan": {
+    "priority_1": "⚠️ 利通电子120.88(-3.47%)距止损117仅3.05%.若破118准备减仓/止损",
+    "priority_2": "🔒 14:30-14:55沃什讲话前减仓避险(利通150+国瓷200+麦格100)",
+    "priority_3": "👀 江波龙观察378支撑·麦格米特观察127支撑",
+    "priority_4": "📊 8/28收盘后复盘APEX熔断是否确认解除→9/1盘前评估重建候选池"
+  },
+  "next_action": {
+    "date": "2026-09-01",
+    "session": "pre_market",
+    "plan": "APEX熔断8/28收盘后解除→9/1开盘完全解除.盘前评估8只候选池(协创数据/通富微电/新易盛/天孚通信/兆易创新/生益科技/三环集团/长川科技)+intraday_candidates中10只半导体候选.条件:成交≥1.5万亿+上涨≥2000+沃什讲话无极端鹰派",
+    "candidates_pool": [
+      "协创数据(300857·score3·等回踩231支撑)",
+      "通富微电(002156·score6·等回踩58支撑)",
+      "新易盛(300502·score5·支撑400)",
+      "天孚通信(300394·score5·等回踩230支撑)",
+      "兆易创新(603986·score6·PE41极低·等回踩375支撑)",
+      "生益科技(600183·score6·覆铜板龙头+4.75%·注意追高风险)",
+      "三环集团(300408·score3·支撑105)",
+      "长川科技(300604·score6·等回踩66支撑)"
+    ]
+  },
+  "market_snapshot_1310": {
+    "shanghai_index": 3959,
+    "shanghai_change_pct": 0.08,
+    "chinext_index": 3462,
+    "chinext_change_pct": -0.32,
+    "half_day_volume_trillion": 1.42,
+    "volume_change_vs_prev": "+716亿",
+    "up_count": 3100,
+    "verdict": "冲高回落.英伟达利好已部分兑现.科技分化.沃什22:00前观望为主"
+  },
+  "risk_alerts": [
+    "⚠️ 利通电子120.88(-3.47%)距止损117仅3.05%,下午重点关注",
+    "🔴 沃什22:00 Jackson Hole首秀,美联储官员分歧大",
+    "📅 A50期货8月交割+周五+月末=尾盘波动加大",
+    "📉 央行净回笼2455亿,流动性边际收紧",
+    "🔄 英伟达利好已部分兑现(高开+1%后回落至+0.08%)"
+  ]
+}

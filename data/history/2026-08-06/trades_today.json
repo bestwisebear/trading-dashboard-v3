@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "session": "close"
+  },
+  "trades": [
+    {
+      "time": "14:00",
+      "stock": "鹏辉能源",
+      "code": "300438",
+      "direction": "buy",
+      "quantity": 1100,
+      "price": 61.1,
+      "amount": 67210,
+      "notes": "回补操作，支撑位57止损56"
+    },
+    {
+      "time": "14:54",
+      "stock": "协鑫能科",
+      "code": "002015",
+      "direction": "buy",
+      "quantity": 1500,
+      "price": 15.7,
+      "amount": 23550,
+      "notes": "规则外小仓位试错，明天不及预期立马走"
+    }
+  ],
+  "summary": {
+    "total_trades": 2,
+    "buy_count": 2,
+    "sell_count": 0,
+    "realized_pnl": 0,
+    "violation_count": 2,
+    "violation_types": {
+      "超时段操作": 1,
+      "超持仓限制": 1
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "date": "2026-08-13",
+  "score": 3,
+  "market_summary": {
+    "shanghai_index": 3926.96,
+    "shanghai_change_pct": -0.5,
+    "shenzhen_index": 14289.44,
+    "shenzhen_change_pct": -0.87,
+    "chinext_index": 3586.04,
+    "chinext_change_pct": -0.45,
+    "star50_change_pct": -1.11,
+    "total_volume_billion": 2.55,
+    "volume_change_billion": 0.4,
+    "rise_count": 1143,
+    "fall_count": 4317,
+    "flat_count": 64,
+    "limit_up": 62,
+    "limit_down": 4,
+    "breadth_pct": 20.93,
+    "main_capital_net_flow_billion": null,
+    "northbound_net_flow_billion": null
+  },
+  "market_comment": "三大指数冲高回落全线收跌，沪指-0.50%/深成指-0.87%/创业板-0.45%。涨跌1143:4317赚钱效应极差（红盘20.93%），涨停62跌停4。医药/创新药全天最强（博济医药/陇神戎发20cm），算力租赁延续（城地香江3板），食品饮料消费（一鸣/皇氏4板）。但科技板块午后集体杀跌（存储/先进封装/电池链），贵金属/有色重挫。成交2.55万亿放量3985亿属放量大跌分歧出清。",
+  "sector_highlights": {
+    "leading": [
+      "创新药/CRO(博济医药/陇神戎发20cm涨停,医药14只涨停)",
+      "算力租赁(城地香江3连板,主力净流入+47亿)",
+      "食品饮料(一鸣食品/皇氏集团4连板)",
+      "电力(大唐发电/华电能源涨停)",
+      "超节点(共进股份涨停)"
+    ],
+    "lagging": [
+      "贵金属/有色锌(重挫)",
+      "地产(重挫)",
+      "半导体存储/先进封装(午后杀跌)",
+      "电池链(鹏辉-2.14%)"
+    ],
+    "capital_flow_in": [
+      "中国AI50+57.58亿",
+      "英伟达概念+53.06亿",
+      "算力租赁+47.02亿",
+      "创新药+37.45亿",
+      "WiFi6+39.19亿"
+    ],
+    "capital_flow_out": [
+      "沪深300主力-118.05亿",
+      "沪市主力-186.42亿",
+      "深市主力-155.06亿",
+      "贵金属/有色"
+    ]
+  },
+  "daily_metrics": {
+    "trade_count": 4,
+    "violation_count": 1,
+    "realized_pnl": 1727.0,
+    "violations_detail": [
+      {
+        "trade": "长川科技14:56买入100@283",
+        "violation": "after_window",
+        "detail": "超出14:30操作窗口"
+      }
+    ]
+  },
+  "holding_performance": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "close": 64.92,
+      "change_pct": -2.14,
+      "pnl_amount": 4658.4,
+      "comment": "冲高回落，电池链整体调整"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "close": 281.69,
+      "change_pct": -1.89,
+      "pnl_amount": -1851,
+      "comment": "高开低走，半导体板块午后集体杀跌"
+    }
+  ],
+  "closed_today": [
+    {
+      "code": "159558",
+      "name": "半导体设备ETF",
+      "realized_pnl": 141
+    },
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "realized_pnl": 1586
+    }
+  ]
+}

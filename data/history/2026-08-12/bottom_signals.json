@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "date": "2026-08-12",
+    "last_updated": "2026-08-12T16:18:00+08:00"
+  },
+  "aggregate": {
+    "ratio": "3/5",
+    "recommendation": "接近底部",
+    "recommendation_detail": "底部信号满足3项（跌停减少+涨跌恢复+连续止跌），较8/11的2项有所改善。8/12三大指数全线上涨，涨跌家数4128:1280赚钱效应恢复，0跌停市场情绪回暖。但成交缩量至21524亿（较昨-7.3%）且量能不足，距底部确认（5/5）还有距离。建议适度乐观但仍保持谨慎，等待成交放量确认或CPI落地后信号再升级"
+  },
+  "signals": [
+    {
+      "name": "缩量止跌",
+      "condition": "成交较20日均量萎缩>30%且创近20日新低",
+      "actual": "21524亿（较昨23357亿缩量-7.3%，远高于20日均量水平，未满足）",
+      "passed": false
+    },
+    {
+      "name": "跌停减少",
+      "condition": "跌停<30家",
+      "actual": "8/12收0只跌停",
+      "passed": true
+    },
+    {
+      "name": "涨跌恢复",
+      "condition": "涨跌>3000家",
+      "actual": "8/12收4128涨:1280跌（红盘74.3%）",
+      "passed": true
+    },
+    {
+      "name": "连续止跌",
+      "condition": "2天不创新低",
+      "actual": "8/12沪指3946.68 > 8/11 3934.09，且8/11也未创新低，连续止跌确认",
+      "passed": true
+    },
+    {
+      "name": "北向流入",
+      "condition": "连续2-3日净流入>50亿",
+      "actual": "数据自2024/8/19起停止披露日度净买卖",
+      "passed": false
+    }
+  ],
+  "history_7d": [
+    {
+      "date": "2026-08-12",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-11",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-10",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-09",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-08",
+      "satisfied_count": 3,
+      "count": 5
+    },
+    {
+      "date": "2026-08-07",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-06",
+      "satisfied_count": 2,
+      "count": 5
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25",
+    "session": "post_close"
+  },
+  "statistics": {
+    "total_trades_today": 0,
+    "total_violations_today": 0,
+    "total_trades_cumulative": 52,
+    "total_violations_cumulative": 18,
+    "violation_rate": 34.6,
+    "note": "8/25零操作,无违规"
+  },
+  "stats": {
+    "total_trades_today": 0,
+    "total_violations_today": 0,
+    "total_trades_cumulative": 52,
+    "total_violations_cumulative": 18,
+    "violation_rate": 34.6
+  },
+  "today_assessment": {
+    "date": "2026-08-25",
+    "score": 65,
+    "execution_score": 70,
+    "discipline_score": 60,
+    "summary": "零操作日。APEX二级熔断期间严格遵守禁新仓纪律。持仓盘中破止损后回升,未触发清仓。整体纪律执行良好",
+    "violations": [],
+    "good_behaviors": [
+      "APEX熔断期间零新仓",
+      "持仓止损管理到位(盘中破止损后回升=合理观察)",
+      "无情绪化操作"
+    ]
+  },
+  "logs": [
+    {
+      "date": "2026-08-25",
+      "violations": [],
+      "good_behaviors": [
+        "APEX熔断期间零新仓",
+        "持仓止损管理到位",
+        "无情绪化操作"
+      ],
+      "note": "零操作日,无违规"
+    }
+  ]
+}

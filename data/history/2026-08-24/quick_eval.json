@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "last_updated": "2026-08-24T16:55:00+08:00",
+    "date": "2026-08-24",
+    "session": "close",
+    "data_basis": "8/24收盘(最后扫描8/21基准,23:00 nightly重扫)",
+    "scan_note": "8/24收盘：科技崩盘+极端分化日，涨跌1456:3959第一闸未通过，满仓4只全跌。新仓全面禁入，候选池冻结至8/27英伟达财报后",
+    "gates_summary": {
+      "上涨家数": "2505涨/2862跌 > 2000铁律线 → 第一闸实际通过",
+      "持仓状态": "4只满仓+3只破止损连续5天未清 → 禁新仓(约束性)",
+      "账户状态": "月度-1.33%/累计-1.33%,止损纪律失效中 → 先修复账户",
+      "结论": "🟥 禁新仓:约束在持仓/账户闸而非第一闸,8/24清仓为唯一任务,清仓后空仓观望再重估"
+    },
+    "stocks_note": "stocks为8/21收盘基准扫描结果,清仓执行期禁开新仓,仅供清仓完成后重建候选池参考"
+  },
+  "market_signal": {
+    "overall": "禁开新仓：第一闸未通过(1456<2000)+满仓+纪律重建期",
+    "new_position_allowed": false,
+    "first_gate": {
+      "rise_count": 1456,
+      "fall_count": 3959,
+      "status": "未通过(1456<2000铁律线)",
+      "data_date": "2026-08-24"
+    },
+    "reason": "8/24涨跌家数1456:3959，第一闸未通过；叠加满仓4只(仓位99.9%)+埃斯顿破止损未处理+底部信号1/5，新仓全面禁入。23:00 nightly扫描更新候选池，8/27英伟达财报前冻结开仓",
+    "risk_warning": "8/25唯一任务=确认并执行埃斯顿止损+守住江波龙360/风华51.5/利通117；严禁抄底超跌光模块/半导体"
+  },
+  "indices": {
+    "上证指数": "3882.01(-0.59%)",
+    "深证成指": "13794.29(-2.13%)",
+    "创业板指": "3431.89(-3.21%)"
+  },
+  "market_breadth": {
+    "up": 1456,
+    "down": 3959,
+    "flat": 124,
+    "limit_up": 48,
+    "limit_down": 11,
+    "turnover": "2.01万亿(+1282亿)",
+    "main_net_flow": "-695.23亿"
+  },
+  "transit_pool_size": 9,
+  "transit_pool_stocks": [
+    "兆易创新",
+    "江波龙",
+    "长电科技",
+    "菲利华",
+    "复旦微电",
+    "华天科技",
+    "中微公司",
+    "北方华创",
+    "澜起科技"
+  ],
+  "next_focus": "8/25：埃斯顿止损执行确认；江波龙360/风华51.5盘中破位预案；8/26 MLF续作；8/27英伟达财报+美国CPI",
+  "stocks": {
+    "sz300438": {
+      "name": "鹏辉能源",
+      "price": 61.75,
+      "change_pct": 3.5,
+      "sector": "锂电池",
+      "pe": null,
+      "market_cap": null,
+      "turnover": null,
+      "ma5": 58.5,
+      "ma10": 59.8,
+      "ma20": 62.72,
+      "ma_arrange": "bearish",
+      "rsi6": 35.0,
+      "macd_dif": null,
+      "macd_dea": null,
+      "support": [
+        59.0,
+        57.0,
+        55.0
+      ],
+      "resistance": [
+        63.0,
+        65.0
+      ],
+      "signal": "hold",
+      "gates": {
+        "market": 1,
+        "support": 0.5,
+        "stop_space": 1,
+        "ma": 0,
+        "rsi": 0,
+        "macd": 0,
+        "sector": 0.5
+      },
+      "notes": "持仓800股@60.227。8/21收61.75(+3.5%)反弹,仍低于MA20(62.72)。锂电链业绩潮支撑,但需站稳63上方确认反转。破59减半仓,破57全部清仓",
+      "score": 3,
+      "status": "holding",
+      "close": 61.75,
+      "note": "锂电池,唯一未破止损盈利仓;周末碳酸锂半月+16%直接受益;8/24策略:破59减半/破57全清/反弹61-62.7减半锁利"
+    },
+    "sz300857": {
+      "name": "协创数据",
+      "price": 247.41,
+      "change_pct": 0.01,
+      "sector": "算力租赁",
+      "pe": null,
+      "market_cap": null,
+      "turnover": null,
+      "ma20": null,
+      "rsi6": null,
+      "support": [
+        242
+      ],
+      "resistance": [
+        252
+      ],
+      "signal": "sell",
+      "gates": {
+        "market": 1,
+        "support": 0,
+        "stop_space": 0,
+        "ma": 0,
+        "rsi": 0,
+        "macd": 0,
+        "sector": 0
+      },
+      "notes": "持仓100股@254.14。8/21收247.41仍破止损250,浮亏-2.65%。破止损连续5天未清仓→8/24开盘9:30-9:45市价清仓,不等反弹",
+      "score": 1,
+      "status": "🚨STOP_LOSS_BREACHED",
+      "close": 247.41,
+      "note": "算力租赁,8/21收247.41破止损250连续5天,8/24=最后通牒必清"
+    },
+    "sz300503": {
+      "name": "昊志机电",
+      "price": 69.65,
+      "change_pct": -0.77,
+      "sector": "机器人概念",
+      "pe": null,
+      "market_cap": null,
+      "turnover": null,
+      "ma20": null,
+      "rsi6": null,
+      "support": [
+        65
+      ],
+      "resistance": [
+        75
+      ],
+      "signal": "sell",
+      "gates": {
+        "market": 1,
+        "support": 0,
+        "stop_space": 0,
+        "ma": 0,
+        "rsi": 0,
+        "macd": 0,
+        "sector": 0
+      },
+      "notes": "持仓500股@80.18。8/21收69.65远低于止损73,浮亏-13.12%。破止损连续5天未清仓→8/24开盘市价清,不等反弹",
+      "score": 1,
+      "status": "🚨STOP_LOSS_BREACHED",
+      "close": 69.65,
+      "note": "机器人概念,8/21收69.65破止损73连续5天,亏损最大-5265,8/24=最后通牒必清"
+    },
+    "sz300408": {
+      "name": "三环集团",
+      "price": 111.51,
+      "change_pct": 2.14,
+      "sector": "MLCC",
+      "pe": null,
+      "market_cap": null,
+      "turnover": null,
+      "ma20": null,
+      "rsi6": null,
+      "support": [
+        105
+      ],
+      "resistance": [
+        118
+      ],
+      "signal": "sell",
+      "gates": {
+        "market": 1,
+        "support": 0,
+        "stop_space": 0,
+        "ma": 0,
+        "rsi": 0,
+        "macd": 0,
+        "sector": 0.5
+      },
+      "notes": "持仓300股@126.21。8/21收111.51(+1.74%)反弹,仍远低于止损122,浮亏-11.65%。MLCC板块8/21涨4.1%但已拖延5天未清→8/24逢反弹即市价清",
+      "score": 1,
+      "status": "🚨STOP_LOSS_BREACHED",
+      "close": 113.9,
+      "note": "MLCC,8/21收113.90破止损122连续5天,8/24=最后通牒必清"
+    }
+  }
+}

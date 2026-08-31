@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "date": "2026-08-05",
+    "last_updated": "2026-08-05T15:15:00+08:00",
+    "session": "close"
+  },
+  "signals": [
+    {
+      "id": "rise_fall_count",
+      "name": "涨跌家数",
+      "description": "全市场涨跌家数对比",
+      "value": "3725:1621",
+      "threshold": 2000,
+      "status": "green",
+      "detail": "3725家上涨，1621家下跌，多方占优。连续两日涨跌比>2:1，市场赚钱效应持续",
+      "updated_at": "2026-08-05T15:15:00+08:00"
+    },
+    {
+      "id": "sector_strength",
+      "name": "板块真假强",
+      "description": "持仓板块涨跌比判定",
+      "value": "科技继续强势，光模块分化",
+      "status": "green",
+      "detail": "半导体+5.80%(173涨/178跌真强)、元件+6.57%、贵金属+7.72%真强确认。光模块继续分化(中际旭创-7.27%/新易盛-5.29%回落)",
+      "updated_at": "2026-08-05T15:15:00+08:00"
+    },
+    {
+      "id": "main_capital_flow",
+      "name": "主力资金方向",
+      "description": "全市场主力资金净流入(亿)",
+      "value": 327,
+      "threshold": 0,
+      "status": "green",
+      "detail": "上证指数主力净流入327亿(全天)。半导体136.7亿领跑、工业金属65亿、消费电子61亿。科技+有色双主线资金持续流入",
+      "updated_at": "2026-08-05T15:15:00+08:00"
+    },
+    {
+      "id": "northbound_flow",
+      "name": "北向资金活跃度",
+      "description": "北向成交额vs20日均值推算活跃度（非真实净流入）",
+      "value": null,
+      "threshold": 0,
+      "status": "yellow",
+      "detail": "盘后暂无北向资金详细数据，维持昨日状态。昨日净卖出32亿",
+      "updated_at": "2026-08-05T15:15:00+08:00",
+      "turnover_amt": null,
+      "turnover_20d_avg": null,
+      "deviation_ratio": null,
+      "strength": null,
+      "trend_3d": null,
+      "method": "成交额vs20日均值加权判定（非真实净流入）"
+    },
+    {
+      "id": "limit_up_count",
+      "name": "涨停家数",
+      "description": "涨停板数量",
+      "value": 104,
+      "threshold": 30,
+      "status": "green",
+      "detail": "涨停104家，跌停仅1家。传智教育8板、利通电子4天3板、金海通2板。赚钱效应火爆",
+      "updated_at": "2026-08-05T15:15:00+08:00"
+    },
+    {
+      "id": "volume_ratio",
+      "name": "量比指标",
+      "description": "全市场量比",
+      "value": 1.25,
+      "threshold": 1.2,
+      "status": "green",
+      "detail": "两市成交2.66万亿，较昨日放量4460亿(+20%)。深证成指换手2.99%、创业板4.25%。量能显著放大",
+      "updated_at": "2026-08-05T15:15:00+08:00"
+    },
+    {
+      "id": "market_breadth",
+      "name": "市场宽度",
+      "description": "站上5日线个股占比",
+      "value": 68.0,
+      "threshold": 60,
+      "status": "green",
+      "detail": "连续两日反弹+放量，站上5日线占比提升至68%。市场宽度持续改善",
+      "updated_at": "2026-08-05T15:15:00+08:00"
+    }
+  ],
+  "aggregate": {
+    "green_count": 6,
+    "yellow_count": 1,
+    "red_count": 0,
+    "total_score": 13,
+    "max_score": 14,
+    "no_open_position": false,
+    "no_open_reason": ""
+  }
+}

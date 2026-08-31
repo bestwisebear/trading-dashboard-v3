@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "date": "2026-08-13",
+    "last_updated": "2026-08-13T16:55:00+08:00"
+  },
+  "statistics": {
+    "total_trades": 40,
+    "total_violations": 11,
+    "violation_rate": 27.5,
+    "today_trades": 4,
+    "today_violations": 1,
+    "violation_types": {
+      "日内做T": 8,
+      "单日超限": 4,
+      "非关注池开仓": 2,
+      "盘外操作": 1,
+      "早盘追高": 1,
+      "超时窗操作": 1
+    }
+  },
+  "stats": {
+    "total_trades": 40,
+    "total_violations": 11,
+    "violation_rate": 27.5,
+    "today_trades": 4,
+    "today_violations": 1,
+    "violation_types": {
+      "日内做T": 8,
+      "单日超限": 4,
+      "非关注池开仓": 2,
+      "盘外操作": 1,
+      "早盘追高": 1,
+      "超时窗操作": 1
+    }
+  },
+  "today_assessment": {
+    "score": 60,
+    "grade": "B-",
+    "good": [
+      "清仓协鑫能科果断（质押风险标的及时退出）",
+      "清仓半导体设备ETF回收流动性",
+      "当日4笔交易在≤6笔限制内",
+      "从3只持仓降至2只，仓位管理意识提升"
+    ],
+    "bad": [
+      "长川科技14:56加仓超出14:30操作窗口",
+      "鹏辉能源冲高回落（67.2→64.92）未执行分批锁利规则",
+      "在涨跌家数可能<2000预期下仍建仓长川科技"
+    ],
+    "improvement": "严格遵守14:30截止时间。分批锁利规则必须在触发条件满足时立即执行，不能观望等待"
+  },
+  "logs": []
+}

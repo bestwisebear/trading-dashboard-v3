@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "date": "2026-08-07",
+    "last_updated": "2026-08-07T16:15:00+08:00"
+  },
+  "stats": {
+    "today": 0,
+    "this_week": 0,
+    "this_month": 2,
+    "total_violations": 15,
+    "last_violation_date": "2026-08-06"
+  },
+  "statistics": {
+    "today": 0,
+    "this_week": 0,
+    "this_month": 2,
+    "total_violations": 15,
+    "last_violation_date": "2026-08-06"
+  },
+  "today_assessment": {
+    "date": "2026-08-07",
+    "score": 95,
+    "summary": "纪律明显改善，无违规操作。减仓和清仓均按计划执行。",
+    "violations": []
+  },
+  "logs": [
+    {
+      "date": "2026-08-07",
+      "type": "check",
+      "result": "pass",
+      "detail": "全天无违规"
+    },
+    {
+      "date": "2026-08-06",
+      "type": "violation",
+      "result": "fail",
+      "detail": "14:00买入鹏辉能源超出时段；14:54买入协鑫能科超出时段"
+    }
+  ]
+}

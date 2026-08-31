@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "date": "2026-08-04",
+    "last_updated": "2026-08-04T15:20:00+08:00",
+    "session": "close"
+  },
+  "signals": [
+    {
+      "id": "rise_fall_count",
+      "name": "涨跌家数",
+      "description": "全市场涨跌家数对比",
+      "value": "3642:1747",
+      "threshold": 2000,
+      "status": "green",
+      "detail": "涨跌家数3642:1747，多方占优（涨跌比约2:1），市场赚钱效应回暖",
+      "updated_at": "2026-08-04T15:20:00+08:00"
+    },
+    {
+      "id": "sector_strength",
+      "name": "板块真假强",
+      "description": "持仓板块涨跌比判定",
+      "value": "科技板块全面强势",
+      "status": "green",
+      "detail": "通信+9.41%领涨，电子+5.73%，元件+7.13%，半导体+6.00%，持仓板块全面走强。板块真强确认",
+      "updated_at": "2026-08-04T15:20:00+08:00"
+    },
+    {
+      "id": "main_capital_flow",
+      "name": "主力资金方向",
+      "description": "全市场主力资金净流入(亿)",
+      "value": 27.89,
+      "threshold": 0,
+      "status": "green",
+      "detail": "通信设备主力净流入223亿、元件118.6亿、半导体115.8亿，科技方向资金大幅流入",
+      "updated_at": "2026-08-04T15:20:00+08:00"
+    },
+    {
+      "id": "northbound_flow",
+      "name": "北向资金活跃度",
+      "description": "北向成交额vs20日均值推算活跃度（非真实净流入）",
+      "value": null,
+      "threshold": 0,
+      "status": "yellow",
+      "detail": "北向资金净卖出32亿，大额抛售宁德时代3.94亿，逆势买入招商银行3亿",
+      "updated_at": "2026-08-04T15:20:00+08:00",
+      "turnover_amt": null,
+      "turnover_20d_avg": null,
+      "deviation_ratio": null,
+      "strength": null,
+      "trend_3d": null,
+      "method": "成交额vs20日均值加权判定（非真实净流入）"
+    },
+    {
+      "id": "limit_up_count",
+      "name": "涨停家数",
+      "description": "涨停板数量",
+      "value": 140,
+      "threshold": 30,
+      "status": "green",
+      "detail": "涨停140家，跌停仅1家。关注池涨停：东山精密+10%、协创数据+17.68%(20cm)、天孚通信+17.45%(20cm)",
+      "updated_at": "2026-08-04T15:20:00+08:00"
+    },
+    {
+      "id": "volume_ratio",
+      "name": "量比指标",
+      "description": "全市场量比",
+      "value": 1.85,
+      "threshold": 1.2,
+      "status": "green",
+      "detail": "深证成指换手率2.71%，创业板3.96%，市场显著放量。成交额大幅超出近期均值",
+      "updated_at": "2026-08-04T15:20:00+08:00"
+    },
+    {
+      "id": "market_breadth",
+      "name": "市场宽度",
+      "description": "站上5日线个股占比",
+      "value": 62.0,
+      "threshold": 60,
+      "status": "green",
+      "detail": "今日大幅反弹后站上5日线占比突破60%健康线，市场宽度转好",
+      "updated_at": "2026-08-04T15:20:00+08:00"
+    }
+  ],
+  "aggregate": {
+    "green_count": 6,
+    "yellow_count": 1,
+    "red_count": 0,
+    "total_score": 13,
+    "max_score": 14,
+    "no_open_position": false,
+    "no_open_reason": ""
+  }
+}

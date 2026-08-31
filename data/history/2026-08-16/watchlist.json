@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "last_updated": "2026-08-16T20:50:00+08:00",
+    "date": "2026-08-16",
+    "session": "weekend_evening_update"
+  },
+  "watchlist": {
+    "sz002281": {
+      "name": "光迅科技",
+      "score": 6.5,
+      "status": "buy",
+      "sector": "光通信",
+      "notes": "★Buy信号，多头+RSI适中+支撑188"
+    },
+    "sz300442": {
+      "name": "润泽科技",
+      "score": 7,
+      "status": "buy",
+      "sector": "算力IDC",
+      "notes": "★Buy信号，PE22低估+MACD金叉"
+    },
+    "sz000636": {
+      "name": "风华高科",
+      "score": 7,
+      "status": "buy",
+      "sector": "MLCC/被动元件",
+      "notes": "🔥周末新增：三环MLCC涨价30%启动涨价链，风华高科为MLCC龙头+多头+MACD金叉"
+    },
+    "sh603501": {
+      "name": "韦尔股份",
+      "score": 5,
+      "status": "buy",
+      "sector": "半导体CIS",
+      "notes": "★Buy信号，PE31低估+半导体低位"
+    },
+    "sz300782": {
+      "name": "卓胜微",
+      "score": 5.5,
+      "status": "buy",
+      "sector": "半导体射频",
+      "notes": "★Buy信号，多头+MACD金叉(注意PE为负)"
+    },
+    "sz300308": {
+      "name": "中际旭创",
+      "score": 5,
+      "status": "conditional",
+      "sector": "CPO光模块",
+      "notes": "空头排列但RSI低位，支撑921/902企稳可关注"
+    },
+    "sh601899": {
+      "name": "紫金矿业",
+      "score": 4.5,
+      "status": "conditional",
+      "sector": "有色黄金",
+      "notes": "PE14低估+RSI31接近超卖，等企稳"
+    },
+    "sh688012": {
+      "name": "中芯国际",
+      "score": 5,
+      "status": "conditional",
+      "sector": "晶圆代工",
+      "notes": "Q3超预期+RSI57，PE131偏高"
+    }
+  },
+  "summary": {
+    "total_scanned": 20,
+    "pass_count": 13,
+    "conditional_count": 6,
+    "main_line": "CPO/光通信为绝对主线+MLCC涨价链为新催化+存储超级周期持续",
+    "risk_warning": "光通信8月已反弹超30%追高风险大；8/17经济数据+美联储纪要增加不确定性；协创数据负债率83%硬门禁"
+  },
+  "transit_pool": [
+    {
+      "code": "sz300782",
+      "name": "卓胜微",
+      "sector": "射频芯片",
+      "price": 78.87,
+      "change_pct": -0.1,
+      "rsi6": 68.95,
+      "ma20": 73.29,
+      "score": 5.5,
+      "stop_loss": 73,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sh688825",
+      "name": "长鑫科技",
+      "sector": "存储DRAM",
+      "price": 55.18,
+      "change_pct": 4.35,
+      "rsi6": 68.59,
+      "ma20": 48,
+      "score": 5.5,
+      "stop_loss": 50,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sh688012",
+      "name": "中芯国际",
+      "sector": "晶圆代工",
+      "price": 374.85,
+      "change_pct": 1.2,
+      "rsi6": 57.53,
+      "ma20": 366.72,
+      "score": 5,
+      "stop_loss": 350,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sz002371",
+      "name": "北方华创",
+      "sector": "半导体设备",
+      "price": 738.66,
+      "change_pct": 0.01,
+      "rsi6": 47.12,
+      "ma20": 726.47,
+      "score": 5,
+      "stop_loss": 700,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sz300604",
+      "name": "长川科技",
+      "sector": "ATE设备",
+      "price": 283.05,
+      "change_pct": 0.48,
+      "rsi6": 57.68,
+      "ma20": 278.6,
+      "score": 5,
+      "stop_loss": 275,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sh688008",
+      "name": "中微公司",
+      "sector": "刻蚀设备",
+      "price": 211.91,
+      "change_pct": 0.8,
+      "rsi6": 55.62,
+      "ma20": 210.6,
+      "score": 4.5,
+      "stop_loss": 200,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sz002185",
+      "name": "华天科技",
+      "sector": "封测",
+      "price": 17.98,
+      "change_pct": 0.56,
+      "rsi6": 69.78,
+      "ma20": 17.26,
+      "score": 4.5,
+      "stop_loss": 17,
+      "status": "transit_pool_candidate"
+    },
+    {
+      "code": "sz300223",
+      "name": "北京君正",
+      "sector": "存储芯片",
+      "price": 143.62,
+      "change_pct": 4.47,
+      "rsi6": 63.15,
+      "ma20": 138.65,
+      "score": 4.5,
+      "stop_loss": 135,
+      "status": "transit_pool_candidate"
+    }
+  ],
+  "transit_pool_note": "半导体低位票专项：score>=4、涨幅<5%、RSI<70、价格>MA20",
+  "transit_pool_updated": "2026-08-15T23:00:00+08:00"
+}

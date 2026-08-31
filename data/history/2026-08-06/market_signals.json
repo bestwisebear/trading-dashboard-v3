@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "date": "2026-08-06",
+    "last_updated": "2026-08-06T15:30:00+08:00",
+    "session": "close"
+  },
+  "signals": [
+    {
+      "id": "rise_fall_count",
+      "name": "涨跌家数",
+      "description": "全市场涨跌家数对比",
+      "value": 2785,
+      "threshold": 2000,
+      "status": "green",
+      "detail": "上涨2785家，下跌2585家，平盘159家。涨跌比1.08:1，略偏多",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    },
+    {
+      "id": "sector_strength",
+      "name": "板块真假强",
+      "description": "持仓板块涨跌比判定",
+      "value": null,
+      "status": "yellow",
+      "detail": "煤炭/电子化学品领涨，电力设备/教育/汽车领跌。持仓板块AI服务器弱(-0.53%)、电池弱(-3.46%)、电力弱(-2.30%)，均非当日主线",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    },
+    {
+      "id": "main_capital_flow",
+      "name": "主力资金方向",
+      "description": "全市场主力资金净流入(亿)",
+      "value": -84.48,
+      "threshold": 0,
+      "status": "red",
+      "detail": "主力资金净流出84.48亿，连续流出态势",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    },
+    {
+      "id": "northbound_flow",
+      "name": "北向资金流入",
+      "description": "北向资金净流入(亿)",
+      "value": null,
+      "threshold": 0,
+      "status": "yellow",
+      "detail": "北向资金数据待晚间更新",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    },
+    {
+      "id": "limit_up_count",
+      "name": "涨停家数",
+      "description": "涨停板数量",
+      "value": 127,
+      "threshold": 30,
+      "status": "green",
+      "detail": "涨幅>9%有127只，跌幅>9%仅6只，局部热度较高，煤炭板块掀涨停潮",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    },
+    {
+      "id": "volume_ratio",
+      "name": "量比指标",
+      "description": "全市场成交额(万亿)",
+      "value": 2.53,
+      "threshold": 2.0,
+      "status": "green",
+      "detail": "成交额2.53万亿，较昨日缩量1309亿，但仍高于2万亿活跃线",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    },
+    {
+      "id": "market_breadth",
+      "name": "市场宽度",
+      "description": "涨跌家数比与赚钱效应",
+      "value": 51.9,
+      "threshold": 60,
+      "status": "yellow",
+      "detail": "上涨占比51.9%，超2700只个股上涨但赚钱效应一般，热点集中在煤炭/贵金属/化工",
+      "updated_at": "2026-08-06T15:30:00+08:00"
+    }
+  ],
+  "aggregate": {
+    "green_count": 3,
+    "yellow_count": 3,
+    "red_count": 1,
+    "total_score": 9,
+    "max_score": 14,
+    "no_open_position": false,
+    "market_comment": "沪指低开高走+0.57%，深创指小幅收跌。煤炭/贵金属/化工领涨，电力/教育/汽车领跌。涨跌家数略偏多(2785:2585)但主力资金仍在流出。市场热点快速轮动，成交缩量至2.53万亿。"
+  }
+}

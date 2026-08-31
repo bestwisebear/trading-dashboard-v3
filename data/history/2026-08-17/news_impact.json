@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "date": "2026-08-17",
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "source": "web_search_close"
+  },
+  "overall_sentiment": "偏多",
+  "sentiment_summary": "科技全面爆发日，半导体/CPO/存储三重催化共振，量价齐升。白酒领跌反映风格大切换。",
+  "items": [
+    {
+      "id": 1,
+      "time": "09:30",
+      "title": "SK海力士警告明年最严重'存储荒'，投资384亿美元建晶圆厂",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 5,
+      "detail": "SK海力士董事长崔泰源表示明年将出现最严重存储荒，将在韩国投资384亿美元建晶圆厂应对AI时代存储芯片需求。招商证券指出存储行业供需缺口将延续至2027年。",
+      "affected_stocks": [
+        "301308",
+        "300223",
+        "300604"
+      ],
+      "source": "东方财富/财联社"
+    },
+    {
+      "id": 2,
+      "time": "09:30",
+      "title": "英伟达Spectrum-X CPO硅光交换机全面量产",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 5,
+      "detail": "全球首款200G/lane CPO以太网交换机量产，激光器数量减至1/4、功耗降至1/5，光损耗从22dB降至4dB。CPO技术商业化落地提速。",
+      "affected_stocks": [
+        "300394",
+        "300308",
+        "300502",
+        "002281",
+        "300857"
+      ],
+      "source": "英伟达官方/中信证券"
+    },
+    {
+      "id": 3,
+      "time": "10:00",
+      "title": "四部门发布集成电路企业税收优惠政策",
+      "category": "macro",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "财政部等多部门发布集成电路、工业母机企业非货币性资产交换企业所得税优惠政策，减轻硬科技企业经营压力。",
+      "affected_stocks": [
+        "688012",
+        "300604",
+        "300438"
+      ],
+      "source": "财政部/国新办"
+    },
+    {
+      "id": 4,
+      "time": "10:30",
+      "title": "7月工业增加值同比+4.5%，制造业+5.5%",
+      "category": "macro",
+      "impact": "neutral",
+      "impact_level": 3,
+      "detail": "国家统计局发布7月经济数据，规模以上工业增加值+4.5%，制造业+5.5%。高技术制造业贡献率约五成。数据整体平稳偏弱，强化LPR下调预期。",
+      "affected_stocks": [],
+      "source": "国家统计局"
+    },
+    {
+      "id": 5,
+      "time": "11:00",
+      "title": "闪迪投资者日财务目标远超预期，存储芯片重估",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "闪迪目标2028-2030财年中高双位数营收增长、非GAAP毛利率约80%。伯恩斯坦预计Q3传统DRAM合约价环比+17%。",
+      "affected_stocks": [
+        "301308",
+        "300223"
+      ],
+      "source": "闪迪/伯恩斯坦"
+    },
+    {
+      "id": 6,
+      "time": "13:00",
+      "title": "贵州茅台上半年净利-1.95%，国家队退出十大股东",
+      "category": "market",
+      "impact": "negative",
+      "impact_level": 4,
+      "detail": "茅台Q2环比下降36%，中央汇金和证金公司均退出前十大股东。白酒板块-3.18%领跌，资金从消费权重向科技成长大规模搬家。",
+      "affected_stocks": [],
+      "source": "茅台半年报"
+    },
+    {
+      "id": 7,
+      "time": "14:00",
+      "title": "现货黄金站上4400美元/盎司，大宗商品走强",
+      "category": "market",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "COMEX黄金期货收报4380.4美元。中东地缘紧张（霍尔木兹海峡）+美元走弱（99.667）推升贵金属。有色金属板块受益。",
+      "affected_stocks": [
+        "601899"
+      ],
+      "source": "伦敦金属交易所"
+    },
+    {
+      "id": 8,
+      "time": "14:30",
+      "title": "摩根大通警告全球粮食危机正在酝酿",
+      "category": "macro",
+      "impact": "neutral",
+      "impact_level": 3,
+      "detail": "霍尔木兹海峡航运中断风险+超强厄尔尼诺，预计全球食品通胀率从2026H1的2.8%升至2027H1的5%。种植业板块涨4.16%。",
+      "affected_stocks": [],
+      "source": "摩根大通"
+    },
+    {
+      "id": 9,
+      "time": "15:00",
+      "title": "协创数据上半年净利18.63亿同比+331.11%",
+      "category": "stock",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "算力租赁龙头业绩爆发，H1营收+155.69%，净利+331.11%。CPO主线+算力需求旺盛驱动。",
+      "affected_stocks": [
+        "300857"
+      ],
+      "source": "协创数据业绩快报"
+    },
+    {
+      "id": 10,
+      "time": "15:30",
+      "title": "药明康德A+H齐创新高，总市值突破5000亿",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "上半年归母净利首破百亿，全面上调2026全年业绩指引。上半年创新药对外授权交易突破1100亿美元。",
+      "affected_stocks": [],
+      "source": "药明康德公告"
+    },
+    {
+      "id": 11,
+      "time": "16:00",
+      "title": "央行每日≤6000亿隔夜逆回购，流动性'主动加量'",
+      "category": "macro",
+      "impact": "positive",
+      "impact_level": 3,
+      "detail": "8/17-19每日开展不超6000亿隔夜逆回购，对冲税期与政府债缴款压力。货币政策维持适度宽松基调。",
+      "affected_stocks": [],
+      "source": "央行公告"
+    },
+    {
+      "id": 12,
+      "time": "16:00",
+      "title": "Anthropic Q2营收同比暴涨14倍超115亿美元",
+      "category": "sector",
+      "impact": "positive",
+      "impact_level": 4,
+      "detail": "AI大模型公司业绩持续爆发。国内互联网大厂加码国产算力投资，腾讯加大Q3算力采购，算力租赁行业量价齐升。",
+      "affected_stocks": [
+        "300857",
+        "300442"
+      ],
+      "source": "Anthropic/天风证券"
+    }
+  ]
+}

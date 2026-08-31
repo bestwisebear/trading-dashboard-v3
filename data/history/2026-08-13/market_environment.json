@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "date": "2026-08-13",
+    "last_updated": "2026-08-13T16:55:00+08:00",
+    "session": "close",
+    "data_basis": "2026-08-13 收盘"
+  },
+  "indices": [
+    {
+      "name": "上证指数",
+      "code": "sh000001",
+      "close": 3926.96,
+      "change_pct": -0.5,
+      "change_amount": -19.72,
+      "high": 3968.48,
+      "low": 3924.64,
+      "pre_close": 3946.68,
+      "volume": 572793677,
+      "amount": 116420307,
+      "pe_ratio": 18.02,
+      "price_source": "2026-08-13 收盘"
+    },
+    {
+      "name": "深证成指",
+      "code": "sz399001",
+      "close": 14289.44,
+      "change_pct": -0.87,
+      "change_amount": -124.99,
+      "high": 14584.3,
+      "low": 14289.01,
+      "pre_close": 14414.43,
+      "volume": 738110176,
+      "amount": 138671367,
+      "pe_ratio": 46.26,
+      "price_source": "2026-08-13 收盘"
+    },
+    {
+      "name": "创业板指",
+      "code": "sz399006",
+      "close": 3586.04,
+      "change_pct": -0.45,
+      "change_amount": -16.04,
+      "high": 3681.8,
+      "low": 3585.27,
+      "pre_close": 3602.08,
+      "volume": 220850675,
+      "amount": 66148662,
+      "pe_ratio": 61.66,
+      "price_source": "2026-08-13 收盘"
+    }
+  ],
+  "market_stats": {
+    "total_volume_billion": 2.55,
+    "volume_change_billion": 0.4,
+    "rise_count": 1143,
+    "fall_count": 4317,
+    "flat_count": 64,
+    "limit_up": 62,
+    "limit_down": 4,
+    "breadth_pct": 20.93,
+    "main_capital_net_flow_billion": null,
+    "northbound_net_flow_billion": null,
+    "comment": "冲高回落，红盘率仅20.93%，超4300只个股下跌。成交2.55万亿较昨放量3985亿，放量大跌属分歧出清",
+    "turnover_comment": "25509亿较昨21524亿放量3985亿，放量大跌属分歧出清"
+  },
+  "sector_highlights": {
+    "leading": [
+      "创新药/CRO(博济医药/陇神戎发20cm涨停)",
+      "算力租赁(城地香江3连板)",
+      "食品饮料(一鸣食品/皇氏集团4连板)",
+      "电力(大唐发电/华电能源涨停)",
+      "医药(14只涨停居首)"
+    ],
+    "lagging": [
+      "贵金属/有色锌(重挫)",
+      "地产(重挫)",
+      "半导体(存储/先进封装午后杀跌)",
+      "电池链(鹏辉能源-2.14%)"
+    ],
+    "capital_flow_in": [
+      "创新药+37.45亿",
+      "中国AI50+57.58亿",
+      "算力租赁+47.02亿",
+      "WiFi6+39.19亿",
+      "英伟达概念+53.06亿"
+    ],
+    "capital_flow_out": [
+      "沪深300主力-118.05亿",
+      "沪市主力-186.42亿",
+      "深市主力-155.06亿",
+      "贵金属/有色"
+    ]
+  },
+  "overnight_global": {
+    "comment": "美股算力租赁暴涨（Nebius+454%营收/+34%股价, CoreWeave翻倍营收/+19%），Lumentum指引强。药明禁令解除利好创新药。PPI数据待落地。现货黄金涨超1%报4420美元"
+  },
+  "hot_sectors_up": [
+    "创新药/CRO(博济医药/陇神戎发20cm涨停)",
+    "算力租赁(城地香江3连板)",
+    "食品饮料(一鸣食品/皇氏集团4连板)",
+    "电力(大唐发电/华电能源涨停)",
+    "医药(14只涨停居首)"
+  ],
+  "hot_sectors_down": [
+    "贵金属/有色锌(重挫)",
+    "地产(重挫)",
+    "半导体(存储/先进封装午后杀跌)",
+    "电池链(鹏辉能源-2.14%)"
+  ]
+}

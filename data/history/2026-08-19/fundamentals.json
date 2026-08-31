@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "last_updated": "2026-08-19T16:53:00+08:00",
+    "data_source": "腾讯行情PE",
+    "update_frequency": "daily_on_close"
+  },
+  "stocks": {
+    "300438": {
+      "name": "鹏辉能源",
+      "pe": 54.67,
+      "close": 62.4,
+      "change_pct": -4.81,
+      "market_cap": 252.2,
+      "note": "锂电池,唯一盈利仓"
+    },
+    "300857": {
+      "name": "协创数据",
+      "pe": 46.71,
+      "close": 247.67,
+      "change_pct": -7.3,
+      "market_cap": 1205.81,
+      "note": "算力租赁,已破止损"
+    },
+    "300503": {
+      "name": "昊志机电",
+      "pe": 74.38,
+      "close": 69.55,
+      "change_pct": -15.18,
+      "market_cap": 167.76,
+      "note": "机器人,远低于止损"
+    },
+    "300408": {
+      "name": "三环集团",
+      "pe": 76.08,
+      "close": 109.6,
+      "change_pct": -11.61,
+      "market_cap": 2049.31,
+      "note": "MLCC,远低于止损"
+    },
+    "002371": {
+      "name": "北方华创",
+      "pe": 85.0,
+      "close": 712.95,
+      "change_pct": -8.24,
+      "market_cap": 3100,
+      "note": "半导体设备龙头"
+    },
+    "300308": {
+      "name": "中际旭创",
+      "pe": 55.0,
+      "close": 895.6,
+      "change_pct": -9.36,
+      "market_cap": 2000,
+      "note": "CPO龙头"
+    },
+    "603986": {
+      "name": "兆易创新",
+      "pe": 62.0,
+      "close": 403.71,
+      "change_pct": -7.56,
+      "market_cap": 1800,
+      "note": "存储芯片龙头"
+    },
+    "601899": {
+      "name": "紫金矿业",
+      "pe": 18.5,
+      "close": 32.76,
+      "change_pct": -2.38,
+      "market_cap": 4200,
+      "note": "黄金/有色金属,防御属性"
+    }
+  }
+}

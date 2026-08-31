@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "last_updated": "2026-08-25T16:55:00+08:00",
+    "date": "2026-08-25",
+    "session": "post_close"
+  },
+  "daily_metrics": {
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": -10377.24,
+    "net_today_pct": -5.7,
+    "total_assets": 171727.18,
+    "prev_close_assets": 182104.42,
+    "total_pnl": -28272.82,
+    "total_pnl_pct": -14.14,
+    "monthly_pnl": -28272.82,
+    "source": "收盘价计算(腾讯行情) + state.json"
+  },
+  "date": "2026-08-25",
+  "score": 65,
+  "score_detail": "execution=70,discipline=60;零操作=纪律执行良好。江波龙/利通电子盘中均破止损后回升,未触发清仓(未确认跌破收盘价在止损下方)。APEX熔断期间禁新仓=严格遵守",
+  "note": "8/25收盘:零操作。今日-10377.24元(-5.7%)。沪指探底回升+0.19%,涨跌4229家大幅改善。江波龙+1.30%回升至止损上方,利通电子-2.04%仍在止损上方。市场高低切换明显(消费/农业/医药领涨vs科技杀跌)。8/26英伟达财报是关键催化"
+}

@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "last_updated": "2026-08-18T16:55:00+08:00",
+    "date": "2026-08-18",
+    "session": "close"
+  },
+  "daily_metrics": {
+    "date": "2026-08-18",
+    "trade_count": 6,
+    "violation_count": 1,
+    "realized_pnl": 3599.1800000000003,
+    "unrealized_pnl_change": 889.74,
+    "net_today": 4488.92,
+    "total_assets": 211565.69,
+    "position_ratio": 74.4,
+    "note": "换仓日:清MLCC三股(国瓷/风华/协创减仓)→换机器人(昊志)+MLCC龙头(三环).已实现+3599,未实现-1008"
+  },
+  "market_summary": {
+    "sh_change_pct": 0.19,
+    "sz_change_pct": -0.56,
+    "cy_change_pct": -0.93,
+    "kc50_change_pct": 0.11,
+    "up_count": 2121,
+    "down_count": 3292,
+    "limit_up": 81,
+    "limit_down": 6,
+    "total_amount_yi": 24199,
+    "main_theme": "农业种植+9.54%全线爆发(厄尔尼诺+粮食危机).科技高低切换,半导体休整.北证50+2.67%领涨.涨跌2121:3292分化严重"
+  },
+  "positions_review": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "close": 65.55,
+      "change_pct": 0.06,
+      "comment": "锂电池横盘+0.06%。成本60.23,浮盈+8.84%。持仓稳定"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "close": 267.16,
+      "change_pct": -0.74,
+      "comment": "算力租赁回调-0.74%。减仓至100股后轻仓持有,成本254.14,浮盈+5.12%"
+    },
+    {
+      "code": "300503",
+      "name": "昊志机电",
+      "close": 82.0,
+      "change_pct": 6.8,
+      "comment": "机器人概念首日建仓即大涨+6.80%!成本80.18,浮盈+2.27%。换手14%高活性,机器人大会催化"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "close": 123.99,
+      "change_pct": -4.73,
+      "comment": "MLCC龙头首日建仓即遭重挫-4.73%!成本126.21,浮亏-1.76%。高位回落需关注止损122"
+    }
+  ],
+  "date": "2026-08-18",
+  "score": 6
+}

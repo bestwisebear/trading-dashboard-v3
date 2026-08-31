@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "last_updated": "2026-08-26T16:55:00+08:00",
+    "data_date": "2026-08-26",
+    "source": "盘后全量刷新",
+    "session": "close",
+    "note": "8/26收盘:4只持仓,无交易。今日+73.74,累计-28406.98(-14.20%)。满仓99.4%"
+  },
+  "current": {
+    "total_assets": 171593.02,
+    "prev_close_assets": 171519.28,
+    "available_cash": 983.02,
+    "initial_capital": 200000.0,
+    "position_count": 4,
+    "position_ratio": 99.4,
+    "monthly_pnl": -28406.98,
+    "monthly_return_rate": -14.2,
+    "market_value": 170610.0,
+    "note": "4只持仓(江波龙100/利通500/麦格300/国瓷600),满仓99.4%,现金仅983"
+  },
+  "today_so_far": {
+    "date": "2026-08-26",
+    "net_today": 73.74,
+    "trade_count": 0,
+    "violation_count": 0,
+    "session": "close",
+    "note": "8/26全天无交易。持仓:江波龙-1.48%/利通-1.45%/麦格+1.48%/国瓷+1.39%。今日+73.74"
+  },
+  "positions": [
+    {
+      "code": "301308",
+      "name": "江波龙",
+      "quantity": 100,
+      "cost_price": 386.73,
+      "stop_loss": 360.0,
+      "market_value": 36420.0
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "quantity": 500,
+      "cost_price": 121.737,
+      "stop_loss": 117.0,
+      "market_value": 58785.0
+    },
+    {
+      "code": "002851",
+      "name": "麦格米特",
+      "quantity": 300,
+      "cost_price": 121.324,
+      "stop_loss": 115.76,
+      "market_value": 36933.0
+    },
+    {
+      "code": "300285",
+      "name": "国瓷材料",
+      "quantity": 600,
+      "cost_price": 64.013,
+      "stop_loss": 60.22,
+      "market_value": 38472.0
+    }
+  ],
+  "validation": {
+    "total_assets_check": true,
+    "position_count_match": true,
+    "cash_positive": true,
+    "note": "收盘校验:市值170610+现金983.02=171593.02"
+  },
+  "cumulative": {
+    "total_pnl_amount": -28406.98,
+    "total_pnl_percent": -14.2,
+    "total_trades_count": 57,
+    "total_violations": 23
+  },
+  "next_action": {
+    "date": "2026-08-27",
+    "action": "⚠️利通电子117.57距止损117仅0.57元,8/27开盘若跌破117立即止损。麦格/国瓷违规持仓优先清仓。APEX熔断禁新仓持续中",
+    "key_levels": "江波龙360/利通117/麦格115.76/国瓷60.22",
+    "risk_events": "8/27 Jackson Hole沃什演讲+美联储PCE+英伟达财报盘后反应"
+  }
+}

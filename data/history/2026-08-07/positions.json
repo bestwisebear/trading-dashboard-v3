@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "last_updated": "2026-08-07T16:15:00+08:00",
+    "version": "3.0",
+    "data_as_of": "2026-08-07 收盘"
+  },
+  "positions": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "quantity": 1000,
+      "cost_price": 70.68,
+      "cost_source": "user_report",
+      "current_price": 77.99,
+      "price_updated_at": "2026-08-07T15:00:00+08:00",
+      "buy_date": "2026-08-05",
+      "holding_days": 3,
+      "stop_loss": 74.91,
+      "stop_profit": null,
+      "pnl_percent": 10.34,
+      "pnl_amount": 7310,
+      "sector": "AI算力/服务器",
+      "status": "holding",
+      "notes": "做T拉低成本 | 13:36减仓500股@78.10锁利(+700元) | 止损74.91"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "quantity": 1100,
+      "cost_price": 61.1,
+      "cost_source": "user_report",
+      "current_price": 62.69,
+      "price_updated_at": "2026-08-07T15:00:00+08:00",
+      "buy_date": "2026-08-06",
+      "holding_days": 2,
+      "stop_loss": 56.0,
+      "stop_profit": null,
+      "pnl_percent": 2.6,
+      "pnl_amount": 1749,
+      "sector": "电池/储能",
+      "status": "holding",
+      "notes": "14:00买入1100股@61.10回补 | 支撑57止损56 | 收盘+2.60%"
+    }
+  ],
+  "closed_today": [
+    {
+      "code": "002015",
+      "name": "协鑫能科",
+      "quantity": 1500,
+      "cost_price": 15.7,
+      "sell_price": 16.18,
+      "sell_time": "14:54",
+      "realized_pnl": 1745,
+      "notes": "规则外试错仓，尾盘清仓规避周末风险"
+    }
+  ],
+  "summary": {
+    "total_positions": 2,
+    "total_realized_today": 2445,
+    "total_unrealized_today": 9059,
+    "net_today": 2994,
+    "position_ratio": 70.0,
+    "available_cash": 62615,
+    "total_assets": 209564,
+    "total_pnl_amount": 9564,
+    "initial_capital": 200000,
+    "monthly_realized": 3065,
+    "monthly_unrealized": 9059,
+    "monthly_pnl": 9564,
+    "monthly_return_rate": 4.78,
+    "today_return_rate": 1.44,
+    "prev_close_assets": 206570,
+    "today_return": 2994
+  }
+}

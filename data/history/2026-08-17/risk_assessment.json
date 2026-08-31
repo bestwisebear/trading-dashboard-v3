@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "last_updated": "2026-08-17T16:53:00+08:00",
+    "date": "2026-08-17",
+    "session": "close"
+  },
+  "level": "medium",
+  "score": 55,
+  "factors": [
+    {
+      "factor": "仓位",
+      "value": "77.7%",
+      "status": "normal",
+      "detail": "接近80%警戒线但未超"
+    },
+    {
+      "factor": "持仓数",
+      "value": "3只",
+      "status": "pass",
+      "detail": "符合≤4只规则"
+    },
+    {
+      "factor": "今日交易次数",
+      "value": "0次",
+      "status": "pass",
+      "detail": "无交易无违规"
+    },
+    {
+      "factor": "市场情绪",
+      "value": "偏热(80%赚钱效应)",
+      "status": "warning",
+      "detail": "110涨停/1跌停极度亢奋，短期可能分化"
+    },
+    {
+      "factor": "成交放量",
+      "value": "2.39万亿+2446亿",
+      "status": "warning",
+      "detail": "放量普涨后次日大概率分化"
+    },
+    {
+      "factor": "持仓浮盈",
+      "value": "长川+157/协创+2004",
+      "status": "normal",
+      "detail": "持仓全线浮盈"
+    }
+  ],
+  "rule_checks": [
+    {
+      "rule": "持仓≤4只",
+      "passed": true,
+      "current_value": "3只"
+    },
+    {
+      "rule": "单日≤6笔",
+      "passed": true,
+      "current_value": "0笔"
+    },
+    {
+      "rule": "新仓仅13:30-14:30",
+      "passed": true,
+      "current_value": "无新仓"
+    },
+    {
+      "rule": "禁做T",
+      "passed": true,
+      "current_value": "未做T"
+    },
+    {
+      "rule": "减仓后禁当日接回",
+      "passed": true,
+      "current_value": "无减仓"
+    },
+    {
+      "rule": "涨跌家数>2000才开仓",
+      "passed": true,
+      "current_value": "4335家上涨"
+    }
+  ],
+  "suggestion": "市场极度亢奋日，持仓享受收益。明日关注分化：若缩量则科技内部分化概率大，鹏辉弱势需警惕。长川涨6.9%后关注300元支撑。"
+}

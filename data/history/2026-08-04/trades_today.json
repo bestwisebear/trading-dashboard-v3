@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "date": "2026-08-04",
+    "last_updated": "2026-08-04T15:20:00+08:00",
+    "session": "full_day"
+  },
+  "trades": [
+    {
+      "seq": 1,
+      "code": "300408",
+      "name": "三环集团",
+      "action": "sell",
+      "quantity": 500,
+      "price": 110.32,
+      "time": "09:32",
+      "reason": "触发止损线，执行止损清仓",
+      "pnl_amount": -1840,
+      "pnl_percent": -3.23,
+      "notes": "止损执行正确，后续涨到120.72但不影响决策质量"
+    },
+    {
+      "seq": 2,
+      "code": "000977",
+      "name": "浪潮信息",
+      "action": "buy",
+      "quantity": 700,
+      "price": 72.22,
+      "time": "09:37",
+      "reason": "AI服务器板块反弹建仓",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "violation": "non_trading_window"
+    },
+    {
+      "seq": 3,
+      "code": "000977",
+      "name": "浪潮信息",
+      "action": "buy",
+      "quantity": 300,
+      "price": 72.88,
+      "time": "10:26",
+      "reason": "加仓",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "violation": "non_trading_window"
+    },
+    {
+      "seq": 4,
+      "code": "300136",
+      "name": "信维通信",
+      "action": "sell",
+      "quantity": 600,
+      "price": 59.9,
+      "time": "14:00",
+      "reason": "担心60压力位冲不上去，先减仓等回踩",
+      "pnl_amount": -480,
+      "pnl_percent": -1.33,
+      "violation": "day_trading",
+      "notes": "做T第一步：卖出等回踩"
+    },
+    {
+      "seq": 5,
+      "code": "300136",
+      "name": "信维通信",
+      "action": "buy",
+      "quantity": 1000,
+      "price": 60.21,
+      "time": "14:10",
+      "reason": "信维冲上60后恐慌回补，多买了400股",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "violation": "day_trading,exceed_planned_qty",
+      "notes": "做T第二步：追高回补，做T变加仓"
+    },
+    {
+      "seq": 6,
+      "code": "300136",
+      "name": "信维通信",
+      "action": "sell",
+      "quantity": 600,
+      "price": 59.16,
+      "time": "14:18",
+      "reason": "回补后回落59.2，恐慌再减仓",
+      "pnl_amount": -740,
+      "pnl_percent": -2.04,
+      "violation": "day_trading",
+      "notes": "做T第三步：高买低卖，做反了"
+    },
+    {
+      "seq": 7,
+      "code": "159599",
+      "name": "芯片ETF东财",
+      "action": "buy",
+      "quantity": 13200,
+      "price": 2.525,
+      "time": "14:22",
+      "reason": "情绪化开仓，非关注池标的",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "violation": "out_of_watchlist"
+    },
+    {
+      "seq": 8,
+      "code": "300438",
+      "name": "鹏辉能源",
+      "action": "buy",
+      "quantity": 600,
+      "price": 60.41,
+      "time": "14:24",
+      "reason": "观察池票未转candidate直接买入",
+      "pnl_amount": 0,
+      "pnl_percent": 0,
+      "violation": "skip_candidate_pool"
+    }
+  ],
+  "summary": {
+    "total_trades": 8,
+    "buy_count": 5,
+    "sell_count": 3,
+    "realized_pnl": -3060,
+    "violation_count": 6,
+    "violation_types": {
+      "non_trading_window": 2,
+      "day_trading": 3,
+      "out_of_watchlist": 1,
+      "exceed_planned_qty": 1,
+      "skip_candidate_pool": 1
+    }
+  }
+}
