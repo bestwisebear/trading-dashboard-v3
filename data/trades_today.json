@@ -1,8 +1,9 @@
 {
   "meta": {
     "date": "2026-08-28",
-    "last_updated": "2026-08-28T11:34:00+08:00",
-    "source": "午间数据刷新(无交易)"
+    "last_updated": "2026-08-31T11:35:00+08:00",
+    "source": "午间数据刷新(无交易)",
+    "session": "intraday_1135"
   },
   "summary": {
     "trade_count": 0,
@@ -10,8 +11,8 @@
     "sell_count": 0,
     "violation_count": 0,
     "realized_pnl": 0,
-    "net_today": -3342.0,
-    "note": "8/28午间:零交易。APEX月度-10.41%超阈值·禁新仓",
+    "net_today": -3699.02,
+    "note": "8/31午间:零交易。APEX熔断·大有+6.86%·鹏辉-4.65%·利通距止损1.68%",
     "total_trades": 0
   },
   "trades": [],
