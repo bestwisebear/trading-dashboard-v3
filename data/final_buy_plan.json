@@ -1,78 +1,93 @@
 {
-  "date": "2026-08-07",
-  "generated_at": "2026-08-07T13:15:00+08:00",
-  "market_gate": {
-    "pass": true,
-    "details": {
-      "rise_count": "上午超3000只个股上涨，涨跌家数>2000闸门通过",
-      "rise_count_gate": "通过(>2000)",
-      "index_snapshot_1310": {
-        "sh000001": {
-          "price": 3920.05,
-          "change_pct": "+0.51%"
-        },
-        "sz399001": {
-          "price": 14295,
-          "change_pct": "+1.31%"
-        },
-        "sz399006": {
-          "price": 3577,
-          "change_pct": "+1.75%"
-        }
-      },
-      "index_trend": "三大指数低开高走，创业板指领涨+1.75%。PCB/半导体设备/光模块/6G概念领涨",
-      "volume_estimate": "半日成交1.68万亿(沪7706亿+深9060亿)，推算全天约3.0-3.2万亿，较昨日2.53万亿明显放量",
-      "hot_sectors": "PCB概念涨停潮(景旺电子等)、半导体设备午后拉升、光模块反弹(新易盛+4.35%/天孚通信+3.81%/中际旭创+2.35%)、6G概念(武汉凡谷2连板/通宇通讯5天4板)",
-      "weakest_stock_check": "持仓板块：浪潮信息跟随反弹；鹏辉能源/协鑫能科仍偏弱",
-      "risk_note": "午后15分钟MACD出现顶背离信号，13:00后需观察量能是否持续配合，警惕冲高回落"
-    }
+  "meta": {
+    "last_updated": "2026-08-28T13:16:00+08:00",
+    "date": "2026-08-28",
+    "session": "midday_final",
+    "data_basis": "8/28午间确认(腾讯API+多源验证)"
   },
-  "approved": false,
-  "orders": [],
-  "cancel_reasons": [
+  "decision": "今日取消新仓",
+  "confirmed_count": 0,
+  "confirmed_stocks": [],
+  "cancellation_reasons": [
     {
-      "reason_id": 1,
-      "reason": "100%满仓无现金",
-      "detail": "positions.json显示available_cash=0，position_ratio=100%。3只持仓(浪潮信息1500股+鹏辉能源1100股+协鑫能科1500股)占用全部资金约20.66万。无任何可用资金执行新仓买入",
-      "severity": "致命",
-      "is_blocking": true
+      "gate": "APEX熔断",
+      "status": "BLOCKED",
+      "detail": "APEX二级熔断收官日(8/26-8/28),月度回撤-10.41%超-10%阈值.9/1才完全解除.盘前计划明确:全天零新仓",
+      "passed": false
     },
     {
-      "reason_id": 2,
-      "reason": "11:00候选列表为空",
-      "detail": "intraday_candidates.json(11:05生成)的candidates字段为空数组[]。所有关注池/中转池标的要么远超买入区间(菲利华+7.1%/北京君正+10.7%/江波龙+11.9%/天孚通信+8.2%)触发防追高规则，要么为盘中新发现按规则不得当日买入。最终结论为下午无新仓备选",
-      "severity": "致命",
-      "is_blocking": true
+      "gate": "现金不足",
+      "status": "BLOCKED",
+      "detail": "可用现金仅983元(仓位99.5%),物理上无法开新仓",
+      "passed": false
     },
     {
-      "reason_id": 3,
-      "reason": "前晚(8/6)无新仓计划",
-      "detail": "daily_plan.json的new_entry_plans为空数组[]，且risk_notes明确指出满仓100%无任何现金缓冲。按规则，未经前晚计划确认的标的不得当日买入",
-      "severity": "致命",
-      "is_blocking": true
+      "gate": "时段限制",
+      "status": "BLOCKED",
+      "detail": "四段式流程:13:15最终确认→13:30-14:30执行.但APEX熔断+现金不足=无需进入执行阶段",
+      "passed": false
     },
     {
-      "reason_id": 4,
-      "reason": "持仓已达3只且满仓",
-      "detail": "当前持仓3只(上限4只)，但仓位已100%。即使释放1只持仓也仅有约2-3万资金，不足以建立有意义的新仓位(关注池标的最低买入金额均在5万以上)",
-      "severity": "重要",
-      "is_blocking": false
+      "gate": "市场风险",
+      "status": "BLOCKED",
+      "detail": "周五+月末+A50交割日+沃什22:00首秀=四重风险叠加.冲高回落已兑现英伟达利好.利通-3.47%逼近止损需优先风控",
+      "passed": false
+    },
+    {
+      "gate": "涨跌家数",
+      "status": "MARGINAL",
+      "detail": "半日超3100只上涨,但全天预估收盘可能不足2000.热点杂乱,科技板块冲高回落分化",
+      "passed": false
+    },
+    {
+      "gate": "候选池",
+      "status": "EMPTY",
+      "detail": "intraday_candidates.json(11:00生成):candidates=[],conclusion=下午无新仓备选",
+      "passed": false
+    },
+    {
+      "gate": "持仓风控优先",
+      "status": "PRIORITY",
+      "detail": "保收益优先规则:利通电子120.88(-3.47%)距止损117仅3.05%.下午核心是持仓风控而非开新仓.14:30-14:55沃什避险减仓",
+      "passed": false
     }
   ],
-  "valid_from": null,
-  "valid_until": null,
-  "summary": {
-    "decision": "今日取消新仓",
-    "decision_cn": "🚫 今日取消新仓 — 满仓无现金 + 无候选标的",
-    "key_message": "高于限价不买 | 无现金不开仓 | 无计划不操作",
-    "execution_window": "13:30-14:30 无需执行任何委托",
-    "next_action": "关注持仓管理：协鑫能科弱于15.50止损(已接近)、鹏辉能源57支撑观察、浪潮信息80压力位突破情况。若协鑫能科止损释放约2.3万资金，可纳入下周一候选但需前晚确认计划"
+  "afternoon_action_plan": {
+    "priority_1": "⚠️ 利通电子120.88(-3.47%)距止损117仅3.05%.若破118准备减仓/止损",
+    "priority_2": "🔒 14:30-14:55沃什讲话前减仓避险(利通150+国瓷200+麦格100)",
+    "priority_3": "👀 江波龙观察378支撑·麦格米特观察127支撑",
+    "priority_4": "📊 8/28收盘后复盘APEX熔断是否确认解除→9/1盘前评估重建候选池"
   },
-  "data_sources": {
-    "positions": "看板V3/data/positions.json (2026-08-07 05:35更新,基于8/6收盘)",
-    "daily_plan": "看板V3/data/daily_plan.json (2026-08-06 20:18生成)",
-    "intraday_candidates": "看板V3/data/intraday_candidates.json (2026-08-07 11:05生成)",
-    "watchlist": "看板V3/data/watchlist.json",
-    "market_realtime": "证券时报网(stcn.com) 13:10实时; AASTOCKS午盘播报11:57; 财联社13:06半导体设备午后拉升"
-  }
+  "next_action": {
+    "date": "2026-09-01",
+    "session": "pre_market",
+    "plan": "APEX熔断8/28收盘后解除→9/1开盘完全解除.盘前评估8只候选池(协创数据/通富微电/新易盛/天孚通信/兆易创新/生益科技/三环集团/长川科技)+intraday_candidates中10只半导体候选.条件:成交≥1.5万亿+上涨≥2000+沃什讲话无极端鹰派",
+    "candidates_pool": [
+      "协创数据(300857·score3·等回踩231支撑)",
+      "通富微电(002156·score6·等回踩58支撑)",
+      "新易盛(300502·score5·支撑400)",
+      "天孚通信(300394·score5·等回踩230支撑)",
+      "兆易创新(603986·score6·PE41极低·等回踩375支撑)",
+      "生益科技(600183·score6·覆铜板龙头+4.75%·注意追高风险)",
+      "三环集团(300408·score3·支撑105)",
+      "长川科技(300604·score6·等回踩66支撑)"
+    ]
+  },
+  "market_snapshot_1310": {
+    "shanghai_index": 3959,
+    "shanghai_change_pct": 0.08,
+    "chinext_index": 3462,
+    "chinext_change_pct": -0.32,
+    "half_day_volume_trillion": 1.42,
+    "volume_change_vs_prev": "+716亿",
+    "up_count": 3100,
+    "verdict": "冲高回落.英伟达利好已部分兑现.科技分化.沃什22:00前观望为主"
+  },
+  "risk_alerts": [
+    "⚠️ 利通电子120.88(-3.47%)距止损117仅3.05%,下午重点关注",
+    "🔴 沃什22:00 Jackson Hole首秀,美联储官员分歧大",
+    "📅 A50期货8月交割+周五+月末=尾盘波动加大",
+    "📉 央行净回笼2455亿,流动性边际收紧",
+    "🔄 英伟达利好已部分兑现(高开+1%后回落至+0.08%)"
+  ]
 }

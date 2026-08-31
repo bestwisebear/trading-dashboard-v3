@@ -1,0 +1,38 @@
+{
+    "meta": {
+        "date": "2026-08-10",
+        "last_updated": "2026-08-10T17:00:00+08:00"
+    },
+    "trades": [
+        {
+            "seq": 18,
+            "time": "14:00",
+            "code": "300604",
+            "name": "长川科技",
+            "action": "buy",
+            "quantity": 100,
+            "price": 283.0,
+            "realized_pnl": 0,
+            "violation": "none",
+            "notes": "买入100股@283"
+        },
+        {
+            "seq": 19,
+            "time": "14:00",
+            "code": "300438",
+            "name": "鹏辉能源",
+            "action": "sell",
+            "quantity": 200,
+            "price": 62.6,
+            "realized_pnl": 300,
+            "violation": "none",
+            "notes": "减仓200股"
+        }
+    ],
+    "summary": {
+        "total_trades": 2,
+        "buy_count": 1,
+        "sell_count": 1,
+        "realized_pnl": 300
+    }
+}

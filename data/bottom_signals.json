@@ -1,69 +1,99 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00"
-  },
-  "aggregate": {
-    "ratio": "2/5",
-    "recommendation": "继续观望",
-    "recommendation_detail": "底部信号满足2项，距底部确认还有距离"
+    "last_updated": "2026-08-28T16:53:00+08:00",
+    "date": "2026-08-28",
+    "session": "close",
+    "data_as_of": "2026-08-28收盘",
+    "note": "2026-08-28收盘底部信号3/5(与8/27持平)。成交2.12万亿缩量232亿。涨跌3013家>3000阈值勉强达标。连续4天不创新低。北向净流出272亿❌"
   },
   "signals": [
     {
+      "id": 1,
       "name": "缩量止跌",
-      "condition": "成交≤1.5万亿",
-      "actual": "2.66万亿",
-      "passed": false
+      "condition": "成交额≤1.5万亿",
+      "today_value": "2026-08-28:2.12万亿",
+      "satisfied": false,
+      "detail": "2026-08-28成交21177亿(2.12万亿),较昨日2.14万亿缩量232亿。仍远>1.5万亿阈值。❌不满足"
     },
     {
+      "id": 2,
       "name": "跌停减少",
       "condition": "跌停<30家",
-      "actual": "10家",
-      "passed": true
+      "today_value": "2026-08-28:2家",
+      "satisfied": true,
+      "detail": "涨停83/跌停2。恐慌性跌停极少,市场情绪稳定。✅满足"
     },
     {
+      "id": 3,
       "name": "涨跌恢复",
-      "condition": "涨跌>3000",
-      "actual": "2853:2530",
-      "passed": false
+      "condition": "上涨>3000家",
+      "today_value": "2026-08-28:3013家",
+      "satisfied": true,
+      "detail": "3013涨/2390跌。涨跌比1.26:1,较8/27的3394家减少但仍>3000阈值。✅满足(勉强)"
     },
     {
+      "id": 4,
       "name": "连续止跌",
       "condition": "2天不创新低",
-      "actual": "连续上涨",
-      "passed": true
+      "today_value": "最低3947.80>8/27最低3909.31>8/26最低3881.74>8/25最低3850.86",
+      "satisfied": true,
+      "detail": "沪指2026-08-28全天低点3947.80,高于8/27低点3909.31,已连续4天不创新低!✅满足"
     },
     {
+      "id": 5,
       "name": "北向流入",
       "condition": "连续2-3日净流入>50亿",
-      "actual": "待确认",
-      "passed": false
+      "today_value": "2026-08-28:北向净流出272亿",
+      "satisfied": false,
+      "detail": "8/28北向大幅净流出272亿,10:00后持续流出。8/27虽有大幅净流入,但8/28大幅逆转,不构成'连续净流入>50亿'。❌不满足"
     }
   ],
+  "aggregate": {
+    "ratio": 0.6,
+    "recommendation": "接近底部",
+    "recommendation_detail": "底部信号3/5(与8/27持平):涨跌恢复(勉强)+连续止跌(4天不创新低)+跌停减少。成交缩量2.12万亿但仍远>1.5万亿。北向大幅流出272亿为负面信号。APEX熔断8/31结束·9/1完全解除后观察底部确认",
+    "current_status": "底部修复中但北向流出·3/5信号持平。权重拖累+科技获利回吐·农业/化工防御轮动",
+    "next_observation": "8/29-8/31无交易(APEX继续)·9/1完全解除+沃什讲话后市场评估"
+  },
   "history_7d": [
     {
-      "date": "2026-08-07",
+      "date": "2026-08-18",
+      "satisfied_count": 1,
+      "count": 5
+    },
+    {
+      "date": "2026-08-19",
+      "satisfied_count": 1,
+      "count": 5
+    },
+    {
+      "date": "2026-08-20",
       "satisfied_count": 2,
       "count": 5
     },
     {
-      "date": "2026-08-06",
+      "date": "2026-08-21",
       "satisfied_count": 2,
       "count": 5
     },
     {
-      "date": "2026-08-05",
+      "date": "2026-08-24",
+      "satisfied_count": 1,
+      "count": 5
+    },
+    {
+      "date": "2026-08-26",
+      "satisfied_count": 2,
+      "count": 5
+    },
+    {
+      "date": "2026-08-27",
       "satisfied_count": 3,
       "count": 5
     },
     {
-      "date": "2026-08-04",
-      "satisfied_count": 4,
-      "count": 5
-    },
-    {
-      "date": "2026-08-03",
-      "satisfied_count": 1,
+      "date": "2026-08-28",
+      "satisfied_count": 3,
       "count": 5
     }
   ]

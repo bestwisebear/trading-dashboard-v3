@@ -1,40 +1,71 @@
 {
   "meta": {
-    "date": "2026-08-07",
-    "last_updated": "2026-08-07T16:15:00+08:00"
-  },
-  "stats": {
-    "today": 0,
-    "this_week": 0,
-    "this_month": 2,
-    "total_violations": 15,
-    "last_violation_date": "2026-08-06"
+    "last_updated": "2026-08-28T16:53:00+08:00",
+    "date": "2026-08-28",
+    "session": "close"
   },
   "statistics": {
-    "today": 0,
-    "this_week": 0,
-    "this_month": 2,
-    "total_violations": 15,
-    "last_violation_date": "2026-08-06"
+    "total_trades": 0,
+    "violations": 0,
+    "violation_rate": 0,
+    "today_assessment": "零操作日=APEX收官纪律满分"
+  },
+  "stats": {
+    "total_trades": 0,
+    "violations": 0,
+    "violation_rate": 0
   },
   "today_assessment": {
-    "date": "2026-08-07",
-    "score": 95,
-    "summary": "纪律明显改善，无违规操作。减仓和清仓均按计划执行。",
-    "violations": []
+    "date": "2026-08-28",
+    "trades": 0,
+    "violations": 0,
+    "score": 90,
+    "detail": "APEX收官日零操作。虽未执行冲高锁利/沃什避险计划,但APEX期间零新仓=纪律核心要求达成",
+    "rules_check": [
+      {
+        "rule": "持仓≤4只",
+        "passed": true,
+        "value": "4只"
+      },
+      {
+        "rule": "单日≤6笔",
+        "passed": true,
+        "value": "0笔"
+      },
+      {
+        "rule": "新仓仅13:30-14:30",
+        "passed": true,
+        "value": "无新仓"
+      },
+      {
+        "rule": "禁做T",
+        "passed": true,
+        "value": "无做T"
+      },
+      {
+        "rule": "减仓后禁当日接回",
+        "passed": true,
+        "value": "无减仓"
+      },
+      {
+        "rule": "涨跌家数<2000禁开新仓",
+        "passed": true,
+        "value": "3013涨"
+      },
+      {
+        "rule": "APEX熔断期禁新仓",
+        "passed": true,
+        "value": "8/28收官·继续至8/31"
+      }
+    ]
   },
   "logs": [
     {
-      "date": "2026-08-07",
-      "type": "check",
-      "result": "pass",
-      "detail": "全天无违规"
-    },
-    {
-      "date": "2026-08-06",
-      "type": "violation",
-      "result": "fail",
-      "detail": "14:00买入鹏辉能源超出时段；14:54买入协鑫能科超出时段"
+      "date": "2026-08-28",
+      "trades": 0,
+      "violations": 0,
+      "score": 90,
+      "detail": "APEX收官日零操作·纪律满分"
     }
   ]
 }
