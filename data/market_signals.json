@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T08:25:00+08:00",
+    "last_updated": "2026-08-31T11:35:00+08:00",
     "date": "2026-08-31",
-    "session": "pre_market_0825",
-    "note": "8/31盘前信号·APEX熔断最后一天·外围暴跌·沃什鹰派·零新仓"
+    "session": "intraday_1135",
+    "note": "8/31午间信号·指数分化·传媒AI领涨·银行护盘·科技新能源承压·大有+6.86%领涨持仓·鹏辉-4.65%重挫"
   },
   "signals": {
-    "volume_signal": "缩量(2.12万亿·缩232亿)",
-    "breadth_signal": "中性偏强(3013涨>2390跌·涨跌比1.26:1)",
-    "sector_signal": "防御轮动(农业/化工领涨·科技回吐·半导体-3.5%)",
-    "capital_flow_signal": "偏空(北向-272亿·主力全天净流出253亿)",
-    "sentiment_signal": "谨慎偏空(外围暴跌+沃什鹰派+霍尔木兹关闭)",
+    "volume_signal": "缩量(上午约1.26万亿)",
+    "breadth_signal": "中性偏弱(深证-1%/创业板-1.29%)",
+    "sector_signal": "风格切换(传媒AI+6%领涨·银行+2.66%护盘)",
+    "capital_flow_signal": "传媒AI最强(影视院线+9亿/出版+7.2亿)",
+    "sentiment_signal": "谨慎偏空(指数分化·低开回升·科技承压)",
     "overseas_signal": "强烈偏空(日经-2.3%/韩KOSPI-3.3%/费半-3.47%)",
-    "overall": "强烈偏空"
+    "overall": "谨慎偏空"
   },
-  "overall": "APEX最后一天·三重防御(外围暴跌+沃什鹰派+熔断)·零新仓",
+  "overall": "APEX最后一天·传媒AI+银行护盘但科技承压·大有+6.86%减仓窗口·利通118.97距止损仅1.68%·零新仓",
   "aggregate": {
-    "green_count": 0,
-    "yellow_count": 3,
-    "red_count": 4,
-    "total_score": 18,
+    "green_count": 2,
+    "yellow_count": 2,
+    "red_count": 3,
+    "total_score": 22,
     "max_score": 49,
     "no_open_position": true,
-    "market_comment": "3黄+4红=强烈偏空·外围日韩暴跌+费半重挫+沃什加息60%+霍尔木兹关闭+APEX熔断=零新仓防守"
+    "market_comment": "2绿+2黄+3红=谨慎偏空·传媒AI领涨+银行护盘·科技新能源承压·大有+6.86%减仓窗口·APEX熔断=零新仓防守"
   }
 }

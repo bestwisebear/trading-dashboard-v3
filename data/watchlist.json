@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T08:25:00+08:00",
+    "last_updated": "2026-08-31T11:35:00+08:00",
     "date": "2026-08-31",
-    "session": "pre_market_0825",
+    "session": "intraday_1135",
     "data_basis": "2026-08-28收盘(腾讯行情真实收盘价)",
     "screening_criteria": "盘前8:25筛选·APEX二级熔断最后一天(8/31到期/9/1解除)·外围暴跌(日经-2.3%/韩KOSPI-3.3%/费半-3.47%)·七道闸4/7 FAIL",
-    "note": "8/31周一盘前0825:APEX熔断最后一天。零新仓。核心任务:利通止损执行+大有减仓。半导体中转池8只标的维持。外围沃什鹰派+美股芯片暴跌+霍尔木兹关闭。9:30 PMI公布。"
+    "note": "8/31午间·传媒AI领涨·银行护盘·科技新能源承压·大有+6.86%减仓窗口·APEX熔断最后一天·零新仓"
   },
   "watchlist": [
     {
@@ -14,14 +14,14 @@
       "score": 5,
       "status": "holding",
       "sector": "储能/电池",
-      "today_close": 60.86,
-      "today_change_pct": -2.36,
+      "today_close": 58.03,
+      "today_change_pct": -4.65,
       "key_price": {
         "support": 60.93,
         "resistance": 64.51,
         "stop_loss": 57.0
       },
-      "notes": "持仓800股@60.493·浮盈+0.61%·价<MA20·RSI33.7偏弱·守60.49成本线",
+      "notes": "🔴持仓800股@60.493·重挫-4.65%·最低57.57·储能承压",
       "holding_qty": 800
     },
     {
@@ -30,14 +30,14 @@
       "score": 5,
       "status": "holding",
       "sector": "有色/资源回收",
-      "today_close": 23.89,
-      "today_change_pct": 1.01,
+      "today_close": 24.05,
+      "today_change_pct": 0.67,
       "key_price": {
         "support": 22.67,
         "resistance": 25.32,
         "stop_loss": 22.0
       },
-      "notes": "持仓1400股@23.933·浮亏-0.18%·H1净利+307%·PE10倍·持有",
+      "notes": "持仓1400股@23.933·+0.67%·低开22.41后回升·PE17倍·持有",
       "holding_qty": 1400
     },
     {
@@ -46,14 +46,14 @@
       "score": 4,
       "status": "holding",
       "sector": "煤炭",
-      "today_close": 7.14,
-      "today_change_pct": 0.42,
+      "today_close": 7.63,
+      "today_change_pct": 6.86,
       "key_price": {
         "support": 6.38,
         "resistance": 7.57,
         "stop_loss": 6.8
       },
-      "notes": "持仓4200股@7.332·浮亏-2.62%·焦炭涨价·反弹7.3以上减半仓2100股",
+      "notes": "🟢持仓4200股@7.332·大涨+6.86%·突破7.3减仓线·下午减仓",
       "holding_qty": 4200
     },
     {
@@ -62,14 +62,14 @@
       "score": 3,
       "status": "holding",
       "sector": "消费电子/结构件",
-      "today_close": 119.95,
-      "today_change_pct": -4.21,
+      "today_close": 118.97,
+      "today_change_pct": -0.82,
       "key_price": {
         "support": 119.24,
         "resistance": 127.15,
         "stop_loss": 117.0
       },
-      "notes": "🔴持仓300股@120.968·距止损117仅2.5%·P0首优先·破117立即止损",
+      "notes": "🔴持仓300股@120.968·距止损117仅1.68%·P0首优先",
       "holding_qty": 300
     },
     {
@@ -78,14 +78,14 @@
       "score": 4,
       "status": "watch",
       "sector": "半导体/封测",
-      "today_close": 63.75,
-      "today_change_pct": 0.03,
+      "today_close": 62.6,
+      "today_change_pct": -1.8,
       "key_price": {
         "support": 60.4,
         "resistance": 67.58,
         "stop_loss": 57.0
       },
-      "notes": "6/7闸·价>MA20·封测龙头抗跌·中转池保留"
+      "notes": "6/7闸·封测龙头·跌1.80%"
     },
     {
       "code": "sz300395",
@@ -93,14 +93,14 @@
       "score": 3,
       "status": "watch",
       "sector": "石英材料",
-      "today_close": 89.79,
-      "today_change_pct": 0.31,
+      "today_close": 92.45,
+      "today_change_pct": 2.96,
       "key_price": {
         "support": 86.5,
         "resistance": 92.5,
         "stop_loss": 80.0
       },
-      "notes": "6/7闸·价>MA20·石英材料抗跌"
+      "notes": "6/7闸·石英材料抗跌·涨2.96%"
     },
     {
       "code": "sz000977",
@@ -108,14 +108,14 @@
       "score": 3,
       "status": "watch",
       "sector": "服务器/AI算力",
-      "today_close": 77.44,
-      "today_change_pct": -1.06,
+      "today_close": 81.5,
+      "today_change_pct": 5.24,
       "key_price": {
         "support": 75.1,
         "resistance": 78.3,
         "stop_loss": 70.0
       },
-      "notes": "6/7闸·价>MA20·RSI60.8·服务器龙头"
+      "notes": "🟢6/7闸·服务器龙头·涨5.24%·AI算力爆发"
     },
     {
       "code": "sz300308",
@@ -123,14 +123,14 @@
       "score": 3,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 858.35,
-      "today_change_pct": -0.9,
+      "today_close": 838.59,
+      "today_change_pct": -2.3,
       "key_price": {
         "support": 887.9,
         "resistance": 909.85,
         "stop_loss": 800.0
       },
-      "notes": "价<MA20·RSI36偏弱·光模块龙头等企稳"
+      "notes": "光模块龙头·跌2.30%·等企稳"
     },
     {
       "code": "sz300502",
@@ -138,14 +138,14 @@
       "score": 2,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 399.0,
-      "today_change_pct": -2.47,
+      "today_close": 396.04,
+      "today_change_pct": -0.74,
       "key_price": {
         "support": 400,
         "resistance": 470,
         "stop_loss": 395.0
       },
-      "notes": "价<MA20·MACD死叉·光模块走弱"
+      "notes": "光模块·跌0.74%·MACD死叉"
     },
     {
       "code": "sz300857",
@@ -153,14 +153,14 @@
       "score": 2,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 253.88,
-      "today_change_pct": -2.05,
+      "today_close": 261.98,
+      "today_change_pct": 3.19,
       "key_price": {
         "support": 241.4,
         "resistance": 269.11,
         "stop_loss": 240.0
       },
-      "notes": "负债83%触发APEX硬门禁"
+      "notes": "负债83%触发APEX硬门禁·涨3.19%"
     },
     {
       "code": "sz301308",
@@ -168,14 +168,14 @@
       "score": 3,
       "status": "watch",
       "sector": "存储",
-      "today_close": 376.88,
-      "today_change_pct": -2.43,
+      "today_close": 371.58,
+      "today_change_pct": -1.41,
       "key_price": {
         "support": 364.9,
         "resistance": 397,
         "stop_loss": 360.0
       },
-      "notes": "PE13.5极低·价<MA20·存储龙头"
+      "notes": "PE13.3极低·存储龙头·跌1.41%"
     },
     {
       "code": "sh603026",
@@ -183,14 +183,14 @@
       "score": 2,
       "status": "watch",
       "sector": "锂电电解液",
-      "today_close": 63.59,
-      "today_change_pct": 0.94,
+      "today_close": 61.87,
+      "today_change_pct": -2.7,
       "key_price": {
         "support": 62.2,
         "resistance": 66.9,
         "stop_loss": 58.0
       },
-      "notes": "观察池·价<MA20·锂电链"
+      "notes": "观察池·电解液·跌2.70%"
     },
     {
       "code": "sz300769",
@@ -198,14 +198,14 @@
       "score": 1,
       "status": "watch",
       "sector": "锂电正极",
-      "today_close": 46.09,
-      "today_change_pct": -1.87,
+      "today_close": 44.66,
+      "today_change_pct": -3.1,
       "key_price": {
         "support": 44.7,
         "resistance": 47.2,
         "stop_loss": 42.0
       },
-      "notes": "PE511极高·观察池"
+      "notes": "PE495极高·观察池·跌3.10%"
     }
   ],
   "screening_summary": {
@@ -214,7 +214,7 @@
     "hold": 4,
     "watch_apex_meltdown": 13,
     "passed_seven_gates": 0,
-    "new_position_recommendation": "🔴全天零新仓。APEX二级熔断最后一天(月度-10.45%>10%)+外围暴跌(日经-2.3%/韩-3.3%/费半-3.47%)+七道闸4/7 FAIL+沃什鹰派60%加息概率=四重防御。9/1解除后首日以处理持仓为主(利通止损+大有减仓)，新仓最早9/2。"
+    "new_position_recommendation": "🔴全天零新仓。APEX二级熔断最后一天+深证-1%/创业板-1.29%=零新仓。核心:①大有7.3以上减半仓②利通118.97距止损1.68%警戒。新仓最早9/2。"
   },
   "transit_pool": [
     {
