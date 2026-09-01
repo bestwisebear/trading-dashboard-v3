@@ -1,27 +1,27 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T23:59:00+08:00",
-    "date": "2026-08-31",
-    "session": "close_1615",
-    "source": "8/31收盘·腾讯行情真实收盘价",
+    "last_updated": "2026-09-01T08:25:00+08:00",
+    "date": "2026-09-01",
+    "session": "pre_market_0825",
+    "source": "8/31收盘价·腾讯行情",
     "data_basis": "2026-08-31收盘价",
-    "note": "8/31收盘·APEX熔断最后一天·5只持仓·飞南+7.91%大有+7.14%领涨"
+    "note": "9/1盘前·8/31清仓大有+飞南·剩3只持仓·current_price=8/31收盘价不变"
   },
   "summary": {
     "total_market_value": 106760.0,
     "available_cash": 76234.0,
     "total_assets": 182994.0,
-    "net_today": 4171.0,
-    "today_return": 2.33,
+    "net_today": 0,
+    "today_return": 0,
     "total_pnl_amount": -17006.0,
-    "monthly_pnl": -17006.0,
+    "monthly_pnl": 0,
     "prev_close_assets": 178823.0,
     "position_ratio": 58.3,
-    "today_return_rate": 2.33,
-    "monthly_return_rate": -8.5,
+    "today_return_rate": 0,
+    "monthly_return_rate": 0,
     "initial_capital": 200000.0,
     "position_count": 3,
-    "note": "8/31收盘:大有7.65+飞南25.78清仓锁利+3922,剩3只持仓"
+    "note": "9/1新月份·8/31清仓大有+飞南锁利+3922·剩鹏辉/利通/圣邦"
   },
   "positions": [
     {
@@ -40,7 +40,7 @@
       "market_value": 47312.0,
       "floating_pnl": -1082.4,
       "floating_pnl_pct": -2.24,
-      "today_pnl": -1376.0,
+      "today_pnl": 0,
       "pe_ratio": 26.8,
       "sector": "储能/电池",
       "current_price": 59.14,
@@ -63,7 +63,7 @@
       "market_value": 36648.0,
       "floating_pnl": 357.6,
       "floating_pnl_pct": 0.99,
-      "today_pnl": 663.0,
+      "today_pnl": 0,
       "pe_ratio": 47.46,
       "sector": "消费电子/结构件",
       "current_price": 122.16,
@@ -86,7 +86,7 @@
       "market_value": 22800.0,
       "floating_pnl": -180.0,
       "floating_pnl_pct": -0.78,
-      "today_pnl": -100.0,
+      "today_pnl": 0,
       "pe_ratio": 101.96,
       "sector": "模拟芯片",
       "current_price": 114.0,

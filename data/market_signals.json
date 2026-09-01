@@ -1,19 +1,19 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
-    "date": "2026-08-31"
+    "last_updated": "2026-09-01T08:25:00+08:00",
+    "date": "2026-09-01"
   },
   "trend": "震荡反弹",
-  "market_phase": "底部震荡",
+  "market_phase": "底部震荡→APEX解除",
   "signals": [
     {
       "name": "MA5/MA20",
-      "value": "上证MA5=3920,MA20=3950,金叉形成",
+      "value": "上证MA5约3940,MA20约3950,接近金叉",
       "signal": "偏多"
     },
     {
       "name": "成交量",
-      "value": "2.13万亿,放量",
+      "value": "2.13万亿,放量293亿",
       "signal": "中性"
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "北向资金",
-      "value": "净流出65.5亿",
+      "value": "主力净流出65.5亿",
       "signal": "偏空"
     },
     {
@@ -32,14 +32,14 @@
       "signal": "偏多"
     }
   ],
-  "overall": "偏多(传媒AI情绪回暖+指数收涨+涨跌比偏多，但北向流出+成交高企制约)",
+  "overall": "偏多(传媒AI情绪回暖+指数收涨+涨跌比偏多，但北向流出+外围加息压力+美伊冲突油价飙升)",
   "aggregate": {
     "green_count": 3,
     "yellow_count": 1,
     "red_count": 1,
-    "total_score": 65,
+    "total_score": 62,
     "max_score": 100,
     "no_open_position": true,
-    "market_comment": "传媒AI情绪回暖+指数收涨+涨跌比偏多，但北向流出+成交高企制约。综合评分65/100，偏多但不建议开新仓。"
+    "market_comment": "传媒AI情绪回暖+8/31红盘收官+涨跌比偏多，但北向流出+美联储9月加息概率65.4%+美伊冲突油价飙升。综合评分62/100，APEX解除首日不交易。"
   }
 }
