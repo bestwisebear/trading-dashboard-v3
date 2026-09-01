@@ -1,14 +1,32 @@
 {
-  "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
-    "date": "2026-08-31",
-    "note": "APEX熔断最后一天·零交易"
-  },
-  "trades": [],
+  "date": "2026-08-31",
+  "trades": [
+    {
+      "seq": 66,
+      "code": "600403",
+      "name": "大有能源",
+      "action": "sell",
+      "quantity": 4200,
+      "price": 7.65,
+      "realized_pnl": 1335.6
+    },
+    {
+      "seq": 67,
+      "code": "301500",
+      "name": "飞南资源",
+      "action": "sell",
+      "quantity": 1400,
+      "price": 25.78,
+      "realized_pnl": 2585.8
+    }
+  ],
   "summary": {
-    "total_trades": 0,
+    "trade_count": 2,
+    "violation_count": 0,
+    "realized_pnl": 3921.4,
+    "total_amount": 68222.0,
+    "total_trades": 2,
     "buy_count": 0,
-    "sell_count": 0,
-    "realized_pnl": 0
+    "sell_count": 2
   }
 }
