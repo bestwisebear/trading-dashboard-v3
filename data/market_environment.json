@@ -1,8 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
-    "date": "2026-08-31",
-    "session": "close_1615"
+    "last_updated": "2026-09-01T08:25:00+08:00",
+    "date": "2026-09-01",
+    "session": "pre_market_0825",
+    "data_basis": "2026-08-31收盘"
   },
   "indices": {
     "sh000001": {
@@ -89,6 +90,26 @@
     {
       "name": "中药",
       "change_pct": -1.82
+    }
+  ],
+  "sector_fund_flow_top5": [
+    {
+      "name": "消费电子",
+      "change_pct": 2.17,
+      "main_inflow": 245560.86,
+      "up_down_ratio": "81/91"
+    },
+    {
+      "name": "IT服务",
+      "change_pct": 2.84,
+      "main_inflow": 212461.8,
+      "up_down_ratio": "101/122"
+    },
+    {
+      "name": "计算机设备",
+      "change_pct": 2.82,
+      "main_inflow": 193351.89,
+      "up_down_ratio": "65/82"
     }
   ],
   "market_stats": {

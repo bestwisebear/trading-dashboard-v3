@@ -1,58 +1,58 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
-    "date": "2026-08-31"
+    "last_updated": "2026-09-01T08:25:00+08:00",
+    "date": "2026-09-01"
   },
   "level": "黄色预警",
-  "score": 62,
+  "score": 55,
   "factors": [
     {
       "name": "APEX熔断",
-      "detail": "今日到期，明日9/1解除",
-      "severity": "高"
+      "detail": "8/31已到期，9/1解除。月度-8.5%回撤",
+      "severity": "中"
     },
     {
       "name": "外围风险",
-      "detail": "沃什鹰派加息60%概率+美伊冲突油价涨",
+      "detail": "美联储加息概率65.4%+美伊冲突油价破91美元",
       "severity": "高"
     },
     {
       "name": "北向流出",
-      "detail": "主力净流出65.5亿，外资持续偏空",
+      "detail": "8/31主力净流出65.5亿，外资持续偏空",
       "severity": "中"
     },
     {
-      "name": "仓位过重",
-      "detail": "5只持仓82.7%仓位，超4只上限",
-      "severity": "中"
+      "name": "仓位适中",
+      "detail": "3只持仓58.3%仓位，≤4只限额内",
+      "severity": "低"
     },
     {
       "name": "月度回撤",
-      "detail": "-8.50%月度回撤，接近-10%警戒线",
-      "severity": "中"
+      "detail": "8月-8.5%，9月重新开始",
+      "severity": "低"
     }
   ],
   "rule_checks": [
     {
       "rule": "持仓≤4只",
-      "passed": false,
-      "current_value": "5只"
+      "passed": true,
+      "current_value": "3只"
     },
     {
       "rule": "涨跌家数>2000",
       "passed": true,
-      "current_value": "3181家"
+      "current_value": "3181家(8/31)"
     },
     {
       "rule": "APEX熔断期间禁新仓",
       "passed": true,
-      "current_value": "今日零交易"
+      "current_value": "已解除"
     },
     {
       "rule": "月度回撤≤20%",
       "passed": true,
-      "current_value": "-8.50%"
+      "current_value": "9月0%"
     }
   ],
-  "suggestion": "APEX熔断今日到期，明日解除首日仍禁新仓。持仓5只超限，优先考虑减仓至4只。关注飞南/大有冲高回落风险。"
+  "suggestion": "9/1 APEX解除首日，仓位降至58.3%安全区间。外围加息65.4%+美伊冲突油价飙升，风险偏好承压。今日不交易，观察持仓和大盘走势，晚间复盘制定9/2新仓计划。"
 }
