@@ -1,32 +1,21 @@
 {
-  "date": "2026-08-31",
-  "trades": [
-    {
-      "seq": 66,
-      "code": "600403",
-      "name": "大有能源",
-      "action": "sell",
-      "quantity": 4200,
-      "price": 7.65,
-      "realized_pnl": 1335.6
-    },
-    {
-      "seq": 67,
-      "code": "301500",
-      "name": "飞南资源",
-      "action": "sell",
-      "quantity": 1400,
-      "price": 25.78,
-      "realized_pnl": 2585.8
-    }
-  ],
+  "meta": {
+    "date": "2026-09-01",
+    "last_updated": "2026-09-01T11:35:00+08:00",
+    "source": "午间数据刷新(无交易)",
+    "session": "intraday_1135"
+  },
   "summary": {
-    "trade_count": 2,
-    "violation_count": 0,
-    "realized_pnl": 3921.4,
-    "total_amount": 68222.0,
-    "total_trades": 2,
+    "trade_count": 0,
     "buy_count": 0,
-    "sell_count": 2
-  }
+    "sell_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": -2447.0,
+    "note": "9/1午间:零交易·今日只观察不操作·利通破止损待13:00-13:30决策(决策≠开仓)",
+    "total_trades": 0,
+    "total_amount": 0.0
+  },
+  "trades": [],
+  "violations": []
 }

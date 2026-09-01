@@ -1,120 +1,162 @@
 {
   "meta": {
-    "last_updated": "2026-09-01T08:25:00+08:00",
+    "last_updated": "2026-09-01T11:35:00+08:00",
     "date": "2026-09-01",
-    "session": "pre_market_0825",
-    "data_basis": "2026-08-31收盘"
+    "session": "intraday_1135",
+    "source": "腾讯行情+界面新闻/同花顺午评",
+    "data_basis": "2026-09-01上午收盘(11:30)",
+    "note": "9/1午间·指数分化·沪指+0.03%平盘·创业板-0.92%·粮食农业+传媒短剧爆发·半导体/元件/电子化学品重挫·涨跌比3594:1871·主力半日净流出102.4亿"
   },
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "close": 3986.3,
-      "change_pct": 0.86,
-      "pre_close": 3952.18
+      "close": 3987.56,
+      "change_pct": 0.03,
+      "pre_close": 3986.3,
+      "open": 3979.88,
+      "high": 3989.58,
+      "low": 3976.47,
+      "volume": 378877259,
+      "amount": 62753263,
+      "pe_ratio": 17.33,
+      "note": "低开后回升·权重护盘·半日6275亿"
     },
     "sz399001": {
       "name": "深证成指",
-      "close": 14015.0,
-      "change_pct": 0.44,
-      "pre_close": 13953.07
+      "close": 13933.11,
+      "change_pct": -0.58,
+      "pre_close": 14015.0,
+      "open": 14017.42,
+      "high": 14018.51,
+      "low": 13845.55,
+      "volume": 464085156,
+      "amount": 72186636,
+      "pe_ratio": 42.87,
+      "note": "高开低走·科技拖累·半日7219亿"
     },
     "sz399006": {
       "name": "创业板指",
-      "close": 3438.68,
-      "change_pct": 0.42,
-      "pre_close": 3424.4
+      "close": 3407.04,
+      "change_pct": -0.92,
+      "pre_close": 3438.68,
+      "open": 3435.32,
+      "high": 3437.21,
+      "low": 3375.01,
+      "volume": 131305102,
+      "amount": 33095030,
+      "pe_ratio": 56.58,
+      "note": "最低3375·尾盘收窄跌幅·新能源半导体承压"
+    },
+    "sh000688": {
+      "name": "科创50",
+      "close": 1659.39,
+      "change_pct": -1.48,
+      "pre_close": 1684.39,
+      "open": 1679.89,
+      "high": 1684.02,
+      "low": 1646.66,
+      "note": "半导体拖累领跌·硬科技调整"
     }
   },
   "market_breadth": {
-    "up": 3181,
-    "down": 2218,
-    "limit_up": 89,
-    "limit_down": 13,
-    "total": 5399
+    "up": 3594,
+    "down": 1871,
+    "limit_up": 68,
+    "limit_down": 1,
+    "total": 5465
   },
   "volume": {
-    "amount": 21310,
+    "amount": 13494,
     "unit": "亿",
-    "change_pct": 1.4,
-    "note": "较上日放量293亿"
+    "change_pct": 2.9,
+    "note": "沪深半日成交约13494亿·较上日半日放量约382亿(界面)·同花顺口径三市13612亿"
   },
   "fund_flow": {
-    "main_net": -65.5,
+    "main_net": -102.4,
     "unit": "亿",
-    "note": "主力净流出65.5亿"
+    "note": "上午主力净流出102.4亿(腾讯自选股·较8/31全天-65.5亿流出加速)"
   },
   "hot_sectors_up": [
     {
+      "name": "种植业",
+      "change_pct": 7.07,
+      "lead": "神农种业(+20.03%)"
+    },
+    {
       "name": "数字媒体",
-      "change_pct": 7.19,
-      "lead": "芒果超媒(+20.00%)"
+      "change_pct": 5.96,
+      "lead": "芒果超媒(+20.02%)"
     },
     {
-      "name": "影视院线",
-      "change_pct": 7.02,
-      "lead": "华策影视(+15.77%)"
+      "name": "一般零售",
+      "change_pct": 3.94,
+      "lead": "茂业商业(+10.08%)"
     },
     {
-      "name": "出版",
-      "change_pct": 5.26,
-      "lead": "中文在线(+20.02%)"
+      "name": "焦炭Ⅱ",
+      "change_pct": 3.83,
+      "lead": "云煤能源(+9.95%)"
     },
     {
-      "name": "电视广播",
-      "change_pct": 3.85,
-      "lead": "海看股份(+19.99%)"
-    },
-    {
-      "name": "广告营销",
-      "change_pct": 3.32,
-      "lead": "易点天下(+7.28%)"
+      "name": "农产品加工",
+      "change_pct": 3.62,
+      "lead": "深粮控股(+10.00%)"
     }
   ],
   "hot_sectors_down": [
     {
-      "name": "饰品",
-      "change_pct": -4.27
+      "name": "元件",
+      "change_pct": -4.2,
+      "lead": "三环集团(-5.12%)/南亚新材-7%"
     },
     {
-      "name": "贵金属",
-      "change_pct": -3.65
+      "name": "电子化学品",
+      "change_pct": -3.41,
+      "lead": "方邦股份(-10%)"
     },
     {
-      "name": "渔业",
-      "change_pct": -2.15
+      "name": "半导体",
+      "change_pct": -2.05,
+      "lead": "通富微电(-3.83%)"
     },
     {
-      "name": "农产品加工",
-      "change_pct": -1.98
+      "name": "通信设备",
+      "change_pct": -1.26,
+      "lead": "天孚通信(-4.01%)"
     },
     {
-      "name": "中药",
-      "change_pct": -1.82
+      "name": "铜箔/覆铜板HBM",
+      "change_pct": -3.0,
+      "lead": "东山精密(-4.99%)·概念走弱(界面午评)"
     }
   ],
   "sector_fund_flow_top5": [
     {
-      "name": "消费电子",
-      "change_pct": 2.17,
-      "main_inflow": 245560.86,
-      "up_down_ratio": "81/91"
+      "name": "种植业",
+      "change_pct": 7.07,
+      "main_inflow": 158262.07,
+      "up_down_ratio": "20/20"
     },
     {
-      "name": "IT服务",
-      "change_pct": 2.84,
-      "main_inflow": 212461.8,
-      "up_down_ratio": "101/122"
+      "name": "一般零售",
+      "change_pct": 3.94,
+      "main_inflow": 132883.72,
+      "up_down_ratio": "58/60"
     },
     {
-      "name": "计算机设备",
-      "change_pct": 2.82,
-      "main_inflow": 193351.89,
-      "up_down_ratio": "65/82"
+      "name": "电力",
+      "change_pct": 1.01,
+      "main_inflow": 108630.35,
+      "up_down_ratio": "102/109"
     }
   ],
   "market_stats": {
-    "rise_count": 3181,
-    "fall_count": 2218,
-    "turnover_comment": "成交2.13万亿，较上日放量293亿，仍处高位"
+    "rise_count": 3594,
+    "fall_count": 1871,
+    "limit_up": 68,
+    "limit_down": 1,
+    "turnover_comment": "上午成交约1.35万亿(沪6275亿+深7219亿)·较上日半日放量382亿",
+    "main_net_flow": "主力净流出102.4亿(上午半日)",
+    "note": "9/1午间·指数分化赚钱效应偏农业传媒·科技硬件调整·涨停68:跌停1·连板:海鸥住工7板/捷荣技术6板/金健米业12天7板"
   }
 }

@@ -1,30 +1,30 @@
 {
   "meta": {
-    "last_updated": "2026-09-01T08:25:00+08:00",
+    "last_updated": "2026-09-01T11:35:00+08:00",
     "data_date": "2026-09-01",
-    "source": "9/1盘前·8/31收盘数据+8/31清仓大有/飞南",
-    "session": "pre_market_0825",
-    "note": "8/31收盘·大有7.65+飞南25.78清仓锁利+3922·剩3只持仓·APEX到期·9/1新月份·布伦特破91美元·9月加息概率65.4%"
+    "source": "9/1午间·上午收盘数据",
+    "session": "intraday_1135",
+    "note": "9/1午间·指数分化·利通-4.81%破117止损P0·鹏辉最低57.26近止损·圣邦+0.46%·总资产180547·今日-2447"
   },
   "current": {
-    "total_assets": 182994.0,
+    "total_assets": 180547.0,
     "prev_close_assets": 178823.0,
     "available_cash": 76234.0,
     "initial_capital": 200000.0,
     "position_count": 3,
-    "position_ratio": 58.3,
-    "monthly_pnl": 0.0,
-    "monthly_return_rate": 0.0,
-    "market_value": 106760.0,
-    "note": "9/1新月份·8/31清仓大有+飞南锁利+3922·剩鹏辉/利通/圣邦3只·仓位58.3%·现金76234·布伦特破91美元·加息65.4%"
+    "position_ratio": 57.8,
+    "monthly_pnl": -2447.0,
+    "monthly_return_rate": -1.34,
+    "market_value": 104313.0,
+    "note": "9/1午间·利通破止损·今日盈亏-2447(基准8/31收盘182994)·注:prev_close_assets=178823为历史遗留值(8/31午间值)·按铁律午间未改动"
   },
   "today_so_far": {
     "date": "2026-09-01",
-    "net_today": 0,
+    "net_today": -2447.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "pre_market",
-    "note": "9/1盘前·APEX解除首日·上午只观察不操作·新仓最早9/2"
+    "session": "intraday",
+    "note": "9/1午间·零交易·利通破117止损待13:00-13:30决策·今日只观察不操作·新仓最早9/2"
   },
   "positions": [
     {
@@ -33,7 +33,7 @@
       "quantity": 800,
       "cost_price": 60.493,
       "stop_loss": 57.0,
-      "market_value": 47312.0
+      "market_value": 46520.0
     },
     {
       "code": "603629",
@@ -41,7 +41,7 @@
       "quantity": 300,
       "cost_price": 120.968,
       "stop_loss": 117.0,
-      "market_value": 36648.0
+      "market_value": 34887.0
     },
     {
       "code": "300661",
@@ -49,26 +49,26 @@
       "quantity": 200,
       "cost_price": 114.9,
       "stop_loss": 108.0,
-      "market_value": 22800.0
+      "market_value": 22906.0
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "市值106760+现金76234=182994"
+    "note": "市值104313+现金76234=180547"
   },
   "cumulative": {
-    "total_pnl_amount": -17006.0,
-    "total_pnl_percent": -8.5,
+    "total_pnl_amount": -19453.0,
+    "total_pnl_percent": -9.73,
     "total_trades_count": 67,
     "total_violations": 23
   },
   "next_action": {
     "date": "2026-09-01",
-    "action": "🟡9/1 APEX解除首日:①持仓3只(鹏辉/利通/圣邦)②上午只观察不操作③新仓最早9/2且必须7道闸全过+涨跌>2000+四段式流程④布伦特破91美元+加息65.4%=风险偏好承压",
-    "key_levels": "鹏辉59.14/60.49(成本)/57(止损)·利通122.16/120.97(成本)/117(止损)·圣邦114/114.9(成本)/108(止损)",
-    "risk_events": "9月加息概率65.4%·布伦特破91美元(美伊冲突升级)·博通财报(周二盘后)·8月非农(周五)·中际旭创40-80亿回购(利好)",
-    "today_plan": "9/1盘前:①8月收官-8.5%②8/31大有+飞南清仓锁利+3922③仓位降至58.3%安全④APEX解除但今日不交易⑤观察大盘+个股走势⑥晚间复盘制定9/2新仓计划"
+    "action": "🚨午后核心:利通电子已破117止损→13:00-13:30决策止损300股·鹏辉守57止损·今日零新仓·新仓最早9/2",
+    "key_levels": "鹏辉57.26(上午低)/57(止损)·利通115.14(上午低)/117(已破)·圣邦111.92(上午低)/108(止损)",
+    "risk_events": "9月加息概率65.4%·布伦特破91美元·博通财报今晚盘后·8月非农周五·科技硬件半日普跌",
+    "today_plan": "9/1午间:①今日-2447(-1.34%)②利通破止损P0处置为午后第一要务③鹏辉盯57④零新仓⑤晚间复盘制定9/2计划(备选需重审)"
   }
 }
