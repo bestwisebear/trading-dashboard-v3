@@ -1,7 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-01T08:25:00+08:00",
-    "date": "2026-09-01"
+    "last_updated": "2026-09-02T08:25:00+08:00",
+    "date": "2026-09-02",
+    "session": "pre_market_0825",
+    "data_as_of": "2026-09-01收盘"
   },
   "sectors": [
     {
@@ -12,11 +14,39 @@
       "status": "超跌"
     },
     {
+      "name": "元件",
+      "change_pct": -4.2,
+      "change_5d": -5.8,
+      "change_20d": -7.2,
+      "status": "超跌(三环/东山领跌)"
+    },
+    {
       "name": "贵金属",
       "change_pct": -3.65,
       "change_5d": -7.2,
       "change_20d": -12.1,
       "status": "超跌(黄金跳水+加息)"
+    },
+    {
+      "name": "电子化学品",
+      "change_pct": -3.41,
+      "change_5d": -4.5,
+      "change_20d": -6.8,
+      "status": "弱势"
+    },
+    {
+      "name": "半导体",
+      "change_pct": -2.8,
+      "change_5d": -3.5,
+      "change_20d": -5.0,
+      "status": "弱势(封测重挫通富-4.93%)"
+    },
+    {
+      "name": "消费电子",
+      "change_pct": -2.5,
+      "change_5d": -3.2,
+      "change_20d": -4.5,
+      "status": "弱势(东山-4.7%)"
     },
     {
       "name": "光伏设备",
