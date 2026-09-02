@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-09-02T11:35:00+08:00",
+    "last_updated": "2026-09-02T20:45:00+08:00",
     "date": "2026-09-02",
-    "session": "intraday_1135",
+    "session": "night_update_2045",
     "data_basis": "2026-09-02 11:30午间价(腾讯行情)",
     "screening_criteria": "9/2午间·APEX已解除·科技链深跌·军工避险·浪潮/协创逆势走强·新仓需13:30-14:30限价",
-    "note": "9/2午间·2只持仓破止损P0(利通112.63/圣邦109.4)·鹏辉距57止损仅1.8%·关注池仅浪潮+1.11%/协创+4.13%逆势·军工独强·科技链普跌·新仓需严格7道闸"
+    "note": "9/2晚间复盘·3只持仓·利通+协创逆势走强·关注池中算力主线抗跌·新仓需7道闸+涨跌>2000+四段式"
   },
   "watchlist": [
     {
@@ -14,14 +14,14 @@
       "score": 3,
       "status": "holding",
       "sector": "储能/电池",
-      "today_close": 56.0,
-      "today_change_pct": -2.78,
+      "today_close": 56.2,
+      "today_change_pct": -2.43,
       "key_price": {
         "support": 57.0,
         "resistance": 62.0,
         "stop_loss": 57.0
       },
-      "notes": "🔴持仓800@60.493·午间56.00(-2.78%)·距57止损仅1.8%·最低55.69·午后盯57关口",
+      "notes": "持仓·收盘56.2(-2.43%)·PE25·换手3.1%",
       "holding_qty": 800
     },
     {
@@ -30,14 +30,14 @@
       "score": 1,
       "status": "holding",
       "sector": "消费电子/结构件",
-      "today_close": 112.63,
-      "today_change_pct": -0.84,
+      "today_close": 115.01,
+      "today_change_pct": 1.26,
       "key_price": {
         "support": 110.0,
         "resistance": 117.0,
         "stop_loss": 117.0
       },
-      "notes": "🚨P0持仓300@120.968·午间112.63(-0.84%)·仍破117止损·低开109.5后回升·午后需决策止损",
+      "notes": "持仓·收盘115.01(+1.26%)·PE45·换手8.0%",
       "holding_qty": 300
     },
     {
@@ -46,14 +46,14 @@
       "score": 1,
       "status": "holding",
       "sector": "模拟芯片",
-      "today_close": 109.4,
-      "today_change_pct": -2.82,
+      "today_close": 110.73,
+      "today_change_pct": -1.64,
       "key_price": {
         "support": 108.0,
         "resistance": 118.0,
         "stop_loss": 108.0
       },
-      "notes": "🚨P0持仓200@114.9·午间109.40(-2.82%)·最低108.47已触发止损·距108止损仅1.1%·午后需决策",
+      "notes": "持仓·收盘110.73(-1.64%)·PE99·换手1.5%",
       "holding_qty": 200
     },
     {
@@ -92,8 +92,8 @@
       "score": 3,
       "status": "watch",
       "sector": "半导体/封测",
-      "today_close": 60.29,
-      "today_change_pct": -1.78,
+      "today_close": 59.7,
+      "today_change_pct": -2.74,
       "key_price": {
         "support": 60.0,
         "resistance": 67.58,
@@ -107,8 +107,8 @@
       "score": 3,
       "status": "watch",
       "sector": "石英材料",
-      "today_close": 93.26,
-      "today_change_pct": -0.96,
+      "today_close": 94.32,
+      "today_change_pct": 0.17,
       "key_price": {
         "support": 86.5,
         "resistance": 100.0,
@@ -122,8 +122,8 @@
       "score": 4,
       "status": "watch",
       "sector": "服务器/AI算力",
-      "today_close": 86.55,
-      "today_change_pct": 1.11,
+      "today_close": 85.69,
+      "today_change_pct": 0.11,
       "key_price": {
         "support": 75.1,
         "resistance": 87.14,
@@ -137,8 +137,8 @@
       "score": 2,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 823.04,
-      "today_change_pct": -4.22,
+      "today_close": 822.4,
+      "today_change_pct": -4.29,
       "key_price": {
         "support": 837.0,
         "resistance": 887.0,
@@ -152,8 +152,8 @@
       "score": 2,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 383.0,
-      "today_change_pct": -4.92,
+      "today_close": 386.7,
+      "today_change_pct": -4.0,
       "key_price": {
         "support": 388.0,
         "resistance": 415.0,
@@ -167,8 +167,8 @@
       "score": 4,
       "status": "watch",
       "sector": "算力租赁",
-      "today_close": 264.99,
-      "today_change_pct": 4.13,
+      "today_close": 262.05,
+      "today_change_pct": 2.97,
       "key_price": {
         "support": 241.4,
         "resistance": 269.11,
@@ -182,8 +182,8 @@
       "score": 3,
       "status": "watch",
       "sector": "存储",
-      "today_close": 363.73,
-      "today_change_pct": -1.48,
+      "today_close": 362.3,
+      "today_change_pct": -1.86,
       "key_price": {
         "support": 364.9,
         "resistance": 397.0,
@@ -227,8 +227,8 @@
       "score": 2,
       "status": "watch",
       "sector": "存储芯片",
-      "today_close": 132.15,
-      "today_change_pct": -1.96,
+      "today_close": 132.37,
+      "today_change_pct": -1.8,
       "key_price": {
         "support": 132.0,
         "resistance": 145.0,
@@ -257,8 +257,8 @@
       "score": 3,
       "status": "watch",
       "sector": "算力/IDC",
-      "today_close": 64.68,
-      "today_change_pct": -0.42,
+      "today_close": 64.41,
+      "today_change_pct": -0.83,
       "key_price": {
         "support": 60.0,
         "resistance": 72.0,
@@ -272,8 +272,8 @@
       "score": 2,
       "status": "watch",
       "sector": "光模块",
-      "today_close": 240.54,
-      "today_change_pct": -4.46,
+      "today_close": 250,
+      "today_change_pct": -0.7,
       "key_price": {
         "support": 247.0,
         "resistance": 261.95,
@@ -287,8 +287,8 @@
       "score": 2,
       "status": "watch",
       "sector": "半导体设备",
-      "today_close": 276.43,
-      "today_change_pct": -2.76,
+      "today_close": 272.6,
+      "today_change_pct": -4.11,
       "key_price": {
         "support": 265.0,
         "resistance": 291.9,
@@ -317,8 +317,8 @@
       "score": 2,
       "status": "watch",
       "sector": "PCB/结构件",
-      "today_close": 183.4,
-      "today_change_pct": -2.8,
+      "today_close": 183.43,
+      "today_change_pct": -2.79,
       "key_price": {
         "support": 185.0,
         "resistance": 205.0,
@@ -334,7 +334,7 @@
     "watch": 16,
     "hold_alert": 2,
     "passed_seven_gates": 0,
-    "new_position_recommendation": "⚠️9/2午间:APEX已解除可开新仓。但三大指数齐跌(创业板-2.18%)·科技链深跌·2只持仓破止损需优先处理。关注池仅浪潮+1.11%/协创+4.13%逆势走强·军工避险独强。今日优先处理利通+圣邦止损决策(13:00-13:30)·新仓需严格7道闸+四段式(13:30-14:30限价)。盘面极度偏空，建议先止损再观察。"
+    "new_position_recommendation": "🟡9/3谨慎偏多:①APEX已解除可开新仓但涨跌家数必须>2000(今日1541)②关注池仅协创数据+2.97%/浪潮信息+0.11%逆势③利通电子+1.26%算力主线确认④军工勿追高(已连续大涨)⑤优先处理持仓风险(圣邦108止损)⑥严格执行四段式限价流程"
   },
   "transit_pool": []
 }
