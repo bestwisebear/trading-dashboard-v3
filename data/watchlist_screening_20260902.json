@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "date": "2026-09-02",
+    "time": "08:12",
+    "session": "盘前筛选",
+    "data_basis": "2026-09-01 收盘价",
+    "note": "9/2盘前·七道闸通过·APEX熔断于8/31结束·今日可开新仓"
+  },
+  "market_overview": {
+    "sh_index": {"close": 3979.89, "change_pct": -0.16, "note": "沪指4000点关口遇阻缩量"},
+    "sz_index": {"close": 13872.38, "change_pct": -1.02},
+    "cy_index": {"close": 3393.43, "change_pct": -1.32},
+    "kc50": {"close": 1647.53, "change_pct": -2.19, "note": "科技硬件大幅回调拖累"},
+    "up_count": 3386, "down_count": 2040,
+    "up_down_ratio": 1.66,
+    "volume": "2.04万亿(缩量950亿)",
+    "seven_gates_pass": true,
+    "seven_gates_note": "✅涨跌>2000(3386>2000)·七道闸通过·可开新仓",
+    "market_style": "高低切换·资金从高位科技硬件流向农业/消费/金融",
+    "overnight": "美股回调·纳指-1.03%·费城半导体-2%·英伟达-1.51%·美光-2.64%·预计A股低开"
+  },
+  "positions": {
+    "count": 3,
+    "total_assets": 180547,
+    "position_ratio": 57.8,
+    "available_cash": 76234,
+    "items": [
+      {
+        "code": "300438", "name": "鹏辉能源",
+        "qty": 800, "cost": 60.493, "close": 57.60, "change_pct": -2.60,
+        "stop_loss": 57.0, "distance_to_stop": 1.05,
+        "floating_pnl_pct": -4.78,
+        "market_value": 46080,
+        "note": "⚠️ 距止损57.0仅1.05%·储能板块承压·需密切关注"
+      },
+      {
+        "code": "603629", "name": "利通电子",
+        "qty": 300, "cost": 120.968, "close": 113.58, "change_pct": -7.02,
+        "stop_loss": 117.0, "distance_to_stop": -2.92,
+        "floating_pnl_pct": -6.11,
+        "market_value": 34074,
+        "note": "🚨 已跌破止损117.0·现价113.58·9/1盘中已触发P0警报·今日需决策止损"
+      },
+      {
+        "code": "300661", "name": "圣邦股份",
+        "qty": 200, "cost": 114.90, "close": 112.58, "change_pct": -1.25,
+        "stop_loss": 108.0, "distance_to_stop": 4.24,
+        "floating_pnl_pct": -2.02,
+        "market_value": 22516,
+        "note": "✅ 距止损108.0尚远(4.24%)·模拟芯片弱修复·持有观察"
+      }
+    ]
+  },
+  "watchlist_screening": {
+    "date": "2026-09-02",
+    "method": "基于9/1收盘价·结合盘面资金流向与板块强度",
+    "rating_def": "A=强势可关注(逆势上涨+资金流入)·B=中性观察·C=弱势回避(单日大跌>3%或板块弱势)",
+    "stocks": [
+      {"code": "300857", "name": "协创数据", "close": 254.49, "change_pct": -3.49, "rating": "C", "reason": "单日大跌·科技硬件回调重灾区"},
+      {"code": "002156", "name": "通富微电", "close": 61.38, "change_pct": -4.93, "rating": "C", "reason": "大幅回调·CPU概念领跌·主力净流出20亿"},
+      {"code": "300502", "name": "新易盛", "close": 402.81, "change_pct": 0.23, "rating": "A", "reason": "✅逆势上涨·光模块核心·支撑400已测试有效·关注"},
+      {"code": "300308", "name": "中际旭创", "close": 859.30, "change_pct": 0.87, "rating": "A", "reason": "✅逆势上涨·光模块龙头·支撑900已破但站稳850·关注"},
+      {"code": "300394", "name": "天孚通信", "close": 251.77, "change_pct": -4.27, "rating": "C", "reason": "大幅回调·CPO概念领跌·主力净流出34亿"},
+      {"code": "300223", "name": "北京君正", "close": 134.79, "change_pct": -3.69, "rating": "C", "reason": "科技回调·半导体板块净流出超168亿"},
+      {"code": "301308", "name": "江波龙", "close": 369.18, "change_pct": -3.29, "rating": "C", "reason": "存储概念回调·PE=13.23估值低但板块情绪差"},
+      {"code": "300408", "name": "三环集团", "close": 109.22, "change_pct": -5.03, "rating": "C", "reason": "大幅回调·元件板块-3.16%"},
+      {"code": "300438", "name": "鹏辉能源", "close": 57.60, "change_pct": -2.60, "rating": "⚠️持仓", "reason": "持仓·距止损仅1.05%·密切关注"},
+      {"code": "300395", "name": "菲利华", "close": 94.16, "change_pct": -1.40, "rating": "B", "reason": "小幅回调·石英材料·电子化学品板块-3.83%"},
+      {"code": "300442", "name": "润泽科技", "close": 64.95, "change_pct": -1.92, "rating": "B", "reason": "小幅回调·算力租赁·支撑60·板块调整中"},
+      {"code": "300604", "name": "长川科技", "close": 284.27, "change_pct": 1.88, "rating": "A", "reason": "✅逆势大涨·半导体测试设备·关注度高"},
+      {"code": "000988", "name": "华工科技", "close": 101.53, "change_pct": -3.07, "rating": "C", "reason": "科技回调·CPO/光模块方向"},
+      {"code": "002384", "name": "东山精密", "close": 188.69, "change_pct": -4.70, "rating": "C", "reason": "大幅回调·PCB龙头·板块净流出96亿"},
+      {"code": "000977", "name": "浪潮信息", "close": 85.60, "change_pct": 0.49, "rating": "A", "reason": "✅逆势上涨·服务器龙头·AI算力需求支撑"}
+    ],
+    "watchlist": [
+      {"code": "603026", "name": "石大胜华", "close": 62.60, "change_pct": -0.24, "rating": "B", "reason": "窄幅震荡·电解液溶剂·观察"},
+      {"code": "300769", "name": "德方纳米", "close": 44.46, "change_pct": -2.26, "rating": "C", "reason": "连续走弱·磷酸铁锂正极·PE=493估值过高"}
+    ]
+  },
+  "oversold_sectors": {
+    "note": "基于9/1数据·行业板块接口仅返回涨幅榜·以下为综合搜索与盘面分析补充",
+    "method": "综合搜索盘面复盘+板块资金流向",
+    "top5_sectors_20d": [
+      {"rank": 1, "sector": "影视院线/传媒", "20d_estimate": "-12%~-15%", "note": "影视ETF区间最大回撤超45%·近期反弹修复中·芒果超媒2连板"},
+      {"rank": 2, "sector": "白酒/食品饮料", "20d_estimate": "-8%~-10%", "note": "白酒20日主力净流出74亿·消费降级预期·资金持续流出"},
+      {"rank": 3, "sector": "新能源/电力设备", "20d_estimate": "-5%~-8%", "note": "宁德时代/阳光电源遭大额净流出·电池板块资金流出41亿"},
+      {"rank": 4, "sector": "煤炭", "20d_estimate": "-5%~-7%", "note": "9/1煤炭-2.13%·防御资金获利了结·夏季用电高峰近尾声"},
+      {"rank": 5, "sector": "小金属/钨", "20d_estimate": "-3%~-5%", "note": "中钨高新单日-5.27%·钨价松动·高位筹码兑现"}
+    ],
+    "oversold_stocks_per_sector": [
+      {"sector": "影视/传媒", "stocks": [
+        {"code": "芒果超媒", "reason": "AI长剧催化·2连板·但20日仍超跌修复中"},
+        {"code": "欢瑞世纪", "reason": "短剧概念·2连板跟随"},
+        {"code": "时代出版", "reason": "传媒补涨·3连板"}
+      ]},
+      {"sector": "白酒/食品饮料", "stocks": [
+        {"code": "古井贡酒", "reason": "9/1涨停·消费政策催化"},
+        {"code": "西安饮食", "reason": "涨停·消费复苏预期"},
+        {"code": "佳禾食品", "reason": "涨停·消费政策利好"}
+      ]},
+      {"sector": "新能源/电力设备", "stocks": [
+        {"code": "协鑫能科", "reason": "9/1涨停·游资1.19亿杀入"},
+        {"code": "C贝特利", "reason": "新股活跃·资金净流入4亿"},
+        {"code": "金龙羽", "reason": "资金净流入1.99亿"}
+      ]},
+      {"sector": "煤炭", "stocks": [
+        {"code": "郑州煤电", "reason": "资金净流入1.41亿·逆势抗跌"},
+        {"code": "云煤能源", "reason": "资金净流入0.67亿"},
+        {"code": "大有能源", "reason": "超跌反弹+7.14%·资金净流入1.3亿"}
+      ]},
+      {"sector": "小金属/钨", "stocks": [
+        {"code": "精艺股份", "reason": "涨停·铜加工·有色金属逆势飘红"},
+        {"code": "西部矿业", "reason": "铜板块涨2%·跟涨"},
+        {"code": "北方铜业", "reason": "铜板块活跃"}
+      ]}
+    ]
+  },
+  "focus_analysis": {
+    "strong_rating_A": ["新易盛300502", "中际旭创300308", "长川科技300604", "浪潮信息000977"],
+    "key_observations": [
+      "📊 9/1盘面高低切换明显：科技硬件（半导体/PCB/CPO）资金大幅流出，农业/消费/金融流入",
+      "💡 关注池A评级4只：新易盛、中际旭创、长川科技、浪潮信息——均逆势上涨",
+      "⚠️ 持仓利通电子已跌破止损117.0（现价113.58），今日需立即决策止损",
+      "⚠️ 鹏辉能源距止损57.0仅1.05%，需密切关注57关口",
+      "🔴 科技硬件短期承压：费城半导体隔夜-2%·英伟达-1.51%·今日A股科技股可能惯性低开",
+      "📌 9/2-9/4重要事件：美国小非农(2日)·非制造业PMI(3日)·非农就业(4日)",
+      "📌 四段式防追高：今日可筛选标的，但新仓需13:30-14:30限价执行"
+    ]
+  }
+}
