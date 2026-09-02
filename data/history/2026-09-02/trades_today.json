@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "date": "2026-09-02",
+    "last_updated": "2026-09-02T11:35:00+08:00",
+    "source": "午间数据刷新(无交易)",
+    "session": "intraday_1135"
+  },
+  "summary": {
+    "trade_count": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "net_today": -6291.0,
+    "note": "9/2午间:零交易·今日-6291(基准8/31收盘182994)·利通+圣邦均破止损待13:00-13:30决策·新仓需13:30-14:30限价",
+    "total_trades": 0,
+    "total_amount": 0.0
+  },
+  "trades": [],
+  "violations": []
+}
