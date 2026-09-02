@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "last_updated": "2026-09-02T11:06:00+08:00",
+    "date": "2026-09-02",
+    "session": "intraday_1106",
+    "source": "搜狐证券/东方财富/中财网/上证所·11:00实时",
+    "stage": "四段式防追高·第二步·11:00备选确认"
+  },
+  "market_snapshot": {
+    "timestamp": "2026-09-02 11:00",
+    "sh_index": 3935.91,
+    "sh_change_pct": -1.11,
+    "sz_index": 13575.22,
+    "sz_change_pct": -2.14,
+    "cyb_index": 3301.4,
+    "cyb_change_pct": -2.71,
+    "kc50": 1611.99,
+    "kc50_change_pct": -2.16,
+    "advancing": "<500(估算)",
+    "declining": "~4700",
+    "limit_up": "待确认",
+    "limit_down": "待确认",
+    "volume_half_day": "约10544亿(10:52)",
+    "note": "全市场下跌近4700只·科技/半导体/光模块全线重挫·煤炭/军工/PCB逆势"
+  },
+  "seven_gate_check": {
+    "breadth": {
+      "passed": false,
+      "detail": "🚨上涨家数远<2000(约500只)·直接禁开新仓"
+    },
+    "valuation": {
+      "passed": false,
+      "detail": "无需评估·广度已否决"
+    },
+    "capital": {
+      "passed": false,
+      "detail": "无需评估"
+    },
+    "trend": {
+      "passed": false,
+      "detail": "无需评估"
+    },
+    "turnover": {
+      "passed": false,
+      "detail": "无需评估"
+    },
+    "momentum": {
+      "passed": false,
+      "detail": "无需评估"
+    },
+    "sector": {
+      "passed": false,
+      "detail": "无需评估"
+    }
+  },
+  "verdict": "🚨下午无新仓备选",
+  "verdict_reason": [
+    "涨跌家数触发禁开新仓红线(上涨<2000,实际约500只)",
+    "科技板块全线重挫:光模块新易盛-5.6%/天孚-5.1%/中际-4.7%",
+    "半导体板块通富微电-4.93%/三环-5.03%/东山-4.7%",
+    "外围利空:美债4.80%+油价暴涨5.7%+日经期货跌2%+9月加息概率69%",
+    "持仓利通已破止损+鹏辉/圣邦逼近止损·优先处理持仓风险"
+  ],
+  "candidates": [],
+  "holdings_status": {
+    "300438_鹏辉能源": {
+      "cost": 60.493,
+      "current": 55.96,
+      "change_pct": -2.85,
+      "stop_loss": 57.0,
+      "distance_to_stop": "已跌破(55.96<57.00)",
+      "alert": "🚨P0·已跌破57止损·持仓800@60.493·浮亏约-7.5%"
+    },
+    "603629_利通电子": {
+      "cost": 120.968,
+      "current": 111.18,
+      "change_pct": -2.11,
+      "stop_loss": 117.0,
+      "distance_to_stop": "已跌破(111.18<117.00)",
+      "alert": "🚨P0·连续两日破117止损·9/1收113.58(-7.02%)·今日继续下跌·持仓300@120.968·浮亏约-8.1%"
+    },
+    "300661_圣邦股份": {
+      "cost": 114.9,
+      "current": 109.15,
+      "change_pct": -3.05,
+      "stop_loss": 108.0,
+      "distance_to_stop": "1.07%(109.15→108.00)",
+      "alert": "🔴逼近108止损·距止损仅1.1%·持仓200@114.9·浮亏约-5.0%"
+    }
+  },
+  "next_action": "13:00-13:30持仓止损决策·利通/鹏辉已破止损·圣邦逼近止损·下午无新仓·13:15无需确认"
+}
