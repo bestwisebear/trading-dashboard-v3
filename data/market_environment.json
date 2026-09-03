@@ -1,225 +1,174 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T08:29:05+08:00",
-    "date": "2026-09-03",
-    "session": "pre_market_0825",
-    "source": "腾讯行情·9/2收盘价",
-    "note": "9/3盘前·数据基于9/2收盘·竞价尚未开始(9:15)·三大指数三连阴·美伊冲突升级·非农前夕"
+    "last_updated": "2026-09-03T11:39:38+08:00",
+    "data_date": "2026-09-03",
+    "source": "腾讯行情·午间收盘价",
+    "session": "intraday_1133",
+    "note": "9/3午间·三大指数小幅收红·大金融领涨·个股跌多涨少·量能萎缩"
   },
   "indices": {
-    "sh000001": {
+    "shanghai": {
+      "code": "sh000001",
       "name": "上证指数",
-      "close": 3941.39,
-      "change_pct": -0.97,
-      "pre_close": 3979.89,
-      "open": 3963.07,
-      "high": 3965.81,
-      "low": 3932.25,
-      "amount": 83536776,
-      "pe_ratio": 17.12,
-      "note": "三连阴·3941关键支撑位"
+      "close": 3958.19,
+      "open": 3952.79,
+      "high": 3968.11,
+      "low": 3950.98,
+      "pre_close": 3941.39,
+      "change": 16.8,
+      "change_pct": 0.43,
+      "volume": 320081276,
+      "amount": 51581058,
+      "note": "大金融(保险+3.19%/证券+1.27%)拉动指数翻红"
     },
-    "sz399001": {
+    "shenzhen": {
+      "code": "sz399001",
       "name": "深证成指",
-      "close": 13611.55,
-      "change_pct": -1.88,
-      "pre_close": 13872.38,
-      "open": 13732.18,
-      "high": 13732.18,
-      "low": 13549.77,
-      "amount": 95581074,
-      "pe_ratio": 42.09,
-      "note": "科技链深跌·年线附近"
+      "close": 13664.14,
+      "open": 13711.07,
+      "high": 13742.89,
+      "low": 13601.49,
+      "pre_close": 13611.55,
+      "change": 52.59,
+      "change_pct": 0.39,
+      "volume": 371162419,
+      "amount": 58285834,
+      "note": "冲高回落·午后关注能否守住13600"
     },
-    "sz399006": {
+    "chinext": {
+      "code": "sz399006",
       "name": "创业板指",
-      "close": 3312.24,
-      "change_pct": -2.39,
-      "pre_close": 3393.43,
-      "open": 3347.68,
-      "high": 3348.69,
-      "low": 3296.47,
-      "amount": 43869975,
-      "pe_ratio": 55.44,
-      "note": "领跌·光模块/算力重挫"
-    },
-    "sh000688": {
-      "name": "科创50",
-      "close": 1617.6,
-      "change_pct": -1.82,
-      "pre_close": 1647.53,
-      "note": "半导体/硬件承压"
-    },
-    "sh000300": {
-      "name": "沪深300",
-      "close": 4547.96,
-      "change_pct": -1.38,
-      "pre_close": 4611.44,
-      "pe_ratio": 13.66,
-      "note": "权重蓝筹跟跌"
+      "close": 3326.42,
+      "open": 3342.09,
+      "high": 3356.25,
+      "low": 3307.58,
+      "pre_close": 3312.24,
+      "change": 14.18,
+      "change_pct": 0.43,
+      "volume": 101255314,
+      "amount": 26733852,
+      "note": "低开下探3307后回升"
     }
   },
-  "market_breadth": {
-    "up": 1541,
-    "down": 3901,
-    "up_limit": 55,
-    "down_limit": 9,
-    "note": "赚钱效应极差·超3900只下跌·涨跌比0.40"
-  },
-  "volume": {
-    "amount": 17900,
-    "unit": "亿元",
-    "prev_amount": 20300,
-    "trend": "连续第3日缩量",
-    "note": "从2.15→2.05→1.79万亿"
-  },
   "sectors": {
-    "top_gainers": [
+    "top_industries": [
       {
-        "name": "地面兵装Ⅱ",
-        "change_pct": 6.48,
-        "lead_stock": "北方长龙+13.90%",
-        "note": "美伊冲突升级催化"
+        "name": "航运港口",
+        "change_pct": 3.54,
+        "lead": "凤凰航运(10.02)"
       },
       {
-        "name": "玻璃玻纤",
-        "change_pct": 1.23,
-        "lead_stock": "九鼎新材+10.02%"
-      },
-      {
-        "name": "航空装备Ⅱ",
-        "change_pct": 0.93,
-        "lead_stock": "博云新材+10.01%"
-      },
-      {
-        "name": "教育",
-        "change_pct": 0.82,
-        "lead_stock": "科德教育+8.74%"
-      },
-      {
-        "name": "旅游及景区",
-        "change_pct": 0.72,
-        "lead_stock": "云南旅游+10.06%"
-      }
-    ],
-    "top_losers": [
-      {
-        "name": "种植业",
-        "change_pct": -5.93,
-        "lead_stock": "敦煌种业跌停"
+        "name": "保险Ⅱ",
+        "change_pct": 3.19,
+        "lead": "中国太保(4.63)"
       },
       {
         "name": "贵金属",
-        "change_pct": -4.1,
-        "lead_stock": "湖南白银-5%"
+        "change_pct": 2.95,
+        "lead": "湖南黄金(5.88)"
       },
       {
-        "name": "光模块",
-        "change_pct": -4.0,
-        "lead_stock": "中际旭创-4.29%"
+        "name": "电机Ⅱ",
+        "change_pct": 2.42,
+        "lead": "鸣志电器(10.00)"
       },
       {
-        "name": "能源金属",
-        "change_pct": -3.44,
-        "lead_stock": "盛新锂能下挫"
+        "name": "工业金属",
+        "change_pct": 1.83,
+        "lead": "白银有色(7.36)"
       },
       {
-        "name": "半导体",
-        "change_pct": -2.0,
-        "lead_stock": "欧莱新材-4%"
+        "name": "其他电子Ⅱ",
+        "change_pct": 1.79,
+        "lead": "香农芯创(7.45)"
       }
-    ]
+    ],
+    "top_concepts": [
+      {
+        "name": "BDI",
+        "change_pct": 5.36,
+        "lead": "凤凰航运(10.02)"
+      },
+      {
+        "name": "培育钻石",
+        "change_pct": 4.39,
+        "lead": "黄河旋风(10.03)"
+      },
+      {
+        "name": "华为机器人",
+        "change_pct": 2.31,
+        "lead": "兆威机电(5.01)"
+      },
+      {
+        "name": "有色(锑)",
+        "change_pct": 2.17,
+        "lead": "湖南黄金(5.88)"
+      },
+      {
+        "name": "AI编程",
+        "change_pct": 2.13,
+        "lead": "金现代(19.98)"
+      },
+      {
+        "name": "白银概念",
+        "change_pct": 2.1,
+        "lead": "华钰矿业(5.62)"
+      }
+    ],
+    "note": "大金融+航运+贵金属领涨·科技方向偏弱·半导体/光模块承压"
   },
   "fund_flow": {
     "top_inflow": [
       {
-        "sector": "电网设备",
-        "amount": 14.18,
-        "unit": "亿元"
+        "name": "证券Ⅱ",
+        "change_pct": 1.27,
+        "main_net_inflow": 193088.17,
+        "up_down_ratio": "45/50"
       },
       {
-        "sector": "地面兵装Ⅱ",
-        "amount": 12.81,
-        "unit": "亿元"
+        "name": "保险Ⅱ",
+        "change_pct": 3.19,
+        "main_net_inflow": 124183.34,
+        "up_down_ratio": "5/5"
       },
       {
-        "sector": "航空装备Ⅱ",
-        "amount": 12.5,
-        "unit": "亿元"
+        "name": "工业金属",
+        "change_pct": 1.83,
+        "main_net_inflow": 108861.08,
+        "up_down_ratio": "40/59"
       }
     ],
-    "note": "资金从科技/农业向军工/电网/银行切换"
+    "note": "大金融主力净流入·证券+19.3亿·保险+12.4亿"
   },
-  "macro": {
-    "rate": "美债10Y 4.814%·近20年高位",
-    "oil": "WTI突破90美元/桶",
-    "fed": "9月加息概率68%",
-    "events": [
-      "美伊冲突升级",
-      "9/4非农数据",
-      "9/11 CPI",
-      "9/16 FOMC",
-      "今晚博通/HPE/Snowflake财报"
-    ]
+  "market_breadth": {
+    "up_count_est": 1600,
+    "down_count_est": 3200,
+    "source": "财联社10:35·下跌个股超3200家",
+    "note": "指数红但个股跌多涨少"
   },
-  "sentiment": "偏空·三连阴·防御为王·军工银行逆势·科技农业承压·非农前夕观望",
+  "sentiment": {
+    "overall": "谨慎偏弱",
+    "strength": "指数虚假强势·大金融护盘",
+    "volume_trend": "缩量·预计全天1.66万亿",
+    "risk_factors": "美伊冲突·油价高企·非农前观望·9月加息预期66.1%"
+  },
   "hot_sectors_up": [
-    {
-      "name": "地面兵装Ⅱ",
-      "change_pct": 6.48,
-      "lead": "北方长龙+13.90%"
-    },
-    {
-      "name": "玻璃玻纤",
-      "change_pct": 1.23,
-      "lead": "九鼎新材+10.02%"
-    },
-    {
-      "name": "航空装备Ⅱ",
-      "change_pct": 0.93,
-      "lead": "博云新材+10.01%"
-    },
-    {
-      "name": "教育",
-      "change_pct": 0.82,
-      "lead": "科德教育+8.74%"
-    },
-    {
-      "name": "旅游及景区",
-      "change_pct": 0.72,
-      "lead": "云南旅游+10.06%"
-    }
+    "航运港口+3.54%",
+    "保险Ⅱ+3.19%",
+    "贵金属+2.95%",
+    "电机Ⅱ+2.42%",
+    "工业金属+1.83%"
   ],
   "hot_sectors_down": [
-    {
-      "name": "种植业",
-      "change_pct": -5.93,
-      "lead": "敦煌种业跌停"
-    },
-    {
-      "name": "贵金属",
-      "change_pct": -4.1,
-      "lead": "湖南白银-5%"
-    },
-    {
-      "name": "能源金属",
-      "change_pct": -3.44,
-      "lead": "盛新锂能下挫"
-    },
-    {
-      "name": "光模块",
-      "change_pct": -4.0,
-      "lead": "中际旭创-4.29%"
-    },
-    {
-      "name": "半导体",
-      "change_pct": -2.0,
-      "lead": "欧莱新材-4%"
-    }
+    "煤炭-3.63%",
+    "传媒-1.68%",
+    "互联网-1.58%",
+    "食品制造-1.43%",
+    "水上运输-1.41%"
   ],
   "market_stats": {
-    "rise_count": 1541,
-    "fall_count": 3901,
-    "turnover_comment": "成交额1.79万亿，连续第3日缩量，较前日减少2422亿"
+    "rise_count": 1600,
+    "fall_count": 3200,
+    "turnover_comment": "缩量·预计全天1.66万亿(昨1.79万亿·缩量约1300亿)"
   }
 }

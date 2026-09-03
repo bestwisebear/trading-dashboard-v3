@@ -1,48 +1,44 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T08:29:05+08:00",
-    "date": "2026-09-03",
-    "session": "pre_market_0825"
+    "last_updated": "2026-09-03T11:39:38+08:00",
+    "data_date": "2026-09-03",
+    "session": "intraday",
+    "source": "腾讯行情+财联社·午间收盘"
   },
-  "indices_signal": "偏空·三连阴·三大指数均创新低",
-  "breadth_signal": "极弱·仅1541家上涨(涨跌比0.40)",
-  "volume_signal": "缩量·连续3日缩量(2.15→2.05→1.79万亿)",
-  "sector_signal": "军工防御·科技农业承压·算力线逆势",
-  "overall": "偏空·防御模式·非农前夕观望",
-  "signals": [
-    {
-      "name": "指数趋势",
-      "signal": "bearish",
-      "detail": "三大指数均创新低·三连阴"
-    },
-    {
-      "name": "市场广度",
-      "signal": "bearish",
-      "detail": "涨跌比1541/3901·不足2000"
-    },
-    {
-      "name": "成交量",
-      "signal": "neutral",
-      "detail": "缩量但仍在1.79万亿"
-    },
-    {
-      "name": "资金流向",
-      "signal": "bearish",
-      "detail": "从科技向军工/银行切换"
-    },
-    {
-      "name": "板块轮动",
-      "signal": "bearish",
-      "detail": "前期强势农业集体退潮"
-    }
-  ],
+  "breadth": {
+    "up_count": 1600,
+    "down_count": 3200,
+    "up_pct": 33.3,
+    "limit_up": 50,
+    "limit_down": 5,
+    "note": "涨跌比约1:2·新仓禁开(涨跌家数<2000)"
+  },
+  "signals": {
+    "volume_signal": "缩量·预计1.66万亿(昨1.79万亿)",
+    "breadth_signal": "🔴偏空·涨跌家数1600/3200<2000禁开新仓",
+    "index_signal": "🟡指数虚假强势·大金融权重股拉抬",
+    "sector_signal": "🟡大金融领涨·科技方向偏弱",
+    "fund_flow_signal": "🟡主力流入大金融·科技方向流出",
+    "overall_signal": "🔴谨慎偏空·指数红但个股跌多涨少"
+  },
+  "trading_rules": {
+    "new_position": "❌禁止·涨跌家数<2000",
+    "add_position": "❌禁止",
+    "reduce_position": "✅可考虑",
+    "stop_loss": "⚠️利通已跌破止损·鹏辉/圣邦逼近"
+  },
+  "key_events": {
+    "today": "博通/HPE/Snowflake财报(盘后)",
+    "this_week": "9/4非农·美伊冲突·油价90+",
+    "next_week": "9/11 CPI·9/16 FOMC"
+  },
   "aggregate": {
-    "green_count": 0,
-    "yellow_count": 1,
-    "red_count": 4,
-    "total_score": 30,
+    "green_count": 1,
+    "yellow_count": 3,
+    "red_count": 3,
+    "total_score": 45,
     "max_score": 100,
     "no_open_position": true,
-    "market_comment": "三大指数齐跌+涨跌比极差+资金从科技向防御切换。综合评分30/100，涨跌<2000严禁开新仓，持有观察。"
+    "market_comment": "指数虚假强势·大金融护盘·个股跌多涨少·涨跌家数<2000禁开新仓·缩量1.66万亿"
   }
 }
