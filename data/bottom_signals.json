@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-09-02T17:01:43+08:00",
-    "date": "2026-09-02",
-    "session": "close_1615",
+    "last_updated": "2026-09-03T08:29:05+08:00",
+    "date": "2026-09-03",
+    "session": "pre_market_0825",
     "data_as_of": "2026-09-02收盘",
-    "note": "9/2收盘底部信号1/5(较9/1盘前2/5恶化)。成交缩量但未止跌。继续观望。"
+    "note": "9/3盘前底部信号1/5(与9/2收盘一致)。成交缩量但未止跌。继续观望。"
   },
   "signals": [
     {
@@ -48,33 +48,27 @@
       "detail": "美债收益率飙升+美元走强+油价90+，资金外流压力大。❌不满足(暂定)"
     }
   ],
+  "summary": "底部信号1/5，不满足抄底条件。建议等待至少3/5信号满足后再考虑加仓。",
   "aggregate": {
-    "ratio": "1/5",
     "satisfied_count": 1,
-    "total": 5,
-    "recommendation": "继续观望",
-    "recommendation_detail": "仅1项满足(跌停可控)，4项不满足。成交虽缩量但未到止跌阈值，三大指数继续创新低，北向流出压力大。建议继续观望，等待至少3项满足再考虑加仓。"
+    "total_count": 5,
+    "ratio": 0.2,
+    "verdict": "底部信号不足(1/5)，继续观望，不抄底",
+    "recommendation": "观望",
+    "recommendation_detail": "仅跌停减少1项满足，缩量止跌/涨跌恢复/连续止跌/北向流入均不满足。建议等待至少3/5信号满足后再考虑加仓。"
   },
   "history_7d": [
     {
-      "date": "2026-08-28",
-      "satisfied_count": 2,
-      "count": 5
-    },
-    {
-      "date": "2026-08-31",
-      "satisfied_count": 3,
-      "count": 5
+      "date": "2026-09-02",
+      "satisfied_count": 1,
+      "count": 5,
+      "note": "9/2收盘"
     },
     {
       "date": "2026-09-01",
       "satisfied_count": 2,
-      "count": 5
-    },
-    {
-      "date": "2026-09-02",
-      "satisfied_count": 1,
-      "count": 5
+      "count": 5,
+      "note": "9/1盘前"
     }
   ]
 }

@@ -1,228 +1,252 @@
 {
   "meta": {
-    "date": "2026-09-02",
-    "last_updated": "2026-09-02T20:45:00+08:00",
-    "source": "web_search_close"
+    "last_updated": "2026-09-03T08:29:49+08:00",
+    "date": "2026-09-03",
+    "session": "pre_market_0825",
+    "note": "盘前新闻影响分析·非农前夕·外围风险加剧"
   },
-  "overall_sentiment": "偏空",
-  "sentiment_summary": "晚间消息偏空:美股收跌+美债收益率飙升+加息概率66.1%+盘后科技财报待定。A股盘后回购利好对冲减持利空。9/4非农前市场谨慎。",
+  "overnight_us": {
+    "indices": "待9/3早间更新",
+    "key_earnings": {
+      "broadcom": {
+        "ticker": "AVGO",
+        "date": "9/2盘后",
+        "note": "博通财报·AI芯片指引关键"
+      },
+      "hpe": {
+        "ticker": "HPE",
+        "date": "9/2盘后",
+        "note": "HPE财报·服务器需求验证"
+      },
+      "snowflake": {
+        "ticker": "SNOW",
+        "date": "9/2盘后",
+        "note": "Snowflake财报·云计算需求"
+      }
+    },
+    "impact": "博通/HPE财报将直接影响今日AI算力/光模块板块情绪"
+  },
+  "asia_pacific": {
+    "nikkei": "待开盘",
+    "kospi": "待开盘",
+    "hsi": "待9:30开盘",
+    "note": "亚太早盘关注美伊冲突对亚太市场传导"
+  },
+  "macro_events": [
+    {
+      "event": "美伊冲突升级",
+      "impact": "high",
+      "direction": "bearish",
+      "note": "油价突破90美元·军工板块逆势大涨·通胀压力上升"
+    },
+    {
+      "event": "9/4非农数据",
+      "impact": "high",
+      "direction": "neutral",
+      "note": "周五晚间公布·市场观望情绪浓厚·影响9月加息预期"
+    },
+    {
+      "event": "美债10Y 4.814%",
+      "impact": "high",
+      "direction": "bearish",
+      "note": "近20年高位·压制科技股估值"
+    },
+    {
+      "event": "美联储9月加息概率68%",
+      "impact": "medium",
+      "direction": "bearish",
+      "note": "市场定价加息·但非农数据可能改变预期"
+    },
+    {
+      "event": "博通/HPE/Snowflake财报",
+      "impact": "medium",
+      "direction": "neutral",
+      "note": "9/2盘后·影响今日科技/算力板块"
+    }
+  ],
+  "sector_impact": {
+    "bullish": [
+      {
+        "sector": "军工/地面兵装",
+        "reason": "美伊冲突升级催化·连续大涨·资金持续流入"
+      },
+      {
+        "sector": "算力租赁",
+        "reason": "英伟达财报超预期·协创+2.97%·利通+1.26%逆势"
+      }
+    ],
+    "bearish": [
+      {
+        "sector": "光模块",
+        "reason": "中际旭创-4.29%·新易盛-4.00%·天孚通信最低-5.5%·板块重灾"
+      },
+      {
+        "sector": "农业/种植业",
+        "reason": "前期涨幅过大获利回吐·敦煌种业跌停"
+      },
+      {
+        "sector": "半导体",
+        "reason": "板块普跌-2%·多数标的跌破MA20"
+      }
+    ]
+  },
+  "holdings_impact": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "impact": "neutral",
+      "detail": "储能需求基本面不变·但距止损仅1.3%·需警惕大盘拖累"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "impact": "positive",
+      "detail": "英伟达财报超预期+算力线逆势+主力净流入·关注今日能否突破117"
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "impact": "negative",
+      "detail": "半导体板块普跌·距止损仅2.5%·模拟芯片弱势·港股上市推进中"
+    }
+  ],
+  "condition_orders": [
+    {
+      "type": "止损预警",
+      "code": "300438",
+      "name": "鹏辉能源",
+      "trigger": "跌破55.50",
+      "action": "立即止损清仓800股",
+      "priority": "P0"
+    },
+    {
+      "type": "止损预警",
+      "code": "300661",
+      "name": "圣邦股份",
+      "trigger": "跌破108.00",
+      "action": "立即止损清仓200股",
+      "priority": "P0"
+    },
+    {
+      "type": "止损预警",
+      "code": "603629",
+      "name": "利通电子",
+      "trigger": "跌破112.50",
+      "action": "立即止损清仓300股",
+      "priority": "P0"
+    },
+    {
+      "type": "锁利条件",
+      "code": "603629",
+      "name": "利通电子",
+      "trigger": "日内冲高>5%或接近117阻力",
+      "action": "分批减1/4~1/3锁利",
+      "priority": "P1"
+    }
+  ],
+  "new_position_plan": {
+    "allowed": false,
+    "reason": "涨跌家数1541<2000·闸1不通过·严禁开新仓",
+    "candidates_if_market_recovers": [
+      {
+        "code": "000977",
+        "name": "浪潮信息",
+        "score": "4/7",
+        "note": "AI算力逆势走强·需突破87.14"
+      },
+      {
+        "code": "300857",
+        "name": "协创数据",
+        "score": "5/7",
+        "note": "算力租赁领涨·需突破269.11"
+      },
+      {
+        "code": "300442",
+        "name": "润泽科技",
+        "score": "3/7",
+        "note": "IDC抗跌·PE19.7合理"
+      }
+    ]
+  },
+  "today_outlook": "🟡谨慎偏空·三连阴+非农前夕·持有观察·涨跌<2000禁开新仓·优先关注利通电子能否突破117阻力·鹏辉/圣邦距止损线极近需警惕",
   "items": [
     {
       "id": 1,
-      "time": "15:06",
-      "title": "A股三大指数集体收跌·创业板指跌2.39%",
-      "category": "market",
-      "impact": "negative",
-      "impact_level": 4,
-      "detail": "沪指跌0.97%报3941.39，深成指跌1.88%，创业板跌2.39%。全市场仅1541只上涨，3901只下跌，成交额1.79万亿较前日缩量2422亿。",
-      "affected_stocks": [],
-      "source": "证券时报"
+      "title": "美伊冲突升级·油价突破90美元",
+      "source": "国际新闻",
+      "impact_level": "high",
+      "direction": "bearish",
+      "sectors_affected": [
+        "军工(利好)",
+        "航空(利好)",
+        "能源(利好)",
+        "科技(利空)"
+      ],
+      "holdings_affected": [],
+      "detail": "中东局势持续紧张，WTI原油突破90美元/桶。军工板块连续大涨（地面兵装+6.48%），但通胀压力上升压制整体市场。",
+      "impact": "negative"
     },
     {
       "id": 2,
-      "time": "15:53",
-      "title": "军工板块逆势爆发·地面兵装大涨6.48%",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "美伊冲突升级催化，内蒙一机2连板，建设工业、长城军工涨停，北方长龙涨超13%。军工H1营收+18.89%归母净利+32.92%。",
-      "affected_stocks": [],
-      "source": "东方财富"
+      "title": "美债10Y收益率4.814%·近20年高位",
+      "source": "宏观数据",
+      "impact_level": "high",
+      "direction": "bearish",
+      "sectors_affected": [
+        "科技(利空)",
+        "高估值(利空)",
+        "银行(利好)"
+      ],
+      "holdings_affected": [
+        "圣邦股份(PE99高估值受压)"
+      ],
+      "detail": "美债收益率持续攀升至近20年高位，压制成长股/科技股估值。9月加息概率68%。",
+      "impact": "negative"
     },
     {
       "id": 3,
-      "time": "15:53",
-      "title": "美伊冲突升级·WTI原油突破90美元",
-      "category": "macro",
-      "impact": "negative",
-      "impact_level": 5,
-      "detail": "美军对伊朗发动新一轮打击，伊朗反击，霍尔木兹海峡油轮遭袭。油价突破90美元加剧通胀担忧，美债收益率飙升至近20年高位。",
-      "affected_stocks": [],
-      "source": "东方财富/界面新闻"
+      "title": "9/4非农数据·市场观望情绪浓厚",
+      "source": "经济数据",
+      "impact_level": "high",
+      "direction": "neutral",
+      "sectors_affected": [
+        "全市场"
+      ],
+      "holdings_affected": [],
+      "detail": "周五晚间公布8月非农数据，将直接影响9月FOMC加息决策。市场进入观望模式，成交额连续3日缩量。",
+      "impact": "neutral"
     },
     {
       "id": 4,
-      "time": "15:53",
-      "title": "美联储9月加息概率升至68%",
-      "category": "macro",
-      "impact": "negative",
-      "impact_level": 5,
-      "detail": "全球债市遭猛烈抛售，美债收益率飙升。市场聚焦9/4非农、9/11 CPI、9/16 FOMC。流动性收紧预期压制全球风险资产。",
-      "affected_stocks": [],
-      "source": "东方财富"
+      "title": "英伟达FY27Q2财报超预期·算力链利好",
+      "source": "财报",
+      "impact_level": "medium",
+      "direction": "bullish",
+      "sectors_affected": [
+        "AI算力(利好)",
+        "光模块(利好)",
+        "算力租赁(利好)"
+      ],
+      "holdings_affected": [
+        "利通电子(利好)"
+      ],
+      "detail": "英伟达财报大超预期，存储涨价利好AI算力链。协创数据+2.97%、利通电子+1.26%逆势走强。",
+      "impact": "positive"
     },
     {
       "id": 5,
-      "time": "07:33",
-      "title": "鹏辉能源中报：营收+155%·净利+1025%·中邮证券首次覆盖买入",
-      "category": "stock",
-      "impact": "positive",
-      "impact_level": 4,
-      "detail": "H1营收109.78亿同比+155.27%，归母净利8.16亿同比+1025%。产能利用率165.72%，户储全球市占率28%第一。中邮证券目标价98.37元首次覆盖买入。9家机构评级(6买入+3增持)。",
-      "affected_stocks": [
-        "300438"
+      "title": "博通/HPE/Snowflake财报·9/2盘后",
+      "source": "财报",
+      "impact_level": "medium",
+      "direction": "neutral",
+      "sectors_affected": [
+        "AI芯片(博通)",
+        "服务器(HPE)",
+        "云计算(Snowflake)"
       ],
-      "source": "证券之星/中邮证券"
-    },
-    {
-      "id": 6,
-      "time": "15:28",
-      "title": "利通电子逆势收红·主力净流入6743万·中报净利+1275%",
-      "category": "stock",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "利通电子涨1.26%报115.01，主力净流入6743万。H1营收21.01亿+38.58%，净利7.02亿+1275%。定增50亿加码智算中心。拟10派1.7元。",
-      "affected_stocks": [
-        "603629"
-      ],
-      "source": "证券之星"
-    },
-    {
-      "id": 7,
-      "time": "07:00",
-      "title": "圣邦股份获141家机构调研·光模块芯片翻倍增长",
-      "category": "stock",
-      "impact": "positive",
-      "impact_level": 2,
-      "detail": "H1营收25.95亿+42.7%，净利4.2亿+109.28%。光模块芯片收入同比近+100%，二季度环比+45%。港股上市成功，车规产品超600款。",
-      "affected_stocks": [
-        "300661"
-      ],
-      "source": "同花顺"
-    },
-    {
-      "id": 8,
-      "time": "15:06",
-      "title": "成交额连续三日缩量·央行单日净回笼5985亿",
-      "category": "market",
-      "impact": "negative",
-      "impact_level": 3,
-      "detail": "成交额从2.15万亿→2.05万亿→1.79万亿，阶梯式萎缩。央行7天逆回购操作量为零，净回笼5985亿，流动性边际收紧。",
-      "affected_stocks": [],
-      "source": "证券时报"
-    },
-    {
-      "id": 9,
-      "time": "15:53",
-      "title": "农业板块集体重挫·种植业大跌5.93%",
-      "category": "sector",
-      "impact": "negative",
-      "impact_level": 3,
-      "detail": "敦煌种业/国投丰乐跌停，神农种业跌超11%。前期涨幅较大后获利盘集中兑现，板块轮动。",
-      "affected_stocks": [],
-      "source": "东方财富"
-    },
-    {
-      "id": 10,
-      "time": "11:54",
-      "title": "七部委发布消费扩容升级意见·目标2030年社零60万亿",
-      "category": "macro",
-      "impact": "positive",
-      "impact_level": 2,
-      "detail": "首次为十五五商品消费划定路径，覆盖大宗耐用品/品质日用/银发经济/绿色智能四大赛道。中长期利好消费板块。",
-      "affected_stocks": [],
-      "source": "界面新闻"
-    },
-    {
-      "id": 11,
-      "time": "15:48",
-      "title": "电网设备获主力净流入14.82亿·能源局部署新型电网建设",
-      "category": "sector",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "国家能源局9/1召开新型电网建设部署会，提出AI+、柔性构网、长时储能等新技术。太阳电缆/神马电力/杭电股份涨停。",
-      "affected_stocks": [],
-      "source": "界面新闻"
-    },
-    {
-      "id": 12,
-      "time": "15:00",
-      "title": "协鑫能科9/1涨停后今日回调-2.12%·中报净利+5.53%",
-      "category": "stock",
-      "impact": "neutral",
-      "impact_level": 2,
-      "detail": "协鑫能科H1营收48.9亿-9.82%，净利5.48亿+5.53%。签约乌兰察布绿色算电协同项目，获四川省首批虚拟电厂核验凭证。",
-      "affected_stocks": [
-        "002015"
-      ],
-      "source": "证券之星/同花顺"
-    },
-    {
-      "id": 13,
-      "time": "20:01",
-      "title": "美股期货盘前微幅波动·纳指期货-0.12%·标普+0.06%",
-      "category": "market",
-      "impact": "neutral",
-      "impact_level": 2,
-      "detail": "道指期货+0.24%,标普500期货+0.06%,纳指100期货-0.12%。美债10Y收益率4.814%创2023年11月以来新高。今晚关注ADP就业+工厂订单+联储褐皮书,盘后博通/Snowflake/HPE财报。",
-      "affected_stocks": [],
-      "source": "财联社/新浪财经"
-    },
-    {
-      "id": 14,
-      "time": "20:05",
-      "title": "美股周二收跌·道指-0.79%·纳指-0.95%·美伊冲突+债市抛售双重压制",
-      "category": "market",
-      "impact": "negative",
-      "impact_level": 4,
-      "detail": "美股周二尾盘三大指数集体走弱。费城半导体指数一度跌3%,光通信/存储芯片普跌。苹果逆势涨超2%因新任CEO特纳斯正式上任。WTI原油突破90美元,美2Y国债收益率4.38%创2025年1月新高。",
-      "affected_stocks": [
-        "300308",
-        "300502",
-        "300394"
-      ],
-      "source": "东方财富/先机财经"
-    },
-    {
-      "id": 15,
-      "time": "20:15",
-      "title": "美联储9月加息概率升至66.1%·巴尔明确加息触发条件",
-      "category": "macro",
-      "impact": "negative",
-      "impact_level": 5,
-      "detail": "CME美联储观察:9月加息25bp概率66.1%。巴尔:若通胀无法充分降温将果断加息。9/4非农数据(预期+5.5万)和9/11 CPI成关键。摩根大通认为非农3-7万为理想区间,过高将推升加息预期。",
-      "affected_stocks": [],
-      "source": "汇通网/新浪财经"
-    },
-    {
-      "id": 16,
-      "time": "18:37",
-      "title": "A股盘后公告:中际旭创启动40-80亿回购·赛力斯8月销量-43.96%",
-      "category": "stock",
-      "impact": "mixed",
-      "impact_level": 3,
-      "detail": "利好:中际旭创首日回购3.18亿(计划40-80亿)/兆易创新累计回购6.54亿/华昌化工控制权变更复牌涨停/德明利拟10派15转4。利空:赛力斯8月销量-43.96%/多家公司大额减持(今创/立霸/ST南新各3%)/大基金减持芯原股份。",
-      "affected_stocks": [
-        "300308",
-        "603986",
-        "001309"
-      ],
-      "source": "第一财经/东方财富"
-    },
-    {
-      "id": 17,
-      "time": "20:25",
-      "title": "东吴证券:维持9月不加息判断·预计8月非农易不及预期",
-      "category": "macro",
-      "impact": "positive",
-      "impact_level": 3,
-      "detail": "东吴证券研报认为沃什讲话属嘴硬表态,纠正7月FOMC沟通失误但保留对潜在通胀解释空间。维持9月不加息判断,预计8月非农数据易不及预期,带动加息预期降温。12月加息概率存在但需先看到加息预期降温。",
-      "affected_stocks": [],
-      "source": "东吴证券/慧博"
-    },
-    {
-      "id": 18,
-      "time": "20:30",
-      "title": "CrowdStrike携手英伟达推出网络安全大模型·费半一度跌3%",
-      "category": "sector",
-      "impact": "neutral",
-      "impact_level": 2,
-      "detail": "CrowdStrike与英伟达合作推出网络安全AI大模型。费城半导体指数盘中一度跌3%,存储芯片闪迪午后率先翻红+2.5%。苹果CEO换届平稳过渡涨超2%。今晚博通/Snowflake/HPE盘后财报将影响科技股情绪。",
-      "affected_stocks": [
-        "603629",
-        "300661"
-      ],
-      "source": "先机财经/东方财富"
+      "holdings_affected": [],
+      "detail": "三大科技公司盘后财报将影响今日科技板块情绪，重点关注AI芯片和服务器需求指引。",
+      "impact": "neutral"
     }
   ]
 }
