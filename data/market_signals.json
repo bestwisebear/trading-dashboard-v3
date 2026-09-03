@@ -1,24 +1,24 @@
 {
   "meta": {
-    "last_updated": "2026-09-02T17:02:15+08:00",
-    "date": "2026-09-02",
-    "session": "close_1615"
+    "last_updated": "2026-09-03T08:29:05+08:00",
+    "date": "2026-09-03",
+    "session": "pre_market_0825"
   },
-  "indices_signal": "偏空·三大指数低开低走",
-  "breadth_signal": "极弱·仅1541家上涨",
-  "volume_signal": "缩量·连续3日缩量",
-  "sector_signal": "军工防御·科技农业承压",
-  "overall": "偏空·防御模式",
+  "indices_signal": "偏空·三连阴·三大指数均创新低",
+  "breadth_signal": "极弱·仅1541家上涨(涨跌比0.40)",
+  "volume_signal": "缩量·连续3日缩量(2.15→2.05→1.79万亿)",
+  "sector_signal": "军工防御·科技农业承压·算力线逆势",
+  "overall": "偏空·防御模式·非农前夕观望",
   "signals": [
     {
       "name": "指数趋势",
       "signal": "bearish",
-      "detail": "三大指数均创新低"
+      "detail": "三大指数均创新低·三连阴"
     },
     {
       "name": "市场广度",
       "signal": "bearish",
-      "detail": "涨跌比1541/3901"
+      "detail": "涨跌比1541/3901·不足2000"
     },
     {
       "name": "成交量",
@@ -43,6 +43,6 @@
     "total_score": 30,
     "max_score": 100,
     "no_open_position": true,
-    "market_comment": "三大指数齐跌+涨跌比极差+资金从科技向防御切换。综合评分30/100，严禁开新仓，持有观察。"
+    "market_comment": "三大指数齐跌+涨跌比极差+资金从科技向防御切换。综合评分30/100，涨跌<2000严禁开新仓，持有观察。"
   }
 }

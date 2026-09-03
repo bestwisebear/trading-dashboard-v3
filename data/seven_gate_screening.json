@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "last_updated": "2026-09-03T08:29:05+08:00",
+    "date": "2026-09-03",
+    "session": "pre_market_0825",
+    "overall_verdict": "🔴涨跌家数1541<2000，闸1不通过，严禁开新仓。持仓3只继续持有观察。",
+    "market_breadth": 1541,
+    "threshold": 2000,
+    "new_position_allowed": false
+  },
+  "holdings_review": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "gates": {
+        "gate1_breadth": {
+          "pass": false,
+          "detail": "涨跌1541<2000"
+        },
+        "gate2_count": {
+          "pass": true,
+          "detail": "持仓3只≤4"
+        },
+        "gate3_fundamental": {
+          "pass": true,
+          "detail": "PE25.5合理·中报净利+1025%·产能利用率165%"
+        },
+        "gate4_technical": {
+          "pass": false,
+          "detail": "跌破MA20·三连阴·距止损55.5仅1.3%"
+        },
+        "gate5_sector": {
+          "pass": false,
+          "detail": "储能板块跟随大盘走弱"
+        },
+        "gate6_news": {
+          "pass": true,
+          "detail": "储能需求旺盛·无重大利空"
+        },
+        "gate7_valuation": {
+          "pass": true,
+          "detail": "PE25.5合理偏低"
+        }
+      },
+      "verdict": "⚠️持有·距止损仅1.3%·密切关注55.5止损线",
+      "score": "4/7"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "gates": {
+        "gate1_breadth": {
+          "pass": false,
+          "detail": "涨跌1541<2000"
+        },
+        "gate2_count": {
+          "pass": true,
+          "detail": "持仓3只≤4"
+        },
+        "gate3_fundamental": {
+          "pass": true,
+          "detail": "PE44.7·中报净利+1275%·定增50亿加码智算"
+        },
+        "gate4_technical": {
+          "pass": true,
+          "detail": "低开高走逆势+1.26%·站上MA20·主力净流入6743万"
+        },
+        "gate5_sector": {
+          "pass": true,
+          "detail": "算力租赁逆势走强·协创+2.97%共振"
+        },
+        "gate6_news": {
+          "pass": true,
+          "detail": "英伟达财报超预期利好算力链"
+        },
+        "gate7_valuation": {
+          "pass": false,
+          "detail": "PE44.7偏高·但成长性极强"
+        }
+      },
+      "verdict": "🟢持有·唯一逆势翻红·主力流入·算力线最强标的",
+      "score": "5/7"
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "gates": {
+        "gate1_breadth": {
+          "pass": false,
+          "detail": "涨跌1541<2000"
+        },
+        "gate2_count": {
+          "pass": true,
+          "detail": "持仓3只≤4"
+        },
+        "gate3_fundamental": {
+          "pass": true,
+          "detail": "中报净利+109%·光模块芯片翻倍增长·141家机构调研"
+        },
+        "gate4_technical": {
+          "pass": false,
+          "detail": "跌破MA20·距止损108仅2.5%·换手仅1.5%"
+        },
+        "gate5_sector": {
+          "pass": false,
+          "detail": "模拟芯片/半导体板块普跌"
+        },
+        "gate6_news": {
+          "pass": true,
+          "detail": "港股上市推进中·无重大利空"
+        },
+        "gate7_valuation": {
+          "pass": false,
+          "detail": "PE99偏高"
+        }
+      },
+      "verdict": "⚠️持有·距止损仅2.5%·半导体板块弱势·密切关注108止损",
+      "score": "3/7"
+    }
+  ],
+  "new_candidates": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "score": "4/7",
+      "verdict": "🔴禁开·涨跌<2000·但AI算力逆势走强·近87.14阻力"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "score": "5/7",
+      "verdict": "🔴禁开·涨跌<2000·但算力租赁领涨·近269.11阻力"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "score": "3/7",
+      "verdict": "🔴禁开·涨跌<2000·IDC相对抗跌"
+    }
+  ]
+}
