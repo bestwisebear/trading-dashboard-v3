@@ -1,84 +1,62 @@
 {
   "meta": {
-    "last_updated": "2026-08-31T16:15:00+08:00",
-    "date": "2026-08-31"
+    "last_updated": "2026-09-03T16:53:42+08:00",
+    "date": "2026-09-03"
   },
   "indices": {
     "sh000001": {
-      "name": "上证指数",
-      "close": 3986.3,
-      "change_pct": 0.86,
-      "pre_close": 3952.18
+      "close": 3942.09,
+      "change_pct": 0.02
     },
     "sz399001": {
-      "name": "深证成指",
-      "close": 14015.0,
-      "change_pct": 0.44,
-      "pre_close": 13953.07
+      "close": 13625.12,
+      "change_pct": 0.1
     },
     "sz399006": {
-      "name": "创业板指",
-      "close": 3438.68,
-      "change_pct": 0.42,
-      "pre_close": 3424.4
+      "close": 3312.54,
+      "change_pct": 0.01
     }
   },
-  "breadth": {
-    "rise_count": 3181,
-    "fall_count": 2218,
-    "turnover_comment": "成交2.13万亿，较上日放量293亿，仍处高位"
+  "market_stats": {
+    "up_count": 1846,
+    "down_count": 3570,
+    "up_limit": 46,
+    "down_limit": 16,
+    "volume": "1.76万亿",
+    "main_net_flow": "-105亿"
   },
-  "bottom_signals": {
-    "ratio": "3/5",
-    "recommendation": "接近底部·传媒AI情绪回暖·APEX解除后观察"
-  },
-  "hot_sectors": [
+  "top_sectors": [
     {
-      "name": "数字媒体",
-      "change_pct": 7.19,
-      "lead": "芒果超媒(+20.00%)"
+      "name": "航运港口",
+      "change_pct": 2.99
     },
     {
-      "name": "影视院线",
-      "change_pct": 7.02,
-      "lead": "华策影视(+15.77%)"
+      "name": "其他电源设备Ⅱ",
+      "change_pct": 2.74
     },
     {
-      "name": "出版",
-      "change_pct": 5.26,
-      "lead": "中文在线(+20.02%)"
+      "name": "保险Ⅱ",
+      "change_pct": 2.58
     },
     {
-      "name": "电视广播",
-      "change_pct": 3.85,
-      "lead": "海看股份(+19.99%)"
-    },
-    {
-      "name": "广告营销",
-      "change_pct": 3.32,
-      "lead": "易点天下(+7.28%)"
-    }
-  ],
-  "cold_sectors": [
-    {
-      "name": "饰品",
-      "change_pct": -4.27
+      "name": "电机Ⅱ",
+      "change_pct": 2.45
     },
     {
       "name": "贵金属",
-      "change_pct": -3.65
-    },
-    {
-      "name": "渔业",
-      "change_pct": -2.15
-    },
-    {
-      "name": "农产品加工",
-      "change_pct": -1.98
-    },
-    {
-      "name": "中药",
-      "change_pct": -1.82
+      "change_pct": 2.18
     }
-  ]
+  ],
+  "bottom_signals": {
+    "satisfied_count": 1,
+    "total_count": 5,
+    "recommendation": "观望"
+  },
+  "news_sentiment": "中性偏空",
+  "latest_files": {
+    "market_signals": "data/market_signals.json",
+    "bottom_signals": "data/bottom_signals.json",
+    "news_impact": "data/news_impact.json",
+    "market_environment": "data/market_environment.json"
+  }
 }
