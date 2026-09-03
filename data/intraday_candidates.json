@@ -1,92 +1,142 @@
 {
   "meta": {
-    "last_updated": "2026-09-02T11:06:00+08:00",
-    "date": "2026-09-02",
-    "session": "intraday_1106",
-    "source": "搜狐证券/东方财富/中财网/上证所·11:00实时",
-    "stage": "四段式防追高·第二步·11:00备选确认"
+    "last_updated": "2026-09-03T11:06:00+08:00",
+    "date": "2026-09-03",
+    "session": "confirm_1100",
+    "note": "9/3 11:00下午新仓第一轮确认·市场高开低走·博通/HPE/Snowflake财报已出·持仓风险预警"
   },
-  "market_snapshot": {
-    "timestamp": "2026-09-02 11:00",
-    "sh_index": 3935.91,
-    "sh_change_pct": -1.11,
-    "sz_index": 13575.22,
-    "sz_change_pct": -2.14,
-    "cyb_index": 3301.4,
-    "cyb_change_pct": -2.71,
-    "kc50": 1611.99,
-    "kc50_change_pct": -2.16,
-    "advancing": "<500(估算)",
-    "declining": "~4700",
-    "limit_up": "待确认",
-    "limit_down": "待确认",
-    "volume_half_day": "约10544亿(10:52)",
-    "note": "全市场下跌近4700只·科技/半导体/光模块全线重挫·煤炭/军工/PCB逆势"
+  "market_at_1100": {
+    "shanghai_index": 3960.37,
+    "shanghai_change_pct": 0.48,
+    "shenzhen_index": 13649.92,
+    "shenzhen_change_pct": 0.28,
+    "chiNext_index": 3321.62,
+    "chiNext_change_pct": 0.28,
+    "opening_breadth_up": 3426,
+    "opening_breadth_down": 1324,
+    "breadth_note": "开盘3426涨/1324跌·但10:26微博称个股普跌·涨跌比可能已恶化至2000以下·需13:15二次确认",
+    "volume_10am": "5834亿(较上日同期缩量11.12%)",
+    "sentiment": "高开低走·指数涨个股跌·金融权重护盘·题材分化"
   },
-  "seven_gate_check": {
-    "breadth": {
-      "passed": false,
-      "detail": "🚨上涨家数远<2000(约500只)·直接禁开新仓"
+  "overnight_earnings": {
+    "broadcom": {
+      "result": "Q3营收295.91亿(+86%)超预期·AI收入167亿(+221%)",
+      "guidance": "Q4指引348亿略低于预期·CEO上调FY26 AI指引至580亿·2028年AI达2300亿",
+      "after_hours": "盘后先跌6%后反弹·CEO电话会力挽狂澜·最终跌约1%",
+      "impact": "对AI算力链偏利好·但Q4指引略低有短期压力"
     },
-    "valuation": {
-      "passed": false,
-      "detail": "无需评估·广度已否决"
+    "hpe": {
+      "result": "Q3营收122亿(+34%)超预期·EPS 1.11远超预期0.93",
+      "guidance": "上调FY26营收增长至34-37%·但管理层警告供应限制(内存/NAND/CPU/硬盘)",
+      "after_hours": "盘后跌5%·利好兑现+供应担忧",
+      "impact": "中性偏空·AI服务器需求强劲但供应瓶颈制约"
     },
-    "capital": {
-      "passed": false,
-      "detail": "无需评估"
-    },
-    "trend": {
-      "passed": false,
-      "detail": "无需评估"
-    },
-    "turnover": {
-      "passed": false,
-      "detail": "无需评估"
-    },
-    "momentum": {
-      "passed": false,
-      "detail": "无需评估"
-    },
-    "sector": {
-      "passed": false,
-      "detail": "无需评估"
+    "snowflake": {
+      "result": "Q2营收15.5亿(+35%)超预期·EPS 0.62远超预期0.45",
+      "guidance": "上调FY27产品收入至60.7亿(vs预期58.6亿)·AI收入显著跃升",
+      "after_hours": "盘后暴涨22%·AI商业化落地获验证",
+      "impact": "利好数据/AI软件赛道·但A股映射有限"
     }
   },
-  "verdict": "🚨下午无新仓备选",
-  "verdict_reason": [
-    "涨跌家数触发禁开新仓红线(上涨<2000,实际约500只)",
-    "科技板块全线重挫:光模块新易盛-5.6%/天孚-5.1%/中际-4.7%",
-    "半导体板块通富微电-4.93%/三环-5.03%/东山-4.7%",
-    "外围利空:美债4.80%+油价暴涨5.7%+日经期货跌2%+9月加息概率69%",
-    "持仓利通已破止损+鹏辉/圣邦逼近止损·优先处理持仓风险"
+  "holdings_risk_alert": {
+    "critical": [
+      {
+        "code": "603629",
+        "name": "利通电子",
+        "real_time": 111.75,
+        "change_pct": -2.83,
+        "stop_loss": 112.5,
+        "status": "🔴已跌破止损!",
+        "action": "需立即评估是否执行止损"
+      }
+    ],
+    "warning": [
+      {
+        "code": "300438",
+        "name": "鹏辉能源",
+        "real_time": 56.28,
+        "change_pct": 0.14,
+        "stop_loss": 55.5,
+        "distance_to_stop_pct": 1.4,
+        "status": "🟡距止损仅1.4%"
+      },
+      {
+        "code": "300661",
+        "name": "圣邦股份",
+        "real_time": 110.03,
+        "change_pct": -0.63,
+        "stop_loss": 108.0,
+        "distance_to_stop_pct": 1.9,
+        "status": "🟡距止损仅1.9%"
+      }
+    ]
+  },
+  "candidates_screening": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "source": "前一日晚计划+关注池A级(score 4)",
+      "real_time": 89.69,
+      "prev_close": 85.69,
+      "change_pct": 4.67,
+      "support": 75.1,
+      "resistance": 87.14,
+      "verdict": "🔴剔除·当日涨幅+4.67%过大·已突破阻力87.14·严重防追高违规",
+      "gate_score": "5/7(13/21)",
+      "note": "博通财报利好催化·但开盘即高开至87.87·追高风险极大"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "source": "前一日晚计划+关注池A级(score 4)",
+      "real_time": 264.12,
+      "prev_close": 262.05,
+      "change_pct": 0.79,
+      "support": 241.4,
+      "resistance": 269.11,
+      "absolute_max_buy": 262.0,
+      "verdict": "🔴剔除·实时价264.12超过绝对最高买入价262·防追高",
+      "gate_score": "4/7(11/21)",
+      "note": "涨幅仅0.79%但已超绝对最高买入价·距阻力269仅1.9%·即使回调也需等13:15确认"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "source": "前一日晚计划+关注池(score 3)",
+      "real_time": 64.08,
+      "prev_close": 64.41,
+      "change_pct": -0.31,
+      "support": 60.0,
+      "support_short": "63.5-63.8",
+      "resistance": 65.2,
+      "resistance_far": 72.0,
+      "absolute_max_buy": 65.0,
+      "buy_range": "63.5-64.5",
+      "stop_loss": 63.3,
+      "sector_strength": "IDC中性偏弱·换手仅0.36%·缩量洗盘",
+      "gate_score": "3/7(9/21)",
+      "verdict": "🟡可备选(仅1只)·需13:15二次确认",
+      "confirm_1315": [
+        "①涨跌家数>2000(当前存疑)",
+        "②股价不破63.5短期支撑",
+        "③算力板块止跌企稳",
+        "④成交额不继续缩量"
+      ],
+      "invalid_conditions": [
+        "①涨跌家数<2000",
+        "②跌破63.3关键生命线",
+        "③大盘转弱(创业板翻绿)",
+        "④板块资金持续流出"
+      ]
+    }
   ],
-  "candidates": [],
-  "holdings_status": {
-    "300438_鹏辉能源": {
-      "cost": 60.493,
-      "current": 55.96,
-      "change_pct": -2.85,
-      "stop_loss": 57.0,
-      "distance_to_stop": "已跌破(55.96<57.00)",
-      "alert": "🚨P0·已跌破57止损·持仓800@60.493·浮亏约-7.5%"
-    },
-    "603629_利通电子": {
-      "cost": 120.968,
-      "current": 111.18,
-      "change_pct": -2.11,
-      "stop_loss": 117.0,
-      "distance_to_stop": "已跌破(111.18<117.00)",
-      "alert": "🚨P0·连续两日破117止损·9/1收113.58(-7.02%)·今日继续下跌·持仓300@120.968·浮亏约-8.1%"
-    },
-    "300661_圣邦股份": {
-      "cost": 114.9,
-      "current": 109.15,
-      "change_pct": -3.05,
-      "stop_loss": 108.0,
-      "distance_to_stop": "1.07%(109.15→108.00)",
-      "alert": "🔴逼近108止损·距止损仅1.1%·持仓200@114.9·浮亏约-5.0%"
-    }
-  },
-  "next_action": "13:00-13:30持仓止损决策·利通/鹏辉已破止损·圣邦逼近止损·下午无新仓·13:15无需确认"
+  "conclusion": {
+    "verdict": "下午新仓备选仅1只·且需13:15二次确认",
+    "candidates_count": 1,
+    "candidate": "润泽科技(300442)",
+    "eliminated": "浪潮信息(涨幅过大+突破阻力)·协创数据(超绝对最高买入价)",
+    "primary_risk": "利通电子已跌破止损112.50! 需立即处理!",
+    "secondary_risk": "圣邦/鹏辉距止损极近·市场高开低走·涨跌家数可能不足2000",
+    "overall": "🟡谨慎·优先处理持仓风险(利通电子止损)·新仓仅润泽科技1只备选·13:15前禁下单"
+  }
 }
