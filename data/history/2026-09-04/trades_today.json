@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "last_updated": "2026-09-04T11:32:00+08:00",
+    "data_date": "2026-09-04",
+    "session": "intraday_1132",
+    "note": "9/4午间·零交易"
+  },
+  "summary": {
+    "trade_count": 0,
+    "buy_count": 0,
+    "sell_count": 0,
+    "violation_count": 0,
+    "total_trades": 0,
+    "realized_pnl": 0.0,
+    "note": "午间无交易"
+  },
+  "trades": []
+}

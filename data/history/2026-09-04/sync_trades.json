@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "last_updated": "2026-09-03T16:53:42+08:00",
+    "date": "2026-09-03",
+    "source": "trades_all.json"
+  },
+  "today_trades": 0,
+  "today_violations": 0,
+  "total_trades": 67,
+  "total_violations": 27,
+  "total_realized_pnl": 23013.5
+}

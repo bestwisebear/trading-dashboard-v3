@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "last_updated": "2026-09-03T16:53:42+08:00",
+    "date": "2026-09-03"
+  },
+  "indices": {
+    "sh000001": {
+      "close": 3942.09,
+      "change_pct": 0.02
+    },
+    "sz399001": {
+      "close": 13625.12,
+      "change_pct": 0.1
+    },
+    "sz399006": {
+      "close": 3312.54,
+      "change_pct": 0.01
+    }
+  },
+  "market_stats": {
+    "up_count": 1846,
+    "down_count": 3570,
+    "up_limit": 46,
+    "down_limit": 16,
+    "volume": "1.76万亿",
+    "main_net_flow": "-105亿"
+  },
+  "top_sectors": [
+    {
+      "name": "航运港口",
+      "change_pct": 2.99
+    },
+    {
+      "name": "其他电源设备Ⅱ",
+      "change_pct": 2.74
+    },
+    {
+      "name": "保险Ⅱ",
+      "change_pct": 2.58
+    },
+    {
+      "name": "电机Ⅱ",
+      "change_pct": 2.45
+    },
+    {
+      "name": "贵金属",
+      "change_pct": 2.18
+    }
+  ],
+  "bottom_signals": {
+    "satisfied_count": 1,
+    "total_count": 5,
+    "recommendation": "观望"
+  },
+  "news_sentiment": "中性偏空",
+  "latest_files": {
+    "market_signals": "data/market_signals.json",
+    "bottom_signals": "data/bottom_signals.json",
+    "news_impact": "data/news_impact.json",
+    "market_environment": "data/market_environment.json"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "session": "intraday_1100",
+    "date": "2026-09-04",
+    "generated_at": "2026-09-04T11:06:00+08:00",
+    "data_sources": {
+      "indices": "搜狐证券11:00快照",
+      "breadth": "腾讯快照10:07",
+      "volume": "证券时报10:49",
+      "individual_stocks": "搜狐/中财网/查股网10:27-11:04"
+    }
+  },
+  "market_snapshot": {
+    "indices": {
+      "shanghai": {"value": 3963.06, "change_pct": 0.53},
+      "shenzhen": {"value": 13696.07, "change_pct": 0.52},
+      "chinext": {"value": 3337.11, "change_pct": 0.74},
+      "star50": {"value": 1620.58, "change_pct": 0.58}
+    },
+    "breadth": {
+      "up": 4401,
+      "down": 803,
+      "flat": 80,
+      "up_down_ratio": "83:15",
+      "new_position_allowed": true
+    },
+    "volume": {
+      "status": "10:49突破1万亿",
+      "vs_previous": "开盘半小时放量超900亿",
+      "comment": "放量明显·资金活跃"
+    },
+    "sentiment": "大盘强但科技方向偏弱·板块轮动至传统蓝筹·非农前观望情绪"
+  },
+  "holding_status": {
+    "300438_penghui": {
+      "name": "鹏辉能源",
+      "current_price": "待确认",
+      "cost": 60.493,
+      "stop_loss": 55.5,
+      "note": "⚠️距止损极近·严密监控"
+    },
+    "603629_litong": {
+      "name": "利通电子",
+      "current_price": 112.37,
+      "change_pct": 0.68,
+      "cost": 120.968,
+      "stop_loss": 112.5,
+      "note": "🔴昨日收盘111.61已跌破止损112.5·今日反弹至112.37仍低于止损·必须执行止损"
+    },
+    "300661_shengbang": {
+      "name": "圣邦股份",
+      "current_price": 109.84,
+      "change_pct": 0.07,
+      "cost": 114.9,
+      "stop_loss": 108.0,
+      "note": "⚠️距止损108仅1.7%·半导体弱势"
+    }
+  },
+  "candidates_evaluated": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "source": "前一日晚计划名单",
+      "real_time_price": 80.00,
+      "prev_close": 86.35,
+      "change_pct": -7.35,
+      "support": 84.0,
+      "resistance": 90.0,
+      "verdict": "❌排除",
+      "reason": "暴跌-7.35%·当日跌幅过大·远离买入区间·疑似利空冲击"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "source": "前一日晚计划名单",
+      "real_time_price": 257.20,
+      "prev_close": 265.88,
+      "change_pct": -3.26,
+      "support": 258.0,
+      "resistance": 270.0,
+      "verdict": "❌排除",
+      "reason": "跌-3.26%·已跌破支撑258·大盘涨个股不跟·板块弱势"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "source": "前一日晚计划名单",
+      "real_time_price": 64.38,
+      "prev_close": 64.41,
+      "change_pct": -0.05,
+      "support": 60.0,
+      "resistance": 72.0,
+      "pe": 19.67,
+      "verdict": "❌排除",
+      "reason": "大盘涨4401家但润泽平盘·无方向·算力板块今日偏弱(液冷-0.58%)·非强势候选"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "source": "关注池A级(score=4)",
+      "real_time_price": 110.53,
+      "prev_close": 110.91,
+      "change_pct": -0.34,
+      "support": 108.0,
+      "resistance": 115.0,
+      "pe": 68.12,
+      "verdict": "❌排除",
+      "reason": "高开低走(113.51→110.53)·利好兑现出货迹象·MLCC板块整体下跌·非前一日晚计划锁定标的"
+    },
+    {
+      "code": "300458",
+      "name": "全志科技",
+      "source": "关注池(score=3)",
+      "real_time_price": 38.16,
+      "prev_close": 40.59,
+      "change_pct": -5.99,
+      "support": null,
+      "resistance": null,
+      "verdict": "❌排除",
+      "reason": "暴跌-5.99%·当日跌幅过大·半导体整体弱势"
+    }
+  ],
+  "conclusion": {
+    "new_position": "❌下午无新仓备选",
+    "reason": "虽然涨跌家数4401>2000满足开仓条件，但前一日晚计划锁定的3只候选（浪潮信息-7.35%/协创数据-3.26%/润泽科技-0.05%）全部表现不佳。科技/算力方向今日逆势走弱，液冷服务器-0.58%在跌幅榜。属于'大盘强但个股不跟'的假强格局。叠加今晚非农重大不确定性，不提供新仓备选。",
+    "priority": "🔴优先处理持仓风控：①利通电子112.37仍低于止损112.5，必须执行止损 ②鹏辉能源距止损极近 ③圣邦股份距止损1.7%",
+    "next_check": "13:15进行最终限价锁定确认"
+  }
+}
