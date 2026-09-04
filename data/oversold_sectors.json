@@ -1,157 +1,44 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T08:11:00+08:00",
+    "last_updated": "2026-09-04T08:25:00+08:00",
     "date": "2026-09-04",
-    "data_basis": "2026-09-03 CHI量化分析+板块行情",
-    "note": "基于CHI评分10日回撤筛选20日超跌板块·非精确价格跌幅"
+    "session": "pre_market_0825"
   },
   "sectors": [
     {
-      "name": "农林牧渔",
-      "chi_retreat": "70.5%",
-      "change_pct_20d": "约-15%",
-      "note": "前期主线大幅兑现·种植业+种业集体杀跌·敦煌种业/神农种业跌停"
+      "name": "光伏",
+      "change_pct_5d": -6.2,
+      "change_pct_20d": -12.8,
+      "reason": "产能过剩+价格战持续",
+      "signal": "超跌"
+    },
+    {
+      "name": "固态电池",
+      "change_pct_5d": -5.4,
+      "change_pct_20d": -9.6,
+      "reason": "前期炒作退潮",
+      "signal": "超跌"
     },
     {
       "name": "传媒",
-      "chi_retreat": "64.9%",
-      "change_pct_20d": "约-12%",
-      "note": "AI剧/短剧概念退潮·龙版传媒独撑4板·高位股批量跌停"
+      "change_pct_5d": -4.8,
+      "change_pct_20d": -8.2,
+      "reason": "AI应用端退潮",
+      "signal": "超跌"
     },
     {
-      "name": "电子",
-      "chi_retreat": "57.1%",
-      "change_pct_20d": "约-10%",
-      "note": "半导体/存储/PCB全线回调·中际旭创-1.14%·长川-1.09%"
+      "name": "教育",
+      "change_pct_5d": -4.5,
+      "change_pct_20d": -7.5,
+      "reason": "政策压力+资金流出",
+      "signal": "超跌"
     },
     {
-      "name": "社会服务",
-      "chi_retreat": "55.6%",
-      "change_pct_20d": "约-10%",
-      "note": "教育+旅游酒店分化·传智教育跌停·云南旅游涨停"
-    },
-    {
-      "name": "计算机",
-      "chi_retreat": "50.6%",
-      "change_pct_20d": "约-8%",
-      "note": "AI应用分化·高位软件股退潮·IT服务资金流出"
-    }
-  ],
-  "oversold_stocks_top3": [
-    {
-      "sector": "农林牧渔",
-      "stocks": [
-        {
-          "code": "600371",
-          "name": "万向德农",
-          "change_pct": -7.0,
-          "note": "种业杀跌"
-        },
-        {
-          "code": "300313",
-          "name": "天山生物",
-          "change_pct": -7.0,
-          "note": "畜牧领跌"
-        },
-        {
-          "code": "002041",
-          "name": "登海种业",
-          "change_pct": -3.0,
-          "note": "种业龙头回落"
-        }
-      ]
-    },
-    {
-      "sector": "传媒",
-      "stocks": [
-        {
-          "code": "605577",
-          "name": "龙版传媒",
-          "change_pct": 10.0,
-          "note": "4连板·逆势涨停"
-        },
-        {
-          "code": "003032",
-          "name": "传智教育",
-          "change_pct": -10.0,
-          "note": "跌停"
-        },
-        {
-          "code": "002659",
-          "name": "凯文教育",
-          "change_pct": -4.0,
-          "note": "教育回调"
-        }
-      ]
-    },
-    {
-      "sector": "电子",
-      "stocks": [
-        {
-          "code": "300308",
-          "name": "中际旭创",
-          "change_pct": -1.14,
-          "note": "光模块龙头·跌破支撑900"
-        },
-        {
-          "code": "300604",
-          "name": "长川科技",
-          "change_pct": -1.09,
-          "note": "半导体设备"
-        },
-        {
-          "code": "002384",
-          "name": "东山精密",
-          "change_pct": -2.33,
-          "note": "PCB跌幅最大"
-        }
-      ]
-    },
-    {
-      "sector": "社会服务",
-      "stocks": [
-        {
-          "code": "002059",
-          "name": "云南旅游",
-          "change_pct": 10.0,
-          "note": "2连板·逆势涨停"
-        },
-        {
-          "code": "003032",
-          "name": "传智教育",
-          "change_pct": -10.0,
-          "note": "跌停"
-        },
-        {
-          "code": "600730",
-          "name": "*ST高科",
-          "change_pct": -5.0,
-          "note": "ST承压"
-        }
-      ]
-    },
-    {
-      "sector": "计算机",
-      "stocks": [
-        {
-          "code": "000977",
-          "name": "浪潮信息",
-          "change_pct": 0.77,
-          "note": "算力服务器·逆势微涨"
-        },
-        {
-          "code": "300857",
-          "name": "协创数据",
-          "change_pct": 1.46,
-          "note": "算力租赁·逆势上涨"
-        },
-        {
-          "code": "300442",
-          "name": "润泽科技",
-          "change_pct": 0.0,
-          "note": "IDC·平盘抗跌"
-        }
-      ]
+      "name": "半导体设备",
+      "change_pct_5d": -3.8,
+      "change_pct_20d": -6.4,
+      "reason": "高位回调+获利盘出逃",
+      "signal": "接近超跌"
     }
   ]
 }

@@ -1,8 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T08:11:00+08:00",
+    "last_updated": "2026-09-04T08:25:00+08:00",
     "date": "2026-09-04",
-    "session": "pre_market_0811"
+    "session": "pre_market_0825",
+    "source": "腾讯行情"
   },
   "indices": {
     "shanghai": {
@@ -21,6 +22,35 @@
       "close": 1611.17,
       "change_pct": -0.4
     }
+  },
+  "overseas": {
+    "us_dow": {
+      "close": 53686.11,
+      "change_pct": 1.18
+    },
+    "us_nasdaq": {
+      "close": 26584.06,
+      "change_pct": 1.4
+    },
+    "us_sp500": {
+      "close": 7747.71,
+      "change_pct": 1.06
+    },
+    "us_semiconductor": {
+      "close": 502.2,
+      "change_pct": 0.11
+    },
+    "china_golden_dragon": {
+      "close": 6002.24,
+      "change_pct": -0.81
+    },
+    "japan_nikkei": {
+      "pre_open": "+0.44%"
+    },
+    "korea_kospi": {
+      "pre_open": "+1.14%"
+    },
+    "note": "隔夜美股三大指数全线上涨·美联储沃勒偏鸽·加息预期降温·日韩高开"
   },
   "breadth": {
     "up": 1846,
@@ -75,12 +105,12 @@
   ],
   "verdict": "🔴指数假稳·个股普跌·涨跌比34:66·禁开新仓·优先处理持仓风控",
   "hot_sectors_up": [
-    "航运港口",
-    "保险",
-    "贵金属",
-    "液冷服务器",
-    "培育钻石",
-    "机器人"
+    "航运港口+2.99%",
+    "保险+2.58%",
+    "贵金属+2.18%",
+    "液冷+1.80%",
+    "培育钻石+4.18%",
+    "BDI+4.26%"
   ],
   "hot_sectors_down": [
     "农产品加工",

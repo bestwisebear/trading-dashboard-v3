@@ -1,45 +1,46 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T16:53:42+08:00",
+    "last_updated": "2026-09-04T08:25:00+08:00",
     "data_date": "2026-09-03",
     "session": "close_1653",
-    "source": "腾讯行情+财联社·午间收盘",
+    "source": "腾讯行情+财联社",
     "date": "2026-09-03"
   },
   "breadth": {
-    "up_count": 1600,
-    "down_count": 3200,
-    "up_pct": 33.3,
-    "limit_up": 50,
-    "limit_down": 5,
-    "note": "涨跌比约1:2·新仓禁开(涨跌家数<2000)"
+    "up_count": 1846,
+    "down_count": 3570,
+    "up_pct": 34.0,
+    "limit_up": 46,
+    "limit_down": 16,
+    "note": "涨跌比约34:66·新仓禁开(涨跌家数<2000)"
   },
   "signals": {
-    "volume_signal": "缩量·预计1.66万亿(昨1.79万亿)",
-    "breadth_signal": "🔴偏空·涨跌家数1600/3200<2000禁开新仓",
-    "index_signal": "🟡指数虚假强势·大金融权重股拉抬",
-    "sector_signal": "🟡大金融领涨·科技方向偏弱",
-    "fund_flow_signal": "🟡主力流入大金融·科技方向流出",
-    "overall_signal": "🔴谨慎偏空·指数红但个股跌多涨少"
+    "volume_signal": "缩量·1.76万亿(昨1.79万亿)·连续2日低于2万亿",
+    "breadth_signal": "🔴偏空·涨跌家数1846/3570<2000禁开新仓",
+    "index_signal": "🟡指数虚假强势·大金融权重股拉抬·科创50逆跌-0.4%",
+    "sector_signal": "🟡航运港口/保险/贵金属领涨·科技方向偏弱·光模块三剑客集体走弱",
+    "fund_flow_signal": "🟡主力净流出476亿·工业金属/保险/证券小幅流入·通信设备/传媒/IT服务流出",
+    "overseas_signal": "🟢隔夜美股大涨·道指+1.18%纳指+1.40%·美联储沃勒偏鸽·加息预期降温",
+    "overall_signal": "🟡谨慎偏多·美股大涨提振·但A股内部退潮未止·非农前观望情绪浓"
   },
   "trading_rules": {
     "new_position": "❌禁止·涨跌家数<2000",
     "add_position": "❌禁止",
-    "reduce_position": "✅可考虑",
-    "stop_loss": "⚠️利通已跌破止损·鹏辉/圣邦逼近"
+    "reduce_position": "✅可考虑·利通已跌破止损必须执行",
+    "stop_loss": "🔴利通电子111.61已跌破止损112.5·开盘必须执行止损·鹏辉/圣邦逼近止损"
   },
   "key_events": {
-    "today": "博通/HPE/Snowflake财报(盘后)",
-    "this_week": "9/4非农·美伊冲突·油价90+",
+    "today": "今晚美国非农就业数据·医保国谈明日启动·APEC中小企业部长会议",
+    "this_week": "9/4非农·美伊冲突·油价95+",
     "next_week": "9/11 CPI·9/16 FOMC"
   },
   "aggregate": {
     "green_count": 1,
-    "yellow_count": 3,
-    "red_count": 3,
-    "total_score": 45,
+    "yellow_count": 4,
+    "red_count": 2,
+    "total_score": 48,
     "max_score": 100,
     "no_open_position": true,
-    "market_comment": "指数虚红但个股普跌3500+，缩量1.76万亿，主力净流出105亿，非农前谨慎。禁开新仓。"
+    "market_comment": "隔夜美股大涨+1.4%提振情绪·但A股内部退潮未止·涨跌比34:66·非农前观望·禁开新仓·优先执行利通止损"
   }
 }

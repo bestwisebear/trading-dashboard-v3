@@ -1,80 +1,57 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T16:53:42+08:00",
-    "date": "2026-09-03",
-    "session": "close_1653",
-    "data_as_of": "2026-09-03收盘",
-    "note": "9/3收盘底部信号1/5。指数微红但个股普跌超3500只，成交缩量至1.76万亿。继续观望。"
+    "last_updated": "2026-09-04T08:25:00+08:00",
+    "date": "2026-09-04",
+    "session": "pre_market_0825"
   },
-  "signals": [
-    {
-      "id": 1,
-      "name": "缩量止跌",
-      "condition": "成交额≤1.5万亿",
-      "today_value": "1.76万亿",
-      "satisfied": false,
-      "detail": "成交17600亿，仍远超1.5万亿阈值。连续4日缩量但仍在高位。❌不满足"
-    },
-    {
-      "id": 2,
-      "name": "跌停减少",
-      "condition": "跌停<30家",
-      "today_value": "跌停16家",
-      "satisfied": true,
-      "detail": "涨停46/跌停16。恐慌性跌停可控。✅满足"
-    },
-    {
-      "id": 3,
-      "name": "涨跌恢复",
-      "condition": "上涨>3000家",
-      "today_value": "1846上涨/3570下跌",
-      "satisfied": false,
-      "detail": "仅1846只上涨，超3500只下跌，赚钱效应极差。❌不满足"
-    },
-    {
-      "id": 4,
-      "name": "连续止跌",
-      "condition": "2天不创新低",
-      "today_value": "三大指数均微涨未创新低(第1天)",
-      "satisfied": false,
-      "detail": "上证3942>前3941·深成13625>前13611·创业板3313>前3312。今日未创新低，但需连续2天。❌不满足(第1天)"
-    },
-    {
-      "id": 5,
-      "name": "北向流入",
-      "condition": "连续2-3日净流入>50亿",
-      "today_value": "主力净流出105亿·北向未确认",
-      "satisfied": false,
-      "detail": "主力资金全天净流出约105亿，小单逆势流入165亿。外资流出压力持续。❌不满足"
-    }
-  ],
-  "summary": "底部信号1/5，不满足抄底条件。指数虚红但个股普跌，缩量格局未改。建议等待至少3/5信号满足后再考虑加仓。",
+  "signals": {
+    "volume_capitulation": false,
+    "breadth_extreme": false,
+    "vix_spike": false,
+    "sentiment_panic": false,
+    "note": "底部信号未触发·退潮中但未到恐慌极值·缩量但未到地量(1.5万亿以下)·等待退潮衰竭信号"
+  },
+  "bottom_proximity": "远·退潮第2天·一般退潮周期5-7天·预计下周后半段可能见底",
   "aggregate": {
-    "satisfied_count": 1,
-    "total_count": 5,
-    "ratio": 0.2,
-    "verdict": "底部信号不足(1/5)，继续观望，不抄底",
-    "recommendation": "观望",
-    "recommendation_detail": "仅跌停减少1项满足。缩量止跌/涨跌恢复/连续止跌/北向流入均不满足。指数虚红但个股普跌超3500只，缩量1.76万亿。建议等待至少3/5信号满足后再考虑加仓。"
+    "ratio": "0/5",
+    "recommendation": "继续等待",
+    "recommendation_detail": "退潮第2天·底部信号未触发·缩量但未到地量(1.5万亿以下)·预计下周后半段可能见底"
   },
   "history_7d": [
     {
-      "date": "2026-09-03",
-      "satisfied_count": 1,
-      "count": 5,
-      "note": "9/3收盘"
+      "date": "2026-08-28",
+      "satisfied_count": 0,
+      "count": 5
     },
     {
-      "date": "2026-09-02",
-      "satisfied_count": 1,
-      "count": 5,
-      "note": "9/2收盘"
+      "date": "2026-08-29",
+      "satisfied_count": 0,
+      "count": 5
+    },
+    {
+      "date": "2026-08-31",
+      "satisfied_count": 0,
+      "count": 5
     },
     {
       "date": "2026-09-01",
-      "satisfied_count": 2,
-      "count": 5,
-      "note": "9/1盘前"
+      "satisfied_count": 0,
+      "count": 5
+    },
+    {
+      "date": "2026-09-02",
+      "satisfied_count": 0,
+      "count": 5
+    },
+    {
+      "date": "2026-09-03",
+      "satisfied_count": 0,
+      "count": 5
+    },
+    {
+      "date": "2026-09-04",
+      "satisfied_count": 0,
+      "count": 5
     }
   ]
 }
