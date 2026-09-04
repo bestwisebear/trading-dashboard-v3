@@ -1,108 +1,131 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T13:17:00+08:00",
-    "date": "2026-09-03",
-    "session": "final_confirm_1315",
-    "note": "9/3 13:15最终确认新仓标的·7道闸全量复核·结论：今日取消新仓"
+    "session": "midday_1317",
+    "date": "2026-09-04",
+    "generated_at": "2026-09-04T13:17:00+08:00",
+    "basis": "13:10后腾讯行情+午间消息全量扫描+11:00候选评估"
   },
-  "market_at_1315": {
-    "shanghai_index": 3958.19,
-    "shanghai_change_pct": 0.43,
-    "shenzhen_index": 13664.14,
-    "shenzhen_change_pct": 0.39,
-    "chiNext_index": 3326.42,
-    "chiNext_change_pct": 0.43,
-    "advancing": 2178,
-    "declining": 3168,
-    "breadth_note": "2178涨/3168跌·指数虚假强势(红盘但个股普跌)·赚钱效应仅40.7%",
-    "volume_half_day": "1.11万亿(缩量1168亿)",
-    "sentiment": "高开震荡·金融权重护盘·题材分化·高位股退潮"
+  "market_snapshot_1310": {
+    "shanghai": 3955.85,
+    "change_pct": 0.35,
+    "breadth": {
+      "up": 4100,
+      "down": 900,
+      "note": "涨多跌少但高开低走"
+    },
+    "volume": "半日1.23万亿·放量1355亿",
+    "sentiment": "高开低走·科技逆势走弱·「软强硬弱」·资金轮动至消费防御"
   },
-  "gates_check": {
+  "seven_gate_check": {
     "gate1_breadth": {
-      "result": "PASS",
-      "detail": "涨跌家数2178>2000，闸门通过",
-      "score": "3/3"
+      "condition": "涨跌家数>2000",
+      "value": "4100+",
+      "pass": true
     },
-    "gate2_systemic_risk": {
-      "result": "PASS",
-      "detail": "指数+0.43%不算系统性杀跌，但属虚假强势(权重护盘个股跌)",
-      "score": "2/3"
+    "gate2_plan_locked": {
+      "condition": "前一日晚锁定标的",
+      "value": "浪潮信息/协创数据/润泽科技",
+      "pass": true,
+      "note": "3只已锁定"
     },
-    "gate3_sector_strength": {
-      "result": "WARNING",
-      "detail": "IDC/算力板块分化：液冷活跃(集泰4连板)但润泽自身缩量洗盘，板块涨跌互现，非真强",
-      "score": "1/3"
+    "gate3_1100_confirm": {
+      "condition": "11:00确认备选",
+      "value": "全部排除",
+      "pass": false,
+      "reason": "浪潮-7.35%/协创-3.26%/润泽-0.05%·三只全部表现不佳"
     },
-    "gate4_fundamental": {
-      "result": "PASS",
-      "detail": "润泽科技H1营收+50%，AIDC+126%首超IDC，ROE 8.3%，基本面扎实",
-      "score": "3/3"
+    "gate4_1315_price": {
+      "condition": "13:15限价锁定",
+      "value": "无备选可锁",
+      "pass": false
     },
-    "gate5_valuation": {
-      "result": "PASS",
-      "detail": "扣非PE约43倍，PEG 1.25，合理偏贵但可接受",
-      "score": "2/3"
+    "gate5_timing": {
+      "condition": "13:30-14:30执行",
+      "value": "N/A",
+      "pass": false
     },
-    "gate6_technical": {
-      "result": "WARNING",
-      "detail": "股价64.08在买入区间(63.5-64.5)下沿，距支撑63.5仅0.9%，距止损63.3仅1.2%，缩量洗盘，方向不明",
-      "score": "1/3"
+    "gate6_sector_strength": {
+      "condition": "板块真强",
+      "value": "科技板块假强",
+      "pass": false,
+      "reason": "大盘涨4100+但科技方向逆势走弱·半导体/电脑硬件/MLCC跌幅居前"
     },
-    "gate7_news": {
-      "result": "WARNING",
-      "detail": "利好：国金看好算力硬件+博通AI收入+221%+美股英伟达+3.21%。利空：Token成本腰斩利空纯算力模式+25家异动公告降温+非农前夕不确定性",
-      "score": "1/3"
-    },
-    "total_score": "13/21",
-    "pass_count": 4,
-    "warning_count": 3,
-    "threshold": "需7/7全过才可开仓，当前4/7未通过"
+    "gate7_risk_events": {
+      "condition": "无重大风险事件",
+      "value": "今晚非农",
+      "pass": false,
+      "reason": "今晚非农重大不确定性·全球资金观望"
+    }
   },
-  "candidate_final": {
-    "code": "300442",
-    "name": "润泽科技",
-    "verdict": "🔴取消新仓",
-    "reason": "7道闸仅4/7通过(Gate3/6/7警告)，不满足7/7全过条件。叠加：①利通电子已跌破止损需紧急处理②鹏辉/圣邦逼近止损③市场虚假强势④非农前夕⑤Token成本腰斩利空IDC/算力。按保收益优先规则，今日应优先处理持仓风险而非新开仓。",
-    "invalid_triggers": [
-      "Gate3: 板块非真强(算力分化)",
-      "Gate6: 技术面偏弱(缩量+靠近支撑)",
-      "Gate7: 消息面多空交织(Token成本腰斩)",
-      "利通电子跌破止损(优先级高于新仓)",
-      "非农前夕不确定性(9/4晚间公布)"
-    ]
-  },
-  "holdings_action": {
-    "priority": "P0 - 持仓风险处理优先于新仓",
-    "actions": [
+  "candidates_final": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "source": "前一日晚计划锁定",
+      "price_1310": 78.26,
+      "change_pct": -9.37,
+      "support": 75.0,
+      "verdict": "❌排除",
+      "reason": "暴跌-9.37%·当日跌幅远超正常范围·疑似利空冲击·远离任何买入区间"
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "source": "前一日晚计划锁定",
+      "price_1310": 258.38,
+      "change_pct": -2.82,
+      "support": 258.0,
+      "verdict": "❌排除",
+      "reason": "跌-2.82%·已跌破支撑258·大盘涨个股不跟·存储板块弱势"
+    },
+    {
+      "code": "300442",
+      "name": "润泽科技",
+      "source": "前一日晚计划锁定",
+      "price_1310": 63.96,
+      "change_pct": -0.7,
+      "support": 60.0,
+      "verdict": "❌排除",
+      "reason": "午后继续走弱至-0.70%·大盘涨但个股不跟·IDC板块无方向·非强势候选"
+    },
+    {
+      "code": "300408",
+      "name": "三环集团",
+      "source": "关注池A级(score=4)",
+      "price_1310": 109.63,
+      "change_pct": -1.15,
+      "support": 108.0,
+      "verdict": "❌排除",
+      "reason": "高开低走延续(115.32→109.63)·利好兑现出货·非前一日晚计划锁定·四段式流程禁止盘中新增"
+    }
+  ],
+  "conclusion": {
+    "new_position": "❌ 今日取消新仓",
+    "core_reason": "7道闸仅过2道(gate1+gate2)。前一日晚计划锁定3只候选全部表现不佳：浪潮信息暴跌-9.37%、协创数据-2.82%、润泽科技-0.70%。科技/算力方向逆势走弱，属于「大盘强个股不跟」的假强格局。叠加今晚非农重大不确定性，强行开仓风险极高。",
+    "priority": "🔴 优先处理持仓风控——三只全部警戒",
+    "holding_actions": [
       {
         "code": "603629",
         "name": "利通电子",
-        "action": "🔴立即止损",
-        "current_price": 112.45,
-        "stop_loss": 112.5,
-        "status": "已跌破止损",
-        "detail": "午间收盘112.45已跌破止损112.5，最低111.02。下午开盘需立即执行止损清仓300股。"
+        "price": 110.9,
+        "action": "🔴 必须止损",
+        "detail": "连续2日跌破止损112.5·当前110.90低于止损1.4%·下午13:30后立即执行止损卖出300股。成本120.97→预计亏损约-3024元。"
       },
       {
         "code": "300438",
         "name": "鹏辉能源",
-        "action": "🟡警戒观察",
-        "current_price": 55.83,
-        "stop_loss": 55.5,
-        "distance_to_stop": "0.6%",
-        "detail": "距止损仅0.33元。若下午开盘继续下滑跌破55.5立即止损。基本面利好(中邮证券买入评级)但技术面极弱。"
+        "price": 55.76,
+        "action": "🔴 严密监控·跌破55.50立即止损",
+        "detail": "距止损55.50仅0.47%·800股·市值44608·若跌破55.50立即止损·否则持有观察。中期基本面良好(中报净利润+1025%)但短期技术面极度危险。"
       },
       {
         "code": "300661",
         "name": "圣邦股份",
-        "action": "🟡警戒观察",
-        "current_price": 110.76,
-        "stop_loss": 108.0,
-        "distance_to_stop": "2.5%",
-        "detail": "距止损2.76元。半导体板块冲高回落，港股上市后估值体系变化。若跌破108立即止损。"
+        "price": 108.57,
+        "action": "🔴 严密监控·跌破108.00立即止损",
+        "detail": "距止损108.00仅0.53%·200股·市值21714·午后继续走弱至-1.08%·若跌破108.00立即止损。中期基本面良好(H1净利润+109%)但短期半导体板块弱势。"
       }
-    ]
-  },
-  "overall_conclusion": "🔴今日取消新仓。7道闸仅4/7通过，不满足开仓条件。持仓风险(利通已破止损)优先级高于新仓。建议下午开盘优先执行利通电子止损，鹏辉/圣邦设预警线严密监控。待非农落地(9/4晚间)后下周再评估新仓机会。"
+    ],
+    "next_check": "盘后收盘数据更新+非农结果公布后评估"
+  }
 }
