@@ -1,62 +1,33 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T16:53:42+08:00",
-    "date": "2026-09-03"
+    "last_updated": "2026-09-04T17:01:23.605966",
+    "date": "2026-09-04"
   },
-  "indices": {
-    "sh000001": {
-      "close": 3942.09,
-      "change_pct": 0.02
+  "index": {
+    "shanghai": {
+      "close": 3930.12,
+      "change_pct": -0.3
     },
-    "sz399001": {
-      "close": 13625.12,
-      "change_pct": 0.1
+    "shenzhen": {
+      "close": 13516.97,
+      "change_pct": -0.79
     },
-    "sz399006": {
-      "close": 3312.54,
-      "change_pct": 0.01
+    "chinext": {
+      "close": 3286.55,
+      "change_pct": -0.78
+    },
+    "star50": {
+      "close": 1577.36,
+      "change_pct": -2.1
     }
   },
-  "market_stats": {
-    "up_count": 1846,
-    "down_count": 3570,
-    "up_limit": 46,
-    "down_limit": 16,
-    "volume": "1.76万亿",
-    "main_net_flow": "-105亿"
+  "breadth": {
+    "up": 2444,
+    "down": 2914
   },
-  "top_sectors": [
-    {
-      "name": "航运港口",
-      "change_pct": 2.99
-    },
-    {
-      "name": "其他电源设备Ⅱ",
-      "change_pct": 2.74
-    },
-    {
-      "name": "保险Ⅱ",
-      "change_pct": 2.58
-    },
-    {
-      "name": "电机Ⅱ",
-      "change_pct": 2.45
-    },
-    {
-      "name": "贵金属",
-      "change_pct": 2.18
-    }
-  ],
-  "bottom_signals": {
-    "satisfied_count": 1,
-    "total_count": 5,
-    "recommendation": "观望"
+  "volume": {
+    "total_yi": 2.03,
+    "change": "放量2718亿"
   },
-  "news_sentiment": "中性偏空",
-  "latest_files": {
-    "market_signals": "data/market_signals.json",
-    "bottom_signals": "data/bottom_signals.json",
-    "news_impact": "data/news_impact.json",
-    "market_environment": "data/market_environment.json"
-  }
+  "sentiment": "偏空·科技硬件恐慌抛售"
 }

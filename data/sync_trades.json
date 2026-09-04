@@ -1,12 +1,45 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T16:53:42+08:00",
-    "date": "2026-09-03",
+    "last_updated": "2026-09-04T17:01:23.605966",
+    "date": "2026-09-04",
     "source": "trades_all.json"
   },
-  "today_trades": 0,
-  "today_violations": 0,
-  "total_trades": 67,
-  "total_violations": 27,
-  "total_realized_pnl": 23013.5
+  "today_summary": {
+    "trade_count": 0,
+    "violation_count": 0,
+    "realized_pnl": 0,
+    "note": "今日无操作"
+  },
+  "positions": [
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "qty": 800,
+      "price": 54.82,
+      "cost": 60.493,
+      "pnl_pct": -9.38,
+      "stop_loss": 55.5,
+      "status": "跌破止损"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "qty": 300,
+      "price": 108.35,
+      "cost": 120.968,
+      "pnl_pct": -10.43,
+      "stop_loss": 112.5,
+      "status": "跌破止损"
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "qty": 200,
+      "price": 106.92,
+      "cost": 114.9,
+      "pnl_pct": -6.95,
+      "stop_loss": 108.0,
+      "status": "跌破止损"
+    }
+  ]
 }

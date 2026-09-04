@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "last_updated": "2026-09-03T16:53:42+08:00",
+    "date": "2026-09-03",
+    "session": "close_1653"
+  },
+  "stocks": [
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "close": 86.35,
+      "change_pct": 0.77,
+      "category": "算力服务器"
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "close": 384.76,
+      "change_pct": -0.5,
+      "category": "光模块"
+    },
+    {
+      "code": "300394",
+      "name": "天孚通信",
+      "close": 248.81,
+      "change_pct": -0.48,
+      "category": "光模块"
+    },
+    {
+      "code": "002837",
+      "name": "英维克",
+      "close": 68.49,
+      "change_pct": 3.41,
+      "category": "液冷"
+    },
+    {
+      "code": "002335",
+      "name": "科华数据",
+      "close": 30.53,
+      "change_pct": 1.87,
+      "category": "数据中心"
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "close": 56.0,
+      "change_pct": -0.36,
+      "category": "储能(持仓)"
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "close": 111.61,
+      "change_pct": -2.96,
+      "category": "AI算力(持仓·止损)"
+    },
+    {
+      "code": "300661",
+      "name": "圣邦股份",
+      "close": 109.76,
+      "change_pct": -0.88,
+      "category": "模拟芯片(持仓)"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "close": 349.5,
+      "change_pct": 0.35,
+      "category": "动力电池"
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "close": 87.08,
+      "change_pct": 0.79,
+      "category": "逆变器"
+    }
+  ]
+}

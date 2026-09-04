@@ -1,21 +1,14 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T16:53:42+08:00",
-    "date": "2026-09-03"
+    "last_updated": "2026-09-04T17:01:23.605966",
+    "date": "2026-09-04"
   },
-  "today_review": {
-    "date": "2026-09-03",
-    "pnl_amount": -1374.0,
-    "pnl_percent": -0.77,
+  "today": {
+    "pnl_amount": -3864.0,
+    "pnl_percent": -2.17,
     "trade_count": 0,
     "violation_count": 0,
-    "score": 7.0,
-    "emotion": "偏谨慎"
-  },
-  "latest_files": {
-    "daily_review": "data/daily_review.json",
-    "reviews_daily": "data/reviews_daily.json",
-    "reviews_weekly": "data/reviews_weekly.json",
-    "reviews_monthly": "data/reviews_monthly.json"
+    "emotion": "焦虑",
+    "key_note": "三只持仓全部跌破止损·周一必须清仓"
   }
 }

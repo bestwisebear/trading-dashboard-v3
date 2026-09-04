@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "last_updated": "2026-09-03T16:53:42+08:00",
+    "date": "2026-09-03"
+  },
+  "today_review": {
+    "date": "2026-09-03",
+    "pnl_amount": -1374.0,
+    "pnl_percent": -0.77,
+    "trade_count": 0,
+    "violation_count": 0,
+    "score": 7.0,
+    "emotion": "偏谨慎"
+  },
+  "latest_files": {
+    "daily_review": "data/daily_review.json",
+    "reviews_daily": "data/reviews_daily.json",
+    "reviews_weekly": "data/reviews_weekly.json",
+    "reviews_monthly": "data/reviews_monthly.json"
+  }
+}
