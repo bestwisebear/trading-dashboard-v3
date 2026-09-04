@@ -1,175 +1,98 @@
 {
   "meta": {
-    "last_updated": "2026-09-03T16:53:42+08:00",
-    "data_date": "2026-09-03",
-    "source": "腾讯行情·午间收盘价",
-    "session": "intraday_1133",
-    "note": "9/3午间·三大指数小幅收红·大金融领涨·个股跌多涨少·量能萎缩",
-    "date": "2026-09-03"
+    "last_updated": "2026-09-04T08:11:00+08:00",
+    "date": "2026-09-04",
+    "session": "pre_market_0811"
   },
   "indices": {
     "shanghai": {
-      "code": "sh000001",
-      "name": "上证指数",
-      "close": 3958.19,
-      "open": 3952.79,
-      "high": 3968.11,
-      "low": 3950.98,
-      "pre_close": 3941.39,
-      "change": 16.8,
-      "change_pct": 0.43,
-      "volume": 320081276,
-      "amount": 51581058,
-      "note": "大金融(保险+3.19%/证券+1.27%)拉动指数翻红"
+      "close": 3942.09,
+      "change_pct": 0.02
     },
     "shenzhen": {
-      "code": "sz399001",
-      "name": "深证成指",
-      "close": 13664.14,
-      "open": 13711.07,
-      "high": 13742.89,
-      "low": 13601.49,
-      "pre_close": 13611.55,
-      "change": 52.59,
-      "change_pct": 0.39,
-      "volume": 371162419,
-      "amount": 58285834,
-      "note": "冲高回落·午后关注能否守住13600"
+      "close": 13625.12,
+      "change_pct": 0.1
     },
     "chinext": {
-      "code": "sz399006",
-      "name": "创业板指",
-      "close": 3326.42,
-      "open": 3342.09,
-      "high": 3356.25,
-      "low": 3307.58,
-      "pre_close": 3312.24,
-      "change": 14.18,
-      "change_pct": 0.43,
-      "volume": 101255314,
-      "amount": 26733852,
-      "note": "低开下探3307后回升"
+      "close": 3312.54,
+      "change_pct": 0.01
+    },
+    "star50": {
+      "close": 1611.17,
+      "change_pct": -0.4
     }
   },
-  "sectors": {
-    "top_industries": [
-      {
-        "name": "航运港口",
-        "change_pct": 3.54,
-        "lead": "凤凰航运(10.02)"
-      },
-      {
-        "name": "保险Ⅱ",
-        "change_pct": 3.19,
-        "lead": "中国太保(4.63)"
-      },
-      {
-        "name": "贵金属",
-        "change_pct": 2.95,
-        "lead": "湖南黄金(5.88)"
-      },
-      {
-        "name": "电机Ⅱ",
-        "change_pct": 2.42,
-        "lead": "鸣志电器(10.00)"
-      },
-      {
-        "name": "工业金属",
-        "change_pct": 1.83,
-        "lead": "白银有色(7.36)"
-      },
-      {
-        "name": "其他电子Ⅱ",
-        "change_pct": 1.79,
-        "lead": "香农芯创(7.45)"
-      }
-    ],
-    "top_concepts": [
-      {
-        "name": "BDI",
-        "change_pct": 5.36,
-        "lead": "凤凰航运(10.02)"
-      },
-      {
-        "name": "培育钻石",
-        "change_pct": 4.39,
-        "lead": "黄河旋风(10.03)"
-      },
-      {
-        "name": "华为机器人",
-        "change_pct": 2.31,
-        "lead": "兆威机电(5.01)"
-      },
-      {
-        "name": "有色(锑)",
-        "change_pct": 2.17,
-        "lead": "湖南黄金(5.88)"
-      },
-      {
-        "name": "AI编程",
-        "change_pct": 2.13,
-        "lead": "金现代(19.98)"
-      },
-      {
-        "name": "白银概念",
-        "change_pct": 2.1,
-        "lead": "华钰矿业(5.62)"
-      }
-    ],
-    "note": "大金融+航运+贵金属领涨·科技方向偏弱·半导体/光模块承压"
+  "breadth": {
+    "up": 1846,
+    "down": 3570,
+    "flat": 139,
+    "up_down_ratio": "34:66",
+    "limit_up": 46,
+    "limit_down": 16,
+    "median_change": -0.68
   },
-  "fund_flow": {
-    "top_inflow": [
-      {
-        "name": "证券Ⅱ",
-        "change_pct": 1.27,
-        "main_net_inflow": 193088.17,
-        "up_down_ratio": "45/50"
-      },
-      {
-        "name": "保险Ⅱ",
-        "change_pct": 3.19,
-        "main_net_inflow": 124183.34,
-        "up_down_ratio": "5/5"
-      },
-      {
-        "name": "工业金属",
-        "change_pct": 1.83,
-        "main_net_inflow": 108861.08,
-        "up_down_ratio": "40/59"
-      }
-    ],
-    "note": "大金融主力净流入·证券+19.3亿·保险+12.4亿"
-  },
-  "market_breadth": {
-    "up_count_est": 1600,
-    "down_count_est": 3200,
-    "source": "财联社10:35·下跌个股超3200家",
-    "note": "指数红但个股跌多涨少"
+  "volume": {
+    "total": "1.76万亿",
+    "change": "-323亿",
+    "trend": "连续缩量·连续2日低于2万亿"
   },
   "sentiment": {
-    "overall": "谨慎偏弱",
-    "strength": "指数虚假强势·大金融护盘",
-    "volume_trend": "缩量·预计全天1.66万亿",
-    "risk_factors": "美伊冲突·油价高企·非农前观望·9月加息预期66.1%"
+    "phase": "退潮第2天加速",
+    "features": [
+      "高位股批量跌停",
+      "炸板率43%",
+      "封板率57%",
+      "连板高度5板"
+    ],
+    "risk": "短期情绪冰点·等待退潮衰竭"
   },
+  "capital_flow": {
+    "main_net": "-476.2亿",
+    "top_inflow": [
+      "工业金属+26.2亿",
+      "保险+19.1亿",
+      "证券+18.6亿"
+    ],
+    "top_outflow": [
+      "通信设备-37.3亿",
+      "文化传媒-29.2亿",
+      "IT服务-28.8亿"
+    ]
+  },
+  "leading_sectors": [
+    "航运港口",
+    "保险",
+    "贵金属",
+    "液冷服务器",
+    "培育钻石"
+  ],
+  "lagging_sectors": [
+    "农产品加工",
+    "教育",
+    "传媒",
+    "光伏",
+    "固态电池"
+  ],
+  "verdict": "🔴指数假稳·个股普跌·涨跌比34:66·禁开新仓·优先处理持仓风控",
   "hot_sectors_up": [
-    "航运港口+3.54%",
-    "保险Ⅱ+3.19%",
-    "贵金属+2.95%",
-    "电机Ⅱ+2.42%",
-    "工业金属+1.83%"
+    "航运港口",
+    "保险",
+    "贵金属",
+    "液冷服务器",
+    "培育钻石",
+    "机器人"
   ],
   "hot_sectors_down": [
-    "煤炭-3.63%",
-    "传媒-1.68%",
-    "互联网-1.58%",
-    "食品制造-1.43%",
-    "水上运输-1.41%"
+    "农产品加工",
+    "教育",
+    "传媒",
+    "光伏",
+    "固态电池",
+    "农业种业"
   ],
   "market_stats": {
-    "rise_count": 1600,
-    "fall_count": 3200,
-    "turnover_comment": "缩量·预计全天1.66万亿(昨1.79万亿·缩量约1300亿)"
+    "rise_count": 1846,
+    "fall_count": 3570,
+    "turnover_comment": "1.76万亿·缩量323亿·连续2日低于2万亿"
   }
 }
