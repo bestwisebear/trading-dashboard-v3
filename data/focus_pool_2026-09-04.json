@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T08:11:00+08:00",
+    "last_updated": "2026-09-04T08:25:00+08:00",
     "date": "2026-09-04",
-    "session": "pre_market_0811",
+    "session": "pre_market_0825",
     "data_basis": "2026-09-03收盘价(腾讯行情)"
   },
   "stocks": [
@@ -40,7 +40,7 @@
       "change_pct": -1.14,
       "category": "光模块",
       "pe": 46.82,
-      "signal": "⚠️跌破支撑900"
+      "signal": "⚠️跌破支撑900·公司回购8亿"
     },
     {
       "code": "300394",
@@ -74,9 +74,9 @@
       "name": "三环集团",
       "close": 110.91,
       "change_pct": 2.82,
-      "category": "电子陶瓷",
+      "category": "电子陶瓷/MLCC",
       "pe": 66.84,
-      "signal": "🟢领涨"
+      "signal": "🟢领涨·三星电机MLCC万亿大单"
     },
     {
       "code": "300438",
@@ -103,7 +103,7 @@
       "change_pct": 0.0,
       "category": "IDC",
       "pe": 19.68,
-      "signal": "平盘·支撑60"
+      "signal": "平盘抗跌"
     },
     {
       "code": "300604",
@@ -112,7 +112,7 @@
       "change_pct": -1.09,
       "category": "半导体设备",
       "pe": 93.18,
-      "signal": "下跌"
+      "signal": "回调"
     },
     {
       "code": "000988",
@@ -130,7 +130,7 @@
       "change_pct": -2.33,
       "category": "PCB/FPC",
       "pe": 91.54,
-      "signal": "跌幅较大"
+      "signal": "跌幅最大"
     },
     {
       "code": "000977",
@@ -157,7 +157,7 @@
       "change_pct": -0.21,
       "category": "磷酸铁锂(观察)",
       "pe": 475.04,
-      "signal": "微跌·PE极高"
+      "signal": "微跌"
     }
   ]
 }

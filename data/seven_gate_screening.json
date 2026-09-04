@@ -1,144 +1,41 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T08:11:00+08:00",
+    "last_updated": "2026-09-04T08:25:00+08:00",
     "date": "2026-09-04",
-    "session": "pre_market_0811",
-    "overall_verdict": "🔴涨跌家数1844<2000，闸1不通过，严禁开新仓。持仓3只全部临近/跌破止损，优先处理风控。",
-    "market_breadth": 1846,
-    "market_decline": 3570,
-    "threshold": 2000,
-    "new_position_allowed": false,
-    "volume": "1.76万亿·连续缩量",
-    "sentiment": "退潮第2天加速·高位股批量跌停·炸板率43%"
+    "session": "pre_market_0825",
+    "note": "9/4盘前七道闸·涨跌比34:66<2000·第一道闸不通过·禁开新仓·不进行逐只筛选"
   },
-  "holdings_review": [
-    {
-      "code": "300438",
-      "name": "鹏辉能源",
-      "gates": {
-        "gate1_breadth": {
-          "pass": false,
-          "detail": "涨跌1844<2000"
-        },
-        "gate2_count": {
-          "pass": true,
-          "detail": "持仓3只≤4"
-        },
-        "gate3_fundamental": {
-          "pass": true,
-          "detail": "PE25.4合理·中报净利+1025%"
-        },
-        "gate4_technical": {
-          "pass": false,
-          "detail": "三连阴·距止损55.5仅0.9%·极度危险"
-        },
-        "gate5_sector": {
-          "pass": false,
-          "detail": "储能板块弱势"
-        },
-        "gate6_news": {
-          "pass": true,
-          "detail": "无重大利空"
-        },
-        "gate7_valuation": {
-          "pass": true,
-          "detail": "PE25.4合理"
-        }
-      },
-      "verdict": "🔴距止损55.5仅0.9%·跌破即执行止损·开盘严密监控",
-      "score": "3/7"
-    },
-    {
-      "code": "603629",
-      "name": "利通电子",
-      "gates": {
-        "gate1_breadth": {
-          "pass": false,
-          "detail": "涨跌1844<2000"
-        },
-        "gate2_count": {
-          "pass": true,
-          "detail": "持仓3只≤4"
-        },
-        "gate3_fundamental": {
-          "pass": true,
-          "detail": "PE43.4·中报净利+1275%"
-        },
-        "gate4_technical": {
-          "pass": false,
-          "detail": "🔴已跌破止损112.5·收盘111.61·连续大跌"
-        },
-        "gate5_sector": {
-          "pass": false,
-          "detail": "AI算力板块整体回调"
-        },
-        "gate6_news": {
-          "pass": true,
-          "detail": "英伟达财报超预期·但短期情绪面承压"
-        },
-        "gate7_valuation": {
-          "pass": false,
-          "detail": "PE43.4偏高"
-        }
-      },
-      "verdict": "🔴已跌破止损112.5！必须执行止损！今日开盘集合竞价卖出300股",
-      "score": "2/7"
-    },
-    {
-      "code": "300661",
-      "name": "圣邦股份",
-      "gates": {
-        "gate1_breadth": {
-          "pass": false,
-          "detail": "涨跌1844<2000"
-        },
-        "gate2_count": {
-          "pass": true,
-          "detail": "持仓3只≤4"
-        },
-        "gate3_fundamental": {
-          "pass": true,
-          "detail": "中报净利+109%·光模块芯片翻倍增长"
-        },
-        "gate4_technical": {
-          "pass": false,
-          "detail": "距止损108仅1.6%·换手0.83%低迷"
-        },
-        "gate5_sector": {
-          "pass": false,
-          "detail": "模拟芯片/半导体板块普跌"
-        },
-        "gate6_news": {
-          "pass": true,
-          "detail": "港股上市推进中"
-        },
-        "gate7_valuation": {
-          "pass": false,
-          "detail": "PE98.2偏高"
-        }
-      },
-      "verdict": "🔴距止损108仅1.6%·半导体弱势·跌破即执行止损",
-      "score": "2/7"
-    }
-  ],
-  "new_candidates": [
-    {
-      "code": "300408",
-      "name": "三环集团",
-      "score": "4/7",
-      "verdict": "🔴禁开·涨跌<2000·但今日+2.82%领涨·电子陶瓷龙头"
-    },
-    {
-      "code": "000977",
-      "name": "浪潮信息",
-      "score": "4/7",
-      "verdict": "🔴禁开·涨跌<2000·换手7.6%·算力人气标的"
-    },
-    {
-      "code": "300857",
-      "name": "协创数据",
-      "score": "4/7",
-      "verdict": "🔴禁开·涨跌<2000·算力租赁领涨·近270阻力"
-    }
-  ]
+  "gate_1_market_breadth": {
+    "result": "❌不通过",
+    "detail": "涨跌家数1846/3570<2000·禁开新仓",
+    "score": 0
+  },
+  "gate_2_index_trend": {
+    "result": "🟡待观察",
+    "detail": "上证站上5日线附近·但深证/创业板弱势·科创50逆跌",
+    "score": 0
+  },
+  "gate_3_sector_strength": {
+    "result": "🟡分化",
+    "detail": "航运港口/保险/贵金属领涨·科技方向偏弱",
+    "score": 0
+  },
+  "gate_4_fundamental": {
+    "result": "⏭️跳过",
+    "detail": "第一道闸不通过·后续不评估"
+  },
+  "gate_5_technical": {
+    "result": "⏭️跳过",
+    "detail": "第一道闸不通过·后续不评估"
+  },
+  "gate_6_valuation": {
+    "result": "⏭️跳过",
+    "detail": "第一道闸不通过·后续不评估"
+  },
+  "gate_7_sentiment": {
+    "result": "⏭️跳过",
+    "detail": "第一道闸不通过·后续不评估"
+  },
+  "verdict": "🔴禁开新仓·涨跌比34:66不满足七道闸第一道·今日不筛选新标的·关注持仓风控",
+  "exception_note": "即使隔夜美股大涨+1.4%，A股内部退潮未止，不可因外盘利好放松开仓纪律"
 }
