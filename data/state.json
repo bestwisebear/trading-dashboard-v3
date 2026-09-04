@@ -1,30 +1,30 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T08:25:00+08:00",
-    "data_date": "2026-09-03",
+    "last_updated": "2026-09-04T11:32:00+08:00",
+    "data_date": "2026-09-04",
     "source": "2026-09-03收盘数据",
-    "session": "pre_market_0825",
-    "note": "9/4盘前·隔夜美股大涨+1.4%·美联储沃勒偏鸽·加息预期降温·但持仓3只全部风控警戒"
+    "session": "intraday_1132",
+    "note": "9/4午间·高开低走·三只持仓全部风控警戒·利通连续2日跌破止损"
   },
   "current": {
-    "total_assets": 176469.0,
+    "total_assets": 175852.0,
     "prev_close_assets": 177843.0,
     "available_cash": 76234.0,
     "initial_capital": 200000.0,
     "position_count": 3,
-    "position_ratio": 56.8,
-    "monthly_pnl": -2435.0,
-    "monthly_return_rate": -1.36,
-    "market_value": 100235.0,
-    "note": "9/3收盘·利通-2.96%跌破止损·鹏辉-0.36%·圣邦-0.88%·今日-1374·月回撤-1.36%"
+    "position_ratio": 56.6,
+    "monthly_pnl": -3052.0,
+    "monthly_return_rate": -1.53,
+    "market_value": 99618.0,
+    "note": "9/4午间·高开低走·总资产175852·今日-1991·月回撤-1.53%·三只全部警戒"
   },
   "today_so_far": {
     "date": "2026-09-04",
-    "net_today": 0.0,
+    "net_today": -1991.0,
     "trade_count": 0,
     "violation_count": 0,
-    "session": "pre_market",
-    "note": "盘前·尚未开盘"
+    "session": "intraday_1132",
+    "note": "午间·高开低走·今日-1991·三只全部风控警戒"
   },
   "positions": [
     {
@@ -32,46 +32,46 @@
       "name": "鹏辉能源",
       "quantity": 800,
       "cost_price": 60.493,
-      "current_price": 56.0,
-      "pre_close": 56.2,
-      "change_pct": -0.36,
+      "current_price": 55.75,
+      "pre_close": 56.0,
+      "change_pct": -0.45,
       "stop_loss": 55.5,
-      "market_value": 44800.0,
-      "weight": 25.39,
-      "note": "⚠️距止损55.5仅0.9%·PE25.4"
+      "market_value": 44600.0,
+      "weight": 44.77,
+      "note": "🔴距止损55.5仅0.45%·极度危险"
     },
     {
       "code": "603629",
       "name": "利通电子",
       "quantity": 300,
       "cost_price": 120.968,
-      "current_price": 111.61,
-      "pre_close": 115.01,
-      "change_pct": -2.96,
+      "current_price": 110.86,
+      "pre_close": 111.61,
+      "change_pct": -0.67,
       "stop_loss": 112.5,
-      "market_value": 33483.0,
-      "weight": 18.97,
-      "note": "🔴收盘跌破止损112.5·收盘111.61·需执行止损!"
+      "market_value": 33258.0,
+      "weight": 33.39,
+      "note": "🔴连续2日跌破止损·必须执行"
     },
     {
       "code": "300661",
       "name": "圣邦股份",
       "quantity": 200,
       "cost_price": 114.9,
-      "current_price": 109.76,
-      "pre_close": 110.73,
-      "change_pct": -0.88,
+      "current_price": 108.8,
+      "pre_close": 109.76,
+      "change_pct": -0.87,
       "stop_loss": 108.0,
-      "market_value": 21952.0,
-      "weight": 12.44,
-      "note": "⚠️距止损108仅1.6%·PE98.2"
+      "market_value": 21760.0,
+      "weight": 21.84,
+      "note": "🔴距止损108仅0.74%·千钧一发"
     }
   ],
   "validation": {
     "total_assets_check": true,
     "position_count_match": true,
     "cash_positive": true,
-    "note": "市值100235.0+现金76234.0=176469.0"
+    "note": "市值99618+现金76234=175852"
   },
   "cumulative": {
     "total_pnl_amount": -23531.0,
@@ -81,9 +81,9 @@
   },
   "next_action": {
     "date": "2026-09-04",
-    "action": "🔴9/4盘前·①利通电子111.61已确认跌破止损112.5·开盘集合竞价必须执行止损②鹏辉56.00距止损55.5仅0.9%·跌破立即执行③圣邦109.76距止损108仅1.6%·跌破立即执行④禁开新仓(涨跌比1846/3570)⑤隔夜美股大涨+1.4%但A股退潮未止·不可因外盘利好放松纪律⑥今晚非农·盘中宜观望为主",
-    "key_levels": "鹏辉56.00/60.49(成本)/55.50(止损)·利通111.61/120.97(成本)/112.50(止损已破)·圣邦109.76/114.90(成本)/108.00(止损)",
+    "action": "🔴9/4午间·①利通电子110.86连续2日跌破止损·下午必须执行止损②鹏辉55.75距止损仅0.45%·跌破立即执行③圣邦108.80距止损仅0.74%·跌破立即执行④禁开新仓⑤高开低走·警惕下午继续回落⑥今晚非农·宜观望",
+    "key_levels": "鹏辉55.75/60.49(成本)/55.50(止损)·利通110.86/120.97(成本)/112.50(止损已破)·圣邦108.80/114.90(成本)/108.00(止损)",
     "risk_events": "美伊冲突升级·油价95+·美债10Y 4.8%·9月加息概率50%+·今晚非农·9/11 CPI·9/16 FOMC",
-    "today_plan": "今日:①利通电子开盘集合竞价止损②鹏辉/圣邦严密监控·跌破止损立即执行③不新开仓④关注非农前市场情绪⑤美股大涨或带来高开·警惕高开低走"
+    "today_plan": "今日:①利通电子下午必须执行止损②鹏辉/圣邦严密监控·跌破止损立即执行③不新开仓④关注非农前市场情绪⑤高开低走·警惕下午继续回落"
   }
 }
