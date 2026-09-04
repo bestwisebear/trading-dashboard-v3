@@ -1,71 +1,65 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T08:25:00+08:00",
-    "data_date": "2026-09-03",
-    "source": "腾讯行情·收盘价",
-    "session": "close_1653"
+    "last_updated": "2026-09-04T11:32:00+08:00",
+    "data_date": "2026-09-04",
+    "session": "intraday_1132",
+    "source": "腾讯行情·上午收盘"
   },
   "summary": {
-    "total_assets": 176469.0,
+    "total_assets": 175852.0,
     "prev_close_assets": 177843.0,
-    "net_today": -1374.0,
-    "today_return": -0.77,
-    "monthly_pnl": -2435.0,
+    "market_value": 99618.0,
     "available_cash": 76234.0,
-    "position_count": 3,
-    "position_ratio": 56.8,
-    "market_value": 100235.0,
-    "today_return_rate": -0.77,
-    "monthly_return_rate": -1.36,
-    "initial_capital": 200000,
-    "total_pnl_amount": -23531.0,
-    "note": "9/3收盘·利通-2.96%跌破止损·鹏辉-0.36%·圣邦-0.88%·总资产-1374"
+    "position_ratio": 56.6,
+    "net_today": -1991.0,
+    "today_return": -1.12,
+    "today_return_rate": -1.12,
+    "monthly_pnl": -3052.0,
+    "monthly_return_rate": -1.53,
+    "total_pnl_amount": -25522.0,
+    "initial_capital": 200000.0,
+    "position_count": 3
   },
-  "holdings": [
+  "positions": [
     {
       "code": "300438",
       "name": "鹏辉能源",
       "quantity": 800,
       "cost_price": 60.493,
-      "current_price": 56.0,
-      "pre_close": 56.2,
-      "change_pct": -0.36,
-      "market_value": 44800.0,
+      "current_price": 55.75,
       "stop_loss": 55.5,
-      "weight": 25.39,
-      "pnl_amount": -3594.4,
-      "pnl_percent": -7.43,
-      "note": "⚠️距止损仅0.9%·PE25.4·换手2.74%"
+      "market_value": 44600.0,
+      "weight": 44.77,
+      "pnl_amount": -3794.4,
+      "pnl_percent": -7.84,
+      "note": "🔴距止损55.5仅0.45%·极度危险"
     },
     {
       "code": "603629",
       "name": "利通电子",
       "quantity": 300,
       "cost_price": 120.968,
-      "current_price": 111.61,
-      "pre_close": 115.01,
-      "change_pct": -2.96,
-      "market_value": 33483.0,
+      "current_price": 110.86,
       "stop_loss": 112.5,
-      "weight": 18.97,
-      "pnl_amount": -2807.4,
-      "pnl_percent": -7.74,
-      "note": "🔴已跌破止损112.5·收盘111.61·开盘必须执行止损!"
+      "market_value": 33258.0,
+      "weight": 33.39,
+      "pnl_amount": -3032.4,
+      "pnl_percent": -8.36,
+      "note": "🔴连续2日跌破止损112.5·必须执行"
     },
     {
       "code": "300661",
       "name": "圣邦股份",
       "quantity": 200,
       "cost_price": 114.9,
-      "current_price": 109.76,
-      "pre_close": 110.73,
-      "change_pct": -0.88,
-      "market_value": 21952.0,
+      "current_price": 108.8,
       "stop_loss": 108.0,
-      "weight": 12.44,
-      "pnl_amount": -1028.0,
-      "pnl_percent": -4.47,
-      "note": "⚠️距止损108仅1.6%·PE98.2·换手0.83%"
+      "market_value": 21760.0,
+      "weight": 21.84,
+      "pnl_amount": -1220.0,
+      "pnl_percent": -5.31,
+      "note": "🔴距止损108仅0.74%·千钧一发"
     }
-  ]
+  ],
+  "note": "9/4午间·高开低走·总资产175852·今日-1991·利通连续2日跌破止损·圣邦距止损0.74%·鹏辉距止损0.45%"
 }
