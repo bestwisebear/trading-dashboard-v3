@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T16:59:22.317795",
-    "date": "2026-09-04",
-    "session": "close_1615",
+    "last_updated": "2026-09-05T20:44:00+08:00",
+    "date": "2026-09-05",
+    "session": "night_scan_2044",
     "data_basis": "2026-09-04收盘价(腾讯行情)",
-    "note": "9/4收盘·科技硬件全线暴跌·浪潮信息跌停-9.99%·长川-5.71%·协创-4.88%"
+    "note": "9/5周六·基于9/4收盘价更新·非农爆表16.2万·加息概率60%+·周一执行止损"
   },
   "watchlist": [
     {
@@ -13,14 +13,14 @@
       "score": 2,
       "status": "holding",
       "sector": "储能/电池",
-      "today_close": 55.75,
-      "today_change_pct": -0.45,
+      "today_close": 54.82,
+      "today_change_pct": -2.11,
       "key_price": {
         "support": 57.0,
         "resistance": 62.0,
         "stop_loss": 55.5
       },
-      "notes": "🔴距止损仅0.45%·极度危险·PE25.3",
+      "notes": "🔴跌破止损55.5·周一集合竞价止损·浮亏-9.38%",
       "holding_qty": 800
     },
     {
@@ -29,14 +29,14 @@
       "score": 1,
       "status": "holding",
       "sector": "消费电子/结构件",
-      "today_close": 110.86,
-      "today_change_pct": -0.67,
+      "today_close": 108.35,
+      "today_change_pct": -2.92,
       "key_price": {
         "support": 110.0,
         "resistance": 117.0,
         "stop_loss": 112.5
       },
-      "notes": "🔴连续2日低于止损·必须执行！",
+      "notes": "🔴跌破止损112.5·周一集合竞价止损·浮亏-10.43%",
       "holding_qty": 300
     },
     {
@@ -45,14 +45,14 @@
       "score": 1,
       "status": "holding",
       "sector": "模拟芯片",
-      "today_close": 108.8,
-      "today_change_pct": -0.87,
+      "today_close": 106.92,
+      "today_change_pct": -2.59,
       "key_price": {
         "support": 110.0,
         "resistance": 120.0,
         "stop_loss": 108.0
       },
-      "notes": "🔴距止损仅0.74%·千钧一发·PE97.3",
+      "notes": "🔴跌破止损108.0·周一集合竞价止损·浮亏-6.95%",
       "holding_qty": 200
     },
     {
