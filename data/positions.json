@@ -1,25 +1,25 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T16:58:46.583255",
+    "last_updated": "2026-09-07T08:09:00+08:00",
     "data_date": "2026-09-04",
-    "session": "intraday_1132",
-    "source": "腾讯行情·上午收盘",
+    "session": "pre_market_0809",
+    "source": "腾讯行情·9/4收盘",
     "date": "2026-09-04"
   },
   "summary": {
     "total_assets": 173979.0,
     "prev_close_assets": 177843.0,
-    "market_value": 99618.0,
+    "market_value": 97745.0,
     "available_cash": 76234.0,
     "position_ratio": 56.2,
     "net_today": -3864.0,
     "today_return": -2.17,
-    "today_return_rate": -1.12,
     "monthly_pnl": -5104.0,
     "monthly_return_rate": -1.53,
     "total_pnl_amount": -26021.0,
     "initial_capital": 200000.0,
-    "position_count": 3
+    "position_count": 3,
+    "today_return_rate": -1.12
   },
   "positions": [
     {
@@ -35,8 +35,8 @@
       "weight": 44.87,
       "pnl_amount": -4538.4,
       "pnl_percent": -9.38,
-      "status": "跌破止损",
-      "note": "🔴止损55.5已破"
+      "status": "🔴跌破止损",
+      "note": "止损55.5已破·周一集合竞价止损·浮亏-9.38%"
     },
     {
       "code": "603629",
@@ -51,8 +51,8 @@
       "weight": 33.25,
       "pnl_amount": -3785.4,
       "pnl_percent": -10.43,
-      "status": "跌破止损",
-      "note": "🔴止损112.5已破"
+      "status": "🔴跌破止损",
+      "note": "止损112.5已破·周一集合竞价止损·浮亏-10.43%"
     },
     {
       "code": "300661",
@@ -67,9 +67,9 @@
       "weight": 21.88,
       "pnl_amount": -1596.0,
       "pnl_percent": -6.95,
-      "status": "跌破止损",
-      "note": "🔴止损108.0已破"
+      "status": "🔴跌破止损",
+      "note": "止损108.0已破·周一集合竞价止损·浮亏-6.95%"
     }
   ],
-  "note": "9/4午间·高开低走·总资产175852·今日-1991·利通连续2日跌破止损·圣邦距止损0.74%·鹏辉距止损0.45%"
+  "note": "9/7周一盘前·三只持仓全部跌破止损·9/4高开低走放量下跌·周一集合竞价全部止损·预计回收约97,745现金·止损后空仓等待·总资产预计降至约171,000(考虑集合竞价滑点)"
 }
