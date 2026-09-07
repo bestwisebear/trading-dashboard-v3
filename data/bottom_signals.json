@@ -1,90 +1,77 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T16:59:58.433746",
-    "date": "2026-09-04",
-    "session": "pre_market_0825"
+    "last_updated": "2026-09-07T08:25:00+08:00",
+    "date": "2026-09-07",
+    "session": "pre_market_0825",
+    "source": "腾讯行情+技术分析"
   },
+  "note": "无明确底部信号·科技硬件处于恐慌抛售阶段·右侧确认前不宜抄底。日韩半导体大涨可能提供短期反弹窗口，但需A股自身量能确认。",
   "signals": [
     {
-      "name": "缩量止跌",
-      "condition": "成交≤1.5万亿",
-      "current": "2.03万亿",
-      "satisfied": false,
-      "note": "放量2718亿·不满足"
+      "stock": "浪潮信息(000977)",
+      "signal": "跌停极值",
+      "detail": "9/4跌停-9.99%·极度恐慌抛售·PE仅25.0·但资金流出未止·不宜抄底",
+      "confidence": "low"
     },
     {
-      "name": "跌停减少",
-      "condition": "跌停<30家",
-      "current": "9家",
-      "satisfied": true,
-      "note": "跌停家数较少·满足"
+      "stock": "长川科技(300604)",
+      "signal": "接近超跌",
+      "detail": "-5.71%·半导体设备领跌·PE87.86偏高·等待企稳",
+      "confidence": "low"
     },
     {
-      "name": "涨跌恢复",
-      "condition": "上涨>3000家",
-      "current": "2444家",
-      "satisfied": false,
-      "note": "跌多涨少·不满足"
+      "stock": "协创数据(300857)",
+      "signal": "接近超跌",
+      "detail": "-4.88%·H1超预期但板块拖累·PE48.14·支撑258已破",
+      "confidence": "low"
     },
     {
-      "name": "连续止跌",
-      "condition": "2天不创新低",
-      "current": "今日新低3915",
-      "satisfied": false,
-      "note": "盘中创新低·不满足"
-    },
-    {
-      "name": "北向流入",
-      "condition": "连续2-3日净流入>50亿",
-      "current": "净卖出",
-      "satisfied": false,
-      "note": "北向净卖出·不满足"
+      "stock": "通富微电(002156)",
+      "signal": "接近超跌",
+      "detail": "-4.47%·先进封装·PE34.19·支撑57附近",
+      "confidence": "low"
     }
   ],
-  "bottom_proximity": "远·退潮第2天·一般退潮周期5-7天·预计下周后半段可能见底",
   "aggregate": {
-    "satisfied_count": 1,
-    "total": 5,
-    "ratio": "1/5",
-    "recommendation": "继续观望",
-    "recommendation_detail": "仅满足跌停减少1项，放量下跌+创新低+北向卖出，底部信号远未确认。科技硬件恐慌抛售中，不宜抄底。"
+    "ratio": 0.0,
+    "recommendation": "无明确底部信号",
+    "recommendation_detail": "科技硬件处于恐慌抛售阶段·右侧确认前不宜抄底。日韩半导体大涨可能提供短期反弹窗口，但需A股自身量能确认。"
   },
   "history_7d": [
     {
-      "date": "2026-08-29",
+      "date": "2026-09-04",
       "satisfied_count": 0,
-      "count": 5
-    },
-    {
-      "date": "2026-08-31",
-      "satisfied_count": 0,
-      "count": 5
-    },
-    {
-      "date": "2026-09-01",
-      "satisfied_count": 0,
-      "count": 5
-    },
-    {
-      "date": "2026-09-02",
-      "satisfied_count": 0,
-      "count": 5
+      "count": 4
     },
     {
       "date": "2026-09-03",
       "satisfied_count": 0,
-      "count": 5
+      "count": 4
     },
     {
-      "date": "2026-09-04",
+      "date": "2026-09-02",
       "satisfied_count": 0,
-      "count": 5
+      "count": 4
     },
     {
-      "date": "2026-09-04",
-      "satisfied_count": 1,
-      "count": 5,
-      "recommendation": "继续观望"
+      "date": "2026-09-01",
+      "satisfied_count": 0,
+      "count": 4
+    },
+    {
+      "date": "2026-08-31",
+      "satisfied_count": 0,
+      "count": 4
+    },
+    {
+      "date": "2026-08-28",
+      "satisfied_count": 0,
+      "count": 4
+    },
+    {
+      "date": "2026-08-27",
+      "satisfied_count": 0,
+      "count": 4
     }
   ]
 }

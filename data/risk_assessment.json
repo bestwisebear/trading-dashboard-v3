@@ -1,77 +1,89 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T17:00:32.331630",
-    "date": "2026-09-04",
-    "session": "intraday_1132"
+    "last_updated": "2026-09-07T08:25:00+08:00",
+    "date": "2026-09-07",
+    "session": "pre_market_0825"
   },
-  "level": "高风险",
-  "score": 75,
-  "factors": [
-    "三只持仓全部跌破止损",
-    "科技硬件全线重挫·板块系统性风险",
-    "连续2日高开低走·市场信心脆弱",
-    "北向资金持续净卖出",
-    "今晚非农数据不确定性",
-    "APEX月回撤逼近10%二级熔断"
+  "mitigation": [
+    "集合竞价止损三只持仓·预计回收约97,745现金",
+    "止损后空仓等待·总资产预计降至约171,000",
+    "禁开新仓·等待半导体止跌+市场情绪修复",
+    "关注9/11 CPI数据·数据落地前控制仓位",
+    "日韩大涨可能提供A股半导体反弹窗口·但右侧确认前不追"
   ],
-  "suggestion": "周一集合竞价全部止损·清仓观望·等待市场企稳信号·APEX月回撤逼近10%必须高度警惕",
+  "meltdown_status": {
+    "weekly_pnl": -3864,
+    "weekly_return": -2.17,
+    "monthly_pnl": -5104,
+    "monthly_return": -2.85,
+    "level": "NORMAL",
+    "note": "未触发熔断·月回撤-2.85%远低于10%月熔断线"
+  },
+  "level": "HIGH",
+  "score": 85,
+  "factors": [
+    {
+      "factor": "非农超预期→加息预期升温",
+      "severity": "high",
+      "detail": "16.2万vs预期5.5万·9月加息概率回升·高估值成长承压"
+    },
+    {
+      "factor": "持仓全部跌破止损",
+      "severity": "critical",
+      "detail": "鹏辉-9.38%/利通-10.43%/圣邦-6.95%·周一集合竞价止损·预计亏损约9,920"
+    },
+    {
+      "factor": "科技硬件退潮未止",
+      "severity": "high",
+      "detail": "半导体-2.85%·主力净流出734.8亿·浪潮信息跌停"
+    },
+    {
+      "factor": "月度回撤-2.85%",
+      "severity": "moderate",
+      "detail": "9月回撤-2.85%·总回撤-13.01%·距月回撤10%熔断线尚远"
+    },
+    {
+      "factor": "9/11 CPI关键数据",
+      "severity": "moderate",
+      "detail": "8月CPI将决定9月FOMC走向·观望情绪重"
+    },
+    {
+      "factor": "中东地缘冲突",
+      "severity": "moderate",
+      "detail": "美伊局势反复·油价高位震荡·WTI 91.22"
+    }
+  ],
+  "suggestion": "集合竞价止损三只持仓→空仓等待→禁开新仓→关注半导体止跌信号→等待9/11 CPI落地",
   "rule_checks": [
+    {
+      "rule": "涨跌家数<2000禁开新仓",
+      "passed": true,
+      "current_value": "2444涨/2914跌"
+    },
+    {
+      "rule": "月回撤>10%熔断",
+      "passed": true,
+      "current_value": "-2.85%"
+    },
     {
       "rule": "持仓≤4只",
       "passed": true,
       "current_value": "3只"
     },
     {
-      "rule": "APEX月回撤<10%",
-      "passed": false,
-      "current_value": "月回撤2.85%"
-    },
-    {
-      "rule": "止损执行",
-      "passed": false,
-      "current_value": "三只全部跌破止损"
-    },
-    {
-      "rule": "涨跌家数>2000",
+      "rule": "新仓仅13:30-14:30",
       "passed": true,
-      "current_value": "2444涨"
+      "current_value": "盘前无交易"
     },
     {
-      "rule": "板块强度",
-      "passed": false,
-      "current_value": "科技硬件全线重挫"
+      "rule": "禁做T",
+      "passed": true,
+      "current_value": "无交易"
+    },
+    {
+      "rule": "减仓后禁当日接回",
+      "passed": true,
+      "current_value": "无交易"
     }
-  ],
-  "market_risk": {
-    "level": "🟡中等",
-    "factors": [
-      "高开低走",
-      "科创50翻绿",
-      "科技分化",
-      "浪潮信息暴跌"
-    ],
-    "score": 65
-  },
-  "macro_risk": {
-    "level": "⚠️偏高",
-    "factors": [
-      "今晚非农",
-      "9月加息概率50%+",
-      "美伊冲突·油价95+",
-      "美债10Y 4.8%"
-    ],
-    "score": 78
-  },
-  "position_risk": {
-    "level": "🔴高危",
-    "factors": [
-      "利通连续2日跌破止损",
-      "鹏辉距止损0.45%",
-      "圣邦距止损0.74%",
-      "三只全部风控警戒"
-    ],
-    "score": 92
-  },
-  "overall_risk": "🔴高·非农前不宜重仓·利通必须止损·鹏辉/圣邦若再跌至止损位立即执行",
-  "risk_events": "美伊冲突升级·油价95+·美债10Y高位·9月加息概率50%+·9/4非农·9/11 CPI·9/16 FOMC"
+  ]
 }
