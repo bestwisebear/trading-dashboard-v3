@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-09-06T23:00:00+08:00",
-    "date": "2026-09-06",
-    "session": "night_scan_2300",
+    "last_updated": "2026-09-07T08:09:00+08:00",
+    "date": "2026-09-07",
+    "session": "pre_market_0809",
     "data_basis": "2026-09-04收盘价(腾讯行情)",
-    "note": "9/6周日·23:00扫描更新·半导体全线低于MA20无中转池入选·基于9/4收盘价"
+    "note": "9/7周一盘前·关注池全面更新·光模块三剑客唯一抗跌·半导体溃退"
   },
   "watchlist": [
     {
-      "code": "sz300438",
+      "code": "300438",
       "name": "鹏辉能源",
-      "score": 2,
+      "score": 1,
       "status": "holding",
       "sector": "储能/电池",
       "today_close": 54.82,
@@ -24,7 +24,7 @@
       "holding_qty": 800
     },
     {
-      "code": "sh603629",
+      "code": "603629",
       "name": "利通电子",
       "score": 1,
       "status": "holding",
@@ -40,7 +40,7 @@
       "holding_qty": 300
     },
     {
-      "code": "sz300661",
+      "code": "300661",
       "name": "圣邦股份",
       "score": 1,
       "status": "holding",
@@ -56,54 +56,9 @@
       "holding_qty": 200
     },
     {
-      "code": "sz300408",
-      "name": "三环集团",
-      "score": 3,
-      "status": "watching",
-      "sector": "电子陶瓷/MLCC",
-      "today_close": 108.4,
-      "today_change_pct": -2.26,
-      "key_price": {
-        "support": 108.0,
-        "resistance": 115.0,
-        "stop_loss": null
-      },
-      "notes": "高开低走翻绿-1.23%·PE66.0"
-    },
-    {
-      "code": "sz000977",
-      "name": "浪潮信息",
-      "score": 2,
-      "status": "watching",
-      "sector": "算力服务器",
-      "today_close": 77.72,
-      "today_change_pct": -9.99,
-      "key_price": {
-        "support": 75.0,
-        "resistance": 90.0,
-        "stop_loss": null
-      },
-      "notes": "🔴跌停-9.99%·极度恐慌"
-    },
-    {
-      "code": "sz300857",
-      "name": "协创数据",
-      "score": 3,
-      "status": "watching",
-      "sector": "存储/算力租赁",
-      "today_close": 252.9,
-      "today_change_pct": -4.88,
-      "key_price": {
-        "support": 258.0,
-        "resistance": 270.0,
-        "stop_loss": null
-      },
-      "notes": "⚠️跌幅-4.88%·偏弱"
-    },
-    {
-      "code": "sz300502",
+      "code": "300502",
       "name": "新易盛",
-      "score": 4,
+      "score": 5,
       "status": "watching",
       "sector": "光模块",
       "today_close": 386.0,
@@ -113,12 +68,12 @@
         "resistance": 470.0,
         "stop_loss": null
       },
-      "notes": "逆势抗跌0.32%"
+      "notes": "🟢逆势微涨+0.32%·CPO中唯一抗跌·支撑400已破需重估·非农利好催化"
     },
     {
-      "code": "sz300308",
+      "code": "300308",
       "name": "中际旭创",
-      "score": 4,
+      "score": 5,
       "status": "watching",
       "sector": "光模块",
       "today_close": 814.0,
@@ -128,10 +83,10 @@
         "resistance": 1050.0,
         "stop_loss": null
       },
-      "notes": "逆势抗跌0.12%"
+      "notes": "🟢逆势微涨+0.12%·回购8亿支撑·但支撑900已破需重估"
     },
     {
-      "code": "sz300394",
+      "code": "300394",
       "name": "天孚通信",
       "score": 4,
       "status": "watching",
@@ -143,55 +98,40 @@
         "resistance": 230.0,
         "stop_loss": null
       },
-      "notes": "🟢反弹+1.78%·突破阻力230·PE119.0"
+      "notes": "🟢基本平盘·支撑190守住·突破阻力230·PE116.8"
     },
     {
-      "code": "sz300223",
-      "name": "君正股份",
-      "score": 2,
+      "code": "002384",
+      "name": "东山精密",
+      "score": 4,
       "status": "watching",
-      "sector": "存储芯片",
-      "today_close": 127.16,
-      "today_change_pct": -3.66,
+      "sector": "PCB/FPC",
+      "today_close": 178.67,
+      "today_change_pct": -0.27,
       "key_price": {
-        "support": 128.0,
-        "resistance": 140.0,
+        "support": 170.0,
+        "resistance": 195.0,
         "stop_loss": null
       },
-      "notes": "⚠️跌幅-3.66%·偏弱"
+      "notes": "🟢跌幅最小-0.27%·PCB/FPC相对抗跌"
     },
     {
-      "code": "sz301308",
-      "name": "江波龙",
+      "code": "300408",
+      "name": "三环集团",
       "score": 3,
       "status": "watching",
-      "sector": "存储模组",
-      "today_close": 347.0,
-      "today_change_pct": -3.51,
+      "sector": "电子陶瓷/MLCC",
+      "today_close": 108.4,
+      "today_change_pct": -2.26,
       "key_price": {
-        "support": 350.0,
-        "resistance": 380.0,
+        "support": 108.0,
+        "resistance": 115.0,
         "stop_loss": null
       },
-      "notes": "⚠️跌幅-3.51%·偏弱"
+      "notes": "MLCC板块承压-2.26%·PE65.3·支撑108附近"
     },
     {
-      "code": "sz300395",
-      "name": "菲利华",
-      "score": 2,
-      "status": "watching",
-      "sector": "石英材料",
-      "today_close": 89.31,
-      "today_change_pct": -3.43,
-      "key_price": {
-        "support": 88.0,
-        "resistance": 100.0,
-        "stop_loss": null
-      },
-      "notes": "⚠️跌幅-3.43%·偏弱"
-    },
-    {
-      "code": "sz300442",
+      "code": "300442",
       "name": "润泽科技",
       "score": 3,
       "status": "watching",
@@ -203,27 +143,42 @@
         "resistance": 72.0,
         "stop_loss": null
       },
-      "notes": "微跌-0.28%·抗跌·PE19.6"
+      "notes": "PE仅19.2·支撑60附近·H1业绩低于预期"
     },
     {
-      "code": "sz300604",
-      "name": "长川科技",
+      "code": "300223",
+      "name": "君正股份",
       "score": 2,
       "status": "watching",
-      "sector": "半导体设备",
-      "today_close": 254.23,
-      "today_change_pct": -5.71,
+      "sector": "存储芯片",
+      "today_close": 127.16,
+      "today_change_pct": -3.66,
       "key_price": {
-        "support": 255.0,
-        "resistance": 290.0,
+        "support": 128.0,
+        "resistance": 140.0,
         "stop_loss": null
       },
-      "notes": "🔴暴跌-5.71%·严重"
+      "notes": "⚠️存储芯片集体走弱-3.66%"
     },
     {
-      "code": "sz000988",
-      "name": "华工科技",
+      "code": "301308",
+      "name": "江波龙",
       "score": 3,
+      "status": "watching",
+      "sector": "存储模组",
+      "today_close": 347.0,
+      "today_change_pct": -3.51,
+      "key_price": {
+        "support": 350.0,
+        "resistance": 380.0,
+        "stop_loss": null
+      },
+      "notes": "PE仅12.4极低·但跌幅-3.51%·存储芯片退潮"
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "score": 2,
       "status": "watching",
       "sector": "激光/光通信",
       "today_close": 95.6,
@@ -233,25 +188,25 @@
         "resistance": 105.0,
         "stop_loss": null
       },
-      "notes": "⚠️跌幅-3.41%·偏弱"
+      "notes": "⚠️跌幅-3.41%·支撑95附近"
     },
     {
-      "code": "sz002384",
-      "name": "东山精密",
-      "score": 3,
+      "code": "300395",
+      "name": "菲利华",
+      "score": 2,
       "status": "watching",
-      "sector": "PCB/FPC",
-      "today_close": 178.67,
-      "today_change_pct": -0.27,
+      "sector": "石英材料",
+      "today_close": 89.31,
+      "today_change_pct": -3.43,
       "key_price": {
-        "support": 170.0,
-        "resistance": 195.0,
+        "support": 88.0,
+        "resistance": 100.0,
         "stop_loss": null
       },
-      "notes": "🟢逆势上涨+1.04%·PE92.5"
+      "notes": "⚠️跌幅-3.43%·PE90.9偏高"
     },
     {
-      "code": "sz002156",
+      "code": "002156",
       "name": "通富微电",
       "score": 2,
       "status": "watching",
@@ -263,10 +218,55 @@
         "resistance": 64.0,
         "stop_loss": null
       },
-      "notes": "⚠️跌幅-4.47%·偏弱"
+      "notes": "⚠️跌幅-4.47%·半导体抛售潮·PE34.2"
     },
     {
-      "code": "sh603026",
+      "code": "300857",
+      "name": "协创数据",
+      "score": 2,
+      "status": "watching",
+      "sector": "存储/算力租赁",
+      "today_close": 252.9,
+      "today_change_pct": -4.88,
+      "key_price": {
+        "support": 258.0,
+        "resistance": 270.0,
+        "stop_loss": null
+      },
+      "notes": "⚠️跌幅-4.88%·H1超预期但板块拖累"
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "score": 1,
+      "status": "watching",
+      "sector": "半导体设备",
+      "today_close": 254.23,
+      "today_change_pct": -5.71,
+      "key_price": {
+        "support": 255.0,
+        "resistance": 290.0,
+        "stop_loss": null
+      },
+      "notes": "🔴暴跌-5.71%·半导体设备领跌"
+    },
+    {
+      "code": "000977",
+      "name": "浪潮信息",
+      "score": 1,
+      "status": "watching",
+      "sector": "算力服务器",
+      "today_close": 77.72,
+      "today_change_pct": -9.99,
+      "key_price": {
+        "support": 75.0,
+        "resistance": 90.0,
+        "stop_loss": null
+      },
+      "notes": "🔴跌停-9.99%·液冷服务器集体杀跌·极度恐慌"
+    },
+    {
+      "code": "603026",
       "name": "石大胜华",
       "score": 3,
       "status": "observe",
@@ -278,10 +278,10 @@
         "resistance": 66.0,
         "stop_loss": null
       },
-      "notes": "观察名单·下跌-1.08%·PE27.3"
+      "notes": "观察名单·PE27.0·支撑60附近"
     },
     {
-      "code": "sz300769",
+      "code": "300769",
       "name": "德方纳米",
       "score": 2,
       "status": "observe",
@@ -293,8 +293,14 @@
         "resistance": 46.0,
         "stop_loss": null
       },
-      "notes": "观察名单·微跌-0.44%·PE472.9"
+      "notes": "观察名单·PE461.5极高·支撑40"
     }
   ],
-  "transit_pool": []
+  "transit_pool": [],
+  "action_plan": {
+    "today": "周一集合竞价止损三只持仓·预计回收约97,745现金",
+    "after_clear": "空仓等待·观察半导体止跌信号·关注光模块三剑客+东山精密",
+    "new_position": "🔴禁开新仓·等待市场情绪修复·至少等半导体单日净流出<80亿+科创50站稳1550",
+    "key_watch": "①集合竞价执行止损 ②9:30开盘后半导体是否止跌 ③AI应用是否延续强势 ④光模块三剑客能否保持抗跌"
+  }
 }
