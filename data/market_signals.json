@@ -1,46 +1,80 @@
 {
   "meta": {
-    "last_updated": "2026-09-04T16:59:22.317795",
-    "data_date": "2026-09-04",
-    "session": "intraday_1132",
-    "source": "腾讯行情+财联社",
-    "date": "2026-09-04"
-  },
-  "breadth": {
-    "up_count": 4401,
-    "down_count": 803,
-    "up_pct": 84.6,
-    "limit_up": 39,
-    "limit_down": 2,
-    "note": "10:07快照·涨跌比85:15·但指数已从高位回落"
+    "last_updated": "2026-09-07T08:25:00+08:00",
+    "date": "2026-09-07",
+    "session": "pre_market_0825",
+    "source": "腾讯行情+公开新闻"
   },
   "signals": {
-    "trend": "震荡偏弱",
-    "volume_signal": "放量下跌·空头信号",
-    "breadth_signal": "跌多涨少·偏空",
-    "money_flow": "主力净流出734.8亿·偏空",
-    "north_bound": "净卖出·偏空",
-    "sector_rotation": "科技→消费防御·避险风格",
-    "overall": "偏空·连续2日高开低走·科技硬件恐慌抛售"
+    "bullish": [
+      {
+        "signal": "日韩股市大涨",
+        "detail": "韩国KOSPI+3.49%·日经+1.77%·存储芯片联动美股周五涨势",
+        "strength": "strong"
+      },
+      {
+        "signal": "存储芯片逆势走强",
+        "detail": "闪迪+11%/SK海力士+8%/美光+6%·费城半导体+3.37%·AI算力需求驱动HBM景气",
+        "strength": "strong"
+      },
+      {
+        "signal": "央行5000亿逆回购等量续作",
+        "detail": "9/7央行开展5000亿买断式逆回购·等量续作·流动性充裕",
+        "strength": "moderate"
+      },
+      {
+        "signal": "3600亿金融注资",
+        "detail": "8家中央金融企业增资3600亿·夯实金融体系·利好银行保险红利",
+        "strength": "moderate"
+      },
+      {
+        "signal": "富士康8月营收+51.98%",
+        "detail": "AI服务器业务高景气·利好AI服务器/液冷/光模块/高速互联",
+        "strength": "moderate"
+      },
+      {
+        "signal": "七部门数字化绿色化方案",
+        "detail": "绿色算力/液冷获政策催化·AI中小企业创业支持计划",
+        "strength": "moderate"
+      }
+    ],
+    "bearish": [
+      {
+        "signal": "美国8月非农16.2万远超预期",
+        "detail": "预期5.5万·加息概率回升·美债收益率上行至4.8%·压制高估值成长",
+        "strength": "strong"
+      },
+      {
+        "signal": "科技硬件退潮未止",
+        "detail": "半导体-2.85%/科创50-2.10%·主力净流出734.8亿·浪潮信息跌停",
+        "strength": "strong"
+      },
+      {
+        "signal": "三只持仓全部跌破止损",
+        "detail": "鹏辉54.82/利通108.35/圣邦106.92均破止损·周一集合竞价止损",
+        "strength": "strong"
+      },
+      {
+        "signal": "涨跌家数偏空",
+        "detail": "2444涨/2914跌·中位数-0.41%·涨停41家跌停9家",
+        "strength": "moderate"
+      },
+      {
+        "signal": "9/11 CPI数据待公布",
+        "detail": "8月CPI将成为9月FOMC前最后关键数据·市场观望情绪重",
+        "strength": "moderate"
+      }
+    ]
   },
-  "trading_rules": {
-    "new_position": "❌禁止·非农前·高开低走",
-    "add_position": "❌禁止",
-    "reduce_position": "✅利通必须止损·圣邦/鹏辉若跌破止损立即执行",
-    "stop_loss": "🔴利通110.86连续2日低于止损112.5·圣邦距止损0.74%·鹏辉距止损0.45%"
-  },
-  "key_events": {
-    "today": "今晚非农·浪潮信息-9.36%暴跌",
-    "this_week": "非农·美伊冲突·油价95+",
-    "next_week": "9/11 CPI·9/16 FOMC"
-  },
+  "composite_score": -2,
+  "overall": "偏空·外部日韩大涨+存储芯片强势形成利好对冲，但内部科技硬件退潮+非农超预期利空压制。多空拉锯，等待方向选择。",
   "aggregate": {
     "green_count": 2,
-    "yellow_count": 3,
-    "red_count": 2,
-    "total_score": 52,
-    "max_score": 100,
+    "yellow_count": 4,
+    "red_count": 3,
+    "total_score": -1,
+    "max_score": 10,
     "no_open_position": true,
-    "market_comment": "高开低走·非农前·优先处理持仓风控·利通必须止损·圣邦/鹏辉逼近止损"
+    "market_comment": "偏空·外部日韩大涨+存储芯片强势形成利好对冲，但内部科技硬件退潮+非农超预期利空压制。多空拉锯，禁开新仓。"
   }
 }
